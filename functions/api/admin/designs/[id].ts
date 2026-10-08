@@ -58,10 +58,11 @@ export const onRequestPut: PagesFunction<Env> = async ({ request, env, params })
 
   if (statut === "publie") {
     const nbHd = (await lireFichiers(db, id)).filter((f) => f.role === "hd").length;
-    // Le fichier HD est exigé au moment de publier. Un design déjà en ligne (comme ceux de la
-    // maquette, dont les fichiers HD arriveront plus tard) peut toujours être corrigé et enregistré.
-    const dejaEnLigne = actuel.statut === "publie";
-    const manques = manquesPourPublier(fusion, dejaEnLigne ? Math.max(nbHd, 1) : nbHd);
+    // Le fichier HD est exigé pour la toute première publication. Un design déjà publié une fois
+    // (comme ceux de la maquette, dont les fichiers HD arriveront plus tard) peut être corrigé,
+    // retiré puis remis en vente sans être bloqué.
+    const dejaPublieUneFois = Boolean(actuel.publieLe);
+    const manques = manquesPourPublier(fusion, dejaPublieUneFois ? Math.max(nbHd, 1) : nbHd);
     if (manques.length) return erreur(422, "La fiche n'est pas prête à être publiée.", { manques });
   }
 
