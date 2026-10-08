@@ -6,3 +6,11 @@ next-env.d.ts
 .DS_Store
 .env*
 !.env.example
+
+# Catalogue fabriqué au moment du build
+lib/catalogue.genere.json
+lib/*.tmp
+
+# Simulation Cloudflare locale et secrets
+.wrangler/
+.dev.vars

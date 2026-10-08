@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, type PointerEvent } from "react";
-import type { Design } from "@/lib/catalogue";
+import type { Design } from "@/lib/modele";
 
 const ZOOM = 2.2;
 const RAYON = 95;
@@ -31,7 +31,7 @@ export function Apercu({ d }: { d: Design }) {
         style={{ cursor: loupe ? "none" : undefined }}
       >
         <img src={d.image} alt={d.resume} width={600} height={Math.round(600 * d.ratio)} draggable={false} />
-        <div className="apercu__filigrane" aria-hidden="true" />
+        {!d.filigraneIntegre && <div className="apercu__filigrane" aria-hidden="true" />}
         <span className="apercu__mention">Aperçu basse définition</span>
         {loupe && (
           <div

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import type { Design } from "@/lib/catalogue";
+import type { Design } from "@/lib/modele";
 
 // Étoiles à positions fixes (pas d'aléatoire : le rendu est identique à chaque visite).
 const ETOILES: [number, number, number][] = [

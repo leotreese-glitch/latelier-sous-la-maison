@@ -1,0 +1,555 @@
+[
+  {
+    "id": "orig-0001",
+    "slug": "oiseaux-sur-branches-fleuries",
+    "titre": "Oiseaux sur branches fleuries",
+    "famille": "atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin numérique créé avec l'assistance de l'IA",
+    "type": "animalier",
+    "couleurs": [
+      "creme",
+      "indigo",
+      "garance",
+      "reseda",
+      "brun"
+    ],
+    "image": "/designs/orig-0001.webp",
+    "ratio": 1.3481012658227849,
+    "resume": "Branches brunes sinueuses, grandes fleurs indigo et terracotta, oiseaux bleus à poitrine orangée sur fond crème.",
+    "cartel": "Création originale de l'atelier, inspirée des indiennes et des chintz. Les oiseaux se posent à intervalles irréguliers pour que l'œil ne repère pas la répétition.",
+    "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
+    "ia": true,
+    "prix": {
+      "eur": 15,
+      "usd": 17
+    },
+    "statut": "publie",
+    "publieLe": "2026-10-08T12:00:00.000Z"
+  },
+  {
+    "id": "orig-0002",
+    "slug": "losanges-a-rosaces",
+    "titre": "Losanges à rosaces",
+    "famille": "atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin numérique créé avec l'assistance de l'IA",
+    "type": "geometrique",
+    "couleurs": [
+      "creme",
+      "indigo",
+      "garance",
+      "brun",
+      "reseda"
+    ],
+    "image": "/designs/orig-0002.webp",
+    "ratio": 1.32398753894081,
+    "resume": "Treillis de losanges : rosaces rouges cerclées d'indigo, fleurs brunes à quatre pétales, bordures pointillées.",
+    "cartel": "Création originale de l'atelier, inspirée des impressions à la planche. Le treillis alterne deux losanges pour garder un rythme régulier sur de grandes surfaces.",
+    "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
+    "ia": true,
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "edition": {
+      "paliers": [
+        {
+          "licences": 10,
+          "eur": 12,
+          "usd": 14
+        },
+        {
+          "licences": 10,
+          "eur": 18,
+          "usd": 21
+        },
+        {
+          "licences": 10,
+          "eur": 25,
+          "usd": 29
+        }
+      ],
+      "vendues": 3
+    },
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:59:00.000Z"
+  },
+  {
+    "id": "orig-0003",
+    "slug": "rinceaux-floraux",
+    "titre": "Rinceaux floraux",
+    "famille": "atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin numérique créé avec l'assistance de l'IA",
+    "type": "floral",
+    "couleurs": [
+      "creme",
+      "garance",
+      "reseda"
+    ],
+    "image": "/designs/orig-0003.webp",
+    "ratio": 1.3438485804416405,
+    "resume": "Grandes fleurs rouges, tulipes et rosaces reliées par des rinceaux vert sauge sur fond crème.",
+    "cartel": "Création originale de l'atelier, inspirée des indiennes. Palette volontairement réduite à trois couleurs, pour une impression économique.",
+    "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
+    "ia": true,
+    "prix": {
+      "eur": 15,
+      "usd": 17
+    },
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:58:00.000Z"
+  },
+  {
+    "id": "dp-0001",
+    "slug": "meandre-a-la-grecque",
+    "titre": "Méandre à la grecque",
+    "famille": "retrouves",
+    "periode": "antiquite",
+    "date": "Antiquité",
+    "origine": "Grèce",
+    "technique": "Frise",
+    "type": "geometrique",
+    "couleurs": [
+      "garance",
+      "brun",
+      "creme"
+    ],
+    "image": "/motifs/dp-0001.svg",
+    "ratio": 1.3333333333333333,
+    "resume": "Frises de méandres garance séparées par des rangs de points bruns.",
+    "cartel": "La frise de méandres borde les vases et les architectures de la Grèce antique. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:57:00.000Z"
+  },
+  {
+    "id": "dp-0004",
+    "slug": "semis-de-fleurettes",
+    "titre": "Semis de fleurettes",
+    "famille": "retrouves",
+    "periode": "xviiie",
+    "date": "XVIIIe siècle",
+    "origine": "France",
+    "technique": "Indienne, impression à la planche",
+    "type": "floral",
+    "couleurs": [
+      "creme",
+      "garance",
+      "indigo",
+      "reseda",
+      "safran"
+    ],
+    "image": "/motifs/dp-0004.svg",
+    "ratio": 1.5,
+    "resume": "Brins fleuris garance et indigo semés sur fond crème, ponctués de petits points.",
+    "cartel": "Le semis, des petits brins répartis sur tout le tissu, est l'un des dessins les plus imprimés par les manufactures d'indiennes. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:56:00.000Z"
+  },
+  {
+    "id": "dp-0002",
+    "slug": "ecailles-dorees",
+    "titre": "Écailles dorées",
+    "famille": "retrouves",
+    "periode": "xvie",
+    "date": "XVIe siècle",
+    "origine": "Italie",
+    "technique": "Tissu façonné",
+    "type": "geometrique",
+    "couleurs": [
+      "indigo",
+      "or"
+    ],
+    "image": "/motifs/dp-0002.svg",
+    "ratio": 1,
+    "resume": "Écailles imbriquées cernées d'or sur fond indigo.",
+    "cartel": "L'imbrication, des écailles qui se chevauchent, orne les étoffes et les céramiques de la Renaissance. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:55:00.000Z"
+  },
+  {
+    "id": "col-0001",
+    "slug": "la-grande-rosace",
+    "titre": "La grande rosace",
+    "famille": "petit-atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin au trait à colorier",
+    "type": "geometrique",
+    "couleurs": [],
+    "image": "/coloriages/col-0001.svg",
+    "ratio": 1.4133333333333333,
+    "resume": "Une rosace à gros traits et grandes zones, facile à colorier.",
+    "cartel": "Les rosaces décorent les vitraux des cathédrales. Celle-ci a de grandes zones, faciles à remplir pour les petites mains. Visuel d'exemple dessiné pour la maquette.",
+    "source": "Exemple de maquette.",
+    "niveau": "Tout-petits",
+    "prix": {
+      "eur": 7.9,
+      "usd": 8.9
+    },
+    "pochette": "Premiers coloriages",
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:54:00.000Z"
+  },
+  {
+    "id": "dp-0003",
+    "slug": "quadrilobes-gothiques",
+    "titre": "Quadrilobes gothiques",
+    "famille": "retrouves",
+    "periode": "moyen-age",
+    "date": "Moyen Âge",
+    "origine": "France",
+    "technique": "Décor peint",
+    "type": "geometrique",
+    "couleurs": [
+      "garance",
+      "indigo",
+      "or"
+    ],
+    "image": "/motifs/dp-0003.svg",
+    "ratio": 1.25,
+    "resume": "Quadrilobes indigo cernés d'or sur fond garance.",
+    "cartel": "Le quadrilobe, une fleur à quatre lobes, revient partout dans l'art gothique. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:53:00.000Z"
+  },
+  {
+    "id": "dp-0005",
+    "slug": "rayure-fleurie",
+    "titre": "Rayure fleurie",
+    "famille": "retrouves",
+    "periode": "xviiie",
+    "date": "XVIIIe siècle",
+    "origine": "France",
+    "technique": "Indienne, impression à la planche",
+    "type": "floral",
+    "couleurs": [
+      "indigo",
+      "garance",
+      "creme",
+      "safran"
+    ],
+    "image": "/motifs/dp-0005.svg",
+    "ratio": 1.3333333333333333,
+    "resume": "Rayures indigo et garance alternées avec des colonnes de fleurettes.",
+    "cartel": "Les rayures fleuries habillaient les robes et les tentures au siècle des Lumières. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:52:00.000Z"
+  },
+  {
+    "id": "orig-0004",
+    "slug": "nuit-au-jardin",
+    "titre": "Nuit au jardin",
+    "famille": "atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin numérique créé avec l'assistance de l'IA",
+    "type": "figuratif",
+    "couleurs": [
+      "indigo",
+      "or",
+      "creme"
+    ],
+    "image": "/motifs/orig-0004.svg",
+    "ratio": 1.25,
+    "resume": "Croissants de lune dorés et fleurettes crème sur un ciel de nuit.",
+    "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
+    "source": "Exemple de maquette.",
+    "ia": true,
+    "prix": {
+      "eur": 15,
+      "usd": 17
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:51:00.000Z"
+  },
+  {
+    "id": "dp-0006",
+    "slug": "etoiles-a-huit-branches",
+    "titre": "Étoiles à huit branches",
+    "famille": "retrouves",
+    "periode": "moyen-age",
+    "date": "Moyen Âge",
+    "origine": "Andalousie",
+    "technique": "Zellige",
+    "type": "geometrique",
+    "couleurs": [
+      "reseda",
+      "garance",
+      "indigo",
+      "creme"
+    ],
+    "image": "/motifs/dp-0006.svg",
+    "ratio": 1,
+    "resume": "Étoiles garance et indigo à cœur crème sur fond réséda.",
+    "cartel": "L'étoile à huit branches structure les décors de zellige, faits de petits carreaux taillés. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:50:00.000Z"
+  },
+  {
+    "id": "col-0003",
+    "slug": "la-maison-et-son-atelier",
+    "titre": "La maison et son atelier",
+    "famille": "petit-atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin au trait à colorier",
+    "type": "figuratif",
+    "couleurs": [],
+    "image": "/coloriages/col-0003.svg",
+    "ratio": 1.4133333333333333,
+    "resume": "Une maison et, sous la terre, l'atelier secret avec sa table et sa lampe.",
+    "cartel": "Sous cette maison se cache un atelier. Qu'est-ce qu'on y fabrique ? L'enfant peut dessiner la suite. Visuel d'exemple dessiné pour la maquette.",
+    "source": "Exemple de maquette.",
+    "niveau": "Tout-petits",
+    "prix": {
+      "eur": 7.9,
+      "usd": 8.9
+    },
+    "pochette": "Premiers coloriages",
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:49:00.000Z"
+  },
+  {
+    "id": "dp-0007",
+    "slug": "eventails",
+    "titre": "Éventails",
+    "famille": "retrouves",
+    "periode": "xxe",
+    "date": "XXe siècle",
+    "origine": "France",
+    "technique": "Papier peint",
+    "type": "geometrique",
+    "couleurs": [
+      "noir",
+      "or"
+    ],
+    "image": "/motifs/dp-0007.svg",
+    "ratio": 1.25,
+    "resume": "Éventails concentriques dorés sur fond noir.",
+    "cartel": "Les éventails superposés sont un motif favori des années Art déco. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:48:00.000Z"
+  },
+  {
+    "id": "dp-0008",
+    "slug": "treillage-de-feuilles",
+    "titre": "Treillage de feuilles",
+    "famille": "retrouves",
+    "periode": "xixe",
+    "date": "XIXe siècle",
+    "origine": "Angleterre",
+    "technique": "Papier peint imprimé à la planche",
+    "type": "floral",
+    "couleurs": [
+      "reseda",
+      "brun",
+      "garance",
+      "creme"
+    ],
+    "image": "/motifs/dp-0008.svg",
+    "ratio": 1.3333333333333333,
+    "resume": "Treillage brun, feuilles réséda et baies garance sur fond écru.",
+    "cartel": "Les treillages feuillus sont typiques des papiers peints du mouvement Arts and Crafts. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:47:00.000Z"
+  },
+  {
+    "id": "col-0002",
+    "slug": "l-oiseau-des-indiennes",
+    "titre": "L'oiseau des indiennes",
+    "famille": "petit-atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin au trait à colorier",
+    "type": "animalier",
+    "couleurs": [],
+    "image": "/coloriages/col-0002.svg",
+    "ratio": 1.4133333333333333,
+    "resume": "Un oiseau sur une branche fleurie, avec des plumes et des pétales à détailler.",
+    "cartel": "Ce genre d'oiseau se posait déjà sur les tissus imprimés il y a 250 ans. Traits fins pour les enfants qui aiment les détails. Visuel d'exemple dessiné pour la maquette.",
+    "source": "Exemple de maquette.",
+    "niveau": "Petits dessinateurs",
+    "prix": {
+      "eur": 7.9,
+      "usd": 8.9
+    },
+    "pochette": "Oiseaux et jardins",
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:46:00.000Z"
+  },
+  {
+    "id": "dp-0009",
+    "slug": "ikat-losange",
+    "titre": "Ikat losangé",
+    "famille": "retrouves",
+    "periode": "xixe",
+    "date": "XIXe siècle",
+    "origine": "Asie centrale",
+    "technique": "Ikat, teinture à réserve",
+    "type": "geometrique",
+    "couleurs": [
+      "garance",
+      "safran",
+      "indigo",
+      "creme"
+    ],
+    "image": "/motifs/dp-0009.svg",
+    "ratio": 1.5,
+    "resume": "Losanges aux bords dentelés garance, safran et indigo.",
+    "cartel": "Dans l'ikat, les fils sont teints avant le tissage : d'où ces contours qui semblent trembler. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:45:00.000Z"
+  },
+  {
+    "id": "orig-0005",
+    "slug": "racines-dorees",
+    "titre": "Racines dorées",
+    "famille": "atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin numérique créé avec l'assistance de l'IA",
+    "type": "floral",
+    "couleurs": [
+      "indigo",
+      "or",
+      "garance"
+    ],
+    "image": "/motifs/orig-0005.svg",
+    "ratio": 1.5,
+    "resume": "Tiges dorées ondulantes et bourgeons garance sur fond indigo.",
+    "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
+    "source": "Exemple de maquette.",
+    "ia": true,
+    "prix": {
+      "eur": 15,
+      "usd": 17
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:44:00.000Z"
+  },
+  {
+    "id": "dp-0010",
+    "slug": "feuilles-de-chanvre",
+    "titre": "Feuilles de chanvre",
+    "famille": "retrouves",
+    "periode": "xviiie",
+    "date": "XVIIIe siècle",
+    "origine": "Japon",
+    "technique": "Pochoir sur coton",
+    "type": "geometrique",
+    "couleurs": [
+      "indigo",
+      "creme"
+    ],
+    "image": "/motifs/dp-0010.svg",
+    "ratio": 1.15,
+    "resume": "Étoiles à six branches tracées en indigo sur fond crème.",
+    "cartel": "Ce motif japonais évoque les feuilles de chanvre, symbole de croissance. Visuel d'exemple dessiné pour la maquette. Il sera remplacé par un motif restauré à partir d'une pièce de musée.",
+    "source": "Exemple de maquette, sans source réelle.",
+    "prix": {
+      "eur": 12,
+      "usd": 14
+    },
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:43:00.000Z"
+  },
+  {
+    "id": "col-0004",
+    "slug": "le-poisson-a-ecailles",
+    "titre": "Le poisson à écailles",
+    "famille": "petit-atelier",
+    "periode": "aujourdhui",
+    "date": "2026",
+    "origine": "L'atelier sous la maison",
+    "technique": "Dessin au trait à colorier",
+    "type": "animalier",
+    "couleurs": [],
+    "image": "/coloriages/col-0004.svg",
+    "ratio": 1.4133333333333333,
+    "resume": "Un gros poisson à écailles, des bulles et une vague.",
+    "cartel": "Chaque écaille est une petite zone à colorier : on peut toutes les faire de couleurs différentes. Visuel d'exemple dessiné pour la maquette.",
+    "source": "Exemple de maquette.",
+    "niveau": "Tout-petits",
+    "prix": {
+      "eur": 7.9,
+      "usd": 8.9
+    },
+    "pochette": "Premiers coloriages",
+    "exemple": true,
+    "statut": "publie",
+    "publieLe": "2026-10-08T11:42:00.000Z"
+  }
+]

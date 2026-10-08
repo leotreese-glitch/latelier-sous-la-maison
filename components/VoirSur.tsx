@@ -1,4 +1,4 @@
-import type { Design } from "@/lib/catalogue";
+import type { Design } from "@/lib/modele";
 
 /** Le motif appliqué sur quatre objets. Les ombres donnent le volume, le motif reste net. */
 export function VoirSur({ d }: { d: Design }) {

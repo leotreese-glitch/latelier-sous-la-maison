@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FAMILLES, prixEdition, type Design } from "@/lib/catalogue";
+import { FAMILLES, prixEdition, type Design } from "@/lib/modele";
 import { Prix } from "./Devise";
 
 export function Tuile({ d }: { d: Design }) {

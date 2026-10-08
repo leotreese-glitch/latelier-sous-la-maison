@@ -4,8 +4,6 @@ import "@fontsource/im-fell-french-canon/400-italic.css";
 import "@fontsource-variable/jost/wght.css";
 import "./globals.css";
 import { DeviseProvider } from "@/components/Devise";
-import { EnTete } from "@/components/EnTete";
-import { PiedDePage } from "@/components/PiedDePage";
 import { Protection } from "@/components/Protection";
 
 export const metadata: Metadata = {
@@ -15,7 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     "Motifs anciens restaurés, créations originales et coloriages, livrés en haute définition avec leur licence.",
-  robots: { index: false, follow: false }, // maquette : pas d'indexation
+  robots: { index: false, follow: false }, // pas d'indexation avant le lancement
 };
 
 export const viewport: Viewport = {
@@ -29,12 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a className="evitement" href="#contenu">
           Aller au contenu
         </a>
-        <p className="bandeau-maquette">Maquette de travail : contenus et prix d'exemple, paiement inactif.</p>
-        <DeviseProvider>
-          <EnTete />
-          <main id="contenu">{children}</main>
-          <PiedDePage />
-        </DeviseProvider>
+        <DeviseProvider>{children}</DeviseProvider>
         <Protection />
       </body>
     </html>

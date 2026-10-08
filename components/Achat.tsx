@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { prixEdition, type Design } from "@/lib/catalogue";
+import { prixEdition, type Design } from "@/lib/modele";
 import { formatPrix, Prix, useDevise } from "./Devise";
 
 export function Achat({ d }: { d: Design }) {

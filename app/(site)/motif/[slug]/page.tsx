@@ -5,7 +5,7 @@ import { Achat } from "@/components/Achat";
 import { Apercu } from "@/components/Apercu";
 import { Mosaique } from "@/components/Mosaique";
 import { VoirSur } from "@/components/VoirSur";
-import { COULEURS, DESIGNS, FAMILLES, memeTiroir, PERIODES, RECU, trouver, TYPES } from "@/lib/catalogue";
+import { COULEURS, DESIGNS, FAMILLES, lienSur, memeTiroir, PERIODES, RECU, trouver, TYPES } from "@/lib/catalogue";
 
 export const dynamicParams = false;
 
@@ -47,6 +47,12 @@ export default async function FicheMotif({ params }: Props) {
           <div className="recu">
             <h2>Ce que vous recevez</h2>
             <ul>
+              {d.hd && (
+                <li>
+                  Fichier principal : {d.hd.format}, {d.hd.largeur.toLocaleString("fr-FR")} × {d.hd.hauteur.toLocaleString("fr-FR")} px, soit{" "}
+                  {Math.round((Math.max(d.hd.largeur, d.hd.hauteur) / 300) * 2.54)} cm de côté à 300 DPI
+                </li>
+              )}
               {RECU[d.famille].map((ligne) => (
                 <li key={ligne}>{ligne}</li>
               ))}
@@ -94,7 +100,21 @@ export default async function FicheMotif({ params }: Props) {
             )}
           </dl>
           <p className="cartel__texte">{d.cartel}</p>
-          <p className="cartel__source">{d.source}</p>
+          <p className="cartel__source">
+            {d.droits?.musee ? (
+              <>
+                {d.droits.musee}, {d.droits.reference}.{" "}
+                {lienSur(d.droits.url) && (
+                  <a href={d.droits.url} target="_blank" rel="noopener noreferrer">
+                    Voir la notice du musée
+                  </a>
+                )}{" "}
+                {d.source}
+              </>
+            ) : (
+              d.source
+            )}
+          </p>
         </div>
       </section>
 
