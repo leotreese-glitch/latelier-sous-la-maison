@@ -1401,6 +1401,12 @@ a {
 .piste__texte h3 {
   font-size: 1.4rem;
 }
+.piste--retenue {
+  border-color: var(--or);
+}
+.piste__texte .piste__retenue {
+  color: var(--or);
+}
 .piste__texte p {
   margin-top: 6px;
   color: var(--texte-doux);

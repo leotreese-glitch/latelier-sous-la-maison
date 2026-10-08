@@ -3,11 +3,12 @@ import { Marque, type Piste } from "@/components/Logo";
 
 export const metadata: Metadata = { title: "Identité visuelle" };
 
-const PISTES: { cle: Piste; nom: string; texte: string }[] = [
+const PISTES: { cle: Piste; nom: string; texte: string; retenue?: boolean }[] = [
   {
     cle: "racines",
     nom: "Les racines",
     texte: "Les fondations de la maison deviennent un ornement doré qui pousse sous terre. C'est la piste reprise dans la descente de l'accueil.",
+    retenue: true,
   },
   {
     cle: "trappe",
@@ -40,10 +41,10 @@ export default function Identite() {
 
       <section aria-labelledby="titre-logo">
         <h2 id="titre-logo">Trois pistes de logo</h2>
-        <p>Chaque piste est montrée sur fond de nuit, sur papier, puis avec le nom.</p>
+        <p>Chaque piste est montrée sur fond de nuit, sur papier, puis avec le nom. Les racines sont retenues.</p>
         <ul className="pistes">
           {PISTES.map((p) => (
-            <li key={p.cle} className="piste">
+            <li key={p.cle} className={`piste${p.retenue ? " piste--retenue" : ""}`}>
               <div className="piste__fonds">
                 <div className="piste__fond piste__fond--nuit">
                   <Marque piste={p.cle} titre={`${p.nom}, sur fond de nuit`} />
@@ -62,6 +63,7 @@ export default function Identite() {
               </div>
               <div className="piste__texte">
                 <h3>{p.nom}</h3>
+                {p.retenue && <p className="piste__retenue">Piste retenue le 8 octobre 2026</p>}
                 <p>{p.texte}</p>
               </div>
             </li>
