@@ -278,6 +278,45 @@ export function Editeur() {
         </div>
       </div>
 
+      <div className="admin-barre-actions">
+        <div className="admin-boutons">
+          <button type="button" className="bouton bouton--contour" disabled={occupe || Boolean(envoi)} onClick={() => enregistrer(design.statut ?? "brouillon", "Enregistré.")}>
+            Enregistrer
+          </button>
+          {design.statut !== "publie" && (
+            <button
+              type="button"
+              className="bouton bouton--or"
+              disabled={occupe || Boolean(envoi)}
+              onClick={() => enregistrer("publie", "Publié. Il apparaîtra sur le site après la prochaine mise à jour.")}
+            >
+              {design.statut === "retire" ? "Remettre en vente" : "Publier"}
+            </button>
+          )}
+          {design.statut === "publie" && (
+            <button type="button" className="bouton bouton--contour" disabled={occupe} onClick={() => enregistrer("retire", "Retiré de la vente après la prochaine mise à jour.")}>
+              Retirer de la vente
+            </button>
+          )}
+          <span className="admin-barre-actions__etat">
+            {STATUTS_NOMS[design.statut ?? "brouillon"]}
+            {sale ? ", modifications non enregistrées" : ""}
+          </span>
+        </div>
+        {message && (
+          <div className={`admin-message admin-message--${message.type}`} role={message.type === "erreur" ? "alert" : "status"}>
+            <p>{message.texte}</p>
+            {message.manques && (
+              <ul>
+                {message.manques.map((m) => (
+                  <li key={m}>{m}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+      </div>
+
       <div className="admin-colonnes">
         <div className="admin-formulaire">
           <Section
@@ -560,42 +599,8 @@ export function Editeur() {
 
         <aside className="admin-cote">
           <div className="admin-carte admin-collant">
-            <h2>{STATUTS_NOMS[design.statut ?? "brouillon"]}</h2>
-            {sale && <p className="admin-aide">Modifications non enregistrées.</p>}
-            {message && (
-              <div className={`admin-message admin-message--${message.type}`} role={message.type === "erreur" ? "alert" : "status"}>
-                <p>{message.texte}</p>
-                {message.manques && (
-                  <ul>
-                    {message.manques.map((m) => (
-                      <li key={m}>{m}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            )}
-            <div className="admin-boutons">
-              <button type="button" className="bouton bouton--contour" disabled={occupe || Boolean(envoi)} onClick={() => enregistrer(design.statut ?? "brouillon", "Enregistré.")}>
-                Enregistrer
-              </button>
-              {design.statut !== "publie" && (
-                <button
-                  type="button"
-                  className="bouton bouton--or"
-                  disabled={occupe || Boolean(envoi)}
-                  onClick={() => enregistrer("publie", "Publié. Il apparaîtra sur le site après la prochaine mise à jour.")}
-                >
-                  {design.statut === "retire" ? "Remettre en vente" : "Publier"}
-                </button>
-              )}
-              {design.statut === "publie" && (
-                <button type="button" className="bouton bouton--contour" disabled={occupe} onClick={() => enregistrer("retire", "Retiré de la vente après la prochaine mise à jour.")}>
-                  Retirer de la vente
-                </button>
-              )}
-            </div>
             <div className="admin-verif">
-              <h3>Avant de publier</h3>
+              <h2>Avant de publier</h2>
               {manques.length === 0 ? (
                 <p className="admin-ok">Tout est prêt.</p>
               ) : (

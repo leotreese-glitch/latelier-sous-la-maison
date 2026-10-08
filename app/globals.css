@@ -1711,7 +1711,24 @@ a {
 }
 @media (max-width: 1000px) {
   .admin-colonnes {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.admin-formulaire,
+.admin-cote,
+.admin-section {
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  .admin-table {
+    display: block;
+    overflow-x: auto;
+  }
+  .admin-carte {
+    padding: 18px 16px;
+  }
+  .admin-entete-page .admin-actions {
+    width: 100%;
   }
 }
 .admin-formulaire {
@@ -1864,4 +1881,32 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   gap: 4px 16px;
+}
+
+.admin-barre-actions {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  display: grid;
+  gap: 8px;
+  max-height: 45vh;
+  margin: 0 calc(-1 * var(--gouttiere)) 20px;
+  padding: 12px var(--gouttiere);
+  overflow-y: auto;
+  border-bottom: 1px solid var(--nuit-3);
+  background: rgba(23, 30, 51, 0.97);
+}
+.admin-barre-actions .admin-boutons {
+  align-items: center;
+}
+.admin-barre-actions .admin-message {
+  margin: 0;
+}
+.admin-barre-actions__etat {
+  color: var(--texte-doux);
+  font-size: 0.92rem;
+}
+.admin-verif {
+  padding-top: 0;
+  border-top: 0;
 }
