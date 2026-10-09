@@ -264,8 +264,12 @@
   ]
  },
  "h03": {
-  "ok": false,
-  "erreur": "<HTTPError 403: 'Forbidden'>"
+  "ok": true,
+  "url": "https://www.artic.edu/iiif/2/068dbf9d-76ec-d053-2b32-6e4e89934387/full/843,/0/default.jpg",
+  "taille": [
+   585,
+   640
+  ]
  },
  "h04": {
   "ok": true,
