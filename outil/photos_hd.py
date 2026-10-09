@@ -87,7 +87,14 @@ shutil.copy("outil/LISEZ-MOI.txt", "sortie/%s/LISEZ-MOI.txt" % RACINE)
 
 # Un ZIP par époque, chacun avec la liste et le mode d'emploi.
 os.makedirs("zips", exist_ok=True)
-for dossier in ([] if FILTRE else sorted({p["dossier"] for p in pieces})):
+if not FILTRE:
+    with zipfile.ZipFile("zips/Motifs-retrouves-photos.zip", "w", zipfile.ZIP_STORED) as z:
+        for nom in ("LISEZ-MOI.txt", "liste-des-pieces.csv"):
+            z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
+        for p in pieces:
+            if p["ok"]:
+                z.write("sortie/%s/%s/%s" % (RACINE, p["dossier"], p["fichier"]), "%s/%s/%s" % (RACINE, p["dossier"], p["fichier"]))
+for dossier in []:
     with zipfile.ZipFile("zips/%s.zip" % dossier, "w", zipfile.ZIP_STORED) as z:
         for nom in ("liste-des-pieces.csv", "LISEZ-MOI.txt"):
             z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
