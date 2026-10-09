@@ -1,20 +1,25 @@
-name: Aperçus des pièces de musée
+name: Photos des pièces retenues
 on:
   push:
     branches: [outil/apercus-musees]
 permissions:
   contents: write
 jobs:
-  apercus:
+  photos:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - run: pip install pillow==10.4.0
-      - run: python outil/apercus.py
       - run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add outil/apercus
-          git commit -m "Vignettes des pièces de musée [CF-Pages-Skip]"
-          git push
+          if [ "$(cat outil/mode.txt)" = "supprimer" ]; then
+            gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+            exit 0
+          fi
+          pip install pillow==10.4.0
+          python outil/photos_hd.py
+          ls -la zips
+          gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+          gh release create photos-motifs-retrouves zips/* -R "$GITHUB_REPOSITORY" --target outil/apercus-musees --prerelease \
+            --title "Photos des motifs retrouvés (temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."

@@ -1,0 +1,20 @@
+L'atelier sous la maison - Motifs retrouvés
+Photos des 39 pièces de musée retenues le 9 octobre 2026
+
+Ce que contient ce dossier
+- Un sous-dossier par époque, de l'Antiquité au XXe siècle.
+- Chaque image porte le nom de sa fiche dans l'administration (même adresse que la page du site).
+- liste-des-pieces.csv : titre, musée, numéro d'inventaire, lien de la notice, tailles, et ce qu'il y a à faire pour chaque pièce. S'ouvre dans Excel, Numbers ou Google Sheets.
+
+Ce que sont ces images
+- Ce sont les photographies des musées, en domaine public (CC0), avant restauration.
+- Elles sont en JPEG qualité 92, à 300 dpi, avec au plus 36 millions de pixels (environ 7 300 x 4 900).
+- Quand l'original du musée est plus grand, sa taille complète et son lien sont dans la liste (colonne « Original complet », un fichier TIFF souvent très lourd).
+
+Pour chaque pièce, avant de publier
+1. Restaurer : taches, trous, déchirures, fils manquants, couleurs passées.
+2. Faire le carreau raccordable quand la pièce s'y prête (voir la colonne « À faire »).
+3. Exporter en PNG d'au moins 3 000 px sur le grand côté.
+4. Dans l'administration, ouvrir la fiche du même nom, déposer le fichier, relire le cartel, puis Publier.
+
+Rappel : on ne vend jamais l'image du musée telle quelle, toujours la version restaurée.
