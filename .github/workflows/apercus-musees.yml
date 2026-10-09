@@ -17,7 +17,7 @@ jobs:
             gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
             exit 0
           fi
-          pip install pillow==10.4.0
+          pip install pillow==10.4.0 numpy==2.1.2
           python outil/photos_hd.py
           ls -la zips
           gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true

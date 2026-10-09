@@ -1,6 +1,7 @@
 """Télécharge l'image complète de chaque pièce retenue, la ramène à 36 Mpx au plus, et prépare les ZIP par époque."""
 import csv, io, json, math, os, shutil, time, urllib.request, zipfile
-from PIL import Image
+from PIL import Image, ImageFile
+import numpy as np
 
 Image.MAX_IMAGE_PIXELS = None
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)"}
@@ -24,16 +25,43 @@ def source(p):
         req = urllib.request.Request("https://openaccess-api.clevelandart.org/api/artworks/%s?fields=images,share_license_status" % p["ref"], headers=UA)
         data = json.load(urllib.request.urlopen(req, timeout=60))["data"]
         assert data["share_license_status"] == "CC0", p["ref"]
-        return data["images"]["full"]["url"]
+        full = data["images"]["full"]
+        p["attendu"] = int(full.get("filesize") or 0)
+        return full["url"]
     return MET[p["ref"]]
 
 pieces = json.load(open("outil/hd.json"))
+FILTRE = [x for x in open("outil/filtre.txt").read().split() if x] if os.path.exists("outil/filtre.txt") else []
+if FILTRE:
+    pieces = [p for p in pieces if p["fichier"] in FILTRE]
 os.makedirs("sortie/" + RACINE, exist_ok=True)
 for p in pieces:
     try:
         url = source(p); p["original"] = url
-        get(url, "/tmp/src")
-        im = Image.open("/tmp/src"); icc = im.info.get("icc_profile")
+        for essai in range(3):
+            get(url, "/tmp/src")
+            taille = os.path.getsize("/tmp/src")
+            print("  téléchargé", taille, "octets, attendu", p.get("attendu"), flush=True)
+            if not p.get("attendu") or taille >= p["attendu"]:
+                break
+        p["note"] = ""
+        try:
+            im = Image.open("/tmp/src"); im.load()
+        except OSError as e:
+            if "truncated" not in str(e):
+                raise
+            ImageFile.LOAD_TRUNCATED_IMAGES = True
+            im = Image.open("/tmp/src"); im.load()
+            ImageFile.LOAD_TRUNCATED_IMAGES = False
+            a = np.asarray(im.convert("L"))
+            lignes = np.where(a.max(axis=1) > 8)[0]
+            bas = int(lignes[-1]) + 1 if len(lignes) else a.shape[0]
+            manque = a.shape[0] - bas
+            if manque > 0:
+                im = im.crop((0, 0, im.size[0], bas))
+            p["note"] = "Fichier du musée incomplet : %d lignes vides retirées en bas." % manque
+            print("  tronqué, lignes vides retirées:", manque, flush=True)
+        icc = im.info.get("icc_profile")
         if im.mode not in ("RGB",):
             im = im.convert("RGB")
         w, h = im.size; p["pxOrigine"] = "%d × %d" % (w, h)
@@ -46,7 +74,7 @@ for p in pieces:
         im.save(dest, "JPEG", **kw)
         p["pxFourni"] = "%d × %d" % im.size; p["ok"] = True
         del im; os.remove("/tmp/src")
-        print("ok", p["fichier"], p["pxOrigine"], "->", p["pxFourni"], os.path.getsize(dest) // 1_000_000, "Mo", flush=True)
+        print("ok", p.get("note", ""), p["fichier"], p["pxOrigine"], "->", p["pxFourni"], os.path.getsize(dest) // 1_000_000, "Mo", flush=True)
     except Exception as e:
         p["ok"] = False; p["erreur"] = repr(e); print("ERREUR", p["fichier"], repr(e), flush=True)
 
@@ -59,12 +87,17 @@ shutil.copy("outil/LISEZ-MOI.txt", "sortie/%s/LISEZ-MOI.txt" % RACINE)
 
 # Un ZIP par époque, chacun avec la liste et le mode d'emploi.
 os.makedirs("zips", exist_ok=True)
-for dossier in sorted({p["dossier"] for p in pieces}):
+for dossier in ([] if FILTRE else sorted({p["dossier"] for p in pieces})):
     with zipfile.ZipFile("zips/%s.zip" % dossier, "w", zipfile.ZIP_STORED) as z:
         for nom in ("liste-des-pieces.csv", "LISEZ-MOI.txt"):
             z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
         for p in pieces:
             if p["dossier"] == dossier and p["ok"]:
                 z.write("sortie/%s/%s/%s" % (RACINE, dossier, p["fichier"]), "%s/%s/%s" % (RACINE, dossier, p["fichier"]))
+if FILTRE:
+    with zipfile.ZipFile("zips/complement.zip", "w", zipfile.ZIP_STORED) as z:
+        for p in pieces:
+            if p["ok"]:
+                z.write("sortie/%s/%s/%s" % (RACINE, p["dossier"], p["fichier"]), "%s/%s" % (p["dossier"], p["fichier"]))
 json.dump(pieces, open("zips/bilan.json", "w"), ensure_ascii=False, indent=1)
 print(sum(p["ok"] for p in pieces), "sur", len(pieces))
