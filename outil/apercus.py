@@ -2,7 +2,7 @@
 import io, json, os, time, urllib.request
 from PIL import Image
 
-UA = {"User-Agent": "latelier-sous-la-maison/1.0 (registre des motifs retrouves)"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)", "AIC-User-Agent": "latelier-sous-la-maison (registre des motifs retrouves)", "Accept": "image/avif,image/webp,image/*,*/*"}
 AIC = {"1953.306": "068dbf9d-76ec-d053-2b32-6e4e89934387"}
 MET = {"2010.337": "https://images.metmuseum.org/CRDImages/as/web-large/DP-23279-001.jpg"}
 
@@ -28,8 +28,10 @@ def source(p):
     return MET[p["ref"]]
 
 os.makedirs("outil/apercus", exist_ok=True)
-bilan = {}
+bilan = json.load(open("outil/apercus/bilan.json")) if os.path.exists("outil/apercus/bilan.json") else {}
 for p in json.load(open("outil/pieces.json")):
+    if os.path.exists("outil/apercus/%s.webp" % p["id"]):
+        continue
     try:
         url = source(p)
         img = Image.open(io.BytesIO(lire(url))).convert("RGB")
