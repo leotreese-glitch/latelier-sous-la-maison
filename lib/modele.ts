@@ -164,6 +164,8 @@ export const HD_MINIMUM_PX = 3000;
 export function slugifier(texte: string) {
   return texte
     .toLowerCase()
+    .replace(/œ/g, "oe")
+    .replace(/æ/g, "ae")
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
     .replace(/['’]/g, "-")

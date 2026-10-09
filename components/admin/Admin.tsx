@@ -94,6 +94,8 @@ function Liste() {
   const [miseAJour, setMiseAJour] = useState<{ changements: number; crochet: boolean; derniereMiseAJour: string } | null>(null);
   const [message, setMessage] = useState("");
   const [filtre, setFiltre] = useState<Famille | "tout">("tout");
+  const [registre, setRegistre] = useState<{ total: number; restants: number } | null>(null);
+  const [importEnCours, setImportEnCours] = useState(false);
 
   const charger = useCallback(async () => {
     try {
@@ -103,7 +105,27 @@ function Liste() {
     } catch (e) {
       setMessage(e instanceof ErreurApi ? e.message : "Chargement impossible.");
     }
+    api.etatRegistre().then(setRegistre).catch(() => setRegistre(null));
   }, []);
+
+  const importer = async () => {
+    setMessage("");
+    setImportEnCours(true);
+    try {
+      const { crees } = await api.importerRegistre();
+      setMessage(
+        crees.length
+          ? `${crees.length} brouillons créés (${crees[0]} à ${crees[crees.length - 1]}). Il reste à déposer le fichier HD restauré de chacun avant de publier.`
+          : "Toutes les pièces du registre sont déjà dans la liste.",
+      );
+      setFiltre("retrouves");
+      await charger();
+    } catch (e) {
+      setMessage(e instanceof ErreurApi ? e.message : "Import impossible.");
+    } finally {
+      setImportEnCours(false);
+    }
+  };
 
   useEffect(() => {
     charger();
@@ -159,6 +181,19 @@ function Liste() {
           Mettre le site à jour
         </button>
       </div>
+      {registre && registre.restants > 0 && (
+        <div className="admin-carte admin-maj">
+          <div>
+            <strong>
+              {registre.restants} {registre.restants > 1 ? "pièces de musée retenues attendent" : "pièce de musée retenue attend"} dans le registre.
+            </strong>
+            <p>Elles seront créées en brouillon, déjà remplies : titre, époque, cartel, preuves de droits. Rien n'est publié.</p>
+          </div>
+          <button type="button" className="bouton bouton--or" onClick={importer} disabled={importEnCours}>
+            {importEnCours ? "Création…" : `Créer les ${registre.restants} brouillons`}
+          </button>
+        </div>
+      )}
       {miseAJour && !miseAJour.crochet && (
         <p className="admin-aide">Le bouton s'activera une fois le secret CROCHET_DEPLOIEMENT réglé dans Cloudflare.</p>
       )}

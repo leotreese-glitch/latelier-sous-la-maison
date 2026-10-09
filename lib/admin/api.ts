@@ -75,6 +75,8 @@ export const api = {
   supprimerFichier: (cle: string) => appel<{ fichiers: Fichier[] }>("/api/admin/fichiers/supprimer", { method: "POST", body: json({ cle }) }),
   etatMiseAJour: () => appel<{ derniereMiseAJour: string; changements: number; crochet: boolean }>("/api/admin/mise-a-jour"),
   miseAJour: () => appel<{ demandeLe: string }>("/api/admin/mise-a-jour", { method: "POST" }),
+  etatRegistre: () => appel<{ total: number; restants: number }>("/api/admin/registre"),
+  importerRegistre: () => appel<{ crees: string[] }>("/api/admin/registre", { method: "POST" }),
 };
 
 const TAILLE_MORCEAU = 20 * 1024 * 1024; // 20 Mo par morceau (le minimum accepté par R2 est 5 Mo)
