@@ -13,6 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
+          if [ "$(cat outil/mode.txt)" = "catalogue" ]; then
+            curl -sS --fail https://latelier-sous-la-maison.pages.dev/api/catalogue -o outil/catalogue.json
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add outil/catalogue.json
+            git commit -m "Copie du catalogue publié [CF-Pages-Skip]"
+            git push
+            exit 0
+          fi
           if [ "$(cat outil/mode.txt)" = "supprimer" ]; then
             gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
             exit 0
