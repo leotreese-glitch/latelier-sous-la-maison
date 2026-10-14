@@ -75,7 +75,7 @@ export const api = {
   supprimerFichier: (cle: string) => appel<{ fichiers: Fichier[] }>("/api/admin/fichiers/supprimer", { method: "POST", body: json({ cle }) }),
   etatMiseAJour: () => appel<{ derniereMiseAJour: string; changements: number; crochet: boolean }>("/api/admin/mise-a-jour"),
   miseAJour: () => appel<{ demandeLe: string }>("/api/admin/mise-a-jour", { method: "POST" }),
-  etatRegistre: () => appel<{ total: number; restants: number }>("/api/admin/registre"),
+  etatRegistre: () => appel<{ restants: number; parTiroir: Partial<Record<Famille, number>> }>("/api/admin/registre"),
   importerRegistre: () => appel<{ crees: string[] }>("/api/admin/registre", { method: "POST" }),
 };
 

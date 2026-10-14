@@ -94,7 +94,7 @@ function Liste() {
   const [miseAJour, setMiseAJour] = useState<{ changements: number; crochet: boolean; derniereMiseAJour: string } | null>(null);
   const [message, setMessage] = useState("");
   const [filtre, setFiltre] = useState<Famille | "tout">("tout");
-  const [registre, setRegistre] = useState<{ total: number; restants: number } | null>(null);
+  const [registre, setRegistre] = useState<{ restants: number; parTiroir: Partial<Record<Famille, number>> } | null>(null);
   const [importEnCours, setImportEnCours] = useState(false);
 
   const charger = useCallback(async () => {
@@ -115,10 +115,10 @@ function Liste() {
       const { crees } = await api.importerRegistre();
       setMessage(
         crees.length
-          ? `${crees.length} brouillons créés (${crees[0]} à ${crees[crees.length - 1]}). Il reste à déposer le fichier HD restauré de chacun avant de publier.`
-          : "Toutes les pièces du registre sont déjà dans la liste.",
+          ? `${crees.length} ${crees.length > 1 ? "brouillons créés" : "brouillon créé"} : ${crees.join(", ")}. Déposez le fichier HD de chacun, relisez le cartel, puis publiez.`
+          : "Tout ce qui était préparé est déjà dans la liste.",
       );
-      setFiltre("retrouves");
+      setFiltre("tout");
       await charger();
     } catch (e) {
       setMessage(e instanceof ErreurApi ? e.message : "Import impossible.");
@@ -185,9 +185,14 @@ function Liste() {
         <div className="admin-carte admin-maj">
           <div>
             <strong>
-              {registre.restants} {registre.restants > 1 ? "pièces de musée retenues attendent" : "pièce de musée retenue attend"} dans le registre.
+              {registre.restants} {registre.restants > 1 ? "designs préparés attendent" : "design préparé attend"} :{" "}
+              {(Object.keys(FAMILLES) as Famille[])
+                .filter((f) => (registre.parTiroir[f] ?? 0) > 0)
+                .map((f) => `${registre.parTiroir[f]} ${FAMILLES[f].nom.toLowerCase()}`)
+                .join(", ")}
+              .
             </strong>
-            <p>Elles seront créées en brouillon, déjà remplies : titre, époque, cartel, preuves de droits. Rien n'est publié.</p>
+            <p>Ils seront créés en brouillon, déjà remplis : titre, résumé, cartel et le reste. Rien n'est publié.</p>
           </div>
           <button type="button" className="bouton bouton--or" onClick={importer} disabled={importEnCours}>
             {importEnCours ? "Création…" : `Créer les ${registre.restants} brouillons`}

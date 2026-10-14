@@ -1,0 +1,58 @@
+[
+ {
+  "cle": "atelier:le-bal-des-visages",
+  "titre": "Le bal des visages",
+  "type": "figuratif",
+  "resume": "Une foule de visages, de mains et de spirales cernés de noir, en vert acide, orange et rose sur fond bleu nuit étoilé. Seconde version sur fond violet.",
+  "cartel": "Création originale de l'atelier : une foule de visages et de mains qui s'emboîtent comme les pièces d'un puzzle, cernés d'un trait noir épais. Couleurs vives sur un fond de nuit semé d'étoiles et de confettis. Livré en deux versions, fond bleu nuit et fond violet. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:le-jeu-des-formes",
+  "titre": "Le jeu des formes",
+  "type": "geometrique",
+  "resume": "Spirales, étoile, croissants, vagues et triangles découpés, posés sur de grands aplats bleu, rouge, orange, magenta et vert.",
+  "cartel": "Création originale de l'atelier, composée comme un collage de papiers gouachés puis découpés : des formes libres posées sur de grands aplats de couleur. Palette franche de couleurs primaires, avec le noir et le blanc pour rythmer l'ensemble. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:les-danseurs",
+  "titre": "Les danseurs",
+  "type": "figuratif",
+  "resume": "Trois silhouettes dansent entre zigzags, spirales, étoiles et rubans, sur des aplats bleu, rouge, magenta, jaune et vert.",
+  "cartel": "Création originale de l'atelier : trois danseurs en silhouette, découpés comme dans du papier, entourés de spirales et de rubans en mouvement. Couleurs vives en aplats, le noir et le blanc donnent le rythme. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:la-danse-autour-de-la-nuit",
+  "titre": "La danse autour de la nuit",
+  "type": "figuratif",
+  "resume": "Une grande forme bleu nuit semée d'étoiles, entourée de rubans ondulants, de spirales et de deux petites silhouettes, sur des bandes de couleurs vives.",
+  "cartel": "Création originale de l'atelier : au centre, une forme de nuit étoilée autour de laquelle tournent rubans, spirales et deux petits danseurs. Bandes de couleurs vives, jaune, blanc et noir pour les rubans. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:la-guitare-jaune",
+  "titre": "La guitare jaune",
+  "type": "figuratif",
+  "resume": "Une silhouette noire constellée de confettis jaunes et blancs, une guitare jaune, des rubans ondulants et des triangles, sur des aplats rouge, vert, bleu et rose.",
+  "cartel": "Création originale de l'atelier : une grande silhouette noire semée de confettis danse à côté d'une guitare jaune, entre rubans et triangles découpés. Aplats rouge, vert, bleu et rose, comme un collage de papiers de couleur. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:ginkgos-et-vagues",
+  "titre": "Ginkgos et vagues",
+  "type": "floral",
+  "resume": "Feuilles de ginkgo, brins de feuillage, étoiles, demi-lunes et vagues bleues sur fond crème, avec une silhouette verte.",
+  "cartel": "Création originale de l'atelier, pensée comme un motif continu : ginkgos, feuillages, étoiles et vagues découpés sur un fond crème. Palette douce de bleu outremer, vert sapin, orange et ocre, avec une touche de noir. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ },
+ {
+  "cle": "atelier:algues-et-baigneuses",
+  "titre": "Algues et baigneuses",
+  "type": "floral",
+  "resume": "Algues et coraux découpés, petites vagues, triangles et silhouettes ocre de baigneuses sur fond crème, en bleu, vert, orange et rouge.",
+  "cartel": "Création originale de l'atelier : un fond marin de papier découpé où les algues et les coraux entourent des baigneuses couleur ocre. Bleu, vert, orange et rouge vifs sur un fond crème. Créé avec l'assistance de l'IA.",
+  "ratio": 1
+ }
+]
