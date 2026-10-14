@@ -26,14 +26,20 @@ export default function Accueil() {
           <ul className="tiroirs">
             {(Object.keys(FAMILLES) as Famille[]).map((cle) => {
               const f = FAMILLES[cle];
+              const reels = DESIGNS.filter((d) => d.famille === cle && !d.exemple);
+              const image = reels.find((d) => d.image)?.image ?? VITRINE[cle];
               return (
                 <li key={cle} className={`tiroir tiroir--${cle}`}>
                   <span className="porte-etiquette">
                     <span>{f.nom}</span>
                   </span>
-                  <span className="tiroir__entrebaille" style={{ backgroundImage: `url(${VITRINE[cle]})` }} />
+                  <span className="tiroir__entrebaille" style={{ backgroundImage: `url(${image})` }} />
                   <p className="tiroir__phrase">{f.phrase}</p>
-                  <p className="tiroir__nombre">{f.prevus} designs prévus au lancement</p>
+                  <p className="tiroir__nombre">
+                    {reels.length > 0
+                      ? `${reels.length} design${reels.length > 1 ? "s" : ""} à découvrir`
+                      : `${f.prevus} designs prévus au lancement`}
+                  </p>
                   <Link href={`/explorer/?famille=${cle}`} className="lien">
                     {f.ouvrir}
                   </Link>

@@ -7,8 +7,13 @@ import type { Design } from "./modele";
 
 export * from "./modele";
 
-export const DESIGNS: Design[] = (donnees as Design[])
-  .filter((d) => d.statut === undefined || d.statut === "publie")
+const publies = (donnees as Design[]).filter((d) => d.statut === undefined || d.statut === "publie");
+
+// Les exemples de la maquette s'effacent d'eux-mêmes dès que leur tiroir contient de vrais designs.
+const tiroirsReels = new Set(publies.filter((d) => !d.exemple).map((d) => d.famille));
+
+export const DESIGNS: Design[] = publies
+  .filter((d) => !(d.exemple && tiroirsReels.has(d.famille)))
   .sort((a, b) => (b.publieLe ?? "").localeCompare(a.publieLe ?? ""));
 
 export function trouver(slug: string) {
