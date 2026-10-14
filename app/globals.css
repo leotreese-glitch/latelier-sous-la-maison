@@ -1605,6 +1605,10 @@ a {
   gap: 16px;
   margin-bottom: 8px;
 }
+.admin-maj--attente {
+  border-color: var(--or);
+  box-shadow: 0 0 0 1px var(--or) inset;
+}
 .admin-maj p {
   margin-top: 4px;
   color: var(--texte-doux);

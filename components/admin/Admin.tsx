@@ -166,7 +166,7 @@ function Liste() {
         </div>
       </div>
 
-      <div className="admin-carte admin-maj">
+      <div className={`admin-carte admin-maj${miseAJour && miseAJour.changements > 0 ? " admin-maj--attente" : ""}`}>
         <div>
           <strong>
             {miseAJour == null

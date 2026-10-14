@@ -22,7 +22,7 @@ import {
 } from "@/lib/modele";
 
 type Brouillon = Omit<Partial<Design>, "edition"> & { edition?: Design["edition"] | null };
-type Message = { type: "ok" | "erreur" | "info"; texte: string; manques?: string[] };
+type Message = { type: "ok" | "erreur" | "info"; texte: string; manques?: string[]; proposerMiseAJour?: boolean };
 
 const PALIERS_DEFAUT: Palier[] = [
   { licences: 10, eur: 12, usd: 14 },
@@ -108,15 +108,30 @@ export function Editeur() {
   const nbHd = fichiers.filter((f) => f.role === "hd").length;
   const manques = useMemo(() => manquesPourPublier({ ...b, edition: b.edition ?? undefined }, nbHd), [b, nbHd]);
 
+  const mettreLeSiteAJour = async () => {
+    setOccupe(true);
+    try {
+      await api.miseAJour();
+      setMessage({ type: "ok", texte: "Reconstruction demandée : le site sera à jour dans 2 à 3 minutes." });
+    } catch (e) {
+      setMessage({ type: "erreur", texte: e instanceof ErreurApi ? e.message : "Demande impossible." });
+    } finally {
+      setOccupe(false);
+    }
+  };
+
   const enregistrer = async (statut: Statut, texteOk: string) => {
     if (!design) return;
     setOccupe(true);
     setMessage(null);
     try {
       const corps = { ...b, edition: b.edition ?? null } as unknown as Partial<Design>;
+      const avant = design.statut ?? "brouillon";
       const r = await api.enregistrer(design.id, corps, statut);
       recevoir(r.design, r.fichiers);
-      setMessage({ type: "ok", texte: texteOk });
+      // Le site public est une vitrine reconstruite à la demande : on propose de le faire tout de suite.
+      const visibleChange = statut !== avant || statut === "publie";
+      setMessage({ type: "ok", texte: texteOk, proposerMiseAJour: visibleChange && statut !== "brouillon" });
     } catch (e) {
       if (e instanceof ErreurApi && e.statut === 401) return router.replace("/admin/");
       setMessage({
@@ -288,7 +303,7 @@ export function Editeur() {
               type="button"
               className="bouton bouton--or"
               disabled={occupe || Boolean(envoi)}
-              onClick={() => enregistrer("publie", "Publié. Il apparaîtra sur le site après la prochaine mise à jour.")}
+              onClick={() => enregistrer("publie", "Publié. Il apparaîtra sur le site après la mise à jour du site.")}
             >
               {design.statut === "retire" ? "Remettre en vente" : "Publier"}
             </button>
@@ -306,6 +321,14 @@ export function Editeur() {
         {message && (
           <div className={`admin-message admin-message--${message.type}`} role={message.type === "erreur" ? "alert" : "status"}>
             <p>{message.texte}</p>
+            {message.proposerMiseAJour && (
+              <p>
+                <button type="button" className="bouton bouton--or" disabled={occupe} onClick={mettreLeSiteAJour}>
+                  Mettre le site à jour maintenant
+                </button>{" "}
+                ou plus tard, une seule fois pour tous vos changements, depuis la liste des designs.
+              </p>
+            )}
             {message.manques && (
               <ul>
                 {message.manques.map((m) => (
