@@ -32,6 +32,13 @@ export function formaterDate(iso: string) {
   return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
 }
 
+/** « 16 octobre 2026 à 14 h 32 », heure de Paris. */
+export function formaterDateHeure(iso: string) {
+  const d = new Date(iso);
+  const heure = d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" }).replace(":", " h ");
+  return `${formaterDate(iso)} à ${heure}`;
+}
+
 function bouton(lien: string, texte: string) {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0"><tr><td style="background:${COULEURS.encre};border-radius:3px">
 <a href="${echapper(lien)}" style="display:inline-block;padding:13px 24px;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#ffffff;text-decoration:none;font-weight:bold">${echapper(texte)}</a>
@@ -104,6 +111,23 @@ export interface InfosCommande {
   finAcces: string;
   jeton: string;
   modeTest: boolean;
+  consentement: string | null;
+  versionCgv: string | null;
+}
+
+/**
+ * Rappel, sur un support durable, de l'accord donné avant le paiement (article L221-13 du Code de la consommation) :
+ * acceptation des conditions de vente, demande d'accès immédiat et perte du droit de rétractation.
+ */
+function recapAccord(c: InfosCommande, site: string) {
+  if (!c.consentement || Number.isNaN(Date.parse(c.consentement))) return "";
+  const quand = `${formaterDateHeure(c.consentement)} (heure de Paris)`;
+  const cgv = c.versionCgv
+    ? `vous avez accepté les ${lien(`${site}/conditions-de-vente/`, "conditions de vente")} (version ${echapper(c.versionCgv)}) et la licence, et `
+    : "";
+  return petit(
+    `<strong>Votre accord.</strong> Le ${echapper(quand)}, avant le paiement, ${cgv}vous avez demandé l'accès immédiat aux fichiers en reconnaissant perdre votre droit de rétractation dès leur mise à disposition (article L221-28, 13°, du Code de la consommation).`,
+  );
 }
 
 /** E-mail envoyé à l'acheteur après le paiement : son lien de commande, sa licence et son certificat. */
@@ -126,9 +150,10 @@ export function modeleConfirmation(c: InfosCommande & { nom: string | null }, si
       ["Montant payé", formaterMontant(c.montant, c.devise)],
       ["Date", formaterDate(c.payeeLe)],
     ]),
+    recapAccord(c, site),
     petit(`Votre certificat est consultable et imprimable à tout moment : ${lien(lienCertificat, "voir le certificat")}.`),
     petit(`Le texte complet de la licence : ${lien(`${site}/licence/`, `${hote(site)}/licence`)}.`),
-    petit(`Le reçu du paiement vous est envoyé séparément par Stripe, notre prestataire de paiement.`),
+    petit(`Le reçu et la facture du paiement vous sont envoyés séparément par Link (groupe Stripe), notre prestataire de paiement.`),
   ].join("\n");
   return {
     sujet,

@@ -117,6 +117,18 @@ la vente est quand même enregistrée et l'e-mail peut être renvoyé depuis l'a
 
 **Adresse de contact.** Elle n'est affichée sur le site et dans les e-mails qu'une fois vérifiée : passer `actif` à `true` dans `lib/site.ts`.
 
+## Pages légales
+
+Les trois pages (`/conditions-de-vente/`, `/mentions-legales/`, `/confidentialite/`) lisent leurs informations dans `lib/legal.ts`. Tant qu'un champ y est vide, la page affiche « à compléter » et un avertissement qui liste ce qui manque.
+
+À remplir une fois la micro-entreprise créée : nom suivi de « EI », adresse (une domiciliation convient), téléphone, SIRET, mention de TVA (« TVA non applicable, article 293 B du CGI » en franchise), et le médiateur de la consommation choisi (nom, adresse, site). Changer aussi `MISE_A_JOUR_LEGALE`, et `VERSION_CGV` si le texte des conditions de vente change.
+
+Avant de payer, l'acheteur coche deux cases distinctes : conditions de vente et licence ; accès immédiat avec perte du droit de rétractation. Le serveur refuse l'achat sans les deux. L'heure de l'accord et la version des conditions sont gardées dans la commande et rappelées dans l'e-mail de confirmation.
+
+Dans Stripe, Paramètres > Checkout : renseigner l'adresse des conditions d'utilisation (`https://latelier-sous-la-maison.com/conditions-de-vente/`) et de la politique de confidentialité (`https://latelier-sous-la-maison.com/confidentialite/`).
+
+Ces textes sont une base de travail : à faire relire par un juriste avant le passage en paiement réel.
+
 ## Ajouter un design
 
 1. `/admin/`, puis **Nouveau** dans le bon tiroir. L'identifiant (`orig-0006`, `dp-0011`…) est attribué tout seul et ne changera jamais.
@@ -172,5 +184,5 @@ Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` e
 1. Maquette : identité visuelle, accueil, grille, fiche design (fait)
 2. Socle du site : catalogue en base, administration, aperçus filigranés, stockage privé (fait)
 3. Comptes : inscription, favoris, tableaux, historique d'achats
-4. Paiement : Stripe en mode test, livraison HD par lien temporaire, certificats de licence (fait en mode test ; courriels à ajouter avant le mode réel)
-5. Finitions : anglais, pages légales, mesure d'audience sans cookies
+4. Paiement : Stripe en mode test, livraison HD par lien temporaire, certificats de licence, e-mails (fait en mode test)
+5. Finitions : pages légales (rédigées, à compléter et à faire relire), anglais, mesure d'audience sans cookies

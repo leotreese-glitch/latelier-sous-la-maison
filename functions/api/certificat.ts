@@ -18,7 +18,6 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
       statut: l.statut,
       delivreLe: l.payee_le,
       titulaire: l.nom || emailMasque(l.email) || "Acheteur",
-      email: emailMasque(l.email),
       design: { id: l.design_id, titre: d.titre, slug: d.slug, tiroir: nomTiroir(d.famille) },
       licence: d.licence,
       modeTest: l.mode_test === 1,

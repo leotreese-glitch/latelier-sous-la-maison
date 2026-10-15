@@ -9,7 +9,8 @@ type Etat = { type: "repos" } | { type: "envoi" } | { type: "message"; texte: st
 
 export function Achat({ d }: { d: Design }) {
   const { devise } = useDevise();
-  const [accord, setAccord] = useState(false);
+  const [cgv, setCgv] = useState(false);
+  const [immediat, setImmediat] = useState(false);
   const [etat, setEtat] = useState<Etat>({ type: "repos" });
   const edition = prixEdition(d);
   const prix = edition ? edition.palier : d.prix;
@@ -23,8 +24,8 @@ export function Achat({ d }: { d: Design }) {
     : `Acheter la licence, ${formatPrix(devise === "eur" ? prix.eur : prix.usd, devise)}`;
 
   const acheter = async () => {
-    if (!accord) {
-      setEtat({ type: "message", texte: "Cochez d'abord la case ci-dessus.", erreur: true });
+    if (!cgv || !immediat) {
+      setEtat({ type: "message", texte: "Cochez d'abord les deux cases ci-dessus.", erreur: true });
       return;
     }
     setEtat({ type: "envoi" });
@@ -32,7 +33,7 @@ export function Achat({ d }: { d: Design }) {
       const rep = await fetch("/api/achat", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ design: d.id, devise, consentement: true }),
+        body: JSON.stringify({ design: d.id, devise, cgv: true, consentement: true }),
       });
       const corps = (await rep.json().catch(() => ({}))) as { url?: string; erreur?: string; code?: string; detail?: string };
       if (rep.ok && corps.url) {
@@ -82,20 +83,35 @@ export function Achat({ d }: { d: Design }) {
 
       {enVente ? (
         <>
-          <label className="case achat__accord">
-            <input
-              type="checkbox"
-              checked={accord}
-              onChange={(e) => {
-                setAccord(e.target.checked);
-                if (etat.type === "message") setEtat({ type: "repos" });
-              }}
-            />
-            <span>
-              J'ai lu <Link href="/licence/">la licence</Link>. Je demande l'accès immédiat aux fichiers et je renonce à mon droit de
-              rétractation de 14 jours.
-            </span>
-          </label>
+          <div className="achat__accords">
+            <label className="case achat__accord">
+              <input
+                type="checkbox"
+                checked={cgv}
+                onChange={(e) => {
+                  setCgv(e.target.checked);
+                  if (etat.type === "message") setEtat({ type: "repos" });
+                }}
+              />
+              <span>
+                J'ai lu et j'accepte les <Link href="/conditions-de-vente/">conditions de vente</Link> et{" "}
+                <Link href="/licence/">la licence</Link>.
+              </span>
+            </label>
+            <label className="case achat__accord">
+              <input
+                type="checkbox"
+                checked={immediat}
+                onChange={(e) => {
+                  setImmediat(e.target.checked);
+                  if (etat.type === "message") setEtat({ type: "repos" });
+                }}
+              />
+              <span>
+                Je demande l'accès immédiat aux fichiers et je reconnais perdre mon droit de rétractation dès leur mise à disposition.
+              </span>
+            </label>
+          </div>
           <div className="achat__actions">
             <button type="button" className="bouton bouton--or" onClick={acheter} disabled={etat.type === "envoi"}>
               {etat.type === "envoi" ? "Ouverture du paiement…" : action}

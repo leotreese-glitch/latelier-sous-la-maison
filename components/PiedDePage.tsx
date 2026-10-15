@@ -18,8 +18,9 @@ export function PiedDePage() {
           <Link href="/certificat/">Vérifier un certificat</Link>
           <Link href="/commande/retrouver/">Retrouver mes commandes</Link>
           {CONTACT.actif && <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>}
-          <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Mentions légales</a>
-          <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Conditions de vente</a>
+          <Link href="/conditions-de-vente/">Conditions de vente</Link>
+          <Link href="/mentions-legales/">Mentions légales</Link>
+          <Link href="/confidentialite/">Confidentialité</Link>
         </nav>
       </div>
       <p className="pied__note">© 2026 L'atelier sous la maison. Site en préparation.</p>

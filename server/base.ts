@@ -61,6 +61,8 @@ export function preparerBase(db: D1Database) {
       const deja = await db.prepare("SELECT valeur FROM meta WHERE cle = 'graines'").first<{ valeur: string }>();
       if (!deja) await semer(db);
       await migrer(db);
+      // Les adresses IP et empreintes des limites de fréquence ne sont gardées que 24 heures (annoncé dans la page Confidentialité).
+      await db.prepare("DELETE FROM tentatives_connexion WHERE quand < ?1").bind(Date.now() - 24 * 3600 * 1000).run();
     })().catch((e) => {
       pret = null;
       throw e;

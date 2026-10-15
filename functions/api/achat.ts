@@ -4,6 +4,7 @@ import { erreur, json, type Env } from "../../server/env";
 import { origineAutorisee } from "../../server/securite";
 import { appelStripe, CODE_TAXE, ErreurStripe, type SessionStripe } from "../../server/stripe";
 import { typeLicence, VERSION_LICENCE } from "../../lib/licence";
+import { VERSION_CGV } from "../../lib/legal";
 import { IDENTIFIANT } from "../../server/fichiers";
 
 /**
@@ -15,12 +16,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!env.DB || !env.STRIPE_CLE_SECRETE) return erreur(503, "Le paiement n'est pas encore ouvert.", { code: "paiement-ferme" });
   await preparerBase(env.DB);
 
-  const corps = (await request.json().catch(() => null)) as { design?: string; devise?: string; consentement?: boolean } | null;
+  const corps = (await request.json().catch(() => null)) as { design?: string; devise?: string; cgv?: boolean; consentement?: boolean } | null;
   const id = String(corps?.design ?? "");
   const devise = corps?.devise === "usd" ? "usd" : "eur";
   if (!IDENTIFIANT.test(id)) return erreur(400, "Design inconnu.");
+  if (corps?.cgv !== true) {
+    return erreur(400, "Cochez la case pour accepter les conditions de vente et la licence avant de payer.", { code: "cgv" });
+  }
   if (corps?.consentement !== true) {
-    return erreur(400, "Cochez la case pour accepter le téléchargement immédiat avant de payer.", { code: "consentement" });
+    return erreur(400, "Cochez la case pour demander l'accès immédiat aux fichiers avant de payer.", { code: "consentement" });
   }
 
   const d = await lireDesign(env.DB, id);
@@ -59,6 +63,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         design: d.id,
         licence: typeLicence(d.famille),
         version_licence: VERSION_LICENCE,
+        version_cgv: VERSION_CGV,
         consentement: new Date().toISOString(),
       },
       success_url: `${origine}/merci/?session={CHECKOUT_SESSION_ID}`,

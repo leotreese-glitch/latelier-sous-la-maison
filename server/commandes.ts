@@ -46,7 +46,10 @@ export interface DonneesCommande {
   slug: string;
   famille: Design["famille"];
   licence: Licence;
+  /** Date et heure de l'accord donné avant le paiement (accès immédiat et perte du droit de rétractation). */
   consentement: string | null;
+  /** Version des conditions de vente acceptées (absente sur les commandes antérieures aux conditions de vente). */
+  versionCgv?: string | null;
 }
 
 export interface LigneCommande {
@@ -94,6 +97,7 @@ export async function enregistrerCommande(db: D1Database, env: Env, session: Ses
     famille: design.famille,
     licence: LICENCES[typeLicence(design.famille)],
     consentement: session.metadata?.consentement ?? null,
+    versionCgv: session.metadata?.version_cgv ?? null,
   };
   const paiement = typeof session.payment_intent === "string" ? session.payment_intent : (session.payment_intent?.id ?? null);
   const id = jetonAleatoire();
@@ -203,6 +207,8 @@ function infosCommande(l: LigneCommande): InfosCommande {
     finAcces: finAcces(l),
     jeton: l.id,
     modeTest: l.mode_test === 1,
+    consentement: d.consentement ?? null,
+    versionCgv: d.versionCgv ?? null,
   };
 }
 

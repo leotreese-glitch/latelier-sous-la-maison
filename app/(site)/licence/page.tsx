@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { JOURS_ACCES, LICENCES, VERSION_LICENCE, type Licence } from "@/lib/licence";
 
 export const metadata: Metadata = {
@@ -54,8 +55,8 @@ export default function PageLicence() {
           <li>Chaque certificat porte un numéro unique, vérifiable sur la page « Vérifier un certificat ».</li>
           <li>Le lien de votre commande vous est aussi envoyé par e-mail. En cas de perte, la page « Retrouver mes commandes » vous le renvoie.</li>
           <li>
-            Les fichiers numériques sont livrés tout de suite : en cochant la case avant de payer, vous renoncez au droit de rétractation de 14
-            jours.
+            Les fichiers numériques sont livrés tout de suite : avant de payer, vous demandez cet accès immédiat et reconnaissez perdre le
+            droit de rétractation de 14 jours. Le détail figure dans les <Link href="/conditions-de-vente/">conditions de vente</Link>.
           </li>
         </ul>
       </section>
