@@ -64,7 +64,7 @@ Le paiement passe par **Stripe Managed Payments** : Stripe devient le vendeur of
 
 **A. Le compte Stripe**
 1. Crée un compte sur [dashboard.stripe.com/register](https://dashboard.stripe.com/register). Tu arrives dans un environnement de test (sandbox) : rien n'y est réellement débité.
-2. **Settings**, puis **Managed Payments** : active-le et accepte ses conditions. S'il ne s'affiche pas, voir « Sans Managed Payments » plus bas.
+2. **Settings**, puis **Managed Payments** ([dashboard.stripe.com/settings/managed-payments](https://dashboard.stripe.com/settings/managed-payments)) : active-le et accepte ses conditions. S'il ne s'affiche pas, voir « Sans Managed Payments » plus bas.
 3. **Settings**, puis **Business**, puis **Public details** : renseigne un e-mail d'assistance. Il apparaît sur les reçus.
 
 **B. La clé secrète**
@@ -72,10 +72,11 @@ Le paiement passe par **Stripe Managed Payments** : Stripe devient le vendeur of
 2. Dans Cloudflare, projet du site : **Settings**, puis **Variables and Secrets**, puis **Add**. Type **Secret**, nom `STRIPE_CLE_SECRETE`, valeur : la clé. Ne la colle jamais ailleurs.
 
 **C. Le webhook (la confirmation des paiements)**
-1. **Developers**, puis **Webhooks**, puis **Add endpoint** (ou **Add destination**).
-2. Adresse : `https://latelier-sous-la-maison.pages.dev/api/stripe/webhook`
-3. Événements : `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `charge.refunded`.
-4. Ouvre le webhook créé et révèle le **Signing secret** (il commence par `whsec_`). Ajoute-le dans Cloudflare comme secret `STRIPE_SECRET_WEBHOOK`.
+1. **Workbench**, onglet **Webhooks** ([dashboard.stripe.com/webhooks](https://dashboard.stripe.com/webhooks)), puis **Create an event destination**.
+2. **Your account**, puis le format **Snapshot** (pas « Thin », même s'il est recommandé : le site lit le contenu complet des événements). Garde la version d'API proposée.
+3. Événements : `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `charge.refunded`. **Continue**, type **Webhook endpoint**, **Continue**.
+4. Adresse : `https://latelier-sous-la-maison.pages.dev/api/stripe/webhook`, puis crée la destination.
+5. Sur la page du webhook, **Reveal secret** (il commence par `whsec_`). Ajoute-le dans Cloudflare comme secret `STRIPE_SECRET_WEBHOOK`.
 
 **D. Relancer le site**
 1. Cloudflare, onglet **Deployments**, sur le dernier déploiement : **…**, puis **Retry deployment**.
@@ -83,7 +84,7 @@ Le paiement passe par **Stripe Managed Payments** : Stripe devient le vendeur of
 
 **E. Faire un achat d'essai**
 1. Sur une fiche, coche la case, puis **Acheter la licence**.
-2. Carte `4242 4242 4242 4242`, une date future, n'importe quel code à 3 chiffres.
+2. Carte `4242 4242 4242 4242`, une date future, n'importe quel code à 3 chiffres. Si Stripe demande un code Link, c'est `000000` en test.
 3. Tu reviens sur la page de commande : télécharge le fichier, ouvre le certificat. La vente apparaît dans `/admin/ventes/`.
 4. Pour tester un remboursement : dans Stripe, **Payments**, ouvre le paiement, **Refund**. La page de commande indique alors « remboursée » et les fichiers ne sont plus téléchargeables.
 
