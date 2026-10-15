@@ -27,7 +27,8 @@
       "usd": 17
     },
     "statut": "publie",
-    "publieLe": "2026-10-08T12:00:00.000Z"
+    "publieLe": "2026-10-08T12:00:00.000Z",
+    "exemple": true
   },
   {
     "id": "orig-0002",
@@ -77,7 +78,8 @@
       "vendues": 3
     },
     "statut": "publie",
-    "publieLe": "2026-10-08T11:59:00.000Z"
+    "publieLe": "2026-10-08T11:59:00.000Z",
+    "exemple": true
   },
   {
     "id": "orig-0003",
@@ -105,7 +107,8 @@
       "usd": 17
     },
     "statut": "publie",
-    "publieLe": "2026-10-08T11:58:00.000Z"
+    "publieLe": "2026-10-08T11:58:00.000Z",
+    "exemple": true
   },
   {
     "id": "dp-0001",

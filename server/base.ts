@@ -60,12 +60,35 @@ export function preparerBase(db: D1Database) {
       await db.batch(SCHEMA.map((s) => db.prepare(s)));
       const deja = await db.prepare("SELECT valeur FROM meta WHERE cle = 'graines'").first<{ valeur: string }>();
       if (!deja) await semer(db);
+      await migrer(db);
     })().catch((e) => {
       pret = null;
       throw e;
     });
   }
   return pret;
+}
+
+/**
+ * Corrections ponctuelles des données, appliquées une seule fois chacune (la clé est notée dans meta).
+ * Elles ne changent pas la date de modification : le site est reconstruit en même temps qu'elles arrivent.
+ */
+const MIGRATIONS: { cle: string; requete: string }[] = [
+  {
+    // Trois motifs de la maquette publiés sans l'étiquette « Exemple » et sans fichier HD :
+    // retirés de la vente à la demande de Léo (15 octobre 2026). Ils restent supprimables dans l'administration.
+    cle: "migration:2026-10-15-exemples-orig",
+    requete: `UPDATE designs SET statut = 'retire', donnees = json_set(donnees, '$.exemple', json('true'))
+      WHERE id IN ('orig-0001', 'orig-0002', 'orig-0003')
+      AND NOT EXISTS (SELECT 1 FROM fichiers f WHERE f.design_id = designs.id AND f.role = 'hd')`,
+  },
+];
+
+async function migrer(db: D1Database) {
+  for (const m of MIGRATIONS) {
+    if (await lireMeta(db, m.cle)) continue;
+    await db.batch([db.prepare(m.requete), db.prepare("INSERT OR REPLACE INTO meta (cle, valeur) VALUES (?1, ?2)").bind(m.cle, new Date().toISOString())]);
+  }
 }
 
 /** Remplit la base avec le catalogue de départ, une seule fois dans la vie du site. */
