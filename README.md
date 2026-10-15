@@ -108,7 +108,7 @@ la vente est quand même enregistrée et l'e-mail peut être renvoyé depuis l'a
 **Réglages, une seule fois :**
 1. Cloudflare, **Domain Registration**, puis **Register Domains** : acheter `latelier-sous-la-maison.com`.
 2. Projet Pages, onglet **Custom domains** : ajouter `latelier-sous-la-maison.com`, puis `www.latelier-sous-la-maison.com`.
-3. Domaine, **Email**, puis **Email Routing** : activer, et faire suivre `contact@latelier-sous-la-maison.com` vers la boîte de Léo.
+3. **Compute**, **Email Service**, **Email Routing** (ou, selon l'affichage, le domaine puis **Email**, **Email Routing**) : **Onboard Domain** sur le domaine, ajouter la boîte de Léo dans **Destination Addresses** et la vérifier, puis **Routing Rules**, **Create routing rule** : `contact` → **Send to an email** → cette boîte.
 4. Brevo : créer le compte, puis **Settings**, **Senders, Domains, IPs**, **Domains** : ajouter le domaine (authentification automatique avec Cloudflare, ou recopier les enregistrements DNS en mettant les CNAME en « DNS only »).
 5. Brevo, onglet **Senders** : déclarer `commandes@latelier-sous-la-maison.com`, nom « L'atelier sous la maison ».
 6. Brevo, **SMTP & API**, **API keys** : générer une clé et l'ajouter dans Cloudflare comme secret `BREVO_CLE_API`.
