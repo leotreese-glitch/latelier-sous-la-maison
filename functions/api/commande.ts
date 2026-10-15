@@ -2,12 +2,14 @@ import { preparerBase, lireFichiers } from "../../server/base";
 import {
   accesOuvert,
   enregistrerCommande,
-  JOURS_ACCES,
+  envoyerCourrielsCommande,
+  finAcces,
   lienTelechargement,
   lireDonnees,
   nomLivre,
   type LigneCommande,
 } from "../../server/commandes";
+import { adresseSite, courrielActif } from "../../server/courriel";
 import { erreur, json, type Env } from "../../server/env";
 import { appelStripe, ErreurStripe, type SessionStripe } from "../../server/stripe";
 
@@ -17,7 +19,7 @@ import { appelStripe, ErreurStripe, type SessionStripe } from "../../server/stri
  *   n'est pas encore arrivé, et renvoie le jeton de la page de commande ;
  * - ?t=<jeton> (page de commande) : renvoie la commande et des liens de téléchargement valables une heure.
  */
-export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
+export const onRequestGet: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   if (!env.DB || !env.SECRET_SESSION) return erreur(503, "Le paiement n'est pas encore ouvert.");
   await preparerBase(env.DB);
   const url = new URL(request.url);
@@ -37,7 +39,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
         return json({ statut: "en-attente" });
       }
     }
-    return ligne ? json({ statut: "payee", jeton: ligne.id }) : json({ statut: "en-attente" });
+    if (!ligne) return json({ statut: "en-attente" });
+    // Si le webhook n'est pas encore passé, c'est cette page qui déclenche l'e-mail (une seule fois au total).
+    if (!ligne.courriel_envoye_le) waitUntil(envoyerCourrielsCommande(env.DB, env, ligne, adresseSite(env, request)));
+    return json({ statut: "payee", jeton: ligne.id });
   }
 
   if (!jeton || !/^[A-Za-z0-9_-]{20,64}$/.test(jeton)) return erreur(400, "Lien de commande invalide.");
@@ -60,7 +65,8 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
       )
     : [];
 
-  const finAcces = new Date(Date.parse(l.payee_le) + JOURS_ACCES * 24 * 3600 * 1000).toISOString();
+  // Un e-mail qui n'est pas parti (Brevo indisponible) est retenté à l'ouverture de la page.
+  if (!l.courriel_envoye_le && l.statut === "payee") waitUntil(envoyerCourrielsCommande(env.DB, env, l, adresseSite(env, request)));
   return json(
     {
       commande: {
@@ -76,8 +82,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
         certificat: l.certificat,
         licence: d.licence.nom,
         modeTest: l.mode_test === 1,
-        finAcces,
+        finAcces: finAcces(l),
         ouvert,
+        courrielActif: courrielActif(env),
+        courrielEnvoye: Boolean(l.courriel_envoye_le),
       },
       fichiers,
     },

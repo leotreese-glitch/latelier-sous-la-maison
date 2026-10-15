@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT } from "@/lib/site";
 import { Marque } from "./Logo";
 
 export function PiedDePage() {
@@ -15,6 +16,8 @@ export function PiedDePage() {
           <Link href="/identite/">Identité visuelle</Link>
           <Link href="/licence/">Licences</Link>
           <Link href="/certificat/">Vérifier un certificat</Link>
+          <Link href="/commande/retrouver/">Retrouver mes commandes</Link>
+          {CONTACT.actif && <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>}
           <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Mentions légales</a>
           <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Conditions de vente</a>
         </nav>

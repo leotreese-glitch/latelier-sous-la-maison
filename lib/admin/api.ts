@@ -22,6 +22,8 @@ export interface EtatConfig {
   paiement?: boolean;
   webhook?: boolean;
   modeTest?: boolean;
+  courriel?: boolean;
+  alerteVentes?: boolean;
 }
 
 export interface Vente {
@@ -36,6 +38,7 @@ export interface Vente {
   certificat: string;
   telechargements: number;
   modeTest: boolean;
+  courrielEnvoye: boolean;
 }
 
 export class ErreurApi extends Error {
@@ -93,9 +96,12 @@ export const api = {
   etatMiseAJour: () => appel<{ derniereMiseAJour: string; changements: number; crochet: boolean }>("/api/admin/mise-a-jour"),
   miseAJour: () => appel<{ demandeLe: string }>("/api/admin/mise-a-jour", { method: "POST" }),
   ventes: () =>
-    appel<{ ventes: Vente[]; totaux: Record<string, { reel: number; test: number }>; config: { paiement: boolean; webhook: boolean; modeTest: boolean } }>(
-      "/api/admin/ventes",
-    ),
+    appel<{
+      ventes: Vente[];
+      totaux: Record<string, { reel: number; test: number }>;
+      config: { paiement: boolean; webhook: boolean; modeTest: boolean; courriel: boolean; alerteVentes: boolean };
+    }>("/api/admin/ventes"),
+  renvoyerCourriel: (certificat: string) => appel<{ envoye: boolean }>("/api/admin/ventes", { method: "POST", body: json({ certificat }) }),
   etatRegistre: () => appel<{ restants: number; parTiroir: Partial<Record<Famille, number>> }>("/api/admin/registre"),
   importerRegistre: () => appel<{ crees: string[] }>("/api/admin/registre", { method: "POST" }),
 };

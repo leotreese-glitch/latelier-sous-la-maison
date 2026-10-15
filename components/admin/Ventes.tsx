@@ -17,13 +17,32 @@ function dateCourte(iso: string) {
 export function Ventes() {
   const [donnees, setDonnees] = useState<Donnees | null>(null);
   const [message, setMessage] = useState("");
+  const [avis, setAvis] = useState<{ texte: string; erreur?: boolean } | null>(null);
+  const [envoiEnCours, setEnvoiEnCours] = useState<string | null>(null);
 
-  useEffect(() => {
+  const charger = () =>
     api
       .ventes()
       .then(setDonnees)
       .catch((e) => setMessage(e instanceof ErreurApi && e.statut === 401 ? "deconnecte" : e instanceof ErreurApi ? e.message : "Chargement impossible."));
+
+  useEffect(() => {
+    charger();
   }, []);
+
+  const renvoyer = async (v: Vente) => {
+    setAvis(null);
+    setEnvoiEnCours(v.certificat);
+    try {
+      await api.renvoyerCourriel(v.certificat);
+      setAvis({ texte: `E-mail de confirmation renvoyé à ${v.email ?? "l'acheteur"}.` });
+      await charger();
+    } catch (e) {
+      setAvis({ texte: e instanceof ErreurApi ? e.message : "Envoi impossible.", erreur: true });
+    } finally {
+      setEnvoiEnCours(null);
+    }
+  };
 
   if (message === "deconnecte") {
     return (
@@ -58,8 +77,18 @@ export function Ventes() {
               ? "Carte de test : 4242 4242 4242 4242, une date future, n'importe quel code."
               : "Réglez STRIPE_CLE_SECRETE et STRIPE_SECRET_WEBHOOK dans Cloudflare (voir le guide « Étape 4 » du README)."}
           </p>
+          <p>
+            {config.courriel
+              ? `E-mails actifs : chaque acheteur reçoit son lien de commande${config.alerteVentes ? ", et vous recevez une alerte à chaque vente" : " (alerte de vente : variable EMAIL_ALERTE_VENTES à régler)"}.`
+              : "E-mails pas encore branchés : réglez le secret BREVO_CLE_API dans Cloudflare."}
+          </p>
         </div>
       </div>
+      {avis && (
+        <p className={`admin-message${avis.erreur ? " admin-message--erreur" : " admin-message--ok"}`} role="status">
+          {avis.texte}
+        </p>
+      )}
 
       <ul className="admin-totaux">
         {Object.entries(totaux).map(([devise, t]) => (
@@ -87,6 +116,7 @@ export function Ventes() {
                 <th scope="col">Montant</th>
                 <th scope="col">Acheteur</th>
                 <th scope="col">Certificat</th>
+                <th scope="col">E-mail</th>
                 <th scope="col">Téléch.</th>
               </tr>
             </thead>
@@ -110,6 +140,14 @@ export function Ventes() {
                     <a href={`/certificat/?n=${v.certificat}`} target="_blank" rel="noopener">
                       {v.certificat}
                     </a>
+                  </td>
+                  <td className="admin-num">
+                    {v.courrielEnvoye ? "Envoyé" : config.courriel ? "Non envoyé" : "Inactif"}
+                    {config.courriel && v.email && (
+                      <button type="button" className="admin-lien-bouton" onClick={() => renvoyer(v)} disabled={envoiEnCours !== null}>
+                        {envoiEnCours === v.certificat ? "Envoi…" : "Renvoyer"}
+                      </button>
+                    )}
                   </td>
                   <td className="admin-num">{v.telechargements}</td>
                 </tr>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { CONTACT } from "@/lib/site";
 
 interface FichierCommande {
   nom: string;
@@ -27,6 +28,8 @@ interface DonneesCommande {
     modeTest: boolean;
     finAcces: string;
     ouvert: boolean;
+    courrielActif?: boolean;
+    courrielEnvoye?: boolean;
   };
   fichiers: FichierCommande[];
 }
@@ -115,8 +118,16 @@ export function Commande() {
 
       <div className="commande__garder">
         <p>
-          <strong>Gardez le lien de cette page.</strong> C'est votre accès à vos fichiers et à votre certificat : aucun courriel ne vous sera
-          envoyé pour l'instant.
+          <strong>Gardez le lien de cette page.</strong> C'est votre accès à vos fichiers et à votre certificat.{" "}
+          {c.courrielActif ? (
+            <>
+              {c.courrielEnvoye ? "Nous vous l'avons aussi envoyé" : "Nous vous l'envoyons aussi"} par e-mail
+              {c.email ? ` à ${c.email}` : ""}. En cas de perte, <Link href="/commande/retrouver/">retrouvez vos commandes</Link> avec votre
+              adresse.
+            </>
+          ) : (
+            "Aucun e-mail ne vous sera envoyé pour l'instant."
+          )}
         </p>
         <button type="button" className="bouton bouton--contour" onClick={copier}>
           {copie ? "Lien copié" : "Copier le lien de cette page"}
@@ -169,6 +180,12 @@ export function Commande() {
           </Link>
         </p>
       </section>
+      {CONTACT.actif && (
+        <p className="commande__note">
+          Une question sur votre commande ? Écrivez à <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> en indiquant le numéro de votre
+          certificat.
+        </p>
+      )}
     </>
   );
 }

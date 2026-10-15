@@ -75,6 +75,15 @@ export function preparerBase(db: D1Database) {
  */
 const MIGRATIONS: { cle: string; requete: string }[] = [
   {
+    // Suivi de l'e-mail de confirmation envoyé à l'acheteur (une seule fois par commande).
+    cle: "migration:2026-10-15-commandes-courriel-envoye",
+    requete: "ALTER TABLE commandes ADD COLUMN courriel_envoye_le TEXT",
+  },
+  {
+    cle: "migration:2026-10-15-commandes-courriel-tente",
+    requete: "ALTER TABLE commandes ADD COLUMN courriel_tente_le TEXT",
+  },
+  {
     // Trois motifs de la maquette publiés sans l'étiquette « Exemple » et sans fichier HD :
     // retirés de la vente à la demande de Léo (15 octobre 2026). Ils restent supprimables dans l'administration.
     cle: "migration:2026-10-15-exemples-orig",
@@ -87,7 +96,18 @@ const MIGRATIONS: { cle: string; requete: string }[] = [
 async function migrer(db: D1Database) {
   for (const m of MIGRATIONS) {
     if (await lireMeta(db, m.cle)) continue;
-    await db.batch([db.prepare(m.requete), db.prepare("INSERT OR REPLACE INTO meta (cle, valeur) VALUES (?1, ?2)").bind(m.cle, new Date().toISOString())]);
+    const noter = db.prepare("INSERT OR REPLACE INTO meta (cle, valeur) VALUES (?1, ?2)").bind(m.cle, new Date().toISOString());
+    try {
+      await db.batch([db.prepare(m.requete), noter]);
+    } catch (e) {
+      // Deux instances peuvent lancer la même correction au même moment : la seconde trouve la colonne déjà là.
+      if (/duplicate column/i.test(String(e))) {
+        await noter.run();
+        continue;
+      }
+      if (await lireMeta(db, m.cle)) continue;
+      throw e;
+    }
   }
 }
 

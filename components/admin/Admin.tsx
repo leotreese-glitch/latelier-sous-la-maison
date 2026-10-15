@@ -20,6 +20,8 @@ const LIGNES_CONFIG: { cle: keyof EtatConfig; nom: string; detail: string; requi
   { cle: "crochet", nom: "Mise à jour du site", detail: "secret CROCHET_DEPLOIEMENT", requis: false },
   { cle: "paiement", nom: "Paiement Stripe", detail: "secret STRIPE_CLE_SECRETE", requis: false },
   { cle: "webhook", nom: "Confirmation des paiements", detail: "secret STRIPE_SECRET_WEBHOOK", requis: false },
+  { cle: "courriel", nom: "Envoi des e-mails (Brevo)", detail: "secret BREVO_CLE_API", requis: false },
+  { cle: "alerteVentes", nom: "Alerte à chaque vente", detail: "variable EMAIL_ALERTE_VENTES", requis: false },
 ];
 
 export function EtatConfiguration({ config }: { config?: EtatConfig }) {

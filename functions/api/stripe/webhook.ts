@@ -1,5 +1,6 @@
 import { preparerBase } from "../../../server/base";
-import { enregistrerCommande } from "../../../server/commandes";
+import { enregistrerCommande, envoyerCourrielsCommande } from "../../../server/commandes";
+import { adresseSite } from "../../../server/courriel";
 import { erreur, json, type Env } from "../../../server/env";
 import { signatureValide, type SessionStripe } from "../../../server/stripe";
 
@@ -11,10 +12,11 @@ interface Evenement {
 
 /**
  * Point d'arrivée des événements Stripe (à déclarer dans Stripe : Développeurs > Webhooks).
- * - checkout.session.completed / async_payment_succeeded : l'achat est enregistré et les fichiers deviennent téléchargeables.
+ * - checkout.session.completed / async_payment_succeeded : l'achat est enregistré, les fichiers deviennent téléchargeables
+ *   et l'e-mail de confirmation part (une seule fois).
  * - charge.refunded : la commande passe en « remboursée » et l'accès aux fichiers se ferme.
  */
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   if (!env.DB || !env.STRIPE_SECRET_WEBHOOK) return erreur(503, "Webhook non configuré.");
   const corps = await request.text();
   if (!(await signatureValide(corps, request.headers.get("stripe-signature"), env.STRIPE_SECRET_WEBHOOK))) {
@@ -27,7 +29,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     case "checkout.session.completed":
     case "checkout.session.async_payment_succeeded": {
       const session = evt.data.object as unknown as SessionStripe;
-      if (session.payment_status === "paid") await enregistrerCommande(env.DB, env, session);
+      if (session.payment_status === "paid") {
+        const ligne = await enregistrerCommande(env.DB, env, session);
+        // L'e-mail part après la réponse à Stripe, pour ne jamais retarder ni faire échouer le webhook.
+        if (ligne) waitUntil(envoyerCourrielsCommande(env.DB, env, ligne, adresseSite(env, request)));
+      }
       break;
     }
     case "charge.refunded": {

@@ -2,7 +2,9 @@
 import { JOURS_ACCES, LICENCES, typeLicence, type Licence } from "../lib/licence";
 import { FAMILLES, prixEdition, type Design } from "../lib/modele";
 import { lireDesign } from "./base";
+import { courrielActif, envoyerCourriel } from "./courriel";
 import type { Env } from "./env";
+import { modeleAlerteVente, modeleConfirmation, type InfosCommande } from "./modeles-courriel";
 import type { SessionStripe } from "./stripe";
 
 export { JOURS_ACCES };
@@ -64,6 +66,8 @@ export interface LigneCommande {
   telechargements: number;
   payee_le: string;
   cree_le: string;
+  courriel_envoye_le?: string | null;
+  courriel_tente_le?: string | null;
 }
 
 export function lireDonnees(l: LigneCommande): DonneesCommande {
@@ -179,4 +183,78 @@ export function emailMasque(email: string | null) {
 
 export function nomTiroir(famille: Design["famille"]) {
   return FAMILLES[famille]?.nom ?? famille;
+}
+
+export function finAcces(l: LigneCommande) {
+  return new Date(Date.parse(l.payee_le) + JOURS_ACCES * 24 * 3600 * 1000).toISOString();
+}
+
+function infosCommande(l: LigneCommande): InfosCommande {
+  const d = lireDonnees(l);
+  return {
+    titre: d.titre,
+    designId: l.design_id,
+    coloriage: d.famille === "petit-atelier",
+    licence: d.licence.nom,
+    certificat: l.certificat,
+    montant: l.montant,
+    devise: l.devise,
+    payeeLe: l.payee_le,
+    finAcces: finAcces(l),
+    jeton: l.id,
+    modeTest: l.mode_test === 1,
+  };
+}
+
+/** Délai avant de retenter un envoi qui n'a pas abouti (Brevo indisponible, par exemple). */
+const NOUVEL_ESSAI_MS = 10 * 60 * 1000;
+
+/**
+ * Envoie l'e-mail de confirmation à l'acheteur (et l'alerte de vente à Léo), une seule fois par commande,
+ * même si le webhook et la page de remerciement arrivent en même temps. Ne lève jamais d'erreur :
+ * un e-mail raté ne doit pas faire échouer l'enregistrement de la commande.
+ * `force` renvoie la confirmation à la demande de l'administration (sans nouvelle alerte de vente).
+ */
+export async function envoyerCourrielsCommande(db: D1Database, env: Env, l: LigneCommande, site: string, force = false) {
+  if (!courrielActif(env)) return { envoye: false, raison: "non-configure" as const };
+  if (!l.email) return { envoye: false, raison: "sans-adresse" as const };
+  const maintenant = new Date().toISOString();
+
+  let premiereFois = false;
+  if (!force) {
+    // Le premier qui pose sa date d'essai gagne le droit d'envoyer.
+    const premier = await db
+      .prepare("UPDATE commandes SET courriel_tente_le = ?2 WHERE id = ?1 AND courriel_envoye_le IS NULL AND courriel_tente_le IS NULL")
+      .bind(l.id, maintenant)
+      .run();
+    premiereFois = premier.meta.changes > 0;
+    if (!premiereFois) {
+      const relance = await db
+        .prepare("UPDATE commandes SET courriel_tente_le = ?2 WHERE id = ?1 AND courriel_envoye_le IS NULL AND courriel_tente_le < ?3")
+        .bind(l.id, maintenant, new Date(Date.now() - NOUVEL_ESSAI_MS).toISOString())
+        .run();
+      if (relance.meta.changes === 0) return { envoye: false, raison: "deja-traite" as const };
+    }
+  }
+
+  const infos = infosCommande(l);
+  let envoye = false;
+  try {
+    const m = modeleConfirmation({ ...infos, nom: l.nom }, site);
+    await envoyerCourriel(env, { a: l.email, nom: l.nom, sujet: m.sujet, html: m.html, etiquette: "confirmation-commande" });
+    await db.prepare("UPDATE commandes SET courriel_envoye_le = ?2 WHERE id = ?1").bind(l.id, new Date().toISOString()).run();
+    envoye = true;
+  } catch (e) {
+    console.error(`E-mail de confirmation non envoyé pour la commande ${l.certificat} :`, String(e));
+  }
+
+  if (premiereFois && env.EMAIL_ALERTE_VENTES?.includes("@")) {
+    try {
+      const m = modeleAlerteVente({ ...infos, email: l.email, pays: l.pays }, site);
+      await envoyerCourriel(env, { a: env.EMAIL_ALERTE_VENTES.trim(), sujet: m.sujet, html: m.html, etiquette: "alerte-vente" });
+    } catch (e) {
+      console.error(`Alerte de vente non envoyée pour la commande ${l.certificat} :`, String(e));
+    }
+  }
+  return { envoye, raison: envoye ? ("envoye" as const) : ("erreur" as const) };
 }

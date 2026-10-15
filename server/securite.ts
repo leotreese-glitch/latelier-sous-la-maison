@@ -95,3 +95,18 @@ export async function noterEchec(db: D1Database, ip: string) {
 export function effacerEchecs(db: D1Database, ip: string) {
   return db.prepare("DELETE FROM tentatives_connexion WHERE ip = ?1").bind(ip).run();
 }
+
+/** Limite de fréquence générique (même table que les tentatives de connexion, avec une clé préfixée). */
+export async function limiteAtteinte(db: D1Database, cle: string, max: number, fenetreMs: number) {
+  const r = await db
+    .prepare("SELECT COUNT(*) AS n FROM tentatives_connexion WHERE ip = ?1 AND quand > ?2")
+    .bind(cle, Date.now() - fenetreMs)
+    .first<{ n: number }>();
+  return (r?.n ?? 0) >= max;
+}
+
+/** Empreinte SHA-256 en hexadécimal, pour ne jamais stocker une adresse e-mail dans les compteurs. */
+export async function empreinteHex(texte: string) {
+  const octets = new Uint8Array(await crypto.subtle.digest("SHA-256", encodeur.encode(texte)));
+  return [...octets].map((o) => o.toString(16).padStart(2, "0")).join("");
+}

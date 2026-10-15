@@ -15,6 +15,16 @@ export interface Env {
   STRIPE_MANAGED_PAYMENTS?: string;
   /** Adresse de base de l'API Stripe, remplacée uniquement pour les tests locaux. */
   STRIPE_API?: string;
+  /** Clé d'API Brevo (xkeysib-…), pour envoyer les e-mails du site. */
+  BREVO_CLE_API?: string;
+  /** Adresse de base de l'API Brevo, remplacée uniquement pour les tests locaux. */
+  BREVO_API?: string;
+  /** Adresse qui reçoit un e-mail à chaque vente (variable, pas un secret). */
+  EMAIL_ALERTE_VENTES?: string;
+  /** Adresse publique du site, utilisée dans les liens des e-mails (ex. https://latelier-sous-la-maison.com). */
+  ADRESSE_SITE?: string;
+  /** Expéditeur des e-mails, si différent de commandes@latelier-sous-la-maison.com. */
+  EMAIL_EXPEDITEUR?: string;
 }
 
 export function etatConfiguration(env: Env) {
@@ -28,6 +38,8 @@ export function etatConfiguration(env: Env) {
     paiement: /^(sk|rk)_(test|live)_/.test(cle),
     webhook: Boolean(env.STRIPE_SECRET_WEBHOOK?.startsWith("whsec_")),
     modeTest: /^(sk|rk)_test_/.test(cle),
+    courriel: Boolean(env.BREVO_CLE_API && env.BREVO_CLE_API.trim().length >= 20),
+    alerteVentes: Boolean(env.EMAIL_ALERTE_VENTES && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(env.EMAIL_ALERTE_VENTES.trim())),
   };
 }
 

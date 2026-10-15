@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { CONTACT } from "@/lib/site";
 
 type Etat = "attente" | "longue" | "erreur";
 
@@ -62,8 +63,14 @@ export function Merci() {
         <h1>Un souci avec ce lien</h1>
         <p className="page-texte__intro">{message}</p>
         <p>
-          Si vous avez payé, gardez le reçu envoyé par Stripe : la référence qu'il contient permet de retrouver votre commande et vos
-          fichiers. <Link href="/explorer/">Retour aux motifs</Link>
+          Si vous avez payé, vous pouvez <Link href="/commande/retrouver/">retrouver vos commandes</Link> avec l'adresse e-mail utilisée lors
+          du paiement.
+          {CONTACT.actif && (
+            <>
+              {" "}
+              Sinon, écrivez à <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> avec la référence de votre reçu Stripe.
+            </>
+          )}
         </p>
       </>
     );

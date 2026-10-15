@@ -2261,3 +2261,19 @@ a {
 .admin-defile .admin-statut {
   margin-left: 6px;
 }
+.admin-lien-bouton {
+  display: block;
+  margin-top: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--or-clair);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.admin-lien-bouton:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

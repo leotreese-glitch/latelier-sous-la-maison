@@ -52,6 +52,7 @@ export default function PageLicence() {
             jours ; la licence, elle, n'expire pas.
           </li>
           <li>Chaque certificat porte un numéro unique, vérifiable sur la page « Vérifier un certificat ».</li>
+          <li>Le lien de votre commande vous est aussi envoyé par e-mail. En cas de perte, la page « Retrouver mes commandes » vous le renvoie.</li>
           <li>
             Les fichiers numériques sont livrés tout de suite : en cochant la case avant de payer, vous renoncez au droit de rétractation de 14
             jours.

@@ -15,6 +15,7 @@ Site de L'atelier sous la maison : une bibliothèque de motifs anciens restauré
 | Licences | `/licence/` | Le texte des deux licences (standard et coloriage) |
 | Commande | `/commande/?t=…` | Après l'achat : les fichiers à télécharger et le certificat. Lien secret, propre à chaque acheteur |
 | Certificat | `/certificat/?n=LSM-…` | Le certificat de licence, imprimable, et la vérification d'un numéro |
+| Retrouver mes commandes | `/commande/retrouver/` | L'acheteur saisit son e-mail et reçoit à nouveau ses liens de commande |
 | Administration | `/admin/`, `/admin/ventes/` | Réservée à Léo, protégée par mot de passe : designs et ventes |
 
 ## Comment ça marche
@@ -94,7 +95,27 @@ Le paiement passe par **Stripe Managed Payments** : Stripe devient le vendeur of
 
 **Ce qui est livré.** La fiche liste exactement les fichiers HD déposés dans l'administration. Pour livrer un SVG, un carreau raccordable ou des déclinaisons de couleurs, dépose-les comme fichiers HD supplémentaires (PNG, JPEG, WebP, SVG, TIFF, PDF ou ZIP).
 
-**Avant de passer en paiement réel**, il faudra : l'envoi d'un e-mail avec le lien de commande (Stripe n'envoie pas ce lien, et son reçu n'est envoyé qu'en mode réel), donc le nom de domaine ; les pages légales et les conditions de vente ; la relecture de la licence (`lib/licence.ts`) par un juriste ; l'activation du compte Stripe (identité, compte bancaire), puis une clé `sk_live_` et un webhook en mode réel.
+**Avant de passer en paiement réel**, il faudra : les e-mails branchés (voir « E-mails et nom de domaine ») ; les pages légales et les conditions de vente ; la relecture de la licence (`lib/licence.ts`) par un juriste ; l'activation du compte Stripe (identité, compte bancaire), puis une clé `sk_live_` et un webhook en mode réel.
+
+## E-mails et nom de domaine
+
+Le site envoie quatre sortes d'e-mails, par **Brevo** (entreprise française, données en Europe) :
+la confirmation de commande à l'acheteur (lien de commande, certificat), une alerte à chaque vente pour Léo,
+les liens de « Retrouver mes commandes », et le renvoi d'une confirmation depuis `/admin/ventes/`.
+Chaque confirmation ne part qu'une fois, même si Stripe envoie l'événement plusieurs fois ; si Brevo est indisponible,
+la vente est quand même enregistrée et l'e-mail peut être renvoyé depuis l'administration.
+
+**Réglages, une seule fois :**
+1. Cloudflare, **Domain Registration**, puis **Register Domains** : acheter `latelier-sous-la-maison.com`.
+2. Projet Pages, onglet **Custom domains** : ajouter `latelier-sous-la-maison.com`, puis `www.latelier-sous-la-maison.com`.
+3. Domaine, **Email**, puis **Email Routing** : activer, et faire suivre `contact@latelier-sous-la-maison.com` vers la boîte de Léo.
+4. Brevo : créer le compte, puis **Settings**, **Senders, Domains, IPs**, **Domains** : ajouter le domaine (authentification automatique avec Cloudflare, ou recopier les enregistrements DNS en mettant les CNAME en « DNS only »).
+5. Brevo, onglet **Senders** : déclarer `commandes@latelier-sous-la-maison.com`, nom « L'atelier sous la maison ».
+6. Brevo, **SMTP & API**, **API keys** : générer une clé et l'ajouter dans Cloudflare comme secret `BREVO_CLE_API`.
+7. Cloudflare, variables de type **Text** : `EMAIL_ALERTE_VENTES` (l'adresse qui reçoit les alertes de vente) et `ADRESSE_SITE` (`https://latelier-sous-la-maison.com`, une fois le domaine actif).
+8. Relancer un déploiement. `/admin/ventes/` indique si les e-mails sont actifs.
+
+**Adresse de contact.** Elle n'est affichée sur le site et dans les e-mails qu'une fois vérifiée : passer `actif` à `true` dans `lib/site.ts`.
 
 ## Ajouter un design
 
@@ -116,6 +137,8 @@ Les exemples de la maquette portent l'étiquette « Exemple » : supprime-les au
 | `functions/api/achat.ts`, `functions/api/stripe/webhook.ts` | Le départ vers Stripe et la confirmation des paiements |
 | `functions/api/commande.ts`, `telecharger.ts`, `certificat.ts` | La page de commande, les téléchargements signés, les certificats |
 | `lib/licence.ts` | Le texte des licences, recopié dans chaque commande |
+| `lib/site.ts` | Le domaine, l'adresse de contact et l'expéditeur des e-mails |
+| `server/courriel.ts`, `server/modeles-courriel.ts` | L'envoi par Brevo et le texte des e-mails |
 | `lib/modele.ts` | Les règles communes : tiroirs, époques, couleurs, contrôles avant publication |
 | `lib/graines.json` | Le catalogue de départ, versé une seule fois dans la base |
 | `next.config.ts` | Le chargement du catalogue au moment de la fabrication |
@@ -142,7 +165,7 @@ npm run cloudflare   # simule Cloudflare (base, stockage, fonctions) sur http://
 npm run verifier     # vérifie le code
 ```
 
-Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` et `SECRET_SESSION=...`, plus `STRIPE_CLE_SECRETE=sk_test_...` et `STRIPE_SECRET_WEBHOOK=whsec_...` pour le paiement. Pour fabriquer le site depuis les données de départ, sans Internet : `CATALOGUE_SOURCE=graines npm run build`.
+Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` et `SECRET_SESSION=...`, plus `STRIPE_CLE_SECRETE=sk_test_...` et `STRIPE_SECRET_WEBHOOK=whsec_...` pour le paiement, et `BREVO_CLE_API=...` pour les e-mails. Pour fabriquer le site depuis les données de départ, sans Internet : `CATALOGUE_SOURCE=graines npm run build`.
 
 ## Étapes suivantes
 
