@@ -18,6 +18,7 @@ export default function LayoutAdmin({ children }: { children: React.ReactNode })
         <span className="admin-barre__nom">Administration</span>
         <nav className="admin-barre__liens" aria-label="Administration">
           <Link href="/admin/">Designs</Link>
+          <Link href="/admin/ventes/">Ventes</Link>
           <a href="/" target="_blank" rel="noopener">
             Voir le site
           </a>

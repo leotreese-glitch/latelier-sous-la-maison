@@ -2,7 +2,7 @@
 
 Site de L'atelier sous la maison : une bibliothèque de motifs anciens restaurés, de créations originales et de coloriages, livrés en haute définition avec leur licence.
 
-**État actuel : étape 2, le socle du site.** Le catalogue vit dans une base de données, l'administration permet d'ajouter les designs, et les fichiers haute définition sont stockés en privé. Le paiement n'est pas encore branché (étape 4).
+**État actuel : étape 4, le paiement en mode test.** Le catalogue vit dans une base de données, l'administration permet d'ajouter les designs, les fichiers haute définition sont stockés en privé, et l'achat fonctionne avec Stripe en mode test : page de commande, téléchargement des fichiers HD, certificat de licence. Avant le paiement réel, il reste les courriels, le nom de domaine et les pages légales.
 
 ## Ce que contient le site
 
@@ -12,7 +12,10 @@ Site de L'atelier sous la maison : une bibliothèque de motifs anciens restauré
 | Explorer | `/explorer/` | La grille en mosaïque, les filtres par tiroir, couleur et époque, la recherche par mots |
 | Fiche design | `/motif/<nom-du-motif>/` | L'aperçu filigrané avec loupe, le prix en euros ou en dollars, l'édition limitée, le cartel, le motif sur quatre objets |
 | Identité visuelle | `/identite/` | Les pistes de logo (les racines sont retenues), les couleurs, les typographies |
-| Administration | `/admin/` | Réservée à Léo, protégée par mot de passe |
+| Licences | `/licence/` | Le texte des deux licences (standard et coloriage) |
+| Commande | `/commande/?t=…` | Après l'achat : les fichiers à télécharger et le certificat. Lien secret, propre à chaque acheteur |
+| Certificat | `/certificat/?n=LSM-…` | Le certificat de licence, imprimable, et la vérification d'un numéro |
+| Administration | `/admin/`, `/admin/ventes/` | Réservée à Léo, protégée par mot de passe : designs et ventes |
 
 ## Comment ça marche
 
@@ -55,6 +58,43 @@ Les libellés de l'interface Cloudflare peuvent changer légèrement.
 1. Onglet **Deployments**, sur le dernier déploiement : **…**, puis **Retry deployment**.
 2. Quand c'est terminé, ouvre `/admin/`. La page indique ce qui est réglé ou manquant. Tout est bon quand tu vois l'écran de connexion.
 
+## Étape 4 : brancher Stripe en mode test (environ 15 minutes)
+
+Le paiement passe par **Stripe Managed Payments** : Stripe devient le vendeur officiel auprès de l'acheteur (« merchant of record »). Il calcule, collecte et reverse la TVA de chaque pays, et gère les litiges. En échange, ses frais sont plus élevés que le paiement classique, et le relevé bancaire de l'acheteur affiche `LINK.COM*`. Les libellés de Stripe peuvent changer légèrement.
+
+**A. Le compte Stripe**
+1. Crée un compte sur [dashboard.stripe.com/register](https://dashboard.stripe.com/register). Tu arrives dans un environnement de test (sandbox) : rien n'y est réellement débité.
+2. **Settings**, puis **Managed Payments** : active-le et accepte ses conditions. S'il ne s'affiche pas, voir « Sans Managed Payments » plus bas.
+3. **Settings**, puis **Business**, puis **Public details** : renseigne un e-mail d'assistance. Il apparaît sur les reçus.
+
+**B. La clé secrète**
+1. **Developers**, puis **API keys** : révèle la **Secret key** (elle commence par `sk_test_`).
+2. Dans Cloudflare, projet du site : **Settings**, puis **Variables and Secrets**, puis **Add**. Type **Secret**, nom `STRIPE_CLE_SECRETE`, valeur : la clé. Ne la colle jamais ailleurs.
+
+**C. Le webhook (la confirmation des paiements)**
+1. **Developers**, puis **Webhooks**, puis **Add endpoint** (ou **Add destination**).
+2. Adresse : `https://latelier-sous-la-maison.pages.dev/api/stripe/webhook`
+3. Événements : `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `charge.refunded`.
+4. Ouvre le webhook créé et révèle le **Signing secret** (il commence par `whsec_`). Ajoute-le dans Cloudflare comme secret `STRIPE_SECRET_WEBHOOK`.
+
+**D. Relancer le site**
+1. Cloudflare, onglet **Deployments**, sur le dernier déploiement : **…**, puis **Retry deployment**.
+2. Ouvre `/admin/ventes/` : la carte du haut doit dire « Paiement actif en mode test ».
+
+**E. Faire un achat d'essai**
+1. Sur une fiche, coche la case, puis **Acheter la licence**.
+2. Carte `4242 4242 4242 4242`, une date future, n'importe quel code à 3 chiffres.
+3. Tu reviens sur la page de commande : télécharge le fichier, ouvre le certificat. La vente apparaît dans `/admin/ventes/`.
+4. Pour tester un remboursement : dans Stripe, **Payments**, ouvre le paiement, **Refund**. La page de commande indique alors « remboursée » et les fichiers ne sont plus téléchargeables.
+
+**Sans Managed Payments.** Si l'option n'est pas disponible pour ton compte, ajoute dans Cloudflare la variable `STRIPE_MANAGED_PAYMENTS` avec la valeur `non`. Le paiement fonctionne alors en mode classique : c'est toi qui vends, et la TVA est à ta charge.
+
+**Comment se passe un achat.** La case à cocher enregistre l'accord de l'acheteur pour un accès immédiat (il renonce au droit de rétractation de 14 jours). Le prix est toujours calculé par le serveur. Après le paiement, l'acheteur arrive sur sa page de commande, à une adresse secrète : il y télécharge ses fichiers pendant 30 jours, par des liens valables une heure. Chaque achat reçoit un certificat numéroté (`LSM-XXXX-XXXX-XXXX`), avec le texte de la licence figé au jour de l'achat. Une édition limitée compte ses ventes et se retire seule une fois épuisée.
+
+**Ce qui est livré.** La fiche liste exactement les fichiers HD déposés dans l'administration. Pour livrer un SVG, un carreau raccordable ou des déclinaisons de couleurs, dépose-les comme fichiers HD supplémentaires (PNG, JPEG, WebP, SVG, TIFF, PDF ou ZIP).
+
+**Avant de passer en paiement réel**, il faudra : l'envoi d'un e-mail avec le lien de commande (Stripe n'envoie pas ce lien, et son reçu n'est envoyé qu'en mode réel), donc le nom de domaine ; les pages légales et les conditions de vente ; la relecture de la licence (`lib/licence.ts`) par un juriste ; l'activation du compte Stripe (identité, compte bancaire), puis une clé `sk_live_` et un webhook en mode réel.
+
 ## Ajouter un design
 
 1. `/admin/`, puis **Nouveau** dans le bon tiroir. L'identifiant (`orig-0006`, `dp-0011`…) est attribué tout seul et ne changera jamais.
@@ -71,7 +111,10 @@ Les exemples de la maquette portent l'étiquette « Exemple » : supprime-les au
 | `app/(site)/` | Les pages publiques |
 | `app/admin/`, `components/admin/` | L'administration |
 | `functions/` | Les fonctions Cloudflare : API du catalogue, administration, aperçus |
-| `server/` | Le code commun des fonctions : base de données, sécurité, fichiers |
+| `server/` | Le code commun des fonctions : base de données, sécurité, fichiers, Stripe, commandes |
+| `functions/api/achat.ts`, `functions/api/stripe/webhook.ts` | Le départ vers Stripe et la confirmation des paiements |
+| `functions/api/commande.ts`, `telecharger.ts`, `certificat.ts` | La page de commande, les téléchargements signés, les certificats |
+| `lib/licence.ts` | Le texte des licences, recopié dans chaque commande |
 | `lib/modele.ts` | Les règles communes : tiroirs, époques, couleurs, contrôles avant publication |
 | `lib/graines.json` | Le catalogue de départ, versé une seule fois dans la base |
 | `next.config.ts` | Le chargement du catalogue au moment de la fabrication |
@@ -98,12 +141,12 @@ npm run cloudflare   # simule Cloudflare (base, stockage, fonctions) sur http://
 npm run verifier     # vérifie le code
 ```
 
-Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` et `SECRET_SESSION=...`. Pour fabriquer le site depuis les données de départ, sans Internet : `CATALOGUE_SOURCE=graines npm run build`.
+Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` et `SECRET_SESSION=...`, plus `STRIPE_CLE_SECRETE=sk_test_...` et `STRIPE_SECRET_WEBHOOK=whsec_...` pour le paiement. Pour fabriquer le site depuis les données de départ, sans Internet : `CATALOGUE_SOURCE=graines npm run build`.
 
 ## Étapes suivantes
 
 1. Maquette : identité visuelle, accueil, grille, fiche design (fait)
 2. Socle du site : catalogue en base, administration, aperçus filigranés, stockage privé (fait)
 3. Comptes : inscription, favoris, tableaux, historique d'achats
-4. Paiement : Stripe en mode test, livraison HD par lien temporaire, certificats de licence
+4. Paiement : Stripe en mode test, livraison HD par lien temporaire, certificats de licence (fait en mode test ; courriels à ajouter avant le mode réel)
 5. Finitions : anglais, pages légales, mesure d'audience sans cookies

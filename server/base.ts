@@ -29,6 +29,27 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS tentatives_connexion (ip TEXT NOT NULL, quand INTEGER NOT NULL)`,
   `CREATE INDEX IF NOT EXISTS tentatives_ip ON tentatives_connexion (ip, quand)`,
   `CREATE TABLE IF NOT EXISTS meta (cle TEXT PRIMARY KEY, valeur TEXT NOT NULL)`,
+  // Une ligne par achat payé. `id` est le jeton secret de la page de commande de l'acheteur.
+  `CREATE TABLE IF NOT EXISTS commandes (
+    id TEXT PRIMARY KEY,
+    session_id TEXT NOT NULL UNIQUE,
+    paiement_id TEXT,
+    design_id TEXT NOT NULL,
+    certificat TEXT NOT NULL UNIQUE,
+    statut TEXT NOT NULL DEFAULT 'payee',
+    montant INTEGER NOT NULL,
+    devise TEXT NOT NULL,
+    email TEXT,
+    nom TEXT,
+    pays TEXT,
+    mode_test INTEGER NOT NULL DEFAULT 0,
+    donnees TEXT NOT NULL,
+    telechargements INTEGER NOT NULL DEFAULT 0,
+    payee_le TEXT NOT NULL,
+    cree_le TEXT NOT NULL
+  )`,
+  `CREATE INDEX IF NOT EXISTS commandes_paiement ON commandes (paiement_id)`,
+  `CREATE INDEX IF NOT EXISTS commandes_design ON commandes (design_id)`,
 ];
 
 let pret: Promise<void> | null = null;

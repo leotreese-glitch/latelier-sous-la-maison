@@ -5,7 +5,8 @@ import { Achat } from "@/components/Achat";
 import { Apercu } from "@/components/Apercu";
 import { Mosaique } from "@/components/Mosaique";
 import { VoirSur } from "@/components/VoirSur";
-import { COULEURS, DESIGNS, FAMILLES, lienSur, memeTiroir, PERIODES, RECU, trouver, TYPES } from "@/lib/catalogue";
+import { COULEURS, DESIGNS, FAMILLES, lienSur, memeTiroir, PERIODES, RECU, trouver, TYPES, type Livrable } from "@/lib/catalogue";
+import { JOURS_ACCES } from "@/lib/licence";
 
 export const dynamicParams = false;
 
@@ -14,6 +15,14 @@ export function generateStaticParams() {
 }
 
 type Props = { params: Promise<{ slug: string }> };
+
+function decrireLivrable(f: Livrable) {
+  const mo = f.taille / 1024 / 1024;
+  const taille = mo >= 1 ? `${mo.toLocaleString("fr-FR", { maximumFractionDigits: mo < 10 ? 1 : 0 })} Mo` : `${Math.max(1, Math.round(f.taille / 1024))} Ko`;
+  if (!f.largeur || !f.hauteur) return `Fichier ${f.format} (${taille})`;
+  const cm = Math.round((Math.max(f.largeur, f.hauteur) / 300) * 2.54);
+  return `Fichier ${f.format} de ${f.largeur.toLocaleString("fr-FR")} × ${f.hauteur.toLocaleString("fr-FR")} px, soit ${cm} cm sur le grand côté à 300 DPI (${taille})`;
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const d = trouver((await params).slug);
@@ -47,15 +56,19 @@ export default async function FicheMotif({ params }: Props) {
           <div className="recu">
             <h2>Ce que vous recevez</h2>
             <ul>
-              {d.hd && (
-                <li>
-                  Fichier principal : {d.hd.format}, {d.hd.largeur.toLocaleString("fr-FR")} × {d.hd.hauteur.toLocaleString("fr-FR")} px, soit{" "}
-                  {Math.round((Math.max(d.hd.largeur, d.hd.hauteur) / 300) * 2.54)} cm de côté à 300 DPI
-                </li>
+              {d.exemple ? (
+                RECU[d.famille].map((ligne) => <li key={ligne}>{ligne}</li>)
+              ) : (
+                <>
+                  {d.livrables && d.livrables.length > 0
+                    ? d.livrables.map((f, i) => <li key={i}>{decrireLivrable(f)}</li>)
+                    : d.hd && <li>{decrireLivrable(d.hd)}</li>}
+                  <li>
+                    Le certificat de licence à votre nom, vérifiable en ligne, et le texte de la <Link href="/licence/">licence</Link>
+                  </li>
+                  <li>Vos téléchargements restent ouverts {JOURS_ACCES} jours après l'achat</li>
+                </>
               )}
-              {RECU[d.famille].map((ligne) => (
-                <li key={ligne}>{ligne}</li>
-              ))}
             </ul>
           </div>
         </div>
@@ -131,6 +144,9 @@ export default async function FicheMotif({ params }: Props) {
           {coloriage
             ? "Vous pouvez imprimer ces dessins autant de fois que vous voulez pour votre famille ou une classe. La revente des impressions et du fichier est interdite."
             : "Licence non exclusive, pour un seul acheteur, sans limite de durée. Vous pouvez utiliser le motif sur des produits que vous vendez. Il est interdit de revendre ou partager le fichier, de l'utiliser dans un logo ou de s'en servir pour entraîner une IA. Chaque achat produit un certificat de licence à votre nom."}
+        </p>
+        <p className="fiche-section__lien">
+          <Link href="/licence/">Lire la licence complète</Link>
         </p>
       </section>
 

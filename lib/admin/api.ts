@@ -19,6 +19,23 @@ export interface EtatConfig {
   motDePasse: boolean;
   secretSession: boolean;
   crochet: boolean;
+  paiement?: boolean;
+  webhook?: boolean;
+  modeTest?: boolean;
+}
+
+export interface Vente {
+  date: string;
+  designId: string;
+  titre: string;
+  montant: number;
+  devise: string;
+  email: string | null;
+  pays: string | null;
+  statut: "payee" | "remboursee";
+  certificat: string;
+  telechargements: number;
+  modeTest: boolean;
 }
 
 export class ErreurApi extends Error {
@@ -75,6 +92,10 @@ export const api = {
   supprimerFichier: (cle: string) => appel<{ fichiers: Fichier[] }>("/api/admin/fichiers/supprimer", { method: "POST", body: json({ cle }) }),
   etatMiseAJour: () => appel<{ derniereMiseAJour: string; changements: number; crochet: boolean }>("/api/admin/mise-a-jour"),
   miseAJour: () => appel<{ demandeLe: string }>("/api/admin/mise-a-jour", { method: "POST" }),
+  ventes: () =>
+    appel<{ ventes: Vente[]; totaux: Record<string, { reel: number; test: number }>; config: { paiement: boolean; webhook: boolean; modeTest: boolean } }>(
+      "/api/admin/ventes",
+    ),
   etatRegistre: () => appel<{ restants: number; parTiroir: Partial<Record<Famille, number>> }>("/api/admin/registre"),
   importerRegistre: () => appel<{ crees: string[] }>("/api/admin/registre", { method: "POST" }),
 };

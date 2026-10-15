@@ -13,12 +13,13 @@ export function PiedDePage() {
         <nav className="pied__liens" aria-label="Liens du pied de page">
           <Link href="/explorer/">Explorer</Link>
           <Link href="/identite/">Identité visuelle</Link>
-          <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Licences</a>
+          <Link href="/licence/">Licences</Link>
+          <Link href="/certificat/">Vérifier un certificat</Link>
           <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Mentions légales</a>
           <a href="#" aria-disabled="true" title="Rédigées à l'étape 5">Conditions de vente</a>
         </nav>
       </div>
-      <p className="pied__note">© 2026 L'atelier sous la maison. Maquette de travail.</p>
+      <p className="pied__note">© 2026 L'atelier sous la maison. Site en préparation.</p>
     </footer>
   );
 }

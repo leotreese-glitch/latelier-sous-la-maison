@@ -18,6 +18,8 @@ const LIGNES_CONFIG: { cle: keyof EtatConfig; nom: string; detail: string; requi
   { cle: "motDePasse", nom: "Mot de passe", detail: "secret ADMIN_MOT_DE_PASSE, 12 caractères minimum", requis: true },
   { cle: "secretSession", nom: "Secret de session", detail: "secret SECRET_SESSION, 32 caractères minimum", requis: true },
   { cle: "crochet", nom: "Mise à jour du site", detail: "secret CROCHET_DEPLOIEMENT", requis: false },
+  { cle: "paiement", nom: "Paiement Stripe", detail: "secret STRIPE_CLE_SECRETE", requis: false },
+  { cle: "webhook", nom: "Confirmation des paiements", detail: "secret STRIPE_SECRET_WEBHOOK", requis: false },
 ];
 
 export function EtatConfiguration({ config }: { config?: EtatConfig }) {

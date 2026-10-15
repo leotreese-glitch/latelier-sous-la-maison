@@ -71,6 +71,15 @@ export interface Design {
   filigraneIntegre?: boolean; // l'aperçu porte déjà le filigrane incrusté
   hd?: FichierHd;
   droits?: Droits;
+  /** Fichiers livrés à l'acheteur, tels que déposés dans l'administration (calculé par l'API du catalogue). */
+  livrables?: Livrable[];
+}
+
+export interface Livrable {
+  format: string;
+  largeur: number | null;
+  hauteur: number | null;
+  taille: number;
 }
 
 export const FAMILLES: Record<Famille, { nom: string; phrase: string; prevus: number; ouvrir: string; prefixe: string }> = {

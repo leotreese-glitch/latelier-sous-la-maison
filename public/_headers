@@ -7,3 +7,17 @@
   X-Frame-Options: DENY
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-store
+
+/commande/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
+  Cache-Control: no-store
+
+/merci/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
+  Cache-Control: no-store
+
+/certificat/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
