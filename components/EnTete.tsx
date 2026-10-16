@@ -37,9 +37,9 @@ export function EnTete() {
         </nav>
         <div className="entete__outils">
           <ChoixDevise />
-          <span className="entete__compte" title="Les comptes arrivent à l'étape 3">
-            Mon compte
-          </span>
+          <Link href="/commande/retrouver/" className="entete__compte">
+            Mes commandes
+          </Link>
           <button
             type="button"
             className="entete__menu"

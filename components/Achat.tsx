@@ -116,13 +116,6 @@ export function Achat({ d }: { d: Design }) {
             <button type="button" className="bouton bouton--or" onClick={acheter} disabled={etat.type === "envoi"}>
               {etat.type === "envoi" ? "Ouverture du paiement…" : action}
             </button>
-            <button
-              type="button"
-              className="bouton bouton--contour"
-              onClick={() => setEtat({ type: "message", texte: "Les favoris arrivent avec les comptes, à l'étape 3." })}
-            >
-              Ajouter aux favoris
-            </button>
           </div>
         </>
       ) : d.exemple ? (

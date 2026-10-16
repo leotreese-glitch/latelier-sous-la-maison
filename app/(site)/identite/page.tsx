@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { metaPage } from "@/lib/partage";
 import { Marque, type Piste } from "@/components/Logo";
 
-export const metadata: Metadata = { title: "Identité visuelle" };
+export const metadata: Metadata = metaPage({ chemin: "/identite/", titre: "Identité visuelle" });
 
 const PISTES: { cle: Piste; nom: string; texte: string; retenue?: boolean }[] = [
   {

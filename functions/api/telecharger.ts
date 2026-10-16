@@ -33,5 +33,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   entetes.set("content-length", String(objet.size));
   entetes.set("cache-control", "private, no-store");
   entetes.set("x-content-type-options", "nosniff");
+  // Un SVG peut contenir du script : s'il était ouvert dans le navigateur, il resterait inerte.
+  entetes.set("content-security-policy", "default-src 'none'; style-src 'unsafe-inline'; img-src data:; sandbox");
   return new Response(objet.body, { headers: entetes });
 };

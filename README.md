@@ -129,12 +129,21 @@ Dans Stripe, Paramètres > Checkout : renseigner l'adresse des conditions d'util
 
 Ces textes sont une base de travail : à faire relire par un juriste avant le passage en paiement réel.
 
+## Visibilité : Google, partage, Pinterest
+
+- Chaque page a son adresse canonique (sur le .com) et un aperçu de partage. La fiche d'un design montre son aperçu filigrané ; les autres pages montrent `public/partage.png`.
+- La fiche d'un design donne à Google et Pinterest ses données produit (prix, disponibilité) et propose un lien « Enregistrer sur Pinterest », sans aucun script de Pinterest sur le site.
+- `sitemap.xml` et `robots.txt` sont fabriqués avec le site. Les adresses en `pages.dev` ne sont jamais indexées.
+- **Indexation par Google : fermée pour l'instant.** Au lancement (ou deux à trois semaines avant), passer `INDEXATION` à `true` dans `lib/site.ts`, puis déclarer le site et son `sitemap.xml` dans Google Search Console.
+
 ## Ajouter un design
 
 1. `/admin/`, puis **Nouveau** dans le bon tiroir. L'identifiant (`orig-0006`, `dp-0011`…) est attribué tout seul et ne changera jamais.
 2. Dépose le fichier haute définition : au moins 3000 px sur le grand côté. L'aperçu et les couleurs se font tout seuls.
 3. Remplis la fiche. La colonne de droite liste ce qui manque avant de pouvoir publier.
 4. **Publier**, puis, une fois plusieurs designs prêts, **Mettre le site à jour**.
+
+Un fichier SVG (vectoriel, par exemple exporté de Recraft) est accepté comme fichier haute définition : l'aperçu se fabrique pareil, et la fiche l'annonce comme agrandissable à toutes les tailles.
 
 Les exemples de la maquette portent l'étiquette « Exemple » : supprime-les au fur et à mesure que tes vrais designs arrivent.
 

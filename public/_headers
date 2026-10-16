@@ -21,3 +21,10 @@
 /certificat/*
   X-Robots-Tag: noindex, nofollow
   Referrer-Policy: no-referrer
+
+# Adresses techniques de Cloudflare Pages : jamais dans les moteurs de recherche (le site officiel est le .com).
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { AvisProjet, Champ, MiseAJour } from "@/components/legal/Legal";
 import { EDITEUR, MEDIATEUR, PRESTATAIRES, VERSION_CGV } from "@/lib/legal";
 import { JOURS_ACCES } from "@/lib/licence";
 
-export const metadata: Metadata = {
-  title: "Conditions de vente",
+export const metadata: Metadata = metaPage({
+  chemin: "/conditions-de-vente/",
+  titre: "Conditions de vente",
   description: "Conditions de vente des licences et fichiers de L'atelier sous la maison : commande, livraison, rétractation, garanties.",
-};
+});
 
 const SUPPORT_LINK = "https://support.link.com/topics/sold-through-link";
 

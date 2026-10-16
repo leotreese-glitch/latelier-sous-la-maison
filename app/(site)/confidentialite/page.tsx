@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { AvisProjet, Champ, MiseAJour } from "@/components/legal/Legal";
 import { CONSERVATION_COMMANDES_ANS, EDITEUR, PRESTATAIRES } from "@/lib/legal";
 
-export const metadata: Metadata = {
-  title: "Confidentialité",
+export const metadata: Metadata = metaPage({
+  chemin: "/confidentialite/",
+  titre: "Confidentialité",
   description: "Quelles données L'atelier sous la maison traite, pourquoi, combien de temps, et vos droits.",
-};
+});
 
 export default function Confidentialite() {
   return (

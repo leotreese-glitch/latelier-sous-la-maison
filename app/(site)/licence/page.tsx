@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { JOURS_ACCES, LICENCES, VERSION_LICENCE, type Licence } from "@/lib/licence";
 
-export const metadata: Metadata = {
-  title: "Licences",
+export const metadata: Metadata = metaPage({
+  chemin: "/licence/",
+  titre: "Licences",
   description: "Ce que vous pouvez faire, et ne pas faire, avec un design acheté à L'atelier sous la maison.",
-};
+});
 
 function BlocLicence({ l, pour }: { l: Licence; pour: string }) {
   return (

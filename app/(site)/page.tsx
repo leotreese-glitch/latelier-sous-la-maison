@@ -2,6 +2,13 @@ import Link from "next/link";
 import { Descente } from "@/components/Descente";
 import { Mosaique } from "@/components/Mosaique";
 import { COULEURS, DESIGNS, FAMILLES, type Famille } from "@/lib/catalogue";
+import { metaPage } from "@/lib/partage";
+
+export const metadata = metaPage({
+  chemin: "/",
+  description:
+    "Motifs anciens retrouvés dans les musées et restaurés, créations originales et coloriages, livrés en haute définition avec leur licence.",
+});
 
 const VITRINE: Record<Famille, string> = {
   retrouves: "/motifs/dp-0004.svg",

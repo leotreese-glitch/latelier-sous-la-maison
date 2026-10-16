@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import { metaPage } from "@/lib/partage";
 import { Suspense } from "react";
 import { Explorer } from "@/components/Explorer";
 import { Mosaique } from "@/components/Mosaique";
 import { DESIGNS } from "@/lib/catalogue";
 
-export const metadata: Metadata = { title: "Explorer l'atelier" };
+export const metadata: Metadata = metaPage({
+  chemin: "/explorer/",
+  titre: "Explorer l'atelier",
+  description: "Tous les motifs de l'atelier : motifs anciens retrouvés dans les musées, créations originales et coloriages, par couleur, époque et type.",
+});
 
 export default function PageExplorer() {
   return (

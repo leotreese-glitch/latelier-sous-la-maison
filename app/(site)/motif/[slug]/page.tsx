@@ -7,6 +7,8 @@ import { Mosaique } from "@/components/Mosaique";
 import { VoirSur } from "@/components/VoirSur";
 import { COULEURS, DESIGNS, FAMILLES, lienSur, memeTiroir, PERIODES, RECU, trouver, TYPES, type Livrable } from "@/lib/catalogue";
 import { JOURS_ACCES } from "@/lib/licence";
+import { adresseAbsolue, imageDesign, lienPinterest, metaPage, NOM_SITE } from "@/lib/partage";
+import { prixEdition, type Design } from "@/lib/modele";
 
 export const dynamicParams = false;
 
@@ -19,6 +21,7 @@ type Props = { params: Promise<{ slug: string }> };
 function decrireLivrable(f: Livrable) {
   const mo = f.taille / 1024 / 1024;
   const taille = mo >= 1 ? `${mo.toLocaleString("fr-FR", { maximumFractionDigits: mo < 10 ? 1 : 0 })} Mo` : `${Math.max(1, Math.round(f.taille / 1024))} Ko`;
+  if (f.format === "SVG") return `Fichier vectoriel SVG, agrandissable à toutes les tailles sans perte de qualité (${taille})`;
   if (!f.largeur || !f.hauteur) return `Fichier ${f.format} (${taille})`;
   const cm = Math.round((Math.max(f.largeur, f.hauteur) / 300) * 2.54);
   return `Fichier ${f.format} de ${f.largeur.toLocaleString("fr-FR")} × ${f.hauteur.toLocaleString("fr-FR")} px, soit ${cm} cm sur le grand côté à 300 DPI (${taille})`;
@@ -26,7 +29,44 @@ function decrireLivrable(f: Livrable) {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const d = trouver((await params).slug);
-  return d ? { title: d.titre, description: d.resume } : {};
+  if (!d) return {};
+  return metaPage({
+    chemin: `/motif/${d.slug}/`,
+    titre: d.titre,
+    description: d.resume,
+    image: imageDesign(d),
+    alt: `${d.titre}, aperçu filigrané`,
+    // Les exemples de la maquette ne sont pas en vente : jamais dans les moteurs de recherche.
+    indexable: !d.exemple,
+  });
+}
+
+/** Données produit lues par Google et Pinterest (prix, disponibilité, image filigranée). */
+function donneesProduit(d: Design) {
+  const image = imageDesign(d);
+  if (!image) return null;
+  const edition = prixEdition(d);
+  const prix = edition ? edition.palier : d.prix;
+  const fichiersPrets = d.livrables === undefined || d.livrables.length > 0;
+  const enVente = (!d.edition || edition !== null) && fichiersPrets;
+  const json = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: d.titre,
+    description: d.resume,
+    image: [adresseAbsolue(image)],
+    sku: d.id,
+    brand: { "@type": "Brand", name: NOM_SITE },
+    offers: {
+      "@type": "Offer",
+      url: adresseAbsolue(`/motif/${d.slug}/`),
+      price: prix.eur.toFixed(2),
+      priceCurrency: "EUR",
+      availability: enVente ? "https://schema.org/InStock" : "https://schema.org/SoldOut",
+    },
+  };
+  // Échappement de « < » : le texte ne peut pas refermer la balise script.
+  return JSON.stringify(json).replace(/</g, "\\u003c");
 }
 
 export default async function FicheMotif({ params }: Props) {
@@ -37,9 +77,12 @@ export default async function FicheMotif({ params }: Props) {
   const periode = PERIODES.find((p) => p.cle === d.periode)?.nom;
   const voisins = memeTiroir(d);
   const coloriage = d.famille === "petit-atelier";
+  const produit = donneesProduit(d);
+  const pinterest = lienPinterest(d);
 
   return (
     <article className="contenu fiche">
+      {produit && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: produit }} />}
       <nav className="fil" aria-label="Fil d'Ariane">
         <Link href="/explorer/">Explorer</Link> / <Link href={`/explorer/?famille=${d.famille}`}>{famille.nom}</Link>
       </nav>
@@ -71,6 +114,13 @@ export default async function FicheMotif({ params }: Props) {
               )}
             </ul>
           </div>
+          {pinterest && (
+            <p className="fiche__partage">
+              <a href={pinterest} target="_blank" rel="noopener noreferrer">
+                Enregistrer sur Pinterest
+              </a>
+            </p>
+          )}
         </div>
       </div>
 

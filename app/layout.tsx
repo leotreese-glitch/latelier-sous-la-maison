@@ -5,15 +5,22 @@ import "@fontsource-variable/jost/wght.css";
 import "./globals.css";
 import { DeviseProvider } from "@/components/Devise";
 import { Protection } from "@/components/Protection";
+import { IMAGE_PARTAGE, NOM_SITE } from "@/lib/partage";
+import { ADRESSE, INDEXATION } from "@/lib/site";
+
+const DESCRIPTION = "Motifs anciens restaurés, créations originales et coloriages, livrés en haute définition avec leur licence.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(ADRESSE),
   title: {
-    default: "L'atelier sous la maison",
-    template: "%s, L'atelier sous la maison",
+    default: NOM_SITE,
+    template: `%s, ${NOM_SITE}`,
   },
-  description:
-    "Motifs anciens restaurés, créations originales et coloriages, livrés en haute définition avec leur licence.",
-  robots: { index: false, follow: false }, // pas d'indexation avant le lancement
+  description: DESCRIPTION,
+  // Pas d'indexation avant le lancement : interrupteur INDEXATION dans lib/site.ts.
+  robots: INDEXATION ? { index: true, follow: true } : { index: false, follow: false },
+  openGraph: { type: "website", siteName: NOM_SITE, locale: "fr_FR", title: NOM_SITE, description: DESCRIPTION, images: [IMAGE_PARTAGE] },
+  twitter: { card: "summary_large_image", title: NOM_SITE, description: DESCRIPTION, images: [IMAGE_PARTAGE.url] },
 };
 
 export const viewport: Viewport = {
