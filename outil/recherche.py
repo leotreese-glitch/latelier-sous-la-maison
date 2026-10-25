@@ -11,6 +11,11 @@ os.makedirs("outil/recherche", exist_ok=True)
 journal = []
 
 
+def noter(t):
+    journal.append(t)
+    print(t, flush=True)
+
+
 def lire(url, essais=4):
     err = None
     for i in range(essais):
@@ -20,7 +25,7 @@ def lire(url, essais=4):
         except Exception as e:
             err = e
             time.sleep(3 + 5 * i)
-    journal.append("ECHEC %s %r" % (url, err))
+    noter("ECHEC %s %r" % (url, err))
     return None
 
 
@@ -89,7 +94,7 @@ for r in requetes:
         if c["lic"] == "CC0" and c["ref"]:
             tout[c["ref"]] = c
             n += 1
-    journal.append("CMA %s : %d" % (r, n))
+    noter("CMA %s : %d" % (r, n))
 json.dump(list(tout.values()), open("outil/recherche/cma.json", "w"), ensure_ascii=False, separators=(",", ":"))
 
 # ---------- Art Institute of Chicago ----------
@@ -120,7 +125,7 @@ for terme in ["jouy", "oberkampf", "printed cotton", "chintz", "palampore", "ind
         if page * 100 >= d.get("pagination", {}).get("total", 0):
             break
         time.sleep(0.4)
-    journal.append("AIC %s : %d" % (terme, n))
+    noter("AIC %s : %d" % (terme, n))
 json.dump(list(aic.values()), open("outil/recherche/aic.json", "w"), ensure_ascii=False, separators=(",", ":"))
 
 # Taille réellement servie par le serveur d'images de Chicago (test sur une pièce connue).
@@ -135,23 +140,25 @@ for taille in ["full", "max", "3000,", "4000,", "1686,"]:
         essais_iiif[taille] = {"ok": True, "octets": len(corps), "taille": Image.open(io.BytesIO(corps)).size}
     except Exception as e:
         essais_iiif[taille] = {"ok": False, "erreur": repr(e)}
-journal.append("AIC IIIF %s" % json.dumps(essais_iiif))
+noter("AIC IIIF %s" % json.dumps(essais_iiif))
 
 # ---------- Metropolitan Museum of Art ----------
 MET = "https://collectionapi.metmuseum.org/public/collection/v1/"
 met, vus = {}, set()
+echecs_met, debut_met = 0, time.time()
 for terme in ["palampore", "chintz", "indienne", "Jouy", "Oberkampf", "printed cotton", "block printed cotton",
               "katagami", "stencil", "kalamkari", "batik", "suzani", "ikat", "Dagobert Peche", "Koloman Moser",
               "Iznik tile", "velvet", "furnishing fabric", "kosode", "textile design"]:
     d = lire(MET + "search?" + urllib.parse.urlencode({"hasImages": "true", "q": terme}))
     ids = (d or {}).get("objectIDs") or []
     n = 0
-    for i in ids[:220]:
-        if i in vus:
+    for i in ids[:150]:
+        if i in vus or echecs_met >= 12 or time.time() - debut_met > 900:
             continue
         vus.add(i)
-        o = lire(MET + "objects/%d" % i, essais=2)
+        o = lire(MET + "objects/%d" % i, essais=1)
         time.sleep(0.08)
+        echecs_met = 0 if o else echecs_met + 1
         if not o or not o.get("isPublicDomain") or not o.get("primaryImage"):
             continue
         met[i] = {
@@ -162,7 +169,11 @@ for terme in ["palampore", "chintz", "indienne", "Jouy", "Oberkampf", "printed c
             "url": o.get("objectURL"), "dims": o.get("dimensions"),
         }
         n += 1
-    journal.append("MET %s : %d ids, %d libres" % (terme, len(ids), n))
+    noter("MET %s : %d ids, %d libres" % (terme, len(ids), n))
+    json.dump(list(met.values()), open("outil/recherche/met.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    if echecs_met >= 12:
+        noter("MET : trop d'échecs d'affilée, arrêt")
+        break
 json.dump(list(met.values()), open("outil/recherche/met.json", "w"), ensure_ascii=False, separators=(",", ":"))
 
 open("outil/recherche/journal.txt", "w").write("\n".join(journal) + "\n")

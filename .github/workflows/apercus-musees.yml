@@ -17,7 +17,7 @@ jobs:
           if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ]; then
             set +e
             pip install -q pillow==10.4.0 numpy==2.1.2
-            python -u outil/$MODE.py > outil/journal-$MODE.txt 2>&1
+            timeout 1800 python -u outil/$MODE.py > outil/journal-$MODE.txt 2>&1
             echo "code de sortie : $?" >> outil/journal-$MODE.txt
             tail -n 30 outil/journal-$MODE.txt
             git config user.name "github-actions[bot]"
