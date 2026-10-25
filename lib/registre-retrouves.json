@@ -1129,5 +1129,575 @@
    "consulteLe": "2026-10-09",
    "note": "Probablement une tenture de cérémonie bouddhique : à présenter avec respect, sans usage déplacé. Statut CC0 lu dans la base du musée le 2026-10-09, revérifié à part le même jour."
   }
+ },
+ {
+  "cle": "1927.408",
+  "titre": "Vases et pivoines à la chinoise",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Vers 1780",
+  "origine": "France, manufacture Oberkampf de Jouy-en-Josas",
+  "technique": "Coton imprimé à la planche de bois",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.1305,
+  "resume": "Vases chinois, brûle-parfums et corbeilles parmi des pivoines et de petits oiseaux, en violet, brun et vert olive sur fond crème.",
+  "cartel": "Ce coton a été imprimé à la planche de bois vers 1780 dans la manufacture de Christophe-Philippe Oberkampf (1738–1815), à Jouy-en-Josas. Vases, brûle-parfums et pivoines y suivent la mode des chinoiseries, très prisée sur les indiennes françaises. Aujourd'hui au Cleveland Museum of Art, inv. 1927.408.",
+  "source": "Cleveland Museum of Art, inv. 1927.408 ; manufacture de Christophe-Philippe Oberkampf (1738 – 1815). Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1927.408",
+   "url": "https://clevelandart.org/art/1927.408",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Chinese Vases and Peonies",
+   "resume": "Chinese vases, incense burners and baskets among peonies and small birds, in purple, brown and olive green on a cream ground.",
+   "cartel": "This cotton was block-printed around 1780 in the manufactory of Christophe-Philippe Oberkampf (1738–1815) at Jouy-en-Josas. Its vases, incense burners and peonies follow the fashion for chinoiserie, much loved on French printed cottons. Now in the Cleveland Museum of Art, inv. 1927.408.",
+   "origine": "France, Oberkampf manufactory, Jouy-en-Josas",
+   "technique": "Woodblock-printed cotton",
+   "date": "c. 1780",
+   "source": "Cleveland Museum of Art, inv. 1927.408; Christophe-Philippe Oberkampf manufactory (1738 – 1815). Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1928.188",
+  "titre": "Fleurs fantaisie à l'indienne",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Vers 1785",
+  "origine": "France",
+  "technique": "Coton imprimé à la planche de bois",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.7867,
+  "resume": "Grandes fleurs imaginaires rouges, bleues et ocre sur des tiges ondulantes, avec des feuilles vert olive, sur fond crème.",
+  "cartel": "Ce coton a été imprimé à la planche de bois en France vers 1785. Ses fleurs imaginaires reprennent celles des toiles peintes venues d'Inde, que les manufactures françaises avaient le droit d'imiter depuis la levée de leur interdiction en 1759. Aujourd'hui au Cleveland Museum of Art, inv. 1928.188.",
+  "source": "Cleveland Museum of Art, inv. 1928.188. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1928.188",
+   "url": "https://clevelandart.org/art/1928.188",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Fantasy Flowers in the Indian Style",
+   "resume": "Large imaginary flowers in red, blue and ochre on winding stems, with olive-green leaves, on a cream ground.",
+   "cartel": "This cotton was block-printed in France around 1785. Its imaginary flowers echo those of the painted cottons from India, which French manufacturers had been allowed to imitate since the ban on them was lifted in 1759. Now in the Cleveland Museum of Art, inv. 1928.188.",
+   "origine": "France",
+   "technique": "Woodblock-printed cotton",
+   "date": "c. 1785",
+   "source": "Cleveland Museum of Art, inv. 1928.188. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1928.209",
+  "titre": "Chintz aux grandes fleurs",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1833",
+  "origine": "Angleterre, Bannister Hall (Lancashire)",
+  "technique": "Coton imprimé à la planche de bois",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.8204,
+  "resume": "Grandes fleurs roses et bleues, tulipe ocre et rinceaux de feuillage fin, sur fond beige rosé.",
+  "cartel": "Ce chintz a été imprimé à la planche de bois en 1833 par l'imprimerie de Bannister Hall, près de Preston, en Angleterre, l'une des plus réputées de son temps pour les cotonnades d'ameublement. Aujourd'hui au Cleveland Museum of Art, inv. 1928.209.",
+  "source": "Cleveland Museum of Art, inv. 1928.209 ; imprimerie de Bannister Hall. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1928.209",
+   "url": "https://clevelandart.org/art/1928.209",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Chintz with Large Flowers",
+   "resume": "Large pink and blue flowers, an ochre tulip and scrolls of fine foliage on a pinkish-beige ground.",
+   "cartel": "This chintz was block-printed in 1833 by the Bannister Hall printworks near Preston, England, one of the most renowned of its time for furnishing cottons. Now in the Cleveland Museum of Art, inv. 1928.209.",
+   "origine": "England, Bannister Hall (Lancashire)",
+   "technique": "Woodblock-printed cotton",
+   "date": "1833",
+   "source": "Cleveland Museum of Art, inv. 1928.209; Bannister Hall printworks. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1938.257",
+  "titre": "Hérons sur fond rouge",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "XIXe siècle",
+  "origine": "Angleterre",
+  "technique": "Coton imprimé au rouleau",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.0375,
+  "resume": "Hérons blancs parmi des fleurettes et des roseaux, sur un fond rouge vif.",
+  "cartel": "Ce coton a été imprimé au rouleau en Angleterre au XIXe siècle. L'impression au rouleau de cuivre gravé, mise au point à la fin du XVIIIe siècle, a permis de produire en grande quantité les cotonnades imprimées nées de la mode des indiennes. Aujourd'hui au Cleveland Museum of Art, inv. 1938.257.",
+  "source": "Cleveland Museum of Art, inv. 1938.257. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1938.257",
+   "url": "https://clevelandart.org/art/1938.257",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Herons on Red",
+   "resume": "White herons among small flowers and reeds on a bright red ground.",
+   "cartel": "This cotton was roller-printed in England in the 19th century. Printing with engraved copper rollers, perfected at the end of the 18th century, made it possible to mass-produce the printed cottons born of the fashion for Indian chintz. Now in the Cleveland Museum of Art, inv. 1938.257.",
+   "origine": "England",
+   "technique": "Roller-printed cotton",
+   "date": "19th century",
+   "source": "Cleveland Museum of Art, inv. 1938.257. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "2006.160",
+  "titre": "Indienne aux grandes palmettes",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Vers 1730 – 1750",
+  "origine": "Inde, pour le marché de Ceylan (Sri Lanka)",
+  "technique": "Coton peint et teint en réserve",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.866,
+  "resume": "Grandes palmettes en éventail et feuillages plumeux, rouge, rose et bleu, sur fond rouge garance.",
+  "cartel": "Cette indienne a été peinte et teinte en Inde vers 1730–1750 pour être vendue à Ceylan, l'actuel Sri Lanka. Son dessin se répète tous les 55 cm environ, comme une étoffe vendue au mètre. Aujourd'hui à l'Art Institute of Chicago, inv. 2006.160.",
+  "source": "Art Institute of Chicago, inv. 2006.160. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "2006.160",
+   "url": "https://www.artic.edu/artworks/186829",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Domaine public et image CC0 lus dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Chintz with Large Palmettes",
+   "resume": "Large fan-shaped palmettes and feathery foliage in red, pink and blue on a madder-red ground.",
+   "cartel": "This chintz was painted and dyed in India around 1730–1750 to be sold in Ceylon, today's Sri Lanka. Its design repeats about every 55 cm, like a fabric sold by the metre. Now in the Art Institute of Chicago, inv. 2006.160.",
+   "origine": "India, for the Ceylon (Sri Lanka) market",
+   "technique": "Painted and resist-dyed cotton",
+   "date": "c. 1730 – 1750",
+   "source": "Art Institute of Chicago, inv. 2006.160. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "2000.31",
+  "titre": "Rosaces de Coromandel",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1800 – 1850",
+  "origine": "Inde, côte de Coromandel",
+  "technique": "Coton imprimé à la planche, réserve dessinée, mordants peints, teint",
+  "type": "geometrique",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.4245,
+  "resume": "Champ de rosaces étoilées rouges, vertes et bleues, entre deux têtes de pièce rouges à dents de scie.",
+  "cartel": "Ce pagne a été imprimé et peint sur la côte de Coromandel, en Inde, entre 1800 et 1850. Son nom, tapis, est celui du pagne noué sur les hanches en Asie du Sud-Est, grand marché des cotonnades de Coromandel. Aujourd'hui au Cleveland Museum of Art, inv. 2000.31.",
+  "source": "Cleveland Museum of Art, inv. 2000.31. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "2000.31",
+   "url": "https://clevelandart.org/art/2000.31",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Les têtes de pièce à dents de scie peuvent faire une bordure à part. Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Coromandel Rosettes",
+   "resume": "A field of red, green and blue star rosettes between two red end panels with sawtooth borders.",
+   "cartel": "This hip wrapper was printed and painted on the Coromandel Coast of India between 1800 and 1850. Its name, tapis, is that of the cloth tied around the hips in Southeast Asia, a major market for Coromandel cottons. Now in the Cleveland Museum of Art, inv. 2000.31.",
+   "origine": "India, Coromandel Coast",
+   "technique": "Cotton; block-printed, drawn resist, painted mordants, dyed",
+   "date": "1800 – 1850",
+   "source": "Cleveland Museum of Art, inv. 2000.31. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "2003.96",
+  "titre": "Bandes fleuries sur fond d'or",
+  "famille": "retrouves",
+  "periode": "xviie",
+  "date": "1600 – 1650",
+  "origine": "Iran, période safavide",
+  "technique": "Samit de soie, fils dorés et argentés",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.7697,
+  "resume": "Fleurs rouges, roses, violettes et bleu-gris en bandes verticales, sur un fond tissé de fils dorés et argentés.",
+  "cartel": "Cette soie a été tissée en Iran entre 1600 et 1650, à l'époque safavide, avec douze couleurs de soie sur un fond de fils dorés et argentés. Ses fleurs, montrées sous plusieurs angles, s'inspirent des herbiers européens qui circulaient alors en Iran. Aujourd'hui au Cleveland Museum of Art, inv. 2003.96.",
+  "source": "Cleveland Museum of Art, inv. 2003.96. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "2003.96",
+   "url": "https://clevelandart.org/art/2003.96",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Floral Stripes on a Golden Ground",
+   "resume": "Red, pink, purple and blue-grey flowers in vertical bands on a ground woven with gilt and silver thread.",
+   "cartel": "This silk was woven in Iran between 1600 and 1650, in the Safavid period, with twelve colours of silk on a ground of gilt and silver thread. Its flowers, shown from several angles, were inspired by the European herbals then circulating in Iran. Now in the Cleveland Museum of Art, inv. 2003.96.",
+   "origine": "Iran, Safavid period",
+   "technique": "Silk samite, gilt- and silver-metal thread",
+   "date": "1600 – 1650",
+   "source": "Cleveland Museum of Art, inv. 2003.96. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1943.91",
+  "titre": "La Rose et le Rossignol",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe siècle",
+  "origine": "Iran, fin de la période safavide",
+  "technique": "Taffetas de soie broché de fils métalliques",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.9684,
+  "resume": "Petits rossignols posés sur des rosiers fleuris, en rangs décalés, vert, bleu et or sur fond rouille.",
+  "cartel": "Ce taffetas broché a été tissé en Iran au XVIIIe siècle, à la fin de l'époque safavide, pour un vêtement de cour. Son motif, gul-u-bulbul, « la rose et le rossignol », vient de la poésie persane : l'oiseau chante pour une fleur qui reste indifférente, image de l'amour sans retour. Aujourd'hui au Cleveland Museum of Art, inv. 1943.91.",
+  "source": "Cleveland Museum of Art, inv. 1943.91. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1943.91",
+   "url": "https://clevelandart.org/art/1943.91",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "The Rose and the Nightingale",
+   "resume": "Small nightingales perched on flowering rose bushes in staggered rows, green, blue and gold on a rust ground.",
+   "cartel": "This brocaded taffeta was woven in Iran in the 18th century, at the end of the Safavid period, for a court garment. Its motif, gul-u-bulbul, “the rose and the nightingale”, comes from Persian poetry: the bird sings to a flower that remains indifferent, an image of unrequited love. Now in the Cleveland Museum of Art, inv. 1943.91.",
+   "origine": "Iran, late Safavid period",
+   "technique": "Silk taffeta brocaded with metal thread",
+   "date": "18th century",
+   "source": "Cleveland Museum of Art, inv. 1943.91. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1984.27",
+  "titre": "Œillets ottomans",
+  "famille": "retrouves",
+  "periode": "xvie",
+  "date": "Fin du XVIe siècle",
+  "origine": "Turquie, Bursa, période ottomane",
+  "technique": "Velours de soie broché de fils dorés et argentés",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.8635,
+  "resume": "Grands œillets en éventail tissés d'or et d'argent sur velours cramoisi, entre deux frises de niches fleuries.",
+  "cartel": "Ce velours broché a été tissé à Bursa, en Turquie, à la fin du XVIe siècle, pour couvrir un coussin de divan de la cour ottomane. On reconnaît les œillets à leurs pétales en dents de scie ; les niches des deux extrémités sont brochées d'or et d'argent. Aujourd'hui au Cleveland Museum of Art, inv. 1984.27.",
+  "source": "Cleveland Museum of Art, inv. 1984.27. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1984.27",
+   "url": "https://clevelandart.org/art/1984.27",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Ottoman Carnations",
+   "resume": "Large fan-shaped carnations woven in gold and silver on crimson velvet, between two friezes of flowered niches.",
+   "cartel": "This brocaded velvet was woven in Bursa, Turkey, at the end of the 16th century to cover a divan cushion at the Ottoman court. The carnations can be recognised by their sawtooth petals; the niches at both ends are brocaded with gold and silver. Now in the Cleveland Museum of Art, inv. 1984.27.",
+   "origine": "Turkey, Bursa, Ottoman period",
+   "technique": "Silk velvet brocaded with gilt- and silver-metal thread",
+   "date": "Late 16th century",
+   "source": "Cleveland Museum of Art, inv. 1984.27. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1916.1300",
+  "titre": "Grenades et tulipes",
+  "famille": "retrouves",
+  "periode": "xviie",
+  "date": "XVIIe – XVIIIe siècle",
+  "origine": "Turquie",
+  "technique": "Toile de lin brodée de soie au point avant",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.4329,
+  "resume": "Grenades rouges cernées de feuilles bleues dentelées, en rangs alternés avec des tulipes rouges, sur une toile de lin beige.",
+  "cartel": "Cette couverture brodée a été faite en Turquie au XVIIe ou au XVIIIe siècle. Ses motifs reprennent ceux des soieries de la cour ottomane, avec des fils de soie jaune et blanche à la place des coûteux fils d'or et d'argent. Aujourd'hui au Cleveland Museum of Art, inv. 1916.1300.",
+  "source": "Cleveland Museum of Art, inv. 1916.1300. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1916.1300",
+   "url": "https://clevelandart.org/art/1916.1300",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Les tiges brun foncé ont presque disparu : on voit le tracé à l'encre d'origine, à redessiner. Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Pomegranates and Tulips",
+   "resume": "Red pomegranates ringed with serrated blue leaves, in rows alternating with red tulips, on beige linen.",
+   "cartel": "This embroidered cover was made in Turkey in the 17th or 18th century. Its motifs borrow from the silks of the Ottoman court, with yellow and white silk threads in place of costly gold and silver thread. Now in the Cleveland Museum of Art, inv. 1916.1300.",
+   "origine": "Turkey",
+   "technique": "Linen plain weave embroidered with silk in running stitch",
+   "date": "17th – 18th century",
+   "source": "Cleveland Museum of Art, inv. 1916.1300. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1960.276",
+  "titre": "Une myriade d'oiseaux",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe – XIXe siècle",
+  "origine": "Chine, dynastie Qing",
+  "technique": "Satin de soie brodé de soies polychromes",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.5453,
+  "resume": "Paons, grues, canards mandarins, faisans et hirondelles parmi des arbres en fleurs, des rochers et des plantes d'eau, sur satin crème.",
+  "cartel": "Ce panneau a été brodé de soies très fines en Chine, sous la dynastie Qing, au XVIIIe ou au XIXe siècle, à la manière des peintures de fleurs et d'oiseaux de Lü Ji. Les oiseaux vont par paires : la grue souhaite une longue vie, les canards mandarins un mariage heureux. Aujourd'hui au Cleveland Museum of Art, inv. 1960.276.",
+  "source": "Cleveland Museum of Art, inv. 1960.276. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1960.276",
+   "url": "https://clevelandart.org/art/1960.276",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Composition d'un seul tenant : vendez-la en panneau ou par détails (couples d'oiseaux). Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "A Myriad of Birds",
+   "resume": "Peacocks, cranes, mandarin ducks, pheasants and swallows among flowering trees, rocks and water plants, on cream satin.",
+   "cartel": "This panel was embroidered with very fine silks in China under the Qing dynasty, in the 18th or 19th century, in the manner of the bird-and-flower paintings of Lü Ji. The birds come in pairs: the crane wishes long life, the mandarin ducks a happy marriage. Now in the Cleveland Museum of Art, inv. 1960.276.",
+   "origine": "China, Qing dynasty",
+   "technique": "Silk satin embroidered with polychrome silks",
+   "date": "18th – 19th century",
+   "source": "Cleveland Museum of Art, inv. 1960.276. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1948.70",
+  "titre": "La Grue du mandarin",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1736 – 1795",
+  "origine": "Chine, dynastie Qing, règne de Qianlong",
+  "technique": "Satin de soie brodé de soie, de fils d'or et de plumes de paon",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.0078,
+  "resume": "Une grue blanche aux ailes déployées au-dessus des vagues et des rochers, face au soleil rouge, parmi nuages, chauves-souris et fleurs, sur fond vert sombre.",
+  "cartel": "Cet insigne de rang a été brodé en Chine sous le règne de Qianlong (1736–1795), avec de la soie, des fils d'or et des plumes de paon. Cousu sur la robe d'un fonctionnaire, il indiquait son grade : la grue était réservée au premier rang des fonctionnaires civils. Aujourd'hui au Cleveland Museum of Art, inv. 1948.70.",
+  "source": "Cleveland Museum of Art, inv. 1948.70. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1948.70",
+   "url": "https://clevelandart.org/art/1948.70",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "The Mandarin's Crane",
+   "resume": "A white crane with outstretched wings above waves and rocks, facing the red sun, among clouds, bats and flowers, on a dark green ground.",
+   "cartel": "This rank badge was embroidered in China during the Qianlong reign (1736–1795) with silk, gold thread and peacock feathers. Sewn onto an official's robe, it showed his rank: the crane was reserved for the first rank of civil officials. Now in the Cleveland Museum of Art, inv. 1948.70.",
+   "origine": "China, Qing dynasty, Qianlong reign",
+   "technique": "Silk satin embroidered with silk, gold thread and peacock feathers",
+   "date": "1736 – 1795",
+   "source": "Cleveland Museum of Art, inv. 1948.70. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1916.1324",
+  "titre": "Carpes dans les vagues",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1868 – 1912",
+  "origine": "Japon, époque Meiji",
+  "technique": "Soie brodée, fils métalliques",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.1705,
+  "resume": "Trois carpes argentées remontant des vagues blanches tourbillonnantes, rehaussées d'or, sur satin bleu nuit.",
+  "cartel": "Ce fukusa, un carré de soie brodée qui couvrait les cadeaux, a été fait au Japon à l'époque Meiji (1868–1912). La carpe qui remonte le courant est un symbole de réussite : la légende dit qu'en franchissant la Porte du Dragon, elle devient dragon. Aujourd'hui au Cleveland Museum of Art, inv. 1916.1324.",
+  "source": "Cleveland Museum of Art, inv. 1916.1324. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1916.1324",
+   "url": "https://clevelandart.org/art/1916.1324",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Carp in the Waves",
+   "resume": "Three silvery carp swimming up swirling white waves highlighted with gold, on midnight-blue satin.",
+   "cartel": "This fukusa, an embroidered silk square used to cover gifts, was made in Japan in the Meiji period (1868–1912). The carp swimming upstream is a symbol of success: legend says that by leaping the Dragon Gate it becomes a dragon. Now in the Cleveland Museum of Art, inv. 1916.1324.",
+   "origine": "Japan, Meiji period",
+   "technique": "Embroidered silk, metal thread",
+   "date": "1868 – 1912",
+   "source": "Cleveland Museum of Art, inv. 1916.1324. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1954.603",
+  "titre": "Iris sur fond d'or",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Début ou milieu du XVIIIe siècle",
+  "origine": "Japon, époque Edo",
+  "technique": "Paire de paravents à six panneaux ; encre et couleurs sur papier doré",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.9289,
+  "resume": "Touffes d'iris bleu-violet aux feuilles vertes, semées en bandes sur un fond de papier doré.",
+  "cartel": "Watanabe Shikō (1683–1755) a peint cette paire de paravents au début ou au milieu du XVIIIe siècle, à l'encre et aux couleurs sur papier doré. Le sujet vient des Contes d'Ise, un récit du Xe siècle : loin de la capitale, un noble compose un poème devant une rivière bordée d'iris. Aujourd'hui au Cleveland Museum of Art, inv. 1954.603.",
+  "source": "Cleveland Museum of Art, inv. 1954.603 ; Watanabe Shikō (1683 – 1755). Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1954.603",
+   "url": "https://clevelandart.org/art/1954.603",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Paire de paravents très large : vendez-la par panneaux ou par détails. Les deux paravents sont fournis en deux fichiers. Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Irises on Gold",
+   "resume": "Clumps of blue-violet irises with green leaves, scattered in bands across a gilded paper ground.",
+   "cartel": "Watanabe Shikō (1683–1755) painted this pair of screens in the early to mid-18th century, in ink and colour on gilded paper. The subject comes from the Tales of Ise, a 10th-century text: far from the capital, a nobleman composes a poem beside a stream lined with irises. Now in the Cleveland Museum of Art, inv. 1954.603.",
+   "origine": "Japan, Edo period",
+   "technique": "Pair of six-panel folding screens; ink and colour on gilded paper",
+   "date": "Early to mid-18th century",
+   "source": "Cleveland Museum of Art, inv. 1954.603; Watanabe Shikō (1683 – 1755). Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1950.348",
+  "titre": "Mer de fleurs",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1894",
+  "origine": "Angleterre",
+  "technique": "Soie imprimée au rouleau",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3348,
+  "resume": "Vagues bleues déferlantes dont l'écume se change en fleurs jaune pâle et crème.",
+  "cartel": "Arthur Silver (1853–1896) a dessiné ce motif en 1894 ; il a été imprimé au rouleau sur soie en Angleterre. Fondateur à Londres du Silver Studio, qui dessinait tissus et papiers peints, Silver s'inspirait volontiers de l'art japonais. Aujourd'hui au Cleveland Museum of Art, inv. 1950.348.",
+  "source": "Cleveland Museum of Art, inv. 1950.348 ; Arthur Silver (1853 – 1896). Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 12,
+   "usd": 14
+  },
+  "droits": {
+   "musee": "Cleveland Museum of Art",
+   "reference": "1950.348",
+   "url": "https://clevelandart.org/art/1950.348",
+   "statut": "domaine-public",
+   "conditions": "Open Access du Cleveland Museum of Art : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-25",
+   "note": "Statut CC0 lu dans la base du musée le 2026-10-25, relu dans la notice complète le même jour."
+  },
+  "en": {
+   "titre": "Sea of Flowers",
+   "resume": "Breaking blue waves whose foam turns into pale yellow and cream flowers.",
+   "cartel": "Arthur Silver (1853–1896) designed this pattern in 1894; it was roller-printed on silk in England. Founder of the Silver Studio in London, which designed textiles and wallpapers, Silver often drew on Japanese art. Now in the Cleveland Museum of Art, inv. 1950.348.",
+   "origine": "England",
+   "technique": "Roller-printed silk",
+   "date": "1894",
+   "source": "Cleveland Museum of Art, inv. 1950.348; Arthur Silver (1853 – 1896). Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
  }
 ]

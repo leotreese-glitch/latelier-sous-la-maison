@@ -6,7 +6,8 @@ import { FAMILLES, slugifier, type Design, type Famille } from "../../../lib/mod
 
 /**
  * Designs préparés par Claude, prêts à devenir des brouillons déjà remplis :
- * - les pièces de musée retenues dans le registre des motifs retrouvés (vérifiées le 2026-10-09) ;
+ * - les pièces de musée du registre des motifs retrouvés (lot 1 vérifié le 2026-10-09, lot 2 le 2026-10-25),
+ *   avec leur version anglaise quand elle est fournie (champ `en`) ;
  * - les créations de l'atelier envoyées par Léo (titres, résumés et cartels à relire).
  * Une entrée déjà présente dans la base n'est jamais recréée.
  */
