@@ -1,7 +1,15 @@
-import type { Design } from "@/lib/modele";
+import type { Langue } from "@/lib/i18n";
+import { texteDesign, type Design } from "@/lib/modele";
+
+const T = {
+  fr: { liste: "Le motif sur des objets", tissu: "Tissu", surTissu: "sur un tissu drapé", coussin: "Coussin", surCoussin: "sur un coussin", carnet: "Carnet", surCarnet: "sur la couverture d'un carnet", papier: "Papier peint", surPapier: "en papier peint" },
+  en: { liste: "The pattern on objects", tissu: "Fabric", surTissu: "on draped fabric", coussin: "Cushion", surCoussin: "on a cushion", carnet: "Notebook", surCarnet: "on a notebook cover", papier: "Wallpaper", surPapier: "as wallpaper" },
+};
 
 /** Le motif appliqué sur quatre objets. Les ombres donnent le volume, le motif reste net. */
-export function VoirSur({ d }: { d: Design }) {
+export function VoirSur({ d, l = "fr" }: { d: Design; l?: Langue }) {
+  const t = T[l];
+  const titre = texteDesign(d, l).titre;
   const id = d.id;
   const tuile = d.famille === "petit-atelier" ? 200 : 96;
   const hauteur = Math.round(tuile * d.ratio);
@@ -12,10 +20,10 @@ export function VoirSur({ d }: { d: Design }) {
   );
 
   return (
-    <ul className="voir-sur" aria-label="Le motif sur des objets">
+    <ul className="voir-sur" aria-label={t.liste}>
       <li>
         <figure>
-          <svg viewBox="0 0 200 220" role="img" aria-label={`${d.titre} sur un tissu drapé`}>
+          <svg viewBox="0 0 200 220" role="img" aria-label={`${titre} ${t.surTissu}`}>
             <defs>
               {motif("tissu", 0.8)}
               <linearGradient id={`${id}-plis`} x1="0" x2="1">
@@ -32,12 +40,12 @@ export function VoirSur({ d }: { d: Design }) {
             <path d="M30 26 H170 L176 186 Q160 200 146 188 Q130 202 114 189 Q98 203 82 189 Q66 202 50 188 Q36 199 24 186 Z" fill={`url(#${id}-tissu)`} />
             <path d="M30 26 H170 L176 186 Q160 200 146 188 Q130 202 114 189 Q98 203 82 189 Q66 202 50 188 Q36 199 24 186 Z" fill={`url(#${id}-plis)`} />
           </svg>
-          <figcaption>Tissu</figcaption>
+          <figcaption>{t.tissu}</figcaption>
         </figure>
       </li>
       <li>
         <figure>
-          <svg viewBox="0 0 200 220" role="img" aria-label={`${d.titre} sur un coussin`}>
+          <svg viewBox="0 0 200 220" role="img" aria-label={`${titre} ${t.surCoussin}`}>
             <defs>
               {motif("coussin", 0.7)}
               <radialGradient id={`${id}-volume`} cx="0.45" cy="0.4" r="0.7">
@@ -50,12 +58,12 @@ export function VoirSur({ d }: { d: Design }) {
             <path d="M30 46 Q100 34 170 46 Q182 112 170 178 Q100 190 30 178 Q18 112 30 46 Z" fill={`url(#${id}-coussin)`} />
             <path d="M30 46 Q100 34 170 46 Q182 112 170 178 Q100 190 30 178 Q18 112 30 46 Z" fill={`url(#${id}-volume)`} stroke="#000" strokeOpacity="0.25" />
           </svg>
-          <figcaption>Coussin</figcaption>
+          <figcaption>{t.coussin}</figcaption>
         </figure>
       </li>
       <li>
         <figure>
-          <svg viewBox="0 0 200 220" role="img" aria-label={`${d.titre} sur la couverture d'un carnet`}>
+          <svg viewBox="0 0 200 220" role="img" aria-label={`${titre} ${t.surCarnet}`}>
             <defs>
               {motif("carnet", 0.6)}
               <linearGradient id={`${id}-reliure`} x1="0" x2="1">
@@ -71,12 +79,12 @@ export function VoirSur({ d }: { d: Design }) {
             <rect x="72" y="140" width="72" height="26" rx="2" fill="#ece2cb" opacity="0.92" />
             <path d="M80 150 H136 M80 157 H118" stroke="#1b2238" strokeOpacity="0.5" strokeWidth="2" />
           </svg>
-          <figcaption>Carnet</figcaption>
+          <figcaption>{t.carnet}</figcaption>
         </figure>
       </li>
       <li>
         <figure>
-          <svg viewBox="0 0 200 220" role="img" aria-label={`${d.titre} en papier peint`}>
+          <svg viewBox="0 0 200 220" role="img" aria-label={`${titre} ${t.surPapier}`}>
             <defs>
               {motif("mur", 0.55)}
               <linearGradient id={`${id}-jour`} x1="0" y1="0" x2="1" y2="1">
@@ -92,7 +100,7 @@ export function VoirSur({ d }: { d: Design }) {
             <rect x="54" y="132" width="92" height="9" fill="#1b2238" />
             <path d="M92 132 C86 116 90 104 100 98 C110 104 114 116 108 132 Z" fill="#9e2b25" />
           </svg>
-          <figcaption>Papier peint</figcaption>
+          <figcaption>{t.papier}</figcaption>
         </figure>
       </li>
     </ul>

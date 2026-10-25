@@ -67,3 +67,51 @@ export const LICENCES: Record<TypeLicence, Licence> = {
 export function typeLicence(famille: Famille): TypeLicence {
   return famille === "petit-atelier" ? "coloriage" : "standard";
 }
+
+/** Texte anglais des licences, recopié dans les commandes passées sur la version anglaise du site. */
+export const LICENCES_EN: Record<TypeLicence, Licence> = {
+  standard: {
+    type: "standard",
+    version: VERSION_LICENCE,
+    nom: "Standard license",
+    resume:
+      "A non-exclusive license granted to a single buyer, with no time or territory limit, for personal and commercial use.",
+    permis: [
+      "Print and reproduce the pattern on any medium, including products you sell (fabrics, stationery, home decor, clothing, packaging).",
+      "Modify the pattern: colours, scale, cropping, combining it with other elements.",
+      "Use the pattern in your digital creations and your marketing materials.",
+      "Have your products made by a printer or a workshop, which may receive the file for that production only.",
+    ],
+    interdit: [
+      "Resell, share, lend or make available the file itself, modified or not, including in a stock image library, a pattern pack or a downloadable template.",
+      "Use the pattern as a logo or register it as a trademark, design or model.",
+      "Use the file to train or feed an artificial intelligence system.",
+      "Present the pattern as your own original creation.",
+    ],
+    mentions: [
+      "Rediscovered patterns reproduce public domain works: the license covers the file restored by L'atelier sous la maison, not the original artwork itself. No exclusivity is granted.",
+      "Atelier originals are created with the assistance of AI. No exclusivity or copyright protection is guaranteed.",
+      "The license certificate is the proof of your rights. It can be verified online with its number.",
+    ],
+  },
+  coloriage: {
+    type: "coloriage",
+    version: VERSION_LICENCE,
+    nom: "Colouring license",
+    resume: "A printing license for family or educational use, with no time limit.",
+    permis: [
+      "Print the drawings as many times as you like for your family.",
+      "Print the drawings for a class, a holiday club or a workshop you run, without selling them.",
+    ],
+    interdit: [
+      "Sell the prints or the file, or include them in a product you sell.",
+      "Share, publish or make available the file, including on a website or an open class network.",
+      "Use the file to train or feed an artificial intelligence system.",
+    ],
+    mentions: ["The license certificate is the proof of your rights. It can be verified online with its number."],
+  },
+};
+
+export function licenceSelonLangue(type: TypeLicence, langue: "fr" | "en") {
+  return langue === "en" ? LICENCES_EN[type] : LICENCES[type];
+}

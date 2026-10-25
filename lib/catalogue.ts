@@ -3,11 +3,14 @@
 // depuis la base de données quand elle est en place, sinon depuis lib/graines.json.
 
 import donnees from "./catalogue.genere.json";
-import type { Design } from "./modele";
+import { TIROIRS_OUVERTS, type Design } from "./modele";
 
 export * from "./modele";
 
-const publies = (donnees as Design[]).filter((d) => d.statut === undefined || d.statut === "publie");
+// Seuls les tiroirs ouverts sont publiés sur le site (le petit atelier est retiré de la vente).
+const publies = (donnees as Design[]).filter(
+  (d) => (d.statut === undefined || d.statut === "publie") && TIROIRS_OUVERTS.includes(d.famille),
+);
 
 // Les exemples de la maquette s'effacent d'eux-mêmes dès que leur tiroir contient de vrais designs.
 const tiroirsReels = new Set(publies.filter((d) => !d.exemple).map((d) => d.famille));

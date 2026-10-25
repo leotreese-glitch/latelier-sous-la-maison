@@ -4,7 +4,8 @@
 import { CONTACT, DOMAINE } from "./site";
 
 export const VERSION_CGV = "2026-10";
-export const MISE_A_JOUR_LEGALE = "16 octobre 2026";
+export const MISE_A_JOUR_LEGALE = "25 octobre 2026";
+export const MISE_A_JOUR_LEGALE_EN = "October 25, 2026";
 
 /** Durée de conservation des commandes, annoncée dans la page Confidentialité. */
 export const CONSERVATION_COMMANDES_ANS = 10;
@@ -54,13 +55,14 @@ export const PRESTATAIRES = {
 };
 
 /** Champs encore vides, pour afficher l'avertissement et pour l'administration. */
-export function infosLegalesManquantes() {
+export function infosLegalesManquantes(l: "fr" | "en" = "fr") {
+  const en = l === "en";
   const manques: string[] = [];
-  if (!EDITEUR.nom) manques.push("nom de l'entrepreneur (suivi de « EI »)");
-  if (!EDITEUR.adresse) manques.push("adresse");
-  if (!EDITEUR.telephone) manques.push("téléphone");
-  if (!EDITEUR.siret) manques.push("numéro SIRET");
-  if (!EDITEUR.tva) manques.push("mention de TVA");
-  if (!MEDIATEUR.nom) manques.push("médiateur de la consommation");
+  if (!EDITEUR.nom) manques.push(en ? "owner's name (followed by « EI »)" : "nom de l'entrepreneur (suivi de « EI »)");
+  if (!EDITEUR.adresse) manques.push(en ? "address" : "adresse");
+  if (!EDITEUR.telephone) manques.push(en ? "phone number" : "téléphone");
+  if (!EDITEUR.siret) manques.push(en ? "SIRET number" : "numéro SIRET");
+  if (!EDITEUR.tva) manques.push(en ? "VAT statement" : "mention de TVA");
+  if (!MEDIATEUR.nom) manques.push(en ? "consumer mediator" : "médiateur de la consommation");
   return manques;
 }

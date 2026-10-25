@@ -20,6 +20,11 @@ export type TypeMotif = "floral" | "geometrique" | "animalier" | "figuratif";
 
 export type StatutDroits = "a-verifier" | "domaine-public" | "refuse";
 
+/** Champs d'un design traduits en anglais (affichés sur /en/ ; à défaut, le texte français). */
+export const CHAMPS_TRADUITS = ["titre", "resume", "cartel", "origine", "technique", "date", "source"] as const;
+export type ChampTraduit = (typeof CHAMPS_TRADUITS)[number];
+export type TexteAnglais = Partial<Record<ChampTraduit, string>>;
+
 export interface Palier {
   licences: number;
   eur: number;
@@ -73,6 +78,8 @@ export interface Design {
   droits?: Droits;
   /** Fichiers livrés à l'acheteur, tels que déposés dans l'administration (calculé par l'API du catalogue). */
   livrables?: Livrable[];
+  /** Version anglaise des textes de la fiche. */
+  en?: TexteAnglais;
 }
 
 export interface Livrable {
@@ -106,6 +113,31 @@ export const FAMILLES: Record<Famille, { nom: string; phrase: string; prevus: nu
   },
 };
 
+/**
+ * Tiroirs ouverts sur le site public. Le petit atelier (coloriages) est retiré de la vente depuis le 25 octobre 2026 :
+ * ses designs restent en base et dans l'administration, mais n'apparaissent plus sur le site.
+ */
+export const TIROIRS_OUVERTS: Famille[] = ["retrouves", "atelier"];
+
+/** Libellés anglais des tiroirs. */
+export const FAMILLES_EN: Record<Famille, { nom: string; phrase: string; ouvrir: string }> = {
+  retrouves: {
+    nom: "Rediscovered patterns",
+    phrase: "Old patterns rediscovered in museum collections and restored one by one.",
+    ouvrir: "Open the rediscovered patterns",
+  },
+  atelier: {
+    nom: "Atelier originals",
+    phrase: "New patterns, born here, that you won't find anywhere else.",
+    ouvrir: "Open the atelier originals",
+  },
+  "petit-atelier": {
+    nom: "The little atelier",
+    phrase: "Colouring pages for little ones and for those who already draw.",
+    ouvrir: "Open the little atelier",
+  },
+};
+
 export const PERIODES: { cle: Periode; nom: string }[] = [
   { cle: "antiquite", nom: "Antiquité" },
   { cle: "moyen-age", nom: "Moyen Âge" },
@@ -127,6 +159,35 @@ export const COULEURS: { cle: Couleur; nom: string; hex: string }[] = [
   { cle: "noir", nom: "Noir", hex: "#23211F" },
   { cle: "creme", nom: "Crème", hex: "#EFE4CC" },
 ];
+
+export const PERIODES_EN: Record<Periode, string> = {
+  antiquite: "Antiquity",
+  "moyen-age": "Middle Ages",
+  xvie: "16th century",
+  xviie: "17th century",
+  xviiie: "18th century",
+  xixe: "19th century",
+  xxe: "20th century",
+  aujourdhui: "Today",
+};
+
+export const COULEURS_EN: Record<Couleur, string> = {
+  indigo: "Indigo",
+  garance: "Madder red",
+  safran: "Saffron",
+  reseda: "Weld green",
+  brun: "Brown",
+  or: "Gold",
+  noir: "Black",
+  creme: "Cream",
+};
+
+export const TYPES_EN: Record<TypeMotif, string> = {
+  floral: "Floral",
+  geometrique: "Geometric",
+  animalier: "Animal",
+  figuratif: "Figurative",
+};
 
 export const TYPES: Record<TypeMotif, string> = {
   floral: "Floral",
@@ -250,4 +311,41 @@ export function versionPublique(d: Design): Design {
   if (!d.droits) return d;
   const { note: _note, ...droits } = d.droits;
   return { ...d, droits };
+}
+
+// ——— Libellés et textes selon la langue ———
+
+type L = "fr" | "en";
+
+export function nomFamille(f: Famille, l: L) {
+  return l === "en" ? FAMILLES_EN[f].nom : FAMILLES[f].nom;
+}
+
+export function nomPeriode(p: Periode, l: L) {
+  return l === "en" ? PERIODES_EN[p] : (PERIODES.find((x) => x.cle === p)?.nom ?? p);
+}
+
+export function nomCouleur(c: Couleur, l: L) {
+  return l === "en" ? COULEURS_EN[c] : (COULEURS.find((x) => x.cle === c)?.nom ?? c);
+}
+
+export function nomType(t: TypeMotif, l: L) {
+  return l === "en" ? TYPES_EN[t] : TYPES[t];
+}
+
+/** Les textes d'une fiche dans la langue demandée (le français quand la traduction manque). */
+export function texteDesign(d: Pick<Design, ChampTraduit | "en">, l: L): Record<ChampTraduit, string> {
+  const fr = { titre: d.titre, resume: d.resume, cartel: d.cartel, origine: d.origine, technique: d.technique, date: d.date, source: d.source };
+  if (l !== "en" || !d.en) return fr;
+  const r = { ...fr };
+  for (const c of CHAMPS_TRADUITS) {
+    const v = d.en[c];
+    if (typeof v === "string" && v.trim()) r[c] = v;
+  }
+  return r;
+}
+
+/** La traduction anglaise est-elle complète pour les champs affichés ? */
+export function traductionComplete(d: Pick<Design, ChampTraduit | "en">) {
+  return CHAMPS_TRADUITS.every((c) => !d[c]?.trim() || Boolean(d.en?.[c]?.trim()));
 }

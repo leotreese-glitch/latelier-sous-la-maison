@@ -1,6 +1,6 @@
 import { lireDesign, lireFichiers, slugLibre, versDonnees } from "../../../../server/base";
 import { erreur, json, type Env } from "../../../../server/env";
-import { manquesPourPublier, slugifier, type Design, type Statut } from "../../../../lib/modele";
+import { CHAMPS_TRADUITS, manquesPourPublier, slugifier, type Design, type Statut, type TexteAnglais } from "../../../../lib/modele";
 
 const STATUTS: Statut[] = ["brouillon", "publie", "retire"];
 
@@ -44,6 +44,15 @@ export const onRequestPut: PagesFunction<Env> = async ({ request, env, params })
     hd: actuel.hd,
     exemple: actuel.exemple,
   };
+  // Version anglaise : seulement les champs prévus, en texte, sans espaces superflus.
+  if (corps.design.en && typeof corps.design.en === "object") {
+    const en: TexteAnglais = {};
+    for (const c of CHAMPS_TRADUITS) {
+      const v = (corps.design.en as Record<string, unknown>)[c];
+      if (typeof v === "string" && v.trim()) en[c] = v.trim();
+    }
+    fusion.en = en;
+  }
   // Une valeur null envoyée par l'éditeur veut dire « retirer ce champ » (ex. fin d'une édition limitée).
   for (const [cle, valeur] of Object.entries(corps.design)) {
     if (valeur === null) delete (fusion as unknown as Record<string, unknown>)[cle];

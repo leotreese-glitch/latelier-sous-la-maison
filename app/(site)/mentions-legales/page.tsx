@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { chemin } from "@/lib/i18n";
 import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { AvisProjet, Champ, MiseAJour } from "@/components/legal/Legal";
@@ -6,6 +7,7 @@ import { EDITEUR, HEBERGEUR, PRESTATAIRES } from "@/lib/legal";
 
 export const metadata: Metadata = metaPage({
   chemin: "/mentions-legales/",
+  autre: chemin("mentions", "en"),
   titre: "Mentions légales",
   description: "Éditeur, hébergeur et prestataires du site L'atelier sous la maison.",
 });

@@ -72,6 +72,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, waitUntil
       commande: {
         designId: l.design_id,
         titre: d.titre,
+        titreEn: d.titreEn ?? null,
         slug: d.slug,
         famille: d.famille,
         statut: l.statut,

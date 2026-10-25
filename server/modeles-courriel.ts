@@ -1,5 +1,6 @@
 // Modèles des e-mails envoyés par le site. HTML simple en tableaux et styles en ligne,
 // pour un rendu correct dans Gmail, Outlook et Apple Mail. Aucune image distante.
+import { chemin, LOCALE, type Langue } from "../lib/i18n";
 import { CONTACT } from "../lib/site";
 
 /** Nom affiché du site dans les e-mails : l'hôte réel des liens, pour que le texte et l'adresse concordent. */
@@ -24,17 +25,21 @@ export function echapper(texte: string) {
   return texte.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
-export function formaterMontant(centimes: number, devise: string) {
-  return new Intl.NumberFormat("fr-FR", { style: "currency", currency: devise.toUpperCase() }).format(centimes / 100);
+export function formaterMontant(centimes: number, devise: string, l: Langue = "fr") {
+  return new Intl.NumberFormat(LOCALE[l], { style: "currency", currency: devise.toUpperCase() }).format(centimes / 100);
 }
 
-export function formaterDate(iso: string) {
-  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
+export function formaterDate(iso: string, l: Langue = "fr") {
+  return new Date(iso).toLocaleDateString(LOCALE[l], { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
 }
 
-/** « 16 octobre 2026 à 14 h 32 », heure de Paris. */
-export function formaterDateHeure(iso: string) {
+/** « 16 octobre 2026 à 14 h 32 » ou « October 16, 2026 at 2:32 PM », heure de Paris. */
+export function formaterDateHeure(iso: string, l: Langue = "fr") {
   const d = new Date(iso);
+  if (l === "en") {
+    const heure = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "Europe/Paris" });
+    return `${formaterDate(iso, "en")} at ${heure}`;
+  }
   const heure = d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" }).replace(":", " h ");
   return `${formaterDate(iso)} à ${heure}`;
 }
@@ -71,13 +76,21 @@ function lien(href: string, texte: string) {
 }
 
 /** Enveloppe commune : en-tête au nom de l'atelier, carte papier, pied de page. */
-function page(options: { apercu: string; titre: string; corps: string; site: string; test: boolean }) {
+function page(options: { apercu: string; titre: string; corps: string; site: string; test: boolean; langue?: Langue }) {
+  const en = options.langue === "en";
   const bandeauTest = options.test
-    ? `<tr><td style="padding:10px 32px;background:#fff3cd;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6b5000;text-align:center">E-mail de test : aucun paiement réel n'a eu lieu.</td></tr>`
+    ? `<tr><td style="padding:10px 32px;background:#fff3cd;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6b5000;text-align:center">${
+        en ? "Test email: no real payment took place." : "E-mail de test : aucun paiement réel n'a eu lieu."
+      }</td></tr>`
     : "";
-  const contact = CONTACT.actif ? ` Une question ? Écrivez à ${lien(`mailto:${CONTACT.email}`, CONTACT.email)}.` : "";
+  const contact = CONTACT.actif
+    ? en
+      ? ` Any questions? Write to ${lien(`mailto:${CONTACT.email}`, CONTACT.email)}.`
+      : ` Une question ? Écrivez à ${lien(`mailto:${CONTACT.email}`, CONTACT.email)}.`
+    : "";
+  const signature = en ? "old patterns restored and original designs." : "motifs anciens restaurés et créations originales.";
   return `<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${echapper(options.titre)}</title></head>
+<html lang="${en ? "en" : "fr"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${echapper(options.titre)}</title></head>
 <body style="margin:0;padding:0;background:${COULEURS.fond}">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0">${echapper(options.apercu)}</div>
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:${COULEURS.fond}"><tr><td align="center" style="padding:28px 12px">
@@ -92,7 +105,7 @@ ${options.corps}
 </td></tr></table>
 </td></tr>
 <tr><td style="padding:16px 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.55;color:${COULEURS.douce}">
-${lien(options.site, hote(options.site))}, motifs anciens restaurés et créations originales.${contact}
+${lien(options.site + (en ? "/en/" : ""), hote(options.site))}, ${signature}${contact}
 </td></tr>
 </table>
 </td></tr></table>
@@ -113,6 +126,7 @@ export interface InfosCommande {
   modeTest: boolean;
   consentement: string | null;
   versionCgv: string | null;
+  langue: Langue;
 }
 
 /**
@@ -121,9 +135,18 @@ export interface InfosCommande {
  */
 function recapAccord(c: InfosCommande, site: string) {
   if (!c.consentement || Number.isNaN(Date.parse(c.consentement))) return "";
+  if (c.langue === "en") {
+    const quand = `${formaterDateHeure(c.consentement, "en")} (Paris time)`;
+    const cgv = c.versionCgv
+      ? `you accepted the ${lien(`${site}${chemin("cgv", "en")}`, "terms of sale")} (version ${echapper(c.versionCgv)}) and the license, and `
+      : "";
+    return petit(
+      `<strong>Your consent.</strong> On ${echapper(quand)}, before payment, ${cgv}you requested immediate access to the files and acknowledged that you lose your right of withdrawal once they are made available (article L221-28, 13°, of the French Consumer Code).`,
+    );
+  }
   const quand = `${formaterDateHeure(c.consentement)} (heure de Paris)`;
   const cgv = c.versionCgv
-    ? `vous avez accepté les ${lien(`${site}/conditions-de-vente/`, "conditions de vente")} (version ${echapper(c.versionCgv)}) et la licence, et `
+    ? `vous avez accepté les ${lien(`${site}${chemin("cgv", "fr")}`, "conditions de vente")} (version ${echapper(c.versionCgv)}) et la licence, et `
     : "";
   return petit(
     `<strong>Votre accord.</strong> Le ${echapper(quand)}, avant le paiement, ${cgv}vous avez demandé l'accès immédiat aux fichiers en reconnaissant perdre votre droit de rétractation dès leur mise à disposition (article L221-28, 13°, du Code de la consommation).`,
@@ -132,12 +155,42 @@ function recapAccord(c: InfosCommande, site: string) {
 
 /** E-mail envoyé à l'acheteur après le paiement : son lien de commande, sa licence et son certificat. */
 export function modeleConfirmation(c: InfosCommande & { nom: string | null }, site: string) {
-  const lienCommande = `${site}/commande/?t=${encodeURIComponent(c.jeton)}`;
-  const lienCertificat = `${site}/certificat/?n=${encodeURIComponent(c.certificat)}`;
+  const l = c.langue;
+  const lienCommande = `${site}${chemin("commande", l)}?t=${encodeURIComponent(c.jeton)}`;
+  const lienCertificat = `${site}${chemin("certificat", l)}?n=${encodeURIComponent(c.certificat)}`;
+  const lienLicence = `${site}${chemin("licence", l)}`;
+  const prenom = c.nom ? echapper(c.nom.split(" ")[0]) : "";
+  if (l === "en") {
+    const objet = c.coloriage ? "pack" : "license";
+    const sujet = `${c.modeTest ? "[TEST] " : ""}Your ${objet} for “${c.titre}”: your files are ready`;
+    const corps = [
+      paragraphe(prenom ? `Hello ${prenom},` : "Hello,"),
+      paragraphe(`Thank you for your purchase. Your high-definition files and your license certificate are ready.`),
+      bouton(lienCommande, "Download my files"),
+      petit(
+        `This link is personal: keep this email. Downloads stay open until ${echapper(formaterDate(c.finAcces, "en"))}; the license itself never expires.`,
+      ),
+      lignes([
+        ["Design", `${c.titre} (no. ${c.designId})`],
+        ["License", c.licence],
+        ["Certificate", c.certificat],
+        ["Amount paid", formaterMontant(c.montant, c.devise, "en")],
+        ["Date", formaterDate(c.payeeLe, "en")],
+      ]),
+      recapAccord(c, site),
+      petit(`Your certificate can be viewed and printed at any time: ${lien(lienCertificat, "view the certificate")}.`),
+      petit(`The full text of the license: ${lien(lienLicence, `${hote(site)}${chemin("licence", "en").replace(/\/$/, "")}`)}.`),
+      petit(`The payment receipt and invoice are sent to you separately by Link (Stripe group), our payment provider.`),
+    ].join("\n");
+    return {
+      sujet,
+      html: page({ apercu: `Your files and certificate ${c.certificat} are ready.`, titre: "Thank you for your purchase", corps, site, test: c.modeTest, langue: "en" }),
+    };
+  }
   const objet = c.coloriage ? "pochette" : "licence";
   const sujet = `${c.modeTest ? "[TEST] " : ""}Votre ${objet} « ${c.titre} » : vos fichiers vous attendent`;
   const corps = [
-    paragraphe(`${c.nom ? `Bonjour ${echapper(c.nom.split(" ")[0])},` : "Bonjour,"}`),
+    paragraphe(prenom ? `Bonjour ${prenom},` : "Bonjour,"),
     paragraphe(`Merci pour votre achat. Vos fichiers en haute définition et votre certificat de licence sont prêts.`),
     bouton(lienCommande, "Télécharger mes fichiers"),
     petit(
@@ -152,7 +205,7 @@ export function modeleConfirmation(c: InfosCommande & { nom: string | null }, si
     ]),
     recapAccord(c, site),
     petit(`Votre certificat est consultable et imprimable à tout moment : ${lien(lienCertificat, "voir le certificat")}.`),
-    petit(`Le texte complet de la licence : ${lien(`${site}/licence/`, `${hote(site)}/licence`)}.`),
+    petit(`Le texte complet de la licence : ${lien(lienLicence, `${hote(site)}/licence`)}.`),
     petit(`Le reçu et la facture du paiement vous sont envoyés séparément par Link (groupe Stripe), notre prestataire de paiement.`),
   ].join("\n");
   return {
@@ -170,6 +223,7 @@ export function modeleAlerteVente(c: InfosCommande & { email: string | null; pay
       ["Design", `${c.titre} (n° ${c.designId})`],
       ["Montant", formaterMontant(c.montant, c.devise)],
       ["Acheteur", `${c.email ?? "adresse inconnue"}${c.pays ? ` (${c.pays})` : ""}`],
+      ["Site", c.langue === "en" ? "version anglaise" : "version française"],
       ["Certificat", c.certificat],
     ]),
     bouton(`${site}/admin/ventes/`, "Voir les ventes"),
@@ -187,24 +241,38 @@ export interface CommandeRetrouvee {
 }
 
 /** E-mail « Retrouver mes commandes » : la liste des liens de commande liés à une adresse. */
-export function modeleRetrouver(commandes: CommandeRetrouvee[], site: string) {
+export function modeleRetrouver(commandes: CommandeRetrouvee[], site: string, l: Langue = "fr") {
+  const en = l === "en";
   const test = commandes.length > 0 && commandes.every((c) => c.modeTest);
   const liste = commandes
     .map((c) => {
-      const etat = c.remboursee ? " (remboursée)" : c.modeTest ? " (test)" : "";
+      const etat = c.remboursee ? (en ? " (refunded)" : " (remboursée)") : c.modeTest ? " (test)" : "";
+      const achat = en ? `Bought on ${echapper(formaterDate(c.payeeLe, "en"))}` : `Achat du ${echapper(formaterDate(c.payeeLe))}`;
       return `<tr><td style="padding:10px 0;border-bottom:1px solid ${COULEURS.filet};font-family:Arial,Helvetica,sans-serif;font-size:14px;color:${COULEURS.encre}">
-${lien(`${site}/commande/?t=${encodeURIComponent(c.jeton)}`, `${c.titre} (n° ${c.designId})`)}<br>
-<span style="color:${COULEURS.douce};font-size:13px">Achat du ${echapper(formaterDate(c.payeeLe))}${etat}</span>
+${lien(`${site}${chemin("commande", l)}?t=${encodeURIComponent(c.jeton)}`, `${c.titre} (${en ? "no." : "n°"} ${c.designId})`)}<br>
+<span style="color:${COULEURS.douce};font-size:13px">${achat}${etat}</span>
 </td></tr>`;
     })
     .join("\n");
   const corps = [
-    paragraphe(`Vous avez demandé à retrouver vos commandes. Voici les liens vers chacune d'elles :`),
+    paragraphe(en ? `You asked to find your orders. Here are the links to each of them:` : `Vous avez demandé à retrouver vos commandes. Voici les liens vers chacune d'elles :`),
     `<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:6px 0 18px;border-top:1px solid ${COULEURS.filet}">${liste}</table>`,
-    petit(`Chaque lien est personnel : ne le transférez pas. Si vous n'êtes pas à l'origine de cette demande, ignorez simplement cet e-mail.`),
+    petit(
+      en
+        ? `Each link is personal: do not forward it. If you did not make this request, simply ignore this email.`
+        : `Chaque lien est personnel : ne le transférez pas. Si vous n'êtes pas à l'origine de cette demande, ignorez simplement cet e-mail.`,
+    ),
   ].join("\n");
+  const n = commandes.length;
   return {
-    sujet: `${test ? "[TEST] " : ""}Vos commandes à L'atelier sous la maison`,
-    html: page({ apercu: `${commandes.length} commande${commandes.length > 1 ? "s" : ""} retrouvée${commandes.length > 1 ? "s" : ""}`, titre: "Vos commandes", corps, site, test }),
+    sujet: `${test ? "[TEST] " : ""}${en ? "Your orders at L'atelier sous la maison" : "Vos commandes à L'atelier sous la maison"}`,
+    html: page({
+      apercu: en ? `${n} order${n > 1 ? "s" : ""} found` : `${n} commande${n > 1 ? "s" : ""} retrouvée${n > 1 ? "s" : ""}`,
+      titre: en ? "Your orders" : "Vos commandes",
+      corps,
+      site,
+      test,
+      langue: l,
+    }),
   };
 }

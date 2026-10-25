@@ -1,21 +1,21 @@
 # L'atelier sous la maison
 
-Site de L'atelier sous la maison : une bibliothèque de motifs anciens restaurés, de créations originales et de coloriages, livrés en haute définition avec leur licence.
+Site de L'atelier sous la maison : une bibliothèque de motifs anciens restaurés et de créations originales, livrés en haute définition avec leur licence. En français à la racine, en anglais sous `/en/`.
 
-**État actuel : étape 4, le paiement en mode test.** Le catalogue vit dans une base de données, l'administration permet d'ajouter les designs, les fichiers haute définition sont stockés en privé, et l'achat fonctionne avec Stripe en mode test : page de commande, téléchargement des fichiers HD, certificat de licence. Avant le paiement réel, il reste les courriels, le nom de domaine et les pages légales.
+**État actuel : paiement en mode test, site bilingue.** Le catalogue vit dans une base de données, l'administration permet d'ajouter les designs, les fichiers haute définition sont stockés en privé, et l'achat fonctionne avec Stripe en mode test : page de commande, téléchargement des fichiers HD, certificat de licence, e-mails, pages légales. Avant le paiement réel : micro-entreprise, informations légales, relecture par un juriste (voir « Pages légales »).
 
 ## Ce que contient le site
 
 | Page | Adresse | Ce qu'on y voit |
 | --- | --- | --- |
-| Accueil | `/` | La descente sous la maison, les trois tiroirs, les dernières trouvailles, la recherche par couleur |
-| Explorer | `/explorer/` | La grille en mosaïque, les filtres par tiroir, couleur et époque, la recherche par mots |
-| Fiche design | `/motif/<nom-du-motif>/` | L'aperçu filigrané avec loupe, le prix en euros ou en dollars, l'édition limitée, le cartel, le motif sur quatre objets |
+| Accueil | `/` · `/en/` | La descente sous la maison et son paragraphe d'accueil, les deux tiroirs, les dernières trouvailles, la recherche par couleur |
+| Explorer | `/explorer/` · `/en/explore/` | La grille en mosaïque, les filtres par tiroir, couleur et époque, la recherche par mots |
+| Fiche design | `/motif/<nom-du-motif>/` · `/en/pattern/<nom-du-motif>/` | L'aperçu filigrané avec loupe, le prix en euros ou en dollars, l'édition limitée, le cartel, le motif sur quatre objets |
 | Identité visuelle | `/identite/` | Les pistes de logo (les racines sont retenues), les couleurs, les typographies |
-| Licences | `/licence/` | Le texte des deux licences (standard et coloriage) |
-| Commande | `/commande/?t=…` | Après l'achat : les fichiers à télécharger et le certificat. Lien secret, propre à chaque acheteur |
-| Certificat | `/certificat/?n=LSM-…` | Le certificat de licence, imprimable, et la vérification d'un numéro |
-| Retrouver mes commandes | `/commande/retrouver/` | L'acheteur saisit son e-mail et reçoit à nouveau ses liens de commande |
+| Licences | `/licence/` · `/en/license/` | Le texte de la licence standard |
+| Commande | `/commande/?t=…` · `/en/order/?t=…` | Après l'achat : les fichiers à télécharger et le certificat. Lien secret, propre à chaque acheteur |
+| Certificat | `/certificat/?n=LSM-…` · `/en/certificate/?n=LSM-…` | Le certificat de licence, imprimable, et la vérification d'un numéro |
+| Retrouver mes commandes | `/commande/retrouver/` · `/en/order/find/` | L'acheteur saisit son e-mail et reçoit à nouveau ses liens de commande |
 | Administration | `/admin/`, `/admin/ventes/` | Réservée à Léo, protégée par mot de passe : designs et ventes |
 
 ## Comment ça marche
@@ -136,6 +136,18 @@ Ces textes sont une base de travail : à faire relire par un juriste avant le pa
 - `sitemap.xml` et `robots.txt` sont fabriqués avec le site. Les adresses en `pages.dev` ne sont jamais indexées.
 - **Indexation par Google : fermée pour l'instant.** Au lancement (ou deux à trois semaines avant), passer `INDEXATION` à `true` dans `lib/site.ts`, puis déclarer le site et son `sitemap.xml` dans Google Search Console.
 
+## Version anglaise
+
+- Le site anglais vit sous `/en/` : mêmes designs, interface, licence, pages légales, e-mails et certificat en anglais. Les prix s'y affichent en dollars par défaut.
+- Le bouton EN / FR de l'en-tête ouvre la même page dans l'autre langue (sur téléphone, il est dans le menu).
+- Chaque design a une section **Version anglaise** dans l'administration : titre, résumé, cartel, date, origine, technique, source. Un champ vide affiche le texte français sur le site anglais. Les 46 designs publiés au 25 octobre 2026 ont été traduits.
+- La langue de l'achat est gardée dans la commande : l'e-mail, la page de commande et le texte de licence du certificat suivent cette langue. L'alerte de vente reste en français et indique la langue.
+- Les textes légaux anglais sont des traductions : la version française fait foi.
+
+## Tiroirs du site
+
+Le petit atelier (coloriages) est retiré de la vente depuis le 25 octobre 2026 : `TIROIRS_OUVERTS` dans `lib/modele.ts`. Ses designs restent en base et dans l'administration ; pour le rouvrir, il suffit de l'ajouter à cette liste.
+
 ## Ajouter un design
 
 1. `/admin/`, puis **Nouveau** dans le bon tiroir. L'identifiant (`orig-0006`, `dp-0011`…) est attribué tout seul et ne changera jamais.
@@ -151,8 +163,10 @@ Les exemples de la maquette portent l'étiquette « Exemple » : supprime-les au
 
 | Dossier ou fichier | Rôle |
 | --- | --- |
-| `app/(site)/` | Les pages publiques |
-| `app/admin/`, `components/admin/` | L'administration |
+| `app/(site)/`, `app/en/` | Les pages publiques en français et en anglais (une mise en page racine par langue) |
+| `components/pages/` | Les pages communes aux deux langues (accueil, explorer, fiche, licences) |
+| `lib/i18n.ts` | Les langues et les adresses des pages dans chaque langue |
+| `app/(admin)/admin/`, `components/admin/` | L'administration |
 | `functions/` | Les fonctions Cloudflare : API du catalogue, administration, aperçus |
 | `server/` | Le code commun des fonctions : base de données, sécurité, fichiers, Stripe, commandes |
 | `functions/api/achat.ts`, `functions/api/stripe/webhook.ts` | Le départ vers Stripe et la confirmation des paiements |
@@ -194,4 +208,4 @@ Pour la simulation, crée un fichier `.dev.vars` avec `ADMIN_MOT_DE_PASSE=...` e
 2. Socle du site : catalogue en base, administration, aperçus filigranés, stockage privé (fait)
 3. Comptes : inscription, favoris, tableaux, historique d'achats
 4. Paiement : Stripe en mode test, livraison HD par lien temporaire, certificats de licence, e-mails (fait en mode test)
-5. Finitions : pages légales (rédigées, à compléter et à faire relire), anglais, mesure d'audience sans cookies
+5. Finitions : pages légales (rédigées, à compléter et à faire relire), version anglaise (faite), mesure d'audience sans cookies

@@ -223,6 +223,23 @@ a {
   gap: 18px;
   margin-left: auto;
 }
+.entete__nav-extra {
+  display: none;
+}
+.langue {
+  padding: 4px 8px;
+  border: 1px solid rgba(201, 164, 76, 0.45);
+  border-radius: 999px;
+  color: var(--texte-doux);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.langue:hover,
+.langue:focus-visible {
+  color: var(--or-clair);
+  border-color: var(--or);
+}
 .entete__compte {
   color: var(--texte-doux);
   font-size: 0.95rem;
@@ -291,8 +308,14 @@ a {
   .entete__compte {
     display: none;
   }
+  .entete__nav.est-ouvert .entete__nav-extra {
+    display: block;
+  }
 }
 @media (max-width: 520px) {
+  .entete__outils .langue {
+    display: none;
+  }
   .entete__barre {
     gap: 12px;
   }
@@ -395,10 +418,16 @@ a {
   padding-left: 0.9em;
 }
 .surface__phrase {
-  max-width: 32ch;
+  display: grid;
+  gap: 10px;
+  max-width: 46ch;
   margin: 24px 0 30px;
   color: var(--texte-doux);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+.surface__phrase p:first-child {
+  color: var(--texte);
 }
 .surface__maison {
   position: absolute;
@@ -445,7 +474,7 @@ a {
   }
   .surface__phrase {
     margin: 16px 0 22px;
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   .surface__titre {
     font-size: clamp(2.5rem, 12vw, 3.4rem);
@@ -612,7 +641,7 @@ a {
 
 .tiroirs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin: 44px 0 0;
   padding: 0;

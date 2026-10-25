@@ -1,5 +1,6 @@
 /// <reference types="@cloudflare/workers-types" />
-import { JOURS_ACCES, LICENCES, typeLicence, type Licence } from "../lib/licence";
+import { langueValide, type Langue } from "../lib/i18n";
+import { JOURS_ACCES, licenceSelonLangue, typeLicence, type Licence } from "../lib/licence";
 import { FAMILLES, prixEdition, type Design } from "../lib/modele";
 import { lireDesign } from "./base";
 import { courrielActif, envoyerCourriel } from "./courriel";
@@ -50,6 +51,10 @@ export interface DonneesCommande {
   consentement: string | null;
   /** Version des conditions de vente acceptées (absente sur les commandes antérieures aux conditions de vente). */
   versionCgv?: string | null;
+  /** Langue du site au moment de l'achat : celle des e-mails et du texte de licence recopié (français par défaut). */
+  langue?: Langue;
+  /** Titre anglais du design au moment de l'achat, quand il existe. */
+  titreEn?: string | null;
 }
 
 export interface LigneCommande {
@@ -91,11 +96,14 @@ export async function enregistrerCommande(db: D1Database, env: Env, session: Ses
   if (!design) throw new Error(`Design ${designId} introuvable pour la session ${session.id}.`);
 
   const maintenant = new Date().toISOString();
+  const langue = langueValide(session.metadata?.langue);
   const donnees: DonneesCommande = {
     titre: design.titre,
+    titreEn: design.en?.titre?.trim() || null,
     slug: design.slug,
     famille: design.famille,
-    licence: LICENCES[typeLicence(design.famille)],
+    langue,
+    licence: licenceSelonLangue(typeLicence(design.famille), langue),
     consentement: session.metadata?.consentement ?? null,
     versionCgv: session.metadata?.version_cgv ?? null,
   };
@@ -195,8 +203,10 @@ export function finAcces(l: LigneCommande) {
 
 function infosCommande(l: LigneCommande): InfosCommande {
   const d = lireDonnees(l);
+  const langue = langueValide(d.langue);
   return {
-    titre: d.titre,
+    langue,
+    titre: langue === "en" && d.titreEn ? d.titreEn : d.titre,
     designId: l.design_id,
     coloriage: d.famille === "petit-atelier",
     licence: d.licence.nom,

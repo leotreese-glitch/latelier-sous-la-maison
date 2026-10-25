@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
+  // Une mise en page racine par langue (et une pour l'administration) : la page 404 commune vit dans app/global-not-found.tsx.
+  experimental: { globalNotFound: true },
 };
 
 /** Adresse du site en production : son API fournit le catalogue publié. */

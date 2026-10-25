@@ -1,6 +1,12 @@
 /// <reference types="@cloudflare/workers-types" />
 import graines from "../lib/graines.json";
 import { FAMILLES, type Design, type Famille, type Statut } from "../lib/modele";
+import { TRADUCTIONS_2026_10 } from "./traductions";
+
+/** Texte SQL littéral (apostrophes doublées), pour les migrations écrites dans le code. */
+function litteral(texte: string) {
+  return `'${texte.replace(/'/g, "''")}'`;
+}
 
 // Le schéma se crée tout seul au premier appel : rien à coller dans la console D1.
 const SCHEMA = [
@@ -75,7 +81,7 @@ export function preparerBase(db: D1Database) {
  * Corrections ponctuelles des données, appliquées une seule fois chacune (la clé est notée dans meta).
  * Elles ne changent pas la date de modification : le site est reconstruit en même temps qu'elles arrivent.
  */
-const MIGRATIONS: { cle: string; requete: string }[] = [
+const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
   {
     // Suivi de l'e-mail de confirmation envoyé à l'acheteur (une seule fois par commande).
     cle: "migration:2026-10-15-commandes-courriel-envoye",
@@ -93,6 +99,15 @@ const MIGRATIONS: { cle: string; requete: string }[] = [
       WHERE id IN ('orig-0001', 'orig-0002', 'orig-0003')
       AND NOT EXISTS (SELECT 1 FROM fichiers f WHERE f.design_id = designs.id AND f.role = 'hd')`,
   },
+  {
+    // Version anglaise des 46 designs publiés au 25 octobre 2026. Seulement là où il n'y en a pas encore.
+    cle: "migration:2026-10-25-traductions-en",
+    requete: Object.entries(TRADUCTIONS_2026_10).map(
+      ([id, en]) =>
+        `UPDATE designs SET donnees = json_set(donnees, '$.en', json(${litteral(JSON.stringify(en))}))
+        WHERE id = ${litteral(id)} AND json_extract(donnees, '$.en') IS NULL`,
+    ),
+  },
 ];
 
 async function migrer(db: D1Database) {
@@ -100,7 +115,8 @@ async function migrer(db: D1Database) {
     if (await lireMeta(db, m.cle)) continue;
     const noter = db.prepare("INSERT OR REPLACE INTO meta (cle, valeur) VALUES (?1, ?2)").bind(m.cle, new Date().toISOString());
     try {
-      await db.batch([db.prepare(m.requete), noter]);
+      const requetes = Array.isArray(m.requete) ? m.requete : [m.requete];
+      await db.batch([...requetes.map((r) => db.prepare(r)), noter]);
     } catch (e) {
       // Deux instances peuvent lancer la même correction au même moment : la seconde trouve la colonne déjà là.
       if (/duplicate column/i.test(String(e))) {

@@ -2,7 +2,34 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { chemin, type Langue } from "@/lib/i18n";
 import type { Design } from "@/lib/modele";
+
+const T = {
+  fr: {
+    // Paragraphe d'accueil choisi par Léo le 25 octobre 2026 : ce qu'on fait et ce qui se vend.
+    accroche: [
+      "Sous la maison, un atelier rouvre des tiroirs oubliés : des motifs anciens retrouvés dans les musées, restaurés un à un, et des motifs nés ici.",
+      "Chacun se télécharge en haute définition, avec une licence pour créer et pour vendre.",
+    ],
+    descendre: "Descendre à l'atelier",
+    cartelTitre: "Vous êtes dans l'atelier.",
+    cartel:
+      "On y garde des motifs retrouvés dans les collections des musées, restaurés un à un, et des motifs nés ici, qu'on ne trouve nulle part ailleurs.",
+    explorer: "Explorer l'atelier",
+  },
+  en: {
+    accroche: [
+      "Beneath the house, a workshop reopens forgotten drawers: old patterns rediscovered in museum collections and restored one by one, and patterns born here.",
+      "Each one downloads in high definition, with a license to create and to sell.",
+    ],
+    descendre: "Go down to the atelier",
+    cartelTitre: "You are in the atelier.",
+    cartel:
+      "It keeps patterns rediscovered in museum collections and restored one by one, and patterns born here that you won't find anywhere else.",
+    explorer: "Explore the atelier",
+  },
+};
 
 // Étoiles à positions fixes (pas d'aléatoire : le rendu est identique à chaque visite).
 const ETOILES: [number, number, number][] = [
@@ -13,7 +40,8 @@ const ETOILES: [number, number, number][] = [
 
 const borne = (v: number) => Math.min(1, Math.max(0, v));
 
-export function Descente({ mur }: { mur: Design[] }) {
+export function Descente({ mur, l }: { mur: Design[]; l: Langue }) {
+  const t = T[l];
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -74,9 +102,13 @@ export function Descente({ mur }: { mur: Design[] }) {
               <h1 id="titre-accueil" className="surface__titre">
                 <span>L'atelier</span> <span>sous la maison</span>
               </h1>
-              <p className="surface__phrase">Il y a, sous la maison, un atelier que peu de gens connaissent.</p>
+              <div className="surface__phrase">
+                {t.accroche.map((phrase) => (
+                  <p key={phrase}>{phrase}</p>
+                ))}
+              </div>
               <button type="button" className="bouton bouton--or" onClick={descendre}>
-                Descendre à l'atelier
+                {t.descendre}
               </button>
             </div>
             <svg className="surface__maison" viewBox="0 0 400 300" aria-hidden="true">
@@ -131,13 +163,10 @@ export function Descente({ mur }: { mur: Design[] }) {
               ))}
             </ul>
             <div className="atelier__cartel cartel">
-              <h2 className="cartel__titre">Vous êtes dans l'atelier.</h2>
-              <p>
-                On y garde des motifs retrouvés dans les collections des musées, restaurés un à un. Des motifs nés ici,
-                qu'on ne trouve nulle part ailleurs. Et des dessins à colorier pour les enfants.
-              </p>
-              <Link href="/explorer/" className="bouton bouton--encre">
-                Explorer l'atelier
+              <h2 className="cartel__titre">{t.cartelTitre}</h2>
+              <p>{t.cartel}</p>
+              <Link href={chemin("explorer", l)} className="bouton bouton--encre">
+                {t.explorer}
               </Link>
             </div>
           </div>

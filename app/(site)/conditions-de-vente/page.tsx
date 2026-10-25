@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { chemin } from "@/lib/i18n";
 import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { AvisProjet, Champ, MiseAJour } from "@/components/legal/Legal";
@@ -7,6 +8,7 @@ import { JOURS_ACCES } from "@/lib/licence";
 
 export const metadata: Metadata = metaPage({
   chemin: "/conditions-de-vente/",
+  autre: chemin("cgv", "en"),
   titre: "Conditions de vente",
   description: "Conditions de vente des licences et fichiers de L'atelier sous la maison : commande, livraison, rétractation, garanties.",
 });
@@ -49,10 +51,6 @@ export default function ConditionsDeVente() {
             Les <strong>motifs retrouvés</strong> sont des restaurations de tissus anciens du domaine public ; les <strong>créations de
             l'atelier</strong> sont des motifs originaux réalisés avec l'assistance de l'intelligence artificielle. Tous deux sont vendus avec la{" "}
             <Link href="/licence/">licence standard</Link>.
-          </li>
-          <li>
-            Les <strong>pochettes du petit atelier</strong> réunissent des dessins à colorier et sont vendues avec la{" "}
-            <Link href="/licence/">licence coloriage</Link>.
           </li>
           <li>
             Certains motifs sont proposés en <strong>édition limitée</strong> : le nombre de licences est fixé à l'avance, le prix monte par

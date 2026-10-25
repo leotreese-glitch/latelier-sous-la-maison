@@ -14,6 +14,7 @@ import {
   slugifier,
   STATUTS_DROITS,
   TYPES,
+  type ChampTraduit,
   type Couleur,
   type Design,
   type Droits,
@@ -104,6 +105,7 @@ export function Editeur() {
     setSale(true);
   };
   const majDroits = (cle: keyof Droits, valeur: string) => maj("droits", { ...DROITS_VIDES, ...b.droits, [cle]: valeur } as Droits);
+  const majEn = (cle: ChampTraduit, valeur: string) => maj("en", { ...b.en, [cle]: valeur });
 
   const nbHd = fichiers.filter((f) => f.role === "hd").length;
   const manques = useMemo(() => manquesPourPublier({ ...b, edition: b.edition ?? undefined }, nbHd), [b, nbHd]);
@@ -484,6 +486,35 @@ export function Editeur() {
                 <span>Créé avec l'assistance de l'IA (mention affichée sur la fiche)</span>
               </label>
             )}
+          </Section>
+
+          <Section
+            titre="Version anglaise"
+            aide="Affichée sur la version anglaise du site (/en/). Un champ vide montre le texte français. Les noms propres (musée, numéro d'inventaire) ne se traduisent pas."
+          >
+            <div className="admin-grille">
+              <Champ etiquette="Titre (anglais)">
+                <input value={b.en?.titre ?? ""} onChange={(e) => majEn("titre", e.target.value)} maxLength={90} />
+              </Champ>
+              <Champ etiquette="Date affichée (anglais)" aide="Par exemple : c. 1780, 18th century, 2026.">
+                <input value={b.en?.date ?? ""} onChange={(e) => majEn("date", e.target.value)} />
+              </Champ>
+              <Champ etiquette="Origine (anglais)">
+                <input value={b.en?.origine ?? ""} onChange={(e) => majEn("origine", e.target.value)} />
+              </Champ>
+              <Champ etiquette="Technique (anglais)">
+                <input value={b.en?.technique ?? ""} onChange={(e) => majEn("technique", e.target.value)} />
+              </Champ>
+            </div>
+            <Champ etiquette="Résumé (anglais)">
+              <textarea rows={2} maxLength={240} value={b.en?.resume ?? ""} onChange={(e) => majEn("resume", e.target.value)} />
+            </Champ>
+            <Champ etiquette="Texte du cartel (anglais)">
+              <textarea rows={4} value={b.en?.cartel ?? ""} onChange={(e) => majEn("cartel", e.target.value)} />
+            </Champ>
+            <Champ etiquette="Source (anglais)">
+              <input value={b.en?.source ?? ""} onChange={(e) => majEn("source", e.target.value)} />
+            </Champ>
           </Section>
 
           {!coloriage && (

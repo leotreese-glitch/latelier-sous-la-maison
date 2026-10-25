@@ -4,6 +4,7 @@ import { erreur, json, type Env } from "../../../server/env";
 import { modeleRetrouver } from "../../../server/modeles-courriel";
 import { adresseIp, empreinteHex, limiteAtteinte, noterEchec, origineAutorisee } from "../../../server/securite";
 import { lireDonnees, type LigneCommande } from "../../../server/commandes";
+import { langueValide } from "../../../lib/i18n";
 
 const HEURE = 3600 * 1000;
 const REPONSE =
@@ -18,7 +19,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   if (!env.DB || !courrielActif(env)) return erreur(503, "Ce service ouvre bientôt.", { code: "ferme" });
   await preparerBase(env.DB);
 
-  const corps = (await request.json().catch(() => null)) as { email?: unknown } | null;
+  const corps = (await request.json().catch(() => null)) as { email?: unknown; langue?: unknown } | null;
+  const langue = langueValide(corps?.langue);
   const email = String(corps?.email ?? "").trim().toLowerCase();
   if (!adresseValide(email)) return erreur(400, "Cette adresse e-mail ne semble pas valide.");
 
@@ -36,7 +38,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   if (results.length > 0) {
     const m = modeleRetrouver(
       results.map((l) => ({
-        titre: lireDonnees(l).titre,
+        titre: (langue === "en" && lireDonnees(l).titreEn) || lireDonnees(l).titre,
         designId: l.design_id,
         payeeLe: l.payee_le,
         jeton: l.id,
@@ -44,6 +46,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
         modeTest: l.mode_test === 1,
       })),
       adresseSite(env, request),
+      langue,
     );
     waitUntil(
       envoyerCourriel(env, { a: email, sujet: m.sujet, html: m.html, etiquette: "retrouver-commandes" }).catch((e) =>

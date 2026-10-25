@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { chemin } from "@/lib/i18n";
 import { metaPage } from "@/lib/partage";
 import Link from "next/link";
 import { AvisProjet, Champ, MiseAJour } from "@/components/legal/Legal";
@@ -6,6 +7,7 @@ import { CONSERVATION_COMMANDES_ANS, EDITEUR, PRESTATAIRES } from "@/lib/legal";
 
 export const metadata: Metadata = metaPage({
   chemin: "/confidentialite/",
+  autre: chemin("confidentialite", "en"),
   titre: "Confidentialité",
   description: "Quelles données L'atelier sous la maison traite, pourquoi, combien de temps, et vos droits.",
 });
@@ -36,7 +38,7 @@ export default function Confidentialite() {
           Le paiement se fait sur la page de Link, qui recueille vos données de paiement : l'atelier ne voit jamais votre numéro de carte. Une
           fois le paiement confirmé, Link lui transmet votre adresse e-mail, votre nom, votre pays, le montant et la monnaie. L'atelier y ajoute
           le numéro de certificat, le lien secret de votre page de commande, la date et l'heure de votre accord (conditions de vente,
-          renonciation à la rétractation) et le nombre de téléchargements.
+          renonciation à la rétractation), le nombre de téléchargements et la langue du site utilisée pour l'achat.
         </p>
         <ul className="licence__liste">
           <li>

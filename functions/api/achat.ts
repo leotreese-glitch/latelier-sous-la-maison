@@ -4,6 +4,8 @@ import { erreur, json, type Env } from "../../server/env";
 import { origineAutorisee } from "../../server/securite";
 import { appelStripe, CODE_TAXE, ErreurStripe, type SessionStripe } from "../../server/stripe";
 import { typeLicence, VERSION_LICENCE } from "../../lib/licence";
+import { chemin, cheminMotif, langueValide } from "../../lib/i18n";
+import { texteDesign, TIROIRS_OUVERTS } from "../../lib/modele";
 import { VERSION_CGV } from "../../lib/legal";
 import { IDENTIFIANT } from "../../server/fichiers";
 
@@ -16,7 +18,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!env.DB || !env.STRIPE_CLE_SECRETE) return erreur(503, "Le paiement n'est pas encore ouvert.", { code: "paiement-ferme" });
   await preparerBase(env.DB);
 
-  const corps = (await request.json().catch(() => null)) as { design?: string; devise?: string; cgv?: boolean; consentement?: boolean } | null;
+  const corps = (await request.json().catch(() => null)) as {
+    design?: string;
+    devise?: string;
+    cgv?: boolean;
+    consentement?: boolean;
+    langue?: string;
+  } | null;
+  const langue = langueValide(corps?.langue);
   const id = String(corps?.design ?? "");
   const devise = corps?.devise === "usd" ? "usd" : "eur";
   if (!IDENTIFIANT.test(id)) return erreur(400, "Design inconnu.");
@@ -28,7 +37,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
 
   const d = await lireDesign(env.DB, id);
-  if (!d || d.statut !== "publie" || d.exemple) return erreur(404, "Ce design n'est pas en vente.");
+  if (!d || d.statut !== "publie" || d.exemple || !TIROIRS_OUVERTS.includes(d.famille)) return erreur(404, "Ce design n'est pas en vente.");
   const nbHd = await env.DB.prepare("SELECT COUNT(*) AS n FROM fichiers WHERE design_id = ?1 AND role = 'hd'").bind(id).first<{ n: number }>();
   if (!nbHd?.n) return erreur(409, "Ce design n'a pas encore de fichier à livrer.");
   const montant = prixFacture(d, devise);
@@ -36,6 +45,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
   const origine = new URL(request.url).origin;
   const coloriage = d.famille === "petit-atelier";
+  const titre = texteDesign(d, langue).titre;
+  const nomProduit =
+    langue === "en"
+      ? `${titre}: ${coloriage ? "colouring pack" : "standard license"}`
+      : `${titre} : ${coloriage ? "pochette de coloriages" : "licence standard"}`;
+  const description =
+    langue === "en"
+      ? `L'atelier sous la maison, design no. ${d.id}. High-definition files to download.`
+      : `L'atelier sous la maison, design n° ${d.id}. Fichiers haute définition à télécharger.`;
   const managed = (env.STRIPE_MANAGED_PAYMENTS ?? "").toLowerCase() !== "non";
   try {
     const session = await appelStripe<SessionStripe>(env, "POST", "/v1/checkout/sessions", {
@@ -49,8 +67,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
             unit_amount: montant,
             tax_behavior: "inclusive",
             product_data: {
-              name: coloriage ? `${d.titre} : pochette de coloriages` : `${d.titre} : licence standard`,
-              description: `L'atelier sous la maison, design n° ${d.id}. Fichiers haute définition à télécharger.`,
+              name: nomProduit,
+              description,
               tax_code: CODE_TAXE,
               images: d.image?.startsWith("/media/") ? [`${origine}${d.image}`] : undefined,
               metadata: { design: d.id },
@@ -64,10 +82,12 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         licence: typeLicence(d.famille),
         version_licence: VERSION_LICENCE,
         version_cgv: VERSION_CGV,
+        langue,
         consentement: new Date().toISOString(),
       },
-      success_url: `${origine}/merci/?session={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origine}/motif/${d.slug}/`,
+      locale: langue,
+      success_url: `${origine}${chemin("merci", langue)}?session={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origine}${cheminMotif(d.slug, langue)}`,
     });
     if (!session.url) return erreur(502, "Stripe n'a pas renvoyé de page de paiement.");
     return json({ url: session.url });

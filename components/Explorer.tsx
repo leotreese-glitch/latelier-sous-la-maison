@@ -2,8 +2,51 @@
 
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { COULEURS, DESIGNS, FAMILLES, PERIODES, TYPES, type Couleur, type Famille, type Periode } from "@/lib/catalogue";
+import {
+  COULEURS,
+  DESIGNS,
+  nomCouleur,
+  nomFamille,
+  nomPeriode,
+  nomType,
+  PERIODES,
+  texteDesign,
+  TIROIRS_OUVERTS,
+  type Couleur,
+  type Famille,
+  type Periode,
+} from "@/lib/catalogue";
+import type { Langue } from "@/lib/i18n";
 import { Mosaique } from "./Mosaique";
+
+const T = {
+  fr: {
+    rechercher: "Rechercher",
+    placeholder: "Rechercher un motif",
+    tiroir: "Tiroir",
+    tout: "Tout",
+    couleur: "Couleur",
+    frise: "Frise chronologique",
+    designs: (n: number) => `${n} ${n > 1 ? "designs" : "design"}`,
+    en: (c: string) => ` en ${c.toLowerCase()}`,
+    effacer: "Effacer les filtres",
+    resultats: "Résultats",
+    aucun: "Aucun design ne correspond à ces filtres. Retirez-en un pour élargir la recherche.",
+  },
+  en: {
+    rechercher: "Search",
+    placeholder: "Search for a pattern",
+    tiroir: "Drawer",
+    tout: "All",
+    couleur: "Colour",
+    frise: "Timeline",
+    designs: (n: number) => `${n} ${n > 1 ? "designs" : "design"}`,
+    en: (c: string) => ` in ${c.toLowerCase()}`,
+    effacer: "Clear filters",
+    resultats: "Results",
+    aucun: "No design matches these filters. Remove one to widen the search.",
+  },
+};
 
 const sansAccents = (s: string) =>
   s
@@ -11,20 +54,23 @@ const sansAccents = (s: string) =>
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
 
-function texteRecherche(d: (typeof DESIGNS)[number]) {
-  const couleurs = d.couleurs.map((c) => COULEURS.find((x) => x.cle === c)?.nom ?? "").join(" ");
-  const periode = PERIODES.find((p) => p.cle === d.periode)?.nom ?? "";
+function texteRecherche(d: (typeof DESIGNS)[number], l: Langue) {
+  const t = texteDesign(d, l);
+  const couleurs = d.couleurs.map((c) => nomCouleur(c, l)).join(" ");
   return sansAccents(
-    [d.titre, d.resume, d.origine, d.technique, d.date, periode, couleurs, TYPES[d.type], FAMILLES[d.famille].nom, d.niveau ?? ""].join(" "),
+    [t.titre, t.resume, t.origine, t.technique, t.date, nomPeriode(d.periode, l), couleurs, nomType(d.type, l), nomFamille(d.famille, l)].join(" "),
   );
 }
 
-export function Explorer() {
+export function Explorer({ l }: { l: Langue }) {
+  const t = T[l];
   const params = useSearchParams();
   const familleInitiale = params.get("famille") as Famille | null;
   const couleurInitiale = params.get("couleur") as Couleur | null;
 
-  const [famille, setFamille] = useState<Famille | null>(familleInitiale && familleInitiale in FAMILLES ? familleInitiale : null);
+  const [famille, setFamille] = useState<Famille | null>(
+    familleInitiale && TIROIRS_OUVERTS.includes(familleInitiale) ? familleInitiale : null,
+  );
   const [couleur, setCouleur] = useState<Couleur | null>(
     couleurInitiale && COULEURS.some((c) => c.cle === couleurInitiale) ? couleurInitiale : null,
   );
@@ -38,12 +84,12 @@ export function Explorer() {
       if (couleur && !d.couleurs.includes(couleur)) return false;
       if (periode && d.periode !== periode) return false;
       if (mots.length) {
-        const t = texteRecherche(d);
-        if (!mots.every((m) => t.includes(m))) return false;
+        const texte = texteRecherche(d, l);
+        if (!mots.every((m) => texte.includes(m))) return false;
       }
       return true;
     });
-  }, [famille, couleur, periode, requete]);
+  }, [famille, couleur, periode, requete, l]);
 
   const filtreActif = famille || couleur || periode || requete;
   const effacer = () => {
@@ -53,7 +99,7 @@ export function Explorer() {
     setRequete("");
   };
 
-  const nomCouleur = couleur ? COULEURS.find((c) => c.cle === couleur)?.nom : null;
+  const couleurChoisie = couleur ? nomCouleur(couleur, l) : null;
 
   return (
     <>
@@ -61,25 +107,25 @@ export function Explorer() {
         <div className="contenu">
           <div className="filtres__ligne">
             <label className="recherche">
-              <span className="sr-only">Rechercher</span>
+              <span className="sr-only">{t.rechercher}</span>
               <input
                 type="search"
                 value={requete}
                 onChange={(e) => setRequete(e.target.value)}
-                placeholder="Rechercher un motif"
+                placeholder={t.placeholder}
               />
             </label>
-            <div className="pilules" role="group" aria-label="Tiroir">
+            <div className="pilules" role="group" aria-label={t.tiroir}>
               <button type="button" className="pilule" aria-pressed={famille === null} onClick={() => setFamille(null)}>
-                Tout
+                {t.tout}
               </button>
-              {(Object.keys(FAMILLES) as Famille[]).map((f) => (
+              {TIROIRS_OUVERTS.map((f) => (
                 <button key={f} type="button" className="pilule" aria-pressed={famille === f} onClick={() => setFamille(famille === f ? null : f)}>
-                  {FAMILLES[f].nom}
+                  {nomFamille(f, l)}
                 </button>
               ))}
             </div>
-            <div className="teintes" role="group" aria-label="Couleur">
+            <div className="teintes" role="group" aria-label={t.couleur}>
               {COULEURS.map((c) => (
                 <button
                   key={c.cle}
@@ -87,19 +133,19 @@ export function Explorer() {
                   className="teinte-bouton"
                   style={{ background: c.hex }}
                   aria-pressed={couleur === c.cle}
-                  aria-label={c.nom}
-                  title={c.nom}
+                  aria-label={nomCouleur(c.cle, l)}
+                  title={nomCouleur(c.cle, l)}
                   onClick={() => setCouleur(couleur === c.cle ? null : c.cle)}
                 />
               ))}
             </div>
           </div>
-          <nav className="frise" aria-label="Frise chronologique">
+          <nav className="frise" aria-label={t.frise}>
             <ol>
               {PERIODES.map((p) => (
                 <li key={p.cle}>
                   <button type="button" aria-pressed={periode === p.cle} onClick={() => setPeriode(periode === p.cle ? null : p.cle)}>
-                    {p.nom}
+                    {nomPeriode(p.cle, l)}
                   </button>
                 </li>
               ))}
@@ -107,12 +153,12 @@ export function Explorer() {
           </nav>
           <p className="filtres__bilan" aria-live="polite">
             <span>
-              {resultats.length} {resultats.length > 1 ? "designs" : "design"}
-              {nomCouleur ? ` en ${nomCouleur.toLowerCase()}` : ""}
+              {t.designs(resultats.length)}
+              {couleurChoisie ? t.en(couleurChoisie) : ""}
             </span>
             {filtreActif && (
               <button type="button" className="effacer" onClick={effacer}>
-                Effacer les filtres
+                {t.effacer}
               </button>
             )}
           </p>
@@ -121,12 +167,12 @@ export function Explorer() {
 
       <div className="contenu resultats">
         {resultats.length ? (
-          <Mosaique designs={resultats} etiquette="Résultats" />
+          <Mosaique designs={resultats} etiquette={t.resultats} l={l} />
         ) : (
           <div className="vide">
-            <p>Aucun design ne correspond à ces filtres. Retirez-en un pour élargir la recherche.</p>
+            <p>{t.aucun}</p>
             <button type="button" className="bouton bouton--contour" onClick={effacer}>
-              Effacer les filtres
+              {t.effacer}
             </button>
           </div>
         )}
