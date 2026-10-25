@@ -1,13 +1,13 @@
-"""Télécharge l'image complète de chaque pièce retenue, la ramène à 36 Mpx au plus, et prépare les ZIP par époque."""
+"""Télécharge l'image complète de chaque pièce du lot, la ramène à 36 Mpx au plus, et prépare les ZIP par époque."""
 import csv, io, json, math, os, shutil, time, urllib.request, zipfile
 from PIL import Image, ImageFile
 import numpy as np
 
 Image.MAX_IMAGE_PIXELS = None
-UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)", "AIC-User-Agent": "latelier-sous-la-maison (registre des motifs retrouves)"}
 MAX_PX = 36_000_000
 MET = {"2010.337": "https://images.metmuseum.org/CRDImages/as/original/DP-23279-001.jpg"}
-RACINE = "Motifs retrouves - photos des musees"
+RACINE = "Motifs retrouves - lot 2 - photos des musees"
 
 def get(url, dest, essais=4):
     for i in range(essais):
@@ -28,6 +28,9 @@ def source(p):
         full = data["images"]["full"]
         p["attendu"] = int(full.get("filesize") or 0)
         return full["url"]
+    if p["musee"] == "aic":
+        # Serveur d'images de Chicago : « pct:100 » donne l'image à sa taille complète (vérifié le 2026-10-25).
+        return "https://www.artic.edu/iiif/2/%s/full/pct:100/0/default.jpg" % p["image_id"]
     return MET[p["ref"]]
 
 pieces = json.load(open("outil/hd.json"))
@@ -88,7 +91,7 @@ shutil.copy("outil/LISEZ-MOI.txt", "sortie/%s/LISEZ-MOI.txt" % RACINE)
 # Un ZIP par époque, chacun avec la liste et le mode d'emploi.
 os.makedirs("zips", exist_ok=True)
 if not FILTRE:
-    with zipfile.ZipFile("zips/Motifs-retrouves-photos.zip", "w", zipfile.ZIP_STORED) as z:
+    with zipfile.ZipFile("zips/Motifs-retrouves-lot-2-photos.zip", "w", zipfile.ZIP_STORED) as z:
         for nom in ("LISEZ-MOI.txt", "liste-des-pieces.csv"):
             z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
         for p in pieces:

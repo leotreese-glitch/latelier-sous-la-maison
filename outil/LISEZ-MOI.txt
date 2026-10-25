@@ -1,20 +1,21 @@
-L'atelier sous la maison - Motifs retrouvés
-Photos des 39 pièces de musée retenues le 9 octobre 2026
+L'atelier sous la maison - Motifs retrouvés, lot 2
+Photos des 15 pièces de musée choisies le 25 octobre 2026
 
 Ce que contient ce dossier
-- Un sous-dossier par époque, de l'Antiquité au XXe siècle.
+- Un sous-dossier par époque, du XVIe au XIXe siècle.
 - Chaque image porte le nom de sa fiche dans l'administration (même adresse que la page du site).
+- Les Iris sur fond d'or sont une paire de paravents : deux fichiers, « paravent-1 » et « paravent-2 », pour une seule fiche.
 - liste-des-pieces.csv : titre, musée, numéro d'inventaire, lien de la notice, tailles, et ce qu'il y a à faire pour chaque pièce. S'ouvre dans Excel, Numbers ou Google Sheets.
 
 Ce que sont ces images
-- Ce sont les photographies des musées, en domaine public (CC0), avant restauration.
+- Ce sont les photographies des musées (Cleveland Museum of Art et Art Institute of Chicago), en domaine public (CC0), avant restauration.
 - Elles sont en JPEG qualité 92, à 300 dpi, avec au plus 36 millions de pixels (environ 7 300 x 4 900).
-- Quand l'original du musée est plus grand, sa taille complète et son lien sont dans la liste (colonne « Original complet », un fichier TIFF souvent très lourd).
+- Quand l'original du musée est plus grand, sa taille complète et son lien sont dans la liste (colonne « Original complet »).
 
 Pour chaque pièce, avant de publier
 1. Restaurer : taches, trous, déchirures, fils manquants, couleurs passées.
 2. Faire le carreau raccordable quand la pièce s'y prête (voir la colonne « À faire »).
 3. Exporter en PNG d'au moins 3 000 px sur le grand côté.
-4. Dans l'administration, ouvrir la fiche du même nom, déposer le fichier, relire le cartel, puis Publier.
+4. Dans l'administration, ouvrir la fiche du même nom (elle est déjà remplie en français et en anglais), déposer le fichier, relire le cartel, puis Publier.
 
 Rappel : on ne vend jamais l'image du musée telle quelle, toujours la version restaurée.
