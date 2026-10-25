@@ -7,12 +7,23 @@ permissions:
 jobs:
   photos:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - run: |
+          MODE="$(cat outil/mode.txt)"
+          if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ]; then
+            pip install pillow==10.4.0 numpy==2.1.2
+            python outil/$MODE.py
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            for d in outil/recherche outil/planches outil/apercus; do [ -e "$d" ] && git add "$d"; done
+            git commit -m "Résultat de l'outil : $MODE [CF-Pages-Skip]"
+            git push
+            exit 0
+          fi
           if [ "$(cat outil/mode.txt)" = "catalogue" ]; then
             curl -sS --fail https://latelier-sous-la-maison.pages.dev/api/catalogue -o outil/catalogue.json
             git config user.name "github-actions[bot]"
