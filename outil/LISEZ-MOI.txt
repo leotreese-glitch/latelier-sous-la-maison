@@ -1,10 +1,10 @@
-L'atelier sous la maison - Motifs retrouvés, lot 2
-Photos des 15 pièces de musée choisies le 25 octobre 2026
+L'atelier sous la maison - Motifs retrouvés, lot 2 (réserve)
+Photos des 7 pièces de réserve retenues le 25 octobre 2026
 
 Ce que contient ce dossier
-- Un sous-dossier par époque, du XVIe au XIXe siècle.
+- Un sous-dossier par époque (XVIIIe et XIXe siècles).
 - Chaque image porte le nom de sa fiche dans l'administration (même adresse que la page du site).
-- Les Iris sur fond d'or sont une paire de paravents : deux fichiers, « paravent-1 » et « paravent-2 », pour une seule fiche.
+- Les Chrysanthèmes au bord d'un ruisseau sont une paire de paravents : deux fichiers, « paravent-1 » et « paravent-2 », pour une seule fiche.
 - liste-des-pieces.csv : titre, musée, numéro d'inventaire, lien de la notice, tailles, et ce qu'il y a à faire pour chaque pièce. S'ouvre dans Excel, Numbers ou Google Sheets.
 
 Ce que sont ces images
