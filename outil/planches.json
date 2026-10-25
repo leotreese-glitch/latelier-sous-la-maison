@@ -1,0 +1,474 @@
+[
+{
+"id": "c01",
+"musee": "cma",
+"ref": "1927.408",
+"vignette": "https://openaccess-cdn.clevelandart.org/1927.408/1927.408_web.jpg"
+},
+{
+"id": "c02",
+"musee": "cma",
+"ref": "1927.406",
+"vignette": "https://openaccess-cdn.clevelandart.org/1927.406/1927.406_web.jpg"
+},
+{
+"id": "c03",
+"musee": "cma",
+"ref": "1927.411",
+"vignette": "https://openaccess-cdn.clevelandart.org/1927.411/1927.411_web.jpg"
+},
+{
+"id": "c04",
+"musee": "cma",
+"ref": "1927.407",
+"vignette": "https://openaccess-cdn.clevelandart.org/1927.407/1927.407_web.jpg"
+},
+{
+"id": "c05",
+"musee": "cma",
+"ref": "1929.5",
+"vignette": "https://openaccess-cdn.clevelandart.org/1929.5/1929.5_web.jpg"
+},
+{
+"id": "c06",
+"musee": "cma",
+"ref": "1928.188",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.188/1928.188_web.jpg"
+},
+{
+"id": "c07",
+"musee": "cma",
+"ref": "1928.189",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.189/1928.189_web.jpg"
+},
+{
+"id": "c08",
+"musee": "cma",
+"ref": "1940.38.a",
+"vignette": "https://openaccess-cdn.clevelandart.org/1940.38.a/1940.38.a_web.jpg"
+},
+{
+"id": "c09",
+"musee": "cma",
+"ref": "1927.428",
+"vignette": "https://openaccess-cdn.clevelandart.org/1927.428/1927.428_web.jpg"
+},
+{
+"id": "c10",
+"musee": "cma",
+"ref": "1928.209",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.209/1928.209_web.jpg"
+},
+{
+"id": "c11",
+"musee": "cma",
+"ref": "1928.210",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.210/1928.210_web.jpg"
+},
+{
+"id": "c12",
+"musee": "cma",
+"ref": "1928.211",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.211/1928.211_web.jpg"
+},
+{
+"id": "c13",
+"musee": "cma",
+"ref": "1928.207",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.207/1928.207_web.jpg"
+},
+{
+"id": "c14",
+"musee": "cma",
+"ref": "1928.2",
+"vignette": "https://openaccess-cdn.clevelandart.org/1928.2/1928.2_web.jpg"
+},
+{
+"id": "c15",
+"musee": "cma",
+"ref": "1938.257",
+"vignette": "https://openaccess-cdn.clevelandart.org/1938.257/1938.257_web.jpg"
+},
+{
+"id": "c16",
+"musee": "cma",
+"ref": "2000.29",
+"vignette": "https://openaccess-cdn.clevelandart.org/2000.29/2000.29_web.jpg"
+},
+{
+"id": "c17",
+"musee": "cma",
+"ref": "2000.31",
+"vignette": "https://openaccess-cdn.clevelandart.org/2000.31/2000.31_web.jpg"
+},
+{
+"id": "c18",
+"musee": "cma",
+"ref": "2000.32",
+"vignette": "https://openaccess-cdn.clevelandart.org/2000.32/2000.32_web.jpg"
+},
+{
+"id": "c19",
+"musee": "cma",
+"ref": "1994.26",
+"vignette": "https://openaccess-cdn.clevelandart.org/1994.26/1994.26_web.jpg"
+},
+{
+"id": "c20",
+"musee": "cma",
+"ref": "1951.521",
+"vignette": "https://openaccess-cdn.clevelandart.org/1951.521/1951.521_web.jpg"
+},
+{
+"id": "c21",
+"musee": "cma",
+"ref": "2022.250.1",
+"vignette": "https://openaccess-cdn.clevelandart.org/2022.250.1/2022.250.1_web.jpg"
+},
+{
+"id": "c22",
+"musee": "cma",
+"ref": "2022.250.4",
+"vignette": "https://openaccess-cdn.clevelandart.org/2022.250.4/2022.250.4_web.jpg"
+},
+{
+"id": "c23",
+"musee": "cma",
+"ref": "1984.27",
+"vignette": "https://openaccess-cdn.clevelandart.org/1984.27/1984.27_web.jpg"
+},
+{
+"id": "c24",
+"musee": "cma",
+"ref": "2001.3",
+"vignette": "https://openaccess-cdn.clevelandart.org/2001.3/2001.3_web.jpg"
+},
+{
+"id": "c25",
+"musee": "cma",
+"ref": "1943.313",
+"vignette": "https://openaccess-cdn.clevelandart.org/1943.313/1943.313_web.jpg"
+},
+{
+"id": "c26",
+"musee": "cma",
+"ref": "1926.22",
+"vignette": "https://openaccess-cdn.clevelandart.org/1926.22/1926.22_web.jpg"
+},
+{
+"id": "c27",
+"musee": "cma",
+"ref": "2003.96",
+"vignette": "https://openaccess-cdn.clevelandart.org/2003.96/2003.96_web.jpg"
+},
+{
+"id": "c28",
+"musee": "cma",
+"ref": "1943.91",
+"vignette": "https://openaccess-cdn.clevelandart.org/1943.91/1943.91_web.jpg"
+},
+{
+"id": "c29",
+"musee": "cma",
+"ref": "1924.744",
+"vignette": "https://openaccess-cdn.clevelandart.org/1924.744/1924.744_web.jpg"
+},
+{
+"id": "c30",
+"musee": "cma",
+"ref": "1940.596",
+"vignette": "https://openaccess-cdn.clevelandart.org/1940.596/1940.596_web.jpg"
+},
+{
+"id": "c31",
+"musee": "cma",
+"ref": "1942.828.a",
+"vignette": "https://openaccess-cdn.clevelandart.org/1942.828.a/1942.828.a_web.jpg"
+},
+{
+"id": "c32",
+"musee": "cma",
+"ref": "1935.238",
+"vignette": "https://openaccess-cdn.clevelandart.org/1935.238/1935.238_web.jpg"
+},
+{
+"id": "c33",
+"musee": "cma",
+"ref": "1954.152.a",
+"vignette": "https://openaccess-cdn.clevelandart.org/1954.152.a/1954.152.a_web.jpg"
+},
+{
+"id": "c34",
+"musee": "cma",
+"ref": "1937.22",
+"vignette": "https://openaccess-cdn.clevelandart.org/1937.22/1937.22_web.jpg"
+},
+{
+"id": "c35",
+"musee": "cma",
+"ref": "1977.14",
+"vignette": "https://openaccess-cdn.clevelandart.org/1977.14/1977.14_web.jpg"
+},
+{
+"id": "c36",
+"musee": "cma",
+"ref": "1991.113",
+"vignette": "https://openaccess-cdn.clevelandart.org/1991.113/1991.113_web.jpg"
+},
+{
+"id": "c37",
+"musee": "cma",
+"ref": "1994.292",
+"vignette": "https://openaccess-cdn.clevelandart.org/1994.292/1994.292_web.jpg"
+},
+{
+"id": "c38",
+"musee": "cma",
+"ref": "1994.293",
+"vignette": "https://openaccess-cdn.clevelandart.org/1994.293/1994.293_web.jpg"
+},
+{
+"id": "c39",
+"musee": "cma",
+"ref": "1945.14",
+"vignette": "https://openaccess-cdn.clevelandart.org/1945.14/1945.14_web.jpg"
+},
+{
+"id": "c40",
+"musee": "cma",
+"ref": "1960.276",
+"vignette": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_web.jpg"
+},
+{
+"id": "c41",
+"musee": "cma",
+"ref": "1916.1300",
+"vignette": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_web.jpg"
+},
+{
+"id": "c42",
+"musee": "cma",
+"ref": "1918.22",
+"vignette": "https://openaccess-cdn.clevelandart.org/1918.22/1918.22_web.jpg"
+},
+{
+"id": "c43",
+"musee": "cma",
+"ref": "1916.1277",
+"vignette": "https://openaccess-cdn.clevelandart.org/1916.1277/1916.1277_web.jpg"
+},
+{
+"id": "c44",
+"musee": "cma",
+"ref": "1948.70",
+"vignette": "https://openaccess-cdn.clevelandart.org/1948.70/1948.70_web.jpg"
+},
+{
+"id": "c45",
+"musee": "cma",
+"ref": "1915.654",
+"vignette": "https://openaccess-cdn.clevelandart.org/1915.654/1915.654_web.jpg"
+},
+{
+"id": "c46",
+"musee": "cma",
+"ref": "1916.1324",
+"vignette": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_web.jpg"
+},
+{
+"id": "c47",
+"musee": "cma",
+"ref": "1916.8",
+"vignette": "https://openaccess-cdn.clevelandart.org/1916.8/1916.8_web.jpg"
+},
+{
+"id": "c48",
+"musee": "cma",
+"ref": "2010.143",
+"vignette": "https://openaccess-cdn.clevelandart.org/2010.143/2010.143_web.jpg"
+},
+{
+"id": "c49",
+"musee": "cma",
+"ref": "1916.1309",
+"vignette": "https://openaccess-cdn.clevelandart.org/1916.1309/1916.1309_web.jpg"
+},
+{
+"id": "c50",
+"musee": "cma",
+"ref": "1954.603",
+"vignette": "https://openaccess-cdn.clevelandart.org/1954.603/1954.603_web.jpg"
+},
+{
+"id": "c51",
+"musee": "cma",
+"ref": "1989.85.17",
+"vignette": "https://openaccess-cdn.clevelandart.org/1989.85.17/1989.85.17_web.jpg"
+},
+{
+"id": "c52",
+"musee": "cma",
+"ref": "1989.85.19",
+"vignette": "https://openaccess-cdn.clevelandart.org/1989.85.19/1989.85.19_web.jpg"
+},
+{
+"id": "c53",
+"musee": "cma",
+"ref": "1989.85.5",
+"vignette": "https://openaccess-cdn.clevelandart.org/1989.85.5/1989.85.5_web.jpg"
+},
+{
+"id": "c54",
+"musee": "cma",
+"ref": "1943.5",
+"vignette": "https://openaccess-cdn.clevelandart.org/1943.5/1943.5_web.jpg"
+},
+{
+"id": "c55",
+"musee": "cma",
+"ref": "1920.164",
+"vignette": "https://openaccess-cdn.clevelandart.org/1920.164/1920.164_web.jpg"
+},
+{
+"id": "c56",
+"musee": "cma",
+"ref": "1930.203",
+"vignette": "https://openaccess-cdn.clevelandart.org/1930.203/1930.203_web.jpg"
+},
+{
+"id": "c57",
+"musee": "cma",
+"ref": "1964.386",
+"vignette": "https://openaccess-cdn.clevelandart.org/1964.386/1964.386_web.jpg"
+},
+{
+"id": "c58",
+"musee": "cma",
+"ref": "1999.90",
+"vignette": "https://openaccess-cdn.clevelandart.org/1999.90/1999.90_web.jpg"
+},
+{
+"id": "c59",
+"musee": "cma",
+"ref": "1986.2.2",
+"vignette": "https://openaccess-cdn.clevelandart.org/1986.2.2/1986.2.2_web.jpg"
+},
+{
+"id": "c60",
+"musee": "cma",
+"ref": "1958.206",
+"vignette": "https://openaccess-cdn.clevelandart.org/1958.206/1958.206_web.jpg"
+},
+{
+"id": "c61",
+"musee": "cma",
+"ref": "1950.348",
+"vignette": "https://openaccess-cdn.clevelandart.org/1950.348/1950.348_web.jpg"
+},
+{
+"id": "c62",
+"musee": "cma",
+"ref": "1937.696",
+"vignette": "https://openaccess-cdn.clevelandart.org/1937.696/1937.696_web.jpg"
+},
+{
+"id": "c63",
+"musee": "cma",
+"ref": "1937.697",
+"vignette": "https://openaccess-cdn.clevelandart.org/1937.697/1937.697_web.jpg"
+},
+{
+"id": "c64",
+"musee": "cma",
+"ref": "1982.302",
+"vignette": "https://openaccess-cdn.clevelandart.org/1982.302/1982.302_web.jpg"
+},
+{
+"id": "c65",
+"musee": "cma",
+"ref": "1951.89",
+"vignette": "https://openaccess-cdn.clevelandart.org/1951.89/1951.89_web.jpg"
+},
+{
+"id": "c66",
+"musee": "cma",
+"ref": "1984.50",
+"vignette": "https://openaccess-cdn.clevelandart.org/1984.50/1984.50_web.jpg"
+},
+{
+"id": "c67",
+"musee": "cma",
+"ref": "1917.26",
+"vignette": "https://openaccess-cdn.clevelandart.org/1917.26/1917.26_web.jpg"
+},
+{
+"id": "c68",
+"musee": "cma",
+"ref": "2014.388.3",
+"vignette": "https://openaccess-cdn.clevelandart.org/2014.388.3/2014.388.3_web.jpg"
+},
+{
+"id": "c69",
+"musee": "aic",
+"ref": "1976.86",
+"aic": 50486,
+"vignette": "https://www.artic.edu/iiif/2/45b395db-8458-a464-2bb0-2e0c9829df23/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/45b395db-8458-a464-2bb0-2e0c9829df23/full/3000,/0/default.jpg"
+},
+{
+"id": "c70",
+"musee": "aic",
+"ref": "2020.319",
+"aic": 258119,
+"vignette": "https://www.artic.edu/iiif/2/b03932cb-13d5-b1ef-08da-683d28085c16/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/b03932cb-13d5-b1ef-08da-683d28085c16/full/3000,/0/default.jpg"
+},
+{
+"id": "c71",
+"musee": "aic",
+"ref": "2006.160",
+"aic": 186829,
+"vignette": "https://www.artic.edu/iiif/2/1482360f-895e-0b6a-4ebb-f3f7d874b123/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/1482360f-895e-0b6a-4ebb-f3f7d874b123/full/3000,/0/default.jpg"
+},
+{
+"id": "c72",
+"musee": "aic",
+"ref": "1922.5569",
+"aic": 7292,
+"vignette": "https://www.artic.edu/iiif/2/b63a074a-2599-2ddc-385c-15253f8fb816/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/b63a074a-2599-2ddc-385c-15253f8fb816/full/3000,/0/default.jpg"
+},
+{
+"id": "c73",
+"musee": "aic",
+"ref": "2025.534a",
+"aic": 281981,
+"vignette": "https://www.artic.edu/iiif/2/08abb42d-e524-3793-892d-c4236206da7d/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/08abb42d-e524-3793-892d-c4236206da7d/full/3000,/0/default.jpg"
+},
+{
+"id": "c74",
+"musee": "aic",
+"ref": "1925.135",
+"aic": 14966,
+"vignette": "https://www.artic.edu/iiif/2/834d9138-9a22-d89d-40a8-1afd2bd4d8c1/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/834d9138-9a22-d89d-40a8-1afd2bd4d8c1/full/3000,/0/default.jpg"
+},
+{
+"id": "c75",
+"musee": "aic",
+"ref": "1955.787",
+"aic": 84169,
+"vignette": "https://www.artic.edu/iiif/2/0f89d51d-6fb7-a0ae-26d6-53d2eb2561ab/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/0f89d51d-6fb7-a0ae-26d6-53d2eb2561ab/full/3000,/0/default.jpg"
+},
+{
+"id": "c76",
+"musee": "aic",
+"ref": "1968.622a",
+"aic": 30384,
+"vignette": "https://www.artic.edu/iiif/2/d332c929-71cd-609f-ddee-12c0645bd043/full/843,/0/default.jpg",
+"original": "https://www.artic.edu/iiif/2/d332c929-71cd-609f-ddee-12c0645bd043/full/3000,/0/default.jpg"
+}
+]
