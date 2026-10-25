@@ -1,0 +1,184 @@
+{
+ "data": {
+  "id": 95579,
+  "accession_number": "1916.1300",
+  "share_license_status": "CC0",
+  "tombstone": "Embroidered quilt with pomegranates and tulips, 1600s-1700s. Turkey. Plain weave: linen; embroidery, running stitch: silk; average: 194.3 x 137.2 cm (76 1/2 x 54 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. J. H. Wade, 1916.1300",
+  "current_location": null,
+  "title": "Embroidered quilt with pomegranates and tulips",
+  "creation_date": "1600s-1700s",
+  "creation_date_earliest": 1600,
+  "creation_date_latest": 1799,
+  "artists_tags": [],
+  "culture": [
+   "Turkey"
+  ],
+  "technique": "plain weave: linen; embroidery, running stitch: silk",
+  "support_materials": [],
+  "department": "Textiles",
+  "collection": "T - Islamic",
+  "type": "Embroidery",
+  "measurements": "Average: 194.3 x 137.2 cm (76 1/2 x 54 in.)",
+  "dimensions": {
+   "average": {
+    "height": 1.943,
+    "height_inch": 76,
+    "height_inch_fraction": 0.5,
+    "width": 1.372,
+    "width_inch": 54,
+    "width_inch_fraction": 0.0
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [],
+  "exhibitions": {
+   "current": [
+    {
+     "id": 381119,
+     "title": "Islamic art rotation",
+     "description": "<i>Islamic art rotation</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (December 16, 2015-December 19, 2016).",
+     "opening_date": "2015-12-16T05:00:00"
+    }
+   ],
+   "legacy": []
+  },
+  "provenance": [],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [],
+  "did_you_know": null,
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": "In Turkey, embroidered motifs were often adapted from Ottoman court art, especially luxury silks. Even the same six colors of silk thread were used: crimson or red, blue, green, and brown/black, plus yellow and white that replaced costly gilt- and silver-metal thread. In a typically bold style, pomegranates are framed by serrated leaves. Most of the original dark brown silk thread of the floral stems has disintegrated, revealing black ink outlines on the linen ground.",
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q79477335"
+   ],
+   "internet_archive": [
+    "https://archive.org/details/clevelandart-1916.1300-embroidered-quilt-wi"
+   ]
+  },
+  "citations": [
+   {
+    "citation": "Mackie, Louise W. <em>Symbols of Power: Luxury Textiles from Islamic Lands, 7th-21st Century</em>. Cleveland; New Haven: Cleveland Museum of Art; Yale University Press, 2015.",
+    "page_number": "Mentioned and reproduced: P. 329-330, fig. 8.47",
+    "url": ""
+   }
+  ],
+  "url": "https://clevelandart.org/art/1916.1300",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_web.jpg",
+    "width": "628",
+    "height": "900",
+    "filesize": "433991",
+    "filename": "1916.1300_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_print.jpg",
+    "width": "2373",
+    "height": "3400",
+    "filesize": "4095015",
+    "filename": "1916.1300_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_full.tif",
+    "width": "4315",
+    "height": "6183",
+    "filesize": "80069472",
+    "filename": "1916.1300_full.tif"
+   }
+  },
+  "alternate_images": [
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt0_web.jpg",
+     "width": "628",
+     "height": "900",
+     "filesize": "381880"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt0_print.jpg",
+     "width": "2373",
+     "height": "3400",
+     "filesize": "4095052"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt0_full.tif",
+     "width": "4315",
+     "height": "6183",
+     "filesize": "80069448"
+    },
+    "date_created": "2010-04-13T19:08:21",
+    "annotation": ""
+   },
+   {
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt1_print.jpg",
+     "width": "3400",
+     "height": "2545",
+     "filesize": "4966244"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt1_full.tif",
+     "width": "6668",
+     "height": "4992",
+     "filesize": "99888068"
+    },
+    "date_created": "2010-04-13T19:48:09",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt2_web.jpg",
+     "width": "900",
+     "height": "674",
+     "filesize": "428194"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt2_print.jpg",
+     "width": "3400",
+     "height": "2545",
+     "filesize": "6351369"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1300/1916.1300_alt2_full.tif",
+     "width": "6668",
+     "height": "4992",
+     "filesize": "99887964"
+    },
+    "date_created": "2010-04-13T19:48:09",
+    "annotation": ""
+   }
+  ],
+  "creditline": "Gift of Mr. and Mrs. J. H. Wade",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "gallery_donor_text": null,
+  "athena_id": 95579,
+  "creators": [],
+  "legal_status": "accessioned",
+  "accession_date": "1916-05-26T00:00:00",
+  "sortable_date": 1600,
+  "date_added_to_oa": null,
+  "date_text": "1600s-1700s",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "object",
+  "conservation_statement": null,
+  "has_conservation_images": false,
+  "cover_accession_number": null,
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [
+   "Embroidered Cover or Hanging"
+  ],
+  "is_highlight": false,
+  "updated_at": "2026-05-29 05:07:57.461000"
+ }
+}

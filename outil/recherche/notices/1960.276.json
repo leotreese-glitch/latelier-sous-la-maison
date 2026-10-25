@@ -1,0 +1,297 @@
+{
+ "data": {
+  "id": 136409,
+  "accession_number": "1960.276",
+  "share_license_status": "CC0",
+  "tombstone": "A Myriad of Birds (刺繡禽鳥圖), 1700s–1800s. China, Qing dynasty (1644–1911). Silk: satin weave with polychrome silk embroidery; overall: 118.7 x 76.2 cm (46 3/4 x 30 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Severance A. Millikin, 1960.276",
+  "current_location": null,
+  "title": "A Myriad of Birds",
+  "title_in_original_language": "刺繡禽鳥圖",
+  "creation_date": "1700s–1800s",
+  "creation_date_earliest": 1700,
+  "creation_date_latest": 1899,
+  "artists_tags": [],
+  "culture": [
+   "China, Qing dynasty (1644–1911)"
+  ],
+  "technique": "silk: satin weave with polychrome silk embroidery",
+  "support_materials": [],
+  "department": "Textiles",
+  "collection": "Textiles",
+  "type": "Embroidery",
+  "measurements": "Overall: 118.7 x 76.2 cm (46 3/4 x 30 in.)",
+  "dimensions": {
+   "overall": {
+    "height": 1.187,
+    "height_inch": 46,
+    "height_inch_fraction": 0.75,
+    "width": 0.762,
+    "width_inch": 30,
+    "width_inch_fraction": 0.0
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [],
+  "exhibitions": {
+   "current": [
+    {
+     "id": 302039,
+     "title": "Year in Review (1961)",
+     "description": "<i>Year in Review (1961)</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 1-26, 1961).",
+     "opening_date": "1961-11-01T05:00:00"
+    },
+    {
+     "id": 673747,
+     "title": "A Myriad of Flowers and Birds in Chinese Art",
+     "description": "<i>A Myriad of Flowers and Birds in Chinese Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 16, 2025-May 24, 2026).",
+     "opening_date": "2025-11-16T05:00:00"
+    }
+   ],
+   "legacy": []
+  },
+  "provenance": [
+   {
+    "description": "Severance A. [1895–1985] and Greta [Marguerite Steckerl] Millikin [1903–1989], Cleveland, OH, given to the Cleveland Museum of Art",
+    "citations": [],
+    "footnotes": null,
+    "date": "?–1960",
+    "sortorder": 1
+   },
+   {
+    "description": "The Cleveland Museum of Art, Cleveland, OH",
+    "citations": [],
+    "footnotes": null,
+    "date": "1960–",
+    "sortorder": 2
+   }
+  ],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [],
+  "did_you_know": "This magnificent textile<em>, </em>probably executed by a woman, demonstrates the tradition of making embroidered pictures in imitation of paintings.",
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": "This embroidered panel, made with extremely fine silk threads, presents a lavishly detailed composition filled with fortuitous imagery. Pairs of birds, including mandarin ducks, peacocks, cranes, swallows, and pheasants, move among flowering trees, ornamental rocks, and aquatic plants, symbolizing harmony, prosperity, and longevity. Cranes stand for longevity, while a pair of mandarin ducks convey wishes for a harmonious marriage. Inspired by the decorative bird-and-flower paintings of the artist Lü Ji, the work prioritizes symbolism over spatial logic. With vibrant colors, meticulous stitching, and fortuitous meaning, the embroidery exemplifies the technical brilliance of Qing dynasty textile art, rivaling the quality of imperial production.",
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q80030326"
+   ],
+   "internet_archive": [
+    "https://archive.org/details/clevelandart-1960.276-embroidered-panel"
+   ]
+  },
+  "citations": [
+   {
+    "citation": "A similar embroidery is in the collection of the Yale University Art Gallery.",
+    "page_number": "",
+    "url": "https://artgallery.yale.edu/collections/objects/59339"
+   },
+   {
+    "citation": "Spee, Clarissa von. \"From the SIlk Road to the Imperial Court: Chinese Textiles in the Cleveland Museum of Art.\" <em>Arts of Asia</em> 48, no. 3 (May-June 2018): 50–56.",
+    "page_number": "Reproduced: p. 55, fig. 8",
+    "url": null
+   },
+   {
+    "citation": "Silberstein, Rachel. \"“One Hundred Birds” hanging scroll.\" <em>Smarthistory (</em>August 4, 2022).",
+    "page_number": "Comparable Material",
+    "url": "https://smarthistory.org/one-hundred-birds-hanging-scroll/"
+   },
+   {
+    "citation": "Silberstein, Rachel. “A window into a Qing embroidery shop.” <em>HALI; the international journal of Oriental carpets and textiles</em>. Issue 224, Summer 2025.",
+    "page_number": "pp. 74–77",
+    "url": ""
+   },
+   {
+    "citation": "Lin, Yi-Hsin 林逸欣. \"Cleveland Museum of Art Presents 'A Myriad of Flowers and Bird in Chinese Art'\" 克里夫蘭藝術博物館「中國藝術中的花鳥集錦」展覽. <em>Art &amp; Collection </em>典藏．古美術 402 (March 2026).",
+    "page_number": "Reproduced: fig. 12",
+    "url": "https://artouch.com/gumeishu/content-202397.html"
+   }
+  ],
+  "url": "https://clevelandart.org/art/1960.276",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_web.jpg",
+    "width": "582",
+    "height": "900",
+    "filesize": "341733",
+    "filename": "1960.276_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_print.jpg",
+    "width": "2200",
+    "height": "3400",
+    "filesize": "3896604",
+    "filename": "1960.276_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_full.tif",
+    "width": "10038",
+    "height": "15512",
+    "filesize": "467165752",
+    "filename": "1960.276_full.tif"
+   }
+  },
+  "alternate_images": [
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt0_web.jpg",
+     "width": "590",
+     "height": "900",
+     "filesize": "387779"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt0_print.jpg",
+     "width": "2230",
+     "height": "3400",
+     "filesize": "4389219"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt0_full.tif",
+     "width": "10084",
+     "height": "15374",
+     "filesize": "465129912"
+    },
+    "date_created": "2017-07-12T14:57:52",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt1_web.jpg",
+     "width": "900",
+     "height": "675",
+     "filesize": "385172"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt1_print.jpg",
+     "width": "3400",
+     "height": "2550",
+     "filesize": "5208640"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt1_full.tif",
+     "width": "8000",
+     "height": "6000",
+     "filesize": "144036756"
+    },
+    "date_created": "2017-07-12T15:20:15",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt2_web.jpg",
+     "width": "900",
+     "height": "675",
+     "filesize": "434717"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt2_print.jpg",
+     "width": "3400",
+     "height": "2550",
+     "filesize": "5413182"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt2_full.tif",
+     "width": "8000",
+     "height": "6000",
+     "filesize": "144037724"
+    },
+    "date_created": "2017-07-12T15:15:57",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt3_web.jpg",
+     "width": "900",
+     "height": "675",
+     "filesize": "425209"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt3_print.jpg",
+     "width": "3400",
+     "height": "2550",
+     "filesize": "5404681"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt3_full.tif",
+     "width": "8000",
+     "height": "6000",
+     "filesize": "144036516"
+    },
+    "date_created": "2017-07-12T15:25:08",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt4_web.jpg",
+     "width": "900",
+     "height": "675",
+     "filesize": "495818"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt4_print.jpg",
+     "width": "3400",
+     "height": "2550",
+     "filesize": "5778698"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt4_full.tif",
+     "width": "8000",
+     "height": "6000",
+     "filesize": "144037876"
+    },
+    "date_created": "2017-07-12T15:14:01",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt5_web.jpg",
+     "width": "597",
+     "height": "893",
+     "filesize": "583578"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt5_print.jpg",
+     "width": "1369",
+     "height": "2048",
+     "filesize": "3094062"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1960.276/1960.276_alt5_full.tif",
+     "width": "1369",
+     "height": "2048",
+     "filesize": "8414596"
+    },
+    "annotation": ""
+   }
+  ],
+  "creditline": "Gift of Mr. and Mrs. Severance A. Millikin",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "gallery_donor_text": null,
+  "athena_id": 136409,
+  "creators": [],
+  "legal_status": "accessioned",
+  "accession_date": "1960-12-29T00:00:00",
+  "sortable_date": 1700,
+  "date_added_to_oa": null,
+  "date_text": "1700s–1800s",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "object",
+  "conservation_statement": "Textiles are light sensitive, and damage to textiles from overexposure to light is cumulative and irreversible. One of the signs of light damage in textiles is the fading of dyes. In the case of this embroidered textile, by comparing the silk embroidery colors on the front to those on the back that have been protected from light, we know the silk embroidery colors have faded to more muted tones.",
+  "has_conservation_images": true,
+  "cover_accession_number": null,
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [
+   "Embroidered Panel"
+  ],
+  "is_highlight": false,
+  "updated_at": "2026-06-10 18:00:35.982000"
+ }
+}

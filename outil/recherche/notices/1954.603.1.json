@@ -1,0 +1,518 @@
+{
+ "data": {
+  "id": 132049,
+  "accession_number": "1954.603.1",
+  "share_license_status": "CC0",
+  "tombstone": "Irises, 1700s. Watanabe Shikō (Japanese, 1683–1755). One of a pair of six-panel folding screens, ink and color on gilded paper; painting: 154.4 x 360.4 cm (60 13/16 x 141 7/8 in.); mounted: 170.7 x 376.7 cm (67 3/16 x 148 5/16 in.). The Cleveland Museum of Art, Gift of The Norweb Foundation, 1954.603.1",
+  "current_location": null,
+  "title": "Irises",
+  "creation_date": "1700s",
+  "creation_date_earliest": 1700,
+  "creation_date_latest": 1755,
+  "artists_tags": [
+   "male"
+  ],
+  "culture": [
+   "Japan, Edo period (1615–1868)"
+  ],
+  "technique": "One of a pair of six-panel folding screens, ink and color on gilded paper",
+  "support_materials": [],
+  "department": "Japanese Art",
+  "collection": "ASIAN - Folding screen",
+  "type": "Painting",
+  "measurements": "Painting: 154.4 x 360.4 cm (60 13/16 x 141 7/8 in.); Mounted: 170.7 x 376.7 cm (67 3/16 x 148 5/16 in.)",
+  "dimensions": {
+   "painting": {
+    "height": 1.544,
+    "height_inch": 60,
+    "height_inch_fraction": 0.8125,
+    "width": 3.604,
+    "width_inch": 141,
+    "width_inch_fraction": 0.875
+   },
+   "overall": {
+    "height": 1.667,
+    "height_inch": 65,
+    "height_inch_fraction": 0.625,
+    "width": 3.726,
+    "width_inch": 146,
+    "width_inch_fraction": 0.6875
+   },
+   "closed": {
+    "height": 1.708,
+    "height_inch": 67,
+    "height_inch_fraction": 0.25,
+    "width": 0.642,
+    "width_inch": 25,
+    "width_inch_fraction": 0.25,
+    "depth": 0.12,
+    "depth_inch": 4,
+    "depth_inch_fraction": 0.75
+   },
+   "panel (each)": {
+    "height": 1.667,
+    "height_inch": 65,
+    "height_inch_fraction": 0.625,
+    "width": 0.621,
+    "width_inch": 24,
+    "width_inch_fraction": 0.4375
+   },
+   "mounted": {
+    "height": 1.707,
+    "height_inch": 67,
+    "height_inch_fraction": 0.1875,
+    "width": 3.767,
+    "width_inch": 148,
+    "width_inch_fraction": 0.3125
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [
+   {
+    "inscription": "signed and sealed lower left of the first panel from the left.",
+    "inscription_translation": null,
+    "inscription_remark": null,
+    "sortorder": null
+   }
+  ],
+  "exhibitions": {
+   "current": [
+    {
+     "id": 302033,
+     "title": "Japanese Decorative Style",
+     "description": "<i>Japanese Decorative Style</i>. The Cleveland Museum of Art (August 30-October 15, 1961); The Art Institute of Chicago, Chicago, IL (November 9-December 17, 1961).",
+     "opening_date": "1961-08-30T04:00:00"
+    },
+    {
+     "id": 520190,
+     "title": "A World of Flowers",
+     "description": "<i>A World of Flowers</i>. Philadelphia Museum of Art, Philadelphia, PA (organizer) (May 2-June 9, 1963).",
+     "opening_date": "1963-05-02T04:00:00"
+    },
+    {
+     "id": 445392,
+     "title": "Rimpa",
+     "description": "<i>Rimpa</i>. Japan Society Gallery, New York, NY (organizer) (September 13-November 13, 1971).",
+     "opening_date": "1971-09-13T04:00:00"
+    },
+    {
+     "id": 445251,
+     "title": "Rin-pa",
+     "description": "<i>Rin-pa</i>. Tokyo National Museum, Tokyo, Japan (organizer) (October 10-December 3, 1972).",
+     "opening_date": "1972-10-10T04:00:00"
+    },
+    {
+     "id": 302380,
+     "title": "Japanese Screens from the Museum and Cleveland Collections",
+     "description": "<i>Japanese Screens from the Museum and Cleveland Collections</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (March 23-May 8, 1977).",
+     "opening_date": "1977-03-23T05:00:00"
+    },
+    {
+     "id": 224471,
+     "title": "The Legacy of Japanese Art",
+     "description": "<i>The Legacy of Japanese Art</i>. Chiba City Museum of Art (organizer) (October 1-November 10, 1996).",
+     "opening_date": "1996-10-01T00:00:00"
+    },
+    {
+     "id": 185596,
+     "title": "Unfolding Beauty:  Japanese Screens from the Cleveland Museum of Art",
+     "description": "<i>Unfolding Beauty:  Japanese Screens from the Cleveland Museum of Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (July 15-September 16, 2001).",
+     "opening_date": "2001-07-15T00:00:00"
+    },
+    {
+     "id": 228762,
+     "title": "Rimpa",
+     "description": "<i>Rimpa</i>. The National Museum of Modern Art, Tokyo, Tokyo, Japan (organizer) (August 21-October 3, 2004).",
+     "opening_date": "2004-08-21T00:00:00"
+    },
+    {
+     "id": 196054,
+     "title": "Streams and Mountains Without End: Asian Art and the Legacy of Sherman E. Lee at the Cleveland Museum of Art",
+     "description": "<i>Streams and Mountains Without End: Asian Art and the Legacy of Sherman E. Lee at the Cleveland Museum of Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 27-August 23, 2009).",
+     "opening_date": "2009-06-27T04:00:00"
+    },
+    {
+     "id": 202129,
+     "title": "Admired from Afar: Masterworks of Japanese Painting from the Cleveland Museum of Art",
+     "description": "<i>Admired from Afar: Masterworks of Japanese Painting from the Cleveland Museum of Art</i>. Tokyo National Museum, Tokyo, Japan (January 15-February 23, 2014); Kyushu National Museum, Fukuoka, Japan (July 8-August 31, 2014).",
+     "opening_date": "2014-01-15T00:00:00"
+    },
+    {
+     "id": 311658,
+     "title": "Japanese Gallery 235 Rotation",
+     "description": "<i>Japanese Gallery 235 Rotation</i>. The Cleveland Museum of Art (organizer) (January 7-July 8, 2019).",
+     "opening_date": "2019-01-07T05:00:00"
+    },
+    {
+     "id": 689048,
+     "title": "The Kōrin School: The Irises and Ogata Kōrin’s Followers",
+     "description": "<i>The Kōrin School: The Irises and Ogata Kōrin’s Followers</i>. Nezu Museum, Tokyo, Japan (organizer) (April 11-May 10, 2026).",
+     "opening_date": "2026-04-11T04:00:00"
+    }
+   ],
+   "legacy": [
+    {
+     "description": "<em>Special Loan Exhibition of Art treasures from Japan</em>. Museum of Fine Arts, Boston, MA (September-October 1936).",
+     "opening_date": "1936-09-01T00:00:00"
+    }
+   ]
+  },
+  "provenance": [
+   {
+    "description": "(Howard Hollis and Co., Cleveland, OH, ?-1954, sold to the Cleveland Museum of Art)",
+    "citations": [],
+    "footnotes": [],
+    "date": "?-1954",
+    "sortorder": 2
+   },
+   {
+    "description": "The Cleveland Museum of Art, Cleveland, OH, 1954-present",
+    "citations": [],
+    "footnotes": [],
+    "date": "1954-",
+    "sortorder": 3
+   }
+  ],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [
+   "1954.603"
+  ],
+  "did_you_know": null,
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": "The subject of this painting comes from a 10th-century text. It tells of a young nobleman’s journey into the lonely countryside, far from the capital city of Heian-kyō (Kyoto). There he came upon a small stream, the banks of which were covered with blooming irises, on which the artist has chosen to focus our attention. While viewing the beautiful flowers the nobleman composed a poem:<br><br><em>I have a beloved wife, <br>Familiar as the skirt of a well-worn robe, <br>And so this distant journeying <br>Fills my heart with grief. </em>",
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q60516510"
+   ],
+   "internet_archive": [
+    "https://archive.org/details/clevelandart-1954.603.1-irises"
+   ]
+  },
+  "citations": [
+   {
+    "citation": "Edgell, George Harold. <em>Illustrated Catalogue of a Special Loan Exhibition of Art Treasures from Japan</em>. [Tokyo, Japan]: [Sanseido Press], 1936.",
+    "page_number": "Reproduced: cat. no. 91 A",
+    "url": null
+   },
+   {
+    "citation": "Lee, Sherman. \"Irises by Watanabe Shikō.\" <em>The Bulletin of the Cleveland Museum of Art </em>42, no. 4 (April 1955): 63–67.",
+    "page_number": "Reproduced: pp. 64–65; Mentioned: p. 66–67",
+    "url": "https://www.jstor.org/stable/25142032"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>The Cleveland Museum of Art Handbook.</em> Cleveland, OH: The Cleveland Museum of Art, 1958.",
+    "page_number": "Mentioned: cat. no. 924",
+    "url": "https://archive.org/details/CMAHandbook1958/page/n163"
+   },
+   {
+    "citation": "Lee, Sherman E. <em>Japanese Decorative Style</em>. [Cleveland]: Cleveland Museum of Art, 1961.",
+    "page_number": "Mentioned and reproduced: pp. 86–87; cat. no. 85",
+    "url": "https://archive.org/details/JapaneseDecorativeStyle/page/n101/"
+   },
+   {
+    "citation": "Chiba-shi Bijutsukan 千葉市美術館. <em>Shugyoku no Nihon bijutsu: Hosomi korekushon no zenbō to Bosuton, Kurīburando, Sakkurā no wadaisaku : kaikan isshūnen kinen</em> [珠玉の日本美術 : 細見コレクションの全貌と, ボストン, クリ-ブランド, サックラ-の話題作 : 開館一周年記念]. Chiba-shi: Chiba-shi Bijutsukan, 1996.",
+    "page_number": "Reproduced: p. 184, cat. no. 153",
+    "url": null
+   },
+   {
+    "citation": "Cunningham, Michael R. <em>Unfolding Beauty: Japanese Screens from the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, 2001.",
+    "page_number": "Reproduced: pp. 40–41",
+    "url": null
+   },
+   {
+    "citation": "<em>Admired from afar: masterworks of Japanese painting from the Cleveland Museum of Art</em> [クリーブランド美術館展 : 名画でたどる日本の美 Kurīburando Bijutsukan ten: meiga de tadoru Nihon no bi ]. Tokyo: Tōkyō Kokuritsu Hakubutsukan, 2014.",
+    "page_number": "Reproduced: p. 122-123, cat. no. 41",
+    "url": null
+   }
+  ],
+  "url": "https://clevelandart.org/art/1954.603.1",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_web.jpg",
+    "width": "900",
+    "height": "414",
+    "filesize": "190381",
+    "filename": "1954.603.1_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_print.jpg",
+    "width": "3400",
+    "height": "1565",
+    "filesize": "1882210",
+    "filename": "1954.603.1_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_full.tif",
+    "width": "25482",
+    "height": "11732",
+    "filesize": "896893172",
+    "filename": "1954.603.1_full.tif"
+   }
+  },
+  "alternate_images": [
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt0_web.jpg",
+     "width": "696",
+     "height": "900",
+     "filesize": "246800"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt0_print.jpg",
+     "width": "2631",
+     "height": "3400",
+     "filesize": "2929144"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt0_full.tif",
+     "width": "9079",
+     "height": "11732",
+     "filesize": "319574208"
+    },
+    "date_created": "2026-02-11T17:23:54",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt1_web.jpg",
+     "width": "696",
+     "height": "900",
+     "filesize": "259597"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt1_print.jpg",
+     "width": "2631",
+     "height": "3400",
+     "filesize": "2765157"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt1_full.tif",
+     "width": "9079",
+     "height": "11732",
+     "filesize": "319574856"
+    },
+    "date_created": "2026-02-11T17:23:54",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt2_web.jpg",
+     "width": "696",
+     "height": "900",
+     "filesize": "259016"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt2_print.jpg",
+     "width": "2631",
+     "height": "3400",
+     "filesize": "2916196"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt2_full.tif",
+     "width": "9079",
+     "height": "11732",
+     "filesize": "319574656"
+    },
+    "date_created": "2026-02-11T17:23:54",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt3_web.jpg",
+     "width": "900",
+     "height": "426",
+     "filesize": "254934"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt3_print.jpg",
+     "width": "3400",
+     "height": "1610",
+     "filesize": "1732958"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt3_full.tif",
+     "width": "6526",
+     "height": "3091",
+     "filesize": "60541840"
+    },
+    "date_created": "2009-03-31T13:40:54",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt4_web.jpg",
+     "width": "696",
+     "height": "893",
+     "filesize": "462244"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt4_print.jpg",
+     "width": "2649",
+     "height": "3400",
+     "filesize": "6188250"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt4_full.tif",
+     "width": "4592",
+     "height": "5894",
+     "filesize": "81228448"
+    },
+    "date_created": "2009-03-30T18:16:13",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt5_web.jpg",
+     "width": "733",
+     "height": "893",
+     "filesize": "532476"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt5_print.jpg",
+     "width": "2789",
+     "height": "3400",
+     "filesize": "6985303"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt5_full.tif",
+     "width": "4992",
+     "height": "6086",
+     "filesize": "91179276"
+    },
+    "date_created": "2009-03-30T18:26:15",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt6_web.jpg",
+     "width": "733",
+     "height": "893",
+     "filesize": "520867"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt6_print.jpg",
+     "width": "2792",
+     "height": "3400",
+     "filesize": "6884444"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt6_full.tif",
+     "width": "4912",
+     "height": "5982",
+     "filesize": "88185152"
+    },
+    "date_created": "2009-03-30T18:32:30",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt7_web.jpg",
+     "width": "1025",
+     "height": "893",
+     "filesize": "705223"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt7_print.jpg",
+     "width": "2232",
+     "height": "1944",
+     "filesize": "3605127"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt7_full.tif",
+     "width": "2232",
+     "height": "1944",
+     "filesize": "13047020"
+    },
+    "date_created": "2009-03-30T18:41:57",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt8_web.jpg",
+     "width": "1263",
+     "height": "565",
+     "filesize": "637919"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt8_print.jpg",
+     "width": "3400",
+     "height": "1520",
+     "filesize": "4383425"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt8_full.tif",
+     "width": "5000",
+     "height": "2235",
+     "filesize": "33549116"
+    },
+    "date_created": "2007-10-31T14:27:04",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt9_web.jpg",
+     "width": "1263",
+     "height": "582",
+     "filesize": "709384"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt9_print.jpg",
+     "width": "2048",
+     "height": "944",
+     "filesize": "1896905"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1954.603.1/1954.603.1_alt9_full.tif",
+     "width": "2048",
+     "height": "944",
+     "filesize": "5802004"
+    },
+    "annotation": ""
+   }
+  ],
+  "creditline": "Gift of The Norweb Foundation",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "gallery_donor_text": null,
+  "athena_id": 132049,
+  "creators": [
+   {
+    "id": 6037,
+    "description": "Watanabe Shikō (Japanese, 1683–1755)",
+    "extent": null,
+    "qualifier": null,
+    "role": "artist",
+    "biography": null,
+    "name_in_original_language": "渡辺 始興",
+    "birth_year": "1683",
+    "death_year": "1755",
+    "use_in_caption": true,
+    "include_extent": false,
+    "weight": 1
+   }
+  ],
+  "legal_status": "accessioned",
+  "accession_date": "1954-08-11T00:00:00",
+  "sortable_date": 1700,
+  "date_added_to_oa": null,
+  "date_text": "1700s",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "component",
+  "conservation_statement": null,
+  "has_conservation_images": false,
+  "cover_accession_number": "1954.603",
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [],
+  "is_highlight": false,
+  "updated_at": "2026-07-11 11:57:48.976000"
+ }
+}

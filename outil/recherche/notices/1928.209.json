@@ -1,0 +1,121 @@
+{
+ "data": {
+  "id": 109577,
+  "accession_number": "1928.209",
+  "share_license_status": "CC0",
+  "tombstone": "Woodblock Printed Chintz Fragment, 1833. Bannister Hall (British). Woodblock print on cotton; overall: 36.8 x 45.7 cm (14 1/2 x 18 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1928.209",
+  "current_location": null,
+  "title": "Woodblock Printed Chintz Fragment",
+  "creation_date": "1833",
+  "creation_date_earliest": 1833,
+  "creation_date_latest": 1833,
+  "artists_tags": [
+   "gender unknown"
+  ],
+  "culture": [
+   "England, 19th century"
+  ],
+  "technique": "woodblock print on cotton",
+  "support_materials": [],
+  "department": "Textiles",
+  "collection": "Textiles",
+  "type": "Textile",
+  "measurements": "Overall: 36.8 x 45.7 cm (14 1/2 x 18 in.)",
+  "dimensions": {
+   "overall": {
+    "height": 0.368,
+    "height_inch": 14,
+    "height_inch_fraction": 0.5,
+    "width": 0.457,
+    "width_inch": 18,
+    "width_inch_fraction": 0.0
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [],
+  "exhibitions": {
+   "current": [],
+   "legacy": []
+  },
+  "provenance": [],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [],
+  "did_you_know": null,
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": null,
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q80002041"
+   ],
+   "internet_archive": []
+  },
+  "citations": [],
+  "url": "https://clevelandart.org/art/1928.209",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1928.209/1928.209_web.jpg",
+    "width": "1089",
+    "height": "893",
+    "filesize": "923716",
+    "filename": "1928.209_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1928.209/1928.209_print.jpg",
+    "width": "3400",
+    "height": "2789",
+    "filesize": "7755975",
+    "filename": "1928.209_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1928.209/1928.209_full.tif",
+    "width": "4287",
+    "height": "3517",
+    "filesize": "45273420",
+    "filename": "1928.209_full.tif"
+   }
+  },
+  "alternate_images": [],
+  "creditline": "Purchase from the J. H. Wade Fund",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "gallery_donor_text": null,
+  "athena_id": 109577,
+  "creators": [
+   {
+    "id": 24531,
+    "description": "Bannister Hall (British)",
+    "extent": null,
+    "qualifier": null,
+    "role": "printed by",
+    "biography": null,
+    "name_in_original_language": null,
+    "use_in_caption": true,
+    "include_extent": false,
+    "weight": 1
+   }
+  ],
+  "legal_status": "accessioned",
+  "accession_date": "1928-05-31T00:00:00",
+  "sortable_date": 1833,
+  "date_added_to_oa": null,
+  "date_text": "1833",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "object",
+  "conservation_statement": null,
+  "has_conservation_images": false,
+  "cover_accession_number": null,
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [],
+  "is_highlight": false,
+  "updated_at": "2026-05-29 05:51:13.130000"
+ }
+}

@@ -1,0 +1,156 @@
+{
+ "data": {
+  "id": 95605,
+  "accession_number": "1916.1324",
+  "share_license_status": "CC0",
+  "tombstone": "Gift Cover (Fukusa) with Carp in Waves (波鯉図刺繍袱紗), 1868–1912. Japan, Meiji period (1868–1912). Silk: embroidered; metallic thread; overall: 87.3 x 71.8 cm (34 3/8 x 28 1/4 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. J. H. Wade, 1916.1324",
+  "current_location": null,
+  "title": "Gift Cover (Fukusa) with Carp in Waves",
+  "title_in_original_language": "波鯉図刺繍袱紗",
+  "creation_date": "1868–1912",
+  "creation_date_earliest": 1868,
+  "creation_date_latest": 1912,
+  "artists_tags": [],
+  "culture": [
+   "Japan, Meiji period (1868–1912)"
+  ],
+  "technique": "Silk: embroidered; metallic thread",
+  "support_materials": [],
+  "department": "Textiles",
+  "collection": "Textiles",
+  "type": "Embroidery",
+  "measurements": "Overall: 87.3 x 71.8 cm (34 3/8 x 28 1/4 in.)",
+  "dimensions": {
+   "overall": {
+    "height": 0.873,
+    "height_inch": 34,
+    "height_inch_fraction": 0.375,
+    "width": 0.718,
+    "width_inch": 28,
+    "width_inch_fraction": 0.25
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [],
+  "exhibitions": {
+   "current": [
+    {
+     "id": 357862,
+     "title": "Japanese Gallery 235 Rotation",
+     "description": "<i>Japanese Gallery 235 Rotation</i>. The Cleveland Museum of Art (organizer) (January 24-October 11, 2020).",
+     "opening_date": "2020-01-24T05:00:00"
+    }
+   ],
+   "legacy": []
+  },
+  "provenance": [
+   {
+    "description": "Mr. Jeptha Homer Wade II [1857-1926] and Mrs. Ellen Garretson Wade [1859-1917], Cleveland, OH, given to the Cleveland Museum of Art",
+    "citations": [],
+    "footnotes": [],
+    "date": "?-1916",
+    "sortorder": 1
+   },
+   {
+    "description": "The Cleveland Museum of Art, Cleveland, OH",
+    "citations": [],
+    "footnotes": [],
+    "date": "1916-",
+    "sortorder": 2
+   }
+  ],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [],
+  "did_you_know": null,
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": "The motif of carp in rough water originated in China. The expression “carp jumping over the Dragon Gate” (<em>liyu tiao longmen</em>) refers to attaining success in life, or, historically, to passing the imperial examinations for civil service. Dragon Gate is a steep gorge of the Yellow River at Hejing in Shanxi province, and it was once said that if a carp swimming upstream could surmount the gorge, it would instantly transform into a dragon and fly into the sky. In Japan, therefore, a gift cover (<em>fukusa</em>) like this would have been appropriate to celebrate the recipient’s achievements.",
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q79477422"
+   ],
+   "internet_archive": [
+    "https://archive.org/details/clevelandart-1916.1324-gift-cover-fukusa-wi"
+   ]
+  },
+  "citations": [],
+  "url": "https://clevelandart.org/art/1916.1324",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_web.jpg",
+    "width": "769",
+    "height": "900",
+    "filesize": "336920",
+    "filename": "1916.1324_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_print.jpg",
+    "width": "2905",
+    "height": "3400",
+    "filesize": "3693345",
+    "filename": "1916.1324_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_full.tif",
+    "width": "6000",
+    "height": "7023",
+    "filesize": "126451680",
+    "filename": "1916.1324_full.tif"
+   }
+  },
+  "alternate_images": [
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_alt0_web.jpg",
+     "width": "743",
+     "height": "893",
+     "filesize": "628276"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_alt0_print.jpg",
+     "width": "2830",
+     "height": "3400",
+     "filesize": "8885833"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1916.1324/1916.1324_alt0_full.tif",
+     "width": "4080",
+     "height": "4902",
+     "filesize": "60038428"
+    },
+    "date_created": "2007-05-23T16:03:39",
+    "annotation": ""
+   }
+  ],
+  "creditline": "Gift of Mr. and Mrs. J. H. Wade",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "gallery_donor_text": null,
+  "athena_id": 95605,
+  "creators": [],
+  "legal_status": "accessioned",
+  "accession_date": "1916-05-26T00:00:00",
+  "sortable_date": 1868,
+  "date_added_to_oa": null,
+  "date_text": "1868–1912",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "object",
+  "conservation_statement": null,
+  "has_conservation_images": false,
+  "cover_accession_number": null,
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [
+   "Embroidered Fukusa"
+  ],
+  "is_highlight": false,
+  "updated_at": "2026-05-29 05:08:04.606000"
+ }
+}
