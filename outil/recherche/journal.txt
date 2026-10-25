@@ -1,0 +1,82 @@
+CMA {'department': 'Textiles'} : 4657
+CMA {'department': 'Islamic Art'} : 294
+CMA {'department': 'Japanese Art'} : 3241
+CMA {'department': 'Chinese Art', 'type': 'Textile'} : 0
+CMA {'department': 'Indian and South East Asian Art'} : 0
+CMA {'q': 'pochoir'} : 0
+CMA {'q': 'Verneuil'} : 1
+CMA {'q': 'Grasset'} : 7
+CMA {'q': 'Mucha'} : 8
+CMA {'q': 'wallpaper'} : 10
+CMA {'q': 'design for textile'} : 211
+CMA {'q': 'Owen Jones'} : 0
+CMA {'q': 'ornament'} : 804
+AIC jouy : 997
+AIC oberkampf : 997
+AIC printed cotton : 991
+AIC chintz : 998
+AIC palampore : 997
+AIC indienne : 998
+AIC block printed : 995
+AIC copperplate : 996
+AIC furnishing fabric : 988
+AIC kalamkari : 998
+AIC batik : 998
+AIC ikat : 998
+AIC suzani : 998
+AIC katagami : 998
+AIC stencil : 998
+AIC kashmir shawl : 990
+AIC paisley : 995
+AIC wallpaper : 998
+AIC Iznik : 995
+AIC velvet : 995
+AIC lampas : 998
+AIC brocade : 989
+AIC textile design : 985
+AIC Dagobert Peche : 998
+AIC Koloman Moser : 998
+AIC Wiener Werkstätte : 997
+AIC Voysey : 998
+AIC Dresser : 998
+AIC IIIF {"full": {"ok": false, "erreur": "<HTTPError 403: 'Forbidden'>"}, "max": {"ok": false, "erreur": "<HTTPError 403: 'Forbidden'>"}, "3000,": {"ok": false, "erreur": "ModuleNotFoundError(\"No module named 'PIL'\")"}, "4000,": {"ok": false, "erreur": "ModuleNotFoundError(\"No module named 'PIL'\")"}, "1686,": {"ok": false, "erreur": "ModuleNotFoundError(\"No module named 'PIL'\")"}}
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=palampore <HTTPError 410: 'Gone'>
+MET palampore : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=chintz <HTTPError 410: 'Gone'>
+MET chintz : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=indienne <HTTPError 410: 'Gone'>
+MET indienne : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Jouy <HTTPError 410: 'Gone'>
+MET Jouy : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Oberkampf <HTTPError 410: 'Gone'>
+MET Oberkampf : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=printed+cotton <HTTPError 410: 'Gone'>
+MET printed cotton : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=block+printed+cotton <HTTPError 410: 'Gone'>
+MET block printed cotton : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=katagami <HTTPError 410: 'Gone'>
+MET katagami : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=stencil <HTTPError 410: 'Gone'>
+MET stencil : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=kalamkari <HTTPError 410: 'Gone'>
+MET kalamkari : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=batik <HTTPError 410: 'Gone'>
+MET batik : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=suzani <HTTPError 410: 'Gone'>
+MET suzani : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=ikat <HTTPError 410: 'Gone'>
+MET ikat : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Dagobert+Peche <HTTPError 410: 'Gone'>
+MET Dagobert Peche : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Koloman+Moser <HTTPError 410: 'Gone'>
+MET Koloman Moser : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Iznik+tile <HTTPError 410: 'Gone'>
+MET Iznik tile : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=velvet <HTTPError 410: 'Gone'>
+MET velvet : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=furnishing+fabric <HTTPError 410: 'Gone'>
+MET furnishing fabric : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=kosode <HTTPError 410: 'Gone'>
+MET kosode : 0 ids, 0 libres
+ECHEC https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=textile+design <HTTPError 410: 'Gone'>
+MET textile design : 0 ids, 0 libres
