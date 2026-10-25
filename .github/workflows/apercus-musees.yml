@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           MODE="$(cat outil/mode.txt)"
-          if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ]; then
+          if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ] || [ "$MODE" = "notices" ]; then
             set +e
             python -m pip install -q pillow numpy
             timeout 1800 python -u outil/$MODE.py > outil/journal-$MODE.txt 2>&1
