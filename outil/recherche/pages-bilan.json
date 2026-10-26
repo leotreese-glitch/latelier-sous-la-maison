@@ -1,0 +1,447 @@
+{
+ "sitemap_code": 200,
+ "sitemap_urls": 148,
+ "slugs_du_lot_dans_le_plan": 22,
+ "pages": [
+  {
+   "page": "/motif/vases-et-pivoines-a-la-chinoise/",
+   "code": 200,
+   "h1": "Vases et pivoines à la chinoise",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/vases-et-pivoines-a-la-chinoise/",
+   "code": 200,
+   "h1": "Chinese Vases and Peonies",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/fleurs-fantaisie-a-l-indienne/",
+   "code": 200,
+   "h1": "Fleurs fantaisie à l'indienne",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/fleurs-fantaisie-a-l-indienne/",
+   "code": 200,
+   "h1": "Fantasy Flowers in the Indian Style",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/chintz-aux-grandes-fleurs/",
+   "code": 200,
+   "h1": "Chintz aux grandes fleurs",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/chintz-aux-grandes-fleurs/",
+   "code": 200,
+   "h1": "Chintz with Large Flowers",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/herons-sur-fond-rouge/",
+   "code": 200,
+   "h1": "Hérons sur fond rouge",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/herons-sur-fond-rouge/",
+   "code": 200,
+   "h1": "Herons on Red",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/indienne-aux-grandes-palmettes/",
+   "code": 200,
+   "h1": "Indienne aux grandes palmettes",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/indienne-aux-grandes-palmettes/",
+   "code": 200,
+   "h1": "Chintz with Large Palmettes",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/rosaces-de-coromandel/",
+   "code": 200,
+   "h1": "Rosaces de Coromandel",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/rosaces-de-coromandel/",
+   "code": 200,
+   "h1": "Coromandel Rosettes",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/bandes-fleuries-sur-fond-d-or/",
+   "code": 200,
+   "h1": "Bandes fleuries sur fond d'or",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/bandes-fleuries-sur-fond-d-or/",
+   "code": 200,
+   "h1": "Floral Stripes on a Golden Ground",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/la-rose-et-le-rossignol/",
+   "code": 200,
+   "h1": "La Rose et le Rossignol",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/la-rose-et-le-rossignol/",
+   "code": 200,
+   "h1": "The Rose and the Nightingale",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/oeillets-ottomans/",
+   "code": 200,
+   "h1": "Œillets ottomans",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/oeillets-ottomans/",
+   "code": 200,
+   "h1": "Ottoman Carnations",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/grenades-et-tulipes/",
+   "code": 200,
+   "h1": "Grenades et tulipes",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/grenades-et-tulipes/",
+   "code": 200,
+   "h1": "Pomegranates and Tulips",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/une-myriade-d-oiseaux/",
+   "code": 200,
+   "h1": "Une myriade d'oiseaux",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/une-myriade-d-oiseaux/",
+   "code": 200,
+   "h1": "A Myriad of Birds",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/la-grue-du-mandarin/",
+   "code": 200,
+   "h1": "La Grue du mandarin",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/la-grue-du-mandarin/",
+   "code": 200,
+   "h1": "The Mandarin's Crane",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/carpes-dans-les-vagues/",
+   "code": 200,
+   "h1": "Carpes dans les vagues",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/carpes-dans-les-vagues/",
+   "code": 200,
+   "h1": "Carp in the Waves",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/iris-sur-fond-d-or/",
+   "code": 200,
+   "h1": "Iris sur fond d'or",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/iris-sur-fond-d-or/",
+   "code": 200,
+   "h1": "Irises on Gold",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/mer-de-fleurs/",
+   "code": 200,
+   "h1": "Mer de fleurs",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/mer-de-fleurs/",
+   "code": 200,
+   "h1": "Sea of Flowers",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/chintz-glace-aux-roses/",
+   "code": 200,
+   "h1": "Chintz glacé aux roses",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/chintz-glace-aux-roses/",
+   "code": 200,
+   "h1": "Glazed Chintz with Roses",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/rubans-et-bouquets-d-apres-pillement/",
+   "code": 200,
+   "h1": "Rubans et bouquets, d'après Pillement",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/rubans-et-bouquets-d-apres-pillement/",
+   "code": 200,
+   "h1": "Ribbons and Bouquets, after Pillement",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/suzani-aux-rosaces-rouges/",
+   "code": 200,
+   "h1": "Suzani aux rosaces rouges",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/suzani-aux-rosaces-rouges/",
+   "code": 200,
+   "h1": "Suzani with Red Rosettes",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/batik-indigo-aux-oiseaux/",
+   "code": 200,
+   "h1": "Batik indigo aux oiseaux",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/batik-indigo-aux-oiseaux/",
+   "code": 200,
+   "h1": "Indigo Batik with Birds",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/grives-et-fraises-d-apres-william-morris/",
+   "code": 200,
+   "h1": "Grives et fraises, d'après William Morris",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/grives-et-fraises-d-apres-william-morris/",
+   "code": 200,
+   "h1": "Thrushes and Strawberries, after William Morris",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/chrysanthemes-au-bord-d-un-ruisseau/",
+   "code": 200,
+   "h1": "Chrysanthèmes au bord d'un ruisseau",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/chrysanthemes-au-bord-d-un-ruisseau/",
+   "code": 200,
+   "h1": "Chrysanthemums by a Stream",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  },
+  {
+   "page": "/motif/semis-de-fleurettes-de-jouy/",
+   "code": 200,
+   "h1": "Semis de fleurettes de Jouy",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "12 €"
+   ]
+  },
+  {
+   "page": "/en/pattern/semis-de-fleurettes-de-jouy/",
+   "code": 200,
+   "h1": "Scattered Sprigs from Jouy",
+   "titre_ok": true,
+   "cartel_ok": true,
+   "prix": [
+    "$14"
+   ]
+  }
+ ]
+}
