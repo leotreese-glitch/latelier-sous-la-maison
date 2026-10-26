@@ -54,5 +54,94 @@
   "resume": "Algues et coraux découpés, petites vagues, triangles et silhouettes ocre de baigneuses sur fond crème, en bleu, vert, orange et rouge.",
   "cartel": "Création originale de l'atelier : un fond marin de papier découpé où les algues et les coraux entourent des baigneuses couleur ocre. Bleu, vert, orange et rouge vifs sur un fond crème. Créé avec l'assistance de l'IA.",
   "ratio": 1
+ },
+ {
+  "cle": "atelier:la-danse-d-apres-derain",
+  "titre": "La danse, d'après Derain",
+  "type": "figuratif",
+  "resume": "Danseuses, musicien, grand oiseau aux ailes rouges et serpents verts sous des arbres aux troncs bleus, sur fond jaune vif.",
+  "cartel": "Création de l'atelier d'après La Danse, peinte par André Derain (1880–1954) en 1906, au moment du fauvisme : danseuses, musicien, grand oiseau aux ailes rouges et serpents sous des arbres bleus, en couleurs pures sur fond jaune. Créé avec l'assistance de l'IA.",
+  "ratio": 1,
+  "source": "Création de l'atelier d'après La Danse d'André Derain (1906), œuvre entrée dans le domaine public en 2025.",
+  "en": {
+   "titre": "The Dance, after Derain",
+   "resume": "Dancers, a musician, a large red-winged bird and green snakes beneath blue-trunked trees, on a bright yellow ground.",
+   "cartel": "An atelier creation after The Dance, painted by André Derain (1880–1954) in 1906, at the height of Fauvism: dancers, a musician, a large red-winged bird and snakes beneath blue trees, in pure colours on a yellow ground. Created with the assistance of AI.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing created with the assistance of AI",
+   "date": "2026",
+   "source": "Atelier creation after The Dance by André Derain (1906), a work that entered the public domain in 2025."
+  }
+ },
+ {
+  "cle": "atelier:le-port-au-ciel-rose",
+  "titre": "Le port au ciel rose",
+  "type": "figuratif",
+  "resume": "Jetée et phare, voiliers et barques violettes, plage jaune et village au clocher, sous un ciel rose et orangé.",
+  "cartel": "Création de l'atelier dans l'esprit des vues du port de Collioure peintes par André Derain (1880–1954) en 1905, l'été où naît le fauvisme : jetée et phare, voiliers et barques, plage et village au clocher, en touches de couleurs pures sous un ciel rose. Créé avec l'assistance de l'IA.",
+  "ratio": 1,
+  "source": "Création de l'atelier dans l'esprit des vues de Collioure peintes par André Derain en 1905.",
+  "en": {
+   "titre": "Harbour under a Pink Sky",
+   "resume": "A jetty and lighthouse, sailing boats and purple rowing boats, a yellow beach and a village with a bell tower, under a pink and orange sky.",
+   "cartel": "An atelier creation in the spirit of the views of Collioure harbour painted by André Derain (1880–1954) in 1905, the summer Fauvism was born: a jetty and lighthouse, sailing and rowing boats, a beach and a village with a bell tower, in dabs of pure colour under a pink sky. Created with the assistance of AI.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing created with the assistance of AI",
+   "date": "2026",
+   "source": "Atelier creation in the spirit of the views of Collioure painted by André Derain in 1905."
+  }
+ },
+ {
+  "cle": "atelier:le-port-aux-oliviers",
+  "titre": "Le port aux oliviers",
+  "type": "figuratif",
+  "resume": "Oliviers aux troncs rouges devant un port turquoise plein de barques, avec des maisons, des promeneurs et des montagnes orange et bleues.",
+  "cartel": "Création de l'atelier dans l'esprit des paysages méditerranéens des fauves, comme ceux que Derain et Matisse ont peints à Collioure en 1905 : oliviers aux troncs rouges, barques colorées, maisons et promeneurs entre une mer turquoise et des montagnes orange et bleues. Créé avec l'assistance de l'IA.",
+  "ratio": 1,
+  "source": "Création de l'atelier dans l'esprit des paysages fauves de 1905 – 1906.",
+  "en": {
+   "titre": "Harbour with Olive Trees",
+   "resume": "Red-trunked olive trees before a turquoise harbour full of boats, with houses, strollers and orange and blue mountains.",
+   "cartel": "An atelier creation in the spirit of the Fauves' Mediterranean landscapes, such as those Derain and Matisse painted at Collioure in 1905: red-trunked olive trees, colourful boats, houses and strollers between a turquoise sea and orange and blue mountains. Created with the assistance of AI.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing created with the assistance of AI",
+   "date": "2026",
+   "source": "Atelier creation in the spirit of the Fauve landscapes of 1905 – 1906."
+  }
+ },
+ {
+  "cle": "atelier:la-route-tournante-d-apres-derain",
+  "titre": "La route tournante, d'après Derain",
+  "type": "figuratif",
+  "resume": "Route mauve qui serpente entre des murets orange, des arbres aux troncs rouges et bleus et des maisons roses, avec des paysans au travail.",
+  "cartel": "Création de l'atelier d'après La Route tournante, peinte par André Derain (1880–1954) à L'Estaque en 1906 : une route qui serpente entre des murets, des arbres aux troncs rouges et bleus et des maisons roses, animée de promeneurs et de paysans au travail. Créé avec l'assistance de l'IA.",
+  "ratio": 1,
+  "source": "Création de l'atelier d'après La Route tournante d'André Derain (1906), œuvre entrée dans le domaine public en 2025.",
+  "en": {
+   "titre": "The Turning Road, after Derain",
+   "resume": "A mauve road winding between orange walls, red- and blue-trunked trees and pink houses, with peasants at work.",
+   "cartel": "An atelier creation after The Turning Road, painted by André Derain (1880–1954) at L'Estaque in 1906: a road winding between low walls, red- and blue-trunked trees and pink houses, brought to life by passers-by and peasants at work. Created with the assistance of AI.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing created with the assistance of AI",
+   "date": "2026",
+   "source": "Atelier creation after The Turning Road by André Derain (1906), a work that entered the public domain in 2025."
+  }
+ },
+ {
+  "cle": "atelier:rubans-rouges-et-lunes-bleues",
+  "titre": "Rubans rouges et lunes bleues",
+  "type": "geometrique",
+  "resume": "Rubans rouges, lunes bleu marine, panneaux rayés et hachures corail, avec de petits traits jaunes, sur fond crème.",
+  "cartel": "Création originale de l'atelier, composée comme un collage de papiers découpés : rubans rouges en S, lunes et demi-lunes bleu marine, panneaux rayés et hachures corail, ponctués de petits traits jaunes, sur fond crème. Créé avec l'assistance de l'IA.",
+  "ratio": 1,
+  "en": {
+   "titre": "Red Ribbons and Blue Moons",
+   "resume": "Red ribbons, navy-blue moons, striped panels and coral hatching, with small yellow dashes, on a cream ground.",
+   "cartel": "An atelier original, composed like a collage of cut paper: red S-shaped ribbons, navy-blue moons and half-moons, striped panels and coral hatching, dotted with small yellow dashes, on a cream ground. Created with the assistance of AI.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing created with the assistance of AI",
+   "date": "2026",
+   "source": "Original design, not a reproduction of an archival document."
+  }
  }
 ]
