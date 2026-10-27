@@ -128,6 +128,17 @@ const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
         WHERE instr(json_extract(donnees, ${litteral(chemin)}), ${litteral(avant)}) > 0`,
     ),
   },
+  {
+    // Vérification du 28 octobre 2026 : le fichier déposé ne correspond pas à la fiche
+    // (orig-0017 et orig-0028 portent une autre image ; orig-0023 garde la fausse signature et le numéro 1/30).
+    // Repassées en brouillon jusqu'au dépôt du bon fichier ; Léo les republie ensuite depuis l'administration.
+    cle: "migration:2026-10-28-images-a-remplacer",
+    requete: `UPDATE designs SET statut = 'brouillon', modifie_le = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+      WHERE statut = 'publie' AND (
+        (id = 'orig-0017' AND slug = 'rubans-rouges-et-lunes-bleues') OR
+        (id = 'orig-0023' AND slug = 'le-cavalier-et-le-serpent') OR
+        (id = 'orig-0028' AND slug = 'le-diable-et-le-chien'))`,
+  },
 ];
 
 async function migrer(db: D1Database) {
