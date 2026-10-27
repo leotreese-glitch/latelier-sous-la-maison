@@ -1,3 +1,5 @@
-pages vérifiées : 50 | en défaut : 0 | plan du site : 182 adresses dont 24 fiches du lot
+pages vérifiées : 2 | en défaut : 2 | plan du site : 182 adresses dont 0 fiches du lot
+DÉFAUT {'page': '/motif/le-cavalier-et-le-serpent/', 'code': 404, 'h1': '', 'titre_ok': False, 'cartel_ok': False, 'sans_phrase_ia': True, 'prix': []}
+DÉFAUT {'page': '/en/pattern/le-cavalier-et-le-serpent/', 'code': 404, 'h1': '', 'titre_ok': False, 'cartel_ok': False, 'sans_phrase_ia': True, 'prix': []}
 suppression des photos : 1  release not found
 code de sortie : 0
