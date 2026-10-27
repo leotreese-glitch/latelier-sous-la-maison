@@ -31,7 +31,7 @@ for a in attendus:
         bilan.append({
             "page": chemin, "code": code, "h1": h1, "titre_ok": h1 == attendu,
             "cartel_ok": cartel in html.unescape(page),
-            "sans_phrase_ia": not any(x in html.unescape(page) for x in ("Créé avec l'assistance de l'IA.", "Created with the assistance of AI.", "Dessin numérique créé", "Digital drawing created")),
+            "sans_phrase_ia": not any(x in html.unescape(page) for x in ("Créé avec l'assistance de l'IA.", "Created with the assistance of AI.", "Dessin numérique créé", "Digital drawing created", "réalisée avec l'assistance de l'IA", "Original design, created with the assistance of AI")),
             "prix": re.findall(r"(\d+(?:,\d+)?\s?€|\$\d+)", texte(page))[:1],
         })
 code, plan = lire(SITE + "/sitemap.xml")

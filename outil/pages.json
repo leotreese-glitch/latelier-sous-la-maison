@@ -1,5 +1,12 @@
 [
 {
+"slug": "rubans-rouges-et-lunes-bleues",
+"titre_fr": "Rubans rouges et lunes bleues",
+"titre_en": "Red Ribbons and Blue Moons",
+"cartel_fr": "Création originale de l'atelier, composée comme un collage de papiers découpés : rubans rouges en S, lunes et demi-lunes bleu marine, panneaux rayés et hachures corail, ponctués de petits traits jaunes, sur fond crème.",
+"cartel_en": "An atelier original, composed like a collage of cut paper: red S-shaped ribbons, navy-blue moons and half-moons, striped panels and coral hatching, dotted with small yellow dashes, on a cream ground."
+},
+{
 "slug": "oiseaux-et-poissons-d-or",
 "titre_fr": "Oiseaux et poissons d'or",
 "titre_en": "Golden Birds and Fish",
@@ -12,6 +19,13 @@
 "titre_en": "Party in the Blue Sky",
 "cartel_fr": "Création de l'atelier : un ciel bleu peuplé de lunes, d'étoiles et de constellations, un totem à damiers, un grand oiseau au long cou, des insectes et un petit soleil souriant, au-dessus de collines rouges et vertes enroulées en spirales.",
 "cartel_en": "An atelier creation: a blue sky full of moons, stars and constellations, a chequered totem, a large long-necked bird, insects and a small smiling sun, above red and green hills curling into spirals."
+},
+{
+"slug": "le-diable-et-le-chien",
+"titre_fr": "Le diable et le chien",
+"titre_en": "The Devil and the Dog",
+"cartel_fr": "Création originale de l'atelier : un diable noir à cornes qui danse, bras levés, à côté d'un petit chien, sur un papier crème semé de croix, de pois, de losanges et de zigzags rouges et noirs.",
+"cartel_en": "An atelier original: a horned black devil dancing with raised arms beside a small dog, on cream paper scattered with red and black crosses, dots, diamonds and zigzags."
 },
 {
 "slug": "l-arbre-echelle",
