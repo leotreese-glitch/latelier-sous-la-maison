@@ -29,7 +29,7 @@ const DEFAUTS: Record<Famille, Partial<Design>> = {
     origine: "L'atelier sous la maison",
     technique: "Dessin numérique",
     type: "floral",
-    ia: true,
+    ia: false,
     prix: { eur: 15, usd: 17 },
     source: "Création originale, ce n'est pas la reproduction d'un document d'archive.",
   },

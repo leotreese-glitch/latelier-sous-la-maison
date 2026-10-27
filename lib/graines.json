@@ -21,7 +21,7 @@
     "resume": "Branches brunes sinueuses, grandes fleurs indigo et terracotta, oiseaux bleus à poitrine orangée sur fond crème.",
     "cartel": "Création originale de l'atelier, inspirée des indiennes et des chintz. Les oiseaux se posent à intervalles irréguliers pour que l'œil ne repère pas la répétition.",
     "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
-    "ia": true,
+    "ia": false,
     "prix": {
       "eur": 15,
       "usd": 17
@@ -52,7 +52,7 @@
     "resume": "Treillis de losanges : rosaces rouges cerclées d'indigo, fleurs brunes à quatre pétales, bordures pointillées.",
     "cartel": "Création originale de l'atelier, inspirée des impressions à la planche. Le treillis alterne deux losanges pour garder un rythme régulier sur de grandes surfaces.",
     "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
-    "ia": true,
+    "ia": false,
     "prix": {
       "eur": 12,
       "usd": 14
@@ -101,7 +101,7 @@
     "resume": "Grandes fleurs rouges, tulipes et rosaces reliées par des rinceaux vert sauge sur fond crème.",
     "cartel": "Création originale de l'atelier, inspirée des indiennes. Palette volontairement réduite à trois couleurs, pour une impression économique.",
     "source": "Création originale, ce n'est pas la reproduction d'un document d'archive.",
-    "ia": true,
+    "ia": false,
     "prix": {
       "eur": 15,
       "usd": 17
@@ -298,7 +298,7 @@
     "resume": "Croissants de lune dorés et fleurettes crème sur un ciel de nuit.",
     "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
     "source": "Exemple de maquette.",
-    "ia": true,
+    "ia": false,
     "prix": {
       "eur": 15,
       "usd": 17
@@ -493,7 +493,7 @@
     "resume": "Tiges dorées ondulantes et bourgeons garance sur fond indigo.",
     "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
     "source": "Exemple de maquette.",
-    "ia": true,
+    "ia": false,
     "prix": {
       "eur": 15,
       "usd": 17

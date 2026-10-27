@@ -139,6 +139,12 @@ const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
         (id = 'orig-0023' AND slug = 'le-cavalier-et-le-serpent') OR
         (id = 'orig-0028' AND slug = 'le-diable-et-le-chien'))`,
   },
+  {
+    // À la demande de Léo (28 octobre 2026) : plus de ligne « réalisée avec l'assistance de l'IA » sur les fiches.
+    // La mention reste dans la licence et les conditions de vente.
+    cle: "migration:2026-10-28-fiches-sans-case-ia",
+    requete: `UPDATE designs SET donnees = json_set(donnees, '$.ia', json('false')) WHERE json_extract(donnees, '$.ia') = 1`,
+  },
 ];
 
 async function migrer(db: D1Database) {
