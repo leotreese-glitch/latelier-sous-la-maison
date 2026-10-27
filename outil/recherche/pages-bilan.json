@@ -1,446 +1,490 @@
 {
  "sitemap_code": 200,
- "sitemap_urls": 148,
+ "sitemap_urls": 178,
  "slugs_du_lot_dans_le_plan": 22,
  "pages": [
   {
-   "page": "/motif/vases-et-pivoines-a-la-chinoise/",
+   "page": "/motif/oiseaux-et-poissons-d-or/",
    "code": 200,
-   "h1": "Vases et pivoines à la chinoise",
+   "h1": "Oiseaux et poissons d'or",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/vases-et-pivoines-a-la-chinoise/",
+   "page": "/en/pattern/oiseaux-et-poissons-d-or/",
    "code": 200,
-   "h1": "Chinese Vases and Peonies",
+   "h1": "Golden Birds and Fish",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/fleurs-fantaisie-a-l-indienne/",
+   "page": "/motif/la-fete-dans-le-ciel-bleu/",
    "code": 200,
-   "h1": "Fleurs fantaisie à l'indienne",
+   "h1": "La fête dans le ciel bleu",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/fleurs-fantaisie-a-l-indienne/",
+   "page": "/en/pattern/la-fete-dans-le-ciel-bleu/",
    "code": 200,
-   "h1": "Fantasy Flowers in the Indian Style",
+   "h1": "Party in the Blue Sky",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/chintz-aux-grandes-fleurs/",
+   "page": "/motif/l-arbre-echelle/",
    "code": 200,
-   "h1": "Chintz aux grandes fleurs",
+   "h1": "L'arbre-échelle",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/chintz-aux-grandes-fleurs/",
+   "page": "/en/pattern/l-arbre-echelle/",
    "code": 200,
-   "h1": "Chintz with Large Flowers",
+   "h1": "The Ladder Tree",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/herons-sur-fond-rouge/",
+   "page": "/motif/le-chasseur-et-le-bison/",
    "code": 200,
-   "h1": "Hérons sur fond rouge",
+   "h1": "Le chasseur et le bison",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/herons-sur-fond-rouge/",
+   "page": "/en/pattern/le-chasseur-et-le-bison/",
    "code": 200,
-   "h1": "Herons on Red",
+   "h1": "The Hunter and the Bison",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/indienne-aux-grandes-palmettes/",
+   "page": "/motif/l-echelle-de-la-lune/",
    "code": 200,
-   "h1": "Indienne aux grandes palmettes",
+   "h1": "L'échelle de la lune",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/indienne-aux-grandes-palmettes/",
+   "page": "/en/pattern/l-echelle-de-la-lune/",
    "code": 200,
-   "h1": "Chintz with Large Palmettes",
+   "h1": "The Ladder to the Moon",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/rosaces-de-coromandel/",
+   "page": "/motif/nature-morte-a-la-bouteille-bleue/",
    "code": 200,
-   "h1": "Rosaces de Coromandel",
+   "h1": "Nature morte à la bouteille bleue",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/rosaces-de-coromandel/",
+   "page": "/en/pattern/nature-morte-a-la-bouteille-bleue/",
    "code": 200,
-   "h1": "Coromandel Rosettes",
+   "h1": "Still Life with a Blue Bottle",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/bandes-fleuries-sur-fond-d-or/",
+   "page": "/motif/l-alphabet-des-coureurs/",
    "code": 200,
-   "h1": "Bandes fleuries sur fond d'or",
+   "h1": "L'alphabet des coureurs",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/bandes-fleuries-sur-fond-d-or/",
+   "page": "/en/pattern/l-alphabet-des-coureurs/",
    "code": 200,
-   "h1": "Floral Stripes on a Golden Ground",
+   "h1": "The Runners' Alphabet",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/la-rose-et-le-rossignol/",
+   "page": "/motif/la-maison-sur-la-colline/",
    "code": 200,
-   "h1": "La Rose et le Rossignol",
+   "h1": "La maison sur la colline",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/la-rose-et-le-rossignol/",
+   "page": "/en/pattern/la-maison-sur-la-colline/",
    "code": 200,
-   "h1": "The Rose and the Nightingale",
+   "h1": "The House on the Hill",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/oeillets-ottomans/",
+   "page": "/motif/le-soleil-et-la-chevre-bleue/",
    "code": 200,
-   "h1": "Œillets ottomans",
+   "h1": "Le soleil et la chèvre bleue",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/oeillets-ottomans/",
+   "page": "/en/pattern/le-soleil-et-la-chevre-bleue/",
    "code": 200,
-   "h1": "Ottoman Carnations",
+   "h1": "The Sun and the Blue Goat",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/grenades-et-tulipes/",
+   "page": "/motif/la-tete-aux-trompettes/",
    "code": 200,
-   "h1": "Grenades et tulipes",
+   "h1": "La tête aux trompettes",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/grenades-et-tulipes/",
+   "page": "/en/pattern/la-tete-aux-trompettes/",
    "code": 200,
-   "h1": "Pomegranates and Tulips",
+   "h1": "Head with Trumpets",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/une-myriade-d-oiseaux/",
+   "page": "/motif/la-route-tournante-d-apres-derain/",
    "code": 200,
-   "h1": "Une myriade d'oiseaux",
+   "h1": "La route tournante, d'après Derain",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/une-myriade-d-oiseaux/",
+   "page": "/en/pattern/la-route-tournante-d-apres-derain/",
    "code": 200,
-   "h1": "A Myriad of Birds",
+   "h1": "The Turning Road, after Derain",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/la-grue-du-mandarin/",
+   "page": "/motif/le-port-aux-oliviers/",
    "code": 200,
-   "h1": "La Grue du mandarin",
+   "h1": "Le port aux oliviers",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/la-grue-du-mandarin/",
+   "page": "/en/pattern/le-port-aux-oliviers/",
    "code": 200,
-   "h1": "The Mandarin's Crane",
+   "h1": "Harbour with Olive Trees",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/carpes-dans-les-vagues/",
+   "page": "/motif/le-port-au-ciel-rose/",
    "code": 200,
-   "h1": "Carpes dans les vagues",
+   "h1": "Le port au ciel rose",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/carpes-dans-les-vagues/",
+   "page": "/en/pattern/le-port-au-ciel-rose/",
    "code": 200,
-   "h1": "Carp in the Waves",
+   "h1": "Harbour under a Pink Sky",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/iris-sur-fond-d-or/",
+   "page": "/motif/la-danse-d-apres-derain/",
    "code": 200,
-   "h1": "Iris sur fond d'or",
+   "h1": "La danse, d'après Derain",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/iris-sur-fond-d-or/",
+   "page": "/en/pattern/la-danse-d-apres-derain/",
    "code": 200,
-   "h1": "Irises on Gold",
+   "h1": "The Dance, after Derain",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/mer-de-fleurs/",
+   "page": "/motif/la-spirale-aux-masques/",
    "code": 200,
-   "h1": "Mer de fleurs",
+   "h1": "La spirale aux masques",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/mer-de-fleurs/",
+   "page": "/en/pattern/la-spirale-aux-masques/",
    "code": 200,
-   "h1": "Sea of Flowers",
+   "h1": "The Spiral of Masks",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/chintz-glace-aux-roses/",
+   "page": "/motif/algues-et-baigneuses/",
    "code": 200,
-   "h1": "Chintz glacé aux roses",
+   "h1": "Algues et baigneuses",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/chintz-glace-aux-roses/",
+   "page": "/en/pattern/algues-et-baigneuses/",
    "code": 200,
-   "h1": "Glazed Chintz with Roses",
+   "h1": "Seaweed and Bathers",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/rubans-et-bouquets-d-apres-pillement/",
+   "page": "/motif/ginkgos-et-vagues/",
    "code": 200,
-   "h1": "Rubans et bouquets, d'après Pillement",
+   "h1": "Ginkgos et vagues",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/rubans-et-bouquets-d-apres-pillement/",
+   "page": "/en/pattern/ginkgos-et-vagues/",
    "code": 200,
-   "h1": "Ribbons and Bouquets, after Pillement",
+   "h1": "Ginkgos and Waves",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/suzani-aux-rosaces-rouges/",
+   "page": "/motif/la-guitare-jaune/",
    "code": 200,
-   "h1": "Suzani aux rosaces rouges",
+   "h1": "La guitare jaune",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/suzani-aux-rosaces-rouges/",
+   "page": "/en/pattern/la-guitare-jaune/",
    "code": 200,
-   "h1": "Suzani with Red Rosettes",
+   "h1": "The Yellow Guitar",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/batik-indigo-aux-oiseaux/",
+   "page": "/motif/la-danse-autour-de-la-nuit/",
    "code": 200,
-   "h1": "Batik indigo aux oiseaux",
+   "h1": "La danse autour de la nuit",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/batik-indigo-aux-oiseaux/",
+   "page": "/en/pattern/la-danse-autour-de-la-nuit/",
    "code": 200,
-   "h1": "Indigo Batik with Birds",
+   "h1": "Dancing Around the Night",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/grives-et-fraises-d-apres-william-morris/",
+   "page": "/motif/les-danseurs/",
    "code": 200,
-   "h1": "Grives et fraises, d'après William Morris",
+   "h1": "Les danseurs",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/grives-et-fraises-d-apres-william-morris/",
+   "page": "/en/pattern/les-danseurs/",
    "code": 200,
-   "h1": "Thrushes and Strawberries, after William Morris",
+   "h1": "The Dancers",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/chrysanthemes-au-bord-d-un-ruisseau/",
+   "page": "/motif/le-jeu-des-formes/",
    "code": 200,
-   "h1": "Chrysanthèmes au bord d'un ruisseau",
+   "h1": "Le jeu des formes",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/chrysanthemes-au-bord-d-un-ruisseau/",
+   "page": "/en/pattern/le-jeu-des-formes/",
    "code": 200,
-   "h1": "Chrysanthemums by a Stream",
+   "h1": "The Game of Shapes",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   },
   {
-   "page": "/motif/semis-de-fleurettes-de-jouy/",
+   "page": "/motif/le-bal-des-visages/",
    "code": 200,
-   "h1": "Semis de fleurettes de Jouy",
+   "h1": "Le bal des visages",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "12 €"
+    "15 €"
    ]
   },
   {
-   "page": "/en/pattern/semis-de-fleurettes-de-jouy/",
+   "page": "/en/pattern/le-bal-des-visages/",
    "code": 200,
-   "h1": "Scattered Sprigs from Jouy",
+   "h1": "The Ball of Faces",
    "titre_ok": true,
    "cartel_ok": true,
+   "sans_phrase_ia": true,
    "prix": [
-    "$14"
+    "$17"
    ]
   }
  ]
