@@ -288,6 +288,42 @@
   ]
  },
  {
+  "id": "orig-0023",
+  "slug": "le-cavalier-et-le-serpent",
+  "titre": "Le cavalier et le serpent",
+  "statut": "publie",
+  "image": "/media/apercus/orig-0023/1793144148998.webp",
+  "hd": {
+   "largeur": 4096,
+   "hauteur": 4096,
+   "format": "PNG",
+   "taille": 19329580
+  },
+  "couleurs": [
+   "creme",
+   "noir",
+   "garance",
+   "indigo",
+   "safran"
+  ],
+  "technique": "Dessin numérique",
+  "cartel": "Création de l'atelier : autour d'une créature rouge hérissée, un cavalier, un serpent rayé, un corbeau noir, un renard et des silhouettes qui lèvent les bras, au milieu de flèches, de spirales et de triangles, à la façon d'une sérigraphie.",
+  "ia": false,
+  "en": {
+   "titre": "The Rider and the Snake",
+   "resume": "A rider on an orange horse, a striped snake, a crow, a cog-wheel sun and green, red and black figures, within a red and black frame.",
+   "cartel": "An atelier creation: around a bristling red creature, a rider, a striped snake, a black crow, a fox and figures raising their arms, among arrows, spirals and triangles, in the manner of a screen print.",
+   "origine": "L'atelier sous la maison",
+   "technique": "Digital drawing",
+   "date": "2026",
+   "source": "Original design, not a reproduction of an archival document."
+  },
+  "apercu": [
+   1200,
+   1189
+  ]
+ },
+ {
   "id": "orig-0022",
   "slug": "l-alphabet-des-coureurs",
   "titre": "L'alphabet des coureurs",
@@ -889,7 +925,7 @@
   "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
   "ia": false,
   "en": null,
-  "erreur": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x701b124b9300>')"
+  "erreur": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7e0c66d6a9d0>')"
  },
  {
   "id": "orig-0005",
@@ -907,6 +943,6 @@
   "cartel": "Visuel d'exemple dessiné pour la maquette, à remplacer par une création de l'atelier.",
   "ia": false,
   "en": null,
-  "erreur": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x701b124b9300>')"
+  "erreur": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7e0c66d6a570>')"
  }
 ]
