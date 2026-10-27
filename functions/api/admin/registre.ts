@@ -17,7 +17,7 @@ const COMMUN_ATELIER: Partial<Design> = {
   periode: "aujourdhui",
   date: "2026",
   origine: "L'atelier sous la maison",
-  technique: "Dessin numérique créé avec l'assistance de l'IA",
+  technique: "Dessin numérique",
   ia: true,
   prix: { eur: 15, usd: 17 },
   source: "Création originale, ce n'est pas la reproduction d'un document d'archive.",

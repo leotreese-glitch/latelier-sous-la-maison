@@ -7,63 +7,63 @@ export const TRADUCTIONS_2026_10: Record<string, TexteAnglais> = {
   "orig-0012": {
     "titre": "Seaweed and Bathers",
     "resume": "Cut-paper seaweed and coral, small waves, triangles and ochre silhouettes of bathers on a cream ground, in blue, green, orange and red.",
-    "cartel": "An atelier original: a cut-paper seabed where seaweed and coral surround ochre-coloured bathers. Bright blue, green, orange and red on a cream ground. Created with the assistance of AI.",
+    "cartel": "An atelier original: a cut-paper seabed where seaweed and coral surround ochre-coloured bathers. Bright blue, green, orange and red on a cream ground.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0011": {
     "titre": "Ginkgos and Waves",
     "resume": "Ginkgo leaves, sprigs of foliage, stars, half-moons and blue waves on a cream ground, with a green silhouette.",
-    "cartel": "An atelier original, designed as a continuous pattern: ginkgos, foliage, stars and waves cut out on a cream ground. A soft palette of ultramarine blue, fir green, orange and ochre, with a touch of black. Created with the assistance of AI.",
+    "cartel": "An atelier original, designed as a continuous pattern: ginkgos, foliage, stars and waves cut out on a cream ground. A soft palette of ultramarine blue, fir green, orange and ochre, with a touch of black.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0010": {
     "titre": "The Yellow Guitar",
     "resume": "A black silhouette scattered with yellow and white confetti, a yellow guitar, rippling ribbons and triangles, on flat areas of red, green, blue and pink.",
-    "cartel": "An atelier original: a large black silhouette strewn with confetti dances beside a yellow guitar, among cut-out ribbons and triangles. Flat areas of red, green, blue and pink, like a collage of coloured papers. Created with the assistance of AI.",
+    "cartel": "An atelier original: a large black silhouette strewn with confetti dances beside a yellow guitar, among cut-out ribbons and triangles. Flat areas of red, green, blue and pink, like a collage of coloured papers.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0009": {
     "titre": "Dancing Around the Night",
     "resume": "A large night-blue shape sown with stars, surrounded by rippling ribbons, spirals and two small figures, on bands of bright colour.",
-    "cartel": "An atelier original: at the centre, a starry night shape around which ribbons, spirals and two small dancers turn. Bands of bright colour, with yellow, white and black for the ribbons. Created with the assistance of AI.",
+    "cartel": "An atelier original: at the centre, a starry night shape around which ribbons, spirals and two small dancers turn. Bands of bright colour, with yellow, white and black for the ribbons.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0008": {
     "titre": "The Dancers",
     "resume": "Three silhouettes dance among zigzags, spirals, stars and ribbons, on flat areas of blue, red, magenta, yellow and green.",
-    "cartel": "An atelier original: three dancers in silhouette, cut out as if from paper, surrounded by spirals and ribbons in motion. Bright flat colours, with black and white setting the rhythm. Created with the assistance of AI.",
+    "cartel": "An atelier original: three dancers in silhouette, cut out as if from paper, surrounded by spirals and ribbons in motion. Bright flat colours, with black and white setting the rhythm.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0007": {
     "titre": "The Game of Shapes",
     "resume": "Cut-out spirals, a star, crescents, waves and triangles, laid on large flat areas of blue, red, orange, magenta and green.",
-    "cartel": "An atelier original, composed like a collage of gouache-painted papers cut into shapes: free forms laid on large flat areas of colour. A bold palette of primary colours, with black and white to give the whole its rhythm. Created with the assistance of AI.",
+    "cartel": "An atelier original, composed like a collage of gouache-painted papers cut into shapes: free forms laid on large flat areas of colour. A bold palette of primary colours, with black and white to give the whole its rhythm.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },
   "orig-0006": {
     "titre": "The Ball of Faces",
     "resume": "A crowd of faces, hands and spirals outlined in black, in acid green, orange and pink on a starry night-blue ground. Second version on a purple ground.",
-    "cartel": "An atelier original: a crowd of faces and hands that fit together like puzzle pieces, outlined with a thick black line. Bright colours on a night ground scattered with stars and confetti. Delivered in two versions, with a night-blue ground and a purple ground. Created with the assistance of AI.",
+    "cartel": "An atelier original: a crowd of faces and hands that fit together like puzzle pieces, outlined with a thick black line. Bright colours on a night ground scattered with stars and confetti. Delivered in two versions, with a night-blue ground and a purple ground.",
     "origine": "L'atelier sous la maison",
-    "technique": "Digital drawing created with the assistance of AI",
+    "technique": "Digital drawing",
     "date": "2026",
     "source": "Original design, not a reproduction of an archival document."
   },

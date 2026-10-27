@@ -27,7 +27,7 @@ const DEFAUTS: Record<Famille, Partial<Design>> = {
     periode: "aujourdhui",
     date: String(new Date().getFullYear()),
     origine: "L'atelier sous la maison",
-    technique: "Dessin numérique créé avec l'assistance de l'IA",
+    technique: "Dessin numérique",
     type: "floral",
     ia: true,
     prix: { eur: 15, usd: 17 },

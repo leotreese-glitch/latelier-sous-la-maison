@@ -108,6 +108,26 @@ const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
         WHERE id = ${litteral(id)} AND json_extract(donnees, '$.en') IS NULL`,
     ),
   },
+  {
+    // À la demande de Léo (28 octobre 2026) : plus de phrase sur l'IA dans les cartels ni dans la technique.
+    // La mention reste dans la licence, les conditions de vente et la case « IA » de chaque fiche.
+    cle: "migration:2026-10-28-cartels-sans-ia",
+    requete: [
+      ["$.cartel", " Créé avec l'assistance de l'IA.", ""],
+      ["$.cartel", "Créé avec l'assistance de l'IA.", ""],
+      ["$.en.cartel", " Created with the assistance of AI.", ""],
+      ["$.en.cartel", "Created with the assistance of AI.", ""],
+      ["$.technique", "Dessin numérique créé avec l'assistance de l'IA", "Dessin numérique"],
+      ["$.en.technique", "Digital drawing created with the assistance of AI", "Digital drawing"],
+      // Sans la mention de l'IA, « peints » laisserait croire à une peinture faite à la main.
+      ["$.cartel", "peints à larges touches", "rendus à larges touches"],
+      ["$.en.cartel", "painted in broad strokes", "rendered in broad strokes"],
+    ].map(
+      ([chemin, avant, apres]) =>
+        `UPDATE designs SET donnees = json_set(donnees, ${litteral(chemin)}, replace(json_extract(donnees, ${litteral(chemin)}), ${litteral(avant)}, ${litteral(apres)}))
+        WHERE instr(json_extract(donnees, ${litteral(chemin)}), ${litteral(avant)}) > 0`,
+    ),
+  },
 ];
 
 async function migrer(db: D1Database) {
