@@ -145,6 +145,42 @@ const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
     cle: "migration:2026-10-28-fiches-sans-case-ia",
     requete: `UPDATE designs SET donnees = json_set(donnees, '$.ia', json('false')) WHERE json_extract(donnees, '$.ia') = 1`,
   },
+  {
+    // À la demande de Léo (28 octobre 2026) : les 41 designs dont le fichier HD fait moins de 4 000 px
+    // repassent en brouillon, vidés de leur fichier HD et de leur aperçu, pour qu'il y dépose une version
+    // d'au moins 4 000 px puis les republie. Textes, version anglaise, adresse et droits sont conservés.
+    // Rien n'est effacé du stockage : les anciennes lignes sont gardées dans fichiers_archives et designs_archives.
+    cle: "migration:2026-10-28-fichiers-a-agrandir",
+    requete: (() => {
+      const ids = [
+        ...Array.from({ length: 39 }, (_, i) => `dp-${String(11 + i).padStart(4, "0")}`),
+        "orig-0006",
+        "orig-0011",
+      ]
+        .map(litteral)
+        .join(", ");
+      const cibles = `id IN (${ids}) AND statut = 'publie'`;
+      const motif = litteral("fichier HD de moins de 4 000 px, à remplacer (28 octobre 2026)");
+      const maintenant = "strftime('%Y-%m-%dT%H:%M:%fZ', 'now')";
+      return [
+        `CREATE TABLE IF NOT EXISTS fichiers_archives (
+          cle TEXT PRIMARY KEY, design_id TEXT NOT NULL, role TEXT NOT NULL, nom TEXT NOT NULL, type_mime TEXT NOT NULL,
+          taille INTEGER NOT NULL, largeur INTEGER, hauteur INTEGER, cree_le TEXT NOT NULL, archive_le TEXT NOT NULL, motif TEXT NOT NULL)`,
+        `CREATE TABLE IF NOT EXISTS designs_archives (
+          id TEXT NOT NULL, statut TEXT NOT NULL, donnees TEXT NOT NULL, archive_le TEXT NOT NULL, motif TEXT NOT NULL)`,
+        `INSERT INTO designs_archives (id, statut, donnees, archive_le, motif)
+          SELECT id, statut, donnees, ${maintenant}, ${motif} FROM designs WHERE ${cibles}`,
+        `INSERT OR IGNORE INTO fichiers_archives
+          SELECT cle, design_id, role, nom, type_mime, taille, largeur, hauteur, cree_le, ${maintenant}, ${motif} FROM fichiers
+          WHERE role = 'hd' AND COALESCE(largeur, 0) < 4000 AND COALESCE(hauteur, 0) < 4000
+          AND design_id IN (SELECT id FROM designs WHERE ${cibles})`,
+        `DELETE FROM fichiers WHERE cle IN (SELECT cle FROM fichiers_archives WHERE motif = ${motif})`,
+        `UPDATE designs SET statut = 'brouillon', modifie_le = ${maintenant},
+          donnees = json_remove(json_set(donnees, '$.image', '', '$.filigraneIntegre', json('false')), '$.hd')
+          WHERE ${cibles}`,
+      ];
+    })(),
+  },
 ];
 
 async function migrer(db: D1Database) {
