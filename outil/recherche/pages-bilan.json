@@ -1,29 +1,435 @@
 {
- "sitemap_code": 200,
- "sitemap_urls": 184,
- "slugs_du_lot_dans_le_plan": 1,
- "pages": [
+ "publies": 85,
+ "prix": {
+  "{\"eur\": 29.99, \"usd\": 34.99}": 85
+ },
+ "exemples_restants": [],
+ "pages_en_defaut": [
+  {
+   "page": "/motif/rubans-rouges-et-lunes-bleues/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/oiseaux-et-poissons-d-or/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-fete-dans-le-ciel-bleu/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-diable-et-le-chien/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/l-arbre-echelle/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-chasseur-et-le-bison/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/l-echelle-de-la-lune/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/nature-morte-a-la-bouteille-bleue/",
+   "code": 200,
+   "prix_ok": true
+  },
   {
    "page": "/motif/le-cavalier-et-le-serpent/",
    "code": 200,
-   "h1": "Le cavalier et le serpent",
-   "titre_ok": true,
-   "cartel_ok": true,
-   "sans_phrase_ia": true,
-   "prix": [
-    "15 €"
-   ]
+   "prix_ok": true
   },
   {
-   "page": "/en/pattern/le-cavalier-et-le-serpent/",
+   "page": "/motif/l-alphabet-des-coureurs/",
    "code": 200,
-   "h1": "The Rider and the Snake",
-   "titre_ok": true,
-   "cartel_ok": true,
-   "sans_phrase_ia": true,
-   "prix": [
-    "$17"
-   ]
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-maison-sur-la-colline/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-soleil-et-la-chevre-bleue/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-tete-aux-trompettes/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-route-tournante-d-apres-derain/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-port-aux-oliviers/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-port-au-ciel-rose/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-danse-d-apres-derain/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-spirale-aux-masques/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/chrysanthemes-au-bord-d-un-ruisseau/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/grives-et-fraises-d-apres-william-morris/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/batik-indigo-aux-oiseaux/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/suzani-aux-rosaces-rouges/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/rubans-et-bouquets-d-apres-pillement/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/chintz-glace-aux-roses/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/mer-de-fleurs/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/iris-sur-fond-d-or/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/carpes-dans-les-vagues/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-grue-du-mandarin/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/une-myriade-d-oiseaux/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/grenades-et-tulipes/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/oeillets-ottomans/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-rose-et-le-rossignol/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/bandes-fleuries-sur-fond-d-or/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/rosaces-de-coromandel/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/indienne-aux-grandes-palmettes/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/herons-sur-fond-rouge/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/chintz-aux-grandes-fleurs/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/fleurs-fantaisie-a-l-indienne/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/semis-de-fleurettes-de-jouy/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/vases-et-pivoines-a-la-chinoise/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/algues-et-baigneuses/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-guitare-jaune/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/la-danse-autour-de-la-nuit/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/les-danseurs/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-jeu-des-formes/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/le-bal-des-visages/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/elephants-et-temples-tenture-khmere/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/pois-de-senteur/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/pavots-d-orient/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/sari-patola-en-double-ikat/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/canards-mandarins-et-plantes-en-fleurs/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/violette-et-ancolie/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/suzani-aux-bouquets/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/chinoiseries/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/paon-et-dragon/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/ikat-de-boukhara/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/bordure-de-chale-du-cachemire/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/fleurs-et-vase/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/portiere-en-indienne-d-ispahan/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/suzani-de-boukhara/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/indienne-moghole-a-la-feuille-d-or/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/chale-long-abricot-du-cachemire/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/fleurs-et-arbres-des-quatre-saisons/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/palampore/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/couvre-lit-en-indienne-au-decor-japonisant/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/danseurs-et-musiciens/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/fleurs-en-treillis-ogival/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/fleurs-dans-un-verre/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/carreaux-d-iznik/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/grand-plat-aux-artichauts/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/l-ecurie-paravent/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/bouquets-fleuris-d-iznik/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/medaillons-feuillages-d-un-caftan/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/medaillons-fleuris-en-treillis-ogival/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/drap-d-or-aux-felins-et-aux-aigles/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/lions-d-une-tunique/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/cheval-au-galop/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/lievres-en-treillis-ogival/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/rideau-de-l-alhambra/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/griffons-en-medaillons/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/treillis-d-animaux-en-medaillons/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/cavaliers-et-animaux-carre-de-tunique/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/medaillon-de-tenture/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/nereide-nymphe-de-la-mer/",
+   "code": 200,
+   "prix_ok": true
+  },
+  {
+   "page": "/motif/noeuds-d-entrelacs-a-la-feuille-d-or/",
+   "code": 200,
+   "prix_ok": true
   }
- ]
+ ],
+ "sitemap_urls": 182
 }
