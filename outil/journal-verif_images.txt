@@ -1,2 +1,3 @@
-27 créations de l'atelier publiées
+40 publiés sur 41
+erreurs : []
 code de sortie : 0
