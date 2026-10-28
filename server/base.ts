@@ -181,6 +181,49 @@ const MIGRATIONS: { cle: string; requete: string | string[] }[] = [
       ];
     })(),
   },
+  {
+    // Décision de Léo (28 octobre 2026), une fois tous les fichiers à 4 000 px : un seul prix, 29,99 € / 34,99 $,
+    // pour tous les motifs retrouvés et toutes les créations (brouillons compris), hors exemples de la maquette.
+    cle: "migration:2026-10-28-prix-29-99",
+    requete: `UPDATE designs SET donnees = json_set(donnees, '$.prix', json('{"eur":29.99,"usd":34.99}')),
+      modifie_le = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+      WHERE (id LIKE 'dp-%' OR id LIKE 'orig-%') AND COALESCE(json_extract(donnees, '$.exemple'), 0) != 1`,
+  },
+  {
+    // À la demande de Léo (28 octobre 2026) : suppression des 16 fiches « Exemple » de la maquette encore publiées.
+    // Les dessins SVG restent dans public/motifs et public/coloriages ; les lignes supprimées sont gardées dans designs_archives.
+    cle: "migration:2026-10-28-suppression-exemples",
+    requete: (() => {
+      const ids = [
+        ...Array.from({ length: 10 }, (_, i) => `dp-${String(1 + i).padStart(4, "0")}`),
+        "orig-0004",
+        "orig-0005",
+        "col-0001",
+        "col-0002",
+        "col-0003",
+        "col-0004",
+      ]
+        .map(litteral)
+        .join(", ");
+      const cibles = `id IN (${ids}) AND json_extract(donnees, '$.exemple') = 1`;
+      const motif = litteral("exemple de la maquette, supprimé à la demande de Léo (28 octobre 2026)");
+      const maintenant = "strftime('%Y-%m-%dT%H:%M:%fZ', 'now')";
+      return [
+        `CREATE TABLE IF NOT EXISTS fichiers_archives (
+          cle TEXT PRIMARY KEY, design_id TEXT NOT NULL, role TEXT NOT NULL, nom TEXT NOT NULL, type_mime TEXT NOT NULL,
+          taille INTEGER NOT NULL, largeur INTEGER, hauteur INTEGER, cree_le TEXT NOT NULL, archive_le TEXT NOT NULL, motif TEXT NOT NULL)`,
+        `CREATE TABLE IF NOT EXISTS designs_archives (
+          id TEXT NOT NULL, statut TEXT NOT NULL, donnees TEXT NOT NULL, archive_le TEXT NOT NULL, motif TEXT NOT NULL)`,
+        `INSERT INTO designs_archives (id, statut, donnees, archive_le, motif)
+          SELECT id, statut, donnees, ${maintenant}, ${motif} FROM designs WHERE ${cibles}`,
+        `INSERT OR IGNORE INTO fichiers_archives
+          SELECT cle, design_id, role, nom, type_mime, taille, largeur, hauteur, cree_le, ${maintenant}, ${motif} FROM fichiers
+          WHERE design_id IN (SELECT id FROM designs WHERE ${cibles})`,
+        `DELETE FROM fichiers WHERE design_id IN (SELECT id FROM designs WHERE ${cibles})`,
+        `DELETE FROM designs WHERE ${cibles}`,
+      ];
+    })(),
+  },
 ];
 
 async function migrer(db: D1Database) {

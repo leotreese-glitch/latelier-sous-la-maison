@@ -19,7 +19,7 @@ const DEFAUTS: Record<Famille, Partial<Design>> = {
     origine: "",
     technique: "",
     type: "floral",
-    prix: { eur: 12, usd: 14 },
+    prix: { eur: 29.99, usd: 34.99 },
     source: "",
     droits: { musee: "", reference: "", url: "", statut: "a-verifier", conditions: "", consulteLe: "" },
   },
@@ -30,7 +30,7 @@ const DEFAUTS: Record<Famille, Partial<Design>> = {
     technique: "Dessin numérique",
     type: "floral",
     ia: false,
-    prix: { eur: 15, usd: 17 },
+    prix: { eur: 29.99, usd: 34.99 },
     source: "Création originale, ce n'est pas la reproduction d'un document d'archive.",
   },
   "petit-atelier": {
