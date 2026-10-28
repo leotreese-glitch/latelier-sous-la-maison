@@ -27,8 +27,10 @@ for d in cat:
     for langue, chemin, attendu in (("fr", "/motif/%s/" % d["slug"], "29,99"), ("en", "/en/pattern/%s/" % d["slug"], "34.99")):
         code, page = lire(SITE + chemin)
         texte = html.unescape(page)
-        if code != 200 or attendu not in texte or re.search(r"\b1[25] ?€|\$1[47]\b", texte):
-            defauts.append({"page": chemin, "code": code, "prix_ok": attendu in texte})
+        visible = re.sub(r"<script.*?</script>", " ", texte, flags=re.S)
+        ancien = [visible[max(0, m.start() - 60):m.end() + 20] for m in re.finditer(r"\b1[25]\s?€|\$1[47]\b", visible)]
+        if code != 200 or attendu not in visible or ancien:
+            defauts.append({"page": chemin, "code": code, "prix_ok": attendu in visible, "ancien_prix": ancien[:3]})
 
 exemples = ["meandre-a-la-grecque", "ecailles-dorees", "quadrilobes-gothiques", "semis-de-fleurettes", "rayure-fleurie",
             "etoiles-a-huit-branches", "eventails", "treillage-de-feuilles", "ikat-losange", "feuilles-de-chanvre",
