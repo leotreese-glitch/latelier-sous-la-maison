@@ -1,0 +1,562 @@
+{
+  "@context": "https://schema.org/docs/jsonldcontext.jsonld",
+  "id": "https://id.rijksmuseum.nl/301265226",
+  "type": [
+    "Book",
+    "ProductModel"
+  ],
+  "about": [
+    {
+      "id": "https://id.rijksmuseum.nl/200106266",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106447",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106740",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106889",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106899",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107299",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107300",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107304",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200109597",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200109621",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200111476",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200112514",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115386",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115387",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115391",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115423",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115432",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115451",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115484",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115505",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115508",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115515",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115516",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115517",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115518",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115527",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115543",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115544",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115550",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115576",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115740",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115745",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200117445",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200117939",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200120745",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200122873",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/2001290",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20013253",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139268",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139274",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139278",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139280",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139281",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139289",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139292",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139293",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139294",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139312",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139314",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139326",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139350",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139368",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139373",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139374",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139396",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139415",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139417",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139432",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139433",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200139434",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20015811",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20015832",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20019333",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20020336",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20020734",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20024009",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20024033",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20024376",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20037538",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200375987",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200378598",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200378909",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200380385",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200380397",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200380398",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200381892",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200383581",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200385334",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200385376",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200385540",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200385792",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200387416",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200389405",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200389406",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390053",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390396",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390397",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390405",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390567",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390569",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390623",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390859",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390875",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390882",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390889",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390890",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200390891",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200391073",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200391315",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200391322",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200391329",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200398511",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200413308",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200416183",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200426462",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20047354",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20047355",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200533339",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200533340",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200533341",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200540231",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200570395",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20058493",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200603579",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200603580",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20062583",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/20067547",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200767229",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200767230",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200792066",
+      "type": "VisualArtwork"
+    }
+  ],
+  "additionalType": {
+    "type": "DefinedTerm",
+    "name": [
+      {
+        "@language": "en",
+        "@value": "Collection catalogues"
+      },
+      {
+        "@language": "nl",
+        "@value": "Collectiecatalogi"
+      }
+    ],
+    "sameAs": {
+      "id": "http://vocab.getty.edu/aat/300417819"
+    }
+  },
+  "creditText": "Bianca M. du Mortier ; met bijdragen van: Mieke Albers, Sara van Dijk, Maaike Geenevasen, Carola Holz, Marjolein Koek, Aline Letrange, Art N\u00e9ss Proano Gaibor, Suzan Meijer, Frederique van Reij, Eveline Sint Nicolaas, Harm Stevens, Birthe Weijkamp",
+  "exampleOfWork": {
+    "id": "https://id.rijksmuseum.nl/300265226",
+    "type": "CreativeWork"
+  },
+  "isbn": "9789462083387",
+  "materialExtent": "326 pagina's",
+  "name": "Mode & kostuum",
+  "publication": [
+    {
+      "type": "PublicationEvent",
+      "startDate": {
+        "@value": "2016",
+        "type": "Date"
+      }
+    },
+    {
+      "type": "PublicationEvent",
+      "name": "Amsterdam: Rijksmuseum, 2016"
+    },
+    {
+      "type": "PublicationEvent",
+      "location": {
+        "type": "Place",
+        "name": "Amsterdam"
+      }
+    },
+    {
+      "type": "PublicationEvent",
+      "publishedBy": {
+        "name": "Rijksmuseum"
+      }
+    }
+  ],
+  "sameAs": {
+    "id": "http://www.worldcat.org/oclc/974495439"
+  },
+  "size": "25 cm",
+  "subjectOf": {
+    "type": "Statement",
+    "additionalType": {
+      "id": "http://vocab.getty.edu/aat/300435416"
+    },
+    "text": "Uitgave i.s.m. nai010 uitgevers"
+  },
+  "url": {
+    "id": "https://library.rijksmuseum.nl/cgi-bin/koha/opac-detail.pl?biblionumber=265226"
+  },
+  "workExample": [
+    {
+      "id": "https://id.rijksmuseum.nl/302304731"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/302304739"
+    }
+  ]
+}

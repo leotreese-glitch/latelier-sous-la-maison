@@ -1,0 +1,73 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22038",
+  "type": "Material",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22011907",
+      "type": "Material"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300014069",
+      "type": "Material"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q1426327",
+      "type": "Material"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320130056",
+      "type": "Material"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "linen (material)",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "linnen",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22038",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}

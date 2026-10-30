@@ -1,18 +1,1138 @@
-europeana-fournisseurs {"code": 200, "total": 52537, "fournisseurs": [["MAK – Museum of Applied Arts", 2691], ["Mobilier National Collections", 2657], ["National Library of France", 2221], ["Upplands Museum", 1879], ["Nordic Museum Foundation", 1754], ["Örebro County Museum", 1737], ["Malmö Museum", 1591], ["Army Museum", 1340], ["The Portable Antiquities Scheme", 1310], ["Deutsche Fotothek", 1279], ["Naturalis Biodiversity Center", 1129], ["Museum of Ethnography", 1099], ["The Norwegian Museum of Cultural History", 1014], ["Bohuslän Museum", 969], ["\"Dimitrie Gusti\" National Village Museum", 902], ["Kulturen", 875], ["Royal Institute for Cultural Heritage", 692], ["German Documentation Center for Art History - Marburg Picture Index", 670], ["Rijksmuseum", 658], ["Helsingborg Museum", 579], ["Fries Museum", 552], ["The Royal Library: The National Library of Denmark and Copenhagen University Library", 552], [
-europeana-Palais-Galliera-Musée-de-la-Mo {"code": 200, "total": 270, "exemples": [["Indienne", "http://creativecommons.org/publicdomain/zero/1.0/", "?"], ["Damas", "http://creativecommons.org/publicdomain/zero/1.0/", "?"], ["'Damas'", "http://creativecommons.org/publicdomain/zero/1.0/", "1950"], ["Damas", "http://creativecommons.org/publicdomain/zero/1.0/", "?"], ["Eventail publicitaire", "http://rightsstatements.org/vocab/InC/1.0/", "1930"], ["Parisienne", "http://rightsstatements.org/vocab/InC/1.0/", "1946"], ["Le Créole", "http://rightsstatements.org/vocab/InC/1.0/", "1954"], ["Robe de soirée de brocart or et vert de Pierre Balmain, Fonds d'archiv", "http://rightsstatements.org/vocab/InC/1.0/", "1947"]]}
-europeana-Mobilier-National-Collections {"code": 200, "total": 2657, "exemples": [["SOIERIE - Brocart", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or, fond satin ponceau", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"], ["SOIERIE - Bordure brocart or fond satin bleu.", "http://creativecommons.org/licenses/by-nc-nd/4.0/", "?"]]}
-europeana-Rijksmuseum {"code": 200, "total": 658, "exemples": [["Jurk van sits", "http://creativecommons.org/publicdomain/mark/1.0/", "1780"], ["Sprei van sits", "http://creativecommons.org/publicdomain/mark/1.0/", "?"], ["Fragment sits met kolibri's.", "http://creativecommons.org/publicdomain/mark/1.0/", "1750"], ["Sits met bloemslingers en boeketten", "http://creativecommons.org/publicdomain/mark/1.0/", "1775"], ["Sprei van sits, gewatteerd en doorgestikt", "http://creativecommons.org/publicdomain/mark/1.0/", "?"], ["Fragment sits met patroon van boeketten", "http://creativecommons.org/publicdomain/mark/1.0/", "?"], ["Kindersprei van sits met gestrooid bloemenpatroon", "http://creativecommons.org/publicdomain/mark/1.0/", "?"], ["Fragment sits met bloemtakken en veerachtig bladeren", "http://creativecommons.org/publicdomain/mark/1.0/", "1750"]]}
-europeana-Nationalmuseum-Sweden {"code": 200, "total": 15, "exemples": [["Fragment av kattun", "http://creativecommons.org/licenses/by-sa/4.0/", "1800"], ["Duk", "http://creativecommons.org/licenses/by-sa/4.0/", "?"], ["Fragment av Bokkhara-sammet", "http://creativecommons.org/licenses/by-sa/4.0/", "?"], ["Portrait of the Artist's Wife", "http://creativecommons.org/publicdomain/mark/1.0/", "1877"], ["Stolklädsel", "http://creativecommons.org/licenses/by-sa/4.0/", "?"], ["Stolklädsel", "http://creativecommons.org/licenses/by-sa/4.0/", "?"], ["St Anastasius", "http://creativecommons.org/publicdomain/mark/1.0/", "1631"], ["Self-portrait", "http://creativecommons.org/publicdomain/mark/1.0/", "1896"]]}
-europeana-Museum-für-Kunst-und-Gewerbe-H {"code": 200, "total": 0, "exemples": []}
-si-textile-1700s {"code": 200, "total": 2245}
-si-textile-1800s {"code": 200, "total": 2658}
-si-sidewall-1800s {"code": 200, "total": 142}
-si-textile-1600s {"code": 200, "total": 1675}
-rijks-objet {"code": 200, "licences": ["https://creativecommons.org/publicdomain/mark/1.0/", "https://creativecommons.org/publicdomain/zero/1.0/"], "titre": ["gerelateerd object", "related object"]}
-met-site {"code": 429}
-paris-recherche {"code": 200, "liens_oeuvres": 50}
-paris-oeuvre-0 {"code": 200, "cc0": 2, "domaine_public": 0, "telecharger": 1, "titre": ["Assignat de 15 sols, série n°1021, 24 octobre 1792 | Paris Musées"]}
-paris-oeuvre-1 {"code": 200, "cc0": 0, "domaine_public": 0, "telecharger": 0, "titre": ["Bourreau (au manteau drapé sur le bras gauche) | Paris Musées"]}
-paris-oeuvre-2 {"code": 200, "cc0": 0, "domaine_public": 0, "telecharger": 0, "titre": ["Caricatures parisiennes | Paris Musées"]}
-fini : 16 essais
+recherche 200 {"@context":"https://linked.art/ns/v1/search.json","id":"https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true","type":"OrderedCollectionPage","partOf":{"id":"https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true","type":"OrderedCollection","totalItems":116,"first":{"id":"https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true","type":"OrderedCollectionPage"},"last":{"id":"https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true&pageToken=eyJ0b2tlbiI6ICJodHRwczovL2lkLnJpamtzbXVzZXVtLm5sLzIwMDY0NDgwIn0","type":"OrderedCollectionPage"}},"next":{"id":"https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true&pageToken=eyJ0b2tlbiI6ICJodHRwczovL2lkLnJpamtzbXVzZXVtLm5sLzIwMDY0NDgwIn0","type":"OrderedCollectionPage"},"orderedItems":[{"id":"https://id.rijksmuseum.nl/200107300","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200108038","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200108041","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200108051","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200108181","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200108523","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200109197","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200109276","type":"HumanMadeObject"},{"id":"https://id.rijksmuseum.nl/200109458","type":"HumanMadeObject"
+--- 200 https://id.rijksmuseum.nl/200107300 -> https://id.rijksmuseum.nl/200107300 23607
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/200107300",
+  "type": "HumanMadeObject",
+  "assigned_by": [
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "type": "LinguisticObject",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300311705",
+                  "type": "Type"
+                }
+              ],
+              "part": [
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404620",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "30"
+                }
+              ]
+            }
+          ],
+          "part_of": [
+            {
+              "id": "https://id.rijksmuseum.nl/301265226",
+              "type": "http://id.loc.gov/ontologies/bibframe/Instance"
+            }
+          ]
+        }
+      ],
+      "assigned_property": "referred_to_by",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311954",
+          "type": "Type"
+        }
+      ]
+    }
+  ],
+  "attributed_by": [
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "id": "https://id.rijksmuseum.nl/200107299",
+          "type": "HumanMadeObject"
+        }
+      ],
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300444120",
+          "type": "Type"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "gerelateerd object",
+          "language": [
+            {
+              "id": "http://vocab.getty.edu/aat/300388256",
+              "type": "Language"
+            }
+          ]
+        },
+        {
+          "type": "Name",
+          "content": "related object",
+          "language": [
+            {
+              "id": "http://vocab.getty.edu/aat/300388277",
+              "type": "Language"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "https://id.rijksmuseum.nl/220308",
+      "type": "Type",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ],
+      "equivalent": [
+        {
+          "id"
+--- 200 https://id.rijksmuseum.nl/301265226 -> https://id.rijksmuseum.nl/301265226 13214
+{
+  "@context": "https://schema.org/docs/jsonldcontext.jsonld",
+  "id": "https://id.rijksmuseum.nl/301265226",
+  "type": [
+    "Book",
+    "ProductModel"
+  ],
+  "about": [
+    {
+      "id": "https://id.rijksmuseum.nl/200106266",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106447",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106740",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106889",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200106899",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107299",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107300",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200107304",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200109597",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200109621",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200111476",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200112514",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115386",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115387",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115391",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115423",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115432",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115451",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115484",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115505",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115508",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115515",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115516",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115517",
+      "type": "VisualArtwork"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/200115518",
+      "type": "
+--- 200 https://id.rijksmuseum.nl/200107299 -> https://id.rijksmuseum.nl/200107299 47306
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/200107299",
+  "type": "HumanMadeObject",
+  "assigned_by": [
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "type": "LinguisticObject",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300311705",
+                  "type": "Type"
+                }
+              ],
+              "part": [
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404620",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "30"
+                }
+              ]
+            }
+          ],
+          "part_of": [
+            {
+              "id": "https://id.rijksmuseum.nl/301265226",
+              "type": "http://id.loc.gov/ontologies/bibframe/Instance"
+            }
+          ]
+        }
+      ],
+      "assigned_property": "referred_to_by",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311954",
+          "type": "Type"
+        }
+      ]
+    },
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "type": "LinguisticObject",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300311705",
+                  "type": "Type"
+                }
+              ],
+              "part": [
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404620",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "33"
+                },
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300445022",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "74-75"
+                }
+              ]
+            }
+          ],
+          "part_of": [
+            {
+              "id": "https://id.rijksmuseum.nl/301130318",
+              "t
+--- 200 https://id.rijksmuseum.nl/220308 -> https://id.rijksmuseum.nl/220308 1235
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/220308",
+  "type": "Type",
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300210541",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "camisole",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "kamizooltje",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/220308",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22090 -> https://id.rijksmuseum.nl/22090 1419
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22090",
+  "type": "Type",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22058",
+      "type": "Type"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300379341",
+      "type": "Type"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320128951",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "herenkleding",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "menswear",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22090",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22091 -> https://id.rijksmuseum.nl/22091 1338
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22091",
+  "type": "Type",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22058",
+      "type": "Type"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300209263",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "bovenkleding",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "main garment",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22091",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22092 -> https://id.rijksmuseum.nl/22092 1052
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22092",
+  "type": "Type",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22091",
+      "type": "Type"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300209880",
+      "type": "Type"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q2380327",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "vest",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22092",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22026 -> https://id.rijksmuseum.nl/22026 1372
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22026",
+  "type": "Type",
+  "broader": [
+    "https://id.rijksmuseum.nl/22016137"
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300055645",
+      "type": "Type"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320129984",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "lengte",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "length",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22026",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/200390882 -> https://id.rijksmuseum.nl/200390882 31826
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/200390882",
+  "type": "HumanMadeObject",
+  "assigned_by": [
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "type": "LinguisticObject",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300311705",
+                  "type": "Type"
+                }
+              ],
+              "part": [
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404620",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "30"
+                }
+              ]
+            }
+          ],
+          "part_of": [
+            {
+              "id": "https://id.rijksmuseum.nl/301265226",
+              "type": "http://id.loc.gov/ontologies/bibframe/Instance"
+            }
+          ]
+        }
+      ],
+      "assigned_property": "referred_to_by",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311954",
+          "type": "Type"
+        }
+      ]
+    },
+    {
+      "type": "AttributeAssignment",
+      "assigned": [
+        {
+          "type": "LinguisticObject",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300311705",
+                  "type": "Type"
+                }
+              ],
+              "part": [
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404620",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "33"
+                },
+                {
+                  "type": "Identifier",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300445022",
+                      "type": "Type"
+                    }
+                  ],
+                  "content": "p. 74 -75"
+                }
+              ]
+            }
+          ],
+          "part_of": [
+            {
+              "id": "https://id.rijksmuseum.nl/301130318",
+            
+--- 200 https://id.rijksmuseum.nl/22015218 -> https://id.rijksmuseum.nl/22015218 1137
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22015218",
+  "type": "Type",
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "object number",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "objectnummer",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22015218",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22038 -> https://id.rijksmuseum.nl/22038 1533
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22038",
+  "type": "Material",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22011907",
+      "type": "Material"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300014069",
+      "type": "Material"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q1426327",
+      "type": "Material"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320130056",
+      "type": "Material"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "linen (material)",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "linnen",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22038",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/220487 -> https://id.rijksmuseum.nl/220487 1877
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/220487",
+  "type": "Material",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22011907",
+      "type": "Material"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300132876",
+      "type": "Material"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/22011901",
+      "type": "Material"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320132022",
+      "type": "Material"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300264273",
+          "type": "Type"
+        }
+      ],
+      "content": "chintz",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "chintz",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "sits",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/220487",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/22083 -> https://id.rijksmuseum.nl/22083 1531
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22083",
+  "type": "Material",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22011907",
+      "type": "Material"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300014067",
+      "type": "Material"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q11457",
+      "type": "Material"
+    },
+    {
+      "id": "https://id.rijksmuseum.nl/320129504",
+      "type": "Material"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "cotton (textile)",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "katoen",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22083",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}
+--- 200 https://id.rijksmuseum.nl/260236 -> https://id.rijksmuseum.nl/260236 1608
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/260236",
+  "type": "Set",
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "fashion",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388277",
+          "type": "Language"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "mode",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/260236",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "curies": [
+      {
+        "href": "https://linked.art/api/rels/1/{rel}",
+        "name": "la",
+        "templated": true
+      }
+    ],
+    "la:apiVersion": {
+      "href": "https://linked.art/api/1.0/",
+      "name": "v1.0"
+    },
+    "la:modelVersion": {
+      "href": "https://linked.art/model/1.0/",
+      "name": "v1.0"
+    },
+    "la:objectMemberOfSet": {
+      "href": "https://data.rijksmuseum.nl/search/collection?memberOfSetId=https://id.rijksmuseum.nl/260236"
+    },
+    "self": "https://id.rijksmuseum.nl/260236"
+  }
+}
+--- 200 https://id.rijksmuseum.nl/260238 -> https://id.rijksmuseum.nl/260238 1285
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/260238",
+  "type": "Set",
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "Alleen beeld",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/260238",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "curies": [
+      {
+        "href": "https://linked.art/api/rels/1/{rel}",
+        "name": "la",
+        "templated": true
+      }
+    ],
+    "la:apiVersion": {
+      "href": "https://linked.art/api/1.0/",
+      "name": "v1.0"
+    },
+    "la:modelVersion": {
+      "href": "https://linked.art/model/1.0/",
+      "name": "v1.0"
+    },
+    "la:objectMemberOfSet": {
+      "href": "https://data.rijksmuseum.nl/search/collection?memberOfSetId=https://id.rijksmuseum.nl/260238"
+    },
+    "self": "https://id.rijksmuseum.nl/260238"
+  }
+}
+SI ligne : {"id": "ld1-1643399887910-1643399944038-1", "title": "Chintz fragments", "unitCode": "CHNDM", "type": "edanmdm", "url": "edanmdm:chndm_1973-51-3-a_b", "content": {"freetext": {"date": [{"label": "Date", "content": "18th century"}], "notes": [{"label": "Catalogue Status", "content": "Research in Progress"}, {"label": "Description", "content": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together."}], "place": [{"label": "made in", "content": "India"}], "setName": [{"label": "See more items in", "content": "Cooper Hewitt, Smithsonian Design Museum Collection"}, {"label": "See more items in", "content": "Textiles Department"}], "creditLine": [{"label": "Credit Line", "content": "Gift of Josephine Howell"}], "dataSource": [{"label": "Data Source", "content": "Cooper Hewitt, Smithsonian Design Museum"}], "identifier": [{"label": "Accession Number", "content": "1973-51-3-a,b"}], "objectType": [{"label": "Type", "content": "printed, dyed & painted textiles"}, {"label": "Type", "content": "Chintz fragments"}], "objectRights": [{"label": "Restrictions & Rights", "content": "CC0"}], "physicalDescription": [{"label": "Medium", "content": "Medium: cotton Technique: mordants for red, purple and black applied by pen or brush; blue applied over resist; on blue background chintz blue applied by immersion (chintz) on plain weave."}, {"label": "Dimensions", "content": "H x W x D (A - four pieces sewn together): 21.5 x 28 cm (8 7/16 x 11 in.)"}, {"label": "Dimensions", "content": "H x W x D (B - two pieces sewn together): 18.5 x 18 cm (7 5/16 x 7 1/16 in.)"}]}, "indexedStructured": {"date": ["1700s", "1790s"], "place": ["India"], "geoLocation": [{"L2": {"type": "Country", "content": "India"}}], "object_type": ["Chintz fragments", "Textiles"], "online_media_type": ["Images"]}, "descriptiveNonRepeating": {"guid": "http://n2t.net/ark:/65665/kq4e8eeff14-f186-4280-ac03-a46e890c65d0", "title": {"label": "Title", "content": "Chintz fragments"}, "record_ID": "chndm_1973-51-3-a_b", "unit_code": "CHNDM", "title_sort": "CHINTZ FRAGMENTS", "data_source": "Cooper Hewitt, Smithsonian Design Museum", "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151741", "online_media": {"media": [{"id": "media:CHSDM-B68192B83FCD2-000001", "guid": "http://n2t.net/ark:/65665/vc9c84228e9-808d-49f8-bfca-3050a49044f1", "type": "Images", "idsId": "CHSDM-B68192B83FCD2-000001", "usage": {"access": "CC0"}, "width": 5220, "height": 7609, "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001", "maxsize": 0, "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001", "altTextAccessibility": "", "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.", "resources": [{"label": "High-resolution JPEG", "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001.jpg", "width": 5220, "height": 7609, "dimensions": "5220x7609"}, {"label": "Screen Image", "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_screen"}, {"label": "Thumbnail Image", "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_thumb"}]}, {"id": "media:CHSDM-CH7057", "guid": "http://n2t.net/ark:/65665/vc9d7a3c546-5c5e-4fa5-aa6f-c0a2514a12ad", "type": "Images", "idsId": "CHSDM-CH7057", "usage": {"access": "CC0"}, "width": 976, "height": 1500, "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057", "maxsize": 3000, "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057", "altTextAccessibility": "", "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.", "resources": [{"label": "High-resolution JPEG", "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057.jpg", "width": 976, "height": 1500, "dimensions": "976x1500"}, {"label": "Screen Image", "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_screen"}, {"label": "Thumbnail Image", "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_thumb"}]}], "mediaCount": 2}, "metadata_usage": {"access": "CC0"}}}, "hash": "4438cccc8dd6af548d0c6bf0e585c753cff315a2", "docSignature": "e6f3113b01f56c7974c918e094a1ee46", "timestamp": "1663784558", "lastTimeUpdated": "1792839561", "version": "1792834040"}
 code de sortie : 0

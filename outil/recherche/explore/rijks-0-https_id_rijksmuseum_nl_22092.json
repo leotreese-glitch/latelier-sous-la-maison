@@ -1,0 +1,52 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://id.rijksmuseum.nl/22092",
+  "type": "Type",
+  "broader": [
+    {
+      "id": "https://id.rijksmuseum.nl/22091",
+      "type": "Type"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300209880",
+      "type": "Type"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q2380327",
+      "type": "Type"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type"
+        }
+      ],
+      "content": "vest",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/aat/300388256",
+          "type": "Language",
+          "_label": "Dutch"
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "id": "https://data.rijksmuseum.nl/22092",
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300379475",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643399887910-1643399944038-1",
+        "title": "Chintz fragments",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-3-a_b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-3-a,b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragments"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for red, purple and black applied by pen or brush; blue applied over resist; on blue background chintz blue applied by immersion (chintz) on plain weave."
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W x D (A - four pieces sewn together): 21.5 x 28 cm (8 7/16 x 11 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W x D (B - two pieces sewn together): 18.5 x 18 cm (7 5/16 x 7 1/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragments",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4e8eeff14-f186-4280-ac03-a46e890c65d0",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragments"
+            },
+            "record_ID": "chndm_1973-51-3-a_b",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENTS",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151741",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-B68192B83FCD2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9c84228e9-808d-49f8-bfca-3050a49044f1",
+                  "type": "Images",
+                  "idsId": "CHSDM-B68192B83FCD2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 5220,
+                  "height": 7609,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001.jpg",
+                      "width": 5220,
+                      "height": 7609,
+                      "dimensions": "5220x7609"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7057",
+                  "guid": "http://n2t.net/ark:/65665/vc9d7a3c546-5c5e-4fa5-aa6f-c0a2514a12ad",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7057",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 976,
+                  "height": 1500,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057.jpg",
+                      "width": 976,
+                      "height": 1500,
+                      "dimensions": "976x1500"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "4438cccc8dd6af548d0c6bf0e585c753cff315a2",
+        "docSignature": "e6f3113b01f56c7974c918e094a1ee46",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944034-2",
+        "title": "Chintz panel",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-22",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Shaped cartouche pieced from a palampore. Background of red and white chintz. Green and white braid applied to outline the edges of the shape."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-22"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz panel"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for reds and purples applied over resist by brush and pen; madder dyed; blue applied by brush over resist; yellow applied by brush; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 66 x 51.5 cm (26 x 20 1/4 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz panel",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4efccbfca-2218-482d-aab6-79a75cf8480c",
+            "title": {
+              "label": "Title",
+              "content": "Chintz panel"
+            },
+            "record_ID": "chndm_1973-51-22",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ PANEL",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151733",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-8452DDA9C0312-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc99adae800-7b3e-4caf-a674-2dca93d8a01d",
+                  "type": "Images",
+                  "idsId": "CHSDM-8452DDA9C0312-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4706,
+                  "height": 6019,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8452DDA9C0312-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8452DDA9C0312-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Shaped cartouche pieced from a palampore. Background of red and white chintz. Green and white braid applied to outline the edges of the shape.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001.jpg",
+                      "width": 4706,
+                      "height": 6019,
+                      "dimensions": "4706x6019"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0bcd0bbfc6fcd042383858d8c716d75b04d642c3",
+        "docSignature": "c9c0284f0e785df1d2fba8b5540741e5",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      }
+    ],
+    "facets": {},
+    "rowCount": 156,
+    "message": "content found"
+  }
+}
