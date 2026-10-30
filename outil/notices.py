@@ -4,11 +4,11 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)", "AIC-User-Agent": "latelier-sous-la-maison (notices)"}
-RIJKS = {"R241": "https://id.rijksmuseum.nl/20064167", "R121": "https://id.rijksmuseum.nl/200743029",
-         "R194": "https://id.rijksmuseum.nl/200106992", "R240": "https://id.rijksmuseum.nl/20063018"}
-AIC = {"A136": (43057, "2c69c362-9661-4f2b-806e-55dd2040f024"), "A069": (9415, "de0be2c7-f7f3-8994-24bb-8ea946a4f7fa"),
-       "A104": (55996, "11da56f4-01d3-d916-d135-cd7fc5cb78b4"), "A053": (60689, "5b1a4ae9-e81a-bf1b-76e9-2b8e613b86c0")}
+RIJKS = {"R121": "https://id.rijksmuseum.nl/200743029", "R194": "https://id.rijksmuseum.nl/200106992"}
+AIC = {"A176": (50477, "7ac6da84-eb9e-dd5e-0bdb-cc917970d1b3"), "A205": (1995, "9a8bcdb1-99a7-2256-0613-5dac0c1a26e9"),
+       "A181": (50468, "79a04f74-05ba-f44d-c5ba-4ddb8353b82d"), "A234": (71269, "ab9d239a-2e45-8c6e-b073-d690eb1aa73b")}
 EN = "http://vocab.getty.edu/aat/300388277"
+NL = "http://vocab.getty.edu/aat/300388256"
 sortie = {}
 
 
@@ -23,7 +23,7 @@ def textes(o, chemin=""):
     if isinstance(o, dict):
         langs = o.get("language") or []
         langs = langs if isinstance(langs, list) else [langs]
-        if isinstance(o.get("content"), str) and any((l.get("id") if isinstance(l, dict) else l) == EN for l in langs):
+        if isinstance(o.get("content"), str) and any((l.get("id") if isinstance(l, dict) else l) in (EN, NL) for l in langs):
             res.append((chemin, o["content"]))
         for k, v in o.items():
             res += textes(v, chemin + "/" + k)
@@ -61,4 +61,4 @@ for cle, (ident, image) in AIC.items():
     print(cle, json.dumps(sortie[cle], ensure_ascii=False)[:3000])
 
 os.makedirs("outil/recherche", exist_ok=True)
-json.dump(sortie, open("outil/recherche/notices-lot3.json", "w"), ensure_ascii=False, indent=1)
+json.dump(sortie, open("outil/recherche/notices-lot3b.json", "w"), ensure_ascii=False, indent=1)
