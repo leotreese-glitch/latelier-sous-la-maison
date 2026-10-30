@@ -1,11 +1,47 @@
-Traceback (most recent call last):
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 105, in <module>
-    f = rijks_fiche(uri)
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 69, in rijks_fiche
-    if EN in langue(r) and any("300435416" in (c.get("id") or "") for c in r.get("classified_as", [])):
-             ~~~~~~^^^
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 43, in langue
-    return [l.get("id") for l in (o.get("language") or [])]
-            ^^^^^
-AttributeError: 'str' object has no attribute 'get'
-code de sortie : 1
+RIJKS fiche illisible https://id.rijksmuseum.nl/200378396 AttributeError("'list' object has no attribute 'get'")
+RIJKS fiche illisible https://id.rijksmuseum.nl/200416351 AttributeError("'list' object has no attribute 'get'")
+RIJKS material=sits : 40 trouvés, 33 retenus avec image libre
+RIJKS fiche illisible https://id.rijksmuseum.nl/200115728 AttributeError("'list' object has no attribute 'get'")
+RIJKS description=sits : 116 trouvés, 28 retenus avec image libre
+RIJKS title=stalenboek : 7 trouvés, 7 retenus avec image libre
+RIJKS description=katoendruk : 2 trouvés, 2 retenus avec image libre
+RIJKS title=behangsel : 23 trouvés, 23 retenus avec image libre
+RIJKS description=behangselpapier : 9 trouvés, 9 retenus avec image libre
+RIJKS description=katagami : 68 trouvés, 35 retenus avec image libre
+RIJKS title=verfsjabloon : 0 trouvés, 0 retenus avec image libre
+RIJKS fiche illisible https://id.rijksmuseum.nl/20017977 AttributeError("'list' object has no attribute 'get'")
+RIJKS fiche illisible https://id.rijksmuseum.nl/20031246 AttributeError("'list' object has no attribute 'get'")
+RIJKS description=brokaat : 95 trouvés, 32 retenus avec image libre
+RIJKS description=damast : 175 trouvés, 35 retenus avec image libre
+RIJKS description=batik : 40 trouvés, 35 retenus avec image libre
+RIJKS title=palampore : 2 trouvés, 2 retenus avec image libre
+CH chintz AND unit_code:"CHNDM" : 156 au total, 156 retenus
+CH sidewall AND unit_code:"CHNDM" AND date:"1800s" : 142 au total, 142 retenus
+CH toile AND unit_code:"CHNDM" : 25 au total, 25 retenus
+CH textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"France" : 549 au total, 100 retenus
+CH textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"Japan" : 70 au total, 70 retenus
+CH stencil AND unit_code:"CHNDM" AND place:"Japan" : 132 au total, 100 retenus
+CH velvet AND unit_code:"CHNDM" AND date:"1600s" : 254 au total, 100 retenus
+CH textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"India" : 105 au total, 100 retenus
+ECHEC https://api.si.edu/openaccess/api/v1.0/search?rows=100&start=0&api_key=DEMO_KEY&q=textile%20AND%20unit_code%3A%22CHNDM%22%20AND%20date%3A%221800s%22%20AND%20pla <HTTPError 429: 'Too Many Requests'>
+CH textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"England" : 0 au total, 0 retenus
+ECHEC https://api.si.edu/openaccess/api/v1.0/search?rows=100&start=0&api_key=DEMO_KEY&q=textile%20AND%20unit_code%3A%22CHNDM%22%20AND%20date%3A%221600s%22%20AND%20pla <HTTPError 429: 'Too Many Requests'>
+CH textile AND unit_code:"CHNDM" AND date:"1600s" AND place:"Turkey" : 0 au total, 0 retenus
+AIC chintz : 27 retenus
+AIC palampore : 27 retenus
+AIC toile de Jouy : 29 retenus
+AIC block printed cotton : 23 retenus
+AIC wallpaper : 30 retenus
+AIC katagami : 27 retenus
+AIC kashmir shawl : 28 retenus
+AIC ikat : 30 retenus
+AIC batik : 30 retenus
+AIC velvet : 29 retenus
+AIC lampas : 28 retenus
+AIC kalamkari : 27 retenus
+AIC furnishing fabric : 30 retenus
+AIC sample book : 23 retenus
+TOTAL 1248 candidats uniques, 1035 avec une image d'au moins 3 000 px
+1034 sur 1035
+{'6000,': [1089, 3000], '4000,': [4000, 11023], '3000,': [1089, 3000], 'pct:100': [4055, 11175]}
+code de sortie : 0
