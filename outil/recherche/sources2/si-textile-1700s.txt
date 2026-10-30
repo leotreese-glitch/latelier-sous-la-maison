@@ -1,0 +1,858 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643399887910-1643399888029-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1896-17-47",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Length of a blue silk textile has a pattern of large leafy blossoms and flowers buds in a light blue shade."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "China"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Mrs. James W. Pinchot"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1896-17-47"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk Technique: damask"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 69.9 x 18.6 cm (27 1/2 x 7 5/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "China"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "China"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4b63df791-2268-4063-a1c0-cb45c77197ed",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1896-17-47",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/5608",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-BE84B96B13E82-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc991f1dda0-92f1-4d03-858e-f8f5ea676ca1",
+                  "type": "Images",
+                  "idsId": "CHSDM-BE84B96B13E82-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4224,
+                  "height": 7680,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-BE84B96B13E82-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-BE84B96B13E82-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Length of a blue silk textile has a pattern of large leafy blossoms and flowers buds in a light blue shade.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-BE84B96B13E82-000001.jpg",
+                      "width": 4260,
+                      "height": 7746,
+                      "dimensions": "4260x7746"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-BE84B96B13E82-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-BE84B96B13E82-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "899e4919713a81edd7ef5986e4571e1b924703fa",
+        "docSignature": "afcc5f560174a790156355f3eb209c77",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399941685-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1969-170-2",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "16th–17th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Woven textile with overall large-scale ogival medallions on a red ground. Each ogee containing a symmetrical arrangement of tulips and carnations in red, yellow, and light blue on a silver ground, surrounded by a floral vine border."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Turkey"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Clara Waldeck"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1969-170-2"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk, metallic yarns Technique: two integrated structures: 5/1 satin patterned by 3/1 twill"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 167.6 x 67.3 cm (5 ft. 6 in. x 26 1/2 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1500s"
+            ],
+            "place": [
+              "Turkey"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Turkey"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq454358665-6456-4a4d-acea-a62630bda776",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1969-170-2",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/145223",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-03EDE30D8FD02-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9e1b40e76-66ca-4c67-ad69-0b9b3d61602b",
+                  "type": "Images",
+                  "idsId": "CHSDM-03EDE30D8FD02-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 5326,
+                  "height": 10303,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-03EDE30D8FD02-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-03EDE30D8FD02-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Woven textile with overall large-scale ogival medallions on a red ground. Each ogee containing a symmetrical arrangement of tulips and carnations in red, yellow, and light blue on a silver ground, surrounded by a floral vine border.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-03EDE30D8FD02-000001.jpg",
+                      "width": 5326,
+                      "height": 10303,
+                      "dimensions": "5326x10303"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-03EDE30D8FD02-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-03EDE30D8FD02-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "24fc71c9c2030e42937d2c9e579d5bc9d2891c86",
+        "docSignature": "7f30e184fbf307f26fcbeb9decc31c2a",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399942210-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1970-33-1",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th–early 19th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Woven silk textile fragment showing repeating pattern of deer sitting under a flowering tree with a bird and butterfly. Brown ground with discontinuous supplementary weft floats in orange, green and white."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India or Iran"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Joseph McMullen"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1970-33-1"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk, Technique: plain weave with discontinuous supplementary weft patterning (brocaded)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 22.2 × 34.5 cm (8 3/4 × 13 9/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1820s"
+            ],
+            "place": [
+              "Iran",
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              },
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Iran"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4889c9e22-f674-47cc-9ef5-766730453082",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1970-33-1",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/146759",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-146759_01",
+                  "guid": "http://n2t.net/ark:/65665/vc990b550a3-3c70-44af-ab78-87fa6c0a5644",
+                  "type": "Images",
+                  "idsId": "CHSDM-146759_01",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6543,
+                  "height": 4280,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-146759_01",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-146759_01",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Woven silk textile fragment showing repeating pattern of deer sitting under a flowering tree with a bird and butterfly. Brown ground with discontinuous supplementary weft floats in orange, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-146759_01.tif",
+                      "width": 6543,
+                      "height": 4280,
+                      "dimensions": "6543x4280"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-146759_01.jpg",
+                      "width": 6543,
+                      "height": 4280,
+                      "dimensions": "6543x4280"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-146759_01_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-146759_01_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "53bb7eecb20765f5a62ba429be8a96f7e9905917",
+        "docSignature": "9a13ddb6fe2b69428e354bc27ea7a358",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399934399-0",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1961-93-2",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "early 18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Cream colored linen textile showing the continents of America and Europe represented by text and iconographical figures of a Native American with arrow and European figure with horse."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Denmark"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Given by Mrs. Benjamin Ginsburg"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1961-93-2"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: linen Technique: damask weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 29.8 x 44.5 cm (11 3/4 x 17 1/2 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1750s"
+            ],
+            "place": [
+              "Denmark"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Denmark"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4816fd1de-cd6e-4e82-b0ec-60208b1e7bc0",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1961-93-2",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/130783",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-1961-93-2MattFlynn",
+                  "guid": "http://n2t.net/ark:/65665/vc9aaa24463-b930-4bc8-a1c4-b8bb13886809",
+                  "type": "Images",
+                  "idsId": "CHSDM-1961-93-2MattFlynn",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 3000,
+                  "height": 2013,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1961-93-2MattFlynn",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1961-93-2MattFlynn",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Cream colored linen textile showing the continents of America and Europe represented by text and iconographical figures of a Native American with arrow and European figure with horse.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1961-93-2MattFlynn.tif",
+                      "width": 3000,
+                      "height": 2013,
+                      "dimensions": "3000x2013"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1961-93-2MattFlynn.jpg",
+                      "width": 3000,
+                      "height": 2013,
+                      "dimensions": "3000x2013"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1961-93-2MattFlynn_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1961-93-2MattFlynn_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "9f6dc15d32a2d3e28cc0ded7817d1875c631727c",
+        "docSignature": "07a82505f7a5f2931b8c58c5bb0544c8",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399927535-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1956-58-22",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th–19th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "China"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Walter Hochstadter"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1956-58-22"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1890s"
+            ],
+            "place": [
+              "China"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "China"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4259f4287-e35c-46f9-9d44-81470e51f285",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1956-58-22",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/115537",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-A1A31D1E90612-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc948c48879-3f45-44e0-b9cb-bc49d940f40a",
+                  "type": "Images",
+                  "idsId": "CHSDM-A1A31D1E90612-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4572,
+                  "height": 1015,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-A1A31D1E90612-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-A1A31D1E90612-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-A1A31D1E90612-000001.jpg",
+                      "width": 4572,
+                      "height": 1015,
+                      "dimensions": "4572x1015"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-A1A31D1E90612-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-A1A31D1E90612-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "747ea70cf204759379fa48dd99205a9133037ad7",
+        "docSignature": "5ca008db0a520d9bab2e45af6f38a73a",
+        "timestamp": "1663784057",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      }
+    ],
+    "facets": {},
+    "rowCount": 2245,
+    "message": "content found"
+  }
+}

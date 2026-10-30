@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+
+  <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//dmtracker.kernix.com" />
+<link rel="preconnect" href="//dmtracker.kernix.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"4e32333b83",applicationID:"747649367",browserID:"772313154"};;/*! For license information please see nr-loader-rum-1.324.1.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zuv39xzZ8AH/HwpVrtkixvcBuOFo2ydcFzMtXjx+3Iwr5g++inX+6YDH7J/8fOCAtBetz8aDyaYCRkGy2nnG/w=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+<link rel="shortcut icon" href="https://www.parismuseescollections.paris.fr/sites/default/files/logotmp.ico" type="image/vnd.microsoft.icon" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://www.parismuseescollections.paris.fr/fr"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Rechercher",
+                        "item": "https://www.parismuseescollections.paris.fr/fr/recherche%3Fbundle%255B0%255D%3Doeuvre"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Assignat de 15 sols, série n°1021, 24 octobre 1792",
+                        "item": ""
+                    }
+                ]
+            }
+        }
+    ]
+}</script>
+<meta name="description" content="Impression typographique et encre noire." />
+<link rel="canonical" href="https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1021-24-octobre-1792" />
+<link rel="shortlink" href="https://www.parismuseescollections.paris.fr/fr/node/101756" />
+  <meta name="viewport" content="width=768">
+  <title>Assignat de 15 sols, série n°1021, 24 octobre 1792 | Paris Musées</title>
+  <style type="text/css" media="all">
+@import url("/modules/system/system.base.css?tnd3bl");
+@import url("/modules/system/system.menus.css?tnd3bl");
+@import url("/modules/system/system.messages.css?tnd3bl");
+@import url("/modules/system/system.theme.css?tnd3bl");
+</style>
+<style type="text/css" media="all">
+@import url("/modules/comment/comment.css?tnd3bl");
+@import url("/modules/field/theme/field.css?tnd3bl");
+@import url("/sites/all/modules/contrib/scald/modules/fields/mee/css/editor-global.css?tnd3bl");
+@import url("/modules/node/node.css?tnd3bl");
+@import url("/sites/all/modules/contrib/picture/picture_wysiwyg.css?tnd3bl");
+@import url("/sites/all/modules/contrib/scald_file/scald_file.css?tnd3bl");
+@import url("/sites/all/modules/contrib/scald_iframe/scald_iframe.css?tnd3bl");
+@import url("/modules/search/search.css?tnd3bl");
+@import url("/modules/user/user.css?tnd3bl");
+@import url("/sites/all/modules/contrib/views/css/views.css?tnd3bl");
+@import url("/sites/all/modules/contrib/ckeditor/css/ckeditor.css?tnd3bl");
+</style>
+<style type="text/css" media="all">
+@import url("/sites/all/modules/contrib/ctools/css/ctools.css?tnd3bl");
+@import url("/sites/all/modules/contrib/eu_cookie_compliance/css/eu_cookie_compliance.bare.css?tnd3bl");
+@import url("/sites/all/modules/custom/pm_user/css/pm_user.css?tnd3bl");
+@import url("/sites/all/modules/custom/pm_common/css/diaporama.css?tnd3bl");
+@import url("/sites/all/libraries/mark-rolich/Magnifier.js/magnifier.css?tnd3bl");
+@import url("/sites/all/libraries/fancybox/jquery.fancybox-1.3.4.css?tnd3bl");
+@import url("/sites/all/libraries/slick/slick.css?tnd3bl");
+@import url("/sites/all/libraries/slick/slick-theme.css?tnd3bl");
+</style>
+<style type="text/css" media="all">
+@import url("/sites/all/themes/prime/stylesheets/prime_style.css?tnd3bl");
+@import url("/sites/all/themes/pm/stylesheets/pm_style.css?tnd3bl");
+</style>
+<style type="text/css" media="print">
+@import url("/sites/all/themes/prime/stylesheets/prime_print.css?tnd3bl");
+@import url("/sites/all/themes/pm/stylesheets/pm_print.css?tnd3bl");
+</style>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-101756 node-type-oeuvre i18n-fr context-header-footer" >
+  <div id="skip-link">
+    <a href="#content" class="element-invisible element-focusable">Aller au contenu principal</a>
+  </div>
+    <header id="header">
+  <div class="section">
+    <div class="toggle-menu">
+      <div class="menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <p>Menu</p>
+    </div>
+
+    <a href="/fr" title="Paris Musée les collections">
+    <div class="logo-name">
+            <img src="/sites/all/themes/pm/logo.svg" width="75" height="97" alt="Logo des musées de la ville de paris" />
+            <div class="site-name">      Les musées de la ville de paris      </div>    </div>
+
+          <div class="name-and-slogan site-slogan">Les collections</div>
+        </a>
+
+    <div class="mobile-search"></div>
+
+      <div class="region region-header">
+    <div id="block-pm-common-sur-header-block" class="block block-pm-common">
+
+    
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><a href="https://www.parismusees.paris.fr/fr">Paris Musées</a></li>
+<li><a href="https://www.parismuseescollections.paris.fr/fr">Paris Musées Collections</a></li>
+<li class="last"><a href="https://parismuseesexplore.paris.fr/fr">Paris Musées Explore</a></li>
+</ul></div>  </div>
+</div>
+<div id="block-pm-common-visite-autres-sites" class="block block-pm-common">
+
+    
+  <div class="content">
+    <p class="header-text-autres-sites">Visitez nos autres sites Paris Musées</p>
+  </div>
+</div>
+<div id="block-pm-common-billeterie" class="block block-pm-common">
+
+    
+  <div class="content">
+    <a href="https://www.billetterie-parismusees.paris.fr ">Billetterie</a>  </div>
+</div>
+<div id="block-pm-common-common-menu" class="block block-pm-common">
+
+    
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><a href="https://www.parismusees.paris.fr/fr/vous-etes/bienvenue">Votre visite</a></li>
+<li><a href="https://www.parismusees.paris.fr/fr/expositions">Expositions</a></li>
+<li><a href="https://www.parismusees.paris.fr/fr/actualites">Actualités</a></li>
+<li><a href="http://parismuseescollections.paris.fr/">Collections</a></li>
+<li class="last"><a href="https://www.parismusees.paris.fr/fr/reseau">Paris Musées</a></li>
+</ul></div>  </div>
+</div>
+<div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="/recherche" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Rechercher </label>
+ <input title="Indiquer les termes à rechercher" placeholder="mot du titre, auteur, sujet..." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Rechercher" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-p9wBrLhT4T34O9KiWjpAtRAxTlLXgIgdZem5eR4nqK8" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<nav><div id="block-pm-common-header-menu" class="block block-pm-common">
+
+    
+  <div class="content">
+    <div class="item-list"><ul><li class="first last"><a href="/fr/recherche-rapide" class="fancybox-frame" rel="search">Recherche filtrée</a></li>
+</ul></div>  </div>
+</div>
+</nav><div id="block-pm-user-header-user" class="block block-pm-user">
+
+    
+  <div class="content">
+    <div class="user-block"><div class="user-block-top"><a href="/fr/user" class="fancybox-frame login-link">Connectez-vous</a><a href="/fr/user/password" class="element-invisible fancybox-frame request-password-link">Mot de passe oublié ?</a></div></div><div class="user-block"><div class="user-block-middle">Pour sauvegarder et annoter vos recherches, recevoir des alertes et des suggestions</div><div class="user-block-bottom"><a href="/fr/user/register" class="fancybox-frame register-link">Créer un compte</a></div></div>  </div>
+</div>
+<div id="block-pm-common-burger-menu" class="block block-pm-common">
+
+    
+  <div class="content">
+    <div class="hamburger">
+  <span class="hamburger-label">Menu</span>
+  <div class="hamburger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <span class="menu-close-overlay">X</span>
+</div><div class="main-menu-overlay"><div class="wrapper-search-language"><div class="language-switcher block block-pmp-common block-pmp-common-language-switcher" id="block-pmp-common-language-switcher">
+  
+    
+      <div><div class="item-list"><ul><li class="first"><a href="/en/node/101756" class="lang-en" title="English">en</a></li>
+<li><a href="/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1021-24-octobre-1792" class="lang-fr active" title="Français">fr</a></li>
+<li class="last"><a href="/es/node/101756" class="lang-es" title="Español">es</a></li>
+</ul></div></div>
+
+  </div>
+<div class="ows-search-views-keyword-form block block-pmp-search block-pmp-search-search-form" data-drupal-selector="ows-search-views-keyword-form" role="search" id="block-pmp-search-search-form">
+  
+    
+      
+<form action="/fr/recherche" method="get" id="ows-search-views-keyword-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-texte form-item-texte">
+      <label for="edit-texte">Recherche :</label>
+        <input placeholder="Votre recherche" data-drupal-selector="edit-text" type="search" id="edit-text" name="text" value="" size="60" maxlength="128" class="form-search" />
+
+        </div>
+
+</form>
+
+
+  </div>
+<div class="close-icon"><span></span>
+<span></span>
+<span></span>
+</div>
+<div class="wrapper-vous-etes"><div>Vous êtes</div>
+<div class="menu-vous-etes item-list"><ul><li><a href="https://www.parismusees.paris.fr/fr/vous-etes/une-famille">En famille</a></li><li><a href="https://www.parismusees.paris.fr/fr/accessibilite-dans-les-musees-de-la-ville-de-paris">En situation de handicap</a></li><li><a href="https://www.parismusees.paris.fr/fr/education-artistique-et-culturelle-dans-les-musees-de-la-ville-de-paris" title="Public scolaire ">Un enseignant</a></li><li><a href="https://www.parismusees.paris.fr/fr/groupes-du-champ-social-de-la-sante-et-de-la-justice">Un groupe du champ social</a></li><li><a href="https://www.parismusees.paris.fr/fr/vous-etes/journaliste" title="un journaliste curieux">Un journaliste</a></li><li><a href="https://www.parismusees.paris.fr/fr/vous-etes/professionnels-du-tourisme-cse-associations-collectivites">Un professionnel du tourisme / un CSE / une association</a></li><li><a href="https://www.parismusees.paris.fr/fr/vous-etes/une-entreprise">Une entreprise / événements privés</a></li></ul></div></div>
+</div>
+<ul class="menu-tabs"><li class="liste-premier-niveau"><a href="https://www.parismusees.paris.fr/fr/vous-etes/bienvenue" class="liens-principal">Votre visite</a><span class="has-children"></span>
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/vous-etes/bienvenue" data-drupal-link-system-path="landing/8">Préparer votre visite</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/accessibilite-dans-les-musees-de-la-ville-de-paris" data-drupal-link-system-path="node/51">Accessibilité</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/agenda/activites-et-evenements" data-drupal-link-system-path="agenda">Agenda</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/la-carte-paris-musees-les-expositions-en-toute-liberte" data-drupal-link-system-path="node/42">La carte Paris Musées</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/foire-aux-questions" data-drupal-link-system-path="node/4511">Foire aux questions</a>
+              </li>
+        </ul>
+  
+
+</li>
+<li class="liste-premier-niveau"><a href="https://www.parismusees.paris.fr/fr/expositions" class="liens-principal">Expositions</a></li>
+<li class="liste-premier-niveau"><a href="https://www.parismusees.paris.fr/fr/actualites" class="liens-principal">Actualités</a></li>
+<li class="liste-premier-niveau"><a href="http://parismuseescollections.paris.fr/" class="liens-principal">Collections</a><span class="has-children"></span>
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="http://parismuseescollections.paris.fr/fr">Les collections en un coup d&#039;oeil</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://parismuseescollections.paris.fr/fr/recherche/type/oeuvre">Les oeuvres</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://parismuseescollections.paris.fr/fr/parcours-thematiques">Parcours thématique</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/presentation-des-collections-des-musees-de-la-ville-de-paris" data-drupal-link-system-path="node/2023">Présentations des collections</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://apicollections.parismusees.paris.fr/" title="lien vers l&#039;API de Paris Musées">L&#039;API des collections</a>
+              </li>
+        </ul>
+  
+
+</li>
+<li class="liste-premier-niveau"><a href="https://www.parismusees.paris.fr/fr/reseau" class="liens-principal">Paris Musées</a><span class="has-children"></span>
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/soutenez-nous" data-drupal-link-system-path="node/19">Soutenez-nous</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/travailler-pour-paris-musees" data-drupal-link-system-path="node/2921">Travailler pour Paris Musées</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/publications" data-drupal-link-system-path="publications">Publications récentes</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/presse" data-drupal-link-system-path="presse">Presse</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/les-paris-de-l-art" data-drupal-link-system-path="node/44">Les Paris de l&#039;art</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.parismusees.paris.fr/fr/la-carte-paris-musees-les-expositions-en-toute-liberte" data-drupal-link-system-path="node/42">La carte Paris musées : les expositions en toute liberté</a>
+              </li>
+        </ul>
+  
+
+</li>
+</ul>
+<div class="wrapper-newsletter"><div class="pmp-common-newsletter-form block block-pmp-common block-pmp-common-newsletter" data-drupal-selector="pmp-common-newsletter-form" id="block-pmp-common-newsletter">
+  
+    
+      
+<form action="/fr/api/hamburger-export" method="post" id="pmp-common-newsletter-form" accept-charset="UTF-8" target="_blank">
+  <div class="js-form-item form-item js-form-type-email form-type-email js-form-item-email form-item-email form-no-label">
+        <input placeholder="E-mail" data-drupal-selector="edit-email" type="email" id="edit-email--2" name="email" value="" size="60" maxlength="254" class="form-email" />
+
+        </div>
+<input data-drupal-selector="edit-source" type="hidden" name="source" value="COLLECTION" />
+<a href="https://www.parismusees.paris.fr/fr/form/newsletter" class="use-ajax button" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:500}" data-drupal-selector="edit-submit" id="edit-submit--2">S'inscrire</a><input autocomplete="off" data-drupal-selector="form-gisf9-bh3gdv54vdnmph5where2eql5mxciejkpt5am" type="hidden" name="form_build_id" value="form-GISf9-bH3GDV54VDnmPh5whERe2EqL5MxcIeJKPT5AM" />
+<input data-drupal-selector="edit-pmp-common-newsletter-form" type="hidden" name="form_id" value="pmp_common_newsletter_form" />
+
+</form>
+
+
+  </div>
+<span>Inscription à la lettre d'information</span>
+</div>
+<div class="wrapper-liens-reseaux-sociaux"><div class="wrapper-links-reseaux"><a href="https://instagram.com/parismusees/" target="_blank" title="Instagram" class="instagram">instagram</a><a href="https://www.facebook.com/Paris-Mus%C3%A9es-105355969504764" target="_blank" title="Facebook" class="facebook">facebook</a><a href="https://www.tiktok.com/@parismusees" target="_blank" title="TikTok" class="tiktok">tiktok</a><a href="https://www.linkedin.com/company/11375687/" target="_blank" title="LinkedIn" class="linkedin">linkedin</a><a href="https://www.youtube.com/channel/UC6tjnYtebuODogr6C-ac-6g" target="_blank" title="Youtube" class="youtube">youtube</a><a href="https://www.dailymotion.com/paris_musees" target="_blank" title="Dailymotion" class="dailymotion">dailymotion</a><a href="https://www.weibo.com/parismusees" target="_blank" title="Weibo" class="weibo">weibo</a><a href="http://weixin.qq.com/r/yEycmQrEMMJMKE76bxlM" target="_blank" title="Weixin" class="weixin">weixin</a></div>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+  </div>
+</header>
+
+
+  <nav class="section"><div class="breadcrumb"><div class="item-list"><ol><li class="first"><a href="/fr">Accueil</a></li>
+<li><a href="/fr/recherche?bundle%5B0%5D=oeuvre">Rechercher</a></li>
+<li class="last">Assignat de 15 sols, série n°1021, 24 octobre 1792</li>
+</ol></div></div></nav>
+<main id="main" class="main-wrapper">
+  <div class="section">
+    
+    <section id="content">
+      <div class="banner element-invisible">
+          <div class="background"></div>
+      </div>
+
+            <div class="tabs">
+              </div>
+      
+        <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <article id="node-101756" class="node node-oeuvre node-oeuvre-full clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1021-24-octobre-1792" typeof="sioc:Item foaf:Document">
+  <header><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><h1>Assignat de 15 sols, série n°1021, 24 octobre 1792</h1>
+</div>
+      </div>
+</div>
+</header><section class="required-fields" id="infos-principales"><div class="left"><div class="popup-wrapper"><a href="/fr/pm_partage/share/101756" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/101756" class="add-item-list fancybox-frame">Ajouter ce contenu</a><a href="/fr/pm_note/add/101756" class="add-item-note fancybox-frame">Ajouter une note</a><a href="/fr" class="print">Imprimer</a></div><div class="diaporama-container pm-notice-visuels"><div class="first-image"><span class="image"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_notice/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=PNc6bOnZ" /></span><span class="zoom-button">Zoom</span></div><a href="https://creativecommons.org/publicdomain/zero/1.0/" class="licence cc0">CC0</a><a href="/fr/zip/oeuvre/101756" class="download-zip" rel="nofollow noindex" data-node-id="101756">Télécharger</a><div class="pm-diaporama"><div class="titre">Assignat de 15 sols, série n°1021, 24 octobre 1792</div><div class="left"><div class="magnifier-previews"><div id="magnifier-preview-101756-0" class="magnifier-preview" style="width:585px; height:513px;"></div></div><div class="image-centrale"><div class="item"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_diaporama/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=toqnawyT" /><div class="legende"><span class="droits">CC0 Paris Musées / Musée Carnavalet - Histoire de Paris</span></div><div class="fullscreen-button" data-fullscreen-img="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_diaporama_zoom/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=qX0Fo3OQ">X</div><div class="zoom"><div class="text">Zoom<span></span></div><div class="image magnifier-thumb-wrapper"><img class="magnifier-thumb" data-large-img-url="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_diaporama_zoom/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=qX0Fo3OQ" id="magnifier-thumb-101756-0" data-large-img-wrapper="magnifier-preview-101756-0" typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_liste/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=KqGB-Mic" /></div></div></div></div></div><div class="right"><div class="vignettes"><div class="decompte">Autre visuel (1)</div><div class="nav"><div class="item"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_diaporama_liste/public/atoms/images/CAR/lpdp_86462-14.jpg?itok=1iX49Tfa" /></div></div></div><div class="infos"><div class="title">Assignat de 15 sols, série n°1021, 24 octobre 1792</div><div class="info auteur">Caisse de l'Extraordinaire</div><div class="info datation"><div class="label">Datation</div><div class="value">En 1792</div></div><div class="info musee"><div class="label">Musée</div><div class="value">Musée Carnavalet, Histoire de Paris</div></div></div></div></div></div></div><div class="right"><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-inline clearfix">
+      <div class="field-label">Auteur(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-default clearfix" about="/fr/auteur/auteur/35590293">
+
+  
+  <div class="content">
+    <div class="auteur-complet"><a href="/fr/recherche/type/oeuvre/ET/auteur/Caisse%20de%20l%27Extraordinaire">Caisse de l'Extraordinaire</a>, autorité émettrice</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-date-production field-type-pm-date-precision field-label-inline clearfix">
+      <div class="field-label">Dates<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1792</span></div></div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-siecle field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Datation en siècle<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/siecle/4e%20quart%20du%2018e%20si%C3%A8cle-305615">4e quart du 18e siècle</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Type(s) d&#039;objet(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/types-objet/numismatique-167919">Numismatique</a>, <a href="/fr/recherche/type/oeuvre/ET/types-objet/manuscrits%2C%20imprim%C3%A9s%2C%20reliure-167933">Manuscrits, imprimés, reliure</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-denominations field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Dénomination(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/denominations/assignat-167719">Assignat</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-materiaux-technique field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Matériaux et techniques<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/papier-213630">Papier</a>, <a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/encre-213558">Encre</a>, <a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/typographie%20%3D%20impression%20typographique-213817">Typographie = impression typographique</a></div>
+</div>
+      </div>
+</div>
+<div class="field institution-avec-logo"><div class="field-label">Institution :</div>
+<div class="musee"><a href="/fr/recherche/type/oeuvre/ET/musee/mus%C3%A9e%20carnavalet%2C%20histoire%20de%20paris-12">Musée Carnavalet, Histoire de Paris<img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_musee_vignette/public/images/musee/carnavalet_noir_cmjn.png?itok=ppiyAVIn" alt="" title="" /></a></div>
+</div><div class="field field-name-field-oeuvre-num-inventaire field-type-text field-label-inline clearfix">
+      <div class="field-label">Numéro d’inventaire<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even">GB319</div>
+      </div>
+</div>
+<div class="anchor oeuvre-infos-detail"><a  href="#infos-secondaires-detail">Voir les informations détaillées</a></div>
+</div></section><aside id="contenus-relation"><h2><span>Contenus en relation</span></h2><div class="liste-contenus-relation"><article id="node-137153" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/promesse-de-mandat-territorial-de-25-francs-ndeg-37981-serie-27-28-ventose" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/promesse-de-mandat-territorial-de-25-francs-ndeg-37981-serie-27-28-ventose" target=""><!-- scald=1086075:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_157301-29.jpg?itok=uEX0ZhhP" width="245" height="104" alt="LPDP_157301-29" title="LPDP_157301-29" /></div><!-- END scald=1086075 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26452494">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Trésorerie nationale</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Promesse de mandat territorial de 25 francs, n° 37981 - série 27, 28 ventôse an 4</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/promesse-de-mandat-territorial-de-25-francs-ndeg-37981-serie-27-28-ventose" class="voir">Voir</a><a href="/fr/pm_partage/share/137153" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/137153" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-102065" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-8110me" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-8110me" target=""><!-- scald=366071:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86463-27.jpg?itok=-Hn0OR0f" width="245" height="161" alt="LPDP_86463-27" title="LPDP_86463-27" /></div><!-- END scald=366071 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35590434">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 10 livres, série 8110me</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-8110me" class="voir">Voir</a><a href="/fr/pm_partage/share/102065" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/102065" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-102056" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-7328me" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-7328me" target=""><!-- scald=366066:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86463-22.jpg?itok=GRqdiLPf" width="245" height="157" alt="LPDP_86463-22" title="LPDP_86463-22" /></div><!-- END scald=366066 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35590419">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 10 livres, série 7328me</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-7328me" class="voir">Voir</a><a href="/fr/pm_partage/share/102056" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/102056" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-135849" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-12532me" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-12532me" target=""><div class="img-center image"><span class='picto-type-image'><span class='image oeuvre'></span></span></div><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35489779">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 10 livres, série 12532me</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-12532me" class="voir">Voir</a><a href="/fr/pm_partage/share/135849" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/135849" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-121309" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/bataille-de-stony-point-15-juillet-1779" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/bataille-de-stony-point-15-juillet-1779" target=""><!-- scald=317784:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/manz_carnd04739_001.jpg?itok=SeEY4oHr" width="208" height="245" alt="MANZ_CARND04739_001" title="MANZ_CARND04739_001" /></div><!-- END scald=317784 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35770270">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Gatteaux, Nicolas Marie (Paris, 02–08–1751 - Paris, 21–06–1832)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Bataille de Stony Point, 15 juillet 1779</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/bataille-de-stony-point-15-juillet-1779" class="voir">Voir</a><a href="/fr/pm_partage/share/121309" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/121309" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-135795" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-1730me" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-1730me" target=""><div class="img-center image"><span class='picto-type-image'><span class='image oeuvre'></span></span></div><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35483287">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 10 livres, série 1730me</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-10-livres-serie-1730me" class="voir">Voir</a><a href="/fr/pm_partage/share/135795" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/135795" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-118207" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3527me-23-mai-1793-20" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3527me-23-mai-1793-20" target=""><!-- scald=366470:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86670-13.jpg?itok=oII2sOMX" width="245" height="212" alt="LPDP_86670-13" title="LPDP_86670-13" /></div><!-- END scald=366470 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26438931">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 50 sols, série 3527me, 23 mai 1793</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3527me-23-mai-1793-20" class="voir">Voir</a><a href="/fr/pm_partage/share/118207" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/118207" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-118580" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-5-livres-serie-19751-10-brumaire-an-2" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-5-livres-serie-19751-10-brumaire-an-2" target=""><!-- scald=366551:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86673-1.jpg?itok=LP7SWcCw" width="245" height="159" alt="LPDP_86673-1" title="LPDP_86673-1" /></div><!-- END scald=366551 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/34991029">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 5 livres, série 19751, 10 brumaire an 2</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-5-livres-serie-19751-10-brumaire-an-2" class="voir">Voir</a><a href="/fr/pm_partage/share/118580" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/118580" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-136865" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-100-francs-serie-3680-ndeg-1211-18-nivose-an-3" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-100-francs-serie-3680-ndeg-1211-18-nivose-an-3" target=""><div class="img-center image"><span class='picto-type-image'><span class='image oeuvre'></span></span></div><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26451678">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 100 francs, série 3680. - n° 1211., 18 nivôse an 3</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-100-francs-serie-3680-ndeg-1211-18-nivose-an-3" class="voir">Voir</a><a href="/fr/pm_partage/share/136865" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/136865" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-119826" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-2000-francs-serie-9603-ndeg-107-18-nivose-an-3" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-2000-francs-serie-9603-ndeg-107-18-nivose-an-3" target=""><!-- scald=366735:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86678-31.jpg?itok=p4UEKdV7" width="245" height="150" alt="LPDP_86678-31" title="LPDP_86678-31" /></div><!-- END scald=366735 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26441205">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 2000 francs, série 9603 - n° 107, 18 Nivôse an 3</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-2000-francs-serie-9603-ndeg-107-18-nivose-an-3" class="voir">Voir</a><a href="/fr/pm_partage/share/119826" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/119826" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-101616" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1988-9" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1988-9" target=""><!-- scald=365909:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86458-20.jpg?itok=JgZqMWnZ" width="245" height="230" alt="LPDP_86458-20" title="LPDP_86458-20" /></div><!-- END scald=365909 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35562943">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 15 sols, série n°1988</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-15-sols-serie-ndeg1988-9" class="voir">Voir</a><a href="/fr/pm_partage/share/101616" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/101616" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+<article id="node-118235" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3544me-23-mai-1793-5" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3544me-23-mai-1793-5" target=""><!-- scald=366495:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_86671-7.jpg?itok=xSMuWnlM" width="245" height="211" alt="LPDP_86671-7" title="LPDP_86671-7" /></div><!-- END scald=366495 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26439156">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Caisse de l'Extraordinaire</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Assignat de 50 sols, série 3544me, 23 mai 1793</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/assignat-de-50-sols-serie-3544me-23-mai-1793-5" class="voir">Voir</a><a href="/fr/pm_partage/share/118235" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/118235" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div></aside><div class="pm-sticky-sommaire"><div class="title">Assignat de 15 sols, série n°1021, 24 octobre 1792</div>
+<div class="item-list"><ul><li class="infos-secondaires-detail first"><a href="#infos-secondaires-detail">Informations détaillées</a></li>
+<li class="infos-secondaires-indexation"><a href="#infos-secondaires-indexation">Indexation</a></li>
+<li class="infos-secondaires-suggestions-meme-siecle last"><a href="#infos-secondaires-suggestions-meme-siecle">Suggestions pour le même siècle</a></li>
+</ul></div></div><section class="required-fields" id="infos-secondaires-detail"><h2><span>Informations détaillées</span></h2><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-inline clearfix">
+      <div class="field-label">Auteur(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-default clearfix" about="/fr/auteur/auteur/35590293">
+
+  
+  <div class="content">
+    <div class="auteur-complet"><a href="/fr/recherche/type/oeuvre/ET/auteur/Caisse%20de%20l%27Extraordinaire">Caisse de l'Extraordinaire</a>, autorité émettrice</div>
+  </div>
+</div>
+</div>
+          <div class="field-item odd"><div class="entity entity-auteur auteur-auteur entity-auteur-default clearfix" about="/fr/auteur/auteur/35590294">
+
+  
+  <div class="content">
+    <div class="auteur-complet"><a href="/fr/recherche/type/oeuvre/ET/auteur/Gatteaux%2C%20Nicolas%20Marie">Gatteaux, Nicolas Marie</a> (Paris, 02–08–1751 - Paris, 21–06–1832), graveur</div>
+  </div>
+</div>
+</div>
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-default clearfix" about="/fr/auteur/auteur/35590295">
+
+  
+  <div class="content">
+    <div class="auteur-complet"><a href="/fr/recherche/type/oeuvre/ET/auteur/Buttin%20%28signataire%29">Buttin (signataire)</a> (avant 1770), signataire</div>
+  </div>
+</div>
+</div>
+          <div class="field-item odd"><div class="entity entity-auteur auteur-auteur entity-auteur-default clearfix" about="/fr/auteur/auteur/35590296">
+
+  
+  <div class="content">
+    <div class="auteur-complet"><a href="/fr/recherche/type/oeuvre/ET/auteur/G%C3%A9rard%2C%20Jean-Baptiste">Gérard, Jean-Baptiste</a> (avant 1765), graveur en lettres</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-date-production field-type-pm-date-precision field-label-inline clearfix">
+      <div class="field-label">Date de production<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1792</span></div></div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-siecle field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Datation en siècle<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/siecle/4e%20quart%20du%2018e%20si%C3%A8cle-305615">4e quart du 18e siècle</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Type(s) d&#039;objet(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/types-objet/numismatique-167919">Numismatique</a>, <a href="/fr/recherche/type/oeuvre/ET/types-objet/manuscrits%2C%20imprim%C3%A9s%2C%20reliure-167933">Manuscrits, imprimés, reliure</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-denominations field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Dénomination(s)<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/denominations/assignat-167719">Assignat</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-materiaux-technique field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Matériaux et techniques<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/papier-213630">Papier</a>, <a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/encre-213558">Encre</a>, <a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/typographie%20%3D%20impression%20typographique-213817">Typographie = impression typographique</a></div>
+</div>
+      </div>
+</div>
+<div class="notice-dimensions"><div class="field field-name-field-oeuvre-dimensions field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="field dimension"><div class="field-label">Dimensions - Oeuvre: </div>
+<div class="item-list"><ul><li class="first">Hauteur : 7.1 cm</li>
+<li class="last">Largeur : 8.1 cm</li>
+</ul></div></div></div>
+      </div>
+</div>
+</div><div class="field field-name-field-description field-type-text-long field-label-inline clearfix">
+      <div class="field-label">Description<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><p>Impression typographique et encre noire.</p>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-inscriptions field-type-entityreference field-label-inline clearfix">
+      <div class="field-label">Marques, inscriptions, poinçons<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-inscription inscription-inscription entity-inscription-default clearfix" about="/fr/inscription/inscription/34419697">
+
+  
+  <div class="content">
+    <div class="inscription-complete">Filigrane - Au recto, au centre : "15 / S / LA / NATION" dans une couronne surmontée d'une fleur de lis.
+</div>
+  </div>
+</div>
+</div>
+          <div class="field-item odd"><div class="entity entity-inscription inscription-inscription entity-inscription-default clearfix" about="/fr/inscription/inscription/34419698">
+
+  
+  <div class="content">
+    <div class="inscription-complete">Timbre sec - Au recto à gauche, le Génie de la Constitution, avec une légende circulaire : "LE REGNE DE LA LOI".
+</div>
+  </div>
+</div>
+</div>
+          <div class="field-item even"><div class="entity entity-inscription inscription-inscription entity-inscription-default clearfix" about="/fr/inscription/inscription/34419699">
+
+  
+  <div class="content">
+    <div class="inscription-complete">Timbre sec - Au recto, à droite, le roi Louis XVI : "LOUIS XVI ROI DES FRANCOIS".
+</div>
+  </div>
+</div>
+</div>
+          <div class="field-item odd"><div class="entity entity-inscription inscription-inscription entity-inscription-default clearfix" about="/fr/inscription/inscription/34419700">
+
+  
+  <div class="content">
+    <div class="inscription-complete">Marque du musée - Au recto, sur l'estampe, en haut à droite, tampon à l’encre bleue : "MUSEE / CARNAVALET" (Lugt suppl. 432c).
+</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-modalite-acquisition field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Mode d&#039;acquisition<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/mode-acquisition/mode%20d%27acquisition%20inconnu-214181">Mode d'acquisition inconnu</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-musee field-type-taxonomy-term-reference field-label-inline clearfix">
+      <div class="field-label">Institution<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list"><a href="/fr/recherche/type/oeuvre/ET/musee/mus%C3%A9e%20carnavalet%2C%20histoire%20de%20paris-12">Musée Carnavalet, Histoire de Paris</a></div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-num-inventaire field-type-text field-label-inline clearfix">
+      <div class="field-label">Numéro d’inventaire<span class="label-suffix">:&nbsp;</span></div>
+    <div class="field-items">
+          <div class="field-item even">GB319</div>
+      </div>
+</div>
+<div class="field iiif-manifest-field"><div class="field-label">IIIF Manifest<span class='label-suffix'>: </span></div>
+<div class="field-items"><img class="icon-iiif" typeof="foaf:Image" src="/sites/all/themes/pm/images/logo-iiif-34x30_60pc.png" alt="Image IIIF manifest" /><a href="https://apicollections.parismusees.paris.fr/iiif/320089599/manifest" class="lien-iiif" target="_blank">https://apicollections.parismusees.paris.fr/iiif/320089599/manifest</a></div></div></section><section class="required-fields" id="infos-secondaires-indexation"><h2><span>Indexation</span></h2><div class="col"><div class="field-type-taxonomy-term-reference"><div class="pm-hierarchical-terms"><h3 class="label">Artiste / Auteur</h3><div class="item-list"><ul><li class="first"><a href="/fr/recherche/type/oeuvre/ET/auteur/Caisse%20de%20l%27Extraordinaire">Caisse de l'Extraordinaire</a></li>
+<li><a href="/fr/recherche/type/oeuvre/ET/auteur/Gatteaux%2C%20Nicolas%20Marie">Gatteaux, Nicolas Marie (Paris, 02–08–1751 - Paris, 21–06–1832)</a></li>
+<li><a href="/fr/recherche/type/oeuvre/ET/auteur/Buttin%20%28signataire%29">Buttin (signataire) (avant 1770)</a></li>
+<li class="last"><a href="/fr/recherche/type/oeuvre/ET/auteur/G%C3%A9rard%2C%20Jean-Baptiste">Gérard, Jean-Baptiste (avant 1765)</a></li>
+</ul></div></div></div><div class="field field-name-field-oeuvre-siecle field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-hierarchical-terms"><h3 class="label">Datation en siècle</h3><div class="item-list"><ul><li class="first last">2e millénaire<div class="item-list"><ul><li class="first last">18e siècle<div class="item-list"><ul><li class="first last">2e moitié du 18e siècle<div class="item-list"><ul><li class="first last">4e quart du 18e siècle</li>
+</ul></div></li>
+</ul></div></li>
+</ul></div></li>
+</ul></div></div></div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-epoque-periode field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-hierarchical-terms"><h3 class="label">Période</h3><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/periode/epoque%20contemporaine%20%281790%20%C3%A0%20nos%20jours%29-216627">Epoque contemporaine (1790 à nos jours)</a>&nbsp;<span class="pm-search-results-number">(97 293)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/periode/r%C3%A9volution%20fran%C3%A7aise%20%281789-1799%29%20%28france%29-216758">Révolution française (1789-1799) (France)</a>&nbsp;<span class="pm-search-results-number">(4 803)</span></li>
+</ul></div></li>
+</ul></div></div></div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-hierarchical-terms"><h3 class="label">Type(s) d'objet(s)</h3><div class="item-list"><ul><li class="first"><a href="/fr/recherche/type/oeuvre/ET/types-objet/discipline-330967">Discipline</a>&nbsp;<span class="pm-search-results-number">(349 518)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/types-objet/numismatique-167919">Numismatique</a>&nbsp;<span class="pm-search-results-number">(42 329)</span></li>
+</ul></div></li>
+<li class="last"><a href="/fr/recherche/type/oeuvre/ET/types-objet/manuscrits%2C%20imprim%C3%A9s%2C%20reliure-167933">Manuscrits, imprimés, reliure</a>&nbsp;<span class="pm-search-results-number">(47 281)</span></li>
+</ul></div></div></div>
+      </div>
+</div>
+<div class="field field-name-field-denominations field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-hierarchical-terms"><h3 class="label">Dénomination(s)</h3><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/denominations/numismatique-166275">Numismatique</a>&nbsp;<span class="pm-search-results-number">(41 266)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/denominations/papier-monnaie-166890">Papier-monnaie</a>&nbsp;<span class="pm-search-results-number">(1 907)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/denominations/assignat-167719">Assignat</a>&nbsp;<span class="pm-search-results-number">(933)</span></li>
+</ul></div></li>
+</ul></div></li>
+</ul></div></div></div>
+      </div>
+</div>
+</div><div class="col"><div class="field field-name-field-materiaux-technique field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-hierarchical-terms"><h3 class="label">Matériaux et techniques</h3><div class="item-list"><ul><li class="first"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/mat%C3%A9riau%20d%27origine%20v%C3%A9g%C3%A9tale-213616">Matériau d'origine végétale</a>&nbsp;<span class="pm-search-results-number">(121 050)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/papier-213630">Papier</a>&nbsp;<span class="pm-search-results-number">(101 084)</span></li>
+</ul></div></li>
+<li class="last"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/techniques-213610">Techniques</a>&nbsp;<span class="pm-search-results-number">(310 904)</span><div class="item-list"><ul><li class="first"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/technique%20dessin-213548">Technique dessin</a>&nbsp;<span class="pm-search-results-number">(95 705)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/encre-213558">Encre</a>&nbsp;<span class="pm-search-results-number">(53 465)</span></li>
+</ul></div></li>
+<li class="last"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/technique%20imprimerie%20%3D%20typographie-213816">Technique imprimerie = typographie</a>&nbsp;<span class="pm-search-results-number">(23 615)</span><div class="item-list"><ul><li class="first last"><a href="/fr/recherche/type/oeuvre/ET/materiaux-technique/typographie%20%3D%20impression%20typographique-213817">Typographie = impression typographique</a>&nbsp;<span class="pm-search-results-number">(22 896)</span></li>
+</ul></div></li>
+</ul></div></li>
+</ul></div></div></div>
+      </div>
+</div>
+</div></section><aside id="infos-secondaires-suggestions-meme-siecle"><h2><span>Suggestions pour le même siècle</span></h2><div class="oeuvre-suggestions-meme-siecle"><a href="/fr/recherche/type/oeuvre/ET/siecle/18e%20si%C3%A8cle-305439" class="lien-recherche">18e siècle - Voir toutes les oeuvres</a><div class="timeline"><span class="start-year">1700</span>
+<span class="autre-oeuvre" data-oeuvre-annee="0"><span>1700</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="1"><span>1701</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="4"><span>1704</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="5"><span>1705</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="21"><span>1721</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="24"><span>1724</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="26"><span>1726</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="30"><span>1730</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="31"><span>1731</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="32"><span>1732</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="41"><span>1741</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="45"><span>1745</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="47"><span>1747</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="55"><span>1755</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="56"><span>1756</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="59"><span>1759</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="64"><span>1764</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="65"><span>1765</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="66"><span>1766</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="81"><span>1781</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="91"><span>1791</span></span>
+<span class="oeuvre-courante" data-oeuvre-annee="92">1792</span>
+<span class="autre-oeuvre" data-oeuvre-annee="93"><span>1793</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="96"><span>1796</span></span>
+<span class="autre-oeuvre" data-oeuvre-annee="98"><span>1798</span></span>
+<span class="end-year">1800</span>
+</div><div class="oeuvres"><div class="oeuvre" data-oeuvre-annee="0"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1700</span></div><article id="node-76584" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1700-remerciements-de-la-ville-de-paris-au-roi" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1700-remerciements-de-la-ville-de-paris-au-roi" target=""><!-- scald=343935:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_34716-6.jpg?itok=5UZCqAEw" width="157" height="245" alt="LPDP_34716-6" title="LPDP_34716-6" /></div><!-- END scald=343935 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35283154">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Anonyme</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Almanach pour l&#039;année 1700 / Remerciements de la Ville de Paris au roi. Erection de la statue équestre du roi, place Louis Le Grand, 6 mai 1699</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1700-remerciements-de-la-ville-de-paris-au-roi" class="voir">Voir</a><a href="/fr/pm_partage/share/76584" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/76584" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="1"><div class="pm-date-precision"><span class="precision">Entre</span> <span class="year">1701</span> <span class="precision">et</span> <span class="year">1800</span></div><article id="node-92449" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/feu-d-artifice-tire-place-de-l-hotel-de-ville-le-21-janvier-1782-naissance" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/feu-d-artifice-tire-place-de-l-hotel-de-ville-le-21-janvier-1782-naissance" target=""><!-- scald=398007:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_34322-9.jpg?itok=TdhFJboD" width="245" height="170" alt="LPDP_34322-9" title="LPDP_34322-9" /></div><!-- END scald=398007 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35084514">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Van Blarenberghe, Louis-Nicolas (Lille, en 1716 - Fontainebleau, en 1794)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Dessin, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Feu d&#039;artifice tiré place de l&#039;Hotel de Ville le  21 janvier 1782 (naissance du Dauphin)</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/feu-d-artifice-tire-place-de-l-hotel-de-ville-le-21-janvier-1782-naissance" class="voir">Voir</a><a href="/fr/pm_partage/share/92449" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/92449" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="4"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1704</span></div><article id="node-88641" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/le-triomphe-de-la-seine-et-du-tage-sur-les-autres-fleuves-de-l-europe" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/le-triomphe-de-la-seine-et-du-tage-sur-les-autres-fleuves-de-l-europe" target=""><!-- scald=450025:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg013348_rec_001.jpg?itok=qQFjd428" width="148" height="245" alt="AZE_CARG013348_REC_001" title="AZE_CARG013348_REC_001" /></div><!-- END scald=450025 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/36266610">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Guérard, Nicolas (vers 1648 - Paris, 1719)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Le triomphe de la Seine et du Tage sur les autres fleuves de l&#039;Europe affermi par la naissance de Monseigneur le duc de Bretagne (IFF 23)</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/le-triomphe-de-la-seine-et-du-tage-sur-les-autres-fleuves-de-l-europe" class="voir">Voir</a><a href="/fr/pm_partage/share/88641" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/88641" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="5"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1705</span></div><article id="node-81417" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/louis-bourdaloue-de-la-compagnie-de-jesus-predicateur-ordinaire-du-roi" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/louis-bourdaloue-de-la-compagnie-de-jesus-predicateur-ordinaire-du-roi" target=""><!-- scald=1011482:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_74926-2.jpg?itok=WVFZXvj8" width="188" height="245" alt="LPDP_74926-2" title="LPDP_74926-2" /></div><!-- END scald=1011482 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/26014849">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Desrochers, Étienne Jahandier (Lyon, 06–02–1668 - Paris, 08–03–1741)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Louis Bourdaloue de la Compagnie de Jésus prédicateur ordinaire du roi.</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/louis-bourdaloue-de-la-compagnie-de-jesus-predicateur-ordinaire-du-roi" class="voir">Voir</a><a href="/fr/pm_partage/share/81417" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/81417" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="21"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1721</span></div><article id="node-483084" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/la-vie-memorable-et-tragique-du-fameux-scelerat-louis-dominique-cartouche" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/la-vie-memorable-et-tragique-du-fameux-scelerat-louis-dominique-cartouche" target=""><!-- scald=951304:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg024396_001.jpg?itok=hVEdzhLD" width="245" height="195" alt="AZE_CARG024396_001" title="AZE_CARG024396_001" /></div><!-- END scald=951304 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/29619024">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Anonyme</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Manuscrits, imprimés, reliure, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>La vie mémorable et tragique du fameux scélérat Louis-Dominique Cartouche. Exécuté à Paris, le 28 novembre 1721 ; sur l&#039;air de la belle Judith.</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/la-vie-memorable-et-tragique-du-fameux-scelerat-louis-dominique-cartouche" class="voir">Voir</a><a href="/fr/pm_partage/share/483084" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/483084" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="24"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1724</span></div><article id="node-136547" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1724" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1724" target=""><!-- scald=490730:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/manz_carnj03342_001.jpg?itok=Fetg1DxV" width="245" height="163" alt="MANZ_CARNJ03342_001" title="MANZ_CARNJ03342_001" /></div><!-- END scald=490730 --><div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Secrétaires du roi, 1724</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1724" class="voir">Voir</a><a href="/fr/pm_partage/share/136547" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/136547" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="26"><div class="pm-date-precision"><span class="precision">Entre</span> <span class="year">1726</span> <span class="precision">et</span> <span class="year">1775</span></div><article id="node-111556" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/apollon-et-daphne-metamorphosee-en-laurier-haut-relief-de-l-ancienne-folie" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/apollon-et-daphne-metamorphosee-en-laurier-haut-relief-de-l-ancienne-folie" target=""><!-- scald=438980:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_34720-4.jpg?itok=jc4rOqzY" width="245" height="191" alt="LPDP_34720-4" title="LPDP_34720-4" /></div><!-- END scald=438980 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35306076">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Adam, Nicolas Sébastien (le Jeune) (Nancy, 22–03–1705 - Paris, 27–03–1778)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Sculpture</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Apollon et Daphné métamorphosée en laurier ; haut-relief de l&#039;ancienne Folie la Bouëxière, actuel square Vintimille</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/apollon-et-daphne-metamorphosee-en-laurier-haut-relief-de-l-ancienne-folie" class="voir">Voir</a><a href="/fr/pm_partage/share/111556" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/111556" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="30"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1730</span></div><article id="node-106171" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1730-repas-presente-au-roi-et-aux-princes-de-sa-cour" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1730-repas-presente-au-roi-et-aux-princes-de-sa-cour" target=""><!-- scald=1013165:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_55903-4.jpg?itok=CY-HwsQz" width="147" height="245" alt="LPDP_55903-4" title="LPDP_55903-4" /></div><!-- END scald=1013165 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/30841843">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Anonyme</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Almanach pour l&#039;année 1730 / Repas présenté au roi et aux princes de sa cour à l&#039;Hôtel de Ville</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/almanach-pour-l-annee-1730-repas-presente-au-roi-et-aux-princes-de-sa-cour" class="voir">Voir</a><a href="/fr/pm_partage/share/106171" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/106171" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="31"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1731</span></div><article id="node-136553" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1731" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1731" target=""><!-- scald=490734:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/manz_carnj03344_001.jpg?itok=3g0ILIng" width="245" height="163" alt="MANZ_CARNJ03344_001" title="MANZ_CARNJ03344_001" /></div><!-- END scald=490734 --><div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Secrétaires du roi, 1731</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/secretaires-du-roi-1731" class="voir">Voir</a><a href="/fr/pm_partage/share/136553" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/136553" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="32"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1732</span></div><article id="node-176692" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/euripide-et-sophocle-en-france-avoient-l-un-et-l-autre-un-rival-sans-baron" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/euripide-et-sophocle-en-france-avoient-l-un-et-l-autre-un-rival-sans-baron" target=""><!-- scald=362609:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg022325_rec_001.jpg?itok=5Ov6yyDt" width="184" height="245" alt="AZE_CARG022325_REC_001" title="AZE_CARG022325_REC_001" /></div><!-- END scald=362609 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/36393549">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Daullé, Jean (Abbeville, 18–05–1703 - Paris, 23–04–1763)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Euripide et Sophocle en France / avoient l&#039;un et l&#039;autre un rival. / Sans Baron [...]. (IFF3)</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/euripide-et-sophocle-en-france-avoient-l-un-et-l-autre-un-rival-sans-baron" class="voir">Voir</a><a href="/fr/pm_partage/share/176692" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/176692" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="41"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1741</span></div><article id="node-158128" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/portrait-de-l-abbe-capperonnier" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/portrait-de-l-abbe-capperonnier" target=""><!-- scald=473407:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg016761_001.jpg?itok=HeqZ0J8J" width="189" height="245" alt="AZE_CARG016761_001" title="AZE_CARG016761_001" /></div><!-- END scald=473407 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/34348749">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Lépicié, Nicolas-Bernard (Paris, 16–06–1735 - Paris, 15–09–1784)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Portrait de l&#039;abbé Capperonnier.</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/portrait-de-l-abbe-capperonnier" class="voir">Voir</a><a href="/fr/pm_partage/share/158128" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/158128" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="45"><div class="pm-date-precision"><span class="precision">Entre</span> <span class="year">1745</span> <span class="precision">et</span> <span class="year">1755</span></div><article id="node-92264" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/un-officier" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/un-officier" target=""><!-- scald=331385:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/45430-6.jpg?itok=Lzk4DWsB" width="141" height="245" alt="LPDP_45430-6" title="LPDP_45430-6" /></div><!-- END scald=331385 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/33004229">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Bellangé, Joseph-Louis-Hippolyte (Paris, 17–01–1800 - Paris, 10–04–1866)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Dessin, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Un officier</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/un-officier" class="voir">Voir</a><a href="/fr/pm_partage/share/92264" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/92264" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="47"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1747</span></div><article id="node-104627" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/le-char-de-ceres" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/le-char-de-ceres" target=""><!-- scald=344291:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_43236-3.jpg?itok=gIU_4IS5" width="245" height="137" alt="LPDP_43236-3" title="LPDP_43236-3" /></div><!-- END scald=344291 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/23583502">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Blondel, François (Rouen, en 1683 - 09–10–1756)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Le char de Cérès</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/le-char-de-ceres" class="voir">Voir</a><a href="/fr/pm_partage/share/104627" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/104627" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="55"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1755</span></div><article id="node-136486" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/substituts-au-grand-conseil-1755" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/substituts-au-grand-conseil-1755" target=""><!-- scald=490760:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/manz_carnj03357_001.jpg?itok=LsV14SVq" width="245" height="163" alt="MANZ_CARNJ03357_001" title="MANZ_CARNJ03357_001" /></div><!-- END scald=490760 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/28781877">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Duvivier, Pierre Simon Benjamin (Paris, 05–11–1730 - Paris, 11–07–1819)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Substituts au Grand Conseil, 1755</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/substituts-au-grand-conseil-1755" class="voir">Voir</a><a href="/fr/pm_partage/share/136486" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/136486" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="56"><div class="pm-date-precision"><span class="precision">Entre</span> <span class="year">1756</span> <span class="precision">et</span> <span class="year">1770</span></div><article id="node-133286" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/portrait-de-armand-honore-duc-de-villars-profil-a-gauche" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/portrait-de-armand-honore-duc-de-villars-profil-a-gauche" target=""><!-- scald=338385:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/car_card00666.jpg?itok=8TFyyzYS" width="238" height="245" alt="CARD00666_1" title="CARD00666_1" /></div><!-- END scald=338385 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/33080611">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Duvivier, Pierre Simon Benjamin (Paris, 05–11–1730 - Paris, 11–07–1819)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Dessin, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Portrait de Armand Honoré, Duc de Villars, profil à gauche</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/portrait-de-armand-honore-duc-de-villars-profil-a-gauche" class="voir">Voir</a><a href="/fr/pm_partage/share/133286" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/133286" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="59"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1759</span></div><article id="node-105629" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/vue-de-la-decoration-elevee-au-college-de-louis-le-grand-en-l-annee-1759" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/vue-de-la-decoration-elevee-au-college-de-louis-le-grand-en-l-annee-1759" target=""><!-- scald=1015058:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_43235-2.jpg?itok=3PNCqpM5" width="245" height="130" alt="LPDP_43235-2" title="LPDP_43235-2" /></div><!-- END scald=1015058 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35300529">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Poulleau, Claude</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Vue de la décoration élevée au Collège de Louis le Grand en l&#039;année 1759</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/vue-de-la-decoration-elevee-au-college-de-louis-le-grand-en-l-annee-1759" class="voir">Voir</a><a href="/fr/pm_partage/share/105629" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/105629" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="64"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1764</span></div><article id="node-105363" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/tableau-de-la-gloire-au-dessus-de-l-autel-de-la-chapelle-des-enfants" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/tableau-de-la-gloire-au-dessus-de-l-autel-de-la-chapelle-des-enfants" target=""><!-- scald=744755:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_100641-1.jpg?itok=Tr0je_p4" width="245" height="188" alt="LPDP_100641-1" title="LPDP_100641-1" /></div><!-- END scald=744755 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/29330538">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Fessard, Etienne (Paris, en 1714 - Paris, 02–05–1777)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Tableau de la Gloire, au-dessus de l&#039;Autel de la Chapelle des Enfants trouvés de Paris</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/tableau-de-la-gloire-au-dessus-de-l-autel-de-la-chapelle-des-enfants" class="voir">Voir</a><a href="/fr/pm_partage/share/105363" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/105363" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="65"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1765</span></div><article id="node-122286" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/philosophe-eloquent-sensible-il-nous-a-peint-l-humanite" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/philosophe-eloquent-sensible-il-nous-a-peint-l-humanite" target=""><!-- scald=1413070:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg030456_001.jpg?itok=Kjv_q6VN" width="194" height="245" alt="AZE_CARG030456_001" title="AZE_CARG030456_001" /></div><!-- END scald=1413070 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/25969438">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Michel, Jean-Baptiste (1748 - 1804)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Philosophe, éloquent, sensible / Il nous a peint l&#039;humanité […]</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/philosophe-eloquent-sensible-il-nous-a-peint-l-humanite" class="voir">Voir</a><a href="/fr/pm_partage/share/122286" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/122286" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="66"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1766</span></div><article id="node-147914" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/l-f-prault" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/l-f-prault" target=""><!-- scald=445708:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_carg011002_rec_001.jpg?itok=soPMjMRR" width="182" height="245" alt="AZE_CARG011002_REC_001" title="AZE_CARG011002_REC_001" /></div><!-- END scald=445708 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/33963423">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Cathelin, Louis-Jacques (Paris, vers 1738 — 1739 - Paris, en 1804)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>L. F. Prault [...].</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/l-f-prault" class="voir">Voir</a><a href="/fr/pm_partage/share/147914" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/147914" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="81"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1781</span></div><article id="node-98805" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/vue-du-portail-de-saint-sulpice-sur-les-dessins-de-servandoni-avec-les" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/vue-du-portail-de-saint-sulpice-sur-les-dessins-de-servandoni-avec-les" target=""><!-- scald=1013240:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_55791-6.jpg?itok=ZmdfYiyn" width="245" height="168" alt="LPDP_55791-6" title="LPDP_55791-6" /></div><!-- END scald=1013240 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/21534300">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Anonyme</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Estampe, Arts graphiques</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Vue du portail de Saint-Sulpice sur les dessins de Servandoni avec les changements de Chalgrin.</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/vue-du-portail-de-saint-sulpice-sur-les-dessins-de-servandoni-avec-les" class="voir">Voir</a><a href="/fr/pm_partage/share/98805" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/98805" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="91"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1791</span></div><article id="node-76981" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/l-autorite-du-peuple-ou-jupiter-foudroyant-l-aristocratie" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/l-autorite-du-peuple-ou-jupiter-foudroyant-l-aristocratie" target=""><!-- scald=1674428:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_cars0027_001.jpg?itok=q6fcYkbP" width="126" height="245" alt="AZE_CARS0027_001" title="AZE_CARS0027_001" /></div><!-- END scald=1674428 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/34324472">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Chinard, Joseph (Lyon, 12–02–1756 - Lyon, en 1813)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Sculpture</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>L&#039;Autorité du Peuple ou Jupiter foudroyant l&#039;Aristocratie</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/l-autorite-du-peuple-ou-jupiter-foudroyant-l-aristocratie" class="voir">Voir</a><a href="/fr/pm_partage/share/76981" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/76981" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="93"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1793</span></div><article id="node-76613" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/les-dix-commandemens-sic-du-vrai-republicain" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/les-dix-commandemens-sic-du-vrai-republicain" target=""><!-- scald=407649:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_39531-11.jpg?itok=vuHB1Htb" width="178" height="245" alt="LPDP_39531-11" title="LPDP_39531-11" /></div><!-- END scald=407649 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/32911626">
+
+  
+  <div class="content">
+    <div class="auteur-nom">L. Fournier (imprimerie)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Estampe, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>LES DIX/ COMMANDEMENS [sic]/ DU VRAI REPUBLICAIN.</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/les-dix-commandemens-sic-du-vrai-republicain" class="voir">Voir</a><a href="/fr/pm_partage/share/76613" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/76613" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="96"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1796</span></div><article id="node-76762" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/coin-revers-du-decime-de-l-an-iv-1796" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/coin-revers-du-decime-de-l-an-iv-1796" target=""><!-- scald=639541:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/lpdp_87771-30.jpg?itok=p9QbTf9j" width="245" height="242" alt="LPDP_87771-30" title="LPDP_87771-30" /></div><!-- END scald=639541 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/35762954">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Dupré, Augustin (Saint-Etienne, 06–10–1748 - Armentières, 30–01–1833)</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Numismatique</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>Coin : Revers du décime de l&#039;an IV, 1796</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/coin-revers-du-decime-de-l-an-iv-1796" class="voir">Voir</a><a href="/fr/pm_partage/share/76762" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/76762" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+<div class="oeuvre" data-oeuvre-annee="98"><div class="pm-date-precision"><span class="precision">En</span> <span class="year">1798</span></div><article id="node-77039" class="node node-oeuvre node-oeuvre-relation clearfix" about="/fr/musee-carnavalet/oeuvres/fete-de-la-reconnoissance-sic" typeof="sioc:Item foaf:Document">
+  <a href="/fr/musee-carnavalet/oeuvres/fete-de-la-reconnoissance-sic" target=""><!-- scald=1642064:relation --><div class="img-center"><img typeof="foaf:Image" src="https://www.parismuseescollections.paris.fr/sites/default/files/styles/pm_recherche_mosaique/public/atoms/images/CAR/aze_caraff03408_001.jpg?itok=VG-qo8wB" width="245" height="193" alt="AZE_CARAFF03408_001" title="AZE_CARAFF03408_001" /></div><!-- END scald=1642064 --><div class="field field-name-field-oeuvre-auteurs field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="entity entity-auteur auteur-auteur entity-auteur-relation clearfix" about="/fr/auteur/auteur/32845021">
+
+  
+  <div class="content">
+    <div class="auteur-nom">Imprimerie de Gueffier jeune</div>
+  </div>
+</div>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-oeuvre-types-objet field-type-taxonomy-term-reference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div class="pm-term-list">Arts graphiques, Manuscrits, imprimés, reliure</div>
+</div>
+      </div>
+</div>
+</a><div class="field field-name-title-field field-type-text field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><div>FETE/ DE LA RECONNOISSANCE [sic].</div>
+</div>
+      </div>
+</div>
+<div class="liens-hover group-hover buttons-3"><a href="/fr/musee-carnavalet/oeuvres/fete-de-la-reconnoissance-sic" class="voir">Voir</a><a href="/fr/pm_partage/share/77039" class="partage fancybox-frame">Partager</a><a href="/fr/pm_flag/add/77039" class="add-item-list fancybox-frame">Ajouter ce contenu</a></div></article>
+</div>
+</div></div></aside></article>
+  </div>
+</div>
+  </div>
+    </section>
+  </div>
+</main>
+
+
+<div>
+  <div class="picto-to-top">
+    <a href="#skip-link">Retour vers le haut de page</a>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="section">
+      <div class="region region-footer">
+    <div id="block-pm-common-footer-top" class="block block-pm-common">
+
+    <h2>Les collections</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><a href="http://parismuseescollections.paris.fr/recherche/oeuvre/image">Les œuvres</a></li>
+<li><a href="http://parismuseescollections.paris.fr/recherche/type/ressource_documentaire">Les ressources bibliographiques</a></li>
+<li><a href="http://parismuseescollections.paris.fr/parcours-thematiques">Parcours thématiques</a></li>
+<li><a href="http://parismuseescollections.paris.fr/recherche/type/archive">Les archives</a></li>
+<li class="last"><a href="http://parismuseescollections.paris.fr/node/2">L&#039;histoire des collections</a></li>
+</ul></div>  </div>
+</div>
+<div id="block-pm-common-footer-middle" class="block block-pm-common">
+
+    <h2>Surfooter</h2>
+  
+  <div class="content">
+    <div class="picto-pm"></div><div class="picto-mairie-paris"></div><div class="item-list"><ul><li class="first"><a href="http://www.parismusees.paris.fr/fr/vous-etes/bienvenue" target="_blank" rel="noopener external" title="Votre visite (ouverture dans un nouvel onglet)">Votre visite</a></li>
+<li><a href="http://www.parismusees.paris.fr/fr/agenda" target="_blank" rel="noopener external" title="Agenda (ouverture dans un nouvel onglet)">Agenda</a></li>
+<li><a href="http://www.parismusees.paris.fr/fr/actualites" target="_blank" rel="noopener external" title="Actualité des musées (ouverture dans un nouvel onglet)">Actualité des musées</a></li>
+<li><a href="http://www.parismusees.paris.fr/fr/contact" target="_blank" rel="noopener external" title="Nous contacter (ouverture dans un nouvel onglet)">Nous contacter</a></li>
+<li><a href="http://www.parismusees.paris.fr/fr/l-etablissement-public-paris-musees" target="_blank" rel="noopener external" title="L&#039;établissement public Paris Musées (ouverture dans un nouvel onglet)">L&#039;établissement public Paris Musées</a></li>
+<li class="last"><a href="http://www.parismusees.paris.fr/fr/vous-etes/jounaliste" target="_blank" rel="noopener external" title="Professionnels (ouverture dans un nouvel onglet)">Professionnels</a></li>
+</ul></div><div class="wrapper-liens-reseaux-sociaux"><div class="item-list"><ul><li class="first"><a href="https://www.facebook.com/parismuseesofficiel/" class="facebook" target="_blank" rel="noopener external" title="Facebook (ouverture dans un nouvel onglet)">Facebook</a></li>
+<li><a href="https://fr.linkedin.com/company/paris-musees/" class="linkedin" target="_blank" rel="noopener external" title="Linkedin (ouverture dans un nouvel onglet)">Linkedin</a></li>
+<li><a href="https://instagram.com/parismusees/" class="instagram" target="_blank" rel="noopener external" title="Instagram (ouverture dans un nouvel onglet)">Instagram</a></li>
+<li><a href="https://www.dailymotion.com/paris_musees" class="dailymotion" target="_blank" rel="noopener external" title="Dailymotion (ouverture dans un nouvel onglet)">Dailymotion</a></li>
+<li><a href="https://www.youtube.com/channel/UC6tjnYtebuODogr6C-ac-6g" class="youtube" target="_blank" rel="noopener external" title="Youtube (ouverture dans un nouvel onglet)">Youtube</a></li>
+<li><a href="https://www.weibo.com/parismusees" class="weibo" target="_blank" rel="noopener external" title="Weibo (ouverture dans un nouvel onglet)">Weibo</a></li>
+<li class="last"><a href="http://weixin.qq.com/r/yEycmQrEMMJMKE76bxlM" class="weixin" target="_blank" rel="noopener external" title="Weixin (ouverture dans un nouvel onglet)">Weixin</a></li>
+</ul></div></div>  </div>
+</div>
+<div id="block-pm-common-footer-bottom" class="block block-pm-common">
+
+    <h2>Pied de page</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><a href="http://apicollections.parismusees.paris.fr/">API des collections</a></li>
+<li><a href="http://parismuseescollections.paris.fr/conditions-generales-d-utilisation">Conditions Générales d&#039;Utilisation</a></li>
+<li class="last"><a href="http://parismuseescollections.paris.fr/node/271810">Crédits et mentions légales</a></li>
+</ul></div>  </div>
+</div>
+  </div>
+  </div>
+</footer>
+  <script src="/sites/all/modules/contrib/jquery_update/replace/jquery/1.12/jquery.min.js?v=1.12.4"></script>
+<script>
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script>
+<!--//--><![CDATA[//><!--
+jQuery.migrateMute=true;jQuery.migrateTrace=false;
+//--><!]]>
+</script>
+<script src="/sites/all/modules/contrib/jquery_update/replace/jquery-migrate/1/jquery-migrate.min.js?v=1"></script>
+<script src="/misc/jquery-extend-3.4.0.js?v=1.12.4"></script>
+<script src="/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.12.4"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?tnd3bl"></script>
+<script src="/sites/all/modules/contrib/eu_cookie_compliance/js/jquery.cookie-1.4.1.min.js?v=1.4.1"></script>
+<script src="/sites/all/libraries/fancybox/jquery.fancybox-1.3.4.pack.js?tnd3bl"></script>
+<script src="/misc/form-single-submit.js?v=7.102"></script>
+<script src="/sites/default/files/languages/fr_qe0dc6bJhs6b8FfYhmAaI8I5AqHvwECnFhG1b7-Sn1U.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_user/js/pm_user.js?tnd3bl"></script>
+<script async="async" src="//dmtracker.kernix.com/pub/scripts/tracker.js"></script>
+<script src="/sites/all/modules/contrib/field_group/field_group.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_oeuvre/js/pm_oeuvre.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_note/js/pm_note.js?tnd3bl"></script>
+<script src="/sites/all/libraries/sindresorhus/screenfull.js/screenfull.min.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_common/js/diaporama.js?tnd3bl"></script>
+<script src="/sites/all/libraries/mark-rolich/Event.js/Event.js?tnd3bl"></script>
+<script src="/sites/all/libraries/mark-rolich/Magnifier.js/Magnifier.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_flag/js/pm_flag.js?tnd3bl"></script>
+<script src="/sites/all/libraries/slick/slick.min.js?tnd3bl"></script>
+<script src="/sites/all/themes/pm/javascripts/jquery.mCustomScrollbar.concat.min.js?tnd3bl"></script>
+<script src="/sites/all/themes/pm/javascripts/mediaelement-and-player.min.js?tnd3bl"></script>
+<script src="/sites/all/modules/custom/pm_partage/js/pm_partage_iframe.js?tnd3bl"></script>
+<script src="/sites/all/themes/prime/javascripts/prime.js?tnd3bl"></script>
+<script src="/sites/all/themes/pm/javascripts/scripts.js?tnd3bl"></script>
+<script>
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"fr\/","setHasJsCookie":0,"ajaxPageState":{"theme":"pm","theme_token":"fvWod-Dna6RpbjkQZ2l8TykbrSPN-gu0KEO29echkuc","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/scald\/modules\/fields\/mee\/css\/editor-global.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"sites\/all\/modules\/contrib\/scald_file\/scald_file.css":1,"sites\/all\/modules\/contrib\/scald_iframe\/scald_iframe.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/css\/eu_cookie_compliance.bare.css":1,"sites\/all\/modules\/custom\/pm_user\/css\/pm_user.css":1,"sites\/all\/modules\/custom\/pm_common\/css\/diaporama.css":1,"sites\/all\/libraries\/mark-rolich\/Magnifier.js\/magnifier.css":1,"sites\/all\/libraries\/fancybox\/jquery.fancybox-1.3.4.css":1,"sites\/all\/libraries\/slick\/slick.css":1,"sites\/all\/libraries\/slick\/slick-theme.css":1,"sites\/all\/themes\/prime\/stylesheets\/prime_style.css":1,"sites\/all\/themes\/pm\/stylesheets\/pm_style.css":1,"sites\/all\/themes\/prime\/stylesheets\/prime_print.css":1,"sites\/all\/themes\/pm\/stylesheets\/pm_print.css":1},"js":{"sites\/all\/modules\/contrib\/picture\/picturefill\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/eu_cookie_compliance.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.12\/jquery.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/libraries\/fancybox\/jquery.fancybox-1.3.4.pack.js":1,"misc\/form-single-submit.js":1,"public:\/\/languages\/fr_qe0dc6bJhs6b8FfYhmAaI8I5AqHvwECnFhG1b7-Sn1U.js":1,"sites\/all\/modules\/custom\/pm_user\/js\/pm_user.js":1,"\/\/dmtracker.kernix.com\/pub\/scripts\/tracker.js":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/modules\/custom\/pm_oeuvre\/js\/pm_oeuvre.js":1,"sites\/all\/modules\/custom\/pm_note\/js\/pm_note.js":1,"sites\/all\/libraries\/sindresorhus\/screenfull.js\/screenfull.min.js":1,"sites\/all\/modules\/custom\/pm_common\/js\/diaporama.js":1,"sites\/all\/libraries\/mark-rolich\/Event.js\/Event.js":1,"sites\/all\/libraries\/mark-rolich\/Magnifier.js\/Magnifier.js":1,"sites\/all\/modules\/custom\/pm_flag\/js\/pm_flag.js":1,"sites\/all\/libraries\/slick\/slick.min.js":1,"sites\/all\/themes\/pm\/javascripts\/jquery.mCustomScrollbar.concat.min.js":1,"sites\/all\/themes\/pm\/javascripts\/mediaelement-and-player.min.js":1,"sites\/all\/modules\/custom\/pm_partage\/js\/pm_partage_iframe.js":1,"sites\/all\/themes\/prime\/javascripts\/prime.js":1,"sites\/all\/themes\/pm\/javascripts\/scripts.js":1}},"field_group":{"div":"full","html-element":"full"},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":1,"popup_agreed_enabled":1,"popup_hide_agreed":1,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003ENous utilisons des cookies sur ce site pour am\u00e9liorer votre exp\u00e9rience utilisateur. En cliquant sur le lien ci-dessous, vous nous donnez votre consentement pour sauvegarder des cookies\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EPlus d\u0027informations\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOui, je suis d\u0027accord\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022 \u003ENon, merci\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EPlus d\u0027informations\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOui, je suis d\u0027accord\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022 \u003ENon, merci\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EMerci d\u0027avoir accept\u00e9 les cookies. Vous pouvez d\u00e9sormais soit masquer ce message, soit en apprendre plus sur l\u0027utilisation des cookies qui est faite sur ce site.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EMasquer\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EPlus d\u0027info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":1,"popup_height":"auto","popup_width":0,"popup_delay":1000,"popup_link":"http:\/\/parismusees.paris.fr\/fr\/declaration-de-conformite-rgpd","popup_link_new_window":1,"popup_position":null,"fixed_top_position":1,"popup_language":"fr","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","domain_all_sites":0,"popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"opt_in","allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003Econfiguration des donn\u00e9es personnelles\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003ENous utilisons des cookies sur ce site pour am\u00e9liorer votre exp\u00e9rience utilisateur. Vous nous avez donn\u00e9 votre consentement pour sauvegarder des cookies\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003ERetirer votre consentement\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false,"withdraw_button_on_info_popup":0,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":1,"cookie_name":"","cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","automatic_cookies_removal":1,"close_button_action":"close_banner"},"pm_user":{"register_page":"user\/register","connection_page":"user","request_password_page":"user\/password","avatar_default":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.parismuseescollections.paris.fr\/sites\/all\/themes\/pm\/images\/avatar-default.png\u0022 width=\u002285\u0022 height=\u002285\u0022 alt=\u0022\u0022 \/\u003E"},"urlIsAjaxTrusted":{"\/recherche":true},"pm_id_oeuvre":"101756","pm_musee":"Mus\u00e9e Carnavalet","pm_oeuvre_cco":true,"pm_common":{"diaporama_zoom":true,"fancyboxWidth":1010,"fancyboxHeight":"100%"}});
+//--><!]]>
+</script>
+  <script src="/sites/all/modules/contrib/picture/picturefill/picturefill.min.js?v=3.0.1"></script>
+<script src="/sites/all/modules/contrib/picture/picture.min.js?v=7.102"></script>
+<script>
+<!--//--><![CDATA[//><!--
+window.euCookieComplianceLoadScripts = function(category) {var scriptTag = document.createElement("script");scriptTag.src = "https:\/\/www.parismuseescollections.paris.fr\/sites\/all\/themes\/pm\/javascripts\/googletagmanager.js";document.body.appendChild(scriptTag);}
+//--><!]]>
+</script>
+<script>
+<!--//--><![CDATA[//><!--
+window.eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+<script defer="defer" src="/sites/all/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.min.js?tnd3bl"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4e32333b83","applicationID":"747649367","transactionName":"ZFMAZUQEWBFVBxdZX10ZN0NfSl8MUAEbHkBbRg==","queueTime":0,"applicationTime":5084,"atts":"SBQDEwweSx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

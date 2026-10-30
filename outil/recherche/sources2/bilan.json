@@ -1,0 +1,460 @@
+{
+ "europeana-fournisseurs": {
+  "code": 200,
+  "total": 52537,
+  "fournisseurs": [
+   [
+    "MAK – Museum of Applied Arts",
+    2691
+   ],
+   [
+    "Mobilier National Collections",
+    2657
+   ],
+   [
+    "National Library of France",
+    2221
+   ],
+   [
+    "Upplands Museum",
+    1879
+   ],
+   [
+    "Nordic Museum Foundation",
+    1754
+   ],
+   [
+    "Örebro County Museum",
+    1737
+   ],
+   [
+    "Malmö Museum",
+    1591
+   ],
+   [
+    "Army Museum",
+    1340
+   ],
+   [
+    "The Portable Antiquities Scheme",
+    1310
+   ],
+   [
+    "Deutsche Fotothek",
+    1279
+   ],
+   [
+    "Naturalis Biodiversity Center",
+    1129
+   ],
+   [
+    "Museum of Ethnography",
+    1099
+   ],
+   [
+    "The Norwegian Museum of Cultural History",
+    1014
+   ],
+   [
+    "Bohuslän Museum",
+    969
+   ],
+   [
+    "\"Dimitrie Gusti\" National Village Museum",
+    902
+   ],
+   [
+    "Kulturen",
+    875
+   ],
+   [
+    "Royal Institute for Cultural Heritage",
+    692
+   ],
+   [
+    "German Documentation Center for Art History - Marburg Picture Index",
+    670
+   ],
+   [
+    "Rijksmuseum",
+    658
+   ],
+   [
+    "Helsingborg Museum",
+    579
+   ],
+   [
+    "Fries Museum",
+    552
+   ],
+   [
+    "The Royal Library: The National Library of Denmark and Copenhagen University Library",
+    552
+   ],
+   [
+    "Hälsinglands Museum",
+    543
+   ],
+   [
+    "Fine Arts Museum Vienna",
+    512
+   ],
+   [
+    "Wellcome Collection",
+    504
+   ]
+  ],
+  "pays": [
+   [
+    "Sweden",
+    18941
+   ],
+   [
+    "France",
+    5333
+   ],
+   [
+    "Germany",
+    4103
+   ],
+   [
+    "Netherlands",
+    3953
+   ],
+   [
+    "Austria",
+    3756
+   ],
+   [
+    "United Kingdom",
+    3647
+   ],
+   [
+    "Romania",
+    2564
+   ],
+   [
+    "Spain",
+    1910
+   ],
+   [
+    "Belgium",
+    1329
+   ],
+   [
+    "Estonia",
+    1162
+   ],
+   [
+    "Norway",
+    1094
+   ],
+   [
+    "Italy",
+    701
+   ],
+   [
+    "Denmark",
+    596
+   ],
+   [
+    "Hungary",
+    594
+   ],
+   [
+    "Europe",
+    567
+   ],
+   [
+    "Poland",
+    500
+   ],
+   [
+    "Finland",
+    458
+   ],
+   [
+    "Greece",
+    394
+   ],
+   [
+    "Switzerland",
+    282
+   ],
+   [
+    "Czech Republic",
+    161
+   ],
+   [
+    "Israel",
+    146
+   ],
+   [
+    "Ireland",
+    108
+   ],
+   [
+    "Ukraine",
+    68
+   ],
+   [
+    "Serbia",
+    48
+   ],
+   [
+    "Croatia",
+    34
+   ]
+  ]
+ },
+ "europeana-Palais-Galliera-Musée-de-la-Mo": {
+  "code": 200,
+  "total": 270,
+  "exemples": [
+   [
+    "Indienne",
+    "http://creativecommons.org/publicdomain/zero/1.0/",
+    "?"
+   ],
+   [
+    "Damas",
+    "http://creativecommons.org/publicdomain/zero/1.0/",
+    "?"
+   ],
+   [
+    "'Damas'",
+    "http://creativecommons.org/publicdomain/zero/1.0/",
+    "1950"
+   ],
+   [
+    "Damas",
+    "http://creativecommons.org/publicdomain/zero/1.0/",
+    "?"
+   ],
+   [
+    "Eventail publicitaire",
+    "http://rightsstatements.org/vocab/InC/1.0/",
+    "1930"
+   ],
+   [
+    "Parisienne",
+    "http://rightsstatements.org/vocab/InC/1.0/",
+    "1946"
+   ],
+   [
+    "Le Créole",
+    "http://rightsstatements.org/vocab/InC/1.0/",
+    "1954"
+   ],
+   [
+    "Robe de soirée de brocart or et vert de Pierre Balmain, Fonds d'archiv",
+    "http://rightsstatements.org/vocab/InC/1.0/",
+    "1947"
+   ]
+  ]
+ },
+ "europeana-Mobilier-National-Collections": {
+  "code": 200,
+  "total": 2657,
+  "exemples": [
+   [
+    "SOIERIE - Brocart",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or, fond satin ponceau",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ],
+   [
+    "SOIERIE - Bordure brocart or fond satin bleu.",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "?"
+   ]
+  ]
+ },
+ "europeana-Rijksmuseum": {
+  "code": 200,
+  "total": 658,
+  "exemples": [
+   [
+    "Jurk van sits",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1780"
+   ],
+   [
+    "Sprei van sits",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "?"
+   ],
+   [
+    "Fragment sits met kolibri's.",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1750"
+   ],
+   [
+    "Sits met bloemslingers en boeketten",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1775"
+   ],
+   [
+    "Sprei van sits, gewatteerd en doorgestikt",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "?"
+   ],
+   [
+    "Fragment sits met patroon van boeketten",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "?"
+   ],
+   [
+    "Kindersprei van sits met gestrooid bloemenpatroon",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "?"
+   ],
+   [
+    "Fragment sits met bloemtakken en veerachtig bladeren",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1750"
+   ]
+  ]
+ },
+ "europeana-Nationalmuseum-Sweden": {
+  "code": 200,
+  "total": 15,
+  "exemples": [
+   [
+    "Fragment av kattun",
+    "http://creativecommons.org/licenses/by-sa/4.0/",
+    "1800"
+   ],
+   [
+    "Duk",
+    "http://creativecommons.org/licenses/by-sa/4.0/",
+    "?"
+   ],
+   [
+    "Fragment av Bokkhara-sammet",
+    "http://creativecommons.org/licenses/by-sa/4.0/",
+    "?"
+   ],
+   [
+    "Portrait of the Artist's Wife",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1877"
+   ],
+   [
+    "Stolklädsel",
+    "http://creativecommons.org/licenses/by-sa/4.0/",
+    "?"
+   ],
+   [
+    "Stolklädsel",
+    "http://creativecommons.org/licenses/by-sa/4.0/",
+    "?"
+   ],
+   [
+    "St Anastasius",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1631"
+   ],
+   [
+    "Self-portrait",
+    "http://creativecommons.org/publicdomain/mark/1.0/",
+    "1896"
+   ]
+  ]
+ },
+ "europeana-Museum-für-Kunst-und-Gewerbe-H": {
+  "code": 200,
+  "total": 0,
+  "exemples": []
+ },
+ "si-textile-1700s": {
+  "code": 200,
+  "total": 2245
+ },
+ "si-textile-1800s": {
+  "code": 200,
+  "total": 2658
+ },
+ "si-sidewall-1800s": {
+  "code": 200,
+  "total": 142
+ },
+ "si-textile-1600s": {
+  "code": 200,
+  "total": 1675
+ },
+ "rijks-objet": {
+  "code": 200,
+  "licences": [
+   "https://creativecommons.org/publicdomain/mark/1.0/",
+   "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "titre": [
+   "gerelateerd object",
+   "related object"
+  ]
+ },
+ "met-site": {
+  "code": 429
+ },
+ "paris-recherche": {
+  "code": 200,
+  "liens_oeuvres": 50
+ },
+ "paris-oeuvre-0": {
+  "code": 200,
+  "cc0": 2,
+  "domaine_public": 0,
+  "telecharger": 1,
+  "titre": [
+   "Assignat de 15 sols, série n°1021, 24 octobre 1792 | Paris Musées"
+  ]
+ },
+ "paris-oeuvre-1": {
+  "code": 200,
+  "cc0": 0,
+  "domaine_public": 0,
+  "telecharger": 0,
+  "titre": [
+   "Bourreau (au manteau drapé sur le bras gauche) | Paris Musées"
+  ]
+ },
+ "paris-oeuvre-2": {
+  "code": 200,
+  "cc0": 0,
+  "domaine_public": 0,
+  "telecharger": 0,
+  "titre": [
+   "Caricatures parisiennes | Paris Musées"
+  ]
+ }
+}

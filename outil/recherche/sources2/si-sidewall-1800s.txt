@@ -1,0 +1,1058 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643399887910-1643399975427-1",
+        "title": "Sidewall and borders",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1998-75-204-a_c",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1810"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Wallcoverings Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of The Museum at The Fashion Institute of Technology"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1998-75-204-a/c"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Wallcoverings"
+              },
+              {
+                "label": "Type",
+                "content": "Sidewall and borders"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Block-printed on handmade paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "a) Overall: 50.5 x 63 cm (19 7/8 x 24 13/16 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "b) 37 x 48.5 cm"
+              },
+              {
+                "label": "Dimensions",
+                "content": "c) 23 x 35.5 cm"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s",
+              "1810s"
+            ],
+            "place": [
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                }
+              }
+            ],
+            "object_type": [
+              "Wall coverings",
+              "Sidewall and borders"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4d4cefc8e-34da-4109-aaac-f48b0801f6b1",
+            "title": {
+              "label": "Title",
+              "content": "Sidewall and borders"
+            },
+            "record_ID": "chndm_1998-75-204-a_c",
+            "unit_code": "CHNDM",
+            "title_sort": "SIDEWALL AND BORDERS",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/224935",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-1998-75-204a-cMattFlynn",
+                  "guid": "http://n2t.net/ark:/65665/vc95eaffeaf-de27-40fc-907a-1198d3209278",
+                  "type": "Images",
+                  "idsId": "CHSDM-1998-75-204a-cMattFlynn",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2027,
+                  "height": 3000,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1998-75-204a-cMattFlynn",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1998-75-204a-cMattFlynn",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1998-75-204a-cMattFlynn.tif",
+                      "width": 2027,
+                      "height": 3000,
+                      "dimensions": "2027x3000"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1998-75-204a-cMattFlynn.jpg",
+                      "width": 2027,
+                      "height": 3000,
+                      "dimensions": "2027x3000"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1998-75-204a-cMattFlynn_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1998-75-204a-cMattFlynn_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-Chw4760",
+                  "guid": "http://n2t.net/ark:/65665/vc93e6240d2-1fc3-4c7f-b77b-1f5bebe05bcf",
+                  "type": "Images",
+                  "idsId": "CHSDM-Chw4760",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 980,
+                  "height": 1500,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-Chw4760",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-Chw4760",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-Chw4760.jpg",
+                      "width": 980,
+                      "height": 1500,
+                      "dimensions": "980x1500"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-Chw4760_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-Chw4760_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-EBEDDDE5B9F12-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc988c897aa-5080-403b-823a-abc0facf489e",
+                  "type": "Images",
+                  "idsId": "CHSDM-EBEDDDE5B9F12-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2644,
+                  "height": 2014,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-EBEDDDE5B9F12-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-EBEDDDE5B9F12-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-EBEDDDE5B9F12-000001.jpg",
+                      "width": 2644,
+                      "height": 2014,
+                      "dimensions": "2644x2014"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-EBEDDDE5B9F12-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-EBEDDDE5B9F12-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-990E14FCD5D22-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc977b56120-3d56-4bb1-a0cb-9dfcbfee6b53",
+                  "type": "Images",
+                  "idsId": "CHSDM-990E14FCD5D22-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 3543,
+                  "height": 2810,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-990E14FCD5D22-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-990E14FCD5D22-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-990E14FCD5D22-000001.jpg",
+                      "width": 3543,
+                      "height": 2810,
+                      "dimensions": "3543x2810"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-990E14FCD5D22-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-990E14FCD5D22-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-F4865256B4222-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc98c2ae1cf-cac4-4487-ac7b-2a3092281fe8",
+                  "type": "Images",
+                  "idsId": "CHSDM-F4865256B4222-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1975,
+                  "height": 1371,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-F4865256B4222-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-F4865256B4222-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Three pieces of architectural elements. a) contains the top border and a portion of the sidewall. The pilaster capital is centered between arches, each containing a central urn and flanking sphinxes. The arches contain a green background. Across the top edge runs a band of dentil molding. The sidewall portion contains a brick pattern with a small inset medallion containing an urn. b) This sidewall portion is a brick pattern with an inset medallion. The medallion contains a winged figure with a serpent and a flaming column. A pilaster along the left edge. c) is the bottom border. This contains the pilaster base with a lion mask in relief. This alternates with a laurel and ribbon swag. Printed in shades of brown, ocher, green and white.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-F4865256B4222-000001.jpg",
+                      "width": 1975,
+                      "height": 1371,
+                      "dimensions": "1975x1371"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-F4865256B4222-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-F4865256B4222-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 5
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "e46299e526115aa47ff32cd82b5d1709b0784133",
+        "docSignature": "74fe8b874935a256b78dd6359a17c80b",
+        "timestamp": "1663784559",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399943162-0",
+        "title": "Sidewall and Dado",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1972-42-220-a_b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1805–25"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "a) Sidewall containing a vase with bouquet. The background is printed with a stylized floral motif forming a trellis pattern. Printed in shades of green, blue and white on a light blue ground."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Wallcoverings Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1972-42-220-a,b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Wallcoverings"
+              },
+              {
+                "label": "Type",
+                "content": "Sidewall and Dado"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Block-printed on handmade paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "a) 38 x 18.5 cm (14 15/16 x 7 5/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s",
+              "1820s"
+            ],
+            "place": [
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                }
+              }
+            ],
+            "object_type": [
+              "Sidewall and Dado",
+              "Wall coverings"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4d2e871cb-882c-42dd-bef4-616c728d2dae",
+            "title": {
+              "label": "Title",
+              "content": "Sidewall and Dado"
+            },
+            "record_ID": "chndm_1972-42-220-a_b",
+            "unit_code": "CHNDM",
+            "title_sort": "SIDEWALL AND DADO",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/149076",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-1972-42-220-aMattFlynn",
+                  "guid": "http://n2t.net/ark:/65665/vc955ea0d7c-099d-4315-acaa-6df744b514c1",
+                  "type": "Images",
+                  "idsId": "CHSDM-1972-42-220-aMattFlynn",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1612,
+                  "height": 3000,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1972-42-220-aMattFlynn",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1972-42-220-aMattFlynn",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "a) Sidewall containing a vase with bouquet. The background is printed with a stylized floral motif forming a trellis pattern. Printed in shades of green, blue and white on a light blue ground.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1972-42-220-aMattFlynn.tif",
+                      "width": 1612,
+                      "height": 3000,
+                      "dimensions": "1612x3000"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1972-42-220-aMattFlynn.jpg",
+                      "width": 1612,
+                      "height": 3000,
+                      "dimensions": "1612x3000"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1972-42-220-aMattFlynn_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1972-42-220-aMattFlynn_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-D705BAAE5F2C2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9f5994ba2-9334-4b75-9cd5-6e46b9137319",
+                  "type": "Images",
+                  "idsId": "CHSDM-D705BAAE5F2C2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 3421,
+                  "height": 6751,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-D705BAAE5F2C2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-D705BAAE5F2C2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "a) Sidewall containing a vase with bouquet. The background is printed with a stylized floral motif forming a trellis pattern. Printed in shades of green, blue and white on a light blue ground.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D705BAAE5F2C2-000001.jpg",
+                      "width": 3421,
+                      "height": 6751,
+                      "dimensions": "3421x6751"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D705BAAE5F2C2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D705BAAE5F2C2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "58bfe7e9353595b083109df457af2ec749cee635",
+        "docSignature": "8e2b6d7b2005a74336542315c3255e83",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399943666-0",
+        "title": "Sidewall- fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-13-1-a_b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1800–1825"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Blue and white diamond diaper with simplified flowers."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "possibly USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Wallcoverings Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Natchez Historical Society"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-13-1-a,b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Wallcoverings"
+              },
+              {
+                "label": "Type",
+                "content": "Sidewall- fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Block-printed paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "37.5 x 20 x 2 cm (14 3/4 x 7 7/8 x 13/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s",
+              "1820s"
+            ],
+            "place": [
+              "USA"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                }
+              }
+            ],
+            "object_type": [
+              "Wall coverings",
+              "Sidewall- fragment"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4270f233a-5add-49be-ad40-8b0d6e128c97",
+            "title": {
+              "label": "Title",
+              "content": "Sidewall- fragment"
+            },
+            "record_ID": "chndm_1973-13-1-a_b",
+            "unit_code": "CHNDM",
+            "title_sort": "SIDEWALL- FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/150746",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-7AD2729800892-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9a0fbcc30-a07c-43bb-a2cc-bfcec1d46b5f",
+                  "type": "Images",
+                  "idsId": "CHSDM-7AD2729800892-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4750,
+                  "height": 1430,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-7AD2729800892-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-7AD2729800892-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Blue and white diamond diaper with simplified flowers.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7AD2729800892-000001.jpg",
+                      "width": 4750,
+                      "height": 1430,
+                      "dimensions": "4750x1430"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7AD2729800892-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7AD2729800892-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "9df073be11075836389a8f599357d55ed63d64a5",
+        "docSignature": "0e6abc241defb048fc2e870a13cd3a02",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944202-2",
+        "title": "Sidewall and border",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-8-2-a_g",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1805–15"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Wide ocher striping printed on lighter ocher background. Foliate border across top edge. The border design is printed in flock on top of the sidewall paper that has been cut and pasted together."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Wallcoverings Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of City of New York, Housing and Development Administration"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-8-2-a/g"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Wallcoverings"
+              },
+              {
+                "label": "Type",
+                "content": "Sidewall and border"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Block-printed and flocked on handmade paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "94 x 61 cm (37 x 24 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s",
+              "1810s"
+            ],
+            "place": [
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                }
+              }
+            ],
+            "object_type": [
+              "Fill papers",
+              "Wall coverings",
+              "Borders (ornament areas)"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq41841635b-2539-4e05-92fe-a1d2af6bec82",
+            "title": {
+              "label": "Title",
+              "content": "Sidewall and border"
+            },
+            "record_ID": "chndm_1973-8-2-a_g",
+            "unit_code": "CHNDM",
+            "title_sort": "SIDEWALL AND BORDER",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/152087",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-1973-8-2-aMattFlynn",
+                  "guid": "http://n2t.net/ark:/65665/vc9735f9146-8983-4f90-b2d7-31683ffe13ad",
+                  "type": "Images",
+                  "idsId": "CHSDM-1973-8-2-aMattFlynn",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 3000,
+                  "height": 1896,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1973-8-2-aMattFlynn",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1973-8-2-aMattFlynn",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Wide ocher striping printed on lighter ocher background. Foliate border across top edge. The border design is printed in flock on top of the sidewall paper that has been cut and pasted together.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1973-8-2-aMattFlynn.tif",
+                      "width": 3000,
+                      "height": 1896,
+                      "dimensions": "3000x1896"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1973-8-2-aMattFlynn.jpg",
+                      "width": 3000,
+                      "height": 1896,
+                      "dimensions": "3000x1896"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1973-8-2-aMattFlynn_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1973-8-2-aMattFlynn_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "232a5b37aa55d18421db4326a2884b6cfde72af7",
+        "docSignature": "3eb1d67c0c90fe11f6479185745b5187",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399923226-0",
+        "title": "Sidewall",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1952-70-1",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1800–1810"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Wallpaper panel hung on the walls of the drawing room (but later removed) in the Jumel Mansion, New York City. Doves with vases and morning glories at top and at bottom. Sidewall composed of drop repeating rows of stylized daisies and leaves in dark green."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Wallcoverings Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Gladys Voorhees Clark"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1952-70-1"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Wallcoverings"
+              },
+              {
+                "label": "Type",
+                "content": "Sidewall"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Block printed on joined sheets"
+              },
+              {
+                "label": "Dimensions",
+                "content": "212.5 x 62 cm (83 11/16 x 24 7/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s",
+              "1810s"
+            ],
+            "place": [
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                }
+              }
+            ],
+            "object_type": [
+              "Fill papers",
+              "Wall coverings"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4ae8a58d1-6be4-4409-8254-10a9649fc79c",
+            "title": {
+              "label": "Title",
+              "content": "Sidewall"
+            },
+            "record_ID": "chndm_1952-70-1",
+            "unit_code": "CHNDM",
+            "title_sort": "SIDEWALL",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/106349",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-1952-70-1MattFlynn",
+                  "guid": "http://n2t.net/ark:/65665/vc9a00821f5-5a52-43da-bd82-795a2e97ee5a",
+                  "type": "Images",
+                  "idsId": "CHSDM-1952-70-1MattFlynn",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 889,
+                  "height": 3000,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1952-70-1MattFlynn",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1952-70-1MattFlynn",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Wallpaper panel hung on the walls of the drawing room (but later removed) in the Jumel Mansion, New York City. Doves with vases and morning glories at top and at bottom. Sidewall composed of drop repeating rows of stylized daisies and leaves in dark green.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1952-70-1MattFlynn.tif",
+                      "width": 889,
+                      "height": 3000,
+                      "dimensions": "889x3000"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1952-70-1MattFlynn.jpg",
+                      "width": 889,
+                      "height": 3000,
+                      "dimensions": "889x3000"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1952-70-1MattFlynn_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-1952-70-1MattFlynn_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "74d9ed46904bc932ff953a69ebd8dbb289a1674c",
+        "docSignature": "97c1eba97dc005d3fb8ac088bd7b0e47",
+        "timestamp": "1663784057",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      }
+    ],
+    "facets": {},
+    "rowCount": 142,
+    "message": "content found"
+  }
+}
