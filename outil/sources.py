@@ -1,89 +1,49 @@
-"""Deuxième passe : profondeur des fonds textiles de domaine public, par musée, et droits d'un exemple par source."""
-import json, os, re, time, urllib.parse, urllib.request
+"""Exploration : structure d'une fiche Rijksmuseum (Linked Art) et d'une fiche Smithsonian, pour écrire la recherche du lot 3."""
+import json, os, re, urllib.parse, urllib.request
 
-UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/recherche)", "Accept": "application/json, text/html;q=0.9"}
-DOSSIER = "outil/recherche/sources2"
-os.makedirs(DOSSIER, exist_ok=True)
-bilan = {}
-q = urllib.parse.quote
+UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/recherche)"}
+D = "outil/recherche/explore"
+os.makedirs(D, exist_ok=True)
 
 
-def lire(url, entetes=None, limite=4_000_000):
-    req = urllib.request.Request(url, headers={**UA, **(entetes or {})})
+def lire(url, accept="application/json"):
+    req = urllib.request.Request(url, headers={**UA, "Accept": accept})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
-            return r.status, r.read(limite).decode("utf-8", "replace")
+            return r.status, r.geturl(), r.read(3_000_000).decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        return e.code, e.read(20000).decode("utf-8", "replace")
+        return e.code, url, e.read(5000).decode("utf-8", "replace")
     except Exception as e:
-        return 0, repr(e)
+        return 0, url, repr(e)
 
 
-def essai(nom, url, entetes=None, extraire=None):
-    code, corps = lire(url, entetes)
-    open(os.path.join(DOSSIER, nom + ".txt"), "w").write(corps[:300000])
-    info = {"code": code}
-    if extraire and code == 200:
-        try:
-            info.update(extraire(corps))
-        except Exception as e:
-            info["erreur_extraction"] = repr(e)
-    bilan[nom] = info
-    print(nom, json.dumps(info, ensure_ascii=False)[:900])
-    time.sleep(1)
-    return corps if code == 200 else None
+LD = "application/ld+json"
+code, u, c = lire("https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true", LD)
+open(D + "/rijks-recherche.json", "w").write(c)
+print("recherche", code, c[:1500])
+ids = [i["id"] for i in json.loads(c).get("orderedItems", [])][:3]
+vus = set()
+for n, i in enumerate(ids[:2]):
+    a_suivre = [(i, 0)]
+    while a_suivre:
+        url, prof = a_suivre.pop(0)
+        if url in vus or prof > 3 or len(vus) > 14:
+            continue
+        vus.add(url)
+        code, finale, corps = lire(url, LD)
+        nom = "%s/rijks-%d-%s.json" % (D, n, re.sub(r"\W+", "_", url)[-40:])
+        open(nom, "w").write(corps)
+        print("---", code, url, "->", finale, len(corps))
+        print(corps[:2500])
+        for lien in re.findall(r'"id"\s*:\s*"(https://id\.rijksmuseum\.nl/[^"]+)"', corps):
+            if lien not in vus:
+                a_suivre.append((lien, prof + 1))
 
-
-# Europeana : quels musées fournissent le plus d'images textiles en réutilisation libre (CC0 ou marque du domaine public)
-DROITS = "&rights=" + q("http://creativecommons.org/publicdomain/zero/1.0/*") + "&rights=" + q("http://creativecommons.org/publicdomain/mark/1.0/*")
-REQUETE = '(chintz OR indienne OR "toile de Jouy" OR kattun OR sits OR "printed cotton" OR "toile imprimée" OR "papier peint" OR wallpaper OR tapete OR brocade OR brocart OR damask OR damas)'
-
-
-def facettes(c):
-    d = json.loads(c)
-    f = {x["name"]: [(v["label"], v["count"]) for v in x["fields"][:25]] for x in d.get("facets", [])}
-    return {"total": d.get("totalResults"), "fournisseurs": f.get("DATA_PROVIDER"), "pays": f.get("COUNTRY")}
-
-
-essai("europeana-fournisseurs",
-      "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=0&profile=facets&facet=DATA_PROVIDER&facet=COUNTRY&f.DATA_PROVIDER.facet.limit=25&media=true&qf=TYPE:IMAGE&query=" + q(REQUETE) + DROITS,
-      extraire=facettes)
-for fournisseur in ("Palais Galliera - Musée de la Mode de la Ville de Paris", "Mobilier National Collections", "Rijksmuseum", "Nationalmuseum Sweden", "Museum für Kunst und Gewerbe Hamburg"):
-    essai("europeana-" + re.sub(r"\W+", "-", fournisseur)[:30],
-          "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=8&media=true&qf=TYPE:IMAGE&qf=" + q('DATA_PROVIDER:"%s"' % fournisseur) + "&query=" + q(REQUETE) + DROITS,
-          extraire=lambda c: {"total": json.loads(c).get("totalResults"),
-                              "exemples": [((i.get("title") or ["?"])[0][:70], (i.get("rights") or ["?"])[0], (i.get("year") or ["?"])[0]) for i in json.loads(c).get("items", [])[:8]]})
-
-# Cooper Hewitt (Smithsonian, CC0) : profondeur par siècle
-for mot, siecle in (("textile", "1700s"), ("textile", "1800s"), ("sidewall", "1800s"), ("textile", "1600s")):
-    essai("si-%s-%s" % (mot, siecle),
-          "https://api.si.edu/openaccess/api/v1.0/search?rows=5&api_key=DEMO_KEY&q=" + q('%s AND unit_code:"CHNDM" AND online_media_type:"Images" AND date:"%s"' % (mot, siecle)),
-          extraire=lambda c: {"total": json.loads(c)["response"]["rowCount"]})
-
-# Rijksmuseum : droits et image d'un objet trouvé par la recherche « sits »
-c = lire("https://data.rijksmuseum.nl/search/collection?description=sits&imageAvailable=true", {"Accept": "application/ld+json"})[1]
+q = urllib.parse.quote
+code, u, c = lire("https://api.si.edu/openaccess/api/v1.0/search?rows=2&api_key=DEMO_KEY&q=" + q('chintz AND unit_code:"CHNDM" AND online_media_type:"Images"'))
+open(D + "/si.json", "w").write(c)
 try:
-    premier = json.loads(c)["orderedItems"][0]["id"]
-    essai("rijks-objet", premier, {"Accept": "application/ld+json"},
-          extraire=lambda c: {"licences": sorted(set(re.findall(r"https?://(?:creativecommons\.org|rightsstatements\.org)/[^\"]+", c)))[:5],
-                              "titre": re.findall(r'"content"\s*:\s*"([^"]{5,120})"', c)[:2]})
+    r = json.loads(c)["response"]["rows"][0]
+    print("SI ligne :", json.dumps(r, ensure_ascii=False)[:5000])
 except Exception as e:
-    bilan["rijks-objet"] = {"erreur": repr(e), "debut": c[:300]}
-    print("rijks-objet", bilan["rijks-objet"])
-
-# Met : la recherche publique de l'API est fermée (410) ; essai de la recherche du site
-essai("met-site", "https://www.metmuseum.org/api/collection/collectionlisting?q=chintz&showOnly=openAccess&perPage=5",
-      extraire=lambda c: {"debut": c[:300]})
-
-# Paris Musées : nombre d'œuvres trouvées et mention de téléchargement libre sur une fiche
-corps = essai("paris-recherche", "https://www.parismuseescollections.paris.fr/fr/recherche/type/oeuvre?keys=" + q("papier peint"),
-              extraire=lambda c: {"liens_oeuvres": len(set(re.findall(r'href="(/fr/[a-z\-]+/oeuvres/[^"?#]+)"', c)))})
-if corps:
-    liens = sorted(set(re.findall(r'href="(/fr/[a-z\-]+/oeuvres/[^"?#]+)"', corps)))[:3]
-    for i, lien in enumerate(liens):
-        essai("paris-oeuvre-%d" % i, "https://www.parismuseescollections.paris.fr" + lien,
-              extraire=lambda c: {"cc0": c.count("CC0"), "domaine_public": c.lower().count("domaine public"),
-                                  "telecharger": c.lower().count("télécharger"), "titre": re.findall(r"<title>(.*?)</title>", c, re.S)[:1]})
-
-json.dump(bilan, open(os.path.join(DOSSIER, "bilan.json"), "w"), ensure_ascii=False, indent=1)
-print("fini :", len(bilan), "essais")
+    print("SI erreur", e, c[:500])
