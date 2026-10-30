@@ -39,8 +39,14 @@ candidats = []
 NL, EN = "http://vocab.getty.edu/aat/300388256", "http://vocab.getty.edu/aat/300388277"
 
 
+def liste(x):
+    return x if isinstance(x, list) else [x] if x else []
+
+
 def langue(o):
-    return [l.get("id") for l in (o.get("language") or [])]
+    if not isinstance(o, dict):
+        return []
+    return [l.get("id") if isinstance(l, dict) else l for l in liste(o.get("language"))]
 
 
 def rijks_fiche(uri):
@@ -102,7 +108,11 @@ for champ, mot in RIJKS:
         if uri in vus:
             continue
         vus.add(uri)
-        f = rijks_fiche(uri)
+        try:
+            f = rijks_fiche(uri)
+        except Exception as e:
+            noter("RIJKS fiche illisible %s %r" % (uri, e))
+            f = None
         time.sleep(0.15)
         if f and f.get("iiif") and f.get("licences"):
             f["requete"] = "%s=%s" % (champ, mot)
