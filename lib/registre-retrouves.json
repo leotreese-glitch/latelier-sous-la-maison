@@ -1965,5 +1965,841 @@
    "date": "c. 1785",
    "source": "Art Institute of Chicago, inv. 1925.135. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
   }
+ },
+ {
+  "cle": "BK-BR-988-A",
+  "titre": "L'Arbre en fleurs de Coromandel",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1725 – 1750",
+  "origine": "Inde, côte de Coromandel",
+  "technique": "Coton peint et teint (indienne)",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3545,
+  "resume": "Grand arbre fleuri aux fleurs rouges, roses, violettes et bleues, né d'un petit monticule, dans une large bordure de rinceaux fleuris, sur fond crème.",
+  "cartel": "Ce palampore, grande couverture de lit peinte, a été réalisé sur la côte de Coromandel, en Inde, entre 1725 et 1750. En son centre, l'arbre en fleurs pousse d'un petit monticule : un motif emblématique des palampores. La pièce mesure 3,08 m sur 2,27 m. Aujourd'hui au Rijksmuseum d'Amsterdam (prêt du Museum Flehite), inv. BK-BR-988-A.",
+  "source": "Rijksmuseum, inv. BK-BR-988-A. Photographie du musée en domaine public (marque du domaine public), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Rijksmuseum",
+   "reference": "BK-BR-988-A",
+   "url": "https://www.rijksmuseum.nl/nl/collectie/object/BK-BR-988-A--3d6991a1a2306e725570843ca53b2056",
+   "statut": "domaine-public",
+   "conditions": "Rijksmuseum : image du domaine public (marque du domaine public 1.0, données CC0), usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Composition d'un seul tenant : vendez-la en panneau, ou découpez des détails (arbre, bordure). Licence de l'image (marque du domaine public) lue dans la fiche de données ouvertes du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "The Flowering Tree of Coromandel",
+   "resume": "A great flowering tree with red, pink, purple and blue blossoms, rising from a small mound, framed by a wide border of flowering scrolls on a cream ground.",
+   "cartel": "This palampore, a large painted bed cover, was made on the Coromandel Coast of India between 1725 and 1750. At its centre a flowering tree grows from a small mound, an emblematic motif of palampores. It measures 3.08 by 2.27 metres. Now in the Rijksmuseum, Amsterdam (on loan from Museum Flehite), inv. BK-BR-988-A.",
+   "origine": "India, Coromandel Coast",
+   "technique": "Painted and dyed cotton (chintz)",
+   "date": "1725 – 1750",
+   "source": "Rijksmuseum, inv. BK-BR-988-A. Museum photograph in the public domain (Public Domain Mark), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1973-51-1-a/d",
+  "titre": "Grand oiseau et fleurs exotiques",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe siècle",
+  "origine": "Inde",
+  "technique": "Coton peint et teint (indienne)",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.9137,
+  "resume": "Grandes fleurs exotiques rouges et bleues, troncs sinueux et grand oiseau à la queue bleue, sur fond blanc.",
+  "cartel": "Ces quatre fragments, peints et teints en Inde au XVIIIe siècle, viennent d'un grand dessin de fleurs exotiques, de troncs d'arbre et d'oiseaux. Les rouges, les violets et les noirs ont été posés au pinceau et au calame avec des mordants ; les verts viennent d'un jaune peint sur le bleu. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1973-51-1-a/d.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1973-51-1-a/d. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1973-51-1-a/d",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/151668",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Quatre fragments assemblés : le dessin est à compléter là où ils se rejoignent. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Great Bird and Exotic Blossoms",
+   "resume": "Large red and blue exotic blossoms, winding tree trunks and a great bird with a blue tail on a white ground.",
+   "cartel": "These four fragments, painted and dyed in India in the 18th century, come from a large design of exotic blossoms, tree trunks and birds. The reds, purples and blacks were applied with pen and brush using mordants; the greens come from yellow painted over blue. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1973-51-1-a/d.",
+   "origine": "India",
+   "technique": "Painted and dyed cotton (chintz)",
+   "date": "18th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1973-51-1-a/d. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1973-51-17-a/c",
+  "titre": "Vases fleuris et oiseaux",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Début du XVIIIe siècle",
+  "origine": "Inde ou Iran",
+  "technique": "Coton peint et teint (indienne)",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.7034,
+  "resume": "Oiseaux face à des vases fleuris, guirlandes de fleurs rouges, roses et bleues, sous une bande jaune, sur fond blanc.",
+  "cartel": "Ces deux morceaux d'une bordure ont été peints et teints au début du XVIIIe siècle, en Inde ou en Iran. Des oiseaux y entourent des vases fleuris reliés par des guirlandes, sous une bande de garde jaune. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1973-51-17-a/c.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1973-51-17-a/c. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1973-51-17-a/c",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/151727",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Flowering Vases and Birds",
+   "resume": "Birds facing flowering vases, garlands of red, pink and blue flowers, below a yellow band, on a white ground.",
+   "cartel": "These two sections of a border were painted and dyed in the early 18th century, in India or Iran. Birds surround flowering vases linked by garlands, below a yellow guard band. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1973-51-17-a/c.",
+   "origine": "India or Iran",
+   "technique": "Painted and dyed cotton (chintz)",
+   "date": "Early 18th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1973-51-17-a/c. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1980-34-4",
+  "titre": "Le Couronnement de la rosière",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1785 – 1790",
+  "origine": "France, Jouy-en-Josas",
+  "technique": "Coton imprimé à la plaque de cuivre gravée",
+  "type": "figuratif",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.2767,
+  "resume": "Scène champêtre rouge sur fond blanc : une jeune fille couronnée de roses sous un dais fleuri, entre rinceaux, chiens et angelot.",
+  "cartel": "Cette toile de Jouy, imprimée à la plaque de cuivre gravée entre 1785 et 1790, a été dessinée par Jean-Baptiste Huet (1745–1811). Sous un dais retenu par des rosiers, une jeune fille reçoit une couronne de roses : c'est la fête de la rosière, qui honorait la jeune fille la plus vertueuse du village. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1980-34-4.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1980-34-4 ; Jean-Baptiste Huet (1745 – 1811), dessinateur. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1980-34-4",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/167054",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "The Crowning of the Rosière",
+   "resume": "A red pastoral scene on white: a young woman crowned with roses beneath a flowering canopy, among scrolls, dogs and a cherub.",
+   "cartel": "This toile de Jouy, printed from engraved copper plates between 1785 and 1790, was designed by Jean-Baptiste Huet (1745–1811). Under a canopy held up by rose bushes, a young woman receives a crown of roses: the rosière festival, which honoured the most virtuous young woman of a village. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1980-34-4.",
+   "origine": "France, Jouy-en-Josas",
+   "technique": "Copperplate-printed cotton",
+   "date": "1785 – 1790",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1980-34-4; Jean-Baptiste Huet (1745 – 1811), designer. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1976.83",
+  "titre": "Feuillages bleus en réserve",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe siècle",
+  "origine": "France",
+  "technique": "Coton imprimé en réserve à la planche, teint en bleu",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.0968,
+  "resume": "Grandes feuilles d'acanthe, rinceaux plumeux et médaillons ovales en blanc sur un fond bleu profond.",
+  "cartel": "Cette toile a été réalisée en France au XVIIIe siècle par la technique de la réserve : on imprimait à la planche une pâte qui protégeait le dessin, puis on teignait l'étoffe en bleu. Le motif se répète tous les 35 cm environ. Aujourd'hui à l'Art Institute of Chicago, inv. 1976.83.",
+  "source": "Art Institute of Chicago, inv. 1976.83. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "1976.83",
+   "url": "https://www.artic.edu/artworks/50477",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Domaine public et image CC0 lus dans la base du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Blue Resist Foliage",
+   "resume": "Large acanthus leaves, feathery scrolls and oval medallions in white on a deep blue ground.",
+   "cartel": "This cloth was made in France in the 18th century by the resist technique: a paste that protected the design was printed with wood blocks, then the fabric was dyed blue. The pattern repeats about every 35 cm. Now in the Art Institute of Chicago, inv. 1976.83.",
+   "origine": "France",
+   "technique": "Block resist-printed cotton, dyed blue",
+   "date": "18th century",
+   "source": "Art Institute of Chicago, inv. 1976.83. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1960-79-23-a",
+  "titre": "Colonnes et bouquets sur fond jaune",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "Vers 1830",
+  "origine": "Angleterre",
+  "technique": "Coton glacé imprimé au rouleau",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.6211,
+  "resume": "Colonnes rouges à chapiteaux, ornées de branches fleuries, et bouquets de roses, pensées et ancolies avec un papillon, sur fond jaune vif.",
+  "cartel": "Ce chintz glacé a été imprimé au rouleau en Angleterre vers 1830. Entre des colonnes rouges à chapiteaux, des bouquets de roses, de pensées et d'ancolies, grandeur nature, accompagnent un papillon. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1960-79-23-a.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1960-79-23-a. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1960-79-23-a",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/219224",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Columns and Bouquets on Yellow",
+   "resume": "Red columns with capitals, decorated with flowering sprays, and bouquets of roses, pansies and columbines with a butterfly, on a bright yellow ground.",
+   "cartel": "This glazed chintz was roller-printed in England around 1830. Between red columns with capitals, life-size bouquets of roses, pansies and columbines keep company with a butterfly. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1960-79-23-a.",
+   "origine": "England",
+   "technique": "Roller-printed glazed cotton",
+   "date": "c. 1830",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1960-79-23-a. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1959-145-1",
+  "titre": "Guirlande et dentelles",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "Vers 1835",
+  "origine": "Angleterre",
+  "technique": "Coton imprimé au rouleau de bois et au rouleau de cuivre gravé, matelassé",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.4606,
+  "resume": "Guirlande ondulante de grandes fleurs roses, blanches, orangées et bleues, bordée de deux bandes de dentelle, sur un fond de fines volutes.",
+  "cartel": "Ce fragment de courtepointe a été imprimé en Angleterre vers 1835. Un rouleau de bois sculpté posait les grandes surfaces de couleur, un rouleau de cuivre gravé les lignes fines : ce double procédé s'appelait « mule printing ». Les verts sont obtenus en imprimant du jaune sur du bleu. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1959-145-1.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1959-145-1. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1959-145-1",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/122728",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Petit côté de 2 827 px : léger agrandissement nécessaire pour atteindre 4 000 px. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Garland and Lace",
+   "resume": "A winding garland of large pink, white, orange and blue flowers, flanked by two lace-like bands, on a ground of fine curlicues.",
+   "cartel": "This fragment of a quilt was printed in England around 1835. A carved wooden roller printed the large areas of colour and an engraved copper roller the fine lines, a double process known as mule printing. The greens come from printing yellow over blue. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1959-145-1.",
+   "origine": "England",
+   "technique": "Cotton printed with a carved wooden roller and an engraved copper roller, quilted",
+   "date": "c. 1835",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1959-145-1. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "2021-12-12",
+  "titre": "Plantes exotiques sur fond gris",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1860 – 1870",
+  "origine": "France",
+  "technique": "Papier peint imprimé à la planche, en onze couleurs",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.6907,
+  "resume": "Plantes imaginaires aux couleurs vives, rouge, bleu, rose et vert, à la manière des indiennes, sur un fond gris.",
+  "cartel": "Ce papier peint a été imprimé à la planche en France entre 1860 et 1870, en onze couleurs sur un fond gris. Ses plantes aux formes exotiques et aux couleurs vives et irréelles reprennent le style des indiennes peintes d'Inde. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 2021-12-12.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 2021-12-12. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "2021-12-12",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/294456",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Exotic Plants on Grey",
+   "resume": "Imaginary plants in bright red, blue, pink and green, in the manner of Indian chintz, on a grey ground.",
+   "cartel": "This wallpaper was block-printed in France between 1860 and 1870, in eleven colours on a grey ground. Its exotic-looking plants, in bold and unnatural colours, echo the style of painted Indian chintz. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 2021-12-12.",
+   "origine": "France",
+   "technique": "Block-printed wallpaper, eleven colours",
+   "date": "1860 – 1870",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 2021-12-12. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1987-85-6",
+  "titre": "Fleurs grises sur fond rouge floqué",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1800 – 1825",
+  "origine": "France",
+  "technique": "Papier peint imprimé à la planche et floqué",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.5832,
+  "resume": "Bouquets de feuilles et de fleurs en grisaille, cernés de brun clair, sur un fond rouge profond qui imite le velours.",
+  "cartel": "Ce papier peint a été imprimé à la planche en France entre 1800 et 1825. Son fond rouge est floqué : de la poudre de laine collée sur le papier lui donne l'aspect du velours. Les bouquets en grisaille se répètent en quinconce. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1987-85-6.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1987-85-6. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1987-85-6",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/186393",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Grey Blossoms on Red Flock",
+   "resume": "Clusters of grisaille leaves and flowers, outlined in light brown, on a deep red ground that imitates velvet.",
+   "cartel": "This wallpaper was block-printed in France between 1800 and 1825. Its red ground is flocked: powdered wool glued onto the paper gives it the look of velvet. The grisaille bouquets are set in a drop repeat. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1987-85-6.",
+   "origine": "France",
+   "technique": "Block-printed and flocked wallpaper",
+   "date": "1800 – 1825",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1987-85-6. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1928.194",
+  "titre": "Oiseaux et arbres en fleurs, papier peint chinois",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Fin du XVIIIe – début du XIXe siècle",
+  "origine": "Chine, pour le marché européen",
+  "technique": "Papier peint à la main",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 2.8536,
+  "resume": "Arbre fleuri aux branches fines, oiseaux et héron au bord de l'eau, peints en camaïeu de bleu sur fond crème.",
+  "cartel": "Ce panneau a été peint à la main en Chine, à la fin du XVIIIe ou au début du XIXe siècle, pour être vendu en Europe. Les papiers peints chinois se posaient en lés successifs pour former un grand paysage continu d'arbres et d'oiseaux. Il mesure 2,80 m de haut. Aujourd'hui à l'Art Institute of Chicago, inv. 1928.194.",
+  "source": "Art Institute of Chicago, inv. 1928.194. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "1928.194",
+   "url": "https://www.artic.edu/artworks/55996",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Image de 1 967 × 5 613 px : agrandissement nécessaire pour atteindre 4 000 px de large. Domaine public et image CC0 lus dans la base du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Birds and Flowering Trees, Chinese Wallpaper",
+   "resume": "A flowering tree with slender branches, birds and a heron by the water, painted in shades of blue on a cream ground.",
+   "cartel": "This panel was painted by hand in China in the late 18th or early 19th century, to be sold in Europe. Chinese wallpapers were hung in successive drops to form one continuous landscape of trees and birds. It is 2.80 metres tall. Now in the Art Institute of Chicago, inv. 1928.194.",
+   "origine": "China, for the European market",
+   "technique": "Hand-painted paper",
+   "date": "Late 18th – early 19th century",
+   "source": "Art Institute of Chicago, inv. 1928.194. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1976-103-63",
+  "titre": "Feuilles d'érable au fil de l'eau",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Milieu du XVIIIe – début du XIXe siècle",
+  "origine": "Japon",
+  "technique": "Pochoir (katagami) en papier de mûrier traité au kaki, renforcé de fils de soie",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.7256,
+  "resume": "Feuilles d'érable flottant sur un ruisseau aux fines ondulations, en bandes sinueuses claires et sombres.",
+  "cartel": "Ce pochoir japonais, ou katagami, servait à teindre les étoffes : on y passait une pâte de réserve avant la teinture. Les feuilles d'érable portées par l'eau évoquent la rivière Tatsuta, près de Nara, un motif aimé au Japon depuis le Xe siècle. Le papier de mûrier, traité au jus de kaki fermenté, est renforcé de fils de soie. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1976-103-63.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1976-103-63. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1976-103-63",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/155943",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "On vend le motif redessiné, pas la photo du pochoir. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Maple Leaves on the Stream",
+   "resume": "Maple leaves floating on a finely rippled stream, in winding light and dark bands.",
+   "cartel": "This Japanese stencil, or katagami, was used to dye fabric: a resist paste was pushed through it before dyeing. Maple leaves carried by water evoke the Tatsuta River near Nara, a motif loved in Japan since the 10th century. The mulberry paper, treated with fermented persimmon juice, is reinforced with silk threads. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1976-103-63.",
+   "origine": "Japan",
+   "technique": "Stencil (katagami), mulberry paper treated with persimmon tannin, reinforced with silk threads",
+   "date": "Mid-18th – early 19th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1976-103-63. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1942-86-19-a",
+  "titre": "Dragons et oiseaux d'or sur fond bleu",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "XIXe siècle",
+  "origine": "Japon",
+  "technique": "Soie, tissage façonné",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.0328,
+  "resume": "Dragons, oiseaux et fleurs stylisés, tissés en soie dorée sur un fond bleu profond.",
+  "cartel": "Cette soie a été tissée au Japon au XIXe siècle. Ses dragons, ses oiseaux et ses fleurs stylisés sont formés par des fils de trame en soie dorée, sur un fond bleu profond. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1942-86-19-a.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1942-86-19-a. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1942-86-19-a",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/77460",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Une étiquette du musée est cousue dans un coin : à effacer à la restauration. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Golden Dragons and Birds on Blue",
+   "resume": "Stylised dragons, birds and flowers woven in golden silk on a deep blue ground.",
+   "cartel": "This silk was woven in Japan in the 19th century. Its stylised dragons, birds and flowers are formed by golden silk weft threads on a deep blue ground. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1942-86-19-a.",
+   "origine": "Japan",
+   "technique": "Woven silk (compound weave)",
+   "date": "19th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1942-86-19-a. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1895.773",
+  "titre": "Velours à la grenade",
+  "famille": "retrouves",
+  "periode": "xvie",
+  "date": "Milieu du XVe – début du XVIe siècle",
+  "origine": "Italie",
+  "technique": "Velours de soie à deux hauteurs de poil, fils d'or bouclés",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.043,
+  "resume": "Grand fruit stylisé en or dans un encadrement de rinceaux, sur un velours rouge cramoisi.",
+  "cartel": "Ce fragment de velours a été tissé en Italie entre le milieu du XVe et le début du XVIe siècle. Le velours rouge, à deux hauteurs de poil, entoure un grand fruit stylisé tissé de fils d'or, dont certains forment des boucles. Ce fruit rappelle le motif « à la grenade », emblème des velours de la Renaissance italienne. Aujourd'hui à l'Art Institute of Chicago, inv. 1895.773.",
+  "source": "Art Institute of Chicago, inv. 1895.773. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "1895.773",
+   "url": "https://www.artic.edu/artworks/1995",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Fragment de 24 cm : le motif est coupé sur les bords, à reconstituer pour le raccord. Domaine public et image CC0 lus dans la base du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Pomegranate Velvet",
+   "resume": "A large stylised gold fruit within a frame of scrolls, on crimson velvet.",
+   "cartel": "This fragment of velvet was woven in Italy between the mid-15th and early 16th centuries. Red velvet with two heights of pile surrounds a large stylised fruit woven in gold thread, some of it looped. The fruit recalls the pomegranate pattern, emblem of Italian Renaissance velvets. Now in the Art Institute of Chicago, inv. 1895.773.",
+   "origine": "Italy",
+   "technique": "Pile-on-pile silk velvet with looped gold threads",
+   "date": "Mid-15th – early 16th century",
+   "source": "Art Institute of Chicago, inv. 1895.773. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1951-144-1",
+  "titre": "Soierie bizarre à la balustrade",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "Début du XVIIIe siècle",
+  "origine": "Angleterre, France ou Italie",
+  "technique": "Soie brochée sur fond satin",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3724,
+  "resume": "Grandes fleurs et feuilles roses, crème et vertes, parmi une balustrade, une allée dallée et un arbuste en pot, sur fond gris.",
+  "cartel": "Cette soie brochée a été tissée au début du XVIIIe siècle, en Angleterre, en France ou en Italie. Ses grandes fleurs et ses feuilles, mêlées à une balustrade, à une allée dallée et à un arbuste en pot, appartiennent au style dit « bizarre », mode éphémère des soieries vers 1700. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1951-144-1.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1951-144-1. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1951-144-1",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/103802",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Bizarre Silk with Balustrade",
+   "resume": "Large pink, cream and green flowers and leaves among a balustrade, a paved path and a potted shrub, on a grey ground.",
+   "cartel": "This brocaded silk was woven in the early 18th century, in England, France or Italy. Its large flowers and leaves, mixed with a balustrade, a paved path and a potted shrub, belong to the so-called bizarre style, a short-lived fashion in silks around 1700. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1951-144-1.",
+   "origine": "England, France or Italy",
+   "technique": "Brocaded silk on a satin ground",
+   "date": "Early 18th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1951-144-1. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1940-69-1",
+  "titre": "Châle aux fleurs sur fond jaune",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe siècle",
+  "origine": "Inde",
+  "technique": "Laine tissée en tapisserie",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3586,
+  "resume": "Rangées de petites plantes fleuries rouges, roses, bleues et vertes sur un fond jaune d'or.",
+  "cartel": "Ce châle en laine a été tissé en tapisserie en Inde au XVIIIe siècle. Ses rangées de fleurs dressées, rouges, roses et bleues, se détachent sur un fond jaune ; il est bordé d'un galon vert et d'une frange brodée. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1940-69-1.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1940-69-1. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1940-69-1",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/72839",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Flowering Shawl on Yellow",
+   "resume": "Rows of small flowering plants in red, pink, blue and green on a golden-yellow ground.",
+   "cartel": "This wool shawl was tapestry-woven in India in the 18th century. Its rows of upright red, pink and blue flowers stand out on a yellow ground; it is edged with a green braid and an embroidered fringe. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1940-69-1.",
+   "origine": "India",
+   "technique": "Tapestry-woven wool",
+   "date": "18th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1940-69-1. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "RP-D-2019-19",
+  "titre": "Vagues et écume, pochoir japonais",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1800 – 1909",
+  "origine": "Japon",
+  "technique": "Pochoir (katagami) en papier découpé, renforcé de fils de soie",
+  "type": "geometrique",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3745,
+  "resume": "Vagues stylisées aux crêtes d'écume enroulées, en fines lignes ondulantes.",
+  "cartel": "Ce pochoir japonais, ou katagami, porte un motif de vagues stylisées et de crêtes d'écume. Découpé dans le papier et renforcé de fils de soie, il servait à teindre les étoffes ; il est doublé d'un papier rouge qui fait ressortir le dessin. Aujourd'hui au Rijksmuseum d'Amsterdam, inv. RP-D-2019-19.",
+  "source": "Rijksmuseum, inv. RP-D-2019-19. Photographie du musée en domaine public (marque du domaine public), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Rijksmuseum",
+   "reference": "RP-D-2019-19",
+   "url": "https://www.rijksmuseum.nl/nl/collectie/object/RP-D-2019-19--eebaa37605085eb61e79abc3549d97d8",
+   "statut": "domaine-public",
+   "conditions": "Rijksmuseum : image du domaine public (marque du domaine public 1.0, données CC0), usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "On vend le motif redessiné, pas la photo du pochoir. Licence de l'image (marque du domaine public) lue dans la fiche de données ouvertes du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Waves and Foam, Japanese Stencil",
+   "resume": "Stylised waves with curling crests of foam, in fine undulating lines.",
+   "cartel": "This Japanese stencil, or katagami, bears a pattern of stylised waves and crests of foam. Cut from paper and reinforced with silk threads, it was used to dye fabric; it is backed with red paper that makes the design stand out. Now in the Rijksmuseum, Amsterdam, inv. RP-D-2019-19.",
+   "origine": "Japan",
+   "technique": "Stencil (katagami), cut paper reinforced with silk threads",
+   "date": "1800 – 1909",
+   "source": "Rijksmuseum, inv. RP-D-2019-19. Museum photograph in the public domain (Public Domain Mark), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "AK-MAK-478",
+  "titre": "Éventail et fleurs brodés",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1711 – 1716",
+  "origine": "Japon",
+  "technique": "Broderie de soie sur damas",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.3022,
+  "resume": "Un éventail ouvert parmi des fleurs et des feuillages brodés, sur un damas beige à motifs.",
+  "cartel": "Ce fragment japonais, brodé entre 1711 et 1716, montre un éventail entouré de fleurs sur un damas beige. Il mesure 29 cm sur 21 et a été acheté à Kyoto en 1930. Aujourd'hui au Rijksmuseum d'Amsterdam (prêt de la Société royale des amis de l'art asiatique), inv. AK-MAK-478.",
+  "source": "Rijksmuseum, inv. AK-MAK-478. Photographie du musée en domaine public (marque du domaine public), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Rijksmuseum",
+   "reference": "AK-MAK-478",
+   "url": "https://www.rijksmuseum.nl/nl/collectie/object/AK-MAK-478--b6b85f533af85b2d06991b08cc6dea7f",
+   "statut": "domaine-public",
+   "conditions": "Rijksmuseum : image du domaine public (marque du domaine public 1.0, données CC0), usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Fragment monté sur carton : à composer en semis ou en planche. Licence de l'image (marque du domaine public) lue dans la fiche de données ouvertes du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Embroidered Fan and Flowers",
+   "resume": "An open fan among embroidered flowers and leaves, on a patterned beige damask.",
+   "cartel": "This Japanese fragment, embroidered between 1711 and 1716, shows a fan surrounded by flowers on a beige damask. It measures 29 by 21 cm and was bought in Kyoto in 1930. Now in the Rijksmuseum, Amsterdam (on loan from the Royal Asian Art Society in the Netherlands), inv. AK-MAK-478.",
+   "origine": "Japan",
+   "technique": "Silk embroidery on damask",
+   "date": "1711 – 1716",
+   "source": "Rijksmuseum, inv. AK-MAK-478. Museum photograph in the public domain (Public Domain Mark), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1980-34-2",
+  "titre": "Médaillons à l'antique",
+  "famille": "retrouves",
+  "periode": "xixe",
+  "date": "1808",
+  "origine": "France, Jouy-en-Josas",
+  "technique": "Coton imprimé à la plaque de cuivre gravée",
+  "type": "figuratif",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.051,
+  "resume": "Médaillons ronds, ovales et en losange, peuplés de figures drapées à l'antique, d'angelots, de sphinx et d'animaux, sur un fond d'écailles brun et blanc.",
+  "cartel": "Cette toile de Jouy, imprimée à la plaque de cuivre gravée en 1808, a été dessinée par Jean-Baptiste Huet (1745–1811). Sur un fond d'écailles, des médaillons de formes variées encadrent des figures drapées à l'antique, des angelots, des sphinx et des animaux, dans le goût néoclassique de l'Empire. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1980-34-2.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1980-34-2 ; Jean-Baptiste Huet (1745 – 1811), dessinateur. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1980-34-2",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/167052",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Neoclassical Medallions",
+   "resume": "Round, oval and diamond-shaped medallions filled with classically draped figures, cherubs, sphinxes and animals, on a brown and white scale-patterned ground.",
+   "cartel": "This toile de Jouy, printed from engraved copper plates in 1808, was designed by Jean-Baptiste Huet (1745–1811). On a scale-patterned ground, medallions of various shapes frame classically draped figures, cherubs, sphinxes and animals, in the neoclassical taste of the Empire period. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1980-34-2.",
+   "origine": "France, Jouy-en-Josas",
+   "technique": "Copperplate-printed cotton",
+   "date": "1808",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1980-34-2; Jean-Baptiste Huet (1745 – 1811), designer. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1949-144-1-a,b",
+  "titre": "Papier peint à l'indienne et sa bordure de dentelle",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1787 – 1800",
+  "origine": "France",
+  "technique": "Papier peint imprimé à la planche sur papier fait main",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.9158,
+  "resume": "Fleurs rouges et bleues à la manière des indiennes sur fond blanc, avec une bordure qui imite un drapé de dentelle.",
+  "cartel": "Ce papier peint a été imprimé à la planche en France entre 1787 et 1800, sur papier fait main. Ses fleurs rouges et bleues imitent une indienne imprimée ; il a peut-être même été imprimé avec des planches à tissu. Sa bordure imite un drapé de dentelle. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1949-144-1-a,b.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1949-144-1-a,b. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1949-144-1-a,b",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/99860",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Bordure collée en haut : à séparer du fond pour en faire deux motifs. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Chintz-Style Wallpaper with Lace Border",
+   "resume": "Red and blue flowers in the manner of printed chintz on a white ground, with a border imitating draped lace.",
+   "cartel": "This wallpaper was block-printed in France between 1787 and 1800 on handmade paper. Its red and blue flowers imitate a printed chintz; it may even have been printed with textile blocks. Its border imitates draped lace. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1949-144-1-a,b.",
+   "origine": "France",
+   "technique": "Block-printed handmade paper",
+   "date": "1787 – 1800",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1949-144-1-a,b. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1962-56-87",
+  "titre": "Lions et oiseaux de velours",
+  "famille": "retrouves",
+  "periode": "xviie",
+  "date": "XVIIe siècle",
+  "origine": "Italie",
+  "technique": "Velours de soie coupé et bouclé",
+  "type": "animalier",
+  "couleurs": [],
+  "image": "",
+  "ratio": 0.8044,
+  "resume": "Lions, oiseaux et brins fleuris en velours rouge sombre sur un fond jaune.",
+  "cartel": "Ce fragment de velours a été tissé en Italie au XVIIe siècle. Le velours de soie, coupé et bouclé, dessine des lions, des oiseaux et des brins fleuris sur un fond jaune. Aujourd'hui au Cooper Hewitt, Smithsonian Design Museum de New York, inv. 1962-56-87.",
+  "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1962-56-87. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Cooper Hewitt, Smithsonian Design Museum",
+   "reference": "1962-56-87",
+   "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/133372",
+   "statut": "domaine-public",
+   "conditions": "Smithsonian Open Access (Cooper Hewitt) : image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Bords effilochés : le raccord se reconstitue à partir du centre. Mention « CC0 » de l'image lue dans Smithsonian Open Access le 2026-10-30."
+  },
+  "en": {
+   "titre": "Velvet Lions and Birds",
+   "resume": "Lions, birds and flowering sprigs in dark red velvet on a yellow ground.",
+   "cartel": "This fragment of velvet was woven in Italy in the 17th century. Cut and uncut silk velvet forms lions, birds and flowering sprigs on a yellow ground. Now in the Cooper Hewitt, Smithsonian Design Museum, New York, inv. 1962-56-87.",
+   "origine": "Italy",
+   "technique": "Cut and uncut silk velvet",
+   "date": "17th century",
+   "source": "Cooper Hewitt, Smithsonian Design Museum, inv. 1962-56-87. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1976.80a",
+  "titre": "Guirlandes bleues en réserve",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "XVIIIe siècle",
+  "origine": "France",
+  "technique": "Coton imprimé en réserve à la planche, teint en bleu",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.5162,
+  "resume": "Draperies festonnées, nœuds de ruban et bouquets de roses en blanc sur un fond bleu nuit.",
+  "cartel": "Cette toile a été réalisée en France au XVIIIe siècle par la technique de la réserve, puis teinte en bleu. Des draperies festonnées, retenues par des nœuds de ruban, alternent avec des bouquets de roses. Aujourd'hui à l'Art Institute of Chicago, inv. 1976.80a.",
+  "source": "Art Institute of Chicago, inv. 1976.80a. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "1976.80a",
+   "url": "https://www.artic.edu/artworks/50468",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Domaine public et image CC0 lus dans la base du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Blue Resist Swags",
+   "resume": "Festooned drapery, ribbon bows and bouquets of roses in white on a midnight-blue ground.",
+   "cartel": "This cloth was made in France in the 18th century by the resist technique, then dyed blue. Festooned drapery held by ribbon bows alternates with bouquets of roses. Now in the Art Institute of Chicago, inv. 1976.80a.",
+   "origine": "France",
+   "technique": "Block resist-printed cotton, dyed blue",
+   "date": "18th century",
+   "source": "Art Institute of Chicago, inv. 1976.80a. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
+ },
+ {
+  "cle": "1988.103",
+  "titre": "Draperies et corbeilles sur fond vert",
+  "famille": "retrouves",
+  "periode": "xviiie",
+  "date": "1775 – 1800",
+  "origine": "France",
+  "technique": "Lampas de soie, deux lés assemblés",
+  "type": "floral",
+  "couleurs": [],
+  "image": "",
+  "ratio": 1.7903,
+  "resume": "Draperies blanches festonnées et petites corbeilles fleuries sur un fond vert d'eau.",
+  "cartel": "Ce panneau de soie a été tissé en lampas en France entre 1775 et 1800, puis assemblé à partir de deux lés. Ses draperies festonnées et ses corbeilles fleuries, dans le goût Louis XVI, se répètent tous les 89 cm environ. Aujourd'hui à l'Art Institute of Chicago, inv. 1988.103.",
+  "source": "Art Institute of Chicago, inv. 1988.103. Photographie du musée en domaine public (CC0), restaurée par L'atelier sous la maison.",
+  "prix": {
+   "eur": 29.99,
+   "usd": 34.99
+  },
+  "droits": {
+   "musee": "Art Institute of Chicago",
+   "reference": "1988.103",
+   "url": "https://www.artic.edu/artworks/71269",
+   "statut": "domaine-public",
+   "conditions": "Art Institute of Chicago : œuvre du domaine public, image CC0 1.0, usage commercial autorisé",
+   "consulteLe": "2026-10-30",
+   "note": "Petit côté de 3 849 px : léger agrandissement nécessaire. Domaine public et image CC0 lus dans la base du musée le 2026-10-30."
+  },
+  "en": {
+   "titre": "Swags and Baskets on Green",
+   "resume": "White festooned drapery and small flower baskets on a pale green ground.",
+   "cartel": "This silk panel was woven in lampas in France between 1775 and 1800, then assembled from two loom widths. Its festooned drapery and flower baskets, in the Louis XVI taste, repeat about every 89 cm. Now in the Art Institute of Chicago, inv. 1988.103.",
+   "origine": "France",
+   "technique": "Silk lampas, two loom widths joined",
+   "date": "1775 – 1800",
+   "source": "Art Institute of Chicago, inv. 1988.103. Museum photograph in the public domain (CC0), restored by L'atelier sous la maison."
+  }
  }
 ]
