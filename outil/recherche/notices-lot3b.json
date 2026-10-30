@@ -1,0 +1,274 @@
+{
+ "R121": {
+  "uri": "https://id.rijksmuseum.nl/200743029",
+  "textes_en": [
+   [
+    "/dimension/identified_by",
+    "blad"
+   ],
+   [
+    "/identified_by",
+    "Sjabloon met gestileerde golven"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "maker: anonymous, Japan"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "vervaardiger: anoniem, Japan"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anoniem"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anonymous"
+   ],
+   [
+    "/produced_by/timespan/identified_by",
+    "1800 - 1909"
+   ],
+   [
+    "/referred_to_by",
+    "Japanse sjabloon (katagami) met een patroon van gestileerde golven en schuimkoppen."
+   ],
+   [
+    "/referred_to_by/created_by/timespan/identified_by",
+    "2019-02-01"
+   ],
+   [
+    "/referred_to_by",
+    "number: ‘1/18’"
+   ],
+   [
+    "/referred_to_by",
+    "nummer, linksonder, handschrift: ‘1/18’"
+   ],
+   [
+    "/referred_to_by",
+    "stamp: ‘Afgeschreven W...’"
+   ],
+   [
+    "/referred_to_by",
+    "stempel, verso, gestempeld: ‘Afgeschreven W...’"
+   ],
+   [
+    "/referred_to_by/referred_to_by",
+    "naam niet goed leesbaar"
+   ],
+   [
+    "/referred_to_by",
+    "uitgesneden sjabloon verstevigd met zijden draden, gedoubleerd met rood gekleurd papier"
+   ],
+   [
+    "/referred_to_by",
+    "blad: hoogte 505 mm x breedte 382 mm"
+   ],
+   [
+    "/referred_to_by",
+    "height 505 mm x width 382 mm"
+   ]
+  ],
+  "licences": [
+   "https://creativecommons.org/publicdomain/mark/1.0/",
+   "https://creativecommons.org/publicdomain/zero/1.0/"
+  ]
+ },
+ "R194": {
+  "uri": "https://id.rijksmuseum.nl/200106992",
+  "textes_en": [
+   [
+    "/identified_by",
+    "Textielfragment"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anoniem, Japan"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anonymous, Japan"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anoniem"
+   ],
+   [
+    "/produced_by/part/referred_to_by",
+    "anonymous"
+   ],
+   [
+    "/produced_by/timespan/identified_by",
+    "1711 - 1716"
+   ],
+   [
+    "/referred_to_by",
+    "Bruikleen van de Koninklijke Vereniging van Vrienden der Aziatische Kunst (aankoop Inada Hogitaro, Kyoto, 1930)"
+   ],
+   [
+    "/referred_to_by",
+    "On loan from the Royal Asian Art Society in The Netherlands (purchase Inada Hogitaro, Kyoto, 1930)"
+   ],
+   [
+    "/referred_to_by",
+    "Textielfragment, borduursel van bloemen en een waaier op beige damast."
+   ],
+   [
+    "/referred_to_by",
+    "height 29 cm x width 20.7 cm"
+   ],
+   [
+    "/referred_to_by",
+    "hoogte 29 cm x breedte 20,7 cm"
+   ],
+   [
+    "/referred_to_by",
+    "…; from the dealer Inada Hogitaro, Kyoto, ¥ 500, to the Vereniging van Vrienden der Aziatische Kunst, 1930;{Note RMA.} from whom on loan to the museum, 1972"
+   ]
+  ],
+  "licences": [
+   "https://creativecommons.org/publicdomain/mark/1.0/",
+   "https://creativecommons.org/publicdomain/zero/1.0/"
+  ]
+ },
+ "A176": {
+  "id": 50477,
+  "title": "Fragment",
+  "thumbnail": {
+   "lqip": "data:image/gif;base64,R0lGODlhBQAFAPQAACMxQik1RSs2RCg2Ryw7SzM+TTQ+TDQ/TTtGU1RebVlib1tjcFxlcl1lcl1mc2JqdWJqdmJreGRseGZteGtzfnyCjX2Dj4SJk4+TngAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAUAAAUVYKVAjfUAReBQBHJE0mAIzJUsExYCADs=",
+   "width": 4989,
+   "height": 5472,
+   "alt_text": "A work made of cotton, plain weave; resist printed with blocks."
+  },
+  "main_reference_number": "1976.83",
+  "date_display": "18th century",
+  "artist_display": "France",
+  "place_of_origin": "France",
+  "description": "",
+  "short_description": null,
+  "dimensions": "77 × 71 cm (30 1/4 × 27 7/8 in.); Warp repeat: H.: 35.4 cm (13 7/8 in.)",
+  "medium_display": "Cotton, plain weave; resist printed with blocks",
+  "credit_line": "Purchased with funds provided by Mrs. Julian Armstrong, Jr.",
+  "is_public_domain": true,
+  "copyright_notice": null,
+  "style_titles": [],
+  "classification_titles": [
+   "textile",
+   "weaving - printed",
+   "weaving"
+  ],
+  "subject_titles": [],
+  "image_id": "7ac6da84-eb9e-dd5e-0bdb-cc917970d1b3",
+  "taille_complete": [
+   4989,
+   5472
+  ]
+ },
+ "A205": {
+  "id": 1995,
+  "title": "Fragment of Velvet",
+  "thumbnail": {
+   "lqip": "data:image/gif;base64,R0lGODlhBQAFAPQAAGg+NWJHN2lCN2FHOmxIOWxJOWdFRW1GRW9KRm5HSmpJSG5RQG9SQXFRQnJTTm9ZUHVWUHJaWndZXntfW3lhVntgX3xjXnZcYYFvZAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAUAAAUVoDRh1oUQAeFAy7BQB9AISpU8RhQCADs=",
+   "width": 6068,
+   "height": 6329,
+   "alt_text": "A work made of silk, warp-float faced 3:1 twill weave with weft-float faced 1:3 twill interlacings of secondary binding warps and gilt-metal-strip-wrapped silk supplementary facing wefts; supplementary warps forming pile-on-pile cut velvet with supplementary brocading wefts forming weft loops in areas with voided velvet."
+  },
+  "main_reference_number": "1895.773",
+  "date_display": "Mid-15th-early 16th century",
+  "artist_display": "Italy",
+  "place_of_origin": "Italy",
+  "description": "",
+  "short_description": null,
+  "dimensions": "24.5 × 24.1 cm (9 5/8 × 9 1/2 in.)",
+  "medium_display": "Silk, warp-float faced 3:1 twill weave with weft-float faced 1:3 twill interlacings of secondary binding warps and gilt-metal-strip-wrapped silk supplementary facing wefts; supplementary warps forming pile-on-pile cut velvet with supplementary brocading wefts forming weft loops in areas with voided velvet",
+  "credit_line": "Gift of Martin A. Ryerson through the Antiquarian Society",
+  "is_public_domain": true,
+  "copyright_notice": null,
+  "style_titles": [],
+  "classification_titles": [
+   "textile",
+   "weaving - velvet",
+   "weaving"
+  ],
+  "subject_titles": [
+   "pomegranates"
+  ],
+  "image_id": "9a8bcdb1-99a7-2256-0613-5dac0c1a26e9",
+  "taille_complete": [
+   6068,
+   6329
+  ]
+ },
+ "A181": {
+  "id": 50468,
+  "title": "Panel",
+  "thumbnail": {
+   "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAABQkNBsuPSIyQTxHVj9LWUBKVkFNWEBOXURQXkhSXExWX1hga1tkcGBlbWBndAAAACH5BAAAAAAALAAAAAADAAUAAAQL0JE1QEFCnZCYaREAOw==",
+   "width": 4380,
+   "height": 6641,
+   "alt_text": "A work made of cotton, plain weave; resist printed with blocks."
+  },
+  "main_reference_number": "1976.80a",
+  "date_display": "18th century",
+  "artist_display": "France",
+  "place_of_origin": "France",
+  "description": "",
+  "short_description": null,
+  "dimensions": "113 × 68.5 cm (44 1/2 × 27 in.)",
+  "medium_display": "Cotton, plain weave; resist printed with blocks",
+  "credit_line": "Purchased with funds provided by Mrs. Julian Armstrong, Jr.",
+  "is_public_domain": true,
+  "copyright_notice": null,
+  "style_titles": [],
+  "classification_titles": [
+   "textile",
+   "weaving - printed",
+   "weaving"
+  ],
+  "subject_titles": [],
+  "image_id": "79a04f74-05ba-f44d-c5ba-4ddb8353b82d",
+  "taille_complete": [
+   4380,
+   6641
+  ]
+ },
+ "A234": {
+  "id": 71269,
+  "title": "Panel",
+  "thumbnail": {
+   "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAAH+He4KHfoKKe4OIfYWNf4KIgIOJgYeKgIeKgoaMgYaMhIiNgZKUi5OYjJWYkQAAACH5BAAAAAAALAAAAAADAAUAAAQLkDWXiAqgDGHOQhEAOw==",
+   "width": 3849,
+   "height": 6891,
+   "alt_text": "A work made of silk, warp-float faced satin weave with supplementary patterning wefts tied by supplementary binding warps in plain and twill interlacings (lampas); two loom widths joined."
+  },
+  "main_reference_number": "1988.103",
+  "date_display": "1775/1800",
+  "artist_display": "France",
+  "place_of_origin": "France",
+  "description": "",
+  "short_description": null,
+  "dimensions": "258.5 × 130.7 cm (101 3/4 × 51 3/8 in.); Point repeat: H.: 88.8 cm (35 in.)",
+  "medium_display": "Silk, warp-float faced satin weave with supplementary patterning wefts tied by supplementary binding warps in plain and twill interlacings (lampas); two loom widths joined",
+  "credit_line": "Ada Turnbull Hertle Endowment",
+  "is_public_domain": true,
+  "copyright_notice": null,
+  "style_titles": [
+   "louis xvi"
+  ],
+  "classification_titles": [
+   "textile",
+   "weaving"
+  ],
+  "subject_titles": [
+   "lace",
+   "flowers"
+  ],
+  "image_id": "ab9d239a-2e45-8c6e-b073-d690eb1aa73b",
+  "taille_complete": [
+   3849,
+   6891
+  ]
+ }
+}
