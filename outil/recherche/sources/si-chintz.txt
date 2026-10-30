@@ -1,0 +1,2022 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643399887910-1643399944038-1",
+        "title": "Chintz fragments",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-3-a_b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-3-a,b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragments"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for red, purple and black applied by pen or brush; blue applied over resist; on blue background chintz blue applied by immersion (chintz) on plain weave."
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W x D (A - four pieces sewn together): 21.5 x 28 cm (8 7/16 x 11 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W x D (B - two pieces sewn together): 18.5 x 18 cm (7 5/16 x 7 1/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragments",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4e8eeff14-f186-4280-ac03-a46e890c65d0",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragments"
+            },
+            "record_ID": "chndm_1973-51-3-a_b",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENTS",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151741",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-B68192B83FCD2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9c84228e9-808d-49f8-bfca-3050a49044f1",
+                  "type": "Images",
+                  "idsId": "CHSDM-B68192B83FCD2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 5220,
+                  "height": 7609,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B68192B83FCD2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001.jpg",
+                      "width": 5220,
+                      "height": 7609,
+                      "dimensions": "5220x7609"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B68192B83FCD2-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7057",
+                  "guid": "http://n2t.net/ark:/65665/vc9d7a3c546-5c5e-4fa5-aa6f-c0a2514a12ad",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7057",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 976,
+                  "height": 1500,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7057",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Component A is fragments sewn together as in French flag; red background, white background and blue background chintz. Direction of pattern changes. Component B is two pieces of blue background chintz sewn together.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057.jpg",
+                      "width": 976,
+                      "height": 1500,
+                      "dimensions": "976x1500"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7057_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "4438cccc8dd6af548d0c6bf0e585c753cff315a2",
+        "docSignature": "e6f3113b01f56c7974c918e094a1ee46",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944034-2",
+        "title": "Chintz panel",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-22",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Shaped cartouche pieced from a palampore. Background of red and white chintz. Green and white braid applied to outline the edges of the shape."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-22"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz panel"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for reds and purples applied over resist by brush and pen; madder dyed; blue applied by brush over resist; yellow applied by brush; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 66 x 51.5 cm (26 x 20 1/4 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz panel",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4efccbfca-2218-482d-aab6-79a75cf8480c",
+            "title": {
+              "label": "Title",
+              "content": "Chintz panel"
+            },
+            "record_ID": "chndm_1973-51-22",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ PANEL",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151733",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-8452DDA9C0312-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc99adae800-7b3e-4caf-a674-2dca93d8a01d",
+                  "type": "Images",
+                  "idsId": "CHSDM-8452DDA9C0312-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4706,
+                  "height": 6019,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8452DDA9C0312-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8452DDA9C0312-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Shaped cartouche pieced from a palampore. Background of red and white chintz. Green and white braid applied to outline the edges of the shape.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001.jpg",
+                      "width": 4706,
+                      "height": 6019,
+                      "dimensions": "4706x6019"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8452DDA9C0312-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0bcd0bbfc6fcd042383858d8c716d75b04d642c3",
+        "docSignature": "c9c0284f0e785df1d2fba8b5540741e5",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944043-0",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-38",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Curving stems with umbrella-like blossoms. Three pieces glued together. (chintz)"
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-38"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for 2 reds, purple and black applied by pen and brush; madder dyed; blue applied by brush? chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 25 x 40.5 cm (9 13/16 x 15 15/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq44db12dda-b781-4950-aad3-bf173da6e21e",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-38",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151750",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-692D2DA65BC72-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9c1d3948c-1c23-4aac-9169-a4a27a6da937",
+                  "type": "Images",
+                  "idsId": "CHSDM-692D2DA65BC72-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4569,
+                  "height": 7178,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-692D2DA65BC72-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-692D2DA65BC72-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Curving stems with umbrella-like blossoms. Three pieces glued together. (chintz)",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-692D2DA65BC72-000001.jpg",
+                      "width": 4569,
+                      "height": 7178,
+                      "dimensions": "4569x7178"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-692D2DA65BC72-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-692D2DA65BC72-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7072",
+                  "guid": "http://n2t.net/ark:/65665/vc90d260496-4fae-41cf-bd95-b973784d59ea",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7072",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1500,
+                  "height": 1028,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7072",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7072",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Curving stems with umbrella-like blossoms. Three pieces glued together. (chintz)",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7072.jpg",
+                      "width": 1500,
+                      "height": 1028,
+                      "dimensions": "1500x1028"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7072_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7072_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "218a8e57a07a7a0745fafc3b3234f1554ac185dc",
+        "docSignature": "eef71a6ddd6796f29cd522dabcafadd9",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944041-0",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-34",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Diamond lattice with beads and ovals with isolated motifs in the center of each space. Although motifs are reused there is no formal repeat."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-34"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordant for 3 reds applied by brush or pen following pattern outline; madder dyed; blue applied by immersion after application of resist; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 61.5 x 58.9 cm (24 3/16 x 23 3/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4176d33ee-34da-406c-b5ec-f663716670a3",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-34",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151746",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-CH7097",
+                  "guid": "http://n2t.net/ark:/65665/vc9e4baeedf-8ccb-4786-8a99-9fcab632349d",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7097",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 917,
+                  "height": 1501,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7097",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7097",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Diamond lattice with beads and ovals with isolated motifs in the center of each space. Although motifs are reused there is no formal repeat.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7097.jpg",
+                      "width": 917,
+                      "height": 1501,
+                      "dimensions": "917x1501"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7097_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7097_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "3d2093937c875f01bd83ac7c89c0fbca1a30175a",
+        "docSignature": "e17c61720421b6237ab8ec228491aafa",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399941340-0",
+        "title": "Curtains",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1968-79-3-a_b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1725–50"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Curtains are composed of several different kinds of chintz, in an elaborate arrangement of patchwork, sewn to a lining of white linen. Series of bands of different chintzes, forms a total design of baroque character, borders, corner motifs, and, when the curtains are edge to edge, a large central medallion. The bands are edged with cord, couched in red, which covers the seams."
+              },
+              {
+                "label": "Description",
+                "content": "Chintzes are characterized by designs of small flower sprays, painted and with great elaboration of detail, in many contrasts of color."
+              },
+              {
+                "label": "Description",
+                "content": "There is much overpainting as green on violet, one blue on another shade of the same, red over yellow to give orange, stripes of different colors in one blossom, all with great skill and delicacy of line. The leaves are sharply pointed and brightly colored. While many of the small flowers look deceptively like European blossoms, none are recognizable except a carnation. In one or two sections there are parts of a curious pattern showing narrow curving bands, one with jagged edges in red, one imbricated, red, blue, and yellow. While the ground of these chintzes is white, several of the appliqué bands are blue grounds."
+              },
+              {
+                "label": "Description",
+                "content": "Formerly part of a set of bed hangings."
+              },
+              {
+                "label": "Description",
+                "content": "Colors: Two reds, two greens, two blues, yellow, violet, orange (red over yellow)."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Museum purchase through gift of Julia Hutchins Wolcott and various donors"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1968-79-3-a,b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Curtains"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton, linen Technique: patchwork of different plain weave fabrics which have been mordant and resist painted and dyed"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W (b): 280 x 88.9 cm (9 ft. 2 1/4 in. x 35 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W (a): 280 x 88.9 cm (9 ft. 2 1/4 in. x 35 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1720s",
+              "1750s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Curtains",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4d15ff6f0-997a-406c-ac60-39235745a042",
+            "title": {
+              "label": "Title",
+              "content": "Curtains"
+            },
+            "record_ID": "chndm_1968-79-3-a_b",
+            "unit_code": "CHNDM",
+            "title_sort": "CURTAINS",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/144285",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-CH7110",
+                  "guid": "http://n2t.net/ark:/65665/vc9a85e4cad-c30f-4c52-80e9-5accec0512fc",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7110",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1215,
+                  "height": 1969,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7110",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7110",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Curtains are composed of several different kinds of chintz, in an elaborate arrangement of patchwork, sewn to a lining of white linen. Series of bands of different chintzes, forms a total design of baroque character, borders, corner motifs, and, when the curtains are edge to edge, a large central medallion. The bands are edged with cord, couched in red, which covers the seams.\nChintzes are characterized by designs of small flower sprays, painted and with great elaboration of detail, in many contrasts of color. \nThere is much overpainting as green on violet, one blue on another shade of the same, red over yellow to give orange, stripes of different colors in one blossom, all with great skill and delicacy of line. The leaves are sharply pointed and brightly colored. While many of the small flowers look deceptively like European blossoms, none are recognizable except a carnation.  In one or two sections there are parts of a curious pattern showing narrow curving bands, one with jagged edges in red, one imbricated, red, blue, and yellow.  While the ground of these chintzes is white, several of the appliqué bands are blue grounds.\nFormerly part of a set of bed hangings.\nColors: Two reds, two greens, two blues, yellow, violet, orange (red over yellow).",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7110.jpg",
+                      "width": 1215,
+                      "height": 1969,
+                      "dimensions": "1215x1969"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7110_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7110_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-06E6162F64392-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc901708ed3-6a34-4c64-8597-723229fbaddc",
+                  "type": "Images",
+                  "idsId": "CHSDM-06E6162F64392-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 9400,
+                  "height": 7739,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-06E6162F64392-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-06E6162F64392-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Curtains are composed of several different kinds of chintz, in an elaborate arrangement of patchwork, sewn to a lining of white linen. Series of bands of different chintzes, forms a total design of baroque character, borders, corner motifs, and, when the curtains are edge to edge, a large central medallion. The bands are edged with cord, couched in red, which covers the seams.\nChintzes are characterized by designs of small flower sprays, painted and with great elaboration of detail, in many contrasts of color. \nThere is much overpainting as green on violet, one blue on another shade of the same, red over yellow to give orange, stripes of different colors in one blossom, all with great skill and delicacy of line. The leaves are sharply pointed and brightly colored. While many of the small flowers look deceptively like European blossoms, none are recognizable except a carnation.  In one or two sections there are parts of a curious pattern showing narrow curving bands, one with jagged edges in red, one imbricated, red, blue, and yellow.  While the ground of these chintzes is white, several of the appliqué bands are blue grounds.\nFormerly part of a set of bed hangings.\nColors: Two reds, two greens, two blues, yellow, violet, orange (red over yellow).",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-06E6162F64392-000001.jpg",
+                      "width": 9400,
+                      "height": 7739,
+                      "dimensions": "9400x7739"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-06E6162F64392-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-06E6162F64392-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-B36410E30A8F2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc918413705-88af-454a-94ef-3db01b4c12e6",
+                  "type": "Images",
+                  "idsId": "CHSDM-B36410E30A8F2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 9504,
+                  "height": 7744,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B36410E30A8F2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B36410E30A8F2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Curtains are composed of several different kinds of chintz, in an elaborate arrangement of patchwork, sewn to a lining of white linen. Series of bands of different chintzes, forms a total design of baroque character, borders, corner motifs, and, when the curtains are edge to edge, a large central medallion. The bands are edged with cord, couched in red, which covers the seams.\nChintzes are characterized by designs of small flower sprays, painted and with great elaboration of detail, in many contrasts of color. \nThere is much overpainting as green on violet, one blue on another shade of the same, red over yellow to give orange, stripes of different colors in one blossom, all with great skill and delicacy of line. The leaves are sharply pointed and brightly colored. While many of the small flowers look deceptively like European blossoms, none are recognizable except a carnation.  In one or two sections there are parts of a curious pattern showing narrow curving bands, one with jagged edges in red, one imbricated, red, blue, and yellow.  While the ground of these chintzes is white, several of the appliqué bands are blue grounds.\nFormerly part of a set of bed hangings.\nColors: Two reds, two greens, two blues, yellow, violet, orange (red over yellow).",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B36410E30A8F2-000001.jpg",
+                      "width": 9504,
+                      "height": 7744,
+                      "dimensions": "9504x7744"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B36410E30A8F2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-B36410E30A8F2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 3
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "8b0bd74caa5c8ef63d68b923eb9a5924acd840d0",
+        "docSignature": "7ada388e5d1bd334b96a67d3518a21d8",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944062-0",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-73",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Irregular fragment of a large scale design with tree trunk, flowers and large leaves."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-73"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for 2 reds and 2 purples applied by brush; madder dyed; blue applied over resist; yellow over blue for green; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 45 x 30.5 cm (17 11/16 x 12 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4b9092dea-1c1f-4c15-94d9-437fa2d297d3",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-73",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151790",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-DCC092A169892-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9116248c1-1b92-42b4-ad55-aaae797dd64e",
+                  "type": "Images",
+                  "idsId": "CHSDM-DCC092A169892-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 5405,
+                  "height": 8035,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DCC092A169892-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DCC092A169892-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Irregular fragment of a large scale design with tree trunk, flowers and large leaves.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DCC092A169892-000001.jpg",
+                      "width": 5405,
+                      "height": 8035,
+                      "dimensions": "5405x8035"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DCC092A169892-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DCC092A169892-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7087",
+                  "guid": "http://n2t.net/ark:/65665/vc98ab78961-aa1c-4883-be23-39a189b1bf88",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7087",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1500,
+                  "height": 1044,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7087",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7087",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Irregular fragment of a large scale design with tree trunk, flowers and large leaves.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7087.jpg",
+                      "width": 1500,
+                      "height": 1044,
+                      "dimensions": "1500x1044"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7087_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7087_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "d7095f3acfc386954fee36ed9a429f849d8dae9e",
+        "docSignature": "17749a782a46cd19e9e51ea193fa36e8",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944050-1",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-52",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Small fragment showing part of a cornucopia-like shape and floral vines."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-52"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for 3 reds, black and purple applied by pen or brush; madder dyed; blue applied by brush over resist; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 18.5 x 10.5 cm (7 5/16 x 4 1/8 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq480573cdd-fb94-4b2d-9863-e91fd4676a1a",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-52",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151766",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-3790258B2C4A2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc96e40a371-3f4a-4a78-9e81-7ce4d89e0572",
+                  "type": "Images",
+                  "idsId": "CHSDM-3790258B2C4A2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2644,
+                  "height": 3899,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-3790258B2C4A2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-3790258B2C4A2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Small fragment showing part of a cornucopia-like shape and floral vines.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-3790258B2C4A2-000001.jpg",
+                      "width": 2644,
+                      "height": 3899,
+                      "dimensions": "2644x3899"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-3790258B2C4A2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-3790258B2C4A2-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7079",
+                  "guid": "http://n2t.net/ark:/65665/vc9fa3856f9-2df1-4345-af9a-c84ec29e48f2",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7079",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1499,
+                  "height": 884,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7079",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7079",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Small fragment showing part of a cornucopia-like shape and floral vines.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7079.jpg",
+                      "width": 1499,
+                      "height": 884,
+                      "dimensions": "1499x884"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7079_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7079_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0567c1b0ab221fbb5d766cab53cbcfcaa2c3b8af",
+        "docSignature": "55816dd3e8c2ac604e0d4e0e12f4ae4a",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944003-0",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-10",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Fragment from a larger panel. Design of flowers springing from decorative shapes."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-10"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for two reds, two purples and black applied over resist; madder dyed; blue applied over resist by immersion; yellow applied by brush, (chintz) on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 56 x 22 cm (22 1/16 x 8 11/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq49afcfc1a-cff9-4d59-94d3-afef7d2d345e",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-10",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151669",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-9A9E1A91D2D62-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc97414161f-4f65-4d6a-9876-45a90316925b",
+                  "type": "Images",
+                  "idsId": "CHSDM-9A9E1A91D2D62-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2366,
+                  "height": 5777,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-9A9E1A91D2D62-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-9A9E1A91D2D62-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment from a larger panel. Design of flowers springing from decorative shapes.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9A9E1A91D2D62-000001.jpg",
+                      "width": 2366,
+                      "height": 5777,
+                      "dimensions": "2366x5777"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9A9E1A91D2D62-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9A9E1A91D2D62-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7030",
+                  "guid": "http://n2t.net/ark:/65665/vc984398620-1f4a-46dd-a22a-ef28346e543e",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7030",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 787,
+                  "height": 1500,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7030",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7030",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment from a larger panel. Design of flowers springing from decorative shapes.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7030.jpg",
+                      "width": 787,
+                      "height": 1500,
+                      "dimensions": "787x1500"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7030_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7030_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "05bacb26dd0418adbf648bc51ce6c189587b362c",
+        "docSignature": "ca184ce96b12334e6ae8e477e9fe365e",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944036-1",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-26",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Fragment of a larger panel showing figures in Asian-style dress."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-26"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: mordants for black, 2 reds and 2 purples applied by brush and pen; madder dyed; blue applied over resist by immersion; yellow applied by brush; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 37 x 51 cm (14 9/16 x 20 1/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq48c5b80ea-ae32-479e-ae03-29f491e05a78",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-26",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151737",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-C097AE199C142-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9547d6826-7616-4f9f-8770-24fd4e0c8a08",
+                  "type": "Images",
+                  "idsId": "CHSDM-C097AE199C142-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4676,
+                  "height": 3361,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-C097AE199C142-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-C097AE199C142-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment of a larger panel showing figures in Asian-style dress.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-C097AE199C142-000001.jpg",
+                      "width": 4676,
+                      "height": 3361,
+                      "dimensions": "4676x3361"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-C097AE199C142-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-C097AE199C142-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7040",
+                  "guid": "http://n2t.net/ark:/65665/vc9d8f07865-dadf-4d8f-939c-4ee9e84b5c01",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7040",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 1500,
+                  "height": 1031,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7040",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7040",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment of a larger panel showing figures in Asian-style dress.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7040.jpg",
+                      "width": 1500,
+                      "height": 1031,
+                      "dimensions": "1500x1031"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7040_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7040_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0d3d5df9cd322ef41ebf310cf3ea89b6cd96695c",
+        "docSignature": "d060fafbc96cdc82829c89115350777c",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399944044-1",
+        "title": "Chintz fragment",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1973-51-40",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "18th century"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Fragment showing exotic flowers on blue stems."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "India"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Josephine Howell"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1973-51-40"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Chintz fragment"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: outline of pattern drawn on; mordants for 2 reds and 2 purples applied by pen or brush (sometimes over resist); madder dyed; blue applied by immersion over resist; chintz on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Warp x Weft: 64 x 24 cm (25 3/16 x 9 7/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1790s"
+            ],
+            "place": [
+              "India"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "India"
+                }
+              }
+            ],
+            "object_type": [
+              "Chintz fragment",
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4f02666de-0295-4576-97f2-d6a312dde279",
+            "title": {
+              "label": "Title",
+              "content": "Chintz fragment"
+            },
+            "record_ID": "chndm_1973-51-40",
+            "unit_code": "CHNDM",
+            "title_sort": "CHINTZ FRAGMENT",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/151753",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-282DD2431BB32-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9351d2501-0f56-4d2e-9b57-473ff36ee306",
+                  "type": "Images",
+                  "idsId": "CHSDM-282DD2431BB32-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2476,
+                  "height": 6618,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-282DD2431BB32-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-282DD2431BB32-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment showing exotic flowers on blue stems.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-282DD2431BB32-000001.jpg",
+                      "width": 2476,
+                      "height": 6618,
+                      "dimensions": "2476x6618"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-282DD2431BB32-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-282DD2431BB32-000001_thumb"
+                    }
+                  ]
+                },
+                {
+                  "id": "media:CHSDM-CH7043",
+                  "guid": "http://n2t.net/ark:/65665/vc9872d93fe-2fbd-4e9e-82f6-2b3602204362",
+                  "type": "Images",
+                  "idsId": "CHSDM-CH7043",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 532,
+                  "height": 1500,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7043",
+                  "maxsize": 3000,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH7043",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Fragment showing exotic flowers on blue stems.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7043.jpg",
+                      "width": 532,
+                      "height": 1500,
+                      "dimensions": "532x1500"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7043_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-CH7043_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 2
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "1ae72b34ab3559dcd186d2da3b715a1f3aa914c6",
+        "docSignature": "841695046df75b8aa9a3a6b768987ecc",
+        "timestamp": "1663784558",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      }
+    ],
+    "facets": {},
+    "rowCount": 156,
+    "message": "content found"
+  }
+}

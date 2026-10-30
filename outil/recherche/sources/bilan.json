@@ -1,0 +1,338 @@
+{
+ "aic-textile": {
+  "url": "https://api.artic.edu/api/v1/artworks/search?q=textile&query[term][is_public_domain]=true&fields=id,title,date_display,artwork_type_title,image_id&limit=10",
+  "code": 200,
+  "taille": 2362,
+  "total": 62119,
+  "exemples": [
+   [
+    "The Elephant, from The Berain Grotesques Series",
+    "c. 1688/1732",
+    "Textile"
+   ],
+   [
+    "Tassels",
+    "500-900",
+    "Textile"
+   ],
+   [
+    "Field Armor for Man",
+    "c. 1520",
+    "Armor"
+   ],
+   [
+    "Fragment",
+    "16th century",
+    "Textile"
+   ],
+   [
+    "Panel",
+    "16th century",
+    "Textile"
+   ],
+   [
+    "Orphrey Band",
+    "1375/1400",
+    "Textile"
+   ]
+  ]
+ },
+ "aic-chintz": {
+  "url": "https://api.artic.edu/api/v1/artworks/search?q=chintz&query[term][is_public_domain]=true&fields=id,title,date_display,artwork_type_title,image_id&limit=10",
+  "code": 200,
+  "taille": 2444,
+  "total": 62119,
+  "exemples": [
+   [
+    "Chintz Curtain",
+    "First quarter 18th century",
+    "Coverings and Hangings"
+   ],
+   [
+    "Panel",
+    "19th century",
+    "Textile"
+   ],
+   [
+    "Length of Chintz",
+    "c. 1730/50",
+    "Textile"
+   ],
+   [
+    "Panel of Chintz for a Woman's Skirt",
+    "1730-50",
+    "Textile"
+   ],
+   [
+    "Self-Portrait",
+    "1878",
+    "Painting"
+   ],
+   [
+    "Martin Vanden Bogaert Desjardins",
+    "n.d.",
+    "Print"
+   ]
+  ]
+ },
+ "aic-embroidery": {
+  "url": "https://api.artic.edu/api/v1/artworks/search?q=embroidery&query[term][is_public_domain]=true&fields=id,title,date_display,artwork_type_title,image_id&limit=10",
+  "code": 200,
+  "taille": 2488,
+  "total": 62119,
+  "exemples": [
+   [
+    "Dress for Christ Child",
+    "18th century",
+    "Costume and Accessories"
+   ],
+   [
+    "\"Attus\" Amip (Man's Coat)",
+    "c. 1860",
+    "Textile"
+   ],
+   [
+    "Mourning Sampler",
+    "About 1810",
+    "Textile"
+   ],
+   [
+    "Band",
+    "Qing dynasty (1644–1911), 1875/1900",
+    "Costume and Accessories"
+   ],
+   [
+    "Fragment of Embroidery",
+    "Yüan dynasty (1279–1368), 14th century",
+    "Textile"
+   ],
+   [
+    "Quilt Top",
+    "1900/20",
+    "Textile"
+   ]
+  ]
+ },
+ "met-recherche": {
+  "url": "https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=chintz",
+  "code": 410,
+  "taille": 438
+ },
+ "met-objet": {
+  "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/75909",
+  "code": 200,
+  "taille": 2687,
+  "title": "Palampore",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP-23279-001.jpg",
+  "department": "Asian Art"
+ },
+ "met-departement": {
+  "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=12",
+  "code": 200,
+  "taille": 307667,
+  "total": 43977
+ },
+ "si-textile": {
+  "url": "https://api.si.edu/openaccess/api/v1.0/search?q=textile%20AND%20unit_code%3A%22CHNDM%22%20AND%20online_media_type%3A%22Images%22&rows=10&api_key=DEMO_KEY",
+  "code": 200,
+  "taille": 61907,
+  "total": 12288,
+  "exemples": [
+   "Textile",
+   "Textile",
+   "Textile",
+   "Textile",
+   "Textile",
+   "Textile"
+  ]
+ },
+ "si-sidewall": {
+  "url": "https://api.si.edu/openaccess/api/v1.0/search?q=sidewall%20AND%20unit_code%3A%22CHNDM%22%20AND%20online_media_type%3A%22Images%22&rows=10&api_key=DEMO_KEY",
+  "code": 200,
+  "taille": 237870,
+  "total": 1955,
+  "exemples": [
+   "Sidewall",
+   "Sidewall",
+   "Sidewall",
+   "Sidewall",
+   "Sidewall",
+   "Sidewall and border"
+  ]
+ },
+ "si-chintz": {
+  "url": "https://api.si.edu/openaccess/api/v1.0/search?q=chintz%20AND%20unit_code%3A%22CHNDM%22%20AND%20online_media_type%3A%22Images%22&rows=10&api_key=DEMO_KEY",
+  "code": 200,
+  "taille": 77577,
+  "total": 156,
+  "exemples": [
+   "Chintz fragments",
+   "Chintz panel",
+   "Chintz fragment",
+   "Chintz fragment",
+   "Curtains",
+   "Chintz fragment"
+  ]
+ },
+ "rijks-514": {
+  "url": "https://data.rijksmuseum.nl/search/collection?description=sits",
+  "code": 200,
+  "taille": 7726,
+  "debut": "{\"@context\":\"https://linked.art/ns/v1/search.json\",\"id\":\"https://data.rijksmuseum.nl/search/collection?description=sits\",\"type\":\"OrderedCollectionPage\",\"partOf\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?description=sits\",\"type\":\"OrderedCollection\",\"totalItems\":131,\"first\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?description=sits\",\"type\":\"OrderedCollectionPage\"},\"last\":{\"id\":"
+ },
+ "rijks-749": {
+  "url": "https://data.rijksmuseum.nl/search/collection?type=textile",
+  "code": 200,
+  "taille": 7750,
+  "debut": "{\"@context\":\"https://linked.art/ns/v1/search.json\",\"id\":\"https://data.rijksmuseum.nl/search/collection?type=textile\",\"type\":\"OrderedCollectionPage\",\"partOf\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?type=textile\",\"type\":\"OrderedCollection\",\"totalItems\":262,\"first\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?type=textile\",\"type\":\"OrderedCollectionPage\"},\"last\":{\"id\":\"https://dat"
+ },
+ "rijks-51": {
+  "url": "https://data.rijksmuseum.nl/search/collection?title=sits&imageAvailable=true",
+  "code": 200,
+  "taille": 5413,
+  "debut": "{\"@context\":\"https://linked.art/ns/v1/search.json\",\"id\":\"https://data.rijksmuseum.nl/search/collection?title=sits&imageAvailable=true\",\"type\":\"OrderedCollectionPage\",\"partOf\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?title=sits&imageAvailable=true\",\"type\":\"OrderedCollection\",\"totalItems\":70,\"first\":{\"id\":\"https://data.rijksmuseum.nl/search/collection?title=sits&imageAvailable=true\",\"typ"
+ },
+ "paris-site": {
+  "url": "https://www.parismuseescollections.paris.fr/fr/recherche/type/oeuvre?keys=toile%20de%20Jouy",
+  "code": 200,
+  "taille": 822714,
+  "resultats": [],
+  "open_content": 13,
+  "cc0": 0
+ },
+ "paris-site-indienne": {
+  "url": "https://www.parismuseescollections.paris.fr/fr/recherche/type/oeuvre?keys=indienne",
+  "code": 200,
+  "taille": 822471,
+  "resultats": [],
+  "cc0": 0
+ },
+ "paris-api": {
+  "url": "https://apicollections.parismusees.paris.fr/graphql",
+  "code": 200,
+  "taille": 134,
+  "debut": "{\"errors\":[{\"message\":\"GraphQL Request must include at least one of those two parameters: \\u0022query\\u0022 or \\u0022queryId\\u0022\"}]}"
+ },
+ "mkg-site": {
+  "url": "https://sammlungonline.mkg-hamburg.de/de/search?s=Kattun",
+  "code": 200,
+  "taille": 92568,
+  "debut_titre": [
+   "Sammlung | MK&amp;G"
+  ],
+  "cc0": 0,
+  "public domain": 1
+ },
+ "mkg-site-textil": {
+  "url": "https://sammlungonline.mkg-hamburg.de/de/search?s=Textil",
+  "code": 200,
+  "taille": 92568,
+  "treffer": [
+   "600.000 ",
+   "200.000 "
+  ],
+  "cc0": 0
+ },
+ "mia-textile": {
+  "url": "https://search.artsmia.org/textile%20public_access%3A1%20rights_type%3A%22Public%20Domain%22?size=6",
+  "code": 200,
+  "taille": 33393,
+  "total": {
+   "value": 298,
+   "relation": "eq"
+  },
+  "exemples": [
+   "Textile panel",
+   "Textile",
+   "Textile",
+   "Textile",
+   "Textile",
+   "Textile"
+  ]
+ },
+ "europeana-chintz": {
+  "url": "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=10&reusability=open&media=true&qf=TYPE:IMAGE&query=chintz&rights=http%3A//creativecommons.org/publicdomain/zero/1.0/%2A&rights=http%3A//creativecommons.org/publicdomain/mark/1.0/%2A",
+  "code": 200,
+  "taille": 41432,
+  "total": 165,
+  "fournisseurs": [
+   "Army Museum",
+   "Blekinge Museum",
+   "Museum of Gothenburg",
+   "Naturalis Biodiversity Center",
+   "Rijksmuseum"
+  ]
+ },
+ "europeana-indienne": {
+  "url": "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=10&reusability=open&media=true&qf=TYPE:IMAGE&query=indienne&rights=http%3A//creativecommons.org/publicdomain/zero/1.0/%2A&rights=http%3A//creativecommons.org/publicdomain/mark/1.0/%2A",
+  "code": 200,
+  "taille": 66751,
+  "total": 209,
+  "fournisseurs": [
+   "Art Museum of Estonia",
+   "Europeana 1914-1918",
+   "Herzog August Library",
+   "IMSLP/Petrucci Music Library",
+   "Mobilier National Collections",
+   "Palais Galliera - Musée de la Mode de la Ville de Paris",
+   "Rijksmuseum"
+  ]
+ },
+ "europeana-Kattun": {
+  "url": "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=10&reusability=open&media=true&qf=TYPE:IMAGE&query=Kattun&rights=http%3A//creativecommons.org/publicdomain/zero/1.0/%2A&rights=http%3A//creativecommons.org/publicdomain/mark/1.0/%2A",
+  "code": 200,
+  "taille": 65772,
+  "total": 517,
+  "fournisseurs": [
+   "Badisches Landesmuseum Karlsruhe",
+   "Dalarnas Museum",
+   "Deutsche Fotothek",
+   "Nationalmuseum Sweden",
+   "Nordic Museum Foundation",
+   "Norrbottens Museum",
+   "Sörmland Museum"
+  ]
+ },
+ "europeana-sits": {
+  "url": "https://api.europeana.eu/record/v2/search.json?wskey=api2demo&rows=10&reusability=open&media=true&qf=TYPE:IMAGE&query=sits&rights=http%3A//creativecommons.org/publicdomain/zero/1.0/%2A&rights=http%3A//creativecommons.org/publicdomain/mark/1.0/%2A",
+  "code": 200,
+  "taille": 19027,
+  "total": 7525,
+  "fournisseurs": [
+   "Army Museum"
+  ]
+ },
+ "nga-opendata": {
+  "url": "https://api.github.com/repos/NationalGalleryOfArt/opendata/contents/data",
+  "code": 200,
+  "taille": 14110,
+  "fichiers": [
+   "alternative_identifiers.csv",
+   "constituents.csv",
+   "constituents_altnames.csv",
+   "constituents_text_entries.csv",
+   "locations.csv",
+   "object_associations.csv",
+   "objects.csv",
+   "objects_constituents.csv",
+   "objects_dimensions.csv",
+   "objects_historical_data.csv",
+   "objects_terms.csv",
+   "objects_text_entries.csv",
+   "preferred_locations.csv",
+   "preferred_locations_tms_locations.csv",
+   "published_images.csv"
+  ]
+ },
+ "lacma-site": {
+  "url": "https://collections.lacma.org/search/site/textile",
+  "code": 404,
+  "taille": 19993
+ },
+ "yale-lux": {
+  "url": "https://lux.collections.yale.edu/api/search/item?q=%7B%22text%22%3A%20%22chintz%22%7D",
+  "code": 403,
+  "taille": 919
+ }
+}

@@ -1,0 +1,1795 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643399887910-1643399893549-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1915-5-6-a",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1915"
+              }
+            ],
+            "name": [
+              {
+                "label": "Manufacturer",
+                "content": "Cheney Brothers, South Manchester, Connecticut, USA"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Reproduction textile with an adapted design from a sixteenth century textile. Pattern has interlacing bands forming ogives that frame a central pomegranate and surrounding pomegranate buds."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Cheney Brothers"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1915-5-6-a"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk Technique: compound satin weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 63.6 × 64.5 cm (25 1/16 × 25 3/8 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1910s"
+            ],
+            "name": [
+              "Cheney Brothers"
+            ],
+            "place": [
+              "USA"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4e9915229-c439-4927-bd89-27f00e6e8895",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1915-5-6-a",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/20825",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-37ACBA834E7E2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc943220ede-890d-4526-9997-249bb3524edd",
+                  "type": "Images",
+                  "idsId": "CHSDM-37ACBA834E7E2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6910,
+                  "height": 6749,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-37ACBA834E7E2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-37ACBA834E7E2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Reproduction textile with an adapted design from a sixteenth century textile. Pattern has interlacing bands forming ogives that frame a central pomegranate and surrounding pomegranate buds.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-37ACBA834E7E2-000001.jpg",
+                      "width": 6910,
+                      "height": 6749,
+                      "dimensions": "6910x6749"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-37ACBA834E7E2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-37ACBA834E7E2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "1d848ce7cda4d975e4cd94e06029ebd106a32667",
+        "docSignature": "71a790c428f48f5fc886c66dbf8b977f",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399893550-0",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1915-5-7-a",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1915"
+              }
+            ],
+            "name": [
+              {
+                "label": "Manufacturer",
+                "content": "Cheney Brothers, South Manchester, Connecticut, USA"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Reproduction textile in design inspired by a textile in the Cooper Union Museum collection. Pattern has broad vertical stripes of a fine checkerboard pattern alternating with stripes of flowers and bells."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Cheney Brothers"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1915-5-7-a"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk Technique: compound satin weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 65.5 × 63.4 cm (25 13/16 × 24 15/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1920s",
+              "1910s"
+            ],
+            "name": [
+              "Cheney Brothers"
+            ],
+            "place": [
+              "USA"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4ee49085f-f61f-4ec3-9552-c25075c27a5f",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1915-5-7-a",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/20826",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-4480E06E522B2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc939b55810-e8dd-4546-94cd-a356170c7bdc",
+                  "type": "Images",
+                  "idsId": "CHSDM-4480E06E522B2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6800,
+                  "height": 6850,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-4480E06E522B2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-4480E06E522B2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Reproduction textile in design inspired by a textile in the Cooper Union Museum collection. Pattern has broad vertical stripes of a fine checkerboard pattern alternating with stripes of flowers and bells.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4480E06E522B2-000001.jpg",
+                      "width": 6800,
+                      "height": 6850,
+                      "dimensions": "6800x6850"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4480E06E522B2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4480E06E522B2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "e4e23d775c1a5232c76cde35cf1c53b04186c61e",
+        "docSignature": "c20c44e91d0380f624d6b3601ab4d30f",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399986996-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_2016-35-103",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1915–1920"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "Length of textile printed in the Arts & Crafts style, with a full moon seen through pine trees, shows the influence of Japanese design."
+              }
+            ],
+            "place": [
+              {
+                "label": "designed in",
+                "content": "USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "American Textile History Museum Collection"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "2016-35-103"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: block printed on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 76.2 × 88.9 cm (30 × 35 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1920s",
+              "1910s"
+            ],
+            "place": [
+              "USA"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq468891d3c-aecf-45c3-ab48-de48f617b994",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_2016-35-103",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/288399",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-288399_01-000003",
+                  "guid": "http://n2t.net/ark:/65665/vc90b10b134-eaac-482d-9b16-9c1523d6664e",
+                  "type": "Images",
+                  "idsId": "CHSDM-288399_01-000003",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 5879,
+                  "height": 5056,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288399_01-000003",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288399_01-000003",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Length of textile printed in the Arts & Crafts style, with a full moon seen through pine trees, shows the influence of Japanese design.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288399_01-000003.tif",
+                      "width": 5879,
+                      "height": 5056,
+                      "dimensions": "5879x5056"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288399_01-000003.jpg",
+                      "width": 5879,
+                      "height": 5056,
+                      "dimensions": "5879x5056"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288399_01-000003_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288399_01-000003_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "4b23ca8a412bbbfb91cda1a53fbaafbc5939a063",
+        "docSignature": "e9bf367a89b907bab90cf6022b3eabea",
+        "timestamp": "1663784559",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399986984-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_2016-35-80",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1899"
+              }
+            ],
+            "name": [
+              {
+                "label": "Manufacturer",
+                "content": "Hamilton Print Works, Lowell, MA, founded 1828"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "Commemorative textile with a depiction of the short-lived Dewey Arch and colonnade. Arch and colonnade are in white on a dark green ground. Diamond-shaped patchwork pattern in red, yellow, pink, and dark ground surround central arch motif. This textile was part of Hamilton's Zaza Quilting Line."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Lowell, Massachusetts, USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "American Textile History Museum Collection"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "2016-35-80"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: printed Label: printed cotton"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 35.6 × 77.5 cm (14 in. × 30 1/2 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1890s"
+            ],
+            "name": [
+              "Hamilton Print Works"
+            ],
+            "place": [
+              "USA",
+              "Lowell",
+              "Massachusetts"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                },
+                "L3": {
+                  "type": "State",
+                  "content": "Massachusetts"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Lowell"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq41e9789f1-5548-47ad-beed-8b8532064723",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_2016-35-80",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/288376",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-288376_01-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9dcc64baa-e667-4284-8dd8-2e14d420e285",
+                  "type": "Images",
+                  "idsId": "CHSDM-288376_01-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 7252,
+                  "height": 3505,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288376_01-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288376_01-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Commemorative textile with a depiction of the short-lived Dewey Arch and colonnade. Arch and colonnade are in white on a dark green ground. Diamond-shaped patchwork pattern in red, yellow, pink, and dark ground surround central arch motif. This textile was part of Hamilton's Zaza Quilting Line.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288376_01-000001.tif",
+                      "width": 7252,
+                      "height": 3505,
+                      "dimensions": "7252x3505"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288376_01-000001.jpg",
+                      "width": 7252,
+                      "height": 3505,
+                      "dimensions": "7252x3505"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288376_01-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288376_01-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "89ac7d8b77d5b85713795c58d7b9f153002cfca5",
+        "docSignature": "292aa80996c41a389fbb717208889d22",
+        "timestamp": "1663784559",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399893546-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1915-5-11-a",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1915"
+              }
+            ],
+            "name": [
+              {
+                "label": "Manufacturer",
+                "content": "Cheney Brothers, South Manchester, Connecticut, USA"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Dark blue and beige reproduction textile inspired by a sixteenth century example in the Cooper Union Museum collection. Design has a large-scale symmetrical design of a flower-filled urn surrounded by scrolling bands with perching peacocks. Warp threads vary slightly in tone to simulate the appearance of a historical textile."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Cheney Brothers"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1915-5-11-a"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk Technique: compound satin weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 63.3 × 63 cm (24 15/16 × 24 13/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1920s",
+              "1910s"
+            ],
+            "name": [
+              "Cheney Brothers"
+            ],
+            "place": [
+              "USA"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4b717959a-6d91-4435-b534-8079c7371ee8",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1915-5-11-a",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/20819",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-7311044C4B522-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc936ce0138-85df-4427-b2dc-3e5251f7a4cf",
+                  "type": "Images",
+                  "idsId": "CHSDM-7311044C4B522-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6855,
+                  "height": 6734,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-7311044C4B522-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-7311044C4B522-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Dark blue and beige reproduction textile inspired by a sixteenth century example in the Cooper Union Museum collection. Design has a large-scale symmetrical design of a flower-filled urn surrounded by scrolling bands with perching peacocks. Warp threads vary slightly in tone to simulate the appearance of a historical textile.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7311044C4B522-000001.jpg",
+                      "width": 6855,
+                      "height": 6734,
+                      "dimensions": "6855x6734"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7311044C4B522-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-7311044C4B522-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "a2f2f0a855ddc446473da6dce62b9fcf769aefa5",
+        "docSignature": "210e5d345c47fc3d2da9ec85e3ba9c11",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399902540-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1931-4-21",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1870"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Textile panel woven for a chair seat and back. Design in brocaded multicolored silk of floral and ribbon wreath enclosing a bouquet of realistically-worked flowers. Ground of cream-colored vertically-striped satin."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Eleanor and Sarah Hewitt, from the textile collection of Mrs. Abram Stevens Hewitt"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1931-4-21"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk Technique: compound satin weave with supplementary weft (brocaded)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 145.4 × 60.8 cm (57 1/4 × 23 15/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1860s",
+              "1870s"
+            ],
+            "place": [
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4724e2585-21d9-47a5-b941-6931d3bbb034",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1931-4-21",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/44445",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-0D408D2CDE922-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc97b55a01b-350b-4866-a1b2-696ad416e3b1",
+                  "type": "Images",
+                  "idsId": "CHSDM-0D408D2CDE922-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6634,
+                  "height": 10317,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-0D408D2CDE922-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-0D408D2CDE922-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Textile panel woven for a chair seat and back. Design in brocaded multicolored silk of floral and ribbon wreath enclosing a bouquet of realistically-worked flowers. Ground of cream-colored vertically-striped satin.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-0D408D2CDE922-000001.jpg",
+                      "width": 6634,
+                      "height": 10317,
+                      "dimensions": "6634x10317"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-0D408D2CDE922-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-0D408D2CDE922-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "75f615cb7ed15ff7c4a9cb5513abaea5d8d024d3",
+        "docSignature": "b9852a60f0e257cad7d55c0cd01c76d5",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399986984-0",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_2016-35-79",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1876"
+              }
+            ],
+            "name": [
+              {
+                "label": "Manufacturer",
+                "content": "Pacific Mills"
+              },
+              {
+                "label": "Designer",
+                "content": "H. Topham"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "Woven textile serves as a commemorative of the US centennial while promoting the textile manufacturer Pacific Mills of Lawrence, Massachusetts. Woven in black and cream, the composition has a bold graphic quality and depicts a broadly soaring eagle over a large modern factory enclosed in curvilinear frame. In between each factory is a plaque identifying the Treasurer, Agent and Selling Agent of the business."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Lawrence, Massachusetts, USA"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "American Textile History Museum Collection, gift of George Gelineau"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "2016-35-79"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "woven textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: silk, cotton, wool Technique: jacquard woven"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 61 × 63.5 cm (24 × 25 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1870s"
+            ],
+            "name": [
+              "Topham, H.",
+              "Pacific Mills"
+            ],
+            "place": [
+              "USA",
+              "Massachusetts",
+              "Lawrence"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "USA"
+                },
+                "L3": {
+                  "type": "State",
+                  "content": "Massachusetts"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Lawrence"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4eb79a9e6-f11b-4475-b3b7-e533a6850bf4",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_2016-35-79",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/288375",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-288375_01-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9daacdb01-d962-4597-bdf6-585b9c30b9e0",
+                  "type": "Images",
+                  "idsId": "CHSDM-288375_01-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 4976,
+                  "height": 4771,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288375_01-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-288375_01-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Woven textile serves as a commemorative of the US centennial while promoting the textile manufacturer Pacific Mills of Lawrence, Massachusetts. Woven in black and cream, the composition has a bold graphic quality and depicts a broadly soaring eagle over a large modern factory enclosed in curvilinear frame. In between each factory is a plaque identifying the Treasurer, Agent and Selling Agent of the business.",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288375_01-000001.tif",
+                      "width": 4976,
+                      "height": 4771,
+                      "dimensions": "4976x4771"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288375_01-000001.jpg",
+                      "width": 4976,
+                      "height": 4771,
+                      "dimensions": "4976x4771"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288375_01-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-288375_01-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "ed6e257716dd9c45349de87e8cad78cf25e7657e",
+        "docSignature": "09cfefdea45abecb942683b29a956960",
+        "timestamp": "1663784559",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399916138-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1944-22-5-b",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1789–1791"
+              }
+            ],
+            "name": [
+              {
+                "label": "Designer",
+                "content": "Jean-Baptiste Huet, French, 1745 – 1811"
+              },
+              {
+                "label": "Manufacturer",
+                "content": "Oberkampf & Cie., Jouy-en-Josas, France, 1759–1815"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "A textile fragment with red printed on white ground showing merchant ships, a cock standing on a lion, and tree branches."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Jouy, France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1944-22-5-b"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: printed by engraved copper plate on plain weave"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1780s",
+              "1790s"
+            ],
+            "name": [
+              "Huet, Jean-Baptiste",
+              "Oberkampf & Cie."
+            ],
+            "place": [
+              "Jouy",
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Jouy"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq41f9a8950-6fc6-492a-9bad-28715653c11b",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1944-22-5-b",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/79287",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-D6AC671FAF5B2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9af4c5b57-f8cc-49c8-904f-ca972e7fd68c",
+                  "type": "Images",
+                  "idsId": "CHSDM-D6AC671FAF5B2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 2217,
+                  "height": 8081,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-D6AC671FAF5B2-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-D6AC671FAF5B2-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "A textile fragment with red printed on white ground showing merchant ships, a cock standing on a lion, and tree branches.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D6AC671FAF5B2-000001.jpg",
+                      "width": 2217,
+                      "height": 8081,
+                      "dimensions": "2217x8081"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D6AC671FAF5B2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-D6AC671FAF5B2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0ae8f40aae0971cd99f5fc4e980307cffc02f73f",
+        "docSignature": "517eabdbd4100f1ad3de10b03876c552",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399913203-0",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1940-102-2",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1780–1790"
+              }
+            ],
+            "name": [
+              {
+                "label": "Designer",
+                "content": "Jean-Baptiste Huet, French, 1745 – 1811"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Textile printed with red on white showing country scenes."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Jouy, France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Given by Miss Marian Hague | From the collection of Frances Morris and Mabel Choate."
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1940-102-2"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: printed by engraved copper plate on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 43 × 67 cm (16 15/16 × 26 3/8 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1780s",
+              "1790s"
+            ],
+            "name": [
+              "Huet, Jean-Baptiste"
+            ],
+            "place": [
+              "Jouy",
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Jouy"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4469f11a2-9dca-41c1-8c6a-d9891c536394",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1940-102-2",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/72367",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-E036F4707A182-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9e573d989-608f-4120-8c39-591564f04c10",
+                  "type": "Images",
+                  "idsId": "CHSDM-E036F4707A182-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 6247,
+                  "height": 4081,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-E036F4707A182-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-E036F4707A182-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Textile printed with red on white showing country scenes.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-E036F4707A182-000001.jpg",
+                      "width": 6247,
+                      "height": 4081,
+                      "dimensions": "6247x4081"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-E036F4707A182-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-E036F4707A182-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "28434e34d1eed8e10af5aee8272fe27cf51e7aeb",
+        "docSignature": "73d247a27cd95ed33259ec4c09c92bb2",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      },
+      {
+        "id": "ld1-1643399887910-1643399916135-1",
+        "title": "Textile",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1944-22-1",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1780"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Textile printed in brown on white showing scenes from the story of Don Quixote."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Nantes, France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Textiles Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Purchased, in memory of Mrs. John Innes Kane"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1944-22-1"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "printed, dyed & painted textiles"
+              },
+              {
+                "label": "Type",
+                "content": "Textile"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Medium: cotton Technique: printed by engraved copper plate on plain weave"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H x W: 176 x 93.7 cm (5 ft. 9 5/16 in. x 36 7/8 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1770s",
+              "1780s"
+            ],
+            "place": [
+              "Nantes",
+              "France"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Nantes"
+                }
+              }
+            ],
+            "object_type": [
+              "Textiles"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq464ea0124-bed1-4d1a-98a2-ec3daf1d4239",
+            "title": {
+              "label": "Title",
+              "content": "Textile"
+            },
+            "record_ID": "chndm_1944-22-1",
+            "unit_code": "CHNDM",
+            "title_sort": "TEXTILE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/79281",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-10E916A865372-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc934ae5081-a332-4f46-9c92-bdca157e8b8d",
+                  "type": "Images",
+                  "idsId": "CHSDM-10E916A865372-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "width": 7314,
+                  "height": 7746,
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-10E916A865372-000001",
+                  "maxsize": 0,
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-10E916A865372-000001",
+                  "altTextAccessibility": "",
+                  "extDescrAccessibility": "Textile printed in brown on white showing scenes from the story of Don Quixote.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-10E916A865372-000001.jpg",
+                      "width": 7314,
+                      "height": 7746,
+                      "dimensions": "7314x7746"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-10E916A865372-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-10E916A865372-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "37e4b1e7d1cc27c1df9a648112c1d0df233cb154",
+        "docSignature": "54ffc5d0ec17bda21602783c49d5c353",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1792839561",
+        "version": "1792834040"
+      }
+    ],
+    "facets": {},
+    "rowCount": 12288,
+    "message": "content found"
+  }
+}

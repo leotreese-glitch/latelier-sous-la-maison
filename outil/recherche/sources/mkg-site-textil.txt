@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" prefix="og: https://ogp.me/ns#" itemscope="">
+  <head>
+    <meta charset="utf-8" />
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://piwik.outermedia.de/piwik/" : "https://piwik.outermedia.de/piwik/");_paq.push(["setSiteId", "22"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+<meta name="description" content="Übersichtsseite | Museum für Kunst &amp; Gewerbe Hamburg" />
+<link rel="canonical" href="https://www.mkg-hamburg.de/sammlung" />
+<meta name="generator" content="Drupal" />
+<link rel="icon" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/favicon.ico" />
+<link rel="icon" sizes="16x16" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/favicon-16x16.png" />
+<link rel="icon" sizes="32x32" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="192x192" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/android-icon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/apple-touch-icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.mkg-hamburg.de/themes/custom/mkg/images/favicons/apple-touch-icon.png" />
+<meta property="og:site_name" content="MK&amp;G" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.mkg-hamburg.de/sammlung" />
+<meta property="og:title" content="Sammlung" />
+<meta property="og:description" content="Übersichtsseite | Museum für Kunst &amp; Gewerbe Hamburg" />
+<meta property="og:image" content="https://www.mkg-hamburg.de/themes/custom/mkg/images/placeholder.jpg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="599" />
+<meta property="og:image:alt" content="Das Museumgebäude von schräg vorne" />
+<meta property="article:published_time" content="2024-07-04T13:32:05+0200" />
+<meta property="article:modified_time" content="2025-02-18T14:52:57+0100" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>var _paq = _paq || [];
+var consentGiven = false;
+var complianceCookieName = 'mkg_compliance';
+var cookieMatch = document.cookie.match(new RegExp('(^| )' + complianceCookieName + '=([^;]+)'));
+
+_paq.push(['requireCookieConsent']);
+
+if(cookieMatch)
+{
+  var cookieValue = JSON.parse(decodeURIComponent(cookieMatch[2]));
+
+  if (cookieValue === 2) {  var complianceCategoryCookieName = 'mkg_compliance-categories';
+  var categoryCookieMatch = document.cookie.match(new RegExp('(^| )' + complianceCategoryCookieName + '=([^;]+)'));
+
+  if(categoryCookieMatch)
+  {
+    var selectedCategories = JSON.parse(decodeURIComponent(categoryCookieMatch[2]));
+    if (selectedCategories.indexOf("statistics") !== -1) {
+      consentGiven = true;
+    }
+  }  }
+}
+
+if (consentGiven) {
+  _paq.push(['setCookieConsentGiven']);
+} else {
+  _paq.push(['disableCookies']);
+}
+</script>
+<link rel="alternate" hreflang="de" href="https://www.mkg-hamburg.de/sammlung" />
+<link rel="alternate" hreflang="en" href="https://www.mkg-hamburg.de/en/collection" />
+
+    <title>Sammlung | MK&amp;G</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_034IpNUvmeO4e-407kw4NuL7hGj96tK08BBefvGwIs0.css?delta=0&amp;language=de&amp;theme=mkg&amp;include=eJxtzUsOwyAMBNALQTgSMsR8hMHIhkVu36hK1S66nDcaTWRuFX3ksXAsH4hjQ3HxzfZh-7DB7eNn0CdVGBHdP_QBBE1v2WXiAGR1XVRHNpxSvevCW9T9Bp9YOqx1v0wQyAKzqDtlT6DjK8cecweqWvA0eunC7gIovgAhKE87" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_3RDRjuSiozVEKFTPRegCo7KgPWJLBseWMXRprMHepVE.css?delta=1&amp;language=de&amp;theme=mkg&amp;include=eJxtzUsOwyAMBNALQTgSMsR8hMHIhkVu36hK1S66nDcaTWRuFX3ksXAsH4hjQ3HxzfZh-7DB7eNn0CdVGBHdP_QBBE1v2WXiAGR1XVRHNpxSvevCW9T9Bp9YOqx1v0wQyAKzqDtlT6DjK8cecweqWvA0eunC7gIovgAhKE87" />
+
+    
+  </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Direkt zum Inhalt
+    </a>
+    <div data-sitewide-alert aria-live="polite"></div>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="background-base page">
+      
+
+
+<header class="site-header uninitialized outer-wrapper outer-wrapper--full" role="banner">
+  <div class="site-header__logo">
+      <div id="block-logo">
+    
+        
+      
+<div class="site-branding">
+              <a href="/" class="site-branding__logo site-branding__logo--desktop logo" rel="home" title="Startseite"><svg class="icon icon--mkg-logo" width="517" height="91"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#mkg-logo"/></svg></a>
+                <a href="/" class="site-branding__logo site-branding__logo--mobile logo" rel="home" title="Startseite"><svg class="icon icon--mkg-logo-mobile" width="122" height="34"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#mkg-logo-mobile"/></svg></a>
+      </div>
+  </div>
+
+  </div>
+      <div class="site-header__language-switcher">
+        <div class="language-switcher-language-url" id="block-mkg-language-switcher" role="navigation">
+    
+        
+          
+  
+<div class="links language-switcher">
+  <nav class="language-switcher__items"><a href="/sammlung?s=Textil" data-drupal-language="de" data-drupal-link-query="{&quot;s&quot;:&quot;Textil&quot;}" data-drupal-link-system-path="node/1073" class="language-switcher__item-link language-switcher__item-link--de language-link is-active" hreflang="de" aria-current="page"><span class="language-switcher__language">DE</span></a><a href="/en/collection?s=Textil" data-drupal-language="en" data-drupal-link-query="{&quot;s&quot;:&quot;Textil&quot;}" data-drupal-link-system-path="node/1073" class="language-switcher__item-link language-switcher__item-link--en language-link" hreflang="en"><span class="language-switcher__language">EN</span></a><a href="https://www.mkg-hamburg.de/barrierefreiheit#toc-gebärden" class="Gebärdensprache language-switcher__item-link language-switcher__item-link--menu_link_content:3d044b8b-1d5b-4780-a19e-0e9864a58da0"><span class="language-switcher__language">Gebärdensprache</span></a><a href="/leichte-sprache" class="Leichte-Sprache language-switcher__item-link language-switcher__item-link--menu_link_content:46dd40e2-e3b4-45cc-9164-10eab82c59ed" data-drupal-link-system-path="node/13"><span class="language-switcher__language">Leichte Sprache</span></a></nav>
+</div>
+
+      </div>
+
+    </div>
+        <div class="site-header__opening-info">
+        <div id="block-mkg-office-hours">
+    
+        
+          <div js-office-hours-status-data="{&quot;entity_type&quot;:&quot;block_content&quot;,&quot;entity_id&quot;:&quot;3&quot;,&quot;field_name&quot;:&quot;field_office_hours&quot;,&quot;langcode&quot;:&quot;de&quot;,&quot;view_mode&quot;:&quot;full&quot;,&quot;request_time&quot;:1793381271}" class="field field--name-field-office-hours field--label-above">      <div class="field__label">Öffnungszeiten heute</div>
+      <meta property="openingHours" itemprop="openingHours" content="Di-Mi 10:00-18:00"/>
+  <meta property="openingHours" itemprop="openingHours" content="Do 10:00-21:00"/>
+  <meta property="openingHours" itemprop="openingHours" content="Fr-So 10:00-18:00"/>
+  <meta property="openingHours" itemprop="openingHours" content="3161973_SamstagEurope/Berlin3131Europe/BerlinSat, 03 Mar 1973 10:46:41 +0100 Closed"/>
+  <meta property="openingHours" itemprop="openingHours" content="3162026_SamstagEurope/Berlin3131Europe/BerlinSat, 31 Oct 2026 00:00:00 +0100 10:00-18:00"/>
+<div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-slots">10:00 - 18:00</span><span><br /></span></div></div></div>
+      </div>
+
+    </div>
+    <div class="site-header__buttons">
+            <button class="site-header__nav-toggle icon-button icon-button--menu" aria-haspopup="menu" aria-label="Hauptnavigation">  <svg class="icon-button__icon icon icon--menu" width="40" height="40"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#menu"/></svg>      <svg class="icon-button__active-icon icon icon--menu-close" width="40" height="40"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#menu-close"/></svg>    </button>
+            <a href="/suche" class="site-header__search icon-button icon-button--search" aria-label="Suche">  <svg class="icon-button__icon icon icon--search" width="40" height="40"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#search"/></svg>    </a>
+      </div>
+  <div class="site-header__menu background-base">
+    <div class="site-header__primary-nav">
+        
+<nav id="block-mkg-primary-navigation" data-region="header_primary_nav" aria-label="Hauptnavigation">
+  
+
+  
+            <ul class="font-h1-caps main-menu">
+                                <li class="main-menu__item main-menu__item--lvl-0">
+                          <div class="main-menu__item-header">
+                                  <a href="/besuch" class="main-menu__item-link main-menu__item-link--lvl-0" data-drupal-link-system-path="node/2">Besuchen</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-0">
+                          <div class="main-menu__item-header">
+                                  <a href="/ausstellungen" class="main-menu__item-link main-menu__item-link--lvl-0" data-drupal-link-system-path="node/4">Ausstellungen</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-0">
+                          <div class="main-menu__item-header">
+                                  <a href="/veranstaltungen" class="main-menu__item-link main-menu__item-link--lvl-0" data-drupal-link-system-path="search/events">Kalender</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-0 main-menu__item--active-trail">
+                          <div class="main-menu__item-header">
+                                  <a href="/sammlung" class="main-menu__item-link main-menu__item-link--lvl-0" data-drupal-link-system-path="node/1073">Sammlung</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-0 main-menu__item--large-gap">
+                          <div class="main-menu__item-header">
+                                  <a href="/entdecken" class="main-menu__item-link main-menu__item-link--lvl-0" data-drupal-link-system-path="node/1482">Entdecken</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-0 main-menu__item--expanded">
+                          <div class="main-menu__item-header">
+                                  <a href="" class="main-menu__item-link main-menu__item-link--lvl-0">Über uns</a>
+                                                                                </div>
+                                      
+
+            <ul class="main-menu__sub-menu main-menu__sub-menu--lvl-1">
+                                <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/das-mkg" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/41">Das MK&amp;G</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/projekte" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/24">Projekte</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/forschen-und-bewahren" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/23">Forschen &amp; Bewahren</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/freunde-und-foerderer" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/21">Fördern</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/mieten" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/688">Mieten</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/team" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/19">Team</a>
+                                              </div>
+                                  </li>
+                            <li class="main-menu__item main-menu__item--lvl-1">
+                          <div class="main-menu__item-header">
+                                  <a href="/jobs" class="main-menu__item-link main-menu__item-link--lvl-1" data-drupal-link-system-path="node/20">Jobs</a>
+                                              </div>
+                                  </li>
+              </ul>
+                        </li>
+                            <li class="main-menu__item main-menu__item--lvl-0">
+                          <div class="main-menu__item-header">
+                                  <a href="https://media.mkg-hamburg.de/portals/presse/" target="_blank" class="main-menu__item-link main-menu__item-link--lvl-0">Presse</a>
+                                              </div>
+                                  </li>
+              </ul>
+  
+</nav>
+
+    </div>
+    <div class="site-header__secondary-nav">
+      
+    </div>
+  </div>
+  <div class="site-header__shortcuts">
+      
+<nav id="block-mkg-secondary-navigation" aria-label="Sekundärnavigation">
+  
+
+            <ul class="flex-bar flex-bar--direction-column button-menu">
+                                <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="/besuch" class="button-menu__item-link button button--inverted font-body" data-drupal-link-system-path="node/2">Besuch planen</a>
+                              </div>
+                                  </li>
+                            <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="https://tickets.mkg-hamburg.de/" target="_blank" class="button-menu__item-link button button--inverted font-body">Ticketshop</a>
+                              </div>
+                                  </li>
+              </ul>
+  
+</nav>
+
+  </div>
+  <div class="site-header__contact-info">
+    
+
+<div class="font-body contact-info">
+  <div class="contact-info__name">    <div class="field__item" itemprop="name"><p>Museum für Kunst<br>und Gewerbe Hamburg</p></div>
+</div>
+  <div class="contact-info__address">    <div class="field__item" itemprop="address"><p>Steintorplatz<br>20099 Hamburg</p></div>
+</div>
+  <div class="contact-info__fields">
+      </div>
+</div>
+
+  </div>
+</header>
+  
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+                    <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+      
+                    
+                    
+                <div>
+      <div id="block-mkg-content-full">
+    
+        
+            <article>
+            
+      
+    
+
+  
+<div class="article-header outer-wrapper">
+    <div class="article-header__headline" role="heading" aria-level="1">
+    
+
+<div class="article-header__title heading heading--1-caps font-h1-caps">Sammlung</div>
+      </div>
+    </div>
+
+      <div class="mt-15 tu:mt-45 outer-wrapper">
+    <div id="block-mkg-landing-collection-search-form">
+    
+        
+          <form data-search-id="url_query.collection" data-widget-id="default_search_form" class="search-widget search-form search-form--type-default search-form--widget-default-search-form font-flow-text" method="get" action="/sammlung/online" role="search">
+  
+      <div class="search-form__wrapper">
+      <label class="search-form__term-label visually-hidden" for="default-search-form-term">Geben Sie einen Suchbegriff ein</label>
+              <input class="search-form__term-input input" type="search" name="term" id="default-search-form-term" value="" placeholder="Suchen nach ..."/>
+      
+                    <button class="search-form__submit icon-button icon-button--search" type="submit" value="Suchen">  <svg class="icon-button__icon icon icon--search" width="40" height="40"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#search"/></svg>        <span class="icon-button__text visually-hidden">Suchen</span>
+  </button>
+      <div class="search-form__term-input-focus" role="presentation"></div>
+    </div>
+    
+</form>
+
+      </div>
+
+</div>        <div class="mt-15 tu:mt-45 mb-30 tu:mb-55 outer-wrapper">
+    <div id="block-mkg-landing-collection-quick-start">
+    
+        
+            
+<ul class="field field--name-field-links field--label-hidden list list--tags-row">
+  <li class="field__item">        <a href="/sammlung/online" class="field__item button font-body">Alles (was online ist)</a>
+    </li><li class="field__item">        <a href="/sammlung#NKtIssctrdnBaEvFf6K-ZXsmU91xdCd4XRmtgZa7Jko" class="field__item button font-body">Was nicht online ist</a>
+    </li><li class="field__item">        <a href="/sammlung/online?term=Modefotografie&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Modefotografie</a>
+    </li><li class="field__item">        <a href="/sammlung/online?term=Katze&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Cat Content</a>
+    </li><li class="field__item">        <a href="/sammlung/online?term=Wasser&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Wasser</a>
+    </li><li class="field__item">        <a href="/sammlung/online?term=Hamburg&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Hamburg</a>
+    </li><li class="field__item">        <a href="/sammlung/online?term=Jugendstil&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Jugendstil</a>
+    </li><li class="field__item">        <a href="/sammlung/online?filter%5Biconography%5D%5B0%5D=Interieur&amp;filter%5Bobject%5D%5B0%5D=Mit%20Bild" class="field__item button font-body">Interieur</a>
+    </li></ul>
+
+      </div>
+
+</div>              
+
+
+<div id="n0NrUNUHcgEQl0LqLyiwy1E-gbq97HVM5bqnX2qDK08" class="section outer-wrapper">
+  <div class="section__wrapper">
+                        <div class="section__content">
+        
+<ul class="gap-y flex-grid flex-grid--vertical-gutter list">
+            <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="RCmgYiXNBtvyuRv7QZ5tcXgFIckBCj5-Oeq3Zzo70Zs" aria-labelledby="antike" class="teaser">
+    <a href="/sammlung/antike" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=2UEX7q5_ 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=32wc8oRb 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=M3if2nBJ 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=zA1wC_3x 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=ow2QtpLs 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=ekWMOD7e 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=TIBGJA7H 1x, /sites/default/files/styles/teaser_retina/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=z8qR8dMZ 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/9/1/910ad9cf91c449ca410f1593dc7e1451.jpg.webp?itok=XDESCmdD" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Antike</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="nxtQFcwlVtgaUUlu7bSEsmBxWhOpW2FnpESuJhU5VvQ" aria-labelledby="buchkunst" class="teaser">
+    <a href="/sammlung/buchkunst" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=8SB-ofvT 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=6NoqWN_A 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=l9z9zOLk 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=u2Y3HxGc 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=7iIPvZBO 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=ww_agQEv 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=MrjSNwLq 1x, /sites/default/files/styles/teaser_retina/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=MYsoHyVU 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/8/1/81076ea0ccc2e00ff4e0c4701a0dc059.jpg.webp?itok=qauUwh4D" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Buchkunst</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="zy_60Wlh8E39VvRoSxT-NflWvZqPnm3hGLqV097J3s4" aria-labelledby="europäisches-kunsthandwerk-und-skulptur" class="teaser">
+    <a href="/sammlung/europaeisches-kunsthandwerk-und-skulptur" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=PN5mV1hJ 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=83ktxu-q 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=fqZ3YDiU 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=TjmNG0d6 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=UTH1Ubjl 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=9T9eEsNS 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=3XnpLy8S 1x, /sites/default/files/styles/teaser_retina/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=QWZmceCa 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/2/3/231ba18bda47315fc56540420ffea573.jpg.webp?itok=gzo3CBIw" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Europäisches Kunsthandwerk und Skulptur</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="ecoRGCkecGmKdC8klOYLXP4R2Wy8pKz5J5bFMT6AdUE" aria-labelledby="fotografie-und-neue-medien" class="teaser">
+    <a href="/sammlung/fotografie-und-neue-medien" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=6xyBDxtt 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=65c7SL81 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=0UrpehGY 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=ZO4jUJ0f 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=GUUBS5o- 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=Id7V2SER 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=-4yJvy7A 1x, /sites/default/files/styles/teaser_retina/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=M12bSJxc 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/9/7/9757f57b060d96986aec3bf1c1427553.jpg.webp?itok=_ht74kO0" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Fotografie und neue Medien</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="SEj-DpoJB9Q3oO8tt2dOJm26feNPmvX8BZXaGLubMB0" aria-labelledby="grafik-und-plakat" class="teaser">
+    <a href="/sammlung/grafik-und-plakat" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=Vm29kXmS 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=BUFDyup8 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=yody8efy 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=CefW2OdS 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=9VbKkH6H 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=OrubUi0g 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=rSVnWmqH 1x, /sites/default/files/styles/teaser_retina/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=eMZEFP2k 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/6/3/63f79e735b332664df8554a07c9b0a58.jpg.webp?itok=cqnk4EQ1" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Grafik und Plakat</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="2IDGFBQvQI5DhvcckfZCGQ-S7Ak_mA8JpH6LqamMOMg" aria-labelledby="swana-südwestasien-nordafrika" class="teaser">
+    <a href="/sammlung/swana-suedwestasien-nordafrika" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=LTcV-_Rz 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=IAAHenb1 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=pLpHwJHn 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=3h8ATT6a 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=xxs8sHEn 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=l2hWUtqI 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=q6ObdWzG 1x, /sites/default/files/styles/teaser_retina/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=jl1BRTgh 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/a/6/a607401006a1b5fa15c54c11428fa604.jpg.webp?itok=kWIEkMvI" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">SWANA (Südwestasien Nordafrika)</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="mEQM5jIEz-alsp_EZklHJrxaNjoOrywdxM8omef4FmQ" aria-labelledby="kunstgewerbe-und-design" class="teaser">
+    <a href="/sammlung/kunstgewerbe-und-design" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=yi8RRTd5 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=BcwuMUAj 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=o1KPIXTW 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=Wvt0VS5y 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=Wol2kUJt 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=6mvHYdGu 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=hwupnOSM 1x, /sites/default/files/styles/teaser_retina/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=h5-N5NIi 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/6/8/686c764d97b677f82f6f05afda56969b.jpg.webp?itok=zYMHb8q_" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Kunstgewerbe und Design</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="aUO79EEgvmUw5haDoC119zq-H2LLY1L35JvkRyoCc-A" aria-labelledby="mode-und-textil" class="teaser">
+    <a href="/sammlung/mode-und-textil" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=IYuDIUgC 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=emWuJWBH 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=JmJTdaJA 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=SKte7FEE 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=re9VP7r2 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=k7PnnGG8 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=BW6q3j0r 1x, /sites/default/files/styles/teaser_retina/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=sm8Cgsu3 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/5/d/5d66cca218fb14b641689106dde0e066.jpg.webp?itok=Ml1LAR-P" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Mode und Textil</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="o8xcupZMxD9-2T72iWkcxISfRvvZVefjubY3hyVYylM" aria-labelledby="musikinstrumente" class="teaser">
+    <a href="/sammlung/musikinstrumente" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=NtIRwb-g 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=I9cJrSjZ 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=IiVJFLbV 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=zW4s4yx0 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=yUCLGENF 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=5URkHplb 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=_RcEjBAT 1x, /sites/default/files/styles/teaser_retina/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=8EdUx27n 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/c/1/c1ebb8e961d8f179f83896b2c04340c0.jpg.webp?itok=ObE6hkR5" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Musikinstrumente</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="M73iIJGRLu_keQ2G05p3unQtzN7D9D_8_gYxjel0LyI" aria-labelledby="ostasien" class="teaser">
+    <a href="/sammlung/ostasien" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=skQdQmye 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=bQNhnf6V 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=vPnBtibG 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=b3LkAimK 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=lfYWenBF 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=YvOeI5lz 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=2QyiynWo 1x, /sites/default/files/styles/teaser_retina/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=DsDNX6Jj 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/4/e/4e29801a589b4298ec70391cc3abe448.jpg.webp?itok=wEAgUHQs" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Ostasien</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"></h3>
+</a>
+</article>
+</li>
+  </ul>
+
+      </div>
+            </div>
+</div>
+
+  
+                
+
+
+<div id="NKtIssctrdnBaEvFf6K-ZXsmU91xdCd4XRmtgZa7Jko" class="section outer-wrapper">
+  <div class="section__wrapper">
+                        <div class="section__content">
+        
+<div class="double-column gap grid grid--2-cols">
+    <div class="double-column__column"><div class="double-column__left sticky"><div class="field field--name-field-images field--label-hidden"><div class="field__item"><div class="copyright-wrapper"><div class="copyright-wrapper__subject"><div class="field field--name-field-media-dam-image field--label-hidden"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="/sites/default/files/styles/embedded_desktop/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=_2GPrYMr 1x, /sites/default/files/styles/embedded_desktop_retina/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=xKBv78QL 2x" media="(min-width: 1280px)" type="image/webp" width="930" height="523"/><source srcset="/sites/default/files/styles/teaser_desktop/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=0lT5Bapm 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=OSY080Gw 2x" media="(min-width: 768px)" type="image/webp" width="715" height="402"/><source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=t7kQlKq7 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=BnsSd0gD 2x" media="(min-width: 540px)" type="image/webp" width="810" height="455"/><source srcset="/sites/default/files/styles/teaser/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=sRIb3aFj 1x, /sites/default/files/styles/teaser_retina/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=wMRH2j6P 2x" media="(max-width: 539px)" type="image/webp" width="561" height="315"/><!--[if IE 9]></video><![endif]--><img loading="lazy" width="100" height="56" src="/sites/default/files/styles/thumbnail/public/externals/d/1/d1a2358df99e939c5ee976122e13a407.jpg.webp?itok=fgAWaLpo" /></picture></div></div><div role="presentation" class="copyright-wrapper__info background-black" aria-label="Open image caption"><svg class="copyright-wrapper__info-icon background-black icon icon--info" width="26" height="26"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#info"/></svg></div><div class="copyright-wrapper__wrapped-text z-1 background-black"><div class="copyright-wrapper__text"><div class="inline">Kronleuchter „Tide“, Stuart Haygarth, London, 2018, Treibgut von englischen Stränden und Nylonfäden, Eigentum der Stiftung Hamburger Kunstsammlungen, MK&amp;G</div></div><div role="presentation" class="copyright-wrapper__close" aria-label="Close image caption"><svg class="copyright-wrapper__close-icon background-black icon icon--remove" width="26" height="26"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#remove"/></svg></div></div></div></div></div></div></div><div class="double-column__column"><div class="double-column__right"><div class="field field--name-field-text field--label-hidden text-formatted text-formatted--format-editorial"><h2>Mehr als Highlights</h2><h3>Was hier zu sehen ist und was nicht</h3><div><div class="concealer"><div class="concealer__content"><p dir="ltr"><span>Die Sammlung des MK&amp;G reicht von der Antike bis zur Gegenwart. Auf etwa der Fläche eines Fußballfeldes, verteilt auf drei Etagen, breitet sich die facettenreiche Sammlung aus und bespielt dabei unterschiedliche Kulturräume und viele Epochen. Das, was im Museum ausgestellt ist, umfasst nur einen Bruchteil der tatsächlichen Bestände. Auf der Website können Sie eine Auswahl von ca. 26.000 der über 600.000 Sammlungsobjekte entdecken. Die Daten werden laufend aktualisiert, sodass die Zahl der online verfügbaren Objekte ständig anwächst. Um zu erläutern, wie dieser Prozess abläuft und was zu bedenken ist beim Stöbern in der Sammlung, haben wir einige Fragen und Antworten zusammengestellt.</span></p><p dir="ltr"><strong>Sind alle Objekte online zugänglich?</strong><br><span>Nein, die meisten sind es nicht, denn der Gesamtbestand des MK&amp;G von über 600.000 Objekten wird erst nach und nach digital erfasst. Dies erfolgt rückwirkend, aber auch alle Neuerwerbungen und Schenkungen werden möglichst zeitnah entsprechend bestimmter Richtlinien und Museumsstandards inventarisiert. Momentan haben wir über 200.000 Objekte in der Datenbank dokumentiert. Trotzdem sind in Teilbereichen nicht alle wichtigen Bestände hier repräsentiert, da nicht immer die entsprechenden Nutzungsrechte vorliegen. Die Einholung dieser Rechte ist ein aufwendiger Prozess, bei dem die Rechteinhaber*innen um ihre Erlaubnis gefragt werden müssen, ob die Abbildung vom Objekt online gezeigt werden darf.</span></p><p dir="ltr"><strong>Wie läuft die Digitalisierung der Objekte und ihrer Informationen ab?</strong><br><span>Viele Schritte sind notwendig, damit ein Objekt online präsentiert werden kann. Diese passieren an ganz unterschiedlichen Stellen im Museum und viele Menschen arbeiten dafür zusammen. Filmemacher Dellair Youssef hat die Kuratorin und Leiterin der Sammlungen Ostasien und Islamische Kunst, Wibke Schrape, sowie das Team der Digitalen Inventarisierung bei ihrer Arbeit mit Objekten begleitet. </span><a href="https://youtu.be/9il4Tz2SJ0s?feature=shared" target="_blank" title="Embracing Digital"><span>Der Film bietet Einblicke hinter die Kulissen des MK&amp;G</span></a><span>.</span></p><p dir="ltr"><strong>Welche Informationen kann ich über die Objekte finden?</strong><br><span>Zunächst geht es darum, Basisinformationen zu den Sammlungsobjekten bereitzustellen, wie etwa zur Art des Objekts, seinem Material und der Technik der Herstellung, sowie zu den Urheber*innen und des Entstehungszeitraums, sowie eine Objektabbildung. Wir arbeiten kontinuierlich daran, mehr Informationen zu den Sammlungsobjekten zugänglich zu machen. Bitte beachten Sie, dass die Daten trotzdem unvollständig oder fehlerhaft sein können und eine nicht mehr zeitgemäße oder diskriminierende Sprache aufweisen können. Wenn Sie Fragen, Hinweise und Kommentare zu den Objekten haben, freuen wir uns über eine Nachricht.</span></p><p dir="ltr"><strong>Was kann ich mit den Abbildungen und Daten machen?</strong><br><span>Alle Objektabbildungen, die mit dem Zusatz „Public Domain“ versehen sind, sind gemeinfrei und stehen frei zum Herunterladen zur Verfügung. Diese können privat, wissenschaftlich, kreativ und kommerziell genutzt werden. Weitere </span><a href="/nutzung" title="Nutzung" data-entity-type="node" data-entity-uuid="47b3168e-b748-4ff5-a6a7-71ce8d58a8bc" data-entity-substitution="canonical"><span>Informationen zur Nutzung finden Sie hier</span></a><span>. Das </span><a href="http://studio.mkg-hamburg.de" target="_blank" title="MK&amp;G Studio"><u>MK&amp;G Studio</u></a><span> liefert tolle DIY-Ideen zur kreativen Weiterverwendung.</span></p><p dir="ltr"><strong>Was ist hinsichtlich der Objektinformationen zu bedenken?</strong><br><span>Da Informationen und Metadaten zu Objekten immer von Menschen recherchiert und hinzugefügt werden, übernehmen wir unsere Vorannahmen und Unschärfen auch in der Erfassung der Objekte. Ebenso beeinflussen eurozentrische historische Klassifikationspraktiken die Darstellung der Objektinformationen.</span></p><p dir="ltr"><strong>Wie geht das MK&amp;G mit sensiblen Inhalten um?</strong><br><span>Die Sammlung enthält Objekte mit sensiblen Inhalten. Da sich in neuesten Studien ergeben hat, dass negative Reaktionen durch Triggerwarnungen unverändert bleiben oder gar verstärkt werden, sehen wir von diesen ab.</span></p><div class="concealer__visibility-anchor">&nbsp;</div></div><div class="concealer__visibility-indicator">...</div><p class="concealer__toggle-wrapper"><button class="concealer__toggle"><span class="concealer__toggle-text concealer__toggle-text--expand">Weiterlesen</span><span class="concealer__toggle-text concealer__toggle-text--reduce">Weniger lesen</span></button></p></div></div></div></div></div></div>
+
+      </div>
+            </div>
+</div>
+
+  
+                
+
+
+<div id="CZ2RKWTCheA_x7FRdsM_2gNpzl7H3CIHXZlqMuyDOmA" class="section outer-wrapper">
+  <div class="section__wrapper">
+                        <div class="section__content">
+        
+<div class="double-column gap grid grid--2-cols">
+    <div class="double-column__column"><div class="double-column__left"><div class="field field--name-field-text field--label-hidden text-formatted text-formatted--format-editorial"><h2>Online-Favoriten</h2><p>Dokumentarisch oder dekorativ, Highlights und Überraschungen aus dem Archiv: diese Auswahl zeigt einige Objekte des MK&amp;G, die sich Nutzer*innen letztes Jahr besonders häufig angeschaut haben.</p><p><a class="button" href="/sammlung/online-favoriten" title="Favoriten" data-entity-type="node" data-entity-uuid="9d30e090-a15a-47d8-8c0f-89454380ee66" data-entity-substitution="canonical">Anschauen</a></p></div></div></div><div class="double-column__column"><div class="double-column__right"><div class="field field--name-field-images field--label-hidden"><div class="field__item"><div class="copyright-wrapper"><div class="copyright-wrapper__subject"><div class="field field--name-field-media-dam-image field--label-hidden"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="/sites/default/files/styles/embedded_desktop/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=vrBy7gQM 1x, /sites/default/files/styles/embedded_desktop_retina/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=7dnF9nz9 2x" media="(min-width: 1280px)" type="image/webp" width="930" height="675"/><source srcset="/sites/default/files/styles/teaser_desktop/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=U9dJ1QFO 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=qlxYomCu 2x" media="(min-width: 768px)" type="image/webp" width="715" height="519"/><source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=S22jU1Bi 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=lAj9HrGy 2x" media="(min-width: 540px)" type="image/webp" width="810" height="588"/><source srcset="/sites/default/files/styles/teaser/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=VXqN-0ze 1x, /sites/default/files/styles/teaser_retina/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=2TO5-Nb3 2x" media="(max-width: 539px)" type="image/webp" width="561" height="407"/><!--[if IE 9]></video><![endif]--><img loading="lazy" width="100" height="73" src="/sites/default/files/styles/thumbnail/public/externals/a/5/a5ccac64a1b2ab533d7d545f3316402a.jpg.webp?itok=iHVut9CP" /></picture></div></div><div role="presentation" class="copyright-wrapper__info background-black" aria-label="Open image caption"><svg class="copyright-wrapper__info-icon background-black icon icon--info" width="26" height="26"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#info"/></svg></div><div class="copyright-wrapper__wrapped-text z-1 background-black"><div class="copyright-wrapper__text"><div class="inline">Die Pferde des Hippodrom haben Ausgang auf der Reeperbahn, Hamburg, Peter Thomann, Hamburg, 1968, MK&amp;G, © Peter Thomann</div></div><div role="presentation" class="copyright-wrapper__close" aria-label="Close image caption"><svg class="copyright-wrapper__close-icon background-black icon icon--remove" width="26" height="26"><use xlink:href="/themes/custom/mkg/images/icons-symbol.svg?663abb51#remove"/></svg></div></div></div></div></div></div></div></div>
+
+      </div>
+            </div>
+</div>
+
+  
+                
+
+
+<div id="qGPpczgKmK94lVYGUs1wJ8N5-N9uXfI0_gvDzMTF-Ms" class="section outer-wrapper">
+  <div class="section__wrapper">
+                        <div class="section__content">
+        
+<div class="double-column gap grid grid--2-cols">
+    <div class="double-column__column"><div class="double-column__left"><div class="field field--name-field-images field--label-hidden"><div class="field__item"><div class="field field--name-field-media-dam-image field--label-hidden"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="/sites/default/files/styles/embedded_desktop/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=peqHI2Ho 1x, /sites/default/files/styles/embedded_desktop_retina/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=w6NcubhW 2x" media="(min-width: 1280px)" type="image/webp" width="930" height="576"/><source srcset="/sites/default/files/styles/teaser_desktop/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=tI0JzYP5 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=cDXbid1d 2x" media="(min-width: 768px)" type="image/webp" width="715" height="443"/><source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=PbGH_ZDj 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=5XuwKXHl 2x" media="(min-width: 540px)" type="image/webp" width="810" height="501"/><source srcset="/sites/default/files/styles/teaser/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=TYx1ydwY 1x, /sites/default/files/styles/teaser_retina/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=_ABNfI_2 2x" media="(max-width: 539px)" type="image/webp" width="561" height="347"/><!--[if IE 9]></video><![endif]--><img loading="lazy" width="100" height="62" src="/sites/default/files/styles/thumbnail/public/externals/9/d/9d5b1001ecf4f7c7591189accca93751.jpg.webp?itok=zHvvTxQ5" /></picture></div></div></div></div></div><div class="double-column__column"><div class="double-column__right"><div class="field field--name-field-text field--label-hidden text-formatted text-formatted--format-editorial"><h2><span>Sammlung in 3d</span></h2><h3>Ausgewählte Objekte</h3><p><span>Auf der Plattform Sketchfab haben wir eine Auswahl von 3D digitalisierten Objekten des MK&amp;G bereitgestellt. Dort können Sie diese von allen Seiten entdecken, von oben, unten hinten und vorne, ganz nah heranzoomen und diese auch herunterladen.</span></p><p><a class="button" href="https://sketchfab.com/mkghamburg/models" target="_blank" title="Sketchfab Museum für Kunst und Gewerbe Hamburg"><span>3D Modelle ansehen</span></a></p><p></p></div></div></div></div>
+
+      </div>
+            </div>
+</div>
+
+  
+
+  
+<section id="ZcaRIZ0Q6B72PrRY3GmAdCZPOTdUguTCRkmGY0TP46I" aria-labelledby="toc-sammlung-vor-ort" class="section outer-wrapper">
+  <div class="section__wrapper">
+                  
+
+<h2 id="toc-sammlung-vor-ort" class="section__heading heading heading--1-caps heading--margin font-h1-caps"><div class="field field--name-field-teaser-title field--label-hidden">Sammlung vor Ort</div></h2>
+                    <div class="section__content">
+        
+<ul class="gap-y flex-grid flex-grid--vertical-gutter list">
+            <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="IEy5FkScoQDCrXQdzHLHX_kJUPK9s9AIwdnG1jFCq08" aria-labelledby="rundgang" class="teaser">
+    <a href="/sammlung/vor-ort/rundgang-eg" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=6xZ3s87M 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=fvgO9qrs 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=uVa8PGLI 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=qOAZ1I4h 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=K9XgQEGP 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=k4IYWrrp 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=BEdF34qN 1x, /sites/default/files/styles/teaser_retina/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=w_YNPUY_ 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/2/f/2f6ce1ea2ba59e66a0cc12e89b97e977.jpg.webp?itok=c4A5aDfz" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Rundgang</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"><div class="field field--name-field-teaser-sub-title field--label-hidden"><p>EG</p></div></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="jtdf2GCE7pFDwGe3v9d7_eNuaFfjnIk2kSOQ2LqjGQk" aria-labelledby="rundgang" class="teaser">
+    <a href="/sammlung/vor-ort/rundgang-1-og" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=QD-d4skt 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=5g6K24Di 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=KWjGUqxF 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=HTSLV6lj 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=BST5cUYS 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=hPbCmqVp 2x" media="(min-width: 540px)" type="image/webp" width="810" height="607"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=YyZIWJpq 1x, /sites/default/files/styles/teaser_retina/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=6q5ZpWVc 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/6/2/624d8d66754856a5f8bb604580a40f29.jpg.webp?itok=b2rYQNk4" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Rundgang</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"><div class="field field--name-field-teaser-sub-title field--label-hidden"><p>1. OG</p></div></h3>
+</a>
+</article>
+</li>
+          <li class="flex-grid__column flex-grid__column--1-of-3 list__item">
+
+<article id="1ne4KnFpOu7HhKObTZyy_lovxOaZNS0HPYPycRVhfKY" aria-labelledby="rundgang" class="teaser">
+    <a href="/sammlung/vor-ort/rundgang-2-og" class="wrapper-link">      <div class="teaser__image">
+      <div class="field field--name-field-teaser-image field--label-hidden">
+
+
+  <div class="field field--name-field-media-dam-image field--label-hidden">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_desktop/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=ErxaN2nl 1x, /sites/default/files/styles/teaser_desktop_retina/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=IQEUh0vH 2x" media="(min-width: 1280px)" type="image/webp" width="715" height="536"/>
+              <source srcset="/sites/default/files/styles/teaser_tablet/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=605zKhJj 1x, /sites/default/files/styles/teaser_tablet_retina/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=PlVCK58K 2x" media="(min-width: 768px)" type="image/webp" width="433" height="325"/>
+              <source srcset="/sites/default/files/styles/teaser_phone_wide/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=TuO1eXfx 1x, /sites/default/files/styles/teaser_phone_wide_retina/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=94M7iqHn 2x" media="(min-width: 540px)" type="image/webp" width="810" height="608"/>
+              <source srcset="/sites/default/files/styles/teaser/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=VTJrp96S 1x, /sites/default/files/styles/teaser_retina/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=o6YkbX0O 2x" media="(max-width: 539px)" type="image/webp" width="561" height="421"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img loading="lazy" width="100" height="75" src="/sites/default/files/styles/thumbnail/public/externals/7/9/79d849db8995a78d55958179739bb478.jpg.webp?itok=n8IW_lxT" />
+
+  </picture>
+</div>
+</div>
+    </div>
+        <div class="teaser__info font-flow-text">
+      <div class="field field--name-field-teaser-title field--label-hidden">Rundgang</div>
+    </div>
+    
+
+<h3 class="teaser__title heading heading--1-caps font-h1-caps"><div class="field field--name-field-teaser-sub-title field--label-hidden"><p>2. OG</p></div></h3>
+</a>
+</article>
+</li>
+  </ul>
+
+      </div>
+            </div>
+</section>
+
+
+      </article>
+
+      </div>
+
+  </div>
+
+            </main>
+
+      
+<footer class="site-footer outer-wrapper background-black">
+  <div class="site-footer__menu">
+    <nav role="navigation" aria-labelledby="block-mkg-footer-navigation-menu" id="block-mkg-footer-navigation" data-region="footer_nav">
+            
+  <h2 class="visually-hidden" id="block-mkg-footer-navigation-menu">Fußzeilennavigation</h2>
+  
+
+        
+
+            <ul class="service-menu">
+                                <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/faq" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/1437">FAQ</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/newsletter" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/1515">Newsletter</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="https://media.mkg-hamburg.de/portals/presse/" target="_blank" class="service-menu__item-link service-menu__item-link--lvl-0 text-link">Presse</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/besuch#toc-kontakt" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/2">Kontakt</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/das-mkg" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/41">Über uns</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/leihverkehr" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/22">Leihverkehr</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/impressum" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/16">Impressum</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/datenschutz" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/18">Datenschutz</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/erklaerung-zur-barrierefreiheit" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/192">Barrierefreiheit</a>
+                              </div>
+                                  </li>
+                            <li class="service-menu__item service-menu__item--lvl-0">
+                          <div class="service-menu__item-header">
+                  <a href="/nutzung" class="service-menu__item-link service-menu__item-link--lvl-0 text-link" data-drupal-link-system-path="node/1103">Nutzung</a>
+                              </div>
+                                  </li>
+              </ul>
+  
+  </nav>
+
+  </div>
+  <div class="site-footer__social">
+    <nav role="navigation" aria-labelledby="block-mkg-social-navigation-menu" id="block-mkg-social-navigation">
+            
+  <h2 class="visually-hidden" id="block-mkg-social-navigation-menu">Soziale Netzwerke</h2>
+  
+
+        
+
+            <ul class="flex-bar button-menu">
+                                <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="https://www.instagram.com/mkghamburg/" target="_blank" rel="nofollow noopener" class="button-menu__item-link button button--inverted font-body">Instagram</a>
+                              </div>
+                                  </li>
+                            <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="https://www.facebook.com/mkghamburg/" target="_blank" rel="nofollow noopener" class="button-menu__item-link button button--inverted font-body">Facebook</a>
+                              </div>
+                                  </li>
+                            <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="https://www.youtube.com/user/MKGHamburg" target="_blank" class="button-menu__item-link button button--inverted font-body">YouTube</a>
+                              </div>
+                                  </li>
+                            <li class="button-menu__item button-menu__item--lvl-0">
+                          <div class="button-menu__item-header">
+                    <a href="https://de.linkedin.com/company/museum-f%C3%BCr-kunst-und-gewerbe-hamburg" target="_blank" class="button-menu__item-link button button--inverted font-body">LinkedIn</a>
+                              </div>
+                                  </li>
+              </ul>
+  
+  </nav>
+
+  </div>
+  <div class="site-footer__divider site-footer__divider--first" role="presentation"></div>
+  <div class="site-footer__contact-info" itemscope itemtype="http://schema.org/Organization">
+    
+
+<div class="font-body contact-info contact-info--wide">
+  <div class="contact-info__name">    <div class="field__item" itemprop="name"><p>Museum für Kunst<br>und Gewerbe Hamburg</p></div>
+</div>
+  <div class="contact-info__address">    <div class="field__item" itemprop="address"><p>Steintorplatz<br>20099 Hamburg</p></div>
+</div>
+  <div class="contact-info__fields">
+      </div>
+</div>
+
+  </div>
+  <div class="site-footer__divider site-footer__divider--second" role="presentation"></div>
+  <div class="site-footer__logos flex-bar">
+             <a href="https://www.shk-museum.de/" class="logo" target="_blank">   <img loading="lazy" alt="Logo Stiftung Hamburger Kunstsammlungen" width="560" height="132" src="/themes/custom/mkg/images/shk-logo.png" class="image" />
+ </a>
+         <a href="https://justusbrinckmann.org/" class="logo" target="_blank">   <img loading="lazy" alt="Logo Justus Brinckmann Gesellschaft e. V." width="157" height="40" src="/themes/custom/mkg/images/jbg-logo.svg" class="image" />
+ </a>
+         <a href="https://kunstmeile-hamburg.de/" class="logo" target="_blank">   <img loading="lazy" alt="Logo KUNSTMEILE HAMBURG" width="40" height="40" src="/themes/custom/mkg/images/kmh-logo.svg" class="image" />
+ </a>
+  </div>
+</footer>
+  </div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/1073","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"de","currentQuery":{"s":"Textil"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"matomo":{"disableCookies":false,"trackColorbox":false,"trackMailto":true},"cookieContentBlocker":{"consentAwareness":{"accepted":{"event":{"name":"","selector":""},"cookie":{"operator":"c","name":"mkg_compliance-categories","value":"external"}},"declined":{"event":{"name":"","selector":""},"cookie":{"operator":"","name":"","value":""}},"change":{"event":{"name":"","selector":""}}},"categories":{"external":{"consentAwareness":{"accepted":{"event":{"name":"","selector":""},"cookie":{"operator":"c","name":"mkg_compliance-categories","value":"external"}},"declined":{"event":{"name":"","selector":""},"cookie":{"operator":"","name":"","value":""}},"change":{"event":{"name":"","selector":""}}}}}},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022cookie-banner background-black outer-wrapper outer-wrapper--full relative\u0022\u003E\n              \u003Cbutton class=\u0022cookie-banner__close eu-cookie-compliance-close-button icon-button icon-button--close\u0022 aria-label=\u0022Den Cookie-Banner schlie\u00dfen\u0022\u003E  \u003Csvg class=\u0022icon-button__icon icon icon--close\u0022 width=\u002240\u0022 height=\u002240\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#close\u0022\/\u003E\u003C\/svg\u003E        \u003Cspan class=\u0022icon-button__text visually-hidden\u0022\u003ESchlie\u00dfen\u003C\/span\u003E\n  \u003C\/button\u003E\n    \u003Cdiv class=\u0022cookie-banner__content\u0022\u003E\n          \u003Cdiv class=\u0022cookie-banner__message-wrapper\u0022\u003E\n        \u003Cdiv class=\u0022cookie-banner__message text-formatted\u0022\u003E\n  \u003Cp\u003EUm Ihnen eine nach unserer Auffassung optimal gestaltete Webseite bereitstellen zu k\u00f6nnen, ben\u00f6tigen wir Ihre Einwilligung zur Nutzung von technischen Tools wie z. B. Cookies, Statistik und Aufruf von Drittinhalten, wie z. B. YouTube und Vimeo-Videos. Um alle diese Funktionen anbieten zu k\u00f6nnen, m\u00fcssen wir Informationen an unsere Partner weitergeben. Diese Partner f\u00fchren diese Informationen m\u00f6glicherweise mit weiteren Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung der Dienste gesammelt haben. Des Weiteren besteht die M\u00f6glichkeit, dass einzelne Anbieter Ihre Daten in die USA transferieren. Lt. Urteil des Europ\u00e4ischen Gerichtshofes herrscht in den USA aber nicht das gleiche Datenschutzniveau wie innerhalb der Europ\u00e4ischen Union. Ihre Daten k\u00f6nnen durch US-Beh\u00f6rden zu Kontroll- und \u00dcberwachungszwecken verarbeitet werden, ohne dass die M\u00f6glichkeit zum Rechtsbehelf besteht. Dieser Datentransfer kann nur mit Ihrer Einwilligung erfoglen. Ihre Einwilligungen erteilen Sie freiwillig und k\u00f6nnen Sie diese f\u00fcr die Zukunft jederzeit widerrufen oder \u00e4ndern.\u003C\/p\u003E\n\u003C\/div\u003E\n        \u003Cdiv class=\u0022cookie-banner__content-buttons\u0022\u003E\u003Cdiv class=\u0022cookie-banner__more-info\u0022\u003E\u003Cbutton class=\u0022text-link text-link--underscore find-more-button eu-cookie-compliance-more-button\u0022\u003EWeitere Informationen\u003C\/button\u003E\u003C\/div\u003E\u003Cdiv class=\u0022cookie-banner__imprint\u0022\u003E\u003Ca href=\u0022\/impressum\u0022 class=\u0022text-link text-link--underscore\u0022\u003EImpressum\u003C\/a\u003E\u003C\/div\u003E\u003C\/div\u003E      \u003C\/div\u003E\n    \n          \u003Cul id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookie-banner__categories\u0022\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox cookie-banner__category-checkbox--disabled checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-necessary\u0022 value=\u0022necessary\u0022 checked=\u0022checked\u0022 disabled=\u0022disabled\u0022 aria-labelledby=\u0022cookie-category-necessary-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-necessary\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-necessary-label\u0022 class=\u0022cookie-banner__category-label cookie-banner__category-label--disabled\u0022 for=\u0022cookie-category-necessary\u0022\u003ENotwendig\u003C\/label\u003E          \u003C\/li\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-statistics\u0022 value=\u0022statistics\u0022 aria-labelledby=\u0022cookie-category-statistics-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-statistics\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-statistics-label\u0022 class=\u0022cookie-banner__category-label\u0022 for=\u0022cookie-category-statistics\u0022\u003EStatistiken\u003C\/label\u003E          \u003C\/li\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-external\u0022 value=\u0022external\u0022 aria-labelledby=\u0022cookie-category-external-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-external\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-external-label\u0022 class=\u0022cookie-banner__category-label\u0022 for=\u0022cookie-category-external\u0022\u003EDrittanbieter und -Inhalte\u003C\/label\u003E          \u003C\/li\u003E\n              \u003C\/ul\u003E\n    \n          \u003Cdiv class=\u0022cookie-banner__buttons\u0022\u003E\n                          \u003Cbutton class=\u0022agree-button cookie-banner__button cookie-banner__button--agree button font-body\u0022\u003EMit allen Funktionen fortfahren\u003C\/button\u003E\n                          \u003Cbutton class=\u0022eu-cookie-compliance-save-preferences-button cookie-banner__button cookie-banner__button--save-preferences button button--inverted font-body\u0022\u003EMit ausgew\u00e4hlten Funktionen fortfahren\u003C\/button\u003E\n              \u003C\/div\u003E\n      \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022cookie-banner background-black outer-wrapper outer-wrapper--full relative\u0022\u003E\n              \u003Cbutton class=\u0022cookie-banner__close eu-cookie-compliance-close-button icon-button icon-button--close\u0022 aria-label=\u0022Den Cookie-Banner schlie\u00dfen\u0022\u003E  \u003Csvg class=\u0022icon-button__icon icon icon--close\u0022 width=\u002240\u0022 height=\u002240\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#close\u0022\/\u003E\u003C\/svg\u003E        \u003Cspan class=\u0022icon-button__text visually-hidden\u0022\u003ESchlie\u00dfen\u003C\/span\u003E\n  \u003C\/button\u003E\n    \u003Cdiv class=\u0022cookie-banner__content\u0022\u003E\n    \n          \u003Cul id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookie-banner__categories\u0022\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox cookie-banner__category-checkbox--disabled checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-necessary\u0022 value=\u0022necessary\u0022 checked=\u0022checked\u0022 disabled=\u0022disabled\u0022 aria-labelledby=\u0022cookie-category-necessary-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-necessary\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-necessary-label\u0022 class=\u0022cookie-banner__category-label cookie-banner__category-label--disabled\u0022 for=\u0022cookie-category-necessary\u0022\u003ENotwendig\u003C\/label\u003E          \u003C\/li\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-statistics\u0022 value=\u0022statistics\u0022 aria-labelledby=\u0022cookie-category-statistics-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-statistics\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-statistics-label\u0022 class=\u0022cookie-banner__category-label\u0022 for=\u0022cookie-category-statistics\u0022\u003EStatistiken\u003C\/label\u003E          \u003C\/li\u003E\n                  \u003Cli class=\u0022cookie-banner__category\u0022\u003E\n            \u003Cspan class=\u0022cookie-banner__category-checkbox checkbox__wrapper\u0022\u003E\u003Cinput id=\u0022cookie-category-external\u0022 value=\u0022external\u0022 aria-labelledby=\u0022cookie-category-external-label\u0022 type=\u0022checkbox\u0022 class=\u0022checkbox__input\u0022 \/\u003E\u003Clabel class=\u0022checkbox\u0022 for=\u0022cookie-category-external\u0022 aria-hidden=\u0022true\u0022\u003E\u003Csvg class=\u0022checkbox__check icon icon--check\u0022 width=\u002216\u0022 height=\u002213\u0022\u003E\u003Cuse xlink:href=\u0022\/themes\/custom\/mkg\/images\/icons-symbol.svg?663abb51#check\u0022\/\u003E\u003C\/svg\u003E\u003C\/label\u003E\u003C\/span\u003E\u003Clabel id=\u0022cookie-category-external-label\u0022 class=\u0022cookie-banner__category-label\u0022 for=\u0022cookie-category-external\u0022\u003EDrittanbieter und -Inhalte\u003C\/label\u003E          \u003C\/li\u003E\n              \u003C\/ul\u003E\n    \n          \u003Cdiv class=\u0022cookie-banner__buttons\u0022\u003E\n                          \u003Cbutton class=\u0022agree-button cookie-banner__button cookie-banner__button--agree button font-body\u0022\u003EMit allen Funktionen fortfahren\u003C\/button\u003E\n                          \u003Cbutton class=\u0022eu-cookie-compliance-save-preferences-button cookie-banner__button cookie-banner__button--save-preferences button button--inverted font-body\u0022\u003EMit ausgew\u00e4hlten Funktionen fortfahren\u003C\/button\u003E\n              \u003C\/div\u003E\n      \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":true,"popup_height":"auto","popup_width":"100%","popup_delay":0,"popup_link":"\/datenschutz#toc-7-der-einsatz-von-tracking-tools","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"de","store_consent":false,"better_support_for_screen_readers":true,"cookie_name":"mkg_compliance","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only":false,"popup_eu_only_js":false,"cookie_lifetime":30,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"categories","automatic_cookies_removal":true,"allowed_cookies":"statistics:_pk_id.*\r\nstatistics:_pk_ses.*","withdraw_markup":"\u003Cbutton class=\u0022eu-cookie-withdraw-tab cookie-banner__withdraw-tab background-base\u0022\u003EDatenschutzeinstellungen\u003C\/button\u003E\n\n  \n  \n\u003Cdiv class=\u0022cookie-banner background-black outer-wrapper outer-wrapper--full relative cookie-banner--without-categories\u0022\u003E\n    \u003Cdiv class=\u0022cookie-banner__content\u0022\u003E\n          \u003Cdiv class=\u0022cookie-banner__message-wrapper\u0022\u003E\n        \u003Cdiv class=\u0022cookie-banner__message text-formatted\u0022\u003E\n  \u003Ch4\u003EWir verwenden Cookies auf dieser Website, um das Nutzungserlebnis zu verbessern\u003C\/h4\u003E\n\u003Cp\u003ESie haben uns Ihre Zustimmung gegeben, Cookies zu setzen.\u003C\/p\u003E\n\u003C\/div\u003E\n              \u003C\/div\u003E\n    \n    \n          \u003Cdiv class=\u0022cookie-banner__buttons\u0022\u003E\n                          \u003Cbutton class=\u0022eu-cookie-withdraw-button cookie-banner__button button font-body\u0022\u003EZustimmung zur\u00fcckziehen\u003C\/button\u003E\n              \u003C\/div\u003E\n      \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":["necessary","statistics","external"],"cookie_categories_details":{"necessary":{"uuid":"40175752-91f4-41b8-acda-603d1e0940a5","langcode":"de","status":true,"dependencies":[],"id":"necessary","label":"Notwendig","description":"","checkbox_default_state":"required","weight":-9},"statistics":{"uuid":"7c4f9fba-1bf2-4231-9186-739d950ce5a8","langcode":"de","status":true,"dependencies":[],"id":"statistics","label":"Statistiken","description":"","checkbox_default_state":"unchecked","weight":-8},"external":{"uuid":"721e5ab3-f44e-46b4-a919-83b1f5743626","langcode":"de","status":true,"dependencies":[],"id":"external","label":"Drittanbieter und -Inhalte","description":"","checkbox_default_state":"unchecked","weight":-7}},"enable_save_preferences_button":true,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"olivero_primary_button_classes":"","olivero_secondary_button_classes":"","close_button_action":"close_banner","open_by_default":true,"modules_allow_popup":true,"hide_the_banner":false,"geoip_match":true,"unverified_scripts":[]},"sitewideAlert":{"refreshInterval":15000,"automaticRefresh":false,"showCount":false,"serverSideRender":false},"user":{"uid":0,"permissionsHash":"d96e45893de1ef3c042947f16277cec646507343d4e4ccbe176ae1cf21f83d2b"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_2XSfA9eJxutnCINpwMij3TpJt9c7vkDYsbSIkwzxWew.js?scope=footer&amp;delta=1&amp;language=de&amp;theme=mkg&amp;include=eJxtTm0OwyAIvZDGIxFqaSWtYBTT7Paz3ZYsaX8B74sXVTcmiCpGYjDtGjeqIV6w_8L-CzvqEH-GXHZGiRSeQJfRNGv4DKfLwpEgaa8t_B-waB0aowrN0HqDXmY0cpqFgcf3tY6Is9BIxX10uDNX1QlFHtnyqrwm80fFUh4UO8racSXfDraYHhQZWXwm6TemsZFPhPNwnfvBM8HZ0gIL2xsxtYrz"></script>
+
+  </body>
+</html>
