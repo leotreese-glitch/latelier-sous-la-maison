@@ -1,52 +1,82 @@
-"""Vérifie les 41 designs agrandis : télécharge l'aperçu publié de chacun et, pour les pièces de musée,
-la vignette du musée, pour contrôler que chaque fiche porte bien la bonne image."""
-import io, json, os, urllib.request
+"""Lot 3 : vérifie en ligne les 22 designs déposés par Léo (fichier HD, aperçu, prix, pages française et anglaise),
+télécharge leurs aperçus pour contrôler l'image, puis supprime le lien temporaire des photos des musées."""
+import html, io, json, os, re, subprocess, urllib.request
 from PIL import Image
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/verification)"}
 SITE = "https://latelier-sous-la-maison.com"
-MET = {"2010.337": "https://images.metmuseum.org/CRDImages/as/web-large/DP-23279-001.jpg"}
-CIBLES = ["dp-%04d" % i for i in range(11, 50)] + ["orig-0006", "orig-0011"]
+REFS = ["BK-BR-988-A", "1973-51-1-a/d", "1973-51-17-a/c", "1980-34-4", "1976.83", "1960-79-23-a", "1959-145-1", "2021-12-12",
+        "1987-85-6", "1928.194", "1976-103-63", "1942-86-19-a", "1895.773", "1951-144-1", "1940-69-1", "RP-D-2019-19",
+        "AK-MAK-478", "1980-34-2", "1949-144-1-a,b", "1962-56-87", "1976.80a", "1988.103"]
 
 
 def lire(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90) as r:
-        return r.read()
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90) as r:
+            return r.status, r.read()
+    except urllib.error.HTTPError as e:
+        return e.code, b""
+    except Exception as e:
+        return 0, repr(e).encode()
 
 
-def vignette(donnees, chemin):
-    im = Image.open(io.BytesIO(donnees)).convert("RGB")
-    taille = list(im.size)
-    im.thumbnail((420, 420))
-    im.save(chemin, "JPEG", quality=85)
-    return taille
+def texte(b):
+    return html.unescape(b.decode("utf-8", "replace"))
 
 
-cat = {d["id"]: d for d in json.loads(lire("https://latelier-sous-la-maison.pages.dev/api/catalogue"))["designs"]}
+code, corps = lire("https://latelier-sous-la-maison.pages.dev/api/catalogue")
+cat = json.loads(corps)["designs"]
+par_ref = {(d.get("droits") or {}).get("reference"): d for d in cat}
 os.makedirs("outil/verif", exist_ok=True)
-liste = []
-for i in CIBLES:
-    d = cat.get(i)
-    info = {"id": i, "publie": bool(d)}
-    if d:
-        info.update({k: d.get(k) for k in ("slug", "titre", "image", "livrables", "ratio")})
-        info["reference"] = (d.get("droits") or {}).get("reference")
-        try:
-            info["apercu"] = vignette(lire(SITE + d["image"]), "outil/verif/%s-site.jpg" % i)
-        except Exception as e:
-            info["erreur_apercu"] = repr(e)
-        ref = info["reference"]
-        if ref:
-            try:
-                if ref in MET:
-                    url = MET[ref]
-                else:
-                    data = json.loads(lire("https://openaccess-api.clevelandart.org/api/artworks/%s?fields=images" % ref))["data"]
-                    url = data["images"]["web"]["url"]
-                info["musee"] = vignette(lire(url), "outil/verif/%s-musee.jpg" % i)
-            except Exception as e:
-                info["erreur_musee"] = repr(e)
-    liste.append(info)
-json.dump(liste, open("outil/verif/liste-agrandis.json", "w"), ensure_ascii=False, indent=1)
-print(sum(1 for x in liste if x["publie"]), "publiés sur", len(liste))
-print("erreurs :", [x["id"] for x in liste if "erreur_apercu" in x or "erreur_musee" in x])
+bilan, defauts = [], []
+for ref in REFS:
+    d = par_ref.get(ref)
+    if not d:
+        defauts.append({"ref": ref, "probleme": "pas publié"})
+        bilan.append({"ref": ref, "publie": False})
+        continue
+    L = d.get("livrables") or []
+    info = {"ref": ref, "publie": True, "id": d["id"], "slug": d["slug"], "titre": d["titre"], "prix": d.get("prix"),
+            "livrables": [[l.get("largeur"), l.get("hauteur"), l.get("format")] for l in L], "image": d.get("image")}
+    nom = re.sub(r"[^A-Za-z0-9.-]+", "_", ref)
+    c, b = lire(SITE + d["image"]) if d.get("image") else (0, b"")
+    if c == 200:
+        im = Image.open(io.BytesIO(b)).convert("RGB")
+        info["apercu"] = list(im.size)
+        im.thumbnail((420, 420))
+        im.save("outil/verif/%s.jpg" % nom, "JPEG", quality=85)
+    else:
+        defauts.append({"ref": ref, "probleme": "aperçu illisible", "code": c})
+    for langue, chemin, titre, prix in (("fr", "/motif/%s/" % d["slug"], d["titre"], "29,99"),
+                                       ("en", "/en/pattern/%s/" % d["slug"], (d.get("en") or {}).get("titre"), "34.99")):
+        c, b = lire(SITE + chemin)
+        t = texte(b)
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, re.S)
+        h1 = html.unescape(re.sub(r"<[^>]+>", "", h1.group(1))).strip() if h1 else ""
+        visible = re.sub(r"<script.*?</script>", " ", t, flags=re.S)
+        ok = c == 200 and h1 == titre and prix in visible
+        info[langue] = {"code": c, "h1": h1, "titre_ok": h1 == titre, "prix_ok": prix in visible}
+        if not ok:
+            defauts.append({"ref": ref, "page": chemin, **info[langue]})
+    grand = max([max(l.get("largeur") or 0, l.get("hauteur") or 0) for l in L] or [0])
+    if len(L) != 1 or grand < 4000:
+        defauts.append({"ref": ref, "probleme": "fichier HD", "livrables": info["livrables"]})
+    if (d.get("prix") or {}).get("eur") != 29.99:
+        defauts.append({"ref": ref, "probleme": "prix", "prix": d.get("prix")})
+    bilan.append(info)
+
+c, b = lire(SITE + "/sitemap.xml")
+nb = len(re.findall(r"<loc>", texte(b)))
+json.dump({"bilan": bilan, "defauts": defauts, "sitemap": nb, "publies": len(cat)}, open("outil/verif/lot3.json", "w"), ensure_ascii=False, indent=1)
+print("publiés au total :", len(cat), "| lot 3 publiés :", sum(1 for x in bilan if x["publie"]), "sur", len(REFS), "| plan du site :", nb, "adresses")
+print("défauts :", len(defauts))
+for x in defauts:
+    print("DÉFAUT", json.dumps(x, ensure_ascii=False))
+for x in bilan:
+    print(x.get("ref"), x.get("id"), x.get("livrables"), x.get("apercu"))
+orig11 = next((d for d in cat if d["id"] == "orig-0011"), None)
+print("orig-0011 publié :", bool(orig11), orig11 and [[l.get("largeur"), l.get("hauteur")] for l in orig11.get("livrables") or []])
+
+# Le lien public des photos n'a plus d'usage : Léo a déposé les designs.
+r = subprocess.run(["gh", "release", "delete", "photos-motifs-retrouves", "--yes", "--cleanup-tag", "-R", os.environ["GITHUB_REPOSITORY"]], capture_output=True, text=True)
+print("suppression des photos :", r.returncode, r.stdout.strip(), r.stderr.strip())
