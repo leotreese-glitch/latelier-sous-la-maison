@@ -77,6 +77,6 @@ for x in bilan:
 orig11 = next((d for d in cat if d["id"] == "orig-0011"), None)
 print("orig-0011 publié :", bool(orig11), orig11 and [[l.get("largeur"), l.get("hauteur")] for l in orig11.get("livrables") or []])
 
-# Le lien public des photos n'a plus d'usage : Léo a déposé les designs.
-r = subprocess.run(["gh", "release", "delete", "photos-motifs-retrouves", "--yes", "--cleanup-tag", "-R", os.environ["GITHUB_REPOSITORY"]], capture_output=True, text=True)
-print("suppression des photos :", r.returncode, r.stdout.strip(), r.stderr.strip())
+# Lien des photos déjà supprimé : rien à faire.
+r = None
+pass
