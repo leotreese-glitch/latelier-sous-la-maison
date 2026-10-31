@@ -51,4 +51,4 @@ jobs:
           fi
           gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
           gh release create photos-motifs-retrouves zips/* -R "$GITHUB_REPOSITORY" --target outil/apercus-musees --prerelease \
-            --title "Photos des motifs retrouvés, lot 2 (temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."
+            --title "Photos des motifs retrouvés, lot 3 (temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."

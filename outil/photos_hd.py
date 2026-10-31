@@ -1,4 +1,4 @@
-"""Télécharge l'image complète de chaque pièce du lot, la ramène à 36 Mpx au plus, et prépare les ZIP par époque."""
+"""Lot 3 : télécharge l'image complète de chaque pièce (Rijksmuseum, Cooper Hewitt, Chicago), la ramène à 36 Mpx au plus, et prépare le ZIP."""
 import csv, io, json, math, os, shutil, time, urllib.request, zipfile
 from PIL import Image, ImageFile
 import numpy as np
@@ -6,8 +6,7 @@ import numpy as np
 Image.MAX_IMAGE_PIXELS = None
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)", "AIC-User-Agent": "latelier-sous-la-maison (registre des motifs retrouves)"}
 MAX_PX = 36_000_000
-MET = {"2010.337": "https://images.metmuseum.org/CRDImages/as/original/DP-23279-001.jpg"}
-RACINE = "Motifs retrouves - lot 2 - reserve - photos des musees"
+RACINE = "Motifs retrouves - lot 3 - photos des musees"
 
 def get(url, dest, essais=4):
     for i in range(essais):
@@ -21,17 +20,14 @@ def get(url, dest, essais=4):
     raise err
 
 def source(p):
-    if p["musee"] == "cma":
-        req = urllib.request.Request("https://openaccess-api.clevelandart.org/api/artworks/%s?fields=images,share_license_status" % p["ref"], headers=UA)
-        data = json.load(urllib.request.urlopen(req, timeout=60))["data"]
-        assert data["share_license_status"] == "CC0", p["ref"]
-        full = data["images"]["full"]
-        p["attendu"] = int(full.get("filesize") or 0)
-        return full["url"]
-    if p["musee"] == "aic":
-        # Serveur d'images de Chicago : « pct:100 » donne l'image à sa taille complète (vérifié le 2026-10-25).
-        return "https://www.artic.edu/iiif/2/%s/full/pct:100/0/default.jpg" % p["image_id"]
-    return MET[p["ref"]]
+    if p["musee"] == "rijks":
+        # Serveur d'images du Rijksmuseum (micr.io) : « max » donne la plus grande taille servie.
+        return "https://iiif.micr.io/%s/full/max/0/default.jpg" % p["iiif"]
+    if p["musee"] == "ch":
+        # Smithsonian : fichier « High-resolution JPEG » de l'image marquée CC0.
+        return "https://ids.si.edu/ids/download?id=%s.jpg" % p["ids"]
+    # Serveur d'images de Chicago : « pct:100 » donne l'image à sa taille complète (vérifié le 2026-10-25).
+    return "https://www.artic.edu/iiif/2/%s/full/pct:100/0/default.jpg" % p["image_id"]
 
 pieces = json.load(open("outil/hd.json"))
 FILTRE = [x for x in open("outil/filtre.txt").read().split() if x] if os.path.exists("outil/filtre.txt") else []
@@ -83,15 +79,15 @@ for p in pieces:
 
 with open("sortie/%s/liste-des-pieces.csv" % RACINE, "w", newline="", encoding="utf-8-sig") as f:
     wr = csv.writer(f, delimiter=";")
-    wr.writerow(["Dossier", "Fichier", "Titre", "Époque", "Date", "Musée", "N° d'inventaire", "Notice du musée", "Taille d'origine (px)", "Taille du fichier (px)", "Or", "À faire", "Original complet"])
+    wr.writerow(["Liste", "Dossier", "Fichier", "Titre", "Époque", "Date", "Musée", "N° d'inventaire", "Notice du musée", "Taille d'origine (px)", "Taille du fichier (px)", "Or", "À faire", "Original complet"])
     for p in pieces:
-        wr.writerow([p["dossier"], p["fichier"], p["titre"], p["epoque"], p["date"], p["museeNom"], p["ref"], p["notice"], p["pxOrigine"], p.get("pxFourni", "échec : " + p.get("erreur", "")), p["or"], p["afaire"], p.get("original", "")])
+        wr.writerow([p["liste"], p["dossier"], p["fichier"], p["titre"], p["epoque"], p["date"], p["museeNom"], p["ref"], p["notice"], p["pxOrigine"], p.get("pxFourni", "échec : " + p.get("erreur", "")), p["or"], p["afaire"], p.get("original", "")])
 shutil.copy("outil/LISEZ-MOI.txt", "sortie/%s/LISEZ-MOI.txt" % RACINE)
 
 # Un ZIP par époque, chacun avec la liste et le mode d'emploi.
 os.makedirs("zips", exist_ok=True)
 if not FILTRE:
-    with zipfile.ZipFile("zips/Motifs-retrouves-lot-2-reserve-photos.zip", "w", zipfile.ZIP_STORED) as z:
+    with zipfile.ZipFile("zips/Motifs-retrouves-lot-3-photos.zip", "w", zipfile.ZIP_STORED) as z:
         for nom in ("LISEZ-MOI.txt", "liste-des-pieces.csv"):
             z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
         for p in pieces:
