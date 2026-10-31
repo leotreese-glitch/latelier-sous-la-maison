@@ -723,16 +723,16 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Guirlandes bleues en réserve",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Blue Resist Swags",
+    "titre_ok": true,
+    "prix_ok": true
    }
   },
   {
@@ -771,24 +771,7 @@
    }
   }
  ],
- "defauts": [
-  {
-   "ref": "1976.80a",
-   "page": "/motif/guirlandes-bleues-en-reserve/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1976.80a",
-   "page": "/en/pattern/guirlandes-bleues-en-reserve/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  }
- ],
- "sitemap": 224,
+ "defauts": [],
+ "sitemap": 226,
  "publies": 107
 }

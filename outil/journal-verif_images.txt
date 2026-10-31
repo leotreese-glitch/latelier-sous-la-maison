@@ -1,7 +1,5 @@
-publiés au total : 107 | lot 3 publiés : 22 sur 22 | plan du site : 224 adresses
-défauts : 2
-DÉFAUT {"ref": "1976.80a", "page": "/motif/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976.80a", "page": "/en/pattern/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+publiés au total : 107 | lot 3 publiés : 22 sur 22 | plan du site : 226 adresses
+défauts : 0
 BK-BR-988-A dp-0072 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-1-a/d dp-0073 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-17-a/c dp-0074 [[4096, 4096, 'PNG']] [1200, 1200]
