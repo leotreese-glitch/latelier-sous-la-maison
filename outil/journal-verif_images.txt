@@ -1,49 +1,6 @@
-publiés au total : 107 | lot 3 publiés : 22 sur 22 | plan du site : 182 adresses
-défauts : 44
-DÉFAUT {"ref": "BK-BR-988-A", "page": "/motif/l-arbre-en-fleurs-de-coromandel/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "BK-BR-988-A", "page": "/en/pattern/l-arbre-en-fleurs-de-coromandel/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1973-51-1-a/d", "page": "/motif/grand-oiseau-et-fleurs-exotiques/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1973-51-1-a/d", "page": "/en/pattern/grand-oiseau-et-fleurs-exotiques/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1973-51-17-a/c", "page": "/motif/vases-fleuris-et-oiseaux/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1973-51-17-a/c", "page": "/en/pattern/vases-fleuris-et-oiseaux/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1980-34-4", "page": "/motif/le-couronnement-de-la-rosiere/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1980-34-4", "page": "/en/pattern/le-couronnement-de-la-rosiere/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976.83", "page": "/motif/feuillages-bleus-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976.83", "page": "/en/pattern/feuillages-bleus-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1960-79-23-a", "page": "/motif/colonnes-et-bouquets-sur-fond-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1960-79-23-a", "page": "/en/pattern/colonnes-et-bouquets-sur-fond-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1959-145-1", "page": "/motif/guirlande-et-dentelles/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1959-145-1", "page": "/en/pattern/guirlande-et-dentelles/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "2021-12-12", "page": "/motif/plantes-exotiques-sur-fond-gris/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "2021-12-12", "page": "/en/pattern/plantes-exotiques-sur-fond-gris/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1987-85-6", "page": "/motif/fleurs-grises-sur-fond-rouge-floque/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1987-85-6", "page": "/en/pattern/fleurs-grises-sur-fond-rouge-floque/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1928.194", "page": "/motif/oiseaux-et-arbres-en-fleurs-papier-peint-chinois/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1928.194", "page": "/en/pattern/oiseaux-et-arbres-en-fleurs-papier-peint-chinois/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976-103-63", "page": "/motif/feuilles-d-erable-au-fil-de-l-eau/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976-103-63", "page": "/en/pattern/feuilles-d-erable-au-fil-de-l-eau/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1942-86-19-a", "page": "/motif/dragons-et-oiseaux-d-or-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1942-86-19-a", "page": "/en/pattern/dragons-et-oiseaux-d-or-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1895.773", "page": "/motif/velours-a-la-grenade/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1895.773", "page": "/en/pattern/velours-a-la-grenade/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1951-144-1", "page": "/motif/soierie-bizarre-a-la-balustrade/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1951-144-1", "page": "/en/pattern/soierie-bizarre-a-la-balustrade/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1940-69-1", "page": "/motif/chale-aux-fleurs-sur-fond-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1940-69-1", "page": "/en/pattern/chale-aux-fleurs-sur-fond-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "RP-D-2019-19", "page": "/motif/vagues-et-ecume-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "RP-D-2019-19", "page": "/en/pattern/vagues-et-ecume-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "AK-MAK-478", "page": "/motif/eventail-et-fleurs-brodes/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "AK-MAK-478", "page": "/en/pattern/eventail-et-fleurs-brodes/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1980-34-2", "page": "/motif/medaillons-a-l-antique/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1980-34-2", "page": "/en/pattern/medaillons-a-l-antique/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1949-144-1-a,b", "page": "/motif/papier-peint-a-l-indienne-et-sa-bordure-de-dentelle/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1949-144-1-a,b", "page": "/en/pattern/papier-peint-a-l-indienne-et-sa-bordure-de-dentelle/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1962-56-87", "page": "/motif/lions-et-oiseaux-de-velours/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1962-56-87", "page": "/en/pattern/lions-et-oiseaux-de-velours/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976.80a", "page": "/motif/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1976.80a", "page": "/en/pattern/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1988.103", "page": "/motif/draperies-et-corbeilles-sur-fond-vert/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
-DÉFAUT {"ref": "1988.103", "page": "/en/pattern/draperies-et-corbeilles-sur-fond-vert/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+publiés au total : 106 | lot 3 publiés : 21 sur 22 | plan du site : 224 adresses
+défauts : 1
+DÉFAUT {"ref": "1976.80a", "probleme": "pas publié"}
 BK-BR-988-A dp-0072 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-1-a/d dp-0073 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-17-a/c dp-0074 [[4096, 4096, 'PNG']] [1200, 1200]
@@ -64,8 +21,7 @@ AK-MAK-478 dp-0088 [[4096, 4096, 'PNG']] [1200, 1200]
 1980-34-2 dp-0089 [[4096, 4096, 'PNG']] [1200, 1200]
 1949-144-1-a,b dp-0090 [[4096, 4096, 'PNG']] [1200, 1200]
 1962-56-87 dp-0091 [[4096, 4096, 'PNG']] [1200, 1200]
-1976.80a dp-0092 [[4096, 4096, 'PNG']] [1200, 1200]
+1976.80a None None None
 1988.103 dp-0093 [[4096, 4096, 'PNG']] [1200, 1200]
 orig-0011 publié : False None
-suppression des photos : 0  
 code de sortie : 0
