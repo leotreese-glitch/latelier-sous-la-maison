@@ -702,7 +702,38 @@
   },
   {
    "ref": "1976.80a",
-   "publie": false
+   "publie": true,
+   "id": "dp-0092",
+   "slug": "guirlandes-bleues-en-reserve",
+   "titre": "Guirlandes bleues en réserve",
+   "prix": {
+    "eur": 29.99,
+    "usd": 34.99
+   },
+   "livrables": [
+    [
+     4096,
+     4096,
+     "PNG"
+    ]
+   ],
+   "image": "/media/apercus/dp-0092/1793414803292.webp",
+   "apercu": [
+    1200,
+    1200
+   ],
+   "fr": {
+    "code": 404,
+    "h1": "",
+    "titre_ok": false,
+    "prix_ok": false
+   },
+   "en": {
+    "code": 404,
+    "h1": "",
+    "titre_ok": false,
+    "prix_ok": false
+   }
   },
   {
    "ref": "1988.103",
@@ -743,9 +774,21 @@
  "defauts": [
   {
    "ref": "1976.80a",
-   "probleme": "pas publié"
+   "page": "/motif/guirlandes-bleues-en-reserve/",
+   "code": 404,
+   "h1": "",
+   "titre_ok": false,
+   "prix_ok": false
+  },
+  {
+   "ref": "1976.80a",
+   "page": "/en/pattern/guirlandes-bleues-en-reserve/",
+   "code": 404,
+   "h1": "",
+   "titre_ok": false,
+   "prix_ok": false
   }
  ],
  "sitemap": 224,
- "publies": 106
+ "publies": 107
 }

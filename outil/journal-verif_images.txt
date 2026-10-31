@@ -1,6 +1,7 @@
-publiés au total : 106 | lot 3 publiés : 21 sur 22 | plan du site : 224 adresses
-défauts : 1
-DÉFAUT {"ref": "1976.80a", "probleme": "pas publié"}
+publiés au total : 107 | lot 3 publiés : 22 sur 22 | plan du site : 224 adresses
+défauts : 2
+DÉFAUT {"ref": "1976.80a", "page": "/motif/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1976.80a", "page": "/en/pattern/guirlandes-bleues-en-reserve/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
 BK-BR-988-A dp-0072 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-1-a/d dp-0073 [[4096, 4096, 'PNG']] [1200, 1200]
 1973-51-17-a/c dp-0074 [[4096, 4096, 'PNG']] [1200, 1200]
@@ -21,7 +22,7 @@ AK-MAK-478 dp-0088 [[4096, 4096, 'PNG']] [1200, 1200]
 1980-34-2 dp-0089 [[4096, 4096, 'PNG']] [1200, 1200]
 1949-144-1-a,b dp-0090 [[4096, 4096, 'PNG']] [1200, 1200]
 1962-56-87 dp-0091 [[4096, 4096, 'PNG']] [1200, 1200]
-1976.80a None None None
+1976.80a dp-0092 [[4096, 4096, 'PNG']] [1200, 1200]
 1988.103 dp-0093 [[4096, 4096, 'PNG']] [1200, 1200]
 orig-0011 publié : False None
 code de sortie : 0
