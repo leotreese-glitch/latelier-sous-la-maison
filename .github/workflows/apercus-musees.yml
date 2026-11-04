@@ -37,6 +37,13 @@ jobs:
             git push
             exit 0
           fi
+          if [ "$(cat outil/mode.txt)" = "zip_unique" ]; then
+            mkdir -p parts
+            gh release download photos-motifs-retrouves -R "$GITHUB_REPOSITORY" -p "Motifs-retrouves-lot-4-[0-9]-*.zip" -D parts
+            python outil/zip_unique.py
+            gh release upload photos-motifs-retrouves zip_unique/Motifs-retrouves-lot-4-tout.zip --clobber -R "$GITHUB_REPOSITORY"
+            exit 0
+          fi
           if [ "$(cat outil/mode.txt)" = "supprimer" ]; then
             gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
             exit 0
