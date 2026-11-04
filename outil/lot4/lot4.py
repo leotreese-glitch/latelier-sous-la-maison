@@ -168,8 +168,9 @@ piece("b44", "4L052", "vetements", "xixe", "floral", "Tissage", "moyen", False, 
       "Fragment : la bordure est à reconstituer à partir des parties complètes.")
 
 # Assiettes et céramiques (6)
-piece("b45", "4L088", "ceramiques", "xviie", "floral", "Carreau", "facile", False, "Carreau d'Iznik aux tulipes et œillets", "XVIIe siècle", "Turquie, Iznik",
-      "Céramique siliceuse, décor peint sous glaçure", "", "Tulipes, œillets et rosaces bleu, turquoise et vert : un carreau ottoman qui se répète à l'infini.")
+piece("b45", "4L075", "ceramiques", "xviie", "floral", "Carreau", "moyen", False, "Arabesques turquoise sur fond bleu, carreau persan", "XVIIe siècle", "Iran, époque safavide",
+      "Céramique à décor de cuerda seca", "", "Arabesques turquoise, vertes et blanches sur un bleu profond : un carreau persan très graphique.",
+      "Un seul carreau de 32 cm, au décor coupé sur les bords : le raccord se fait en le répétant ou en miroir.")
 piece("b46", "4L076", "ceramiques", "xvie", "floral", "Plat", "a-composer", True, "Plat d'Iznik à la feuille saz", "Vers 1590", "Turquie, Iznik",
       "Céramique siliceuse, engobe rouge, décor sous glaçure, rehauts d'or", "",
       "Roses rouges, jacinthes bleues et feuille saz autour d'un or rarement conservé.", VOLUME)
