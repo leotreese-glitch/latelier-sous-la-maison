@@ -3285,5 +3285,55 @@
     ]
    ]
   }
+ },
+ "C062": {
+  "id": "C062",
+  "musee": "ch",
+  "ref": "1973-51-25",
+  "titre": "Chintz",
+  "date": "18th century",
+  "lieu": [
+   "India"
+  ],
+  "auteurs": [],
+  "technique": "Medium: cotton Technique: mordant painted and dyed on plain weave",
+  "description": "Red stripes with flowers alternate with white stripes with flowers and butterflies.",
+  "w": 7490,
+  "h": 4652,
+  "page": "https://collection.cooperhewitt.org/view/objects/asitem/id/151736"
+ },
+ "C214": {
+  "id": "C214",
+  "musee": "ch",
+  "ref": "1959-160-6",
+  "titre": "Sidewall",
+  "date": "1800",
+  "lieu": [
+   "France"
+  ],
+  "auteurs": [],
+  "technique": "Block-printed on joined sheets",
+  "description": "All-over pattern of stylized hexagonal rosettes separated by stylized leaves and dots in a continuous hexagonal design. Blue and yellow on brown.",
+  "w": 4958,
+  "h": 4161,
+  "page": "https://collection.cooperhewitt.org/view/objects/asitem/id/122855"
+ },
+ "4L059": {
+  "id": "4L059",
+  "musee": "cma",
+  "ref": "1916.1463",
+  "titre": "Woman's Blouse (Pairan)",
+  "date": "1800s",
+  "culture": [
+   "Western India, Gujarat, Kachchh"
+  ],
+  "technique": "Silk thread on silk ground, embroidery",
+  "type": "Garment",
+  "licence": "CC0",
+  "auteurs": [],
+  "w": 5474,
+  "h": 5792,
+  "page": "https://clevelandart.org/art/1916.1463",
+  "source": "copie de outil/recherche/cma4.json (API Cleveland, 4 novembre 2026)"
  }
 }

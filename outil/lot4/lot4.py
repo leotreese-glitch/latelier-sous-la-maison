@@ -26,8 +26,8 @@ def piece(id, planche, famille, periode, type, piece_, raccord, or_, titre, date
 piece("b01", "C002", "indiennes", "xviiie", "floral", "Étoffe peinte", "a-composer", False, "Cartouche fleuri sur fond rouge", "XVIIIe siècle", "Inde",
       "Coton peint et teint (indienne), bordé d'un galon", "", "Un médaillon découpé dans un palampore, sur un fond rouge et blanc : très décoratif.",
       "Pièce découpée et bordée d'un galon : galon à effacer, médaillon à remettre à plat.")
-piece("b02", "C702", "indiennes", "xviiie", "floral", "Broderie", "facile", False, "Bouquets rouges sur fond d'or", "XVIIIe siècle", "Inde",
-      "Broderie de soie", "", "Un semis de bouquets rouges sur fond jaune d'or : le raccord est déjà là.")
+piece("b02", "C062", "indiennes", "xviiie", "floral", "Étoffe peinte", "facile", False, "Rayures rouges et fleurs à l'indienne", "XVIIIe siècle", "Inde",
+      "Coton peint et teint (indienne)", "", "Des rayures rouges fleuries alternent avec des rayures blanches à fleurs et papillons : le raccord est déjà là.")
 piece("b03", "C030", "indiennes", "xviiie", "animalier", "Étoffe peinte", "moyen", False, "L'Oiseau-paon et la fleur géante", "Vers 1800", "Inde",
       "Coton peint et teint (indienne)", "", "Un oiseau aux airs de paon et une fleur immense : spectaculaire en panneau ou en tissu d'ameublement.",
       "Morceau de bordure : la répétition est à reconstituer.")
@@ -54,8 +54,8 @@ piece("b10", "C414", "soieries", "xviiie", "floral", "Tissage", "facile", False,
 piece("b11", "C417", "soieries", "xviiie", "figuratif", "Tissage", "a-composer", False, "La Bouquetière sur soie jaune", "XVIIIe – XIXe siècle", "France",
       "Soie façonnée, médaillon en satin broché", "", "Une jeune femme au panier de fleurs dans un médaillon, sur une soie rouge et jaune.",
       "Le médaillon est plus ancien que le fond ; traces de colle (ancienne tenture murale).")
-piece("b12", "C625", "soieries", "xviie", "animalier", "Tissage", "facile", False, "Paons et lions sur fond d'or", "XVIIe siècle", "Italie",
-      "Velours de soie coupé et bouclé", "", "Paons, lions dressés et fleurs en velours bleu sur fond jaune d'or : un semis animalier rare.")
+piece("b12", "C214", "soieries", "xviiie", "geometrique", "Papier peint", "facile", False, "Rosaces bleues en nid d'abeille", "1800", "France",
+      "Papier peint imprimé à la planche sur feuilles assemblées", "", "Des rosaces bleues dans un réseau hexagonal jaune sur fond brun : un graphisme étonnamment moderne.")
 piece("b13", "C228", "soieries", "xviiie", "floral", "Papier peint", "facile", False, "Tiges fleuries sur fond satiné", "Vers 1800", "France",
       "Papier peint imprimé à la planche, fond satiné", "", "Bleuets, campanules, roses et pois de senteur sur fond blanc : frais et lumineux.",
       "Image de 3 761 × 4 508 px : léger agrandissement nécessaire.")
@@ -66,7 +66,7 @@ piece("b15", "C092", "soieries", "xixe", "floral", "Papier peint", "facile", Fal
       "Bordure de papier peint imprimée à la planche", "", "Une frise de fleurs dans le goût des indiennes : parfaite pour une bordure ou un ruban.")
 piece("b16", "4R053", "soieries", "xviiie", "animalier", "Papier décoré", "facile", False, "Oiseaux et fleurs en quatre rangs", "1700 – 1850", "Non précisée (atelier anonyme)",
       "Papier décoré imprimé", "", "Des oiseaux et des rameaux fleuris en rangs réguliers : un semis tout prêt, plein de charme.")
-piece("b17", "4R035", "soieries", "xixe", "animalier", "Papier décoré", "facile", True, "Oiseaux d'or sur fond bleu", "1850 – 1920", "Allemagne, Aschaffenburg",
+piece("b17", "4R035", "soieries", "xixe", "animalier", "Papier décoré", "facile", True, "Volière dorée sur fond bleu", "1850 – 1920", "Allemagne, Aschaffenburg",
       "Papier décoré imprimé en or, à l'imitation des papiers indiennés du XVIIIe siècle", "Dessauersche Buntpapierfabrik, fabricant",
       "Oiseaux, fleurs et fruits dessinés en or sur un bleu profond : chic et immédiatement utilisable.",
       "L'or se photographie mal : à recolorer pendant la restauration.")
@@ -79,7 +79,7 @@ piece("b19", "4L136", "asie", "xixe", "paysage", "Estampe", "a-composer", False,
       "Estampe gravée sur bois en couleurs (série des Trente-six vues du mont Fuji)", "Katsushika Hokusai (1760 – 1849)",
       "L'une des images japonaises les plus célèbres, en très haute définition (12 310 px).",
       "Estampe proposée partout : la valeur viendra de la restauration et des déclinaisons. Titre et signature dans les cartouches.")
-piece("b20", "4L177", "asie", "xixe", "animalier", "Estampe", "a-composer", False, "Carpes dans les herbes d'eau, d'après Hokusai", "1831", "Japon",
+piece("b20", "4L177", "asie", "xixe", "animalier", "Estampe", "a-composer", False, "Deux carpes sous les herbes d'eau, d'après Hokusai", "1831", "Japon",
       "Estampe gravée sur bois en couleurs, pour éventail", "Katsushika Hokusai (1760 – 1849)",
       "Deux carpes dorées sur fond bleu : un sujet porte-bonheur, très graphique.",
       "Format d'éventail aux coins arrondis : à recadrer ou à compléter.")
@@ -95,7 +95,7 @@ piece("b23", "4L160", "asie", "xviie", "animalier", "Peinture", "a-composer", Tr
       "Paire de paravents à six panneaux, encre et couleurs sur papier doré", "Yamaguchi Sekkei (1644 – 1732)",
       "Lions et tigres joueurs sur fond d'or : la grande peinture décorative japonaise.",
       "Paire de paravents : à vendre en deux fichiers ou par détails.")
-piece("b24", "4L164", "asie", "xviie", "floral", "Peinture", "a-composer", False, "Fleurs et graminées des quatre saisons", "Milieu du XVIIe siècle", "Japon",
+piece("b24", "4L164", "asie", "xviie", "floral", "Peinture", "a-composer", False, "Champ de fleurs et de graminées, paravents", "Milieu du XVIIe siècle", "Japon",
       "Paire de paravents à six panneaux, encre et couleurs sur papier", "Kitagawa Sōsetsu (actif vers 1639 – 1650)",
       "Un chef-d'œuvre de l'école Rinpa : fleurs et herbes en frise, idéal pour un papier peint.",
       "Paire de paravents : à vendre en deux fichiers ou par détails.")
@@ -107,11 +107,11 @@ piece("b26", "C470", "asie", "xixe", "floral", "Tissage", "moyen", True, "Chrysa
       "Soie brochée de soies de couleur et de lames d'or", "",
       "Chrysanthèmes multicolores sur des ondes d'or : la soierie japonaise dans ce qu'elle a de plus festif.",
       "Image de 3 814 × 3 508 px : léger agrandissement nécessaire.")
-piece("b27", "R176", "asie", "xviie", "geometrique", "Broderie", "a-composer", False, "Roues d'éventail brodées", "1688 – 1703", "Japon",
+piece("b27", "R176", "asie", "xviie", "geometrique", "Broderie", "a-composer", False, "Grande roue d'éventail sur soie noire", "1688 – 1703", "Japon",
       "Broderie et teinture à réserve (shibori) sur damas de soie noir", "",
       "Une grande roue d'éventail brodée sur soie noire : un graphisme japonais très moderne.",
       "Deux fragments montés sur carton : à composer en planche ou en semis.")
-piece("b28", "R113", "asie", "xixe", "animalier", "Pochoir", "facile", False, "Poissons et oiseaux, pochoir japonais", "1800 – 1909", "Japon",
+piece("b28", "R113", "asie", "xixe", "animalier", "Pochoir", "facile", False, "Poissons et triangles aux oiseaux, pochoir japonais", "1800 – 1909", "Japon",
       "Pochoir (katagami) en papier découpé", "", "Poissons dans les vagues et oiseaux dans des triangles : un motif vif, facile à redessiner.",
       POCHOIR)
 
@@ -163,9 +163,8 @@ piece("b43", "R165", "vetements", "xviiie", "floral", "Vêtement", "moyen", True
       "Brocart de soie, fond crème, fleurs de soies de couleur, d'or et d'argent", "",
       "Une robe du XVIIIe siècle couverte de fleurs brochées : le motif du tissu est un vrai semis.",
       "Robe sur mannequin : le motif du tissu est à extraire et à remettre à plat.")
-piece("b44", "4L052", "vetements", "xixe", "floral", "Tissage", "moyen", False, "Bordure de châle du Cachemire", "Vers 1815 – 1825", "Cachemire",
-      "Laine et soie, tissage en tapisserie sergé", "", "Les palmes du Cachemire, ancêtres du motif paisley, en couleurs profondes.",
-      "Fragment : la bordure est à reconstituer à partir des parties complètes.")
+piece("b44", "4L061", "vetements", "xviiie", "geometrique", "Vêtement", "a-composer", True, "Kesa en patchwork de brocarts", "XVIIIe siècle", "Japon",
+      "Soie brochée, fils métalliques", "", "Une étole de moine faite de brocarts assemblés : un patchwork précieux, à découper en petits motifs.", "Pièces assemblées : à composer en planche.")
 
 # Assiettes et céramiques (6)
 piece("b45", "4L075", "ceramiques", "xviie", "floral", "Carreau", "moyen", False, "Arabesques turquoise sur fond bleu, carreau persan", "XVIIe siècle", "Iran, époque safavide",
@@ -203,7 +202,7 @@ piece("r08", "C506", "asie", "xviiie", "floral", "Pochoir", "facile", False, "Ch
       "Pochoir (katagami) en papier de mûrier traité au kaki, renforcé de fils de soie", "", "Chrysanthèmes et éventails en silhouette : élégant en une couleur.", POCHOIR + " Coin supérieur droit abîmé.")
 piece("r09", "4L171", "asie", "moyen-age", "animalier", "Peinture", "a-composer", False, "Rouge-queue sur un prunier en fleurs", "XIIe siècle", "Chine, dynastie des Song du Sud",
       "Encre et couleurs sur soie (feuille d'album)", "", "Un oiseau peint il y a neuf siècles, d'une finesse étonnante.", TABLEAU)
-piece("r10", "4L030", "peintres", "xxe", "figuratif", "Dessin", "a-composer", False, "La Danse, d'après Kamisaka Sekka", "1909", "Japon",
+piece("r10", "4L030", "peintres", "xxe", "figuratif", "Dessin", "a-composer", False, "Les Trois Danseurs, d'après Kamisaka Sekka", "1909", "Japon",
       "Encre et couleurs sur papier (dessin préparatoire pour « Momoyogusa »)", "Kamisaka Sekka (1866 – 1942)", "Trois danseurs aux kimonos colorés, très graphiques.", TABLEAU)
 piece("r11", "4A036", "peintres", "xixe", "figuratif", "Peinture", "a-composer", False, "La Berceuse, d'après Van Gogh", "1889", "France, Arles",
       "Huile sur toile", "Vincent van Gogh (1853 – 1890)", "Le fond aux fleurs du papier peint est un motif à lui seul.", CHICAGO + " " + TABLEAU)
@@ -216,8 +215,9 @@ piece("r14", "4L013", "peintres", "xixe", "floral", "Peinture", "a-composer", Fa
       "Huile sur toile", "Claude Monet (1840 – 1926)", "Pivoines, hortensias et lilas : un Monet de jeunesse, très riche.", "Fond sombre. " + TABLEAU)
 piece("r15", "4A058", "vetements", "xviiie", "floral", "Vêtement", "moyen", False, "Gilet brodé de bouquets", "Années 1780", "France (Lyon, peut-être)",
       "Satin de soie brodé de soie", "", "Des bouquets et des rinceaux brodés sur un gilet d'homme : le raffinement du XVIIIe siècle.", CHICAGO + " " + VETEMENT)
-piece("r16", "4L061", "vetements", "xviiie", "geometrique", "Vêtement", "a-composer", True, "Kesa en patchwork de brocarts", "XVIIIe siècle", "Japon",
-      "Soie brochée, fils métalliques", "", "Une étole de moine faite de brocarts assemblés : un patchwork précieux.", "Pièces assemblées : à composer en planche.")
+piece("r16", "4L059", "vetements", "xixe", "floral", "Vêtement", "a-composer", False, "Blouse brodée du Kutch", "XIXe siècle", "Inde, Gujarat, Kutch",
+      "Broderie de fils de soie sur soie", "", "Une blouse de femme couverte de broderies dorées et colorées : un décor très riche à découper en motifs.",
+      "Vêtement photographié entier : le tissu est à extraire et à remettre à plat.")
 piece("r17", "4A034", "vetements", "xviiie", "floral", "Vêtement", "moyen", False, "Robe rouge aux fleurs de thé", "Fin du XVIIIe siècle", "Japon",
       "Damas de soie teint à réserve par nouage", "", "Des fleurs de théier blanches sur des courants d'eau, sur fond rouge.", CHICAGO + " " + VETEMENT)
 piece("r18", "4L087", "ceramiques", "moyen-age", "floral", "Carreau", "facile", False, "Carreau étoilé au lotus", "Vers 1300 – 1350", "Iran (Sultanabad, probablement)",
