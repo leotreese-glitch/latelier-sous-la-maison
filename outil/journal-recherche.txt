@@ -1,47 +1,28 @@
-RIJKS fiche illisible https://id.rijksmuseum.nl/200378396 AttributeError("'list' object has no attribute 'get'")
-RIJKS fiche illisible https://id.rijksmuseum.nl/200416351 AttributeError("'list' object has no attribute 'get'")
-RIJKS material=sits : 40 trouvés, 33 retenus avec image libre
-RIJKS fiche illisible https://id.rijksmuseum.nl/200115728 AttributeError("'list' object has no attribute 'get'")
-RIJKS description=sits : 116 trouvés, 28 retenus avec image libre
-RIJKS title=stalenboek : 7 trouvés, 7 retenus avec image libre
-RIJKS description=katoendruk : 2 trouvés, 2 retenus avec image libre
-RIJKS title=behangsel : 23 trouvés, 23 retenus avec image libre
-RIJKS description=behangselpapier : 9 trouvés, 9 retenus avec image libre
-RIJKS description=katagami : 68 trouvés, 35 retenus avec image libre
-RIJKS title=verfsjabloon : 0 trouvés, 0 retenus avec image libre
-RIJKS fiche illisible https://id.rijksmuseum.nl/20017977 AttributeError("'list' object has no attribute 'get'")
-RIJKS fiche illisible https://id.rijksmuseum.nl/20031246 AttributeError("'list' object has no attribute 'get'")
-RIJKS description=brokaat : 95 trouvés, 32 retenus avec image libre
-RIJKS description=damast : 175 trouvés, 35 retenus avec image libre
-RIJKS description=batik : 40 trouvés, 35 retenus avec image libre
-RIJKS title=palampore : 2 trouvés, 2 retenus avec image libre
-CH chintz AND unit_code:"CHNDM" : 156 au total, 156 retenus
-CH sidewall AND unit_code:"CHNDM" AND date:"1800s" : 142 au total, 142 retenus
-CH toile AND unit_code:"CHNDM" : 25 au total, 25 retenus
-CH textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"France" : 549 au total, 100 retenus
-CH textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"Japan" : 70 au total, 70 retenus
-CH stencil AND unit_code:"CHNDM" AND place:"Japan" : 132 au total, 100 retenus
-CH velvet AND unit_code:"CHNDM" AND date:"1600s" : 254 au total, 100 retenus
-CH textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"India" : 105 au total, 100 retenus
-ECHEC https://api.si.edu/openaccess/api/v1.0/search?rows=100&start=0&api_key=DEMO_KEY&q=textile%20AND%20unit_code%3A%22CHNDM%22%20AND%20date%3A%221800s%22%20AND%20pla <HTTPError 429: 'Too Many Requests'>
-CH textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"England" : 0 au total, 0 retenus
-ECHEC https://api.si.edu/openaccess/api/v1.0/search?rows=100&start=0&api_key=DEMO_KEY&q=textile%20AND%20unit_code%3A%22CHNDM%22%20AND%20date%3A%221600s%22%20AND%20pla <HTTPError 429: 'Too Many Requests'>
-CH textile AND unit_code:"CHNDM" AND date:"1600s" AND place:"Turkey" : 0 au total, 0 retenus
-AIC chintz : 27 retenus
-AIC palampore : 27 retenus
-AIC toile de Jouy : 29 retenus
-AIC block printed cotton : 23 retenus
-AIC wallpaper : 30 retenus
-AIC katagami : 27 retenus
-AIC kashmir shawl : 28 retenus
-AIC ikat : 30 retenus
-AIC batik : 30 retenus
-AIC velvet : 29 retenus
-AIC lampas : 28 retenus
-AIC kalamkari : 27 retenus
-AIC furnishing fabric : 30 retenus
-AIC sample book : 23 retenus
-TOTAL 1248 candidats uniques, 1035 avec une image d'au moins 3 000 px
-1034 sur 1035
-{'6000,': [1089, 3000], '4000,': [4000, 11023], '3000,': [1089, 3000], 'pct:100': [4055, 11175]}
-code de sortie : 0
+CMA {'department': 'Chinese Art'} : 2501
+CMA {'department': 'Decorative Art and Design'} : 3293
+CMA {'department': 'Modern European Painting and Sculpture'} : 487
+CMA {'department': 'European Painting and Sculpture'} : 725
+CMA {'department': 'Indian and Southeast Asian Art'} : 3383
+CMA {'department': 'Korean Art'} : 444
+CMA {'department': 'Drawings', 'q': 'flowers'} : 118
+CMA {'department': 'Drawings', 'q': 'Redon'} : 6
+CMA {'department': 'Prints', 'q': 'Redon'} : 63
+CMA {'q': 'Odilon Redon'} : 71
+CMA {'q': 'Imari'} : 26
+CMA {'q': 'Iznik'} : 10
+CMA {'q': 'maiolica'} : 360
+CMA {'q': 'Delft'} : 20
+CMA {'q': 'kosode'} : 0
+CMA {'q': 'kimono'} : 18
+Traceback (most recent call last):
+  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 133, in <module>
+    if c["ref"] in EXCLU or c.get("lic") != "CC0" or not assez_grand(c["w"], c["h"]) or mort_trop_tard(c["auteurs"]):
+                                                                                        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 107, in mort_trop_tard
+    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
+           ^^^
+  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 107, in <genexpr>
+    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'int'
+code de sortie : 1
