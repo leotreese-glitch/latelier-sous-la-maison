@@ -31,7 +31,7 @@ fin = page.index('  <section class="outils" aria-label="Filtres">')
 ENTETE = '''  <header class="entete">
     <span class="etiquette">L'atelier sous la maison · gamme Motifs retrouvés · lot 4</span>
     <h1>Motifs retrouvés, lot 4</h1>
-    <p><strong>%d pièces de musée libres pour la vente</strong>, vérifiées le %s au Cleveland Museum of Art, au Rijksmuseum d'Amsterdam, au Cooper Hewitt (Smithsonian, New York) et à l'Art Institute of Chicago. Six familles : indiennes colorées, soieries et papiers peints, Asie, peintres du domaine public, vêtements, assiettes et céramiques.</p>
+    <p><strong>%d pièces de musée libres pour la vente</strong>, dont 3 proches d'un design déjà en ligne (signalées « Doublon possible »), vérifiées le %s au Cleveland Museum of Art, au Rijksmuseum d'Amsterdam, au Cooper Hewitt (Smithsonian, New York) et à l'Art Institute of Chicago. Six familles : indiennes colorées, soieries et papiers peints, Asie, peintres du domaine public, vêtements, assiettes et céramiques.</p>
     <p>%d pièces de réserve permettent de remplacer celles qui ne vous plaisent pas. Utilisez le filtre « Famille » pour parcourir une direction à la fois, et cliquez sur une image pour l'agrandir et faire défiler les pièces une à une.</p>
   </header>
 
@@ -39,7 +39,7 @@ ENTETE = '''  <header class="entete">
     <div class="bloc">
       <h2>Comment choisir</h2>
       <ol>
-        <li><strong>Retenez ou écartez</strong> chaque pièce ici. L'objectif est de 50 : le bouton « Retenir les 50 propositions » le fait d'un coup si tout vous va.</li>
+        <li><strong>Retenez ou écartez</strong> chaque pièce ici. L'objectif est de 50. Cherchez « doublon » pour retrouver les 3 pièces proches d'un design déjà en ligne.</li>
         <li><strong>Une pièce ne vous plaît pas ?</strong> Écartez-la et retenez une pièce de réserve à la place.</li>
         <li><strong>Dès que vous avez choisi</strong>, j'écris les fiches complètes en français et en anglais, je les ajoute au bouton « Créer les brouillons » de l'administration et je prépare les photos haute définition des musées.</li>
       </ol>
@@ -75,7 +75,7 @@ page = remplacer(page, '''        <button class="bascule" data-filtre="type" dat
         <button class="bascule" data-filtre="type" data-valeur="figuratif" aria-pressed="false">Figuratif</button>
         <button class="bascule" data-filtre="type" data-valeur="paysage" aria-pressed="false">Paysage</button>''')
 page = remplacer(page, 'placeholder="Chercher : indienne, soie, Japon…"', 'placeholder="Chercher : Monet, pivoine, Iznik, kimono…"')
-page = remplacer(page, '<p class="total chiffres" id="total">Retenues : <b>0</b> sur 15 visées</p>', '<p class="total chiffres" id="total">Retenues : <b>0</b> sur %d visées</p>' % nb)
+page = remplacer(page, '<p class="total chiffres" id="total">Retenues : <b>0</b> sur 15 visées</p>', '<p class="total chiffres" id="total">Retenues : <b>0</b> sur 50 visées</p>')
 page = remplacer(page, '<button class="bouton" id="tout-retenir">Retenir les 15 propositions</button>', '<button class="bouton" id="tout-retenir">Retenir les %d propositions</button>' % nb)
 
 debut = page.index('  <footer class="sources">')
@@ -97,7 +97,7 @@ page = remplacer(page, ".frise { display: grid; grid-template-columns: repeat(5,
 page = remplacer(page, '''    "a-composer": "Pièce isolée : semis, planche ou bordure"''', '''    "a-composer": "Pièce isolée : semis, planche ou bordure",
     "oeuvre": "Œuvre entière : en image, en détails ou en planche"''')
 page = remplacer(page, 'var CONSULTE = "2026-10-30";', 'var CONSULTE = "%s";' % lot4.CONSULTE)
-page = remplacer(page, "var OBJECTIF = 15;", "var OBJECTIF = %d;" % nb)
+page = remplacer(page, "var OBJECTIF = 15;", "var OBJECTIF = 50;")
 page = remplacer(page, '''    ["toutes", "Toutes"], ["xvie", "XVIe"], ["xviie", "XVIIe"], ["xviiie", "XVIIIe"], ["xixe", "XIXe"]''',
                  '''    ["toutes", "Toutes"], ["moyen-age", "Moyen Âge"], ["xvie", "XVIe"], ["xviie", "XVIIe"], ["xviiie", "XVIIIe"], ["xixe", "XIXe"], ["xxe", "XXe"]''')
 page = remplacer(page, 'var TYPES = { floral: "Floral", geometrique: "Géométrique", animalier: "Animalier", figuratif: "Figuratif" };',
@@ -117,7 +117,7 @@ page = remplacer(page, '''    if (filtre.type !== "tous" && d.type !== filtre.ty
                  '''    if (filtre.famille !== "toutes" && d.famille !== filtre.famille) return false;
     if (filtre.type !== "tous" && d.type !== filtre.type) return false;''')
 page = remplacer(page, '''carte._texte = [d.titre, d.titreMusee, d.origine, d.technique, d.auteur, d.ref, d.piece, d.pourquoi].join(" ").toLowerCase();''',
-                 '''carte._texte = [d.titre, d.titreMusee, d.origine, d.technique, d.auteur, d.ref, d.piece, d.pourquoi, FAMILLES[d.famille]].join(" ").toLowerCase();''')
+                 '''carte._texte = [d.titre, d.titreMusee, d.origine, d.technique, d.auteur, d.ref, d.piece, d.pourquoi, d.vigilance, FAMILLES[d.famille]].join(" ").toLowerCase();''')
 page = remplacer(page, '''NOMS_PERIODES[d.periode] + " · " + d.date + " · " + d.origine + " · " + MUSEES[d.musee].nom''',
                  '''FAMILLES[d.famille] + " · " + d.date + " · " + d.origine + " · " + MUSEES[d.musee].nom''')
 page = remplacer(page, '''var cols = ["Décision", "Note", "Proposition", "Référence",''', '''var cols = ["Décision", "Note", "Proposition", "Famille", "Référence",''')

@@ -183,6 +183,17 @@ piece("b50", "4L123", "ceramiques", "xviie", "figuratif", "Carreau", "a-composer
       "Céramique à décor de cuerda seca", "", "Un jeune homme au turban sur fond jaune et vert : la céramique persane dans ses couleurs les plus vives.",
       "Panneau de deux carreaux : le joint est à effacer.")
 
+# Remises à la demande de Léo (4 novembre 2026) : proches d'un design en ligne, il les écartera lui-même s'il le souhaite
+piece("b51", "C625", "soieries", "xviie", "animalier", "Tissage", "facile", False, "Paons et lions sur fond d'or", "XVIIe siècle", "Italie",
+      "Velours de soie coupé et bouclé", "", "Paons, lions dressés et fleurs en velours bleu sur fond jaune d'or : un semis animalier rare.",
+      "Doublon possible : velours jumeau de « Lions et oiseaux de velours », déjà en ligne (numéro voisin au musée, même style, autre couleur).")
+piece("b52", "4L052", "vetements", "xixe", "floral", "Tissage", "moyen", False, "Palmes de châle du Cachemire", "Vers 1815 – 1825", "Cachemire",
+      "Laine et soie, tissage en tapisserie sergé", "", "Les palmes du Cachemire, ancêtres du motif paisley, en couleurs profondes.",
+      "Doublon possible : même type de pièce que « Bordure de châle du Cachemire », déjà en ligne (titre changé pour ne pas reprendre le sien). Fragment : bordure à reconstituer.")
+piece("b53", "C702", "indiennes", "xviiie", "floral", "Broderie", "facile", False, "Bouquets rouges sur fond d'or", "XVIIIe siècle", "Inde",
+      "Broderie de soie", "", "Un semis de bouquets rouges sur fond jaune d'or : le raccord est déjà là.",
+      "Doublon possible : même effet que « Châle aux fleurs sur fond jaune », déjà en ligne (petites fleurs rouges sur fond jaune).")
+
 # ---------------- 20 pièces de réserve ----------------
 piece("r01", "C105", "indiennes", "xixe", "floral", "Étoffe imprimée", "facile", False, "Roses et rubans sur fond chamois", "1800 – 1850", "Angleterre",
       "Coton glacé imprimé", "", "Des roses grandeur nature reliées par des rubans jaunes et rouges.", "Image de 3 228 × 3 891 px : léger agrandissement nécessaire.")
