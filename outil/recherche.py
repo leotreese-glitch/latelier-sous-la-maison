@@ -52,6 +52,10 @@ PEINTRE = re.compile(r"flower|bouquet|vase|garden|lil(y|ies)|iris|popp|still lif
 MAITRES = re.compile(r"Hokusai|Hiroshige|Kuniyoshi|Koryūsai|Koryusai|Utamaro|Shigemasa|Bairei|Hokkei|Gakutei|Hokuba|"
                      r"Kōrin|Korin|Jakuchū|Jakuchu|Hōitsu|Hoitsu|Sōtatsu|Sotatsu|Shibata Zeshin|Kiitsu|Settei", re.I)
 
+FLEUR_OISEAU = re.compile(r"flower|bird|blossom|peon|iris|chrysanth|plum|cherr|maple|wisteria|crane|carp|fish|wave|tiger|"
+                          r"dragon|hawk|pheasant|rooster|sparrow|swallow|butterfl|insect|bamboo|morning glor|lotus|camellia|"
+                          r"hydrangea|popp|lil(y|ies)|rose|fuji|parrot|peacock|egret|heron|duck|mandarin|quail|kingfisher", re.I)
+RELIGIEUX = re.compile(r"Saint|Madonna|Christ|Portrait|Holy|Virgin|Temptation|Apocalypse|Crucifix|Martyr|Self-Portrait", re.I)
 candidats = []
 
 # ---------------- Cleveland Museum of Art (CC0) ----------------
@@ -87,7 +91,12 @@ def compact_cma(o):
 
 
 pool_cma = {x["ref"]: x for x in json.load(open("outil/recherche/cma.json"))}
-for params in [{"department": "Chinese Art"}, {"department": "Decorative Art and Design"},
+DEJA_CMA4 = os.path.exists("outil/recherche/cma4.json")
+if DEJA_CMA4:
+    for x in json.load(open("outil/recherche/cma4.json")):
+        pool_cma.setdefault(x["ref"], x)
+    noter("CMA : fiches reprises de outil/recherche/cma4.json (%d)" % len(pool_cma))
+for params in [] if DEJA_CMA4 else [{"department": "Chinese Art"}, {"department": "Decorative Art and Design"},
                {"department": "Modern European Painting and Sculpture"}, {"department": "European Painting and Sculpture"},
                {"department": "Indian and Southeast Asian Art"}, {"department": "Korean Art"},
                {"department": "Drawings", "q": "flowers"}, {"department": "Drawings", "q": "Redon"},
@@ -100,11 +109,19 @@ for params in [{"department": "Chinese Art"}, {"department": "Decorative Art and
             pool_cma.setdefault(c["ref"], c)
             n += 1
     noter("CMA %s : %d" % (params, n))
-json.dump(list(pool_cma.values()), open("outil/recherche/cma4.json", "w"), ensure_ascii=False, separators=(",", ":"))
+if not DEJA_CMA4:
+    json.dump(list(pool_cma.values()), open("outil/recherche/cma4.json", "w"), ensure_ascii=False, separators=(",", ":"))
+
+
+def entier(x):
+    try:
+        return int(str(x)[:4])
+    except Exception:
+        return 0
 
 
 def mort_trop_tard(auteurs):
-    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
+    return any(entier(a.get("mort")) > 1955 for a in auteurs if isinstance(a, dict))
 
 
 def categorie_cma(c):
@@ -113,16 +130,20 @@ def categorie_cma(c):
     if typ == "Ceramic" and re.search(r"\b(Dish|Plate|Charger|Tile|Platter|Panel)\b", t):
         return "ceramique"
     if typ == "Garment" and not re.search(r"Pre-Columbian|Native North American|Lace|Ecclesiastical", coll) \
-            and not re.search(r"Shoe|Boot|Pendant|Hat|Loincloth|Turban|Band|Trousers|Glove|Purse|Bag|Apron", t):
+            and not re.search(r"Shoe|Boot|Pendant|Hat|Loincloth|Turban|Band|Trousers|Glove|Purse|Bag|Apron|Mola|Cap|Slipper|Headdress|Scarf", t):
         return "vetement"
     if typ in ("Textile", "Embroidery") and re.search(r"Kimono|Kosode|Robe|Furisode|Uchikake|Katabira|Coat|Jacket|Dress|Shawl", t):
         return "vetement"
-    if dep == "Japanese Art" and typ == "Print" and (DECO.search(t) or any(MAITRES.search(a.get("nom") or "") for a in c["auteurs"])):
+    if dep == "Japanese Art" and typ == "Print" and FLEUR_OISEAU.search(t) and any(MAITRES.search(a.get("nom") or "") for a in c["auteurs"]):
         return "asie"
-    if dep in ("Japanese Art", "Chinese Art", "Korean Art") and typ == "Painting" and DECO.search(t):
+    if dep in ("Japanese Art", "Chinese Art", "Korean Art") and typ == "Painting" and FLEUR_OISEAU.search(t):
         return "asie"
-    if dep in ("Modern European Painting and Sculpture", "European Painting and Sculpture", "Drawings", "Prints") \
-            and typ in ("Painting", "Drawing", "Print") and (PEINTRE.search(t) or "Redon" in json.dumps(c["auteurs"])):
+    morts = [entier(a.get("mort")) for a in c["auteurs"] if entier(a.get("mort"))]
+    ancien = morts and max(morts) < 1800 and "Pillement" not in json.dumps(c["auteurs"])
+    if dep in ("Modern European Painting and Sculpture", "European Painting and Sculpture", "Drawings", "Prints", "Japanese Art") \
+            and (typ in ("Painting", "Drawing") or (typ == "Print" and re.search(r"Pillement|Sekka", json.dumps(c["auteurs"])))) \
+            and not ancien and not RELIGIEUX.search(t) \
+            and (PEINTRE.search(t) or "Redon" in json.dumps(c["auteurs"])):
         return "peintre"
     if dep == "Decorative Art and Design" and typ in ("Textile", "Embroidery", "Velvet"):
         return "soierie"
@@ -295,13 +316,32 @@ for c in candidats:
         continue
     cles.add(k)
     uniques.append(c)
-PLAFOND = {"ceramique": 90, "vetement": 80, "asie": 110, "peintre": 90, "soierie": 30}
+PLAFOND = {"ceramique": 100, "vetement": 75, "asie": 100, "peintre": 70, "soierie": 30}
 ORDRE = ["peintre", "vetement", "ceramique", "asie", "soierie"]
+
+
+def groupe(c):
+    """Sous-groupe pour varier les pièces (pays, musée, type) au lieu de garder seulement les plus grandes images."""
+    lieu = " ".join(x or "" for x in (c.get("lieu") or []))
+    pays = next((p for p in ("Japan", "China", "Korea", "Turkey", "Iran", "India", "France", "Italy", "Spain", "Netherlands",
+                             "England", "Germany", "Uzbekistan") if p in lieu), "autre")
+    return "%s-%s-%s" % (c["musee"], pays, (c.get("type") or [""])[0])
+
+
 garde = []
 for cat in ORDRE:
     l = [c for c in uniques if c["cat"] == cat]
     l.sort(key=lambda c: -(min(c.get("w") or 0, c.get("h") or 0)))
-    garde += l[:PLAFOND[cat]]
+    groupes = {}
+    for c in l:
+        groupes.setdefault(groupe(c), []).append(c)
+    choisis, rang = [], 0
+    while len(choisis) < PLAFOND[cat] and any(len(g) > rang for g in groupes.values()):
+        for g in groupes.values():
+            if len(g) > rang and len(choisis) < PLAFOND[cat]:
+                choisis.append(g[rang])
+        rang += 1
+    garde += choisis
     noter("CATEGORIE %s : %d candidats, %d gardés pour les planches" % (cat, len(l), min(len(l), PLAFOND[cat])))
 lettre = {"cma": "L", "aic": "A", "rijks": "R"}
 compte = {}
