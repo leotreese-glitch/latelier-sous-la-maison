@@ -1,4 +1,5 @@
-"""Lot 3 : télécharge l'image complète de chaque pièce (Rijksmuseum, Cooper Hewitt, Chicago), la ramène à 36 Mpx au plus, et prépare le ZIP."""
+"""Lot 4 : télécharge l'image complète de chaque pièce (Cleveland, Rijksmuseum, Cooper Hewitt, Chicago), la ramène à 36 Mpx au plus
+(120 Mpx pour les paravents), et prépare un ZIP par famille."""
 import csv, io, json, math, os, shutil, time, urllib.request, zipfile
 from PIL import Image, ImageFile
 import numpy as np
@@ -6,7 +7,7 @@ import numpy as np
 Image.MAX_IMAGE_PIXELS = None
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0)", "AIC-User-Agent": "latelier-sous-la-maison (registre des motifs retrouves)"}
 MAX_PX = 36_000_000
-RACINE = "Motifs retrouves - lot 3 - photos des musees"
+RACINE = "Motifs retrouves - lot 4 - photos des musees"
 
 def get(url, dest, essais=4):
     for i in range(essais):
@@ -26,8 +27,40 @@ def source(p):
     if p["musee"] == "ch":
         # Smithsonian : fichier « High-resolution JPEG » de l'image marquée CC0.
         return "https://ids.si.edu/ids/download?id=%s.jpg" % p["ids"]
-    # Serveur d'images de Chicago : « pct:100 » donne l'image à sa taille complète (vérifié le 2026-10-25).
-    return "https://www.artic.edu/iiif/2/%s/full/pct:100/0/default.jpg" % p["image_id"]
+    if p["musee"] == "cma":
+        # Cleveland : fichier « full » (TIFF) de l'Open Access, lien lu dans la notice du musée.
+        return p["hd"]
+    # Serveur d'images de Chicago : depuis début novembre 2026, « pct:100 » et « 4000, » sont refusés (403) ;
+    # « 3000, » est la plus grande taille servie (3 000 px sur le grand côté).
+    return "https://www.artic.edu/iiif/2/%s/full/3000,/0/default.jpg" % p["image_id"]
+
+
+def ouvrir(chemin):
+    """Ouvre l'image ; les TIFF que Pillow lit mal (16 bits par couche, compressions rares) passent par tifffile."""
+    try:
+        im = Image.open(chemin); im.load()
+        if im.mode in ("RGB", "RGBA", "L", "LA", "P", "CMYK"):
+            return im
+        print("  mode", im.mode, ": relu avec tifffile", flush=True)
+        im.close()
+    except OSError as e:
+        if "truncated" in str(e):
+            raise
+        print("  Pillow :", repr(e), ": relu avec tifffile", flush=True)
+    import tifffile
+    a = tifffile.imread(chemin)
+    while a.ndim > 3:
+        a = a[0]
+    if a.ndim == 3 and a.shape[0] in (3, 4) and a.shape[-1] not in (3, 4):
+        a = np.moveaxis(a, 0, -1)
+    if a.ndim == 3 and a.shape[-1] == 4:
+        a = a[..., :3]
+    if a.dtype == np.uint16:
+        a = (a >> 8).astype(np.uint8)
+    elif a.dtype != np.uint8:
+        a = (a.astype(np.float32) * np.float32(255.0 / max(1, float(a.max())))).clip(0, 255).astype(np.uint8)
+    print("  lu avec tifffile", a.shape, flush=True)
+    return Image.fromarray(np.ascontiguousarray(a))
 
 pieces = json.load(open("outil/hd.json"))
 FILTRE = [x for x in open("outil/filtre.txt").read().split() if x] if os.path.exists("outil/filtre.txt") else []
@@ -45,7 +78,7 @@ for p in pieces:
                 break
         p["note"] = ""
         try:
-            im = Image.open("/tmp/src"); im.load()
+            im = ouvrir("/tmp/src")
         except OSError as e:
             if "truncated" not in str(e):
                 raise
@@ -64,8 +97,9 @@ for p in pieces:
         if im.mode not in ("RGB",):
             im = im.convert("RGB")
         w, h = im.size; p["pxOrigine"] = "%d × %d" % (w, h)
-        if w * h > MAX_PX:
-            s = math.sqrt(MAX_PX / (w * h)); im = im.resize((round(w * s), round(h * s)), Image.LANCZOS)
+        plafond = p.get("maxpx", MAX_PX)
+        if w * h > plafond:
+            s = math.sqrt(plafond / (w * h)); im = im.resize((round(w * s), round(h * s)), Image.LANCZOS)
         os.makedirs("sortie/%s/%s" % (RACINE, p["dossier"]), exist_ok=True)
         dest = "sortie/%s/%s/%s" % (RACINE, p["dossier"], p["fichier"])
         kw = {"quality": 92, "subsampling": 0, "dpi": (300, 300)}
@@ -84,17 +118,11 @@ with open("sortie/%s/liste-des-pieces.csv" % RACINE, "w", newline="", encoding="
         wr.writerow([p["liste"], p["dossier"], p["fichier"], p["titre"], p["epoque"], p["date"], p["museeNom"], p["ref"], p["notice"], p["pxOrigine"], p.get("pxFourni", "échec : " + p.get("erreur", "")), p["or"], p["afaire"], p.get("original", "")])
 shutil.copy("outil/LISEZ-MOI.txt", "sortie/%s/LISEZ-MOI.txt" % RACINE)
 
-# Un ZIP par époque, chacun avec la liste et le mode d'emploi.
+# Un ZIP par famille, chacun avec la liste complète et le mode d'emploi.
 os.makedirs("zips", exist_ok=True)
-if not FILTRE:
-    with zipfile.ZipFile("zips/Motifs-retrouves-lot-3-photos.zip", "w", zipfile.ZIP_STORED) as z:
-        for nom in ("LISEZ-MOI.txt", "liste-des-pieces.csv"):
-            z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
-        for p in pieces:
-            if p["ok"]:
-                z.write("sortie/%s/%s/%s" % (RACINE, p["dossier"], p["fichier"]), "%s/%s/%s" % (RACINE, p["dossier"], p["fichier"]))
-for dossier in []:
-    with zipfile.ZipFile("zips/%s.zip" % dossier, "w", zipfile.ZIP_STORED) as z:
+for dossier in ([] if FILTRE else sorted({p["dossier"] for p in pieces})):
+    nom_zip = "Motifs-retrouves-lot-4-" + dossier.split(" ")[0].lower()
+    with zipfile.ZipFile("zips/%s.zip" % nom_zip, "w", zipfile.ZIP_STORED) as z:
         for nom in ("liste-des-pieces.csv", "LISEZ-MOI.txt"):
             z.write("sortie/%s/%s" % (RACINE, nom), "%s/%s" % (RACINE, nom))
         for p in pieces:

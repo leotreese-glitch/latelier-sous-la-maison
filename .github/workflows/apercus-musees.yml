@@ -41,7 +41,7 @@ jobs:
             gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
             exit 0
           fi
-          python -m pip install pillow numpy
+          python -m pip install pillow numpy tifffile imagecodecs
           python outil/photos_hd.py
           ls -la zips
           if [ -f outil/ajouter.txt ] && gh release view photos-motifs-retrouves -R "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
@@ -51,4 +51,4 @@ jobs:
           fi
           gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
           gh release create photos-motifs-retrouves zips/* -R "$GITHUB_REPOSITORY" --target outil/apercus-musees --prerelease \
-            --title "Photos des motifs retrouvés, lot 3 (temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."
+            --title "Photos des motifs retrouvés, lot 4 (temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."

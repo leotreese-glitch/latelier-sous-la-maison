@@ -1,19 +1,20 @@
-L'atelier sous la maison - Motifs retrouvés, lot 3
-Photos des 22 pièces retenues le 30 octobre 2026 (15 proposées + 7 de réserve)
+L'atelier sous la maison - Motifs retrouvés, lot 4
+Photos des 60 pièces retenues le 4 novembre 2026 (43 proposées + 17 de réserve)
 
 Ce que contient ce dossier
-- Un sous-dossier par époque (XVIe, XVIIe, XVIIIe et XIXe siècles).
+- Un ZIP par famille, chacun avec son dossier : 1-Indiennes, 2-Soieries et papiers peints, 3-Asie, 4-Peintres, 5-Vetements, 6-Ceramiques.
 - Chaque image porte le nom de sa fiche dans l'administration (même adresse que la page du site).
-- liste-des-pieces.csv : titre, musée, numéro d'inventaire, lien de la notice, tailles, et ce qu'il y a à faire pour chaque pièce. S'ouvre dans Excel, Numbers ou Google Sheets.
+- liste-des-pieces.csv (la même dans chaque ZIP, avec les 60 pièces) : titre, musée, numéro d'inventaire, lien de la notice, tailles, et ce qu'il y a à faire pour chaque pièce. S'ouvre dans Excel, Numbers ou Google Sheets.
 
 Ce que sont ces images
-- Ce sont les photographies des musées, avant restauration : Rijksmuseum d'Amsterdam (images du domaine public), Cooper Hewitt, musée du design du Smithsonian à New York (CC0), et Art Institute of Chicago (CC0).
-- Elles sont en JPEG qualité 92, à 300 dpi, avec au plus 36 millions de pixels (environ 7 300 x 4 900).
-- Quand l'original du musée est plus grand, sa taille complète et son lien sont dans la liste (colonnes « Taille d'origine » et « Original complet »).
+- Ce sont les photographies des musées, avant restauration : Cleveland Museum of Art (CC0), Rijksmuseum d'Amsterdam (images du domaine public), Cooper Hewitt, musée du design du Smithsonian à New York (CC0), et Art Institute of Chicago (CC0).
+- Elles sont en JPEG qualité 92, à 300 dpi, avec au plus 36 millions de pixels (environ 7 300 x 4 900). Exception : les quatre paravents d'Asie sont fournis jusqu'à 120 millions de pixels, pour pouvoir découper les panneaux.
+- Quand l'original du musée est plus grand, sa taille complète et son lien sont dans la liste (colonnes « Taille d'origine » et « Original complet »). Pour Cleveland, l'original est un très gros fichier TIFF.
+- Chicago ne fournit plus que 3 000 px sur le grand côté depuis début novembre 2026 : ses quatre pièces (Nymphéas, Robe de cour impériale aux dragons, Gilet brodé de bouquets, Robe rouge aux fleurs de thé) demandent un agrandissement.
 
 Pour chaque pièce, avant de publier
-1. Restaurer : taches, trous, déchirures, fils manquants, couleurs passées ; effacer les étiquettes du musée.
-2. Faire le carreau raccordable quand la pièce s'y prête (voir la colonne « À faire »). Pour les deux pochoirs japonais, redessiner le motif : on ne vend pas la photo du pochoir.
+1. Restaurer : taches, trous, déchirures, fils manquants, couleurs passées ; effacer les étiquettes, les supports et les ombres des photos d'objets (assiettes, vêtements).
+2. Suivre la colonne « À faire » : carreau raccordable quand la pièce s'y prête ; pour les tableaux, estampes et paravents, image entière ou détails ; pour les vêtements et les céramiques, décor à remettre à plat. Pour les deux pochoirs japonais, redessiner le motif : on ne vend pas la photo du pochoir.
 3. Exporter en PNG d'au moins 4 000 px sur le grand côté.
 4. Dans l'administration, cliquer sur « Créer les brouillons », ouvrir la fiche du même nom (elle est déjà remplie en français et en anglais, au prix de 29,99 €), déposer le fichier, relire le cartel, puis Publier et « Mettre le site à jour ».
 
