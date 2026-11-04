@@ -1,28 +1,56 @@
-CMA {'department': 'Chinese Art'} : 2501
-CMA {'department': 'Decorative Art and Design'} : 3293
-CMA {'department': 'Modern European Painting and Sculpture'} : 487
-CMA {'department': 'European Painting and Sculpture'} : 725
-CMA {'department': 'Indian and Southeast Asian Art'} : 3383
-CMA {'department': 'Korean Art'} : 444
-CMA {'department': 'Drawings', 'q': 'flowers'} : 118
-CMA {'department': 'Drawings', 'q': 'Redon'} : 6
-CMA {'department': 'Prints', 'q': 'Redon'} : 63
-CMA {'q': 'Odilon Redon'} : 71
-CMA {'q': 'Imari'} : 26
-CMA {'q': 'Iznik'} : 10
-CMA {'q': 'maiolica'} : 360
-CMA {'q': 'Delft'} : 20
-CMA {'q': 'kosode'} : 0
-CMA {'q': 'kimono'} : 18
-Traceback (most recent call last):
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 133, in <module>
-    if c["ref"] in EXCLU or c.get("lic") != "CC0" or not assez_grand(c["w"], c["h"]) or mort_trop_tard(c["auteurs"]):
-                                                                                        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 107, in mort_trop_tard
-    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
-           ^^^
-  File "/home/runner/work/latelier-sous-la-maison/latelier-sous-la-maison/outil/recherche.py", line 107, in <genexpr>
-    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: '>' not supported between instances of 'str' and 'int'
-code de sortie : 1
+CMA : fiches reprises de outil/recherche/cma4.json (19792)
+CMA candidats : 942
+AIC Odilon Redon (peintre) : 4
+AIC Claude Monet (peintre) : 7
+AIC Vincent van Gogh (peintre) : 6
+AIC Paul Gauguin (peintre) : 3
+AIC Henri Fantin-Latour (peintre) : 2
+AIC Paul Cézanne (peintre) : 3
+AIC Pierre-Auguste Renoir (peintre) : 1
+AIC Édouard Vuillard (peintre) : 2
+AIC Pierre Bonnard (peintre) : 1
+AIC Paul Signac (peintre) : 3
+AIC Henri-Edmond Cross (peintre) : 3
+AIC Mary Cassatt (peintre) : 0
+AIC Gustave Caillebotte (peintre) : 0
+AIC Imari plate (ceramique) : 4
+AIC Iznik (ceramique) : 0
+AIC maiolica (ceramique) : 0
+AIC Delft charger (ceramique) : 2
+AIC famille rose plate (ceramique) : 3
+AIC Kakiemon (ceramique) : 1
+AIC Meissen plate (ceramique) : 3
+AIC Sèvres plate (ceramique) : 3
+AIC tile panel (ceramique) : 3
+AIC kimono (vetement) : 29
+AIC kosode (vetement) : 29
+AIC dragon robe (vetement) : 24
+AIC waistcoat embroidered (vetement) : 30
+AIC robe à la française (vetement) : 16
+AIC ikat robe (vetement) : 32
+AIC shawl (vetement) : 12
+AIC uchikake (vetement) : 32
+AIC court robe (vetement) : 24
+RIJKS title=bord met : 200 trouvés, 29 gardés
+RIJKS description=Imari : 200 trouvés, 29 gardés
+RIJKS description=Kakiemon : 168 trouvés, 26 gardés
+RIJKS description=famille rose : 200 trouvés, 30 gardés
+RIJKS title=schotel met : 200 trouvés, 9 gardés
+RIJKS title=tegeltableau : 145 trouvés, 17 gardés
+RIJKS title=japon : 190 trouvés, 30 gardés
+RIJKS title=kimono : 162 trouvés, 23 gardés
+RIJKS title=herenvest : 12 trouvés, 12 gardés
+RIJKS title=jak van sits : 2 trouvés, 2 gardés
+RIJKS creator=Hokusai : 200 trouvés, 25 gardés
+RIJKS creator=Hiroshige : 200 trouvés, 30 gardés
+RIJKS description=surimono : 45 trouvés, 29 gardés
+RIJKS title=bloemen en vogels : 136 trouvés, 27 gardés
+CATEGORIE peintre : 123 candidats, 70 gardés pour les planches
+CATEGORIE vetement : 372 candidats, 75 gardés pour les planches
+CATEGORIE ceramique : 558 candidats, 100 gardés pour les planches
+CATEGORIE asie : 377 candidats, 100 gardés pour les planches
+CATEGORIE soierie : 0 candidats, 0 gardés pour les planches
+TOTAL 345 candidats pour les planches
+345 sur 345
+{'6000,': "<HTTPError 403: 'Forbidden'>", '4000,': "<HTTPError 403: 'Forbidden'>", '3000,': [3000, 2362], 'pct:100': "<HTTPError 403: 'Forbidden'>"}
+code de sortie : 0

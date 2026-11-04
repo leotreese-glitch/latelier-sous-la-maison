@@ -1,0 +1,53 @@
+CMA : fiches reprises de outil/recherche/cma4.json (19792)
+CMA candidats : 942
+AIC Odilon Redon (peintre) : 4
+AIC Claude Monet (peintre) : 7
+AIC Vincent van Gogh (peintre) : 6
+AIC Paul Gauguin (peintre) : 3
+AIC Henri Fantin-Latour (peintre) : 2
+AIC Paul Cézanne (peintre) : 3
+AIC Pierre-Auguste Renoir (peintre) : 1
+AIC Édouard Vuillard (peintre) : 2
+AIC Pierre Bonnard (peintre) : 1
+AIC Paul Signac (peintre) : 3
+AIC Henri-Edmond Cross (peintre) : 3
+AIC Mary Cassatt (peintre) : 0
+AIC Gustave Caillebotte (peintre) : 0
+AIC Imari plate (ceramique) : 4
+AIC Iznik (ceramique) : 0
+AIC maiolica (ceramique) : 0
+AIC Delft charger (ceramique) : 2
+AIC famille rose plate (ceramique) : 3
+AIC Kakiemon (ceramique) : 1
+AIC Meissen plate (ceramique) : 3
+AIC Sèvres plate (ceramique) : 3
+AIC tile panel (ceramique) : 3
+AIC kimono (vetement) : 29
+AIC kosode (vetement) : 29
+AIC dragon robe (vetement) : 24
+AIC waistcoat embroidered (vetement) : 30
+AIC robe à la française (vetement) : 16
+AIC ikat robe (vetement) : 32
+AIC shawl (vetement) : 12
+AIC uchikake (vetement) : 32
+AIC court robe (vetement) : 24
+RIJKS title=bord met : 200 trouvés, 29 gardés
+RIJKS description=Imari : 200 trouvés, 29 gardés
+RIJKS description=Kakiemon : 168 trouvés, 26 gardés
+RIJKS description=famille rose : 200 trouvés, 30 gardés
+RIJKS title=schotel met : 200 trouvés, 9 gardés
+RIJKS title=tegeltableau : 145 trouvés, 17 gardés
+RIJKS title=japon : 190 trouvés, 30 gardés
+RIJKS title=kimono : 162 trouvés, 23 gardés
+RIJKS title=herenvest : 12 trouvés, 12 gardés
+RIJKS title=jak van sits : 2 trouvés, 2 gardés
+RIJKS creator=Hokusai : 200 trouvés, 25 gardés
+RIJKS creator=Hiroshige : 200 trouvés, 30 gardés
+RIJKS description=surimono : 45 trouvés, 29 gardés
+RIJKS title=bloemen en vogels : 136 trouvés, 27 gardés
+CATEGORIE peintre : 123 candidats, 70 gardés pour les planches
+CATEGORIE vetement : 372 candidats, 75 gardés pour les planches
+CATEGORIE ceramique : 558 candidats, 100 gardés pour les planches
+CATEGORIE asie : 377 candidats, 100 gardés pour les planches
+CATEGORIE soierie : 0 candidats, 0 gardés pour les planches
+TOTAL 345 candidats pour les planches
