@@ -1,13 +1,17 @@
-"""Lot 3 : recherche de pièces libres au Rijksmuseum, au Cooper Hewitt (Smithsonian) et à l'Art Institute of Chicago.
-Écrit outil/recherche/lot3.json (fiches compactes) et outil/planches.json, puis fabrique les planches de vignettes."""
+"""Lot 4 : recherche élargie pour 50 motifs retrouvés de plus.
+Directions : indiennes colorées, Asie, peintres du domaine public, soieries et papiers peints, vêtements, assiettes et céramiques.
+Sources : Cleveland (nouveaux départements + fiches déjà copiées dans outil/recherche/cma.json), Art Institute of Chicago,
+Rijksmuseum. Écrit outil/recherche/lot4.json et outil/planches.json, puis fabrique les planches outil/planches/lot4-XX.jpg."""
 import json, os, re, runpy, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; latelier-sous-la-maison/1.0; recherche de motifs du domaine public)",
       "AIC-User-Agent": "latelier-sous-la-maison (recherche de motifs du domaine public)"}
 os.makedirs("outil/recherche", exist_ok=True)
 journal = []
-DEJA = {"2006.160", "1925.135"}  # pièces de Chicago déjà en ligne
 q = urllib.parse.quote
+DEJA = json.load(open("outil/deja.json"))
+EXCLU = set(DEJA["en_ligne"]) | set(DEJA["ecartees"])
+MIN_GRAND, MIN_PETIT = 3800, 2400
 
 
 def noter(t):
@@ -29,13 +33,169 @@ def lire(url, accept="application/json", essais=3):
         except Exception as e:
             err = e
             time.sleep(3 + 5 * i)
-    noter("ECHEC %s %r" % (url[:160], err))
+    noter("ECHEC %s %r" % (url[:170], err))
     return None
 
 
+def assez_grand(w, h):
+    w, h = w or 0, h or 0
+    return max(w, h) >= MIN_GRAND and min(w, h) >= MIN_PETIT
+
+
+DECO = re.compile(r"flower|floral|bird|blossom|peon|iris|chrysanth|plum|cherr|maple|wisteria|crane|carp|fish|wave|tiger|"
+                  r"dragon|hawk|pheasant|rooster|cock|sparrow|swallow|butterfl|insect|bamboo|pine|morning glor|lotus|"
+                  r"camellia|hydrangea|popp|lil(y|ies)|rose|tulip|carnation|pomegranate|grape|vine|fan|pattern|textile|"
+                  r"garden|bouquet|vase|still life|parrot|peacock|deer|rabbit|hare|monkey|owl|duck|egret|heron|quail|"
+                  r"shell|tortoise|turtle|frog|leaves|leaf|autumn|spring|snow|rain|moon|fuji|cloud|phoenix|lion", re.I)
+PEINTRE = re.compile(r"flower|bouquet|vase|garden|lil(y|ies)|iris|popp|still life|rose|chrysanth|sunflower|tulip|fruit|"
+                     r"anemone|peon|lilac|orchard|bloom|blossom|nymph|pond|butterfl|bird|sea|boat|wave|jardin|fleur", re.I)
+MAITRES = re.compile(r"Hokusai|Hiroshige|Kuniyoshi|Koryūsai|Koryusai|Utamaro|Shigemasa|Bairei|Hokkei|Gakutei|Hokuba|"
+                     r"Kōrin|Korin|Jakuchū|Jakuchu|Hōitsu|Hoitsu|Sōtatsu|Sotatsu|Shibata Zeshin|Kiitsu|Settei", re.I)
+
 candidats = []
 
-# ---------------- Rijksmuseum (Linked Art, sans clé) ----------------
+# ---------------- Cleveland Museum of Art (CC0) ----------------
+CMA = "https://openaccess-api.clevelandart.org/api/artworks/"
+CMA_CHAMPS = "accession_number,title,creation_date,culture,technique,type,department,creators,images,share_license_status,url,collection,description"
+
+
+def cma(params, maxi=6000):
+    sortie, skip = [], 0
+    while skip < maxi:
+        p = dict(params, cc0=1, has_image=1, limit=1000, skip=skip, fields=CMA_CHAMPS)
+        d = lire(CMA + "?" + urllib.parse.urlencode(p))
+        if not d or not d.get("data"):
+            break
+        sortie += d["data"]
+        skip += 1000
+        if skip >= (d.get("info") or {}).get("total", 0):
+            break
+        time.sleep(0.5)
+    return sortie
+
+
+def compact_cma(o):
+    im = o.get("images") or {}
+    full, web = im.get("full") or {}, im.get("web") or {}
+    return {"ref": o.get("accession_number"), "titre": o.get("title"), "date": o.get("creation_date"),
+            "culture": o.get("culture"), "technique": o.get("technique"), "type": o.get("type"),
+            "dep": o.get("department"), "coll": o.get("collection"),
+            "auteurs": [{"nom": c.get("description"), "mort": c.get("death_year"), "role": c.get("role")}
+                        for c in (o.get("creators") or [])],
+            "w": int(full.get("width") or 0), "h": int(full.get("height") or 0), "web": web.get("url"),
+            "lic": o.get("share_license_status"), "texte": re.sub(r"<[^>]+>", "", o.get("description") or "")[:700]}
+
+
+pool_cma = {x["ref"]: x for x in json.load(open("outil/recherche/cma.json"))}
+for params in [{"department": "Chinese Art"}, {"department": "Decorative Art and Design"},
+               {"department": "Modern European Painting and Sculpture"}, {"department": "European Painting and Sculpture"},
+               {"department": "Indian and Southeast Asian Art"}, {"department": "Korean Art"},
+               {"department": "Drawings", "q": "flowers"}, {"department": "Drawings", "q": "Redon"},
+               {"department": "Prints", "q": "Redon"}, {"q": "Odilon Redon"}, {"q": "Imari"}, {"q": "Iznik"},
+               {"q": "maiolica"}, {"q": "Delft"}, {"q": "kosode"}, {"q": "kimono"}]:
+    n = 0
+    for o in cma(params):
+        c = compact_cma(o)
+        if c["lic"] == "CC0" and c["ref"]:
+            pool_cma.setdefault(c["ref"], c)
+            n += 1
+    noter("CMA %s : %d" % (params, n))
+json.dump(list(pool_cma.values()), open("outil/recherche/cma4.json", "w"), ensure_ascii=False, separators=(",", ":"))
+
+
+def mort_trop_tard(auteurs):
+    return any((a.get("mort") or 0) > 1955 for a in auteurs if isinstance(a, dict))
+
+
+def categorie_cma(c):
+    t, typ, dep, titre = c.get("titre") or "", c.get("type") or "", c.get("dep") or "", c.get("titre") or ""
+    coll = c.get("coll") or ""
+    if typ == "Ceramic" and re.search(r"\b(Dish|Plate|Charger|Tile|Platter|Panel)\b", t):
+        return "ceramique"
+    if typ == "Garment" and not re.search(r"Pre-Columbian|Native North American|Lace|Ecclesiastical", coll) \
+            and not re.search(r"Shoe|Boot|Pendant|Hat|Loincloth|Turban|Band|Trousers|Glove|Purse|Bag|Apron", t):
+        return "vetement"
+    if typ in ("Textile", "Embroidery") and re.search(r"Kimono|Kosode|Robe|Furisode|Uchikake|Katabira|Coat|Jacket|Dress|Shawl", t):
+        return "vetement"
+    if dep == "Japanese Art" and typ == "Print" and (DECO.search(t) or any(MAITRES.search(a.get("nom") or "") for a in c["auteurs"])):
+        return "asie"
+    if dep in ("Japanese Art", "Chinese Art", "Korean Art") and typ == "Painting" and DECO.search(t):
+        return "asie"
+    if dep in ("Modern European Painting and Sculpture", "European Painting and Sculpture", "Drawings", "Prints") \
+            and typ in ("Painting", "Drawing", "Print") and (PEINTRE.search(t) or "Redon" in json.dumps(c["auteurs"])):
+        return "peintre"
+    if dep == "Decorative Art and Design" and typ in ("Textile", "Embroidery", "Velvet"):
+        return "soierie"
+    return None
+
+
+for c in pool_cma.values():
+    if c["ref"] in EXCLU or c.get("lic") != "CC0" or not assez_grand(c["w"], c["h"]) or mort_trop_tard(c["auteurs"]):
+        continue
+    cat = categorie_cma(c)
+    if not cat or not c.get("web"):
+        continue
+    candidats.append({"musee": "cma", "cat": cat, "ref": c["ref"], "titre_en": c["titre"], "date": c["date"],
+                      "lieu": c.get("culture") or [], "auteur": [a.get("nom") for a in c["auteurs"]],
+                      "technique": c.get("technique"), "type": [c.get("type")], "texte_en": c.get("texte", ""),
+                      "w": c["w"], "h": c["h"], "vignette": c["web"],
+                      "page": "https://clevelandart.org/art/%s" % c["ref"], "licences": ["CC0"]})
+noter("CMA candidats : %d" % sum(1 for c in candidats if c["musee"] == "cma"))
+
+# ---------------- Art Institute of Chicago (domaine public, CC0) ----------------
+AIC = "https://api.artic.edu/api/v1/artworks/search"
+AIC_CHAMPS = ("id,title,date_display,artist_display,place_of_origin,medium_display,classification_title,department_title,"
+              "main_reference_number,image_id,thumbnail,is_public_domain,description")
+
+
+def annee_mort(texte):
+    ans = [int(b) for a, b in re.findall(r"(1[0-9]{3})\s*[–-]\s*(1[0-9]{3}|20[0-9]{2})", texte or "")]
+    return max(ans) if ans else None
+
+
+AIC_RECHERCHES = [("peintre", t) for t in ["Odilon Redon", "Claude Monet", "Vincent van Gogh", "Paul Gauguin", "Henri Fantin-Latour",
+                                           "Paul Cézanne", "Pierre-Auguste Renoir", "Édouard Vuillard", "Pierre Bonnard",
+                                           "Paul Signac", "Henri-Edmond Cross", "Mary Cassatt", "Gustave Caillebotte"]] + \
+                 [("ceramique", t) for t in ["Imari plate", "Iznik", "maiolica", "Delft charger", "famille rose plate",
+                                             "Kakiemon", "Meissen plate", "Sèvres plate", "tile panel"]] + \
+                 [("vetement", t) for t in ["kimono", "kosode", "dragon robe", "waistcoat embroidered", "robe à la française",
+                                            "ikat robe", "shawl", "uchikake", "court robe"]]
+for cat, terme in AIC_RECHERCHES:
+    n = 0
+    for page in (1, 2):
+        p = {"q": terme, "query[term][is_public_domain]": "true", "fields": AIC_CHAMPS, "limit": 60, "page": page}
+        d = lire(AIC + "?" + urllib.parse.urlencode(p))
+        for o in (d or {}).get("data", []):
+            ref = o.get("main_reference_number")
+            th = o.get("thumbnail") or {}
+            w, h = th.get("width"), th.get("height")
+            if not (o.get("is_public_domain") and o.get("image_id")) or ref in EXCLU or not assez_grand(w, h):
+                continue
+            cl, titre = (o.get("classification_title") or ""), (o.get("title") or "")
+            mort = annee_mort(o.get("artist_display"))
+            if mort and mort > 1955:
+                continue
+            if cat == "peintre" and not (re.search(r"paint|pastel|oil|watercolor|drawing", cl + " " + (o.get("medium_display") or ""), re.I)
+                                         and (PEINTRE.search(titre) or "Redon" in terme)):
+                continue
+            if cat == "ceramique" and not re.search(r"plate|dish|charger|tile|platter|bowl", titre, re.I):
+                continue
+            if cat == "vetement" and re.search(r"print|photograph|drawing|book", cl, re.I):
+                continue
+            candidats.append({"musee": "aic", "cat": cat, "id_aic": o["id"], "ref": ref, "titre_en": titre,
+                              "date": o.get("date_display"), "lieu": [o.get("place_of_origin")], "auteur": [o.get("artist_display")],
+                              "technique": o.get("medium_display"), "type": [cl],
+                              "texte_en": re.sub(r"<[^>]+>", "", o.get("description") or "")[:700],
+                              "image": o["image_id"], "w": w, "h": h,
+                              "vignette": "https://www.artic.edu/iiif/2/%s/full/600,/0/default.jpg" % o["image_id"],
+                              "page": "https://www.artic.edu/artworks/%d" % o["id"], "licences": ["CC0"], "requete": terme})
+            n += 1
+        if not d or page * 60 >= (d.get("pagination") or {}).get("total", 0):
+            break
+        time.sleep(0.4)
+    noter("AIC %s (%s) : %d" % (terme, cat, n))
+
+# ---------------- Rijksmuseum (marque du domaine public, CC0) ----------------
 NL, EN = "http://vocab.getty.edu/aat/300388256", "http://vocab.getty.edu/aat/300388277"
 
 
@@ -54,28 +214,32 @@ def rijks_fiche(uri):
     if not d:
         return None
     f = {"musee": "rijks", "uri": uri}
-    for i in d.get("identified_by", []):
-        if i.get("type") == "Identifier" and any("300312355" in (c.get("id") or "") for c in i.get("classified_as", [])):
+    for i in liste(d.get("identified_by")):
+        if not isinstance(i, dict):
+            continue
+        if i.get("type") == "Identifier" and any("300312355" in (c.get("id") or "") for c in liste(i.get("classified_as")) if isinstance(c, dict)):
             f["ref"] = i.get("content")
         if i.get("type") == "Name":
             f["titre_" + ("en" if EN in langue(i) else "nl")] = i.get("content")
     p = d.get("produced_by") or {}
+    p = p if isinstance(p, dict) else {}
     ts = p.get("timespan") or {}
-    for n in ts.get("identified_by", []):
+    ts = ts if isinstance(ts, dict) else {}
+    for n in liste(ts.get("identified_by")):
         if EN in langue(n):
             f["date"] = n.get("content")
-    f["debut"], f["fin"] = (ts.get("begin_of_the_begin") or "")[:4], (ts.get("end_of_the_end") or "")[:4]
     lieux, auteurs = set(), set()
-    for part in p.get("part", []) + [p]:
-        for l in part.get("took_place_at", []):
-            n = l.get("notation")
-            n = n if isinstance(n, list) else [n] if n else []
-            lieux.update(x.get("@value") for x in n if x)
-        for r in part.get("referred_to_by", []):
-            if EN in langue(r) and any("300435416" in (c.get("id") or "") for c in r.get("classified_as", [])):
+    for part in liste(p.get("part")) + [p]:
+        if not isinstance(part, dict):
+            continue
+        for l in liste(part.get("took_place_at")):
+            if isinstance(l, dict):
+                lieux.update(x.get("@value") for x in liste(l.get("notation")) if isinstance(x, dict) and x.get("@value"))
+        for r in liste(part.get("referred_to_by")):
+            if isinstance(r, dict) and EN in langue(r) and any("300435416" in (c.get("id") or "") for c in liste(r.get("classified_as")) if isinstance(c, dict)):
                 auteurs.add(r.get("content"))
     f["lieu"], f["auteur"] = sorted(lieux), sorted(auteurs)
-    textes = [r.get("content") for r in d.get("referred_to_by", []) if EN in langue(r) and r.get("content")]
+    textes = [r.get("content") for r in liste(d.get("referred_to_by")) if isinstance(r, dict) and EN in langue(r) and r.get("content")]
     f["texte_en"] = max(textes, key=len) if textes else ""
     brut = json.dumps(d)
     m = re.search(r"https://iiif\.micr\.io/([A-Za-z0-9]+)/full/max/0/default\.jpg", brut)
@@ -89,11 +253,13 @@ def rijks_fiche(uri):
     return f
 
 
-RIJKS = [("material", "sits"), ("description", "sits"), ("title", "stalenboek"), ("description", "katoendruk"),
-         ("title", "behangsel"), ("description", "behangselpapier"), ("description", "katagami"), ("title", "verfsjabloon"),
-         ("description", "brokaat"), ("description", "damast"), ("description", "batik"), ("title", "palampore")]
+RIJKS = [("ceramique", "title", "bord met"), ("ceramique", "description", "Imari"), ("ceramique", "description", "Kakiemon"),
+         ("ceramique", "description", "famille rose"), ("ceramique", "title", "schotel met"), ("ceramique", "title", "tegeltableau"),
+         ("vetement", "title", "japon"), ("vetement", "title", "kimono"), ("vetement", "title", "herenvest"),
+         ("vetement", "title", "jak van sits"), ("asie", "creator", "Hokusai"), ("asie", "creator", "Hiroshige"),
+         ("asie", "description", "surimono"), ("asie", "title", "bloemen en vogels")]
 vus = set()
-for champ, mot in RIJKS:
+for cat, champ, mot in RIJKS:
     url = "https://data.rijksmuseum.nl/search/collection?%s=%s&imageAvailable=true" % (champ, q(mot))
     ids, pages = [], 0
     while url and pages < 2:
@@ -104,7 +270,7 @@ for champ, mot in RIJKS:
         url = (d.get("next") or {}).get("id")
         pages += 1
     n = 0
-    for uri in ids[:35]:
+    for uri in ids[:30]:
         if uri in vus:
             continue
         vus.add(uri)
@@ -114,83 +280,14 @@ for champ, mot in RIJKS:
             noter("RIJKS fiche illisible %s %r" % (uri, e))
             f = None
         time.sleep(0.15)
-        if f and f.get("iiif") and f.get("licences"):
-            f["requete"] = "%s=%s" % (champ, mot)
+        if f and f.get("iiif") and f.get("licences") and f.get("ref") not in EXCLU and assez_grand(f.get("w"), f.get("h")):
+            f.update(cat=cat, requete="%s=%s" % (champ, mot),
+                     vignette="https://iiif.micr.io/%s/full/600,/0/default.jpg" % f["iiif"])
             candidats.append(f)
             n += 1
-    noter("RIJKS %s=%s : %d trouvés, %d retenus avec image libre" % (champ, mot, len(ids), n))
+    noter("RIJKS %s=%s : %d trouvés, %d gardés" % (champ, mot, len(ids), n))
 
-# ---------------- Cooper Hewitt (Smithsonian Open Access, CC0) ----------------
-SI = [('chintz AND unit_code:"CHNDM"', 2),
-      ('sidewall AND unit_code:"CHNDM" AND date:"1800s"', 2),
-      ('toile AND unit_code:"CHNDM"', 1),
-      ('textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"France"', 1),
-      ('textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"Japan"', 1),
-      ('stencil AND unit_code:"CHNDM" AND place:"Japan"', 1),
-      ('velvet AND unit_code:"CHNDM" AND date:"1600s"', 1),
-      ('textile AND unit_code:"CHNDM" AND date:"1700s" AND place:"India"', 1),
-      ('textile AND unit_code:"CHNDM" AND date:"1800s" AND place:"England"', 1),
-      ('textile AND unit_code:"CHNDM" AND date:"1600s" AND place:"Turkey"', 1)]
-for requete, nb_pages in SI:
-    n = total = 0
-    for page in range(nb_pages):
-        d = lire("https://api.si.edu/openaccess/api/v1.0/search?rows=100&start=%d&api_key=DEMO_KEY&q=%s" % (page * 100, q(requete + ' AND online_media_type:"Images"')))
-        if not d:
-            break
-        rows = d["response"]["rows"]
-        total = d["response"]["rowCount"]
-        for r in rows:
-            c = r["content"]
-            dn, ft = c.get("descriptiveNonRepeating", {}), c.get("freetext", {})
-            media = [m for m in (dn.get("online_media") or {}).get("media", []) if (m.get("usage") or {}).get("access") == "CC0"]
-            if not media:
-                continue
-            m = max(media, key=lambda m: (m.get("width") or 0) * (m.get("height") or 0))
-            ref = next((x["content"] for x in ft.get("identifier", []) if x.get("label") == "Accession Number"), None)
-            candidats.append({
-                "musee": "ch", "ref": ref, "titre_en": (dn.get("title") or {}).get("content"),
-                "date": "; ".join(x["content"] for x in ft.get("date", [])), "lieu": [x["content"] for x in ft.get("place", [])],
-                "auteur": [x["content"] for x in ft.get("name", [])],
-                "texte_en": " | ".join(x["content"] for x in ft.get("notes", []) if x.get("label") == "Description"),
-                "technique": " | ".join(x["content"] for x in ft.get("physicalDescription", []) if x.get("label") == "Medium"),
-                "type": [x["content"] for x in ft.get("objectType", [])], "ids": m.get("idsId"),
-                "w": m.get("width"), "h": m.get("height"), "page": dn.get("record_link"), "licences": ["CC0"],
-                "requete": requete,
-            })
-            n += 1
-        if (page + 1) * 100 >= total:
-            break
-        time.sleep(2)
-    noter("CH %s : %d au total, %d retenus" % (requete, total, n))
-    time.sleep(2)
-
-# ---------------- Art Institute of Chicago (CC0) ----------------
-AIC = "https://api.artic.edu/api/v1/artworks/search"
-CHAMPS = "id,title,date_display,artist_display,place_of_origin,medium_display,classification_title,department_title,main_reference_number,image_id,is_public_domain,description"
-for terme in ["chintz", "palampore", "toile de Jouy", "block printed cotton", "wallpaper", "katagami", "kashmir shawl",
-              "ikat", "batik", "velvet", "lampas", "kalamkari", "furnishing fabric", "sample book"]:
-    p = {"q": terme, "query[term][is_public_domain]": "true", "fields": CHAMPS, "limit": 30}
-    d = lire(AIC + "?" + urllib.parse.urlencode(p))
-    n = 0
-    for o in (d or {}).get("data", []):
-        if not (o.get("is_public_domain") and o.get("image_id")) or o.get("main_reference_number") in DEJA:
-            continue
-        if o.get("classification_title") in ("painting", "print", "photograph", "drawing and watercolor", "book"):
-            continue
-        info = lire("https://www.artic.edu/iiif/2/%s/info.json" % o["image_id"])
-        candidats.append({
-            "musee": "aic", "id_aic": o["id"], "ref": o.get("main_reference_number"), "titre_en": o.get("title"),
-            "date": o.get("date_display"), "lieu": [o.get("place_of_origin")], "auteur": [o.get("artist_display")],
-            "technique": o.get("medium_display"), "type": [o.get("classification_title")],
-            "texte_en": re.sub(r"<[^>]+>", "", o.get("description") or "")[:600],
-            "image": o["image_id"], "w": (info or {}).get("width"), "h": (info or {}).get("height"),
-            "page": "https://www.artic.edu/artworks/%d" % o["id"], "licences": ["CC0"], "requete": terme,
-        })
-        n += 1
-        time.sleep(0.3)
-    noter("AIC %s : %d retenus" % (terme, n))
-
-# Dédoublonnage et numérotation courte pour les planches
+# ---------------- Tri, plafonds par catégorie, numérotation ----------------
 uniques, cles = [], set()
 for c in candidats:
     k = (c["musee"], c.get("ref"))
@@ -198,21 +295,24 @@ for c in candidats:
         continue
     cles.add(k)
     uniques.append(c)
-lettre = {"rijks": "R", "ch": "C", "aic": "A"}
+PLAFOND = {"ceramique": 90, "vetement": 80, "asie": 110, "peintre": 90, "soierie": 30}
+ORDRE = ["peintre", "vetement", "ceramique", "asie", "soierie"]
+garde = []
+for cat in ORDRE:
+    l = [c for c in uniques if c["cat"] == cat]
+    l.sort(key=lambda c: -(min(c.get("w") or 0, c.get("h") or 0)))
+    garde += l[:PLAFOND[cat]]
+    noter("CATEGORIE %s : %d candidats, %d gardés pour les planches" % (cat, len(l), min(len(l), PLAFOND[cat])))
+lettre = {"cma": "L", "aic": "A", "rijks": "R"}
 compte = {}
-for c in uniques:
+for c in garde:
     compte[c["musee"]] = compte.get(c["musee"], 0) + 1
-    c["id"] = "%s%03d" % (lettre[c["musee"]], compte[c["musee"]])
-    if c["musee"] == "rijks":
-        c["vignette"] = "https://iiif.micr.io/%s/full/600,/0/default.jpg" % c["iiif"]
-    elif c["musee"] == "ch":
-        c["vignette"] = "https://ids.si.edu/ids/deliveryService?id=%s&max=600" % c["ids"]
-    else:
-        c["vignette"] = "https://www.artic.edu/iiif/2/%s/full/600,/0/default.jpg" % c["image"]
-json.dump(uniques, open("outil/recherche/lot3.json", "w"), ensure_ascii=False, indent=0)
-grands = [c for c in uniques if max(c.get("w") or 0, c.get("h") or 0) >= 3000]
-noter("TOTAL %d candidats uniques, %d avec une image d'au moins 3 000 px" % (len(uniques), len(grands)))
-json.dump([{"id": c["id"], "musee": c["musee"], "ref": c["ref"], "vignette": c["vignette"]} for c in grands],
+    c["id"] = "4%s%03d" % (lettre[c["musee"]], compte[c["musee"]])
+json.dump(garde, open("outil/recherche/lot4.json", "w"), ensure_ascii=False, indent=0)
+abr = {"peintre": "PEI", "vetement": "VET", "ceramique": "CER", "asie": "ASI", "soierie": "SOI"}
+json.dump([{"id": c["id"], "musee": c["musee"], "ref": "%s %s" % (abr[c["cat"]], c["ref"]), "vignette": c["vignette"]} for c in garde],
           open("outil/planches.json", "w"), ensure_ascii=False)
-open("outil/recherche/journal.txt", "w").write("\n".join(journal) + "\n")
+noter("TOTAL %d candidats pour les planches" % len(garde))
+open("outil/recherche/journal4.txt", "w").write("\n".join(journal) + "\n")
+os.environ["PLANCHES_PREFIXE"] = "lot4"
 runpy.run_path("outil/planches.py")

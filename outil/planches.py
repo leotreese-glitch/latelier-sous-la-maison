@@ -77,9 +77,9 @@ for n in range(0, len(vignettes), par_planche):
         else:
             d.text((x + 20, y + CASE // 2), "image indisponible", fill=(158, 43, 37), font=POLICE)
         d.text((x + 6, y + CASE + 2), "%s  %s" % (p["id"], p["ref"]), fill=(23, 30, 51), font=POLICE)
-    planche.save("outil/planches/planche-%02d.jpg" % (n // par_planche + 1), "JPEG", quality=80)
+    planche.save("outil/planches/%s-%02d.jpg" % (os.environ.get("PLANCHES_PREFIXE", "planche"), n // par_planche + 1), "JPEG", quality=80)
 
-json.dump(bilan, open("outil/planches/bilan.json", "w"), indent=1)
+json.dump(bilan, open("outil/planches/bilan%s.json" % ("" if os.environ.get("PLANCHES_PREFIXE", "planche") == "planche" else "-" + os.environ["PLANCHES_PREFIXE"]), "w"), indent=1)
 print(sum(v["ok"] for v in bilan.values()), "sur", len(bilan))
 
 # Taille maximale servie par Chicago (IIIF) : essai sur la première pièce de Chicago.
