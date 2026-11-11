@@ -3,12 +3,12 @@ Sortie : outil/perf/resultats.json. Rien n'est modifié sur le site."""
 import json, os, statistics, time
 from playwright.sync_api import sync_playwright
 
-SITE = "https://latelier-sous-la-maison.com"
+SITES = [l.strip() for l in open("outil/perf-sites.txt") if l.strip()] if os.path.exists("outil/perf-sites.txt") else ["https://latelier-sous-la-maison.com"]
 os.makedirs("outil/perf", exist_ok=True)
 
 catalogue = json.load(open("outil/catalogue.json"))["designs"]
 fiche = "/motif/%s/" % catalogue[0]["slug"]
-PAGES = ["/", "/explorer/", fiche, "/en/explore/"]
+PAGES = ["/", "/explorer/", fiche]
 APPAREILS = {
     "ordinateur": dict(viewport={"width": 1440, "height": 900}, device_scale_factor=1, cpu=1),
     "telephone": dict(viewport={"width": 412, "height": 915}, device_scale_factor=2.6, cpu=4, is_mobile=True, has_touch=True),
@@ -18,6 +18,18 @@ MESURE_JS = """
 window.__lcp = 0; window.__longues = [];
 new PerformanceObserver(l => { for (const e of l.getEntries()) window.__lcp = e.startTime; }).observe({type: 'largest-contentful-paint', buffered: true});
 new PerformanceObserver(l => { for (const e of l.getEntries()) window.__longues.push([Math.round(e.startTime), Math.round(e.duration)]); }).observe({type: 'longtask', buffered: true});
+"""
+
+DESCENTE_JS = """
+async () => {
+  const d = document.querySelector('.descente');
+  const fin = d ? d.offsetTop + d.offsetHeight : 3000;
+  const images = []; let prec = performance.now();
+  for (let y = 0; y <= fin; y += 24) { window.scrollTo(0, y); await new Promise(r => requestAnimationFrame(r)); const t = performance.now(); images.push(t - prec); prec = t; }
+  window.scrollTo(0, 0);
+  const vignettes = [...document.images].filter(i => i.currentSrc.includes('/vignettes/')).length;
+  return { images: images.slice(2), vignettes };
+}
 """
 
 DEFILER_JS = """
@@ -35,10 +47,11 @@ async () => {
 }
 """
 
-resultats = {"site": SITE, "date": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "mesures": []}
+resultats = {"sites": SITES, "date": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "mesures": []}
 with sync_playwright() as p:
     nav = p.chromium.launch()
-    for nom_app, reglage in APPAREILS.items():
+    for SITE in SITES:
+     for nom_app, reglage in APPAREILS.items():
         for page_url in PAGES:
             for passage in ("premiere-visite", "deuxieme-visite"):
                 if passage == "premiere-visite":
@@ -66,6 +79,7 @@ with sync_playwright() as p:
                     pg.wait_for_timeout(1500)
                     lcp = pg.evaluate("window.__lcp")
                     noeuds = pg.evaluate("document.getElementsByTagName('*').length")
+                    descente = pg.evaluate(DESCENTE_JS) if page_url == "/" else None
                     imgs = pg.evaluate("[...document.images].map(i => [i.currentSrc.split('/').slice(-2).join('/'), i.naturalWidth, i.naturalHeight, Math.round(i.getBoundingClientRect().width), i.loading])")
                     defil = pg.evaluate(DEFILER_JS)
                     longues = pg.evaluate("window.__longues")
@@ -79,7 +93,11 @@ with sync_playwright() as p:
                         par_type[t][1] += r.get("octets", 0)
                     medias = [r for r in res if "/media/" in r.get("url", "")]
                     resultats["mesures"].append({
-                        "appareil": nom_app, "page": page_url, "passage": passage, "chargement_ms": charge, "lcp_ms": round(lcp),
+                        "site": SITE, "appareil": nom_app, "page": page_url,
+                        "descente": None if not descente else {"images": len(descente["images"]), "vignettes": descente["vignettes"],
+                                     "mediane_ms": round(statistics.median(descente["images"]), 1),
+                                     "p90_ms": round(sorted(descente["images"])[int(0.9 * (len(descente["images"]) - 1))], 1),
+                                     "sup_33ms": sum(1 for x in descente["images"] if x > 33.4), "pire_ms": round(max(descente["images"]), 1)}, "passage": passage, "chargement_ms": charge, "lcp_ms": round(lcp),
                         "noeuds": noeuds, "requetes": len(res), "octets_total": sum(r.get("octets", 0) for r in res), "par_type": par_type,
                         "medias": {"nombre": len(medias), "octets": sum(r.get("octets", 0) for r in medias),
                                    "attente_mediane_ms": statistics.median([r["attente"] for r in medias if "attente" in r]) if medias else None,
@@ -94,7 +112,7 @@ with sync_playwright() as p:
                     })
                     print(nom_app, page_url, passage, "ok", charge, "ms", flush=True)
                 except Exception as e:
-                    resultats["mesures"].append({"appareil": nom_app, "page": page_url, "passage": passage, "erreur": repr(e)})
+                    resultats["mesures"].append({"site": SITE, "appareil": nom_app, "page": page_url, "passage": passage, "erreur": repr(e)})
                     print(nom_app, page_url, passage, "ERREUR", repr(e), flush=True)
                 pg.close()
                 if passage == "deuxieme-visite":
