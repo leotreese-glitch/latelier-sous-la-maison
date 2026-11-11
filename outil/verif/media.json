@@ -1,0 +1,148 @@
+{
+ "/media/apercus/dp-0088/1793413869657.webp": [
+  {
+   "statut": 200,
+   "ms": 785,
+   "type": "image/webp",
+   "octets": 324318,
+   "etag": "\"59912fc427acb722e8643d0c39ecfa74-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "MISS"
+  },
+  {
+   "statut": 200,
+   "ms": 66,
+   "type": "image/webp",
+   "octets": 324318,
+   "etag": "\"59912fc427acb722e8643d0c39ecfa74-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 202,
+   "type": "image/webp",
+   "octets": 324318,
+   "etag": "\"59912fc427acb722e8643d0c39ecfa74-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 64,
+   "type": "image/webp",
+   "octets": 324318,
+   "etag": "\"59912fc427acb722e8643d0c39ecfa74-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 304,
+   "ms": 66,
+   "conditionnel": true
+  }
+ ],
+ "/media/apercus/dp-0087/1793413821027.webp": [
+  {
+   "statut": 200,
+   "ms": 1078,
+   "type": "image/webp",
+   "octets": 315034,
+   "etag": "\"c0fce006c1d1709301de42e50179731b-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "MISS"
+  },
+  {
+   "statut": 200,
+   "ms": 102,
+   "type": "image/webp",
+   "octets": 315034,
+   "etag": "\"c0fce006c1d1709301de42e50179731b-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 78,
+   "type": "image/webp",
+   "octets": 315034,
+   "etag": "\"c0fce006c1d1709301de42e50179731b-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 47,
+   "type": "image/webp",
+   "octets": 315034,
+   "etag": "\"c0fce006c1d1709301de42e50179731b-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 304,
+   "ms": 116,
+   "conditionnel": true
+  }
+ ],
+ "/media/apercus/dp-0086/1793413792507.webp": [
+  {
+   "statut": 200,
+   "ms": 686,
+   "type": "image/webp",
+   "octets": 518762,
+   "etag": "\"7ffded972fcbe3436e6b38689887cf8c-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "MISS"
+  },
+  {
+   "statut": 200,
+   "ms": 112,
+   "type": "image/webp",
+   "octets": 518762,
+   "etag": "\"7ffded972fcbe3436e6b38689887cf8c-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 129,
+   "type": "image/webp",
+   "octets": 518762,
+   "etag": "\"7ffded972fcbe3436e6b38689887cf8c-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 200,
+   "ms": 125,
+   "type": "image/webp",
+   "octets": 518762,
+   "etag": "\"7ffded972fcbe3436e6b38689887cf8c-1\"",
+   "cache_control": "public, max-age=31536000, immutable",
+   "cf": "HIT"
+  },
+  {
+   "statut": 304,
+   "ms": 205,
+   "conditionnel": true
+  }
+ ],
+ "hd_refuse": {
+  "statut": 404,
+  "ms": 175
+ },
+ "absent": {
+  "statut": 404,
+  "ms": 415
+ },
+ "vignette": {
+  "statut": 200,
+  "ms": 247,
+  "type": "image/webp",
+  "octets": 43314,
+  "etag": "\"2bce617111a7278649f5298135e3fe2e\"",
+  "cache_control": "public, max-age=14400, must-revalidate",
+  "cf": "MISS"
+ }
+}
