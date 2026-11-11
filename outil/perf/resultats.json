@@ -1,53 +1,66 @@
 {
- "site": "https://latelier-sous-la-maison.com",
- "date": "2026-11-11 18:19 UTC",
+ "sites": [
+  "https://latelier-sous-la-maison.com",
+  "https://perf-vignettes.latelier-sous-la-maison.pages.dev"
+ ],
+ "date": "2026-11-11 18:42 UTC",
  "mesures": [
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "ordinateur",
    "page": "/",
+   "descente": {
+    "images": 104,
+    "vignettes": 0,
+    "mediane_ms": 16.7,
+    "p90_ms": 16.9,
+    "sup_33ms": 0,
+    "pire_ms": 23.8
+   },
    "passage": "premiere-visite",
-   "chargement_ms": 1694,
-   "lcp_ms": 860,
+   "chargement_ms": 874,
+   "lcp_ms": 700,
    "noeuds": 334,
-   "requetes": 52,
-   "octets_total": 5824570,
+   "requetes": 69,
+   "octets_total": 5871852,
    "par_type": {
     "Document": [
      1,
-     16109
-    ],
-    "Script": [
-     12,
-     206427
-    ],
-    "Stylesheet": [
-     2,
-     10012
-    ],
-    "Font": [
-     2,
-     64764
+     15460
     ],
     "Image": [
      13,
-     5484945
+     5484902
+    ],
+    "Script": [
+     13,
+     210169
+    ],
+    "Stylesheet": [
+     2,
+     10145
+    ],
+    "Font": [
+     2,
+     64749
     ],
     "Fetch": [
-     21,
-     41842
+     37,
+     85950
     ],
     "XHR": [
      1,
-     471
+     477
     ]
    },
    "medias": {
     "nombre": 15,
-    "octets": 5549709,
-    "attente_mediane_ms": 670,
-    "attente_max_ms": 811,
+    "octets": 5549651,
+    "attente_mediane_ms": 73,
+    "attente_max_ms": 186,
     "cache_cloudflare": [
-     "MISS"
+     "HIT",
+     "REVALIDATED"
     ]
    },
    "images": [
@@ -194,30 +207,30 @@
    ],
    "nb_images": 20,
    "defilement": {
-    "duree_ms": 1223,
+    "duree_ms": 1021,
     "hauteur_px": 5273,
-    "images": 65,
+    "images": 61,
     "image_mediane_ms": 16.7,
-    "images_sup_50ms": 2,
-    "pire_image_ms": 83.2
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
    },
    "taches_longues": {
-    "nombre": 2,
-    "total_ms": 149,
-    "pire_ms": 81
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
    },
    "js": [
     [
      "3jwqlcoc-8bka.js",
-     71934
+     72056
     ],
     [
      "3_5lvkvrbj8yj.js",
-     45497
+     45398
     ],
     [
      "134w7x-7mtuj4.js",
-     45051
+     45036
     ],
     [
      "vce701823e78c4301a35b7e07294d87301792088814092",
@@ -225,27 +238,36 @@
     ],
     [
      "0m47-6wwuw-9_.js",
-     8813
+     8775
     ],
     [
      "19mx3mg6lkumu.js",
-     8204
+     8169
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "ordinateur",
    "page": "/",
+   "descente": {
+    "images": 104,
+    "vignettes": 0,
+    "mediane_ms": 16.7,
+    "p90_ms": 16.9,
+    "sup_33ms": 0,
+    "pire_ms": 21.6
+   },
    "passage": "deuxieme-visite",
-   "chargement_ms": 289,
-   "lcp_ms": 252,
+   "chargement_ms": 262,
+   "lcp_ms": 228,
    "noeuds": 334,
-   "requetes": 57,
-   "octets_total": 35358,
+   "requetes": 78,
+   "octets_total": 96753,
    "par_type": {
     "Document": [
      1,
-     16717
+     15421
     ],
     "Image": [
      13,
@@ -255,21 +277,21 @@
      2,
      0
     ],
-    "Script": [
-     12,
-     0
-    ],
     "Font": [
      2,
      0
     ],
+    "Script": [
+     13,
+     0
+    ],
     "XHR": [
      1,
-     485
+     474
     ],
     "Fetch": [
-     26,
-     18156
+     46,
+     80858
     ]
    },
    "medias": {
@@ -278,7 +300,8 @@
     "attente_mediane_ms": 0,
     "attente_max_ms": 1,
     "cache_cloudflare": [
-     "MISS"
+     "HIT",
+     "REVALIDATED"
     ]
    },
    "images": [
@@ -425,17 +448,17 @@
    ],
    "nb_images": 20,
    "defilement": {
-    "duree_ms": 1227,
+    "duree_ms": 1028,
     "hauteur_px": 5273,
-    "images": 63,
+    "images": 62,
     "image_mediane_ms": 16.7,
-    "images_sup_50ms": 3,
-    "pire_image_ms": 83.3
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
    },
    "taches_longues": {
-    "nombre": 2,
-    "total_ms": 155,
-    "pire_ms": 84
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
    },
    "js": [
     [
@@ -447,441 +470,72 @@
      0
     ],
     [
-     "453cd1tlxz5wi.js",
-     0
-    ],
-    [
      "310vm2bl3xxpt.js",
      0
     ],
     [
-     "0m47-6wwuw-9_.js",
-     0
-    ],
-    [
-     "27ifrtuw5pwg0.js",
-     0
-    ]
-   ]
-  },
-  {
-   "appareil": "ordinateur",
-   "page": "/explorer/",
-   "passage": "premiere-visite",
-   "chargement_ms": 1237,
-   "lcp_ms": 2084,
-   "noeuds": 1004,
-   "requetes": 124,
-   "octets_total": 34224761,
-   "par_type": {
-    "Document": [
-     1,
-     20565
-    ],
-    "Script": [
-     10,
-     203325
-    ],
-    "Stylesheet": [
-     2,
-     10018
-    ],
-    "Font": [
-     2,
-     64730
-    ],
-    "XHR": [
-     1,
-     480
-    ],
-    "Fetch": [
-     4,
-     2761
-    ],
-    "Image": [
-     104,
-     33922882
-    ]
-   },
-   "medias": {
-    "nombre": 106,
-    "octets": 33987612,
-    "attente_mediane_ms": 495.0,
-    "attente_max_ms": 894,
-    "cache_cloudflare": [
-     "MISS"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0085/1793413763988.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0084/1793413714087.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0026/1793141667339.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0025/1793141615280.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0022/1793141435612.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0021/1793141396467.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0019/1793141153812.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ]
-   ],
-   "nb_images": 107,
-   "defilement": {
-    "duree_ms": 2064,
-    "hauteur_px": 10969,
-    "images": 113,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 0,
-    "pire_image_ms": 50
-   },
-   "taches_longues": {
-    "nombre": 0,
-    "total_ms": 0,
-    "pire_ms": 0
-   },
-   "js": [
-    [
-     "3jwqlcoc-8bka.js",
-     72090
-    ],
-    [
-     "3_5lvkvrbj8yj.js",
-     45781
-    ],
-    [
-     "134w7x-7mtuj4.js",
-     45076
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     9039
-    ],
-    [
      "19mx3mg6lkumu.js",
-     8494
+     0
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     0
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     0
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "ordinateur",
    "page": "/explorer/",
-   "passage": "deuxieme-visite",
-   "chargement_ms": 429,
-   "lcp_ms": 628,
-   "noeuds": 1004,
-   "requetes": 167,
-   "octets_total": 1319302,
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 861,
+   "lcp_ms": 1004,
+   "noeuds": 1007,
+   "requetes": 211,
+   "octets_total": 36686759,
    "par_type": {
     "Document": [
      1,
-     20513
+     20560
+    ],
+    "Script": [
+     13,
+     210094
     ],
     "Stylesheet": [
      2,
-     0
-    ],
-    "Script": [
-     11,
-     3760
-    ],
-    "Font": [
-     2,
-     0
+     10063
     ],
     "Image": [
      107,
-     1111521
+     35929514
     ],
-    "Fetch": [
-     43,
-     183036
+    "Font": [
+     2,
+     64765
     ],
     "XHR": [
      1,
-     472
+     468
+    ],
+    "Fetch": [
+     85,
+     451295
     ]
    },
    "medias": {
     "nombre": 109,
-    "octets": 1111521,
-    "attente_mediane_ms": 0,
-    "attente_max_ms": 120,
+    "octets": 35994279,
+    "attente_mediane_ms": 26,
+    "attente_max_ms": 262,
     "cache_cloudflare": [
      "HIT",
-     "MISS"
+     "REVALIDATED"
     ]
    },
    "images": [
@@ -1168,23 +822,393 @@
    ],
    "nb_images": 107,
    "defilement": {
-    "duree_ms": 2882,
+    "duree_ms": 2857,
     "hauteur_px": 10969,
-    "images": 122,
+    "images": 118,
     "image_mediane_ms": 16.7,
-    "images_sup_50ms": 6,
-    "pire_image_ms": 83.4
+    "images_sup_50ms": 7,
+    "pire_image_ms": 83.3
    },
    "taches_longues": {
-    "nombre": 4,
-    "total_ms": 228,
-    "pire_ms": 63
+    "nombre": 7,
+    "total_ms": 409,
+    "pire_ms": 73
    },
    "js": [
     [
-     "404koatcdpqvb.js",
-     3760
+     "3jwqlcoc-8bka.js",
+     72064
     ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45398
+    ],
+    [
+     "134w7x-7mtuj4.js",
+     44850
+    ],
+    [
+     "vce701823e78c4301a35b7e07294d87301792088814092",
+     10478
+    ],
+    [
+     "0m47-6wwuw-9_.js",
+     8798
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8210
+    ]
+   ]
+  },
+  {
+   "site": "https://latelier-sous-la-maison.com",
+   "appareil": "ordinateur",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 207,
+   "lcp_ms": 396,
+   "noeuds": 1007,
+   "requetes": 245,
+   "octets_total": 362905,
+   "par_type": {
+    "Document": [
+     1,
+     20517
+    ],
+    "Stylesheet": [
+     2,
+     0
+    ],
+    "Script": [
+     13,
+     0
+    ],
+    "Font": [
+     2,
+     0
+    ],
+    "Image": [
+     107,
+     0
+    ],
+    "XHR": [
+     1,
+     472
+    ],
+    "Fetch": [
+     119,
+     341916
+    ]
+   },
+   "medias": {
+    "nombre": 109,
+    "octets": 0,
+    "attente_mediane_ms": 0,
+    "attente_max_ms": 3,
+    "cache_cloudflare": [
+     "HIT",
+     "REVALIDATED"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0089/1793413903417.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0088/1793413869657.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0087/1793413821027.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0086/1793413792507.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0085/1793413763988.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "dp-0084/1793413714087.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0026/1793141667339.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0025/1793141615280.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0024/1793141560399.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0023/1793144148998.webp",
+     1200,
+     1189,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0022/1793141435612.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0021/1793141396467.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0019/1793141153812.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0018/1793141060822.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0016/1793140962335.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0015/1793140917610.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "orig-0014/1793140887643.webp",
+     1200,
+     1200,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 107,
+   "defilement": {
+    "duree_ms": 2910,
+    "hauteur_px": 10969,
+    "images": 123,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 5,
+    "pire_image_ms": 83.3
+   },
+   "taches_longues": {
+    "nombre": 4,
+    "total_ms": 244,
+    "pire_ms": 90
+   },
+   "js": [
     [
      "email-decode.min.js",
      0
@@ -1204,53 +1228,59 @@
     [
      "turbopack-00moxh6gklgtr.js",
      0
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     0
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "ordinateur",
    "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
    "passage": "premiere-visite",
-   "chargement_ms": 1550,
-   "lcp_ms": 996,
+   "chargement_ms": 495,
+   "lcp_ms": 376,
    "noeuds": 281,
-   "requetes": 50,
-   "octets_total": 2594925,
+   "requetes": 67,
+   "octets_total": 2236460,
    "par_type": {
     "Document": [
      1,
-     11754
-    ],
-    "Script": [
-     13,
-     211925
+     11726
     ],
     "Image": [
      5,
-     2239995
+     1831679
+    ],
+    "Script": [
+     14,
+     212870
     ],
     "Stylesheet": [
      2,
-     10018
+     10011
     ],
     "Font": [
      2,
-     64750
-    ],
-    "Fetch": [
-     26,
-     56008
+     64749
     ],
     "XHR": [
      1,
-     475
+     471
+    ],
+    "Fetch": [
+     42,
+     104954
     ]
    },
    "medias": {
     "nombre": 7,
-    "octets": 2304745,
-    "attente_mediane_ms": 154,
-    "attente_max_ms": 276,
+    "octets": 1896428,
+    "attente_mediane_ms": 86,
+    "attente_max_ms": 168,
     "cache_cloudflare": [
      "HIT",
      "REVALIDATED"
@@ -1295,58 +1325,60 @@
    ],
    "nb_images": 5,
    "defilement": {
-    "duree_ms": 866,
+    "duree_ms": 860,
     "hauteur_px": 3735,
-    "images": 50,
+    "images": 49,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
     "pire_image_ms": 50
    },
    "taches_longues": {
-    "nombre": 1,
-    "total_ms": 49,
-    "pire_ms": 49
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
    },
    "js": [
     [
      "3jwqlcoc-8bka.js",
-     72085
+     71979
     ],
     [
      "3_5lvkvrbj8yj.js",
-     45728
+     45477
     ],
     [
      "134w7x-7mtuj4.js",
-     45028
+     45033
     ],
     [
      "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
+     10457
     ],
     [
      "0m47-6wwuw-9_.js",
-     9034
+     8826
     ],
     [
      "19mx3mg6lkumu.js",
-     8475
+     8169
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "ordinateur",
    "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
    "passage": "deuxieme-visite",
-   "chargement_ms": 294,
-   "lcp_ms": 256,
+   "chargement_ms": 359,
+   "lcp_ms": 316,
    "noeuds": 281,
-   "requetes": 51,
-   "octets_total": 30857,
+   "requetes": 68,
+   "octets_total": 42972,
    "par_type": {
     "Document": [
      1,
-     11711
+     11817
     ],
     "Image": [
      5,
@@ -1357,7 +1389,7 @@
      0
     ],
     "Script": [
-     13,
+     14,
      0
     ],
     "Font": [
@@ -1366,11 +1398,11 @@
     ],
     "XHR": [
      1,
-     482
+     467
     ],
     "Fetch": [
-     27,
-     18664
+     43,
+     30688
     ]
    },
    "medias": {
@@ -1422,383 +1454,12 @@
    ],
    "nb_images": 5,
    "defilement": {
-    "duree_ms": 871,
+    "duree_ms": 859,
     "hauteur_px": 3735,
-    "images": 50,
+    "images": 49,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
-    "pire_image_ms": 50
-   },
-   "taches_longues": {
-    "nombre": 1,
-    "total_ms": 54,
-    "pire_ms": 54
-   },
-   "js": [
-    [
-     "email-decode.min.js",
-     0
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     0
-    ],
-    [
-     "310vm2bl3xxpt.js",
-     0
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     0
-    ],
-    [
-     "turbopack-00moxh6gklgtr.js",
-     0
-    ],
-    [
-     "453cd1tlxz5wi.js",
-     0
-    ]
-   ]
-  },
-  {
-   "appareil": "ordinateur",
-   "page": "/en/explore/",
-   "passage": "premiere-visite",
-   "chargement_ms": 1429,
-   "lcp_ms": 2312,
-   "noeuds": 1003,
-   "requetes": 125,
-   "octets_total": 34954249,
-   "par_type": {
-    "Document": [
-     1,
-     19783
-    ],
-    "Script": [
-     10,
-     203242
-    ],
-    "Stylesheet": [
-     2,
-     10006
-    ],
-    "Font": [
-     2,
-     64740
-    ],
-    "XHR": [
-     1,
-     478
-    ],
-    "Fetch": [
-     4,
-     2112
-    ],
-    "Image": [
-     105,
-     34653888
-    ]
-   },
-   "medias": {
-    "nombre": 107,
-    "octets": 34718628,
-    "attente_mediane_ms": 561,
-    "attente_max_ms": 1089,
-    "cache_cloudflare": [
-     "MISS"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0085/1793413763988.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0026/1793141667339.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0025/1793141615280.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ]
-   ],
-   "nb_images": 107,
-   "defilement": {
-    "duree_ms": 1985,
-    "hauteur_px": 10891,
-    "images": 115,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 0,
-    "pire_image_ms": 33.4
+    "pire_image_ms": 49.9
    },
    "taches_longues": {
     "nombre": 0,
@@ -1807,851 +1468,11 @@
    },
    "js": [
     [
-     "3jwqlcoc-8bka.js",
-     72143
-    ],
-    [
-     "3_5lvkvrbj8yj.js",
-     45658
-    ],
-    [
-     "134w7x-7mtuj4.js",
-     45060
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     9042
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     8478
-    ]
-   ]
-  },
-  {
-   "appareil": "ordinateur",
-   "page": "/en/explore/",
-   "passage": "deuxieme-visite",
-   "chargement_ms": 387,
-   "lcp_ms": 540,
-   "noeuds": 1004,
-   "requetes": 180,
-   "octets_total": 1311817,
-   "par_type": {
-    "Document": [
-     1,
-     19731
-    ],
-    "Stylesheet": [
-     2,
-     0
-    ],
-    "Script": [
-     13,
-     8695
-    ],
-    "Font": [
-     2,
-     0
-    ],
-    "Image": [
-     107,
-     1012449
-    ],
-    "XHR": [
-     1,
-     471
-    ],
-    "Fetch": [
-     54,
-     270471
-    ]
-   },
-   "medias": {
-    "nombre": 109,
-    "octets": 1012449,
-    "attente_mediane_ms": 0,
-    "attente_max_ms": 98,
-    "cache_cloudflare": [
-     "HIT",
-     "MISS"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0085/1793413763988.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "dp-0084/1793413714087.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0026/1793141667339.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0025/1793141615280.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0024/1793141560399.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0023/1793144148998.webp",
-     1200,
-     1189,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0022/1793141435612.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0021/1793141396467.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0019/1793141153812.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0018/1793141060822.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0016/1793140962335.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0015/1793140917610.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "orig-0014/1793140887643.webp",
-     1200,
-     1200,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     270,
-     "lazy"
-    ]
-   ],
-   "nb_images": 107,
-   "defilement": {
-    "duree_ms": 2871,
-    "hauteur_px": 10891,
-    "images": 114,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 10,
-    "pire_image_ms": 83.3
-   },
-   "taches_longues": {
-    "nombre": 4,
-    "total_ms": 225,
-    "pire_ms": 60
-   },
-   "js": [
-    [
-     "404koatcdpqvb.js",
-     3756
-    ],
-    [
-     "27ifrtuw5pwg0.js",
-     3083
-    ],
-    [
-     "2b9g775xbjkiw.js",
-     1856
-    ],
-    [
      "email-decode.min.js",
      0
     ],
     [
      "vce701823e78c4301a35b7e07294d87301792088814092",
-     0
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     0
-    ]
-   ]
-  },
-  {
-   "appareil": "telephone",
-   "page": "/",
-   "passage": "premiere-visite",
-   "chargement_ms": 2050,
-   "lcp_ms": 892,
-   "noeuds": 332,
-   "requetes": 58,
-   "octets_total": 676041,
-   "par_type": {
-    "Document": [
-     1,
-     16740
-    ],
-    "Script": [
-     12,
-     210057
-    ],
-    "Image": [
-     13,
-     310149
-    ],
-    "Stylesheet": [
-     2,
-     10106
-    ],
-    "Font": [
-     2,
-     64750
-    ],
-    "XHR": [
-     1,
-     475
-    ],
-    "Fetch": [
-     27,
-     63764
-    ]
-   },
-   "medias": {
-    "nombre": 15,
-    "octets": 374899,
-    "attente_mediane_ms": 1,
-    "attente_max_ms": 546,
-    "cache_cloudflare": [
-     "HIT",
-     "REVALIDATED"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0085/1793413763988.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0084/1793413714087.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0083/1793413673657.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0082/1793413628456.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ]
-   ],
-   "nb_images": 20,
-   "defilement": {
-    "duree_ms": 1739,
-    "hauteur_px": 8943,
-    "images": 94,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 2,
-    "pire_image_ms": 116.7
-   },
-   "taches_longues": {
-    "nombre": 4,
-    "total_ms": 418,
-    "pire_ms": 166
-   },
-   "js": [
-    [
-     "3jwqlcoc-8bka.js",
-     72085
-    ],
-    [
-     "3_5lvkvrbj8yj.js",
-     45722
-    ],
-    [
-     "134w7x-7mtuj4.js",
-     45028
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     9034
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     8439
-    ]
-   ]
-  },
-  {
-   "appareil": "telephone",
-   "page": "/",
-   "passage": "deuxieme-visite",
-   "chargement_ms": 629,
-   "lcp_ms": 368,
-   "noeuds": 332,
-   "requetes": 63,
-   "octets_total": 55834,
-   "par_type": {
-    "Document": [
-     1,
-     16699
-    ],
-    "Image": [
-     13,
-     0
-    ],
-    "Stylesheet": [
-     2,
-     0
-    ],
-    "Font": [
-     2,
-     0
-    ],
-    "Script": [
-     12,
-     0
-    ],
-    "XHR": [
-     1,
-     477
-    ],
-    "Fetch": [
-     32,
-     38658
-    ]
-   },
-   "medias": {
-    "nombre": 15,
-    "octets": 0,
-    "attente_mediane_ms": 0,
-    "attente_max_ms": 2,
-    "cache_cloudflare": [
-     "HIT",
-     "REVALIDATED"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0085/1793413763988.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0084/1793413714087.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0083/1793413673657.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0082/1793413628456.webp",
-     1200,
-     1200,
-     127,
-     "auto"
-    ],
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0088/1793413869657.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0087/1793413821027.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0086/1793413792507.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ]
-   ],
-   "nb_images": 20,
-   "defilement": {
-    "duree_ms": 1825,
-    "hauteur_px": 8943,
-    "images": 96,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 2,
-    "pire_image_ms": 133.4
-   },
-   "taches_longues": {
-    "nombre": 3,
-    "total_ms": 362,
-    "pire_ms": 169
-   },
-   "js": [
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     0
-    ],
-    [
-     "email-decode.min.js",
-     0
-    ],
-    [
-     "310vm2bl3xxpt.js",
      0
     ],
     [
@@ -2663,44 +1484,57 @@
      0
     ],
     [
+     "310vm2bl3xxpt.js",
+     0
+    ],
+    [
      "0m47-6wwuw-9_.js",
      0
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "telephone",
-   "page": "/explorer/",
+   "page": "/",
+   "descente": {
+    "images": 107,
+    "vignettes": 0,
+    "mediane_ms": 16.7,
+    "p90_ms": 17.3,
+    "sup_33ms": 0,
+    "pire_ms": 20.8
+   },
    "passage": "premiere-visite",
-   "chargement_ms": 3286,
-   "lcp_ms": 2968,
-   "noeuds": 1006,
-   "requetes": 99,
-   "octets_total": 4687238,
+   "chargement_ms": 5403,
+   "lcp_ms": 628,
+   "noeuds": 332,
+   "requetes": 73,
+   "octets_total": 5910846,
    "par_type": {
     "Document": [
      1,
-     20567
+     15469
+    ],
+    "Image": [
+     13,
+     5485097
     ],
     "Script": [
-     12,
-     210076
+     13,
+     211155
     ],
     "Stylesheet": [
      2,
-     10035
-    ],
-    "Image": [
-     67,
-     4311498
+     10064
     ],
     "Font": [
      2,
-     64747
+     64749
     ],
     "Fetch": [
-     14,
-     69842
+     41,
+     123839
     ],
     "XHR": [
      1,
@@ -2708,756 +1542,10 @@
     ]
    },
    "medias": {
-    "nombre": 69,
-    "octets": 4376245,
-    "attente_mediane_ms": 300,
-    "attente_max_ms": 1797,
-    "cache_cloudflare": [
-     "HIT",
-     "MISS",
-     "REVALIDATED"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ]
-   ],
-   "nb_images": 107,
-   "defilement": {
-    "duree_ms": 7739,
-    "hauteur_px": 51634,
-    "images": 464,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 0,
-    "pire_image_ms": 16.8
-   },
-   "taches_longues": {
-    "nombre": 3,
-    "total_ms": 482,
-    "pire_ms": 189
-   },
-   "js": [
-    [
-     "3jwqlcoc-8bka.js",
-     72088
-    ],
-    [
-     "3_5lvkvrbj8yj.js",
-     45725
-    ],
-    [
-     "134w7x-7mtuj4.js",
-     45034
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     9034
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     8439
-    ]
-   ]
-  },
-  {
-   "appareil": "telephone",
-   "page": "/explorer/",
-   "passage": "deuxieme-visite",
-   "chargement_ms": 580,
-   "lcp_ms": 436,
-   "noeuds": 1006,
-   "requetes": 120,
-   "octets_total": 5271623,
-   "par_type": {
-    "Document": [
-     1,
-     20519
-    ],
-    "Stylesheet": [
-     2,
-     0
-    ],
-    "Script": [
-     12,
-     0
-    ],
-    "Font": [
-     2,
-     0
-    ],
-    "Image": [
-     78,
-     5165460
-    ],
-    "XHR": [
-     1,
-     479
-    ],
-    "Fetch": [
-     24,
-     85165
-    ]
-   },
-   "medias": {
-    "nombre": 80,
-    "octets": 5165460,
-    "attente_mediane_ms": 142.0,
-    "attente_max_ms": 375,
-    "cache_cloudflare": [
-     "HIT",
-     "MISS",
-     "REVALIDATED"
-    ]
-   },
-   "images": [
-    [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ],
-    [
-     "",
-     0,
-     0,
-     379,
-     "lazy"
-    ]
-   ],
-   "nb_images": 107,
-   "defilement": {
-    "duree_ms": 7981,
-    "hauteur_px": 51634,
-    "images": 473,
-    "image_mediane_ms": 16.7,
-    "images_sup_50ms": 0,
-    "pire_image_ms": 50
-   },
-   "taches_longues": {
-    "nombre": 3,
-    "total_ms": 396,
-    "pire_ms": 171
-   },
-   "js": [
-    [
-     "email-decode.min.js",
-     0
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     0
-    ],
-    [
-     "310vm2bl3xxpt.js",
-     0
-    ],
-    [
-     "19mx3mg6lkumu.js",
-     0
-    ],
-    [
-     "turbopack-00moxh6gklgtr.js",
-     0
-    ],
-    [
-     "453cd1tlxz5wi.js",
-     0
-    ]
-   ]
-  },
-  {
-   "appareil": "telephone",
-   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
-   "passage": "premiere-visite",
-   "chargement_ms": 1323,
-   "lcp_ms": 1348,
-   "noeuds": 280,
-   "requetes": 41,
-   "octets_total": 751326,
-   "par_type": {
-    "Document": [
-     1,
-     11752
-    ],
-    "Script": [
-     12,
-     210031
-    ],
-    "Image": [
-     5,
-     408153
-    ],
-    "Stylesheet": [
-     2,
-     10018
-    ],
-    "Font": [
-     2,
-     64749
-    ],
-    "XHR": [
-     1,
-     475
-    ],
-    "Fetch": [
-     18,
-     46148
-    ]
-   },
-   "medias": {
-    "nombre": 7,
-    "octets": 472902,
-    "attente_mediane_ms": 90,
-    "attente_max_ms": 118,
+    "nombre": 15,
+    "octets": 5549846,
+    "attente_mediane_ms": 76,
+    "attente_max_ms": 123,
     "cache_cloudflare": [
      "HIT",
      "REVALIDATED"
@@ -3468,60 +1556,165 @@
      "dp-0093/1793414115238.webp",
      1200,
      1200,
-     379,
+     127,
      "auto"
     ],
     [
-     "",
-     0,
-     0,
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0089/1793413903417.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0088/1793413869657.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0087/1793413821027.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0086/1793413792507.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0085/1793413763988.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0084/1793413714087.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0083/1793413673657.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0082/1793413628456.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
      379,
      "lazy"
     ],
     [
-     "",
-     0,
-     0,
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
      379,
      "lazy"
     ],
     [
-     "",
-     0,
-     0,
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
      379,
      "lazy"
     ],
     [
-     "",
-     0,
-     0,
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0089/1793413903417.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0088/1793413869657.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0087/1793413821027.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0086/1793413792507.webp",
+     1200,
+     1200,
      379,
      "lazy"
     ]
    ],
-   "nb_images": 5,
+   "nb_images": 20,
    "defilement": {
-    "duree_ms": 1184,
-    "hauteur_px": 6303,
-    "images": 71,
+    "duree_ms": 1562,
+    "hauteur_px": 8943,
+    "images": 93,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
     "pire_image_ms": 16.8
    },
    "taches_longues": {
     "nombre": 2,
-    "total_ms": 227,
-    "pire_ms": 157
+    "total_ms": 210,
+    "pire_ms": 142
    },
    "js": [
     [
      "3jwqlcoc-8bka.js",
-     72159
+     71925
     ],
     [
      "3_5lvkvrbj8yj.js",
-     45632
+     45398
     ],
     [
      "134w7x-7mtuj4.js",
@@ -3533,31 +1726,644 @@
     ],
     [
      "0m47-6wwuw-9_.js",
-     9036
+     8948
     ],
     [
      "19mx3mg6lkumu.js",
-     8475
+     8169
     ]
    ]
   },
   {
+   "site": "https://latelier-sous-la-maison.com",
    "appareil": "telephone",
-   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "page": "/",
+   "descente": {
+    "images": 107,
+    "vignettes": 0,
+    "mediane_ms": 16.7,
+    "p90_ms": 17.3,
+    "sup_33ms": 0,
+    "pire_ms": 20.4
+   },
    "passage": "deuxieme-visite",
-   "chargement_ms": 520,
-   "lcp_ms": 328,
-   "noeuds": 280,
-   "requetes": 48,
-   "octets_total": 26489,
+   "chargement_ms": 491,
+   "lcp_ms": 276,
+   "noeuds": 332,
+   "requetes": 73,
+   "octets_total": 54166,
    "par_type": {
     "Document": [
      1,
-     11720
+     15428
     ],
     "Image": [
-     5,
+     13,
      0
+    ],
+    "Stylesheet": [
+     2,
+     0
+    ],
+    "Script": [
+     13,
+     0
+    ],
+    "Font": [
+     2,
+     0
+    ],
+    "XHR": [
+     1,
+     474
+    ],
+    "Fetch": [
+     41,
+     38264
+    ]
+   },
+   "medias": {
+    "nombre": 15,
+    "octets": 0,
+    "attente_mediane_ms": 0,
+    "attente_max_ms": 1,
+    "cache_cloudflare": [
+     "HIT",
+     "REVALIDATED"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0089/1793413903417.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0088/1793413869657.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0087/1793413821027.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0086/1793413792507.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0085/1793413763988.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0084/1793413714087.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0083/1793413673657.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0082/1793413628456.webp",
+     1200,
+     1200,
+     127,
+     "auto"
+    ],
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0089/1793413903417.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0088/1793413869657.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0087/1793413821027.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0086/1793413792507.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 20,
+   "defilement": {
+    "duree_ms": 1563,
+    "hauteur_px": 8943,
+    "images": 93,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 188,
+    "pire_ms": 138
+   },
+   "js": [
+    [
+     "vce701823e78c4301a35b7e07294d87301792088814092",
+     0
+    ],
+    [
+     "email-decode.min.js",
+     0
+    ],
+    [
+     "310vm2bl3xxpt.js",
+     0
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     0
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     0
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     0
+    ]
+   ]
+  },
+  {
+   "site": "https://latelier-sous-la-maison.com",
+   "appareil": "telephone",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 2268,
+   "lcp_ms": 2084,
+   "noeuds": 1006,
+   "requetes": 148,
+   "octets_total": 2743866,
+   "par_type": {
+    "Document": [
+     1,
+     20562
+    ],
+    "Script": [
+     12,
+     208301
+    ],
+    "Stylesheet": [
+     2,
+     9970
+    ],
+    "Image": [
+     82,
+     2113834
+    ],
+    "Font": [
+     2,
+     64749
+    ],
+    "Fetch": [
+     48,
+     325978
+    ],
+    "XHR": [
+     1,
+     472
+    ]
+   },
+   "medias": {
+    "nombre": 84,
+    "octets": 2178583,
+    "attente_mediane_ms": 95.5,
+    "attente_max_ms": 2647,
+    "cache_cloudflare": [
+     "HIT",
+     "REVALIDATED"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 107,
+   "defilement": {
+    "duree_ms": 7885,
+    "hauteur_px": 51634,
+    "images": 473,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 3,
+    "total_ms": 380,
+    "pire_ms": 152
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     71993
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45398
+    ],
+    [
+     "134w7x-7mtuj4.js",
+     44840
+    ],
+    [
+     "vce701823e78c4301a35b7e07294d87301792088814092",
+     10478
+    ],
+    [
+     "0m47-6wwuw-9_.js",
+     8775
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8262
+    ]
+   ]
+  },
+  {
+   "site": "https://latelier-sous-la-maison.com",
+   "appareil": "telephone",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 475,
+   "lcp_ms": 352,
+   "noeuds": 1006,
+   "requetes": 222,
+   "octets_total": 3392111,
+   "par_type": {
+    "Document": [
+     1,
+     20520
     ],
     "Stylesheet": [
      2,
@@ -3567,17 +2373,524 @@
      2,
      0
     ],
+    "Image": [
+     104,
+     2952554
+    ],
     "Script": [
      12,
      0
     ],
     "XHR": [
      1,
-     472
+     471
     ],
     "Fetch": [
-     25,
-     14297
+     100,
+     418566
+    ]
+   },
+   "medias": {
+    "nombre": 106,
+    "octets": 2952554,
+    "attente_mediane_ms": 47.0,
+    "attente_max_ms": 112,
+    "cache_cloudflare": [
+     "HIT",
+     "REVALIDATED"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0092/1793414803292.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0091/1793414047370.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "dp-0090/1793413950326.webp",
+     1200,
+     1200,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 107,
+   "defilement": {
+    "duree_ms": 8276,
+    "hauteur_px": 51634,
+    "images": 497,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 284,
+    "pire_ms": 145
+   },
+   "js": [
+    [
+     "email-decode.min.js",
+     0
+    ],
+    [
+     "vce701823e78c4301a35b7e07294d87301792088814092",
+     0
+    ],
+    [
+     "310vm2bl3xxpt.js",
+     0
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     0
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     0
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     0
+    ]
+   ]
+  },
+  {
+   "site": "https://latelier-sous-la-maison.com",
+   "appareil": "telephone",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 684,
+   "lcp_ms": 488,
+   "noeuds": 280,
+   "requetes": 64,
+   "octets_total": 396777,
+   "par_type": {
+    "Document": [
+     1,
+     11718
+    ],
+    "Image": [
+     5,
+     0
+    ],
+    "Script": [
+     13,
+     210963
+    ],
+    "Stylesheet": [
+     2,
+     10073
+    ],
+    "Font": [
+     2,
+     64785
+    ],
+    "XHR": [
+     1,
+     478
+    ],
+    "Fetch": [
+     40,
+     98760
+    ]
+   },
+   "medias": {
+    "nombre": 7,
+    "octets": 64785,
+    "attente_mediane_ms": 44,
+    "attente_max_ms": 169,
+    "cache_cloudflare": [
+     "HIT",
+     "REVALIDATED"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     1200,
+     1200,
+     379,
+     "auto"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 5,
+   "defilement": {
+    "duree_ms": 1194,
+    "hauteur_px": 6303,
+    "images": 72,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 217,
+    "pire_ms": 144
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     71979
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45398
+    ],
+    [
+     "134w7x-7mtuj4.js",
+     45033
+    ],
+    [
+     "vce701823e78c4301a35b7e07294d87301792088814092",
+     10478
+    ],
+    [
+     "0m47-6wwuw-9_.js",
+     8812
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8169
+    ]
+   ]
+  },
+  {
+   "site": "https://latelier-sous-la-maison.com",
+   "appareil": "telephone",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 417,
+   "lcp_ms": 232,
+   "noeuds": 280,
+   "requetes": 62,
+   "octets_total": 43345,
+   "par_type": {
+    "Document": [
+     1,
+     11821
+    ],
+    "Image": [
+     5,
+     0
+    ],
+    "Stylesheet": [
+     2,
+     0
+    ],
+    "Script": [
+     14,
+     1862
+    ],
+    "Font": [
+     2,
+     0
+    ],
+    "XHR": [
+     1,
+     476
+    ],
+    "Fetch": [
+     37,
+     29186
     ]
    },
    "medias": {
@@ -3629,19 +2942,23 @@
    ],
    "nb_images": 5,
    "defilement": {
-    "duree_ms": 1191,
+    "duree_ms": 1212,
     "hauteur_px": 6303,
-    "images": 71,
+    "images": 72,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
     "pire_image_ms": 16.8
    },
    "taches_longues": {
     "nombre": 2,
-    "total_ms": 223,
-    "pire_ms": 153
+    "total_ms": 203,
+    "pire_ms": 141
    },
    "js": [
+    [
+     "2b9g775xbjkiw.js",
+     1862
+    ],
     [
      "email-decode.min.js",
      0
@@ -3661,96 +2978,2018 @@
     [
      "turbopack-00moxh6gklgtr.js",
      0
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     0
     ]
    ]
   },
   {
-   "appareil": "telephone",
-   "page": "/en/explore/",
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/",
+   "descente": {
+    "images": 104,
+    "vignettes": 20,
+    "mediane_ms": 16.7,
+    "p90_ms": 17.3,
+    "sup_33ms": 0,
+    "pire_ms": 25.6
+   },
    "passage": "premiere-visite",
-   "chargement_ms": 3152,
-   "lcp_ms": 2936,
-   "noeuds": 1005,
-   "requetes": 128,
-   "octets_total": 3558054,
+   "chargement_ms": 860,
+   "lcp_ms": 648,
+   "noeuds": 333,
+   "requetes": 49,
+   "octets_total": 1220155,
    "par_type": {
     "Document": [
      1,
-     19780
+     9826
     ],
     "Script": [
-     12,
-     208361
+     10,
+     152806
     ],
     "Stylesheet": [
      2,
-     10022
+     10023
     ],
     "Image": [
-     79,
-     3063030
+     14,
+     929052
     ],
     "Font": [
      2,
-     64766
+     64818
     ],
     "Fetch": [
-     31,
-     191619
-    ],
-    "XHR": [
-     1,
-     476
+     20,
+     53630
     ]
    },
    "medias": {
-    "nombre": 81,
-    "octets": 3127796,
-    "attente_mediane_ms": 239,
-    "attente_max_ms": 2422,
+    "nombre": 2,
+    "octets": 64818,
+    "attente_mediane_ms": 44.0,
+    "attente_max_ms": 45,
     "cache_cloudflare": [
-     "HIT",
-     "MISS",
-     "REVALIDATED"
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0083-1793413673657-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0082-1793413628456-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 20,
+   "defilement": {
+    "duree_ms": 1012,
+    "hauteur_px": 5273,
+    "images": 61,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     71956
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45496
+    ],
+    [
+     "2a0eqf8792603.js",
+     8867
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8266
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4291
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4124
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/",
+   "descente": {
+    "images": 104,
+    "vignettes": 20,
+    "mediane_ms": 16.7,
+    "p90_ms": 16.9,
+    "sup_33ms": 0,
+    "pire_ms": 24.8
+   },
+   "passage": "deuxieme-visite",
+   "chargement_ms": 169,
+   "lcp_ms": 120,
+   "noeuds": 333,
+   "requetes": 61,
+   "octets_total": 109014,
+   "par_type": {
+    "Document": [
+     1,
+     9790
+    ],
+    "Image": [
+     14,
+     7321
+    ],
+    "Stylesheet": [
+     2,
+     1054
+    ],
+    "Script": [
+     11,
+     8050
+    ],
+    "Font": [
+     2,
+     1046
+    ],
+    "Fetch": [
+     31,
+     81753
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 1046,
+    "attente_mediane_ms": 31.0,
+    "attente_max_ms": 40,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0083-1793413673657-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0082-1793413628456-400.webp",
+     360,
+     360,
+     345,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 20,
+   "defilement": {
+    "duree_ms": 1012,
+    "hauteur_px": 5273,
+    "images": 61,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "2t2ly7_qq6k3b.js",
+     2807
+    ],
+    [
+     "2a0eqf8792603.js",
+     529
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     529
+    ],
+    [
+     "3jwqlcoc-8bka.js",
+     529
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     526
+    ],
+    [
+     "2b9g775xbjkiw.js",
+     526
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 409,
+   "lcp_ms": 500,
+   "noeuds": 1007,
+   "requetes": 154,
+   "octets_total": 5322975,
+   "par_type": {
+    "Document": [
+     1,
+     41322
+    ],
+    "Stylesheet": [
+     2,
+     10088
+    ],
+    "Script": [
+     11,
+     155755
+    ],
+    "Image": [
+     107,
+     4961956
+    ],
+    "Font": [
+     2,
+     64776
+    ],
+    "Fetch": [
+     31,
+     89078
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 64776,
+    "attente_mediane_ms": 43.0,
+    "attente_max_ms": 49,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0026-1793141667339-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0025-1793141615280-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0024-1793141560399-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0023-1793144148998-400.webp",
+     380,
+     376,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0022-1793141435612-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0021-1793141396467-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0019-1793141153812-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0018-1793141060822-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0016-1793140962335-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0015-1793140917610-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0014-1793140887643-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 107,
+   "defilement": {
+    "duree_ms": 1849,
+    "hauteur_px": 10969,
+    "images": 111,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     71946
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45512
+    ],
+    [
+     "2a0eqf8792603.js",
+     8863
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8205
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4283
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4123
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 217,
+   "lcp_ms": 308,
+   "noeuds": 1007,
+   "requetes": 154,
+   "octets_total": 124629,
+   "par_type": {
+    "Document": [
+     1,
+     41273
+    ],
+    "Stylesheet": [
+     2,
+     1049
+    ],
+    "Script": [
+     11,
+     5754
+    ],
+    "Image": [
+     107,
+     55667
+    ],
+    "Font": [
+     2,
+     1041
+    ],
+    "Fetch": [
+     31,
+     19845
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 1041,
+    "attente_mediane_ms": 21.5,
+    "attente_max_ms": 22,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0026-1793141667339-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0025-1793141615280-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0024-1793141560399-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0023-1793144148998-400.webp",
+     380,
+     376,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0022-1793141435612-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0021-1793141396467-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0019-1793141153812-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0018-1793141060822-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0016-1793140962335-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0015-1793140917610-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/orig-0014-1793140887643-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 107,
+   "defilement": {
+    "duree_ms": 1842,
+    "hauteur_px": 10969,
+    "images": 111,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "23_n_7kwm3qk4.js",
+     527
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     525
+    ],
+    [
+     "310vm2bl3xxpt.js",
+     524
+    ],
+    [
+     "3jwqlcoc-8bka.js",
+     524
+    ],
+    [
+     "2b9g775xbjkiw.js",
+     524
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     522
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 541,
+   "lcp_ms": 488,
+   "noeuds": 280,
+   "requetes": 53,
+   "octets_total": 568949,
+   "par_type": {
+    "Document": [
+     1,
+     11512
+    ],
+    "Stylesheet": [
+     2,
+     10085
+    ],
+    "Script": [
+     12,
+     159627
+    ],
+    "Image": [
+     5,
+     233820
+    ],
+    "Font": [
+     2,
+     64806
+    ],
+    "Fetch": [
+     31,
+     89099
+    ]
+   },
+   "medias": {
+    "nombre": 3,
+    "octets": 65135,
+    "attente_mediane_ms": 48,
+    "attente_max_ms": 66,
+    "cache_cloudflare": [
+     "None"
     ]
    },
    "images": [
     [
      "dp-0093/1793414115238.webp",
-     1200,
-     1200,
+     0,
+     0,
+     549,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 5,
+   "defilement": {
+    "duree_ms": 819,
+    "hauteur_px": 3735,
+    "images": 49,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     71966
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45496
+    ],
+    [
+     "2a0eqf8792603.js",
+     9098
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8269
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4289
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4129
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "ordinateur",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 185,
+   "lcp_ms": 152,
+   "noeuds": 280,
+   "requetes": 53,
+   "octets_total": 42298,
+   "par_type": {
+    "Document": [
+     1,
+     11553
+    ],
+    "Stylesheet": [
+     2,
+     1048
+    ],
+    "Script": [
+     12,
+     6278
+    ],
+    "Font": [
+     2,
+     1047
+    ],
+    "Image": [
+     5,
+     2546
+    ],
+    "Fetch": [
+     31,
+     19826
+    ]
+   },
+   "medias": {
+    "nombre": 3,
+    "octets": 1505,
+    "attente_mediane_ms": 23,
+    "attente_max_ms": 60,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     0,
+     0,
+     549,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     380,
+     380,
+     270,
+     "lazy"
+    ]
+   ],
+   "nb_images": 5,
+   "defilement": {
+    "duree_ms": 817,
+    "hauteur_px": 3735,
+    "images": 49,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 0,
+    "total_ms": 0,
+    "pire_ms": 0
+   },
+   "js": [
+    [
+     "310vm2bl3xxpt.js",
+     530
+    ],
+    [
+     "2b9g775xbjkiw.js",
+     526
+    ],
+    [
+     "2t2ly7_qq6k3b.js",
+     526
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     525
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     524
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     523
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "telephone",
+   "page": "/",
+   "descente": {
+    "images": 107,
+    "vignettes": 14,
+    "mediane_ms": 16.6,
+    "p90_ms": 17.4,
+    "sup_33ms": 0,
+    "pire_ms": 26.3
+   },
+   "passage": "premiere-visite",
+   "chargement_ms": 1211,
+   "lcp_ms": 364,
+   "noeuds": 331,
+   "requetes": 64,
+   "octets_total": 2371663,
+   "par_type": {
+    "Document": [
+     1,
+     9832
+    ],
+    "Image": [
+     21,
+     2044887
+    ],
+    "Stylesheet": [
+     2,
+     10063
+    ],
+    "Script": [
+     11,
+     155699
+    ],
+    "Font": [
+     2,
+     64783
+    ],
+    "Fetch": [
+     27,
+     86399
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 64783,
+    "attente_mediane_ms": 122.5,
+    "attente_max_ms": 132,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0083-1793413673657-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0082-1793413628456-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0093-1793414115238-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
+     "vignettes/dp-0092-1793414803292-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
+     "",
+     0,
+     0,
      379,
      "lazy"
     ],
     [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
+     "",
+     0,
+     0,
      379,
      "lazy"
     ],
     [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 20,
+   "defilement": {
+    "duree_ms": 1564,
+    "hauteur_px": 8943,
+    "images": 94,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 209,
+    "pire_ms": 147
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     72121
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45405
+    ],
+    [
+     "2a0eqf8792603.js",
+     8860
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8194
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4309
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4215
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "telephone",
+   "page": "/",
+   "descente": {
+    "images": 107,
+    "vignettes": 14,
+    "mediane_ms": 16.7,
+    "p90_ms": 17.2,
+    "sup_33ms": 0,
+    "pire_ms": 28.1
+   },
+   "passage": "deuxieme-visite",
+   "chargement_ms": 476,
+   "lcp_ms": 388,
+   "noeuds": 331,
+   "requetes": 64,
+   "octets_total": 46259,
+   "par_type": {
+    "Document": [
+     1,
+     9784
+    ],
+    "Image": [
+     21,
+     10935
+    ],
+    "Stylesheet": [
+     2,
+     1050
+    ],
+    "Script": [
+     11,
+     5758
+    ],
+    "Font": [
+     2,
+     1044
+    ],
+    "Fetch": [
+     27,
+     17688
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 1044,
+    "attente_mediane_ms": 41.5,
+    "attente_max_ms": 42,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0089-1793413903417-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0088-1793413869657-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0087-1793413821027-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0086-1793413792507-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0085-1793413763988-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0084-1793413714087-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0083-1793413673657-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0082-1793413628456-400.webp",
+     140,
+     140,
+     127,
+     "auto"
+    ],
+    [
+     "vignettes/dp-0093-1793414115238-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 20,
+   "defilement": {
+    "duree_ms": 1548,
+    "hauteur_px": 8943,
+    "images": 93,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 177,
+    "pire_ms": 115
+   },
+   "js": [
+    [
+     "turbopack-00moxh6gklgtr.js",
+     527
+    ],
+    [
+     "3jwqlcoc-8bka.js",
+     526
+    ],
+    [
+     "23_n_7kwm3qk4.js",
+     526
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     525
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     525
+    ],
+    [
+     "2a0eqf8792603.js",
+     524
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "telephone",
+   "page": "/explorer/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 974,
+   "lcp_ms": 932,
+   "noeuds": 1006,
+   "requetes": 138,
+   "octets_total": 5964219,
+   "par_type": {
+    "Document": [
+     1,
+     41310
+    ],
+    "Stylesheet": [
+     2,
+     10019
+    ],
+    "Script": [
+     9,
+     151176
+    ],
+    "Image": [
+     107,
+     5680307
+    ],
+    "Font": [
+     2,
+     64779
+    ],
+    "Fetch": [
+     17,
+     16628
+    ]
+   },
+   "medias": {
+    "nombre": 2,
+    "octets": 64779,
+    "attente_mediane_ms": 82.0,
+    "attente_max_ms": 121,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "vignettes/dp-0093-1793414115238-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0092-1793414803292-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0091-1793414047370-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "vignettes/dp-0090-1793413950326-800.webp",
+     379,
+     379,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
      379,
      "lazy"
     ],
@@ -4002,8 +5241,8 @@
    ],
    "nb_images": 107,
    "defilement": {
-    "duree_ms": 7898,
-    "hauteur_px": 51592,
+    "duree_ms": 7890,
+    "hauteur_px": 51634,
     "images": 474,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
@@ -4011,119 +5250,115 @@
    },
    "taches_longues": {
     "nombre": 3,
-    "total_ms": 441,
-    "pire_ms": 181
+    "total_ms": 399,
+    "pire_ms": 161
    },
    "js": [
     [
      "3jwqlcoc-8bka.js",
-     71872
+     72189
     ],
     [
      "3_5lvkvrbj8yj.js",
-     45479
+     45490
     ],
     [
-     "134w7x-7mtuj4.js",
-     44815
-    ],
-    [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     10478
-    ],
-    [
-     "0m47-6wwuw-9_.js",
-     8772
+     "2a0eqf8792603.js",
+     8864
     ],
     [
      "19mx3mg6lkumu.js",
-     8265
+     8276
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4314
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4127
     ]
    ]
   },
   {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
    "appareil": "telephone",
-   "page": "/en/explore/",
+   "page": "/explorer/",
+   "descente": null,
    "passage": "deuxieme-visite",
-   "chargement_ms": 666,
-   "lcp_ms": 532,
-   "noeuds": 1005,
-   "requetes": 178,
-   "octets_total": 3438148,
+   "chargement_ms": 501,
+   "lcp_ms": 468,
+   "noeuds": 1006,
+   "requetes": 150,
+   "octets_total": 187080,
    "par_type": {
     "Document": [
      1,
-     19733
+     41216
     ],
     "Stylesheet": [
      2,
-     0
+     1044
+    ],
+    "Script": [
+     11,
+     9371
+    ],
+    "Image": [
+     107,
+     55747
     ],
     "Font": [
      2,
-     0
-    ],
-    "Image": [
-     86,
-     3078839
-    ],
-    "Script": [
-     12,
-     0
-    ],
-    "XHR": [
-     1,
-     473
+     1054
     ],
     "Fetch": [
-     74,
-     339103
+     27,
+     78648
     ]
    },
    "medias": {
-    "nombre": 88,
-    "octets": 3078839,
-    "attente_mediane_ms": 117.0,
-    "attente_max_ms": 159,
+    "nombre": 2,
+    "octets": 1054,
+    "attente_mediane_ms": 42.5,
+    "attente_max_ms": 44,
     "cache_cloudflare": [
-     "HIT",
-     "MISS",
-     "REVALIDATED"
+     "None"
     ]
    },
    "images": [
     [
-     "dp-0093/1793414115238.webp",
-     1200,
-     1200,
+     "vignettes/dp-0093-1793414115238-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0092/1793414803292.webp",
-     1200,
-     1200,
+     "vignettes/dp-0092-1793414803292-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0091/1793414047370.webp",
-     1200,
-     1200,
+     "vignettes/dp-0091-1793414047370-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0090/1793413950326.webp",
-     1200,
-     1200,
+     "vignettes/dp-0090-1793413950326-800.webp",
+     379,
+     379,
      379,
      "lazy"
     ],
     [
-     "dp-0089/1793413903417.webp",
-     1200,
-     1200,
+     "",
+     0,
+     0,
      379,
      "lazy"
     ],
@@ -4375,42 +5610,290 @@
    ],
    "nb_images": 107,
    "defilement": {
-    "duree_ms": 8145,
-    "hauteur_px": 51592,
-    "images": 486,
+    "duree_ms": 7715,
+    "hauteur_px": 51634,
+    "images": 463,
     "image_mediane_ms": 16.7,
     "images_sup_50ms": 0,
-    "pire_image_ms": 33.3
+    "pire_image_ms": 16.8
    },
    "taches_longues": {
     "nombre": 3,
-    "total_ms": 417,
-    "pire_ms": 173
+    "total_ms": 372,
+    "pire_ms": 146
    },
    "js": [
     [
-     "email-decode.min.js",
-     0
+     "2t2ly7_qq6k3b.js",
+     2808
     ],
     [
-     "vce701823e78c4301a35b7e07294d87301792088814092",
-     0
+     "2b9g775xbjkiw.js",
+     1872
     ],
     [
      "19mx3mg6lkumu.js",
-     0
-    ],
-    [
-     "310vm2bl3xxpt.js",
-     0
-    ],
-    [
-     "turbopack-00moxh6gklgtr.js",
-     0
+     526
     ],
     [
      "453cd1tlxz5wi.js",
-     0
+     525
+    ],
+    [
+     "23_n_7kwm3qk4.js",
+     525
+    ],
+    [
+     "2a0eqf8792603.js",
+     524
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "telephone",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "premiere-visite",
+   "chargement_ms": 594,
+   "lcp_ms": 356,
+   "noeuds": 279,
+   "requetes": 51,
+   "octets_total": 1021573,
+   "par_type": {
+    "Document": [
+     1,
+     11637
+    ],
+    "Stylesheet": [
+     2,
+     10012
+    ],
+    "Image": [
+     5,
+     686201
+    ],
+    "Script": [
+     12,
+     161272
+    ],
+    "Font": [
+     2,
+     64790
+    ],
+    "Fetch": [
+     29,
+     87661
+    ]
+   },
+   "medias": {
+    "nombre": 3,
+    "octets": 65096,
+    "attente_mediane_ms": 46,
+    "attente_max_ms": 61,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     0,
+     0,
+     379,
+     "auto"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 5,
+   "defilement": {
+    "duree_ms": 1214,
+    "hauteur_px": 6303,
+    "images": 73,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 213,
+    "pire_ms": 139
+   },
+   "js": [
+    [
+     "3jwqlcoc-8bka.js",
+     72201
+    ],
+    [
+     "3_5lvkvrbj8yj.js",
+     45657
+    ],
+    [
+     "2a0eqf8792603.js",
+     9154
+    ],
+    [
+     "19mx3mg6lkumu.js",
+     8458
+    ],
+    [
+     "turbopack-00moxh6gklgtr.js",
+     4550
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     4385
+    ]
+   ]
+  },
+  {
+   "site": "https://perf-vignettes.latelier-sous-la-maison.pages.dev",
+   "appareil": "telephone",
+   "page": "/motif/draperies-et-corbeilles-sur-fond-vert/",
+   "descente": null,
+   "passage": "deuxieme-visite",
+   "chargement_ms": 395,
+   "lcp_ms": 200,
+   "noeuds": 279,
+   "requetes": 51,
+   "octets_total": 73488,
+   "par_type": {
+    "Document": [
+     1,
+     11588
+    ],
+    "Image": [
+     5,
+     2533
+    ],
+    "Stylesheet": [
+     2,
+     1043
+    ],
+    "Script": [
+     12,
+     6294
+    ],
+    "Font": [
+     2,
+     1055
+    ],
+    "Fetch": [
+     29,
+     50975
+    ]
+   },
+   "medias": {
+    "nombre": 3,
+    "octets": 1508,
+    "attente_mediane_ms": 43,
+    "attente_max_ms": 43,
+    "cache_cloudflare": [
+     "None"
+    ]
+   },
+   "images": [
+    [
+     "dp-0093/1793414115238.webp",
+     0,
+     0,
+     379,
+     "auto"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ],
+    [
+     "",
+     0,
+     0,
+     379,
+     "lazy"
+    ]
+   ],
+   "nb_images": 5,
+   "defilement": {
+    "duree_ms": 1194,
+    "hauteur_px": 6303,
+    "images": 72,
+    "image_mediane_ms": 16.7,
+    "images_sup_50ms": 0,
+    "pire_image_ms": 16.8
+   },
+   "taches_longues": {
+    "nombre": 2,
+    "total_ms": 206,
+    "pire_ms": 140
+   },
+   "js": [
+    [
+     "23_n_7kwm3qk4.js",
+     535
+    ],
+    [
+     "453cd1tlxz5wi.js",
+     528
+    ],
+    [
+     "2b9g775xbjkiw.js",
+     528
+    ],
+    [
+     "3jwqlcoc-8bka.js",
+     526
+    ],
+    [
+     "310vm2bl3xxpt.js",
+     525
+    ],
+    [
+     "1bijzdidb6uab.js",
+     525
     ]
    ]
   }
