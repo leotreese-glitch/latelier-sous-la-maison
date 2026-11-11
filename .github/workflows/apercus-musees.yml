@@ -14,16 +14,17 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           MODE="$(cat outil/mode.txt)"
-          if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ] || [ "$MODE" = "notices" ] || [ "$MODE" = "pages" ] || [ "$MODE" = "verif_images" ] || [ "$MODE" = "sources" ] || [ "$MODE" = "doublons" ]; then
+          if [ "$MODE" = "recherche" ] || [ "$MODE" = "planches" ] || [ "$MODE" = "notices" ] || [ "$MODE" = "pages" ] || [ "$MODE" = "verif_images" ] || [ "$MODE" = "sources" ] || [ "$MODE" = "doublons" ] || [ "$MODE" = "perf" ]; then
             set +e
             python -m pip install -q pillow numpy
+            if [ "$MODE" = "perf" ]; then python -m pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null; fi
             timeout 1800 python -u outil/$MODE.py > outil/journal-$MODE.txt 2>&1
             echo "code de sortie : $?" >> outil/journal-$MODE.txt
             tail -n 30 outil/journal-$MODE.txt
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add outil/journal-$MODE.txt
-            for d in outil/recherche outil/planches outil/apercus outil/verif; do if [ -e "$d" ]; then git add "$d"; fi; done
+            for d in outil/recherche outil/planches outil/apercus outil/verif outil/perf; do if [ -e "$d" ]; then git add "$d"; fi; done
             git commit -q -m "Résultat de l'outil : $MODE [CF-Pages-Skip]"
             git push
             exit 0
