@@ -1,0 +1,18 @@
+ordinateur / premiere-visite ok 1694 ms
+ordinateur / deuxieme-visite ok 289 ms
+ordinateur /explorer/ premiere-visite ok 1237 ms
+ordinateur /explorer/ deuxieme-visite ok 429 ms
+ordinateur /motif/draperies-et-corbeilles-sur-fond-vert/ premiere-visite ok 1550 ms
+ordinateur /motif/draperies-et-corbeilles-sur-fond-vert/ deuxieme-visite ok 294 ms
+ordinateur /en/explore/ premiere-visite ok 1429 ms
+ordinateur /en/explore/ deuxieme-visite ok 387 ms
+telephone / premiere-visite ok 2050 ms
+telephone / deuxieme-visite ok 629 ms
+telephone /explorer/ premiere-visite ok 3286 ms
+telephone /explorer/ deuxieme-visite ok 580 ms
+telephone /motif/draperies-et-corbeilles-sur-fond-vert/ premiere-visite ok 1323 ms
+telephone /motif/draperies-et-corbeilles-sur-fond-vert/ deuxieme-visite ok 520 ms
+telephone /en/explore/ premiere-visite ok 3152 ms
+telephone /en/explore/ deuxieme-visite ok 666 ms
+terminé
+code de sortie : 0
