@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { chemin, type Langue } from "@/lib/i18n";
-import type { Design } from "@/lib/modele";
+import { imageGrille, type Design } from "@/lib/modele";
 
 const T = {
   fr: {
@@ -40,7 +40,13 @@ const ETOILES: [number, number, number][] = [
 
 const borne = (v: number) => Math.min(1, Math.max(0, v));
 
-export function Descente({ mur, l }: { mur: Design[]; l: Langue }) {
+/** Ce dont le mur d'images a besoin, et rien de plus (le reste du catalogue n'est pas envoyé au navigateur). */
+export type ImageMur = Pick<Design, "id" | "image" | "vignettes">;
+
+/** Largeur affichée d'une image du mur : 3 colonnes sur téléphone, 4 sur ordinateur. */
+const TAILLES_MUR = "(max-width: 760px) 34vw, 25vw";
+
+export function Descente({ mur, l }: { mur: ImageMur[]; l: Langue }) {
   const t = T[l];
   const ref = useRef<HTMLElement>(null);
 
@@ -51,18 +57,37 @@ export function Descente({ mur, l }: { mur: Design[]; l: Langue }) {
     if (reduit.matches) return;
     el.classList.add("est-vivante");
 
+    // Chaque valeur est posée sur le seul élément qui s'en sert, et seulement quand elle change :
+    // le navigateur ne recalcule plus toute la scène à chaque image du défilement.
+    const cibles = {
+      monde: el.querySelector<HTMLElement>(".descente__monde"),
+      maison: el.querySelector<SVGSVGElement>(".surface__maison"),
+      racines: el.querySelector<SVGSVGElement>(".terre__racines"),
+      atelier: el.querySelector<HTMLElement>(".atelier"),
+      cartel: el.querySelector<HTMLElement>(".atelier__cartel"),
+    };
+    const dernieres = new Map<string, string>();
+    const poser = (cle: keyof typeof cibles, nom: string, valeur: number, decimales = 3) => {
+      const cible = cibles[cle];
+      if (!cible) return;
+      const texte = valeur.toFixed(decimales);
+      if (dernieres.get(cle + nom) === texte) return;
+      dernieres.set(cle + nom, texte);
+      cible.style.setProperty(nom, texte);
+    };
+
     let image = 0;
     const maj = () => {
       image = 0;
       const r = el.getBoundingClientRect();
       const course = r.height - window.innerHeight;
       const p = borne(course > 0 ? -r.top / course : 0);
-      el.style.setProperty("--p", p.toFixed(4));
-      el.style.setProperty("--racines", borne((p - 0.1) / 0.55).toFixed(4));
-      el.style.setProperty("--branches", borne((p - 0.22) / 0.5).toFixed(4));
-      el.style.setProperty("--lueur", Math.max(0.35, borne(p / 0.25)).toFixed(4));
-      el.style.setProperty("--lumiere", borne((p - 0.6) / 0.32).toFixed(4));
-      el.style.setProperty("--texte", borne((p - 0.84) / 0.14).toFixed(4));
+      poser("monde", "--p", p, 4);
+      poser("racines", "--racines", borne((p - 0.1) / 0.55));
+      poser("racines", "--branches", borne((p - 0.22) / 0.5));
+      poser("maison", "--lueur", Math.max(0.35, borne(p / 0.25)));
+      poser("atelier", "--lumiere", borne((p - 0.6) / 0.32));
+      poser("cartel", "--apparition", borne((p - 0.84) / 0.14));
     };
     const demander = () => {
       if (!image) image = requestAnimationFrame(maj);
@@ -75,6 +100,9 @@ export function Descente({ mur, l }: { mur: Design[]; l: Langue }) {
       window.removeEventListener("resize", demander);
       cancelAnimationFrame(image);
       el.classList.remove("est-vivante");
+      for (const cible of Object.values(cibles)) {
+        for (const nom of ["--p", "--racines", "--branches", "--lueur", "--lumiere", "--apparition"]) cible?.style.removeProperty(nom);
+      }
     };
   }, []);
 
@@ -158,7 +186,7 @@ export function Descente({ mur, l }: { mur: Design[]; l: Langue }) {
             <ul className="atelier__mur" aria-hidden="true">
               {mur.map((d) => (
                 <li key={d.id}>
-                  <img src={d.image} alt="" draggable={false} />
+                  <img {...imageGrille(d)} sizes={TAILLES_MUR} alt="" decoding="async" draggable={false} />
                 </li>
               ))}
             </ul>

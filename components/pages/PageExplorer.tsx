@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Explorer } from "@/components/Explorer";
 import { Mosaique } from "@/components/Mosaique";
-import { DESIGNS } from "@/lib/catalogue";
+import { DESIGNS, pourGrille } from "@/lib/catalogue";
 import type { Langue } from "@/lib/i18n";
 
 export const TEXTES_EXPLORER = {
@@ -21,6 +21,7 @@ export const TEXTES_EXPLORER = {
 
 export function PageExplorer({ l }: { l: Langue }) {
   const t = TEXTES_EXPLORER[l];
+  const designs = DESIGNS.map(pourGrille);
   return (
     <>
       <div className="contenu explorer__tete">
@@ -31,11 +32,11 @@ export function PageExplorer({ l }: { l: Langue }) {
       <Suspense
         fallback={
           <div className="contenu resultats">
-            <Mosaique designs={DESIGNS} etiquette={t.tous} l={l} />
+            <Mosaique designs={designs} etiquette={t.tous} l={l} />
           </div>
         }
       >
-        <Explorer l={l} />
+        <Explorer designs={designs} l={l} />
       </Suspense>
     </>
   );

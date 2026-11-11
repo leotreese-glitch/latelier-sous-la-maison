@@ -80,6 +80,51 @@ export interface Design {
   livrables?: Livrable[];
   /** Version anglaise des textes de la fiche. */
   en?: TexteAnglais;
+  /** Vignettes légères fabriquées au moment de la mise à jour du site (voir next.config.ts). */
+  vignettes?: Vignettes;
+}
+
+/** Copies réduites de l'aperçu (400 et 800 px de large), servies comme fichiers statiques. */
+export interface Vignettes {
+  "400": string;
+  "800": string;
+}
+
+/**
+ * Image à afficher dans une grille : les vignettes quand elles existent, sinon l'aperçu complet.
+ * `sizes` indique au navigateur la largeur affichée, pour qu'il choisisse la plus petite vignette suffisante.
+ */
+export function imageGrille(d: Pick<Design, "image" | "vignettes">) {
+  if (!d.vignettes) return { src: d.image };
+  return { src: d.vignettes["800"], srcSet: `${d.vignettes["400"]} 400w, ${d.vignettes["800"]} 800w` };
+}
+
+/** Version allégée d'un design pour les grilles et les filtres : sans cartel, droits ni fichiers. */
+export function pourGrille(d: Design): Design {
+  return {
+    id: d.id,
+    slug: d.slug,
+    titre: d.titre,
+    famille: d.famille,
+    periode: d.periode,
+    date: d.date,
+    origine: d.origine,
+    technique: d.technique,
+    type: d.type,
+    couleurs: d.couleurs,
+    image: d.image,
+    ratio: d.ratio,
+    resume: d.resume,
+    cartel: "",
+    source: "",
+    niveau: d.niveau,
+    prix: d.prix,
+    edition: d.edition,
+    exemple: d.exemple,
+    publieLe: d.publieLe,
+    vignettes: d.vignettes,
+    en: d.en ? { titre: d.en.titre, resume: d.en.resume, origine: d.en.origine, technique: d.en.technique, date: d.en.date } : undefined,
+  };
 }
 
 export interface Livrable {

@@ -370,7 +370,7 @@ a {
   --branches: 1;
   --lueur: 1;
   --lumiere: 1;
-  --texte: 1;
+  --apparition: 1;
   position: relative;
 }
 @media (max-width: 760px) {
@@ -545,6 +545,8 @@ a {
   margin: 0;
   padding: 12px;
   list-style: none;
+  /* Calque à part : quand la lumière s'étend, seul le masque est redessiné, pas les images. */
+  will-change: transform;
   -webkit-mask-image: radial-gradient(
     ellipse 90% 100% at var(--axe) 0%,
     #000 calc(var(--lumiere) * 70%),
@@ -575,6 +577,7 @@ a {
 .atelier::before {
   background: radial-gradient(ellipse 55% 65% at var(--axe) 0%, rgba(233, 208, 142, 0.3), transparent 70%);
   opacity: var(--lumiere);
+  will-change: opacity;
 }
 .atelier::after {
   background: linear-gradient(180deg, transparent 35%, rgba(10, 13, 24, 0.88) 100%);
@@ -583,8 +586,8 @@ a {
   position: relative;
   z-index: 2;
   max-width: 540px;
-  opacity: var(--texte);
-  transform: translateY(calc((1 - var(--texte)) * 16px));
+  opacity: var(--apparition);
+  transform: translateY(calc((1 - var(--apparition)) * 16px));
 }
 @media (max-width: 760px) {
   .atelier__mur {

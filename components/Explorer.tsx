@@ -4,7 +4,6 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import {
   COULEURS,
-  DESIGNS,
   nomCouleur,
   nomFamille,
   nomPeriode,
@@ -13,9 +12,10 @@ import {
   texteDesign,
   TIROIRS_OUVERTS,
   type Couleur,
+  type Design,
   type Famille,
   type Periode,
-} from "@/lib/catalogue";
+} from "@/lib/modele";
 import type { Langue } from "@/lib/i18n";
 import { Mosaique } from "./Mosaique";
 
@@ -54,7 +54,7 @@ const sansAccents = (s: string) =>
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
 
-function texteRecherche(d: (typeof DESIGNS)[number], l: Langue) {
+function texteRecherche(d: Design, l: Langue) {
   const t = texteDesign(d, l);
   const couleurs = d.couleurs.map((c) => nomCouleur(c, l)).join(" ");
   return sansAccents(
@@ -62,7 +62,8 @@ function texteRecherche(d: (typeof DESIGNS)[number], l: Langue) {
   );
 }
 
-export function Explorer({ l }: { l: Langue }) {
+/** `designs` arrive déjà allégés (voir pourGrille) : le catalogue complet n'est pas envoyé au navigateur. */
+export function Explorer({ designs, l }: { designs: Design[]; l: Langue }) {
   const t = T[l];
   const params = useSearchParams();
   const familleInitiale = params.get("famille") as Famille | null;
@@ -79,7 +80,7 @@ export function Explorer({ l }: { l: Langue }) {
 
   const resultats = useMemo(() => {
     const mots = sansAccents(requete).split(/\s+/).filter(Boolean);
-    return DESIGNS.filter((d) => {
+    return designs.filter((d) => {
       if (famille && d.famille !== famille) return false;
       if (couleur && !d.couleurs.includes(couleur)) return false;
       if (periode && d.periode !== periode) return false;
@@ -89,7 +90,7 @@ export function Explorer({ l }: { l: Langue }) {
       }
       return true;
     });
-  }, [famille, couleur, periode, requete, l]);
+  }, [designs, famille, couleur, periode, requete, l]);
 
   const filtreActif = famille || couleur || periode || requete;
   const effacer = () => {

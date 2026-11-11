@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Descente } from "@/components/Descente";
 import { Mosaique } from "@/components/Mosaique";
-import { COULEURS, DESIGNS, FAMILLES, FAMILLES_EN, nomCouleur, TIROIRS_OUVERTS, type Famille } from "@/lib/catalogue";
+import { COULEURS, DESIGNS, FAMILLES, FAMILLES_EN, nomCouleur, pourGrille, TIROIRS_OUVERTS, type Famille } from "@/lib/catalogue";
 import { chemin, type Langue } from "@/lib/i18n";
 
 const VITRINE: Record<Famille, string> = {
@@ -36,8 +36,9 @@ const T = {
 export function Accueil({ l }: { l: Langue }) {
   const t = T[l];
   const explorer = chemin("explorer", l);
-  const mur = DESIGNS.slice(0, 12);
-  const trouvailles = DESIGNS.slice(0, 8);
+  // Le mur ne reçoit que l'identifiant et les images : le reste du catalogue reste côté serveur.
+  const mur = DESIGNS.slice(0, 12).map(({ id, image, vignettes }) => ({ id, image, vignettes }));
+  const trouvailles = DESIGNS.slice(0, 8).map(pourGrille);
 
   return (
     <>
@@ -54,7 +55,8 @@ export function Accueil({ l }: { l: Langue }) {
               const f = FAMILLES[cle];
               const texte = l === "en" ? FAMILLES_EN[cle] : f;
               const reels = DESIGNS.filter((d) => d.famille === cle && !d.exemple);
-              const image = reels.find((d) => d.image)?.image ?? VITRINE[cle];
+              const vitrine = reels.find((d) => d.image);
+              const image = vitrine?.vignettes?.["800"] ?? vitrine?.image ?? VITRINE[cle];
               return (
                 <li key={cle} className={`tiroir tiroir--${cle}`}>
                   <span className="porte-etiquette">
