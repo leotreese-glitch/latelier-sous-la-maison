@@ -1,0 +1,217 @@
+publiés au total : 153 | lot 4 publiés : 46 sur 60 | plan du site : 226 adresses
+défauts : 152
+DÉFAUT {"ref": "1973-51-22", "probleme": "pas publié"}
+DÉFAUT {"ref": "1973-51-25", "page": "/motif/rayures-rouges-et-fleurs-a-l-indienne/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-25", "page": "/en/pattern/rayures-rouges-et-fleurs-a-l-indienne/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-25", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1973-51-36", "page": "/motif/l-oiseau-paon-et-la-fleur-geante/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-36", "page": "/en/pattern/l-oiseau-paon-et-la-fleur-geante/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-36", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1973-51-12", "page": "/motif/treillage-de-rubans-fleuris/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-12", "page": "/en/pattern/treillage-de-rubans-fleuris/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1973-51-12", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "BK-NM-10620", "page": "/motif/couvre-lit-aux-palmettes/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "BK-NM-10620", "page": "/en/pattern/couvre-lit-aux-palmettes/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "BK-NM-10620", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1981-10-2", "page": "/motif/guirlandes-et-grandes-fleurs-a-la-francaise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1981-10-2", "page": "/en/pattern/guirlandes-et-grandes-fleurs-a-la-francaise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1981-10-2", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1960-79-14", "page": "/motif/oeillets-et-iris-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1960-79-14", "page": "/en/pattern/oeillets-et-iris-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1960-79-14", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "BK-1971-118", "page": "/motif/arbre-de-vie-sur-fond-rouge/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "BK-1971-118", "page": "/en/pattern/arbre-de-vie-sur-fond-rouge/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "BK-1971-118", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1912-13-28-a/c", "page": "/motif/palmettes-et-raisins-broches-d-argent/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1912-13-28-a/c", "page": "/en/pattern/palmettes-et-raisins-broches-d-argent/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1912-13-28-a/c", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1943-46-10", "page": "/motif/guirlandes-sur-taffetas-rose/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943-46-10", "page": "/en/pattern/guirlandes-sur-taffetas-rose/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943-46-10", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1995-50-335", "page": "/motif/la-bouquetiere-sur-soie-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1995-50-335", "page": "/en/pattern/la-bouquetiere-sur-soie-jaune/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1995-50-335", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1959-160-6", "page": "/motif/rosaces-bleues-en-nid-d-abeille/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1959-160-6", "page": "/en/pattern/rosaces-bleues-en-nid-d-abeille/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1959-160-6", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1968-111-11", "page": "/motif/tiges-fleuries-sur-fond-satine/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968-111-11", "page": "/en/pattern/tiges-fleuries-sur-fond-satine/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968-111-11", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1986-106-1", "page": "/motif/liberte-egalite-papier-peint-de-la-revolution/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1986-106-1", "page": "/en/pattern/liberte-egalite-papier-peint-de-la-revolution/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1986-106-1", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1972-42-69", "page": "/motif/frise-fleurie-a-l-indienne/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1972-42-69", "page": "/en/pattern/frise-fleurie-a-l-indienne/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1972-42-69", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "RP-D-00-331", "page": "/motif/oiseaux-et-fleurs-en-quatre-rangs/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-331", "page": "/en/pattern/oiseaux-et-fleurs-en-quatre-rangs/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-331", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "RP-D-00-320", "page": "/motif/voliere-doree-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-320", "page": "/en/pattern/voliere-doree-sur-fond-bleu/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-320", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1968-135-7", "page": "/motif/corne-d-abondance-et-couronne-de-velours/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968-135-7", "page": "/en/pattern/corne-d-abondance-et-couronne-de-velours/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968-135-7", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1930.189", "page": "/motif/le-fuji-rouge-d-apres-hokusai/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1930.189", "page": "/en/pattern/le-fuji-rouge-d-apres-hokusai/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1930.189", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1943.3", "page": "/motif/deux-carpes-sous-les-herbes-d-eau-d-apres-hokusai/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943.3", "page": "/en/pattern/deux-carpes-sous-les-herbes-d-eau-d-apres-hokusai/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943.3", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1943.5", "probleme": "pas publié"}
+DÉFAUT {"ref": "2022.59", "probleme": "pas publié"}
+DÉFAUT {"ref": "1972.10", "probleme": "pas publié"}
+DÉFAUT {"ref": "1968.193", "page": "/motif/champ-de-fleurs-et-de-graminees-paravents/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968.193", "page": "/en/pattern/champ-de-fleurs-et-de-graminees-paravents/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1968.193", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1997.148", "probleme": "pas publié"}
+DÉFAUT {"ref": "1943-30-2", "page": "/motif/chrysanthemes-sur-l-onde-d-or/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943-30-2", "page": "/en/pattern/chrysanthemes-sur-l-onde-d-or/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1943-30-2", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "AK-MAK-414", "page": "/motif/grande-roue-d-eventail-sur-soie-noire/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "AK-MAK-414", "page": "/en/pattern/grande-roue-d-eventail-sur-soie-noire/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "AK-MAK-414", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "RP-D-2019-11", "page": "/motif/poissons-et-triangles-aux-oiseaux-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-2019-11", "page": "/en/pattern/poissons-et-triangles-aux-oiseaux-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-2019-11", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1926.1976", "probleme": "pas publié"}
+DÉFAUT {"ref": "1958.46", "probleme": "pas publié"}
+DÉFAUT {"ref": "1978.63", "probleme": "pas publié"}
+DÉFAUT {"ref": "1916.1044", "probleme": "pas publié"}
+DÉFAUT {"ref": "1933.1157", "probleme": "pas publié"}
+DÉFAUT {"ref": "2019.67", "page": "/motif/fleurs-pour-la-soierie-de-lyon-d-apres-pillement/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2019.67", "page": "/en/pattern/fleurs-pour-la-soierie-de-lyon-d-apres-pillement/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2019.67", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1935.368", "page": "/motif/robe-de-cour-imperiale-aux-dragons/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1935.368", "page": "/en/pattern/robe-de-cour-imperiale-aux-dragons/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1935.368", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "2016.50", "page": "/motif/robe-aux-fleurs-pourpres-du-khorezm/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2016.50", "page": "/en/pattern/robe-aux-fleurs-pourpres-du-khorezm/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2016.50", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1916.1342", "page": "/motif/kesa-en-patchwork-de-brocarts/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.1342", "page": "/en/pattern/kesa-en-patchwork-de-brocarts/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.1342", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1915.663", "page": "/motif/plat-d-iznik-a-la-feuille-saz/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1915.663", "page": "/en/pattern/plat-d-iznik-a-la-feuille-saz/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1915.663", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1951.327", "page": "/motif/plat-de-deruta-a-la-belle-dame/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1951.327", "page": "/en/pattern/plat-de-deruta-a-la-belle-dame/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1951.327", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1966.223", "page": "/motif/l-assiette-aux-cartes-a-jouer/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1966.223", "page": "/en/pattern/l-assiette-aux-cartes-a-jouer/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1966.223", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "2023.44", "page": "/motif/cerisiers-en-corbeilles-coupelle-japonaise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2023.44", "page": "/en/pattern/cerisiers-en-corbeilles-coupelle-japonaise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "2023.44", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1934.330", "probleme": "pas publié"}
+DÉFAUT {"ref": "1942-7-1", "page": "/motif/bouquets-rouges-sur-fond-d-or/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1942-7-1", "page": "/en/pattern/bouquets-rouges-sur-fond-d-or/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1942-7-1", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1960-79-11-b", "page": "/motif/roses-et-rubans-sur-fond-chamois/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1960-79-11-b", "page": "/en/pattern/roses-et-rubans-sur-fond-chamois/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1960-79-11-b", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1928-2-10", "page": "/motif/fleurs-et-fruits-brodes-de-laine/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1928-2-10", "page": "/en/pattern/fleurs-et-fruits-brodes-de-laine/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1928-2-10", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1931-45-29", "page": "/motif/losanges-fleuris-sur-fond-moutarde/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1931-45-29", "page": "/en/pattern/losanges-fleuris-sur-fond-moutarde/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1931-45-29", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "RP-D-00-319", "page": "/motif/paon-hibou-et-oiseaux-sur-fond-rose/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-319", "page": "/en/pattern/paon-hibou-et-oiseaux-sur-fond-rose/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-319", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "RP-D-00-335", "page": "/motif/oiseaux-sur-les-rameaux/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-335", "page": "/en/pattern/oiseaux-sur-les-rameaux/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-D-00-335", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "2022.60", "probleme": "pas publié"}
+DÉFAUT {"ref": "RP-P-2002-299-D", "page": "/motif/paons-sur-le-rocher-surimono/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-P-2002-299-D", "page": "/en/pattern/paons-sur-le-rocher-surimono/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "RP-P-2002-299-D", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1959-150-6", "page": "/motif/chrysanthemes-et-eventails-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1959-150-6", "page": "/en/pattern/chrysanthemes-et-eventails-pochoir-japonais/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1959-150-6", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1985.371", "page": "/motif/rouge-queue-sur-un-prunier-en-fleurs/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1985.371", "page": "/en/pattern/rouge-queue-sur-un-prunier-en-fleurs/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1985.371", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1989.85.4", "probleme": "pas publié"}
+DÉFAUT {"ref": "1958.38", "page": "/motif/chrysantheme-jaune-sur-fond-ocre/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1958.38", "page": "/en/pattern/chrysantheme-jaune-sur-fond-ocre/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1958.38", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1916.429", "page": "/motif/gilet-brode-de-bouquets/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.429", "page": "/en/pattern/gilet-brode-de-bouquets/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.429", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1916.1463", "page": "/motif/blouse-brodee-du-kutch/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.1463", "page": "/en/pattern/blouse-brodee-du-kutch/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1916.1463", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1940.1101", "page": "/motif/robe-rouge-aux-fleurs-de-the/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1940.1101", "page": "/en/pattern/robe-rouge-aux-fleurs-de-the/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1940.1101", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1915.645", "page": "/motif/carreau-etoile-au-lotus/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1915.645", "page": "/en/pattern/carreau-etoile-au-lotus/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1915.645", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1956.709", "page": "/motif/l-ile-des-immortels-assiette-chinoise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1956.709", "page": "/en/pattern/l-ile-des-immortels-assiette-chinoise/", "code": 404, "h1": "", "titre_ok": false, "prix_ok": false}
+DÉFAUT {"ref": "1956.709", "probleme": "vignette", "code": 404, "octets": 0, "dans_explorer": false}
+DÉFAUT {"ref": "1966.129", "probleme": "pas publié"}
+1973-51-22 None None None
+1973-51-25 dp-0095 [[4096, 4096, 'PNG']] [1200, 1200]
+1973-51-36 dp-0096 [[4096, 4096, 'PNG']] [1200, 1200]
+1973-51-12 dp-0097 [[4096, 4096, 'PNG']] [1200, 1200]
+BK-NM-10620 dp-0098 [[4096, 4096, 'PNG']] [1200, 1200]
+1981-10-2 dp-0099 [[4096, 4096, 'PNG']] [1200, 1200]
+1960-79-14 dp-0100 [[4096, 4096, 'PNG']] [1200, 1200]
+BK-1971-118 dp-0101 [[4096, 4096, 'PNG']] [1200, 1200]
+1912-13-28-a/c dp-0102 [[4096, 4096, 'PNG']] [1200, 1200]
+1943-46-10 dp-0103 [[4096, 4096, 'PNG']] [1200, 1200]
+1995-50-335 dp-0104 [[4096, 4096, 'PNG']] [1200, 1200]
+1959-160-6 dp-0105 [[4096, 4096, 'PNG']] [1200, 1200]
+1968-111-11 dp-0106 [[4096, 4096, 'PNG']] [1200, 1200]
+1986-106-1 dp-0107 [[4096, 4096, 'PNG']] [1200, 1200]
+1972-42-69 dp-0108 [[4096, 4096, 'PNG']] [1200, 1200]
+RP-D-00-331 dp-0109 [[4096, 4096, 'PNG']] [1200, 1200]
+RP-D-00-320 dp-0110 [[4096, 4096, 'PNG']] [1200, 1200]
+1968-135-7 dp-0111 [[4096, 4096, 'PNG']] [1200, 1200]
+1930.189 dp-0112 [[4096, 4096, 'PNG']] [1200, 1200]
+1943.3 dp-0113 [[4096, 4096, 'PNG']] [1200, 1200]
+1943.5 None None None
+2022.59 None None None
+1972.10 None None None
+1968.193 dp-0117 [[4096, 4096, 'PNG']] [1200, 1200]
+1997.148 None None None
+1943-30-2 dp-0119 [[4096, 4096, 'PNG']] [1200, 1200]
+AK-MAK-414 dp-0120 [[4096, 4096, 'PNG']] [1200, 1200]
+RP-D-2019-11 dp-0121 [[4096, 4096, 'PNG']] [1200, 1200]
+1926.1976 None None None
+1958.46 None None None
+1978.63 None None None
+1916.1044 None None None
+1933.1157 None None None
+2019.67 dp-0127 [[4096, 4096, 'PNG']] [1200, 1200]
+1935.368 dp-0128 [[4096, 4096, 'PNG']] [1200, 1200]
+2016.50 dp-0129 [[4096, 4096, 'PNG']] [1200, 1200]
+1916.1342 dp-0130 [[4096, 4096, 'PNG']] [1200, 1200]
+1915.663 dp-0131 [[4096, 4096, 'PNG']] [1200, 1200]
+1951.327 dp-0132 [[4096, 4096, 'PNG']] [1200, 1200]
+1966.223 dp-0133 [[4096, 4096, 'PNG']] [1200, 1200]
+2023.44 dp-0134 [[4096, 4096, 'PNG']] [1200, 1200]
+1934.330 None None None
+1942-7-1 dp-0136 [[4096, 4096, 'PNG']] [1200, 1200]
+1960-79-11-b dp-0137 [[4096, 4096, 'PNG']] [1200, 1200]
+1928-2-10 dp-0138 [[4096, 4096, 'PNG']] [1200, 1200]
+1931-45-29 dp-0139 [[4096, 4096, 'PNG']] [1200, 1200]
+RP-D-00-319 dp-0140 [[4096, 4096, 'PNG']] [1200, 1200]
+RP-D-00-335 dp-0141 [[4096, 4096, 'PNG']] [1200, 1200]
+2022.60 None None None
+RP-P-2002-299-D dp-0143 [[4096, 4096, 'PNG']] [1200, 1200]
+1959-150-6 dp-0144 [[4096, 4096, 'PNG']] [1200, 1200]
+1985.371 dp-0145 [[4096, 4096, 'PNG']] [1200, 1200]
+1989.85.4 None None None
+1958.38 dp-0147 [[4096, 4096, 'PNG']] [1200, 1200]
+1916.429 dp-0148 [[4096, 4096, 'PNG']] [1200, 1200]
+1916.1463 dp-0149 [[4096, 4096, 'PNG']] [1200, 1200]
+1940.1101 dp-0150 [[4096, 4096, 'PNG']] [1200, 1200]
+1915.645 dp-0151 [[4096, 4096, 'PNG']] [1200, 1200]
+1956.709 dp-0152 [[4096, 4096, 'PNG']] [1200, 1200]
+1966.129 None None None
+non publiés : 14 ['1973-51-22', '1943.5', '2022.59', '1972.10', '1997.148', '1926.1976', '1958.46', '1978.63', '1916.1044', '1933.1157', '1934.330', '2022.60', '1989.85.4', '1966.129']
+orig-0011 publié : False
+code de sortie : 0
