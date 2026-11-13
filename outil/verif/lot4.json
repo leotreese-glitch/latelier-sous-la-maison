@@ -27,21 +27,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Rayures rouges et fleurs à l'indienne",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Red Stripes and Chintz Flowers",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 40094,
+    "dans_explorer": true
    }
   },
   {
@@ -67,21 +67,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "L'Oiseau-paon et la fleur géante",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "The Peacock Bird and the Giant Flower",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 66824,
+    "dans_explorer": true
    }
   },
   {
@@ -107,21 +107,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Treillage de rubans fleuris",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Ribbon Trellis with Flowers",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 52266,
+    "dans_explorer": true
    }
   },
   {
@@ -147,21 +147,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Couvre-lit aux palmettes",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Palmette Bedspread",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 66902,
+    "dans_explorer": true
    }
   },
   {
@@ -187,21 +187,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Guirlandes et grandes fleurs à la française",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Garlands and Great Flowers, French Style",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 66600,
+    "dans_explorer": true
    }
   },
   {
@@ -227,21 +227,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Œillets et iris sur fond bleu",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Pinks and Irises on Blue",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 68092,
+    "dans_explorer": true
    }
   },
   {
@@ -267,21 +267,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Arbre de vie sur fond rouge",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Tree of Life on Red",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 51254,
+    "dans_explorer": true
    }
   },
   {
@@ -307,21 +307,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Palmettes et raisins brochés d'argent",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Palmettes and Grapes Brocaded in Silver",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 55080,
+    "dans_explorer": true
    }
   },
   {
@@ -347,21 +347,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Guirlandes sur taffetas rose",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Garlands on Pink Taffeta",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 33752,
+    "dans_explorer": true
    }
   },
   {
@@ -387,21 +387,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "La Bouquetière sur soie jaune",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "The Flower Girl on Yellow Silk",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 55726,
+    "dans_explorer": true
    }
   },
   {
@@ -427,21 +427,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Rosaces bleues en nid d'abeille",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Blue Rosettes in a Honeycomb",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 62442,
+    "dans_explorer": true
    }
   },
   {
@@ -467,21 +467,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Tiges fleuries sur fond satiné",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Flowering Stems on Satin Ground",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 40378,
+    "dans_explorer": true
    }
   },
   {
@@ -507,21 +507,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Liberté, Égalité : papier peint de la Révolution",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Liberty, Equality: a Revolutionary Wallpaper",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 52478,
+    "dans_explorer": true
    }
   },
   {
@@ -547,21 +547,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Frise fleurie à l'indienne",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chintz-Style Flower Frieze",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 60512,
+    "dans_explorer": true
    }
   },
   {
@@ -587,21 +587,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Oiseaux et fleurs en quatre rangs",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Birds and Flowers in Four Rows",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 56724,
+    "dans_explorer": true
    }
   },
   {
@@ -627,21 +627,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Volière dorée sur fond bleu",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Golden Aviary on Blue",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 55488,
+    "dans_explorer": true
    }
   },
   {
@@ -667,21 +667,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Corne d'abondance et couronne de velours",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Cornucopia and Crown in Velvet",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 44286,
+    "dans_explorer": true
    }
   },
   {
@@ -707,21 +707,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Le Fuji rouge, d'après Hokusai",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Red Fuji, after Hokusai",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 40524,
+    "dans_explorer": true
    }
   },
   {
@@ -747,21 +747,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Deux carpes sous les herbes d'eau, d'après Hokusai",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Two Carp beneath Water Weeds, after Hokusai",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 37494,
+    "dans_explorer": true
    }
   },
   {
@@ -799,21 +799,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Champ de fleurs et de graminées, paravents",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Field of Flowers and Grasses, Screens",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 39370,
+    "dans_explorer": true
    }
   },
   {
@@ -843,21 +843,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chrysanthèmes sur l'onde d'or",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chrysanthemums on Golden Waves",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 45074,
+    "dans_explorer": true
    }
   },
   {
@@ -883,21 +883,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Grande roue d'éventail sur soie noire",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Great Fan Wheel on Black Silk",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 51450,
+    "dans_explorer": true
    }
   },
   {
@@ -923,21 +923,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Poissons et triangles aux oiseaux, pochoir japonais",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Fish and Bird Triangles, Japanese Stencil",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 38832,
+    "dans_explorer": true
    }
   },
   {
@@ -983,21 +983,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Fleurs pour la soierie de Lyon, d'après Pillement",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Flowers for Lyon Silk, after Pillement",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 45712,
+    "dans_explorer": true
    }
   },
   {
@@ -1023,21 +1023,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Robe de cour impériale aux dragons",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Imperial Court Robe with Dragons",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 69652,
+    "dans_explorer": true
    }
   },
   {
@@ -1063,21 +1063,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Robe aux fleurs pourpres du Khorezm",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Robe with Crimson Flowers from Khorezm",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 44698,
+    "dans_explorer": true
    }
   },
   {
@@ -1103,21 +1103,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Kesa en patchwork de brocarts",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Kesa in Brocade Patchwork",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 30858,
+    "dans_explorer": true
    }
   },
   {
@@ -1143,21 +1143,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Plat d'Iznik à la feuille saz",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Iznik Dish with a Saz Leaf",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 71920,
+    "dans_explorer": true
    }
   },
   {
@@ -1183,21 +1183,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Plat de Deruta à la belle dame",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Deruta Dish with a Fair Lady",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 77898,
+    "dans_explorer": true
    }
   },
   {
@@ -1223,21 +1223,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "L'Assiette aux cartes à jouer",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "The Playing Card Plate",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 56320,
+    "dans_explorer": true
    }
   },
   {
@@ -1263,21 +1263,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Cerisiers en corbeilles, coupelle japonaise",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Cherry Blossoms in Baskets, Japanese Dish",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 67640,
+    "dans_explorer": true
    }
   },
   {
@@ -1307,21 +1307,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Bouquets rouges sur fond d'or",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Red Bouquets on Gold",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 35046,
+    "dans_explorer": true
    }
   },
   {
@@ -1347,21 +1347,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Roses et rubans sur fond chamois",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Roses and Ribbons on Buff",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 39438,
+    "dans_explorer": true
    }
   },
   {
@@ -1387,21 +1387,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Fleurs et fruits brodés de laine",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Crewel Flowers and Fruit",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 45294,
+    "dans_explorer": true
    }
   },
   {
@@ -1427,21 +1427,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Losanges fleuris sur fond moutarde",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Flowered Lozenges on Mustard",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 41844,
+    "dans_explorer": true
    }
   },
   {
@@ -1467,21 +1467,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Paon, hibou et oiseaux sur fond rose",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Peacock, Owl and Birds on Pink",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 28710,
+    "dans_explorer": true
    }
   },
   {
@@ -1507,21 +1507,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Oiseaux sur les rameaux",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Birds on the Branches",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 62188,
+    "dans_explorer": true
    }
   },
   {
@@ -1551,21 +1551,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Paons sur le rocher, surimono",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Peacocks on a Rock, Surimono",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 43266,
+    "dans_explorer": true
    }
   },
   {
@@ -1591,21 +1591,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chrysanthèmes et éventails, pochoir japonais",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chrysanthemums and Fans, Japanese Stencil",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 83580,
+    "dans_explorer": true
    }
   },
   {
@@ -1631,21 +1631,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Rouge-queue sur un prunier en fleurs",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Redstart on a Flowering Plum",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 22096,
+    "dans_explorer": true
    }
   },
   {
@@ -1675,21 +1675,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Chrysanthème jaune sur fond ocre",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Yellow Chrysanthemum on Ochre",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 33358,
+    "dans_explorer": true
    }
   },
   {
@@ -1715,21 +1715,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Gilet brodé de bouquets",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Waistcoat Embroidered with Bouquets",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 27088,
+    "dans_explorer": true
    }
   },
   {
@@ -1755,21 +1755,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Blouse brodée du Kutch",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Embroidered Blouse from Kutch",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 43392,
+    "dans_explorer": true
    }
   },
   {
@@ -1795,21 +1795,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Robe rouge aux fleurs de thé",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Red Robe with Tea Blossoms",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 54360,
+    "dans_explorer": true
    }
   },
   {
@@ -1835,21 +1835,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Carreau étoilé au lotus",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "Star Tile with a Lotus",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 74188,
+    "dans_explorer": true
    }
   },
   {
@@ -1875,21 +1875,21 @@
     1200
    ],
    "fr": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "L'Île des Immortels, assiette chinoise",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "en": {
-    "code": 404,
-    "h1": "",
-    "titre_ok": false,
-    "prix_ok": false
+    "code": 200,
+    "h1": "The Isle of the Immortals, Chinese Plate",
+    "titre_ok": true,
+    "prix_ok": true
    },
    "vignette": {
-    "code": 404,
-    "octets": 0,
-    "dans_explorer": false
+    "code": 200,
+    "octets": 61332,
+    "dans_explorer": true
    }
   },
   {
@@ -1901,443 +1901,6 @@
   {
    "ref": "1973-51-22",
    "probleme": "pas publié"
-  },
-  {
-   "ref": "1973-51-25",
-   "page": "/motif/rayures-rouges-et-fleurs-a-l-indienne/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-25",
-   "page": "/en/pattern/rayures-rouges-et-fleurs-a-l-indienne/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-25",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1973-51-36",
-   "page": "/motif/l-oiseau-paon-et-la-fleur-geante/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-36",
-   "page": "/en/pattern/l-oiseau-paon-et-la-fleur-geante/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-36",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1973-51-12",
-   "page": "/motif/treillage-de-rubans-fleuris/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-12",
-   "page": "/en/pattern/treillage-de-rubans-fleuris/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1973-51-12",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "BK-NM-10620",
-   "page": "/motif/couvre-lit-aux-palmettes/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "BK-NM-10620",
-   "page": "/en/pattern/couvre-lit-aux-palmettes/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "BK-NM-10620",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1981-10-2",
-   "page": "/motif/guirlandes-et-grandes-fleurs-a-la-francaise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1981-10-2",
-   "page": "/en/pattern/guirlandes-et-grandes-fleurs-a-la-francaise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1981-10-2",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1960-79-14",
-   "page": "/motif/oeillets-et-iris-sur-fond-bleu/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1960-79-14",
-   "page": "/en/pattern/oeillets-et-iris-sur-fond-bleu/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1960-79-14",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "BK-1971-118",
-   "page": "/motif/arbre-de-vie-sur-fond-rouge/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "BK-1971-118",
-   "page": "/en/pattern/arbre-de-vie-sur-fond-rouge/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "BK-1971-118",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1912-13-28-a/c",
-   "page": "/motif/palmettes-et-raisins-broches-d-argent/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1912-13-28-a/c",
-   "page": "/en/pattern/palmettes-et-raisins-broches-d-argent/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1912-13-28-a/c",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1943-46-10",
-   "page": "/motif/guirlandes-sur-taffetas-rose/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943-46-10",
-   "page": "/en/pattern/guirlandes-sur-taffetas-rose/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943-46-10",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1995-50-335",
-   "page": "/motif/la-bouquetiere-sur-soie-jaune/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1995-50-335",
-   "page": "/en/pattern/la-bouquetiere-sur-soie-jaune/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1995-50-335",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1959-160-6",
-   "page": "/motif/rosaces-bleues-en-nid-d-abeille/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1959-160-6",
-   "page": "/en/pattern/rosaces-bleues-en-nid-d-abeille/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1959-160-6",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1968-111-11",
-   "page": "/motif/tiges-fleuries-sur-fond-satine/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968-111-11",
-   "page": "/en/pattern/tiges-fleuries-sur-fond-satine/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968-111-11",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1986-106-1",
-   "page": "/motif/liberte-egalite-papier-peint-de-la-revolution/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1986-106-1",
-   "page": "/en/pattern/liberte-egalite-papier-peint-de-la-revolution/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1986-106-1",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1972-42-69",
-   "page": "/motif/frise-fleurie-a-l-indienne/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1972-42-69",
-   "page": "/en/pattern/frise-fleurie-a-l-indienne/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1972-42-69",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "RP-D-00-331",
-   "page": "/motif/oiseaux-et-fleurs-en-quatre-rangs/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-331",
-   "page": "/en/pattern/oiseaux-et-fleurs-en-quatre-rangs/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-331",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "RP-D-00-320",
-   "page": "/motif/voliere-doree-sur-fond-bleu/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-320",
-   "page": "/en/pattern/voliere-doree-sur-fond-bleu/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-320",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1968-135-7",
-   "page": "/motif/corne-d-abondance-et-couronne-de-velours/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968-135-7",
-   "page": "/en/pattern/corne-d-abondance-et-couronne-de-velours/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968-135-7",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1930.189",
-   "page": "/motif/le-fuji-rouge-d-apres-hokusai/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1930.189",
-   "page": "/en/pattern/le-fuji-rouge-d-apres-hokusai/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1930.189",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1943.3",
-   "page": "/motif/deux-carpes-sous-les-herbes-d-eau-d-apres-hokusai/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943.3",
-   "page": "/en/pattern/deux-carpes-sous-les-herbes-d-eau-d-apres-hokusai/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943.3",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
   },
   {
    "ref": "1943.5",
@@ -2352,100 +1915,8 @@
    "probleme": "pas publié"
   },
   {
-   "ref": "1968.193",
-   "page": "/motif/champ-de-fleurs-et-de-graminees-paravents/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968.193",
-   "page": "/en/pattern/champ-de-fleurs-et-de-graminees-paravents/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1968.193",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
    "ref": "1997.148",
    "probleme": "pas publié"
-  },
-  {
-   "ref": "1943-30-2",
-   "page": "/motif/chrysanthemes-sur-l-onde-d-or/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943-30-2",
-   "page": "/en/pattern/chrysanthemes-sur-l-onde-d-or/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1943-30-2",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "AK-MAK-414",
-   "page": "/motif/grande-roue-d-eventail-sur-soie-noire/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "AK-MAK-414",
-   "page": "/en/pattern/grande-roue-d-eventail-sur-soie-noire/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "AK-MAK-414",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "RP-D-2019-11",
-   "page": "/motif/poissons-et-triangles-aux-oiseaux-pochoir-japonais/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-2019-11",
-   "page": "/en/pattern/poissons-et-triangles-aux-oiseaux-pochoir-japonais/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-2019-11",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
   },
   {
    "ref": "1926.1976",
@@ -2468,551 +1939,22 @@
    "probleme": "pas publié"
   },
   {
-   "ref": "2019.67",
-   "page": "/motif/fleurs-pour-la-soierie-de-lyon-d-apres-pillement/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2019.67",
-   "page": "/en/pattern/fleurs-pour-la-soierie-de-lyon-d-apres-pillement/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2019.67",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1935.368",
-   "page": "/motif/robe-de-cour-imperiale-aux-dragons/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1935.368",
-   "page": "/en/pattern/robe-de-cour-imperiale-aux-dragons/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1935.368",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "2016.50",
-   "page": "/motif/robe-aux-fleurs-pourpres-du-khorezm/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2016.50",
-   "page": "/en/pattern/robe-aux-fleurs-pourpres-du-khorezm/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2016.50",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1916.1342",
-   "page": "/motif/kesa-en-patchwork-de-brocarts/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.1342",
-   "page": "/en/pattern/kesa-en-patchwork-de-brocarts/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.1342",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1915.663",
-   "page": "/motif/plat-d-iznik-a-la-feuille-saz/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1915.663",
-   "page": "/en/pattern/plat-d-iznik-a-la-feuille-saz/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1915.663",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1951.327",
-   "page": "/motif/plat-de-deruta-a-la-belle-dame/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1951.327",
-   "page": "/en/pattern/plat-de-deruta-a-la-belle-dame/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1951.327",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1966.223",
-   "page": "/motif/l-assiette-aux-cartes-a-jouer/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1966.223",
-   "page": "/en/pattern/l-assiette-aux-cartes-a-jouer/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1966.223",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "2023.44",
-   "page": "/motif/cerisiers-en-corbeilles-coupelle-japonaise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2023.44",
-   "page": "/en/pattern/cerisiers-en-corbeilles-coupelle-japonaise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "2023.44",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
    "ref": "1934.330",
    "probleme": "pas publié"
-  },
-  {
-   "ref": "1942-7-1",
-   "page": "/motif/bouquets-rouges-sur-fond-d-or/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1942-7-1",
-   "page": "/en/pattern/bouquets-rouges-sur-fond-d-or/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1942-7-1",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1960-79-11-b",
-   "page": "/motif/roses-et-rubans-sur-fond-chamois/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1960-79-11-b",
-   "page": "/en/pattern/roses-et-rubans-sur-fond-chamois/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1960-79-11-b",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1928-2-10",
-   "page": "/motif/fleurs-et-fruits-brodes-de-laine/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1928-2-10",
-   "page": "/en/pattern/fleurs-et-fruits-brodes-de-laine/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1928-2-10",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1931-45-29",
-   "page": "/motif/losanges-fleuris-sur-fond-moutarde/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1931-45-29",
-   "page": "/en/pattern/losanges-fleuris-sur-fond-moutarde/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1931-45-29",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "RP-D-00-319",
-   "page": "/motif/paon-hibou-et-oiseaux-sur-fond-rose/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-319",
-   "page": "/en/pattern/paon-hibou-et-oiseaux-sur-fond-rose/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-319",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "RP-D-00-335",
-   "page": "/motif/oiseaux-sur-les-rameaux/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-335",
-   "page": "/en/pattern/oiseaux-sur-les-rameaux/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-D-00-335",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
   },
   {
    "ref": "2022.60",
    "probleme": "pas publié"
   },
   {
-   "ref": "RP-P-2002-299-D",
-   "page": "/motif/paons-sur-le-rocher-surimono/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-P-2002-299-D",
-   "page": "/en/pattern/paons-sur-le-rocher-surimono/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "RP-P-2002-299-D",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1959-150-6",
-   "page": "/motif/chrysanthemes-et-eventails-pochoir-japonais/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1959-150-6",
-   "page": "/en/pattern/chrysanthemes-et-eventails-pochoir-japonais/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1959-150-6",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1985.371",
-   "page": "/motif/rouge-queue-sur-un-prunier-en-fleurs/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1985.371",
-   "page": "/en/pattern/rouge-queue-sur-un-prunier-en-fleurs/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1985.371",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
    "ref": "1989.85.4",
    "probleme": "pas publié"
-  },
-  {
-   "ref": "1958.38",
-   "page": "/motif/chrysantheme-jaune-sur-fond-ocre/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1958.38",
-   "page": "/en/pattern/chrysantheme-jaune-sur-fond-ocre/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1958.38",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1916.429",
-   "page": "/motif/gilet-brode-de-bouquets/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.429",
-   "page": "/en/pattern/gilet-brode-de-bouquets/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.429",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1916.1463",
-   "page": "/motif/blouse-brodee-du-kutch/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.1463",
-   "page": "/en/pattern/blouse-brodee-du-kutch/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1916.1463",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1940.1101",
-   "page": "/motif/robe-rouge-aux-fleurs-de-the/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1940.1101",
-   "page": "/en/pattern/robe-rouge-aux-fleurs-de-the/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1940.1101",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1915.645",
-   "page": "/motif/carreau-etoile-au-lotus/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1915.645",
-   "page": "/en/pattern/carreau-etoile-au-lotus/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1915.645",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
-  },
-  {
-   "ref": "1956.709",
-   "page": "/motif/l-ile-des-immortels-assiette-chinoise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1956.709",
-   "page": "/en/pattern/l-ile-des-immortels-assiette-chinoise/",
-   "code": 404,
-   "h1": "",
-   "titre_ok": false,
-   "prix_ok": false
-  },
-  {
-   "ref": "1956.709",
-   "probleme": "vignette",
-   "code": 404,
-   "octets": 0,
-   "dans_explorer": false
   },
   {
    "ref": "1966.129",
    "probleme": "pas publié"
   }
  ],
- "sitemap": 226,
+ "sitemap": 318,
  "publies": 153
 }
