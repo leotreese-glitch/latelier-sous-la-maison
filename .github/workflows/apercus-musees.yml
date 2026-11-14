@@ -46,7 +46,20 @@ jobs:
             exit 0
           fi
           if [ "$(cat outil/mode.txt)" = "supprimer" ]; then
-            gh release delete photos-motifs-retrouves --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+            TAG="photos-motifs-retrouves"
+            if [ -f outil/supprimer.txt ]; then TAG="$(cat outil/supprimer.txt)"; fi
+            gh release delete "$TAG" --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+            exit 0
+          fi
+          if [ "$MODE" = "pack_hd" ]; then
+            python -m pip install -q pillow numpy
+            python -u outil/pack_hd.py
+            ls -la zips
+            PACK="$(cat outil/pack/actuel.txt)"
+            TAG="$(python -c "import json;print(json.load(open('outil/pack/$PACK.json'))['release'])")"
+            gh release delete "$TAG" --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+            gh release create "$TAG" zips/* -R "$GITHUB_REPOSITORY" --target outil/apercus-musees --prerelease \
+              --title "Photos de travail ($PACK, temporaire)" --notes "Fichiers de travail temporaires, supprimés après transfert."
             exit 0
           fi
           python -m pip install pillow numpy tifffile imagecodecs
