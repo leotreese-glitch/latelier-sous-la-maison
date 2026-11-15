@@ -1,0 +1,26 @@
+L'atelier sous la maison - Pack 02 (exclusivité pour une marque de carrés de soie)
+Photos des 22 pièces retenues le 15 novembre 2026, en deux packs de 11
+
+Ces pièces ne vont pas sur le site
+- Elles sont réservées à la marque à qui les packs sont proposés, et servent aux rendez-vous et aux visios.
+- Ne pas les déposer dans l'administration du site.
+
+Ce que contient ce dossier
+- Pack 02 A - Ottoman et Cachemire : 7 carrés et couvertures brodés ottomans, 2 châles carrés du Cachemire, une soierie persane (coquelicots) et un coussin brodé grec (oiseaux).
+- Pack 02 B - Chine et Japon : 4 insignes de rang chinois, 4 fukusa japonais et 3 soieries impériales Qing.
+- Un ZIP par pack. cartels.csv (le même dans les deux) donne pour chaque pièce : dossier, titre, famille, date et lieu, numéro d'inventaire, licence, lien de la notice, taille, description et ce qu'il y a à faire. S'ouvre dans Excel, Numbers ou Google Sheets.
+
+Ce que sont ces images
+- Ce sont les photographies du Cleveland Museum of Art, avant restauration, sous licence CC0 : libres de droits, usage commercial autorisé, sans obligation de citer le musée.
+- Elles sont à la taille complète du musée (fichier TIFF d'origine), converties en JPEG qualité 92 à 300 dpi.
+- Pour un carré de 90 cm, il faut idéalement 5 000 px de côté. Ces pièces ont moins de 4 000 px sur le côté du carré et demandent un vrai agrandissement : A03, A04, A05, A06, A11, B02, et B11 (pièce en longueur, à recomposer).
+
+Pour chaque pièce
+1. Restaurer : taches, trous, usure, couleurs passées ; effacer les franges, les coutures, les bords du tissu et les ombres.
+2. Suivre la colonne « À faire » de cartels.csv : « Déjà un carré » (garder la composition), « À recadrer en carré » ou « Carré à composer » (centre et bordure à construire à partir du motif).
+3. Pour les insignes B02 et B03 : effacer la couture du milieu (ils étaient faits de deux moitiés).
+4. Exporter en PNG d'au moins 5 000 px de côté, en gardant un fichier de travail par pièce pour les déclinaisons de couleurs.
+
+Rappel
+- L'exclusivité vendue porte sur la version restaurée et ses déclinaisons. La photo du musée reste dans le domaine public.
+- Ces liens de téléchargement sont temporaires : ils seront supprimés une fois les fichiers récupérés.

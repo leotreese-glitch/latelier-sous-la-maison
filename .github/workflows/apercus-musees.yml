@@ -65,7 +65,7 @@ jobs:
             exit 0
           fi
           if [ "$MODE" = "pack_hd" ]; then
-            python -m pip install -q pillow numpy
+            python -m pip install -q pillow numpy tifffile imagecodecs
             python -u outil/pack_hd.py
             ls -la zips
             PACK="$(cat outil/pack/actuel.txt)"
