@@ -51,6 +51,19 @@ jobs:
             gh release delete "$TAG" --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
             exit 0
           fi
+          if [ "$MODE" = "pack_planches" ]; then
+            set +e
+            python -m pip install -q pillow
+            timeout 2400 python -u outil/pack_planches.py > outil/journal-pack_planches.txt 2>&1
+            echo "code de sortie : $?" >> outil/journal-pack_planches.txt
+            tail -n 30 outil/journal-pack_planches.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add outil/journal-pack_planches.txt outil/apercus outil/planches outil/pack
+            git commit -q -m "Résultat de l'outil : pack_planches [CF-Pages-Skip]"
+            git push
+            exit 0
+          fi
           if [ "$MODE" = "pack_hd" ]; then
             python -m pip install -q pillow numpy
             python -u outil/pack_hd.py
